@@ -387,3 +387,52 @@
     }
   }
 }
+
+.ts-icon-box-06 {
+  border: 1px solid $gray90;
+  position: relative;  
+
+  .ts-icon-box-06-inner {
+    padding: 30px 100px 30px 50px;
+  }
+
+  &-layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100px;
+
+    .layer-01,
+    .layer-02 {
+      fill: color(color1, 1);
+    }
+
+    .layer-02 {
+      opacity: 0.7;
+    }
+  }
+
+  .ts-icon {
+    font-size: 56px;
+    margin-bottom: 30px;
+    color: $gray20;
+  }
+
+  &-content {
+    .title {
+      font-size: 18px;
+    }
+
+    .sub-title {
+      font-size: 14px;
+      font-style: italic;
+      font-weight: normal;
+      margin-bottom: 30px;
+    }
+
+    .desc {
+      margin-bottom: 30px;
+    }
+  }
+}
