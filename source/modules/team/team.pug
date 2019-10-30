@@ -1,0 +1,32 @@
+mixin team05(avatar, name, title)
+  .ts-team-card-01
+    .card-cover
+      img.card-img(src=avatar, alt="avatar")
+    .card-body
+      h4.team-card-name=name
+      p.team-card-title=title
+      p.team-card-phone
+        a(href="tel:18604193333") 1860-419-3333
+      p.team-card-desc Fusce lorem risus, congue a ligula ut, lacinia ultricies ligula. Class aptent taciti sociosqu ad litora torquent.
+      .social-list-01.in-light
+        a(href="#")
+          i.ts-icon.la.la-facebook
+        a(href="#")
+          i.ts-icon.la.la-twitter
+        a(href="#")
+          i.ts-icon.la.la-linkedin
+      
+mixin team06(avatar, name, title)
+  .ts-team-card-06
+    .card-cover
+      img.card-img(src=avatar, alt="avatar")
+    .card-body
+      .card-body-inner
+        h4.title=name
+        p.team-card-phone
+          a(href="tel:18604193333") 1860-419-3333
+        p.desc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id lectus quis dui euismod consectetur. 
+        .meta
+          span.category=title
+          span.social
+            +socialList

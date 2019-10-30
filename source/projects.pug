@@ -1,0 +1,55 @@
+extends modules/layout/layout.pug
+include modules/script/lib
+include modules/header_mixin/header_mixin
+include modules/portfolio/portfolio
+include modules/control/control
+append head
+  title="Component - Project Card"
+  link(href="css/main.min.css" rel="stylesheet")
+append header
+append content
+  .bg--gray60.py-7
+    .container
+      .card.mb-3.d-block.bg--gainsboro.border-0
+        .card-body
+          .row
+            .col-lg-4
+              h5.mb-3 Projects - Case Card 01
+              +portfolio01('https://picsum.photos/400?random=1', 'Projects - Case Card 01', 'Revision Theory')
+      
+      .card.mb-3.d-block.bg--white.border-0
+        .card-body
+          .row
+            .col-lg-4
+              h5.mb-3 Projects - Case Card 02
+              +portfolio02('images/cases-01.jpg', 'Setting aims and objectives', 'Revision Theory')
+
+      .card.mb-3.d-block.bg--gainsboro.border-0
+        .card-body
+          .row
+            .col-lg-6
+              h5.mb-3 Projects - Case Card 01 - Size 1:1
+              +portfolio01('https://picsum.photos/400?random=2', 'Projects - Case Card 01 - Size 1:1', 'Revision Theory', 'w2-h2')
+            .col-lg-6
+              h5.mb-3 Projects - Case Card 01 - Size 2:1
+              +portfolio01('https://picsum.photos/400?random=3', 'Projects - Case Card 01 - Size 2:1', 'Accounting', 'w2-h1')
+
+      .card.mb-3.d-block.bg--gainsboro.border-0
+        .card-body
+          .row
+            .col-lg-12
+              h5.mb-3 Projects - Case Card 02
+              +portfolio03('https://picsum.photos/400?random=4', 'Projects - Case Card 02', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum sit amet felis ut cursus. Proin non scelerisque lorem, nec consectetur diam. Mauris at lacinia dolor. Vivamus elementum, diam sit amet finibus tincidunt, diam mi congue metus, id feugiat ligula libero ut dui.', 'Revision Theory', 'JUN 18 2019')
+  +control
+append plugins  
+  +lib
+append script
+  script(src="js/main.min.js")
+  
+  
+    
+
+    
+
+
+  

@@ -1,0 +1,145 @@
+extends modules/layout/layout.pug
+include modules/script/lib
+include modules/header_mixin/header_mixin
+include modules/product/product
+include modules/footer/footer
+include modules/control/control
+append head
+  title="Shop - Shop Detail"
+  link(href="css/main.min.css" rel="stylesheet")
+append header
+  +header01
+append content
+  section.sub-header.bg--whitesmoke
+    .container
+      h2.title Shop Detail
+
+  section.section-breadcrumb.bg-white.py-2
+    .container
+      nav(aria-label="breadcrumb")
+        ol.ts-breadcrumb
+          li.breadcrumb-item
+            a(href="index.html") 
+              i.ts-icon.la.la-home.mr-1
+              | Home
+          li.breadcrumb-item
+            a(href="shop_grid.html") Shop
+          li.breadcrumb-item.active(aria-current="page") Shop Detail
+
+  section.bg--white.py-5.py-lg-7
+    .container
+      .row 
+        .col-lg-6.mb-5.mb-lg-0
+          .product-detail-cover.mb-3
+            img.w-100(src="https://picsum.photos/600/400?random=10")
+          .row-g-10.d-flex.justify-content-between
+            a.col(href="#")
+              img.w-100(src="https://picsum.photos/150?random=11")
+            a.col(href="#")
+              img.w-100(src="https://picsum.photos/150?random=12")
+            a.col(href="#")
+              img.w-100(src="https://picsum.photos/150?random=13")
+            a.col(href="#")
+              img.w-100(src="https://picsum.photos/150?random=14")
+        .col-lg-6
+          .product-detail-info
+            h2.product-detail-title.mb-3 Grey Soft Loft Sessel
+            .d-flex.mb-3.align-items-center
+              span.rating-list-01.pr-5
+                i.ts-icon.la.la-star
+                i.ts-icon.la.la-star
+                i.ts-icon.la.la-star
+                i.ts-icon.la.la-star
+                i.disabled.ts-icon.la.la-star-o
+              span 2 Reviews
+            strong.product-detail-price.fs--18.mb-4.d-block £ 529
+            .divider-section-01.mb-4
+            .product-detail-data.d-flex.mb-5.align-items-center
+              .product-detail-quantity.pr-5.d-inline-flex.align-items-center
+                span.pr-5 Quantity:
+                input.ts-input.d-inline-block(type="number", value="1")
+              a.ts-btn.btn-success(href="#") Add to Cart
+            nav.nav.nav-tabs.ts-nav-tabs
+              a.nav-item.nav-link.active(data-toggle='tab', href='#description') Description
+              a.nav-item.nav-link(data-toggle='tab', href='#comments') Reviews (2)
+            .tab-content.ts-tab-content
+              #description.tab-pane.fade.show.active
+                p Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed velit. Proin gravida arcu nisl, a dignissim mauris placerat id. Vivamus interdum urna at sapien varius elementum. Suspendisse ut mi felis et interdum libero lacinia vel. Aenean elementum odio ut lorem cursus, eu auctor magna pellentesque.
+                p Pellentesque habitant morbi tristique senectus et netus et.malesuada fames ac turpis egestas. Duis a hendrerit risus. In non tristique libero.
+              #comments.tab-pane.fade
+                ol.commentlist.list-unstyled
+                  li.comment
+                    .comment_container
+                      img.avatar.photo(width="60" height="60" src="http://0.gravatar.com/avatar/8026a390d28369f7a2befcaeb9557359?s=60&d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&r=G" alt="Andrew")
+                      .comment-text
+                        p.meta
+                          strong Andrew
+                          |  – 
+                          time June 7, 2013
+                        .rating-list-01
+                          i.ts-icon.la.la-star
+                          i.ts-icon.la.la-star
+                          i.ts-icon.la.la-star
+                          i.disabled.ts-icon.la.la-star-o
+                          i.disabled.ts-icon.la.la-star-o
+                        .description
+                          p I bought this thinking it was a nice green colour, apparently it GREY! I’m colour blind so I don’t care but my girlfriend says grey makes me look fat
+                  li.comment
+                    .comment_container
+                      img.avatar.avatar-60.photo(width="60" height="60" src="http://1.gravatar.com/avatar/59c82b1d2c60537f900fb191b3cb611b?s=60&d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&r=G" alt="Maria")
+                      .comment-text
+                        p.meta
+                          strong Maria
+                          |  – 
+                          time June 7, 2013
+                        .rating-list-01
+                          i.ts-icon.la.la-star
+                          i.ts-icon.la.la-star
+                          i.ts-icon.la.la-star
+                          i.ts-icon.la.la-star
+                          i.disabled.ts-icon.la.la-star-o
+                        .description
+                          p I love grey hoodies! This is perfect with my grey Ninja shirt, when I get cold I throw this on and I can still be a Ninja.
+
+  section.bg--white.py-5.py-lg-7
+    .container
+      .section-title-wrap.center
+        h3.title Relate Products
+      .carousel.arrows-square.arrows-dark(
+        data-items="4" 
+        data-items-md="3" 
+        data-items-sm="2" 
+        data-items-xs="1" 
+        data-margin="30" 
+        data-dots="false"
+        data-arrows="true" 
+        data-autoplay='true' 
+        data-hoverpause="true"
+        data-autoplay-timeout="3000" 
+        data-loop="true")
+        .item
+          +product01('https://picsum.photos/300?random=10')
+        .item
+          +product01('https://picsum.photos/300?random=11')
+        .item
+          +product01('https://picsum.photos/300?random=12')
+        .item
+          +product01('https://picsum.photos/300?random=13')
+        .item
+          +product01('https://picsum.photos/300?random=2')
+        .item
+          +product01('https://picsum.photos/300?random=1')
+        .item
+          +product01('https://picsum.photos/300?random=4')
+        .item
+          +product01('https://picsum.photos/300?random=5')
+
+
+  +footer01
+  +control
+append plugins  
+  +lib
+append script
+  script(defer src="js/main.min.js")
+  
+

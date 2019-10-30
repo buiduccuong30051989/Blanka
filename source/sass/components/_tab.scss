@@ -1,0 +1,55 @@
+//
+// Components :: Tab
+// --------------------------------------------------
+.ts-nav-tabs {
+  border-bottom: 1px solid rgba($black, 0.1);
+  flex-wrap: nowrap;
+  overflow-x: auto;
+
+  .nav-link {
+    padding: 11px 25px;
+    background-color: $whitesmoke;
+    border-radius: 0;
+    color: $gray20;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+
+    &.active {
+      background-color: color(color1, 1);
+      color: $white;
+      border-color: color(color1, 1);
+
+      &:hover {
+        background-color: color(color1, 1);
+        color: $white;
+        border-color: color(color1, 1);
+      }
+    }
+
+    &:hover {
+      background-color: $gray90;
+      color: $gray20;
+    }
+  }
+
+  &-icon {
+    width: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+
+    g {
+      fill: color(color1, 1);
+    }
+  }
+}
+
+.ts-tab-content {
+  padding: 15px 30px;
+  border: 1px solid rgba($black, 0.1);
+  border-top: 0;
+
+  @include media-breakpoint-down(lg) {
+    padding: 15px;
+  }
+}

@@ -1,0 +1,74 @@
+extends modules/layout/layout.pug
+include modules/script/lib
+include modules/header_mixin/header_mixin
+include modules/footer/footer
+include modules/control/control
+append head
+  title="Contact - Contact 01"
+  link(href="css/main.min.css" rel="stylesheet")
+append header
+  +header01
+append content
+  section.sub-header.bg--whitesmoke
+    .container
+      h2.title Contact Version 01
+
+  section.section-breadcrumb.bg-white.py-2
+    .container
+      nav(aria-label="breadcrumb")
+        ol.ts-breadcrumb
+          li.breadcrumb-item
+            a(href="index.html") 
+              i.ts-icon.la.la-home.mr-1
+              | Home
+          li.breadcrumb-item.active(aria-current="page") Contact 01
+
+  section.bg--white.py-7
+    .container
+      .row
+        .col-lg-8.mb-5.mb-lg-0
+          h3.fs--20.mb-5 Send Us a Message
+          .contact-01
+            form(action="/contact_01.html")
+              .row-g-20.mb-4
+                .col-lg-4.mb-4.mb-lg-0
+                  input.ts-input.form-control-lg(type="text", placeholder="Your Name")
+                .col-lg-4.mb-4.mb-lg-0
+                  input.ts-input.form-control-lg(type="email", placeholder="Your Email")
+                .col-lg-4
+                  input.ts-input.form-control-lg(type="text", placeholder="Your Phone")
+              .row.mb-4
+                .col-lg-12
+                  textarea.ts-input(rows="7")
+              .row
+                .col-lg-12
+                  button.ts-btn.btn-color1.btn-lg Send Mail
+        .col-lg-4
+          h3.fs--20.mb-5 Contact & Working Hours
+          p.mt-n1 Suspendisse ut interdum lectus. Integer ac neque faucibus, venenatis nisl quis, pellentesque lacus. Integer et ipsum sit amet dui ultrices hendrerit. 
+          .widget-opening-hours.in-light
+            ul
+              li
+                span Address :
+                span 151 Hudson St, New York, NY
+              li
+                span Phone :
+                span 
+                  a(href="tel:18604193333")  1860-419-3331
+              li
+                span Mail :
+                span
+                  a(href="mailto:contact@ananci.com") contact@ananci.com
+              li
+                span Working Hours :
+                span Mon-Fri 09:00 - 17:00
+  section#js-map-canvas.map-01
+
+  +footer01
+  +control
+append plugins  
+  +lib
+append script
+  script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAOvgMzMavm0loFdwqNrzzVh42X_-lDZ3w')
+  script(src="js/google-map.min.js")
+  script(src="js/main.min.js")

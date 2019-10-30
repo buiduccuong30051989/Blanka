@@ -1,0 +1,20 @@
+extends modules/layout/layout.pug
+include modules/script/lib
+include modules/footer/footer
+include modules/control/control
+append head
+  title="Component - Footer"
+  link(href="css/main.min.css" rel="stylesheet")
+append header
+append content
+  .mb-7.bg-dark
+    +footer01
+  
+  .mb-7
+    +footer02
+  
+  +control
+append plugins  
+  +lib
+append script
+  script(src='js/main.min.js')

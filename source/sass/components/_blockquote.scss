@@ -1,0 +1,40 @@
+//
+// Components :: BlockQuote
+// --------------------------------------------------
+.ts-blockquote-01 {
+  @extend .blockquote;
+
+  border-left: 4px solid color(color1, 1);
+  padding: 8px 30px;
+}
+
+.ts-blockquote-02 {
+  @extend .blockquote;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 24px;
+
+  .blockquote-footer {
+    color: $gray90;
+  }
+
+  &.in-dark {
+    color: $white;
+
+    .blockquote-footer {
+      @extend .color--fw-7;
+    }
+  }
+
+  &.in-light {
+    color: $gray20;
+
+    .blockquote-footer {
+      @extend .color--fb-7;
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    font-size: 1rem;
+  }
+}

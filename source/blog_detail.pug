@@ -1,0 +1,271 @@
+extends modules/layout/layout.pug
+include modules/script/lib
+include modules/header_mixin/header_mixin
+include modules/footer/footer
+include modules/control/control
+append head
+  title="Blog - Blog Detail"
+  link(href="css/main.min.css" rel="stylesheet")
+append header
+  +header01
+append content
+  section.sub-header.bg--whitesmoke
+    .container
+      h2.title Blog Detail
+
+  section.section-breadcrumb.bg-white.py-2
+    .container
+      nav(aria-label="breadcrumb")
+        ol.ts-breadcrumb
+          li.breadcrumb-item
+            a(href="index.html") 
+              i.ts-icon.la.la-home.mr-1
+              | Home
+          li.breadcrumb-item.active(aria-current="page") Blog Detail
+
+  section.bg--white
+    .container
+      .row.py-5.py-lg-7
+        .col-lg-9
+          .blog-detail
+            h2.blog-detail__title.mb-4 The best experience from the experts
+            .blog-detail__meta-top
+              .catalog
+                a.color--color1(href="#") Financial
+                | , 
+                a.color--color1(href="#") Consultant
+              .time
+                span JULY 18, 2019
+            .blog-detail__cover.mb-4
+              img(src="https://picsum.photos/879/490?random=10", alt="cover")
+            .blog-detail__content
+              h5.mb-3 Lorem Ipsum Doren se amet
+              p Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed velit. Proin gravida arcu nisl, a dignissim mauris placerat id. Vivamus interdum urna at sapien varius elementum. Suspendisse ut mi felis et interdum libero lacinia vel. Aenean elementum odio ut lorem cursus, eu auctor magna pellentesque. Cras facilisis quam sed rhoncus dapibus. Quisque lorem enim, dictum at magna eu, hendrerit hendrerit arcu. Etiam vulputate ac tortor ac gravida. Proin accumsan placerat rutrum. Praesent ut eros ac nisi ultrices rhoncus et.
+              p Nulla fermentum eros vitae est finibus dapibus. Aliquam porta nulla a elit varius efficitur. In in magna sed turpis venenatis tristique eu eget neque. Duis condimentum libero ornare quam tincidunt interdum. Phasellus porttitor nisi ut lectus pellentesque, ut fringilla leo convallis
+              blockquote.ts-blockquote.my-4
+                p.mb-0
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                footer.blockquote-footer
+                  | Someone famous in 
+                  cite(title="Source Title") Source Title
+              p Duis gravida tempus imperdiet. Vivamus elit vel consequat elementum. Cras consequat lorem non orci sagittis, eget volutpat neque imperdiet. Nam auctor nisi vitae enim accumsan, ac dignissim tortor consequat.
+              ul.list-style-01.list-check.color.mb-3
+                li.mb-1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                li.mb-1 Phasellus id lectus quis dui euismod consectetur.
+                li.mb-1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                li.mb-1 Phasellus id lectus quis dui euismod consectetur.
+                li.mb-1 Phasellus id lectus quis dui euismod consectetur. 
+            .blog-detail__meta-bottom.py-4
+              .tags
+                span.pr-1 TAGS: 
+                a.color--color1(href = "#") FINANCIAL
+                | , 
+                a.color--color1.pl-1(href="#") BUSINESS
+                | ,
+                a.color--color1.pl-1(href="#") CONSULTANT
+                | ,
+                a.color--color1.pl-1(href="#") TAX
+              .share
+                span.pr-1 SHARE: 
+                a.color--color1.pl-1(href = "#") FACEBOOK
+                | , 
+                a.color--color1.pl-1(href="#") TWITTER
+            .divider-section-01
+            .blog-detail__control.py-5
+              a(href="#").item
+                span
+                  i.ts-icon.la.la-angle-double-left.pr-1  
+                  | PREVIEW
+                h5 10 skills propelling finance functions forward in 2019
+              a(href="blog_grid.html").ts-btn.btn-outline-color4.btn-lg
+                i.ts-icon.la.la-th.mr-2.fs--18
+                | Blogs
+              a(href="#").item.text-right
+                span
+                  | NEXT
+                  i.ts-icon.la.la-angle-double-right.pl-1 
+                h5 Teamwork: The Hidden Ingredient In Trading Success
+            .divider-section-01
+            .comments-area.py-5
+              h2.comments-title.mb-5 3 Comments
+              ol.comment-list
+                li.comment
+                  .comment-body
+                    .comment-meta
+                      .comment-author
+                        a(href="#")
+                          img.avatar(alt="avatar", src="https://i.pravatar.cc/120?img=1")
+                    .comment-content
+                      p Nunc risus ex, tempus quis purus ac, tempor consequat ex. Vivamus sem magna, maximus at est id, maximus aliquet nunc. Suspendisse lacinia velit a eros porttitor, in interdum ante faucibus.
+                      cite
+                        a(href="#") Angela Allen 
+                        |  -      
+                      a.comment-date(href="")
+                        span March 30, 2016
+                      .reply
+                        a.comment-reply-link(href="#")
+                          i.ts-icon.la.la-share
+                          | Reply
+                  ol.children.last-comment
+                    li.comment
+                      .comment-body
+                        .comment-meta.commentmetadata
+                          .comment-author
+                            img.avatar(alt="avatar" src="https://i.pravatar.cc/120?img=2")
+                        .comment-content
+                          p
+                            | Nullam ipsum urna, dapibus sed justo sed, imperdiet malesuada commodo, eros eleifend laoreet fringilla,
+                          cite
+                            a(href="#") Angela Allen
+                          |   -      
+                          a.comment-date(href="#")
+                            span March 30, 2016
+                li.comment.last-comment
+                  .comment-body
+                    .comment-meta.commentmetadata
+                      .comment-author
+                        img.avatar(alt="" src="https://i.pravatar.cc/120?img=3")
+                    .comment-content
+                      p
+                        | Nunc risus ex, tempus quis purus ac, tempor consequat ex. Vivamus sem magna, maximus at est id, maximus aliquet nunc. Suspendisse lacinia velit a eros porttitor, in interdum ante faucibus.
+                      cite
+                        a(href="#") Angela Allen
+                      |   -      
+                      a.comment-date(href="#")
+                        span March 30, 2016
+                      .reply
+                        a.comment-reply-link(href="#")
+                          i.ts-icon.la.la-share
+                          | Reply
+            .divider-section-01
+            .comment-respond.py-5
+              h3.comment-reply-title Leave a Reply 
+              p.mb-4.fs--13
+                a.color--fb5(href="#") You must be logged in to post a comment...
+              form.comment-form(action="GET", method="post")
+                .row-g-40
+                  .col-lg-6.mb-lg-40.mb-4
+                    input#inputName.ts-input.form-control-lg(type="text", placeholder="Your Name")
+                  .col-lg-6.mb-lg-40.mb-4
+                    input#inputEmail.ts-input.form-control-lg(type="email", placeholder="Your Email")
+                .row.mb-lg-40.mb-4
+                  .col
+                    textarea.ts-input(rows="5")
+                .row
+                  .col
+                    button.ts-btn.btn-color1.btn-lg(name="submit", type="submit") Comment 
+        .col-lg-3
+          .main-sidebar
+            aside.widget.widget-text
+              h3.widget-title
+                i.ts-icon.la.la-angle-double-right.mr-1
+                | About
+              .textwidget
+                p
+                  | Nulla eleifend, sapien eget porttitor maximus, nisl ante convallis dolor, nec consequat felis ex a ex. Etiam vestibulum enim euismod dui vestibulum, vitae fringilla nibh consectetur. Integer at volutpat augue. Donec consectetur, est nec laoreet scelerisque, lacus nulla fermentum odio, ut accumsan enim ipsum a justo.
+            aside.widget.widget_search
+              form.form-inline(action="" method="get" role="search")
+                .input-group
+                  input.ts-input.border-right-0(type="search" name="s" value="" placeholder="Search …")
+                  .input-group-append
+                    button.ts-btn.btn-color1(type="submit")
+                      i.ts-icon.la.la-search
+            aside.widget.widget-catalog
+              h3.widget-title
+                i.ts-icon.la.la-angle-double-right.mr-1
+                | Categories
+              ul
+                li.cat-item
+                  a(href="#") Business Market
+                  |  (5)
+                li.cat-item
+                  a(href="#") Socials Network
+                  |  (12)
+                li.cat-item
+                  a(href="#") Team Work
+                  |  (10)
+                li.cat-item
+                  a(href="#") Product Services
+                  |  (9)
+                li.cat-item
+                  a(href="#") Socials Ecommerce
+                  |  (6)
+            aside.widget.widget-tags
+              h3.widget-title
+                i.ts-icon.la.la-angle-double-right.mr-1
+                | Tags
+              ul
+                li
+                  a(href="#") audio
+                li
+                  a(href="#") gallery
+                li
+                  a(href="#") image
+                li
+                  a(href="#") music
+                li
+                  a(href="#") photo
+                li
+                  a(href="#") quote
+                li
+                  a(href="#") text
+                li
+                  a(href="#") video
+                li
+                  a(href="#") vimeo
+                li
+                  a(href="#") youtube
+            aside.widget.widget-archive
+              h3.widget-title
+                i.ts-icon.la.la-angle-double-right.mr-1
+                | Archives
+              ul
+                li
+                  a(href="#") September 2016
+                  |  (14)
+                li
+                  a(href="#") September 2015
+                  |  (10)
+                li
+                  a(href="#") January 2013
+                  |  (5)
+                li
+                  a(href="#") March 2012
+                  |  (5)
+                li
+                  a(href="#") January 2012
+                  |  (6)
+                li
+                  a(href="#") March 2011
+                  |  (1)
+                li
+                  a(href="#") October 2010
+                  |  (1)
+            aside.widget.widget-meta
+              h3.widget-title
+                i.ts-icon.la.la-angle-double-right.mr-1
+                | Meta
+              ul
+                li
+                  a(href="#") Site Admin
+                li
+                  a(href="#") Log out
+                li
+                  a(href="#")
+                    | Entries 
+                    abbr RSS
+                li
+                  a(href="#")
+                    | Comments 
+                    abbr RSS
+                li
+                  a(href="#") WordPress.org
+  
+  +footer01
+  +control
+append plugins  
+  +lib
+append script
+  script(defer src="js/main.min.js")
+  
+

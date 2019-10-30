@@ -1,0 +1,108 @@
+extends modules/layout/layout.pug
+include modules/script/lib
+include modules/footer/footer
+include modules/control/control
+append head
+  title="Component - Grid Image"
+  link(href="css/extention/photoswipe.min.css" rel="stylesheet")
+  link(href="css/main.min.css" rel="stylesheet")
+append header
+append content
+  .container
+    .row
+      .col-lg-12
+        h4.my-3.pt-3#gridImages Grid images
+        .card.mb-3.d-block.bg-light.border-0
+          .card-body
+            .row.mb-4
+              .col-lg-6
+                h5 Grid 01
+                .grid.grid-03.pt-1.mb-4.mb-lg-0.js-photo-gallery
+                  figure.item(tabindex="1")
+                    a(href="https://picsum.photos/1200/400?random=33", data-size="1200x400")
+                      img.card-img(src="https://picsum.photos/1200/400?random=33", alt="cover")
+                    figcaption Image caption  1
+                  figure.item(tabindex="2")
+                    a(href="https://picsum.photos/1200/400?random=34", data-size="1200x400")
+                      img.card-img(src="https://picsum.photos/1200/400?random=34", alt="cover")
+                    figcaption Image caption  2
+                  figure.item(tabindex="3")
+                    a(href="https://picsum.photos/1200/400?random=35", data-size="1200x400")
+                      img.card-img(src="https://picsum.photos/1200/400?random=35", alt="cover")
+                    figcaption Image caption  3
+              .col-lg-6
+                h5 Grid 02
+                .grid.grid-01.pt-1.mb-4.mb-lg-0.js-photo-gallery
+                  figure.item(tabindex="1")
+                    a(href="https://picsum.photos/1200/400?random=12", data-size="1200x400")
+                      img.card-img(src="https://picsum.photos/1200/400?random=12", alt="cover")
+                    figcaption Image caption  1
+                  figure.item(tabindex="2")
+                    a(href="https://picsum.photos/1200/400?random=14", data-size="1200x400")
+                      img.card-img(src="https://picsum.photos/1200/400?random=14", alt="cover")
+                    figcaption Image caption  2
+                  figure.item(tabindex="3")
+                    a(href="https://picsum.photos/1200/400?random=16", data-size="1200x400")
+                      img.card-img(src="https://picsum.photos/1200/400?random=16", alt="cover")
+                    figcaption Image caption  3
+            .row
+              .col-lg-6
+                h5 Grid 03
+                .grid.grid-02.pt-1.mb-4.mb-lg-0.js-photo-gallery
+                  figure.item(tabindex="1")
+                    a(href="https://picsum.photos/1200/400?random=22", data-size="1200x400")
+                      img.card-img(src="https://picsum.photos/1200/400?random=22", alt="cover")
+                    figcaption Image caption  1
+                  figure.item(tabindex="2")
+                    a(href="https://picsum.photos/1200/400?random=23", data-size="1200x400")
+                      img.card-img(src="https://picsum.photos/1200/400?random=23", alt="cover")
+                    figcaption Image caption  2
+                  figure.item(tabindex="3")
+                    a(href="https://picsum.photos/1200/400?random=24", data-size="1200x400")
+                      img.card-img(src="https://picsum.photos/1200/400?random=24", alt="cover")
+                    figcaption Image caption  3
+
+    // Root element of PhotoSwipe. Must have class pswp.
+  .pswp(tabindex="-1" role="dialog" aria-hidden="true")
+    //
+      Background of PhotoSwipe.
+      It's a separate element, as animating opacity is faster than rgba().
+    .pswp__bg
+    // Slides wrapper with overflow:hidden.
+    .pswp__scroll-wrap
+      // Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory.
+      // don't modify these 3 pswp__item elements, data is added later on.
+      .pswp__container
+        .pswp__item
+        .pswp__item
+        .pswp__item
+      // Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed.
+      .pswp__ui.pswp__ui--hidden
+        .pswp__top-bar
+          // Controls are self-explanatory. Order can be changed.
+          .pswp__counter
+          button.pswp__button.pswp__button--close(title="Close (Esc)")
+          button.pswp__button.pswp__button--share(title="Share")
+          button.pswp__button.pswp__button--fs(title="Toggle fullscreen")
+          button.pswp__button.pswp__button--zoom(title="Zoom in/out")
+          // Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR
+          // element will get class pswp__preloader--active when preloader is running
+          .pswp__preloader
+            .pswp__preloader__icn
+              .pswp__preloader__cut
+                .pswp__preloader__donut
+        .pswp__share-modal.pswp__share-modal--hidden.pswp__single-tap
+          .pswp__share-tooltip
+        button.pswp__button.pswp__button--arrow--left(title="Previous (arrow left)")
+        button.pswp__button.pswp__button--arrow--right(title="Next (arrow right)")
+        .pswp__caption
+          .pswp__caption__center 
+  
+  +control
+append plugins  
+  +lib
+append script
+  script(src="js/extention/photoswipe.min.js")
+  script(src="js/extention/photoswipe-ui-default.min.js")
+  script(src="js/photoswipe-function.min.js")
+  script(src='js/main.min.js')

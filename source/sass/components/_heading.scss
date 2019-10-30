@@ -1,0 +1,64 @@
+//
+// Components :: Heading
+// --------------------------------------------------
+.section-title-wrap {
+  margin-bottom: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  .title {
+    font-size: 32px;
+    color: $gray20;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1;
+    position: relative;
+    display: inline-block;
+  }
+
+  a {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid;
+    transition: $transition-base;
+
+    &:hover {
+      color: color(color1, 1);
+      border-color: color(color1, 1);
+    }
+  }
+
+  &.center {
+    justify-content: center;
+
+    .title {
+      text-align: center;
+    }
+  }
+
+  &.right {
+    text-align: right;
+
+    .title {
+      &:after {
+        left: auto;
+        right: 0;
+      }
+    }
+  }
+
+  &.in-dark {
+    .title {
+      color: $white;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .title {
+      font-size: 24px;
+    }
+  }
+}

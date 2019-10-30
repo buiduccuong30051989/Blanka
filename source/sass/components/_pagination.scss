@@ -1,0 +1,38 @@
+//
+// Base :: Pagination
+// --------------------------------------------------
+.ts-pagination-01 {
+  .pagination {
+    margin: 0;
+
+    .page-item {
+      margin-right: 8px;
+
+      &.active {
+        .page-link {
+          color: $white;
+          background-color: $color4;
+        }
+      }
+
+      &:hover {
+        .page-link {
+          color: $white;
+          background-color: color(color1, .9);
+          border-color: color(color1, .9);
+        }
+      }
+    }
+
+    .page-link {
+      color: $color4;
+      border-color: $color4;
+      min-width: 40px;
+      height: 40px;
+      line-height: 24px;
+      text-align: center;
+      border-radius: 2px;
+      transition: $transition-base;
+    }
+  }
+}

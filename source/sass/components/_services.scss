@@ -1,0 +1,32 @@
+//
+// Components :: Services
+// --------------------------------------------------
+.ts-services-card-01 {
+  @extend .card;
+  border: 0;
+  background-color: transparent;
+
+  .card-cover {
+    @include aspect-ratio(16, 9, '.card-img');
+    margin-bottom: 30px;
+    overflow: hidden;
+
+    .card-img {
+      border-radius: 0;
+      @include fitImage();
+    }
+  }
+
+  .card-body {
+    padding: 0;
+
+    .services-title {
+      font-size: 18px;
+      color: $gray20;
+    }
+
+    .services-desc {
+      color: rgba($black, .6);
+    }
+  }
+}

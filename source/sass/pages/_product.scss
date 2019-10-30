@@ -1,0 +1,35 @@
+//
+// Page :: Product
+// --------------------------------------------------
+.shop-filter {
+  padding: 15px 25px;
+  background-color: $whitesmoke;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  p {
+    margin: 0;
+  }
+
+  @include media-breakpoint-down(sm) {
+    p {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.select-orderby {
+  .btn-light {
+    background-color: $gray80;
+  }
+
+  &.show {
+    .btn-light {
+      background-color: color(color1, 1);
+      color: $white;
+    }
+  }
+}

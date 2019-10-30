@@ -1,0 +1,209 @@
+//
+// Base :: Utility
+// --------------------------------------------------
+
+//
+// Generate colors social, colors theme 02, colors theme, colors gray
+// --------------------------------------------------
+@mixin color-modifiers($attribute: 'color', $prefix: '-') {
+  @each $name, $hex in $colors-social {
+    &#{$prefix}#{$name} {
+      #{$attribute}: $hex;
+    }
+  }
+
+  @each $name, $hex in $colors-gray {
+    &#{$prefix}#{$name} {
+      #{$attribute}: $hex;
+    }
+  }
+
+  @each $name, $hex in $colors-theme-02 {
+    &#{$prefix}#{$name} {
+      #{$attribute}: $hex;
+    }
+  }
+
+  @each $name, $hex in $colors-theme {
+    &#{$prefix}#{$name} {
+      #{$attribute}: color($name, 1);
+    }
+  }
+}
+
+// colors
+.color {
+  @include color-modifiers($prefix: '--');
+}
+
+$classColorFadeWhite: color--fw-;
+@for $i from 1 through 9 {
+  .#{$classColorFadeWhite}#{$i} {
+    color: rgba($white, $i/10);
+  }
+}
+
+$classColorFadeBlack: color--fb-;
+@for $i from 1 through 9 {
+  .#{$classColorFadeBlack}#{$i} {
+    color: rgba($black, $i/10);
+  }
+}
+
+// background
+.bg {
+  @include color-modifiers($attribute: 'background-color', $prefix: '--');
+}
+
+$classBackgroundFadeWhite: bg--fw-;
+@for $i from 1 through 9 {
+  .#{$classBackgroundFadeWhite}#{$i} {
+    background-color: rgba($white, $i/10);
+  }
+}
+
+$classBackgroundFadeBlack: bg--fb-;
+@for $i from 1 through 9 {
+  .#{$classBackgroundFadeBlack}#{$i} {
+    background-color: rgba($black, $i/10);
+  }
+}
+
+@mixin color-modifiers-hover-bg($attribute: 'background-color', $prefix: '--') {
+  @each $name, $hex in $colors-social {
+    &#{$prefix}#{$name}:hover {
+      #{$attribute}: $hex !important;
+    }
+  }
+}
+
+.hbg {
+  @include color-modifiers-hover-bg();
+}
+
+//
+// Generate border fade white & fade black
+// --------------------------------------------------
+$classBorderFadeWhite: bd--fw-;
+@for $i from 1 through 9 {
+  .#{$classBorderFadeWhite}#{$i} {
+    border-color: rgba($white, $i/10);
+  }
+}
+
+$classBorderFadeBlack: bd--fb-;
+@for $i from 1 through 9 {
+  .#{$classBorderFadeBlack}#{$i} {
+    border-color: rgba($black, $i/10);
+  }
+}
+
+//
+// Generate font size and convert from px to rem
+// --------------------------------------------------
+$class: fs--;
+@for $i from 8 through 48 {
+  .#{$class}#{$i} {
+    font-size: pxtorem($i);
+  }
+}
+
+//
+// Generate Grid/Column, Gutter and Margin bottom
+// --------------------------------------------------
+@each $name, $value in $gutter {
+  .row-#{$name} {
+    @extend .row;
+    margin-left: -($value/2) + px;
+    margin-right: -($value/2) + px;
+
+    [class^='col-'] {
+      padding-left: ($value/2) + px;
+      padding-right: ($value/2) + px;
+    }
+
+    .mb-#{$name} {
+      margin-bottom: $value + px;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-left: -15px;
+      margin-right: -15px;
+  
+      [class^='col-'] {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  }
+}
+
+//
+// Typo Line Height
+// --------------------------------------------------
+.lh1 {
+  line-height: $lh1;
+}
+
+.font-weight-black {
+  font-weight: 900;
+}
+
+.text-shadow-01 {
+  text-shadow: 1px 1px 1px rgba($black, 0.9);
+}
+
+.text-shadow-02 {
+  text-shadow: 1px 1px 3px rgba($black, 0.3);
+}
+
+
+// 
+// Shadow
+// --------------------------------------------------
+.shadow01 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.shadow02 {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.shadow03 {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.shadow04 {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.shadow05 {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+// 
+// Divider
+// --------------------------------------------------
+.divider-section-01 {
+  height: 1px;
+  background-color: rgba($black, 0.1);
+}
+
+// 
+// Images
+// --------------------------------------------------
+.dim-image {
+  filter:grayscale(100%);
+}
+
+.free-size {
+  & > .card-cover {
+    &:before {
+      display: none!important;
+    }
+
+    & > .card-img {
+      position: static!important;
+    }
+  }
+}

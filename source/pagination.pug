@@ -1,0 +1,48 @@
+extends modules/layout/layout.pug
+include modules/script/lib
+include modules/header_mixin/header_mixin
+include modules/testimonial/testimonial
+include modules/control/control
+append head
+  title="Component - Pagination"
+  link(href="css/main.min.css" rel="stylesheet")
+append header
+append content
+  .bg--gray60.py-7
+    .container
+      .card.mb-3.d-block.bg-light.border-0
+        .card-body
+          .row
+            .col-lg-7
+              nav.ts-pagination-01(aria-label="Page navigation example")
+                ul.pagination
+                  li.page-item
+                    a.page-link(href="#")
+                      i.ts-icon.la.la-angle-double-left
+                  li.page-item.active
+                    a.page-link(href="#") 1
+                  li.page-item
+                    a.page-link(href="#") 2
+                  li.page-item
+                    a.page-link(href="#") 3
+                  li.page-item
+                    a.page-link(href="#") ...
+                  li.page-item
+                    a.page-link(href="#") 25
+                  li.page-item
+                    a.page-link(href="#")
+                      i.ts-icon.la.la-angle-double-right
+  +control
+append plugins  
+  +lib
+append script
+  script(src="js/main.min.js")
+  
+  
+  
+    
+
+    
+
+
+  

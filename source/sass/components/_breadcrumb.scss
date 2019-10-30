@@ -1,0 +1,25 @@
+//
+// Components :: Breadcrumb
+// --------------------------------------------------
+.ts-breadcrumb-01 {
+  @extend .breadcrumb;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: transparent;
+  margin-bottom: 0;
+
+  .breadcrumb-item {
+    a {
+      color: $gray40;
+
+      &:hover {
+        text-decoration: none;
+        color: color(color3, 1);
+      }
+    }
+
+    &.active {
+      color: $gray60;
+    }
+  }
+}

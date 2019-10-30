@@ -1,0 +1,47 @@
+//
+// Base :: Global
+// --------------------------------------------------
+body {
+  font-family: $lato;
+  color: $gray40;
+  font-size: 15px;
+  line-height: 1.6;
+
+  @include media-breakpoint-down(md) {
+    font-size: 14px;
+  }
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.in-dark {
+  color: $white;
+}
+
+.in-light {
+  color: $gray20;
+}
+
+#to-the-top {
+  display: none;
+  position: fixed;
+  text-align: center;
+  right: 30px;
+  bottom: 30px;
+  color: $white;
+  cursor: pointer;
+  border-radius: 2px;
+  z-index: 10000;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  background-color: rgba($black, 0.4);
+  transition: background-color 0.1s linear;
+
+  &:hover {
+    background-color: color(color1, 1);
+  }
+}
+

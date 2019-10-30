@@ -1,0 +1,125 @@
+mixin blog01
+  .ts-blog-card-01.rounded-0.border-0.shadow-sm
+    .card-cover
+      a(href="/")
+        img.card-img.rounded-0(src="https://picsum.photos/740/444?random=10", alt="demo")
+    .card-body.pb-0
+      h4.card-title.mb-1
+        a(href="/") Free size cover image
+      .card-meta.mb-3
+        small.text-muted.d-inline-flex.align-items-center.lh1.pr-3
+          i.ts-icon.la.la-user.pr-1.fs--16
+          a(href="/") John Doe
+        small.text-muted.d-inline-flex.align-items-center.lh1
+          i.ts-icon.la.la-tags.pr-1.fs--16
+          a(href="/") Food 
+          span.seperator.pr-1 ,    
+          a(href="/") Recipe 
+          span.seperator.pr-1 ,
+          a(href="/") Cooking
+      p.card-desc Donec pharetra tempus turpis, vitae fringilla magna dictum vel. Cras quis orci quis sem faucibus auctor sed eget diam.
+    .card-footer.d-flex.justify-content-between.bg-transparent.border-top-0
+      small.text-muted.d-inline-flex.align-items-center.lh1
+        i.ts-icon.la.la-clock-o.pr-1.fs--16
+        span Oct 20, 12:45PM
+      small.text-muted
+        span.pr-2.d-inline-flex.align-items-center.lh1
+          i.ts-icon.la.la-eye.pr-1.fs--16
+          | 123
+        span.d-inline-flex.align-items-center.lh1
+          i.ts-icon.la.la-comments-o.pr-1.fs--16
+          | 13
+
+mixin blog02
+  .ts-blog-card-02
+    .card-cover
+      .card-date
+        .card-day 27
+        .card-month Mar
+      img.card-img(src='https://picsum.photos/400?random=6')
+    .card-body
+      .card-category Photos
+      h1.card-title City Lights in New York
+      h2.card-sub-title The city that never sleeps.
+      p.card-description New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.
+      .card-meta
+        span.card-timestamp
+          i.ts-icon.la.la-clock-o
+          |  6 mins ago
+        span.card-comments
+          i.ts-icon.la.la-comments
+          a(href='#')  39 comments
+
+mixin blog03(cover, title, desc, cat, time)
+  .ts-blog-card-03
+    .card-cover
+      img.card-img(src=cover, alt='cover')
+    .card-body
+      h3.title 
+        a(href="blog_detail.html")=title
+      p.desc=desc
+      .card-footer
+        .catalog
+          each val in cat
+            a.color--color1(href="blog_detail.html")=val
+        .time
+          span=time
+
+mixin blog04(cover, title, desc, cat, time)
+  .ts-blog-card-04
+    .card-cover
+      img.card-img(src=cover, alt="cover")
+    .card-body
+      h3.title 
+        a(href="#")=title
+      p.desc=desc
+      .card-footer
+        .catalog
+          each val in cat
+            a.color--color1(href="blog_detail.html")=val
+        .time
+          span=time
+
+mixin blog05(cover, title, desc, cat, time)
+  .ts-blog-card-05
+    .card-cover
+      img.card-img(alt="cover", src=cover)
+    .card-body
+      h3.title 
+        a(href="blog_detail.html")=title
+      .card-footer
+        .catalog
+          each val in cat
+            a.color--color1(href="blog_detail.html")=val
+        .time
+          span=time
+      p.desc=desc
+      //- a(href="blog_detail.html").btn-link.color--color1 Continue Reading
+
+mixin blog06(cover, title, desc, cat, time)
+  .ts-blog-card-06
+    .card-cover
+      img.card-img(src=cover, alt='cover')
+    .card-body
+      .card-body-inner
+        h4.title 
+          a(href="blog_detail.html")=title
+        p.desc=desc
+        a.read-more(href="blog_detail.html") Continue Reading
+        .meta
+          span.category 
+            i.ts-icon.la.la-tags.mr-2.fs--22
+            each val in cat
+              a(href="blog_detail.html")=val
+          span.time=time
+
+mixin blog08(cover, title, time)
+  .ts-blog-card-widget-01.in-dark
+    .ts-blog-card-cover
+      a(href="blog_detail.html")
+        img(src=cover, alt="cover")
+    .ts-blog-card-content
+      h4.ts-blog-card-title 
+        a(href="blog_detail.html")=title
+      .ts-blog-card-meta
+        span.time=time

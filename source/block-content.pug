@@ -1,0 +1,92 @@
+extends modules/layout/layout.pug
+include modules/script/lib
+include modules/header_mixin/header_mixin
+include modules/testimonial/testimonial
+include modules/control/control
+append head
+  title="Component - Block Content"
+  link(href="css/main.min.css" rel="stylesheet")
+append header
+append content
+  .bg--gray60.py-7
+    .container
+      .card.mb-3.d-block.bg-light.border-0
+        .card-body
+          .row
+            .col-lg-7
+              .widget-opening-hours.in-light.p-4
+                ul
+                  li
+                    span Client :
+                    span Company
+                  li 
+                    span Date :
+                    span December 11, 2016
+                  li 
+                    span Location :
+                    span Central Street, San Francisco
+                  li 
+                    span Value :
+                    span $350,000
+                  li
+                    span Services :
+                    span Web Design, Web Development
+                  li
+                    span Adviser :
+                    span Sean Rogers & Rachel Peters
+                  li
+                    span Website :
+                    span
+                      a(href="#") www.loremipsum.com
+                        i.ts-icon.la.la-external-link.fs--18.ml-1
+
+      .card.mb-3.d-block.bg-dark.border-0
+        .card-body
+          .row.mb-4
+            .col-lg-12
+              .d-flex.justify-content-center
+                .block-caption-03.mx-auto.text-center.color--white
+                  h2.color--white(data-animation-in="fadeInUp2", data-animation-delay=".3s") Engaged Leadership
+                  p.color--fw9(data-animation-in="fadeInUp2", data-animation-delay=".5s") Involving experienced leaders who roll up their sleeves on every project.
+                  .d-flex.justify-content-center(data-animation-in="fadeInUp2", data-animation-delay=".8s")
+                    a(href="services_01.html").ts-btn.btn-outline-light.btn-lg.mx-lg-3.mx-1 Our Services
+                    a(href="#").ts-btn.btn-success.btn-lg.mx-lg-3.mx-1 Get A Call Back
+
+      .card.mb-3.d-block.bg-dark.border-0
+        .card-body
+          .row.mb-4
+            .col-lg-12
+              .d-flex.justify-content-center
+                .block-caption-01.mx-auto.text-center.color--white
+                  h4.color--fw9(data-animation-in="fadeInUp2", data-animation-delay=".3s" ) WE HELP YOU TO
+                  h2.color--white(data-animation-in="fadeInUp2", data-animation-delay=".5s") GROW YOUR BUSINESS
+                  p.color--fw9(data-animation-in="fadeInUp2", data-animation-delay=".8s") Involving experienced leaders who roll up their sleeves on every project.
+                  .d-flex.justify-content-center(data-animation-in="fadeInUp2", data-animation-delay="1s")
+                    a(href="#").ts-btn.btn-outline-light.btn-lg.mx-3.mx-1 Learn More
+                    a(href="#").ts-btn.btn-color1.btn-lg.mx-lg-3.mx-1 Get A Quote
+
+      .card.mb-3.d-block.bg-dark.border-0
+        .card-body
+          .row.mb-4
+            .col-lg-12
+              .d-flex.justify-content-center
+                .block-caption-02.mx-auto.text-center.color--white
+                  h4.color--fw9(data-animation-in="fadeInUp2", data-animation-delay="0") Finance Services
+                  h2.color--white(data-animation-in="fadeInUp2", data-animation-delay=".7s") Your customer are your greatest asset
+                  h3.color--fw9.text-uppercase(data-animation-in="fadeInUp2", data-animation-delay=".9s") Invest in their identity
+                  a.ts-btn.btn-success.btn-lg(href="#", data-animation-in="fadeInUp2", data-animation-delay="1.2s") Get A Quote
+
+  +control
+append plugins  
+  +lib
+append script
+  script(src="js/main.min.js")
+  
+  
+  
+    
+
+    
+
+
+  

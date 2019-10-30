@@ -1,0 +1,28 @@
+mixin product01(cover)
+  .product-item
+    figure
+      img(alt="product name", src=cover)
+    .product-detail
+      .left
+        h3
+          a(href="shop_detail.html") Wood Chair
+        span.price
+          span.amount £250
+      .right
+        a(href="#")
+          i.ts-icon.la.la-shopping-cart.fs--42
+
+mixin product02(cover)
+  .ts-product-card-widget
+    .card-cover
+      img.card-img(src=cover, alt="cover")
+    .card-body
+      h5.product-title 
+        a(href="#") Good to Great
+      .rating-list-01
+        i.ts-icon.la.la-star
+        i.ts-icon.la.la-star
+        i.ts-icon.la.la-star
+        i.disabled.ts-icon.la.la-star-o
+        i.disabled.ts-icon.la.la-star-o
+      span.product-amount £ 9.00

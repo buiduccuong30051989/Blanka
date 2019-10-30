@@ -1,0 +1,316 @@
+// Abstracts :: Variables
+// --------------------------------------------------
+
+/// Colors
+/// -------------------------------------------------
+
+/// Themes Color
+/// -------------------------------------------------
+$red: #f44336;
+$pink: #e91e63;
+$purple: #9c27b0;
+$deepPurple: #673ab7;
+$indigo: #3f51b5;
+$blue: #2196f3;
+$cyan: #00bcd4;
+$teal: #009688;
+$green: #4caf50;
+$lightGreen: #8bc34a;
+$lime: #cddc39;
+$yellow: #fde428;
+$amber: #ffc107;
+$orange: #ff9800;
+$deepOrange: #ff5722;
+$brown: #795548;
+$grey: #9e9e9e;
+// $color1: #1f5ca9;
+$color1: #002e5b;
+$color2: #fde428;
+$color3: darken(desaturate(adjust-hue($color1, 5), 14.53), 15.1);
+$color4: #2e363a;
+$color5: #0c1223;
+$dynamicColor: #ffffff;
+
+/// shades of grey
+/// -------------------------------------------------
+$black: #000000;
+$black1: #1e1f21;
+$gray1: #030303;
+$gray2: #050505;
+$gray3: #080808;
+$gray4: #0a0a0a;
+$gray5: #0d0d0d;
+$gray6: #0f0f0f;
+$gray7: #121212;
+$gray8: #141414;
+$gray9: #171717;
+$gray10: #1a1a1a;
+$gray11: #1c1c1c;
+$gray12: #1f1f1f;
+$gray13: #212121;
+$gray14: #242424;
+$gray15: #262626;
+$gray16: #292929;
+$gray17: #2b2b2b;
+$gray18: #2e2e2e;
+$gray19: #303030;
+$gray20: #333333;
+$gray21: #363636;
+$gray22: #383838;
+$gray23: #3b3b3b;
+$gray24: #3d3d3d;
+$gray25: #404040;
+$gray26: #424242;
+$gray27: #454545;
+$gray28: #474747;
+$gray29: #4a4a4a;
+$gray30: #4d4d4d;
+$gray31: #4f4f4f;
+$gray32: #525252;
+$gray33: #555555;
+$gray34: #575757;
+$gray35: #595959;
+$gray36: #5c5c5c;
+$gray37: #5e5e5e;
+$gray38: #616161;
+$gray39: #636363;
+$gray40: #666666;
+$dimgray: #696969;
+$gray42: #6b6b6b;
+$gray43: #6e6e6e;
+$gray44: #707070;
+$gray45: #737373;
+$gray46: #757575;
+$gray47: #787878;
+$gray48: #7a7a7a;
+$gray49: #7d7d7d;
+$gray50: #7f7f7f;
+$gray: #808080;
+$gray51: #828282;
+$gray52: #858585;
+$gray53: #878787;
+$gray54: #8a8a8a;
+$gray55: #8c8c8c;
+$gray56: #8f8f8f;
+$gray57: #919191;
+$gray58: #949494;
+$gray59: #969696;
+$gray60: #999999;
+$gray61: #9c9c9c;
+$gray62: #9e9e9e;
+$gray63: #a1a1a1;
+$gray64: #a3a3a3;
+$gray65: #a6a6a6;
+$gray66: #a8a8a8;
+$darkgray: #a9a9a9;
+$gray67: #ababab;
+$sgilight: #aaaaaa;
+$gray68: #adadad;
+$gray69: #b0b0b0;
+$gray70: #b3b3b3;
+$gray71: #b5b5b5;
+$gray72: #b8b8b8;
+$gray73: #bababa;
+$gray74: #bdbdbd;
+$silver: #c0c0c0;
+$graylight: #bebebe;
+$gray75: #bfbfbf;
+$gray76: #c2c2c2;
+$gray77: #c4c4c4;
+$gray78: #c7c7c7;
+$gray79: #c9c9c9;
+$verylight: #cdcdcd;
+$gray80: #cccccc;
+$gray81: #cfcfcf;
+$gray82: #d1d1d1;
+$gray83: #d4d4d4;
+$lightgray: #d3d3d3;
+$gray84: #d6d6d6;
+$gray85: #d9d9d9;
+$gainsboro: #dcdcdc;
+$gray86: #dbdbdb;
+$gray87: #dedede;
+$gray88: #e0e0e0;
+$gray89: #e3e3e3;
+$gray90: #e5e5e5;
+$gray91: #e8e8e8;
+$gray92: #ebebeb;
+$gray93: #ededed;
+$gray94: #f0f0f0;
+$gray95: #f2f2f2;
+$whitesmoke: #f8f8f8;
+$gray97: #f7f7f7;
+$gray98: #fafafa;
+$gray99: #fcfcfc;
+$white: #ffffff;
+
+/// Social Color
+/// -------------------------------------------------
+$facebook: #1877f2;
+$facebookold: #3b5998;
+$twitter: #1da1f2;
+$youtube: #ff0000;
+$instagram: #f77737;
+$googleblue: #4285f4;
+$googlered: #ea4335;
+$googleyellow: #fbbc05;
+$googlegreen: #34a853;
+$pinterest: #bd081c;
+$googleplus: #db4437;
+$linkedin: #007bb5;
+$vimeoblue: #1ab7ea;
+$tumblr: #2c4762;
+$snapchat: #fffc00;
+$whatsappgreen: #25d366;
+$whatsappteal1: #075e54;
+$whatsappteal2: #128c7e;
+$mastodon: #2b90d9;
+$apple: #a6b1b7;
+$amazon: #ff9900;
+$microsoftred: #f35022;
+$microsoftgreen: #80bb03;
+$microsoftblue: #03a5f0;
+$microsoftyellow: #ffb903;
+$periscope: #40a4c4;
+$foursquarepink: #f94877;
+$foursquarenavy: #073282;
+$foursquareblue: #2d5be3;
+$swarm: #ffa633;
+$medium: #02b875;
+$skypeblue: #00aff0;
+$skypedkblue: #0078d7;
+$android: #a4c639;
+$stumbleupon: #e94826;
+$flickrpink: #f40083;
+$flickrblue: #006add;
+$yahoo: #430297;
+$twitch: #6441a4;
+$soundcloud: #ff5500;
+$spotifygreen: #1ed760;
+$spotifydarkgreen: #1db954;
+$dribbble: #ea4c89;
+$slackpurple: #4a154b;
+$slackblue: #36c5f0;
+$slackgreen: #2eb67d;
+$slackred: #e01e5a;
+$slackyellow: #ecb22e;
+$reddit: #ff5700;
+$deviantart: #05cc47;
+$pocket: #ee4056;
+$quora: #aa2200;
+$quorablue: #2b6dad;
+$slideshareorange: #e68523;
+$slideshareblue: #00a0dc;
+$fivehundredpx: #0099e5;
+$vk: #4a76a8;
+$listlyorange: #df6d46;
+$listlyblue: #52b1b3;
+$vine: #00b489;
+$steam: #171a21;
+$discord: #7289da;
+$telegram: #0088cc;
+$clarity: #61bed9;
+
+/// Map color
+/// -------------------------------------------------
+$colors-gray: (
+  black: $black,
+  gray20: $gray20,
+  gray40: $gray40,
+  dimgray: $dimgray,
+  gray: $gray,
+  darkgray: $darkgray,
+  sgilight: $sgilight,
+  silver: $silver,
+  graylight: $graylight,
+  verylight: $verylight,
+  lightgray: $lightgray,
+  gainsboro: $gainsboro,
+  whitesmoke: $whitesmoke,
+  white: $white
+);
+
+$colors-theme: (
+  color1: $color1,
+  dynamicColor: $dynamicColor
+);
+
+$colors-theme-02: (
+  'red': $red,
+  'pink': $pink,
+  'purple': $purple,
+  'deepPurple': $deepPurple,
+  'indigo': $indigo,
+  'blue': $blue,
+  'cyan': $cyan,
+  'teal': $teal,
+  'green': $green,
+  'lightGreen': $lightGreen,
+  'lime': $lime,
+  'yellow': $yellow,
+  'amber': $amber,
+  'orange': $orange,
+  'deepOrange': $deepOrange,
+  'brown': $brown,
+  'grey': $grey
+);
+
+$colors-social: (
+  facebook: $facebook,
+  twitter: $twitter,
+  youtube: $youtube,
+  instagram: $instagram,
+  pinterest: $pinterest,
+  googleplus: $googleplus,
+  linkedin: $linkedin,
+  vimeoblue: $vimeoblue,
+  tumblr: $tumblr,
+  snapchat: $snapchat,
+  whatsappgreen: $whatsappgreen,
+  skypeblue: $skypeblue,
+  flickrpink: $flickrpink,
+  twitch: $twitch,
+  soundcloud: $soundcloud,
+  spotifygreen: $spotifygreen,
+  dribbble: $dribbble,
+  slackyellow: $slackyellow,
+  reddit: $reddit,
+  quora: $quora,
+  telegram: $telegram
+);
+
+/// Typography
+/// -------------------------------------------------
+
+/// Line Height
+/// -------------------------------------------------
+$lh1: 1;
+
+/// Font Family
+/// -------------------------------------------------
+$openSans: 'Open Sans', sans-serif;
+$lineAwesome: 'lineAwesome';
+// $fontawesome: 'FontAwesome';
+// $poppinsFont: 'Poppins', sans-serif;
+$lato: 'Lato', sans-serif;
+
+/// Transitions
+/// -------------------------------------------------
+
+/// Boder radius
+/// -------------------------------------------------
+$border_radius_base: 4px !default;
+$border_radius_medium: 8px !default;
+$border_radius_large: 12px !default;
+
+/// Paths
+/// -------------------------------------------------
+
+/// Gutter
+/// -------------------------------------------------
+$gutter: (
+  g-10: 10,
+  g-20: 20,
+  g-40: 40,
+  g-50: 50
+);

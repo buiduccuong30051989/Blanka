@@ -1,0 +1,26 @@
+mixin testimonial01(avatar, desc, name, title)
+  .ts-testimonial-01
+    .testimonial-content
+      p.desc=desc
+    .testimonial-info
+      .testimonial-avatar
+        img.img-card(src=avatar, alt='cover')
+      .testimonial-detail
+        h4.name=name
+        span.title=title
+
+mixin testimonial03(desc, name, title)
+  .ts-testimonial-03
+    blockquote.blockquote.ts-blockquote-02.in-dark
+      p=('"' + desc + '"')
+      footer.blockquote-footer=name
+        | - 
+        cite(title="Source Title")=title
+
+mixin testimonial02(desc, name, title)
+  .ts-testimonial-01
+    .testimonial-content
+      p.desc.mb-0=desc
+    .testimonial-meta.mb-4
+      h4.testimonial-meta-name=name
+      span.testimonial-meta-title=title

@@ -1,0 +1,53 @@
+extends modules/layout/layout.pug
+include modules/script/lib
+include modules/header_mixin/header_mixin
+include modules/team/team
+include modules/control/control
+append head
+  title="Component - Project Card"
+  link(href="css/main.min.css" rel="stylesheet")
+append header
+append content
+  .bg--gray60.py-7
+    .container
+      .card.mb-3.d-block.bg-light.border-0
+        .card-body
+          .row
+            .col-lg-7
+              +team06("images/team-02.jpg", 'Team Card 01', 'Operations Manager')
+      
+      .card.mb-3.d-block.bg-light.border-0
+        .card-body
+          .row
+            .col-lg-7
+              +team05("images/team-04.jpg", 'Team Card 02', 'Operations Manager')
+      
+      .card.mb-3.d-block.bg-light.border-0
+        .card-body
+          .row
+            .col-lg-7
+              .ts-team-card-02
+                .card-cover
+                  img.card-img(src='https://i.pravatar.cc/600?img=11', alt="avatar")
+                .card-body
+                  h4.team-card-name Adam Larson
+                  p.team-card-title Developer
+                  p.team-card-phone
+                    a(href="tel:18604193333") 1860-419-3333
+                  p.team-card-desc Fusce lorem risus, congue a ligula ut, lacinia ultricies ligula. Class aptent taciti sociosqu ad litora torquent.
+                .card-footer
+                  .social-list-01.in-light
+                    a(href="#")
+                      i.ts-icon.la.la-facebook
+                    a(href="#")
+                      i.ts-icon.la.la-twitter
+                    a(href="#")
+                      i.ts-icon.la.la-linkedin
+                  a(href="team_detail.html")
+                    i.ts-icon.la.la-angle-right
+
+  +control
+append plugins  
+  +lib
+append script
+  script(src="js/main.min.js")

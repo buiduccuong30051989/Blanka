@@ -1,0 +1,92 @@
+//
+// Components :: Counter
+// --------------------------------------------------
+.counter-up-01 {
+  font-size: 70px;
+  font-weight: 300;
+  font-family: $lato;
+  text-align: center;
+  padding: 0 30px;
+  min-width: 215px;
+
+  .counter {
+    line-height: 1;
+    margin-bottom: 20px;
+    color: $gray20;
+
+    &:after {
+      content: attr(data-content);
+      font-size: pxtorem(40);
+    }
+  }
+
+  .desc {
+    font-size: pxtorem(13);
+    display: block;
+  }
+
+  @include media-breakpoint-down(md) {
+    min-width: auto;
+    padding: 0 15px;
+    font-size: 42px;
+  }
+}
+
+.counter-up-02 {
+  display: flex;
+  line-height: 1;
+  align-items: center;
+
+  .counter {
+    font-size: 48px;
+    font-weight: 300;
+    color: $gray20;
+  }
+
+  .content {
+    padding-left: 10px;
+
+    span {
+      @extend .color--fb-6;
+      text-transform: uppercase;
+      font-weight: 300;
+      padding-bottom: 5px;
+      padding-top: 5px;
+      display: block;
+      font-size: 12px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    .counter {
+      font-size: 36px;
+    }
+
+    .content {
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    .counter {
+      font-size: 24px;
+    }
+
+    .content {
+      span {
+        font-size: 13px;
+      }
+      p {
+        font-size: 13px;
+      }
+    }
+  }
+}

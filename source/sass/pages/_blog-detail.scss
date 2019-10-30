@@ -1,0 +1,119 @@
+//
+// Components :: Blog Detail
+// --------------------------------------------------
+.blog-detail {
+  padding-right: 30px;
+  border-right: 1px solid rgba($black, 0.1);
+
+  &__title {
+    font-size: pxtorem(30);
+  }
+
+  &__meta-top {
+    display: flex;
+    font-size: 13px;
+    margin-bottom: 35px;
+
+    .catalog {
+      margin-right: 30px;
+
+      a {
+        text-transform: uppercase;
+        transition: $transition-base;
+
+        &:hover {
+          color: color(color3, 1);
+        }
+      }
+    }
+
+    .time {
+      color: $gray60;
+    }
+  }
+
+  &__cover {
+  }
+
+  &__meta-bottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: pxtorem(13);
+    color: $gray60;
+
+    a {
+      text-transform: uppercase;
+      transition: $transition-base;
+
+      &:hover {
+        color: color(color3, 1);
+      }
+    }
+  }
+
+  &__control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: pxtorem(13);
+
+    h5 {
+      font-size: 1rem;
+      margin: 0;
+      padding-top: 5px;
+    }
+
+    .item {
+      transition: $transition-base;
+      color: $gray60;
+
+      &:hover {
+        color: color(color1, 1);
+        text-decoration: none;
+
+        h5 {
+          color: color(color1, 1);
+        }
+      }
+    }
+
+    .ts-btn {
+      min-width: 150px;
+      height: 100%;
+      margin: 0 15px;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    border-right: 0;
+    border-bottom: 1px solid rgba($black, 0.1);
+    margin-bottom: 30px;
+    padding-right: 0;
+  }
+
+  @include media-breakpoint-down(sm) {
+    &__meta-bottom {
+      display: block;
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    &__control {
+      font-size: pxtorem(13);
+
+      .item {
+        width: 30%;
+      }
+  
+      h5 {
+        font-size: 13px;
+      }
+  
+      .ts-btn {
+        min-width: 100px;
+        height: 100%;
+        margin: 0 8px;
+      }
+    }
+  }
+}

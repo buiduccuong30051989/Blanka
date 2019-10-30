@@ -1,0 +1,307 @@
+include ../navigation/navigation
+
+mixin popupSearch
+  i.control-icon.ts-icon.la.la-search
+  .search-popup.js-search-popup
+    .search-popup__logo
+      img(src="images/logo-dark.png" alt="Logo")
+    button.js-search-popup-close.search-popup__close-btn
+      i.ts-icon.la.la-remove
+    form.search-popup__search-form(method="get")
+      input.form-control(name="q" type="search" placeholder="Search...")
+      span.text-muted Start typing & press "Enter" to search
+
+mixin selectLanguage
+  select.js-select.language-select(data-width="fit")
+    option(data-content="<img src='images/united-kingdom.png'/>English") English
+    option(data-content="<img src='images/germany.png'/>Germany") Germany
+    option(data-content="<img src='images/russia.png'/>Russia") Russia
+
+mixin selectDiscuss(type)
+  select.js-select.consultant-select(title="I would like to discuss:", class=type)
+    option(data-content="<div class='option-select-team'><i class='ts-icon la la-comments'></i><div class='content'><h5 class='name'>Accounting Advisory</h5></div></div>") Accounting Advisory
+    option(data-content="<div class='option-select-team'><i class='ts-icon la la-cogs'></i><div class='content'><h5 class='name'>Finance Operations</h5></div></div>") Finance Operations
+    option(data-content="<div class='option-select-team'><i class='ts-icon la la-diamond'></i><div class='content'><h5 class='name'>Funds Management</h5></div></div>") Funds Management
+    option(data-content="<div class='option-select-team'><i class='ts-icon la la-clipboard'></i><div class='content'><h5 class='name'>Tax Consultant</h5></div></div>") Tax Consultant
+    option(data-content="<div class='option-select-team'><i class='ts-icon la la-money'></i><div class='content'><h5 class='name'>Financial Investment</h5></div></div>") Financial Investment
+    option(data-content="<div class='option-select-team'><i class='ts-icon la la-shield'></i><div class='content'><h5 class='name'>Finance Insurance</h5></div></div>") Finance Insurance
+    option(data-content="<div class='option-select-team'><i class='ts-icon la la-question-circle'></i><div class='content'><h5 class='name'>OTHER...</h5></div></div>") OTHER...
+
+mixin cart
+  a.dropdown-toggle(href="#" data-toggle="dropdown")
+    i.control-icon.ts-icon.la.la-shopping-cart
+      span.ts-notify.badge 3
+  .dropdown-menu.dropdown-menu-right.popup-cart(x-placement="bottom-end")
+    .popup-cart-product
+      .ts-product-card-03
+        .card-cover
+          img.card-img(alt="cover", src="https://picsum.photos/90/60?random=10")
+        .card-body
+          .product-info
+            h5.card-title
+              a(href="#") Bed Wood
+            span.quantity 1 ×
+            span.amount £ 450
+          .actions
+            a.remove(href="#")
+              i.ts-icon.la.la-trash-o
+      .ts-product-card-03
+        .card-cover
+          img.card-img(alt="cover", src="https://picsum.photos/90/60?random=12")
+        .card-body
+          .product-info
+            h5.card-title
+              a(href="#") Bed Wood
+            span.quantity 1 ×
+            span.amount £ 450
+          .actions
+            a.remove(href="#")
+              i.ts-icon.la.la-trash-o
+      .ts-product-card-03
+        .card-cover
+          img.card-img(alt="cover", src="https://picsum.photos/90/60?random=14")
+        .card-body
+          .product-info
+            h5.card-title
+              a(href="#") Bed Wood
+            span.quantity 1 ×
+            span.amount £ 450
+          .actions
+            a.remove(href="#")
+              i.ts-icon.la.la-trash-o
+    .popup-cart-footer
+      .popup-cart-total.text-right.py-3.mb-4
+        strong Subtotal : 
+        span.amount  £ 2,150
+      .d-flex.justify-content-between
+        a.ts-btn.btn-color1(href="shop_cart.html") View Cart
+        a.ts-btn.btn-success(href="shop_checkout.html") Checkout
+
+mixin socialList
+  a.pr-2(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="facebook")
+    i.ts-icon.la.la-facebook
+  a.pr-2(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="twitter")
+    i.ts-icon.la.la-twitter
+  a.pr-2(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="linkedin")
+    i.ts-icon.la.la-linkedin
+  a(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="pinterest")
+    i.ts-icon.la.la-pinterest
+
+mixin tsSocialList01
+  a(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="facebook")
+    i.ts-icon.la.la-facebook
+  a(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="twitter")
+    i.ts-icon.la.la-twitter
+  a(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="linkedin")
+    i.ts-icon.la.la-linkedin
+  a(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="pinterest")
+    i.ts-icon.la.la-pinterest
+
+mixin socialList02
+  a.square.bg--fw1.in-dark(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="facebook")
+    i.ts-icon.la.la-facebook
+  a.square.bg--fw1.in-dark(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="twitter")
+    i.ts-icon.la.la-twitter
+  a.square.bg--fw1.in-dark(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="linkedin")
+    i.ts-icon.la.la-linkedin
+  a.square.bg--fw1.in-dark(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="pinterest")
+    i.ts-icon.la.la-pinterest
+
+mixin boxInfo01(i)
+  a(href="tel:18604193333").item.d-inline-flex.align-items-stretch
+    .ts-box-square-01.mr-2.bd--fw5.color--white
+      i.ts-icon.la.la-phone
+    .content.d-flex.flex-column.justify-content-between.py-1
+      span Call us now
+      span 1860-419-3331
+  a(href="mailto:contact@ananci.com").item.d-inline-flex.align-items-stretch
+    .ts-box-square-01.mr-2.bd--fw5.color--white
+      i.ts-icon.la.la-envelope
+    .content.d-flex.flex-column.justify-content-between.py-1
+      span Email Us
+      span consultant@ananci.com
+  if i=3
+  .item.d-inline-flex.align-items-stretch
+    .ts-box-square-01.mr-2.bd--fw5.color--white
+      i.ts-icon.la.la-map-marker
+    .content.d-flex.flex-column.justify-content-between.py-1
+      span Find Us
+      span North cost, USA
+
+mixin boxInfo02
+  .item.mr-4
+    .ts-box-square-01.mr-2.bd--fw5.color--white
+      i.ts-icon.la.la-phone
+    .content.d-flex.flex-column.justify-content-between.py-1
+      a(href="tel:18604193333") 
+        strong 1860-419-3331
+      a(href="mailto:contact@ananci.com") consultant@ananci.com
+  .item.mr-4
+    .ts-box-square-01.mr-2.bd--fw5.color--white
+      i.ts-icon.la.la-map-marker
+    .content.d-flex.flex-column.justify-content-between.py-1
+      strong 8th floor, 379 Hudson St
+      span New York, NY 10018
+  .item.mr-4
+    .ts-box-square-01.mr-2.bd--fw5.color--white
+      i.ts-icon.la.la-clock-o
+    .content.d-flex.flex-column.justify-content-between.py-1
+      strong 07:30 am – 06:00 pm
+      span  Every Day
+
+mixin boxInfo05
+  a(href="tel:18604193333").item.d-inline-flex
+    .ts-box-square-01.mr-2.bd--fb2.color--gray40
+      i.ts-icon.la.la-phone
+    .content.d-flex.flex-column.justify-content-between.py-1
+      span.d-block Call us now
+      span 1860-419-3331
+  a(href="mailto:contact@ananci.com").item.d-inline-flex
+    .ts-box-square-01.mr-2.bd--fb2.color--gray40
+      i.ts-icon.la.la-envelope
+    .content.d-flex.flex-column.justify-content-between.py-1
+      span.d-block Email Us
+      span consultant@ananci.com
+  .item.d-inline-flex
+    .ts-box-square-01.mr-2.bd--fb2.color--gray40
+      i.ts-icon.la.la-map-marker
+    .content.d-flex.flex-column.justify-content-between.py-1
+      span.d-block Find Us
+      span  North cost, USA
+
+mixin partner
+  .carousel.arrows-square.arrows-dark(
+    data-items="5" 
+    data-items-md="4" 
+    data-items-sm="2" 
+    data-items-xs="1" 
+    data-margin="20"
+    data-dots="false"
+    data-arrows="true" 
+    data-autoplay="true" 
+    data-autoplay-timeout="3000" 
+    data-loop="true")
+    .item
+      .border
+        a(href="#")
+          img(src="images/partner-logo-01.svg", alt='cover')
+    .item
+      .border
+        a(href="#")
+          img(src="images/partner-logo-02.svg", alt='cover')
+    .item
+      .border
+        a(href="#")
+          img(src="images/partner-logo-03.svg", alt='cover')
+    .item
+      .border
+        a(href="#")
+          img(src="images/partner-logo-04.svg", alt='cover')
+    .item
+      .border
+        a(href="#")
+          img(src="images/partner-logo-05.svg", alt='cover')
+
+mixin groupText
+  .row-g-40
+    .col-lg-4.mb-3.mb-lg-0
+      h4.fs--18.color--gray20 Knowledge
+      p.mb-0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id lectus quis dui euismod consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id lectus quis dui euismod consectetur.
+    .col-lg-4.mb-3.mb-lg-0
+      h4.fs--18.color--gray20 Independence
+      p.mb-0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id lectus quis dui euismod consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id lectus quis dui euismod consectetur.
+    .col-lg-4.mb-3.mb-lg-0
+      h4.fs--18.color--gray20 Expertise
+      p.mb-0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id lectus quis dui euismod consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id lectus quis dui euismod consectetur.
+
+mixin counter01
+  .d-flex.justify-content-center.mt-4.align-items-center
+    .item.counter-up-01
+      p.counter.js-counter-up.color--color20 30
+      span.desc.color--fb06 Years of Experience
+    .item.counter-up-01
+      p.counter.js-counter-up.color--color20(data-unit="k") 128
+      span.desc.color--fb06 Happy Customers
+    .item.counter-up-01
+      p.counter.js-counter-up.color--color20 192
+      span.desc.color--fb06 Super Advisor
+
+mixin listFeature
+  ul.list-unstyled
+    li.icon-box-04.mb-4
+      .ts-box-square-01.bd--color1.color--color1
+        i.ts-icon.la.la-bar-chart
+      .icon-box-04-content
+        h5.icon-box-04-content-title Trust and Relationship
+        span.icon-box-04-content-desc Donec malesuada urna porta tellus feugiat, Donec malesuada urna porta.
+    li.icon-box-04.mb-4
+      .ts-box-square-01.bd--color1.color--color1
+        i.ts-icon.la.la-bar-chart
+      .icon-box-04-content
+        h5.icon-box-04-content-title Transparency
+        span.icon-box-04-content-desc Donec malesuada urna porta tellus feugiat, Donec malesuada urna porta.
+    li.icon-box-04.mb-4
+      .ts-box-square-01.bd--color1.color--color1
+        i.ts-icon.la.la-bar-chart
+      .icon-box-04-content
+        h5.icon-box-04-content-title Compliance
+        span.icon-box-04-content-desc Donec malesuada urna porta tellus feugiat, Donec malesuada urna porta.
+    li.icon-box-04.mb-4
+      .ts-box-square-01.bd--color1.color--color1
+        i.ts-icon.la.la-bar-chart
+      .icon-box-04-content
+        h5.icon-box-04-content-title Growth
+        span.icon-box-04-content-desc Donec malesuada urna porta tellus feugiat, Donec malesuada urna porta.
+    li.icon-box-04.mb-4
+      .ts-box-square-01.bd--color1.color--color1
+        i.ts-icon.la.la-bar-chart
+      .icon-box-04-content
+        h5.icon-box-04-content-title Diversity and Team work
+        span.icon-box-04-content-desc Donec malesuada urna porta tellus feugiat, Donec malesuada urna porta.
+    li.icon-box-04
+      .ts-box-square-01.bd--color1.color--color1
+        i.ts-icon.la.la-bar-chart
+      .icon-box-04-content
+        h5.icon-box-04-content-title Excellence and Passion
+        span.icon-box-04-content-desc Donec malesuada urna porta tellus feugiat, Donec malesuada urna porta.
+
+mixin header01
+  .header-container#js-sticked-menu
+    .ts-topbar.ts-topbar-01.in-dark.bg--color1
+      .container
+        .ts-topbar-01-inner.d-flex.justify-content-between.align-items-center
+          .ts-topbar-01-left.flex-grow-1
+            .item
+              i.ts-icon.la.la-phone.pr-1.fs--18
+              a(href="tel:18604193333") 1860-419-3331
+            .item
+              i.ts-icon.la.la-envelope.pr-1.fs--18
+              a(href="mailto:contact@ananci.com") consultant@ananci.com
+            .item
+              i.ts-icon.la.la-clock-o.pr-1.fs--18
+              span Mon - Fri: 8am - 6pm
+          .ts-topbar-01-right
+            .item.topbar-social.d-inline-flex.align-items-center.pr-4
+              span.follow-us Follow Us:
+              .fs--18.in-dark.pl-3
+                +socialList
+            .item.ts-language.in-dark.d-inline-flex
+              +selectLanguage
+    .ts-header.ts-header-01.bg--white
+      .container
+        .d-flex.justify-content-between.align-items-center
+          .ts-header-01-left.flex-grow-1
+            a.ts-header-logo-wrap(href="index.html")
+              img.header-logo(src="images/logo-dark.png" alt="logo")
+          .ts-header-01-right.align-items-center.d-none.d-lg-flex
+            nav.ts-main-menu.in-light
+              +navigation
+            .header-01-control.d-flex.align-items-center
+              .item.search-popup-btn.js-search-popup-btn.in-light.d-inline-flex.mr-3
+                +popupSearch
+              .item.btn-cart.has-notify.in-light.d-inline-flex
+                +cart
+          a(href="#js-mobile-menu-btn").btn-mobile-menu.d-block.d-lg-none
+            i.ts-icon.la.la-bars.fs--22
+  nav#js-mobile-menu-btn
+    +navigation

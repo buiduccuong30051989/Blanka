@@ -1,0 +1,254 @@
+//
+// Components :: Testimonial
+// --------------------------------------------------
+.ts-testimonial-01 {
+  border-radius: 2px;
+
+  .testimonial {
+    &-content {
+
+      .desc {
+        position: relative;
+        padding: 10px 0 10px 50px;
+        font-style: italic;
+
+        &:before {
+          content: '\f2cd';
+          font-family: $lineAwesome;
+          font-size: 30px;
+          line-height: 1;
+          position: absolute;
+          top: 3px;
+          left: 13px;
+          color: color(color3, .5);
+        }
+
+        &:after {
+          content: '\f2ce';
+          font-family: $lineAwesome;
+          line-height: 0;
+          font-size: 30px;
+          position: relative;
+          bottom: -10px;
+          margin-left: 5px;
+          color: color(color3, .5);
+        }
+      }
+    }
+
+    &-info {
+      display: flex;
+      align-items: center;
+    }
+
+    &-avatar {
+      width: 60px;
+      height: 60px;
+      margin-right: 15px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      @include aspect-ratio(1, 1, '.img-card');
+
+      .img-card {
+        @include fitImage();
+      }
+    }
+
+    &-detail {
+      .name {
+        font-weight: bold;
+        margin-bottom: 0;
+        font-size: 1rem;
+      }
+
+      .title {
+        @extend .color--fb-6;
+        font-size: 13px;
+      }
+    }
+
+    &-meta {
+      display: flex;
+      padding-left: 50px;
+      padding-top: 10px;
+
+      &-name {
+        font-size: 18px;
+        padding-right: 30px;
+      }
+
+      &-title {
+        @extend .color--fb-6;
+      }
+    }
+  }
+}
+
+.ts-testimonial-card {
+  &-02 {
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: $white;
+    padding: 30px;
+    position: relative;
+
+    .testimonial-card {
+      &-header {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 30px;
+        position: relative;
+
+        &:after {
+          content: '\f2cd';
+          font-family: $lineAwesome;
+          color: #dae6f0;
+          font-size: 58px;
+          position: absolute;
+          top: 70px;
+          left: 0;
+          line-height: 1;
+          opacity: 0.5;
+        }
+      }
+
+      &-cover-wrap {
+        flex: 0 0 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+      }
+
+      &-info {
+        flex-grow: 1;
+        padding-left: 18px;
+      }
+
+      &-name {
+        font-size: 22px;
+        line-height: 26px;
+        color: $gray20;
+        font-weight: 600;
+        margin-bottom: 6px;
+        transition: $transition-base;
+      }
+
+      &-title {
+        font-size: 15px;
+        line-height: 25px;
+        color: $gray80;
+        margin-bottom: 0;
+        transition: $transition-base;
+      }
+
+      &-content {
+        position: relative;
+      }
+
+      &-footer {
+        position: relative;
+      }
+
+      &-desc {
+        font-size: 15px;
+        line-height: 25px;
+        color: $gray60;
+        margin-bottom: 20px;
+        transition: $transition-base;
+      }
+    }
+
+    &:hover {
+      color: $white;
+
+      .testimonial-card {
+        &-name {
+          color: $gray20;
+        }
+
+        &-title {
+          color: $gray20;
+        }
+
+        &-desc {
+          color: $gray20;
+        }
+      }
+
+      .ts-overlay {
+        opacity: 1;
+      }
+    }
+
+    &.in-dark {
+      background-color: $black;
+      color: $white;
+
+      .testimonial-card {
+        &-name {
+          color: $white;
+        }
+
+        &-title {
+          color: $gray90;
+        }
+
+        &-desc {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  &-03 {
+    .testimonial-card {
+      &-name {
+        font-size: 22px;
+        line-height: 26px;
+        color: $gray20;
+        font-weight: 600;
+        margin-bottom: 0;
+      }
+
+      &-title {
+        font-size: 15px;
+        line-height: 25px;
+        color: $gray80;
+        margin-bottom: 4px;
+      }
+
+      &-rating {
+        margin-bottom: 20px;
+      }
+
+      &-desc {
+        font-size: 15px;
+        line-height: 25px;
+        color: $gray60;
+        margin-bottom: 0;
+      }
+    }
+
+    &.in-dark {
+      color: $white;
+
+      .testimonial-card {
+        &-name {
+          color: $white;
+        }
+
+        &-title {
+          color: $gray90;
+        }
+
+        &-desc {
+          color: $white;
+        }
+      }
+    }
+  }
+}

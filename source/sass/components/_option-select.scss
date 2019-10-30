@@ -1,0 +1,249 @@
+//
+// Base :: Option select
+// --------------------------------------------------
+
+.bootstrap-select .dropdown-toggle:focus {
+  box-shadow: none;
+  outline: 0;
+}
+
+.ts-language {
+  min-width: 140px;
+  font-size: 14px;
+  min-width: 146px;
+
+  .bootstrap-select.language-select {
+    &.fit-width {
+      .dropdown-toggle {
+        border: 0;
+        background-color: transparent;
+        vertical-align: middle;
+        padding-right: 0;
+
+        .filter-option-inner-inner {
+          display: flex;
+          align-items: center;
+          line-height: 1;
+        }
+
+        &:focus {
+          outline: 0 !important;
+          box-shadow: none;
+        }
+
+        &:after {
+          margin-left: 18px;
+          content: '\f110';
+          border: 0;
+          width: auto;
+          height: auto;
+          margin-top: 0;
+          font-family: $lineAwesome;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .dropdown-menu {
+      padding: 5px 0;
+      border-radius: 0;
+      background-color: $white;
+      border: 0;
+      box-shadow: 0 5px 11px 0 rgba($black, 0.27);
+    }
+
+    img {
+      width: 25px;
+      margin-right: 5px;
+    }
+
+    .dropdown-item {
+      color: $black;
+      padding: 5px;
+
+      &.active {
+        color: $white;
+        background-color: color(color1, 1);
+      }
+
+      &:not(.active):hover {
+        background-color: rgba($black, 0.1);
+      }
+
+      &:last-child {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+
+      &:first-child {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+    }
+  }
+
+  &.in-dark {
+    .bootstrap-select {
+      .dropdown-toggle {
+        color: $white;
+      }
+    }
+  }
+}
+
+.consultant-select {
+  min-width: 100%;
+
+  &.show {
+    &.bootstrap-select {
+      & > .dropdown-toggle {
+        background-color: color(color1, 1);
+        color: $white;
+      }
+
+      .dropdown-item {
+        &.active {
+          background-color: color(color1, 1);
+        }
+      }
+    }
+  }
+
+  &.bootstrap-select {
+    & > .dropdown-toggle {
+      background-color: rgba($white, 0.3);
+      color: $white;
+      border-radius: 2px;
+      border: 0;
+      height: 48px;
+      font-weight: 300;
+      padding-left: 1rem;
+
+      &.btn-light {
+        &:hover,
+        &:focus {
+          box-shadow: none;
+          color: $white;
+          background-color: color(color1, 1);
+        }
+      }
+    }
+
+    & > select {
+      left: 0;
+    }
+  }
+
+  .filter-option-inner-inner {
+    .ts-icon {
+      font-size: 22px;
+      margin-right: 5px;
+    }
+  }
+
+  .dropdown-menu {
+    padding: 0;
+    background-color: $black;
+    border: 0;
+    @extend .shadow-lg;
+
+    .dropdown-item {
+      padding-left: 15px;
+      padding-right: 15px;
+
+      .text {
+        display: flex;
+        height: 38px;
+      }
+
+      .ts-icon {
+        font-size: 18px;
+        margin-right: 5px;
+      }
+
+      &:last-child {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+
+      &:first-child {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+
+      &:hover {
+        background-color: $gray60;
+      }
+    }
+
+    &.show {
+      min-width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .option-select-team {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: $white;
+
+    .name {
+      color: $white;
+      font-size: 13px;
+      margin: 0;
+      line-height: 22px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+  }
+
+  &.in-light {
+    &.show {
+      &.bootstrap-select {
+        & > .dropdown-toggle {
+          background-color: $black;
+        }
+      }
+    }
+
+    &.bootstrap-select {
+      & > .dropdown-toggle {
+        background-color: rgba($black, 0.7);
+      }
+    }
+  }
+
+  &.in-dark {
+    &.bootstrap-select {
+      & > .dropdown-toggle {
+        background-color: $whitesmoke;
+        color: $gray20;
+
+        &.btn-light {
+          &:hover,
+          &:focus {
+            box-shadow: none;
+            color: $gray20;
+            background-color: $white;
+          }
+        }
+      }
+    }
+
+    .filter-option-inner-inner {
+      .option-select-team {
+        color: $gray20;
+
+        .name {
+          color: $gray20;
+        }
+      }
+
+      .ts-icon {
+        font-size: 22px;
+        margin-right: 5px;
+      }
+    }
+  }
+}

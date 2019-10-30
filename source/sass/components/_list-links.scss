@@ -1,0 +1,47 @@
+//
+// Components :: List Link
+// --------------------------------------------------
+.list-style-01 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    position: relative;
+    padding-left: 24px;
+
+    &:before {
+      content: '';
+      font-family: $lineAwesome;
+      position: absolute;
+      top: -4px;
+      left: 0;
+      font-size: 18px;
+      line-height: inherit;
+    }
+  }
+
+  &.list-circle {
+    li:before {
+      content: '\f17c';
+    }
+  }
+
+  &.list-square {
+    li:before {
+      content: '\f17e';
+    }
+  }
+
+  &.list-check {
+    li:before {
+      content: '\f17b';
+    }
+  }
+
+  &.color {
+    li:before {
+      color: color(color1, 1);
+    }
+  }
+}

@@ -1,0 +1,81 @@
+extends modules/layout/layout.pug
+include modules/script/lib
+include modules/header_mixin/header_mixin
+include modules/testimonial/testimonial
+include modules/control/control
+append head
+  title="Component - Form"
+  link(href="css/main.min.css" rel="stylesheet")
+append header
+append content
+  .bg--gray60.py-7
+    .container
+      .card.mb-3.d-block.bg-dark.border-0
+        .card-body
+          .row
+            .col-lg-7
+              form.w-100
+                .row-g-20.mb-4.mb-lg-0
+                  .col-lg-12.mb-g-20
+                    +selectDiscuss
+                  .col-lg-6.mb-g-20
+                    input.ts-input--ghost.form-control-lg(type="text", placeholder="Your Name")
+                  .col-lg-6.mb-g-20
+                    input.ts-input--ghost.form-control-lg(type="text", placeholder="Your Phone")
+                  .col-lg-6.mb-g-20
+                    label.d-sm-none.d-block Date to Call?
+                    input.js-input-date.ts-input--ghost.form-control-lg(type="date", placeholder="Date to Call?")
+                  .col-lg-6.mb-g-20
+                    label.d-sm-none.d-block Best Time to Call?
+                    input.js-input-time.ts-input--ghost.form-control-lg(type="text", placeholder="Best Time to Call? ")
+                  .col-lg-3
+                    a(href="#").ts-btn.btn-color1.btn-lg.w-100 Submit
+      
+      .card.mb-3.d-block.bg-dark.border-0
+        .card-body
+          .row
+            .col-lg-7
+              form.w-100
+                .row-g-20.mb-4.mb-lg-0
+                  .col-lg-12.mb-g-20
+                    +selectDiscuss('in-light')
+                  .col-lg-6.mb-g-20
+                    input.ts-input--ghost.in-light.form-control-lg(type="text", placeholder="Your Name")
+                  .col-lg-6.mb-g-20
+                    input.ts-input--ghost.in-light.form-control-lg(type="text", placeholder="Your Phone")
+                  .col-lg-6.mb-g-20
+                    label.d-sm-none.d-block Date to Call?
+                    input.js-input-date.ts-input--ghost.in-light.form-control-lg(type="date", placeholder="Date to Call?")
+                  .col-lg-6.mb-g-20
+                    label.d-sm-none.d-block Best Time to Call?
+                    input.js-input-time.ts-input--ghost.in-light.form-control-lg(type="time", placeholder="Best Time to Call? ")
+                  .col-lg-3
+                    a(href="#").ts-btn.btn-color1.in-light.btn-lg.w-100 Submit
+              
+      .card.mb-3.d-block.bg-dark.border-0
+        .card-body
+          .row
+            .col-lg-12
+              form.call-back-form-02
+                .item.consultant-select-wrap.mr-lg-3.mb-lg-0.mb-3
+                  +selectDiscuss
+                .item.mr-lg-3.mb-lg-0.mb-3
+                  input.ts-input--ghost.form-control-lg(type="text" placeholder="Your Name")
+                .item.mr-lg-3.mb-lg-0.mb-3
+                  input.ts-input--ghost.form-control-lg(type="text" placeholder="Your Phone")
+                a(href="#").ts-btn.btn-color1.btn-lg Submit
+  
+  +control
+append plugins  
+  +lib
+append script
+  script(src="js/main.min.js")
+  
+  
+  
+    
+
+    
+
+
+  

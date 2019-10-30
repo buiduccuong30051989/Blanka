@@ -1,0 +1,102 @@
+//
+// Components :: Accordion
+// --------------------------------------------------
+.ts-accrodion--ghost {
+  background-color: transparent;
+  border: 0;
+
+  .card-header {
+    border: 0;
+    border-radius: 0;
+    color: $white;
+    padding: 0;
+
+    .ts-btn {
+      min-height: 50px;
+
+      &[aria-expanded="true"] {
+        pointer-events: none;
+        background-color: color(color1, 1);
+        color: color(dynamicColor, 1);
+      }
+    }
+  }
+
+  .card-body {
+    color: $gray98;
+    border-left: 2px solid rgba($white, 0.3);
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 10px 15px 10px 30px;
+
+    &.in-light {
+      color: $gray40;
+      border-left-color: color(color4, .3);
+    }
+  }
+
+  &:not(:first-of-type) {
+    margin-top: 15px;
+  }
+}
+
+.ts-accrodion--line {
+  background-color: transparent;
+  border: 0;
+
+  .card-header {
+    border: 0;
+    // border-bottom: 1px solid rgba($black, .5);
+    border-radius: 0;
+    color: $gray20;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+
+    .ts-btn {
+      padding-left: 0;
+      padding-right: 30px;
+      font-weight: bold;
+      overflow: hidden;
+      transition: padding .3s ease-in-out;
+
+      .ts-icon {
+        position: absolute;
+        transform: translateX(-100%);
+        transition: all .3s ease-in-out;
+        opacity: 0;
+        left: 0;
+      }
+
+      &[aria-expanded="true"] {
+        pointer-events: none;
+        padding-left: 30px;
+        
+        .ts-icon {
+          transform: none;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .card-body {
+    color: $gray98;
+    // border-left: 2px solid rgba($white, 0.3);
+    // margin-left: 30px;
+    // margin-top: 10px;
+    // margin-bottom: 0;
+    margin: 0;
+    padding: 10px 15px 10px 30px;
+
+    &.in-light {
+      color: $gray40;
+      border-left-color: color(color4, .3);
+    }
+  }
+
+  &:not(:first-of-type) {
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,84 @@
+extends modules/layout/layout.pug
+include modules/script/lib
+include modules/header_mixin/header_mixin
+include modules/product/product
+include modules/footer/footer
+include modules/control/control
+append head
+  title="Shop - Shop Grid"
+  link(href="css/main.min.css" rel="stylesheet")
+append header
+  +header01
+append content
+  section.sub-header.bg--whitesmoke
+    .container
+      h2.title Shop Grid
+
+  section.section-breadcrumb.bg-white.py-2
+    .container
+      nav(aria-label="breadcrumb")
+        ol.ts-breadcrumb
+          li.breadcrumb-item
+            a(href="index.html") 
+              i.ts-icon.la.la-home.mr-1
+              | Home
+          li.breadcrumb-item.active(aria-current="page") Shop Grid
+
+  section.bg--white.py-7
+    .container
+      .shop-grid
+        .shop-filter.mb-5
+          p.woocommerce-result-count Showing 1–9 of 14 results
+          form.woocommerce-ordering(method="get")
+            select.orderby.js-select.select-orderby(name="orderby")
+              option(selected="selected" value="menu_order") Default sorting
+              option(value="popularity") Sort by popularity
+              option(value="rating") Sort by average rating
+              option(value="date") Sort by newness
+              option(value="price") Sort by price: low to high
+              option(value="price-desc") Sort by price: high to low
+        .row.mb-4
+          .col-lg-3.mb-4
+            +product01('https://picsum.photos/300/300?random=10')
+          .col-lg-3.mb-4
+            +product01('https://picsum.photos/300/300?random=11')
+          .col-lg-3.mb-4
+            +product01('https://picsum.photos/300/300?random=12')
+          .col-lg-3.mb-4
+            +product01('https://picsum.photos/300/300?random=13')
+          .col-lg-3.mb-4
+            +product01('https://picsum.photos/300/300?random=14')
+          .col-lg-3.mb-4
+            +product01('https://picsum.photos/300/300?random=15')
+          .col-lg-3.mb-4
+            +product01('https://picsum.photos/300/300?random=16')
+          .col-lg-3.mb-4
+            +product01('https://picsum.photos/300/300?random=17')
+        .row
+          .col-lg-12
+            nav.ts-pagination-01.pt-4(aria-label="Page navigation example")
+              ul.pagination
+                li.page-item
+                  a.page-link(href="#")
+                    i.ts-icon.la.la-angle-double-left
+                li.page-item.active
+                  a.page-link(href="#") 1
+                li.page-item
+                  a.page-link(href="#") 2
+                li.page-item
+                  a.page-link(href="#") 3
+                li.page-item
+                  a.page-link(href="#") ...
+                li.page-item
+                  a.page-link(href="#") 25
+                li.page-item
+                  a.page-link(href="#")
+                    i.ts-icon.la.la-angle-double-right
+  +footer01
+  +control
+append plugins  
+  +lib
+append script
+  script(defer src="js/main.min.js")
+  
+

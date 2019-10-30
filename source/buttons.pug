@@ -1,0 +1,52 @@
+extends modules/layout/layout.pug
+include modules/script/lib
+include modules/control/control
+append head
+  title="Component - Buttons"
+  link(href="css/main.min.css" rel="stylesheet")
+append header
+append content
+  .bg--gray60.py-7
+    .container
+      //- Social List
+      - var socialList = ["facebook", "twitter", "linkedin", "pinterest", "youtube", "instagram", "google-plus", "tumblr", "dribbble", "apple", "amazon", "twitch", "soundcloud", "steam"];
+      h4.my-3.pt-3#socialIcon Social Icon
+      .card.mb-3.d-block.bg-dark.border-0
+        .card-body
+          .row
+            .col-lg-12
+              for name in socialList
+                a(href="#").square.bg--fw-1.in-dark.mr-1
+                  i(class="ts-icon la la-" + name)
+
+      .card.mb-3.d-block.bg-light.border-0
+        .card-body
+          .row
+            .col-lg-12
+              for name in socialList
+                a(href="#").square.bg--fb-5.in-dark.mr-1
+                  i(class="ts-icon la la-" + name)
+
+      .card.mb-3.d-block.bg-dark.border-0
+        .card-body
+          .row
+            .col-lg-12
+              for name in socialList
+                a(href="#", class=('square mr-1 bg--fw-1 in-dark hbg--') + name)
+                  i(class="ts-icon la la-" + name)
+
+      .card.mb-3.d-block.bg-dark.border-0
+        .card-body
+          .row
+            .col-lg-12
+              for name in socialList
+                .ts-box-square-01.bd--fw-5.color--white.mr-1
+                  i(class="ts-icon la la-" + name)
+  
+  +control
+append plugins  
+  +lib
+append script
+  script(src='js/extention/on-screen.min.js')
+  script(src='js/counter-up.min.js')
+  script(src="js/main.min.js")

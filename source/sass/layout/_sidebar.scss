@@ -1,0 +1,10 @@
+//
+// Layout :: SideBar
+// --------------------------------------------------
+.main-sidebar {
+  &.sticky {
+    position: sticky;
+    top: 80px;
+    left: 0;
+  }
+}

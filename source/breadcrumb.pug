@@ -1,0 +1,28 @@
+extends modules/layout/layout.pug
+include modules/script/lib
+include modules/control/control
+append head
+  title="Component - Breadcrumb"
+  link(href="css/main.min.css" rel="stylesheet")
+append header
+append content
+  .bg--gray60.py-7
+    .container
+      .card.mb-3.d-block.bg-light.border-0
+        .card-body
+          .row
+            .col-lg-12
+              nav(aria-label="breadcrumb")
+                ol.ts-breadcrumb
+                  li.breadcrumb-item
+                    a(href="index.html") 
+                      i.ts-icon.la.la-home.mr-1
+                      | Home
+                  li.breadcrumb-item
+                    a(href="services_01.html") Services
+                  li.breadcrumb-item.active(aria-current="page") Services Detail
+  +control
+append plugins  
+  +lib
+append script
+  script(src="js/main.min.js")
