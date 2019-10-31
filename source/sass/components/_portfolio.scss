@@ -367,3 +367,122 @@
     }
   }
 }
+
+.ts-portfolio-04 {
+  background-color: $white;
+
+  .card-header {
+    border-bottom: 0;
+    position: relative;
+
+    &:before {
+      content: '';
+      width: 5px;
+      height: 42px;
+      background-color: color(color1, 1);
+      position: absolute;
+      top: 12px;
+      left: 0;
+    }
+  }
+
+  .project-card {
+    &-title {
+      font-weight: 200;
+      font-size: 18px;
+      margin-bottom: 4px;
+
+      a {
+        color: $gray20;
+        text-decoration: none;
+
+        &:hover {
+          color: color(color1, 1);
+        }
+      }
+    }
+
+    &-catalog {
+      font-size: 13px;
+      margin-bottom: 0;
+    }
+
+    &-btn-view-more {
+      text-decoration: none;
+      color: $gray20;
+      transition: $transition-base;
+
+      &:hover {
+        color: color(color1, 1);
+      }
+    }
+  }
+
+  .card-cover {
+    position: relative;
+
+    .ts-overlay {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $white;
+      font-size: 18px;
+
+      .item {
+        margin: 0 10px;
+        cursor: pointer;
+
+        .ts-icon {
+          margin-right: 5px;
+          transition: $transition-base;
+        }
+
+        &.favourite {
+          &:hover {
+            .ts-icon {
+              color: $red;
+            }
+          }
+        }
+
+        &.bookmarks {
+          &:hover {
+            .ts-icon {
+              color: $yellow;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .card-img {
+    border-radius: 0;
+  }
+
+  .card-body {
+
+  }
+
+  .card-footer {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .btn-share-project {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+  }
+
+  &:hover {
+    .ts-overlay {
+      opacity: .9;
+    }
+  }
+}

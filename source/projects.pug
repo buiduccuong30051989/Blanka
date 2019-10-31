@@ -40,12 +40,48 @@ append content
             .col-lg-12
               h5.mb-3 Projects - Case Card 02
               +portfolio03('https://picsum.photos/400?random=4', 'Projects - Case Card 02', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum sit amet felis ut cursus. Proin non scelerisque lorem, nec consectetur diam. Mauris at lacinia dolor. Vivamus elementum, diam sit amet finibus tincidunt, diam mi congue metus, id feugiat ligula libero ut dui.', 'Revision Theory', 'JUN 18 2019')
+  
+      .card.mb-3.d-block.bg--gainsboro.border-0
+        .card-body
+          .row
+            .col-lg-4
+              .ts-portfolio-04
+                .card-header
+                  h4.project-card-title
+                    a(href="project_detail.html") Project Card 04
+                  p.project-card-catalog  Consultant
+                .card-cover
+                  a(href='project_detail.html')
+                    img.card-img(src='https://picsum.photos/600/300?random=4', alt='cover')
+                  .ts-overlay.bg--color1
+                    .item.favourite
+                      i.ts-icon.la.la-heart
+                      span 98
+                    .item.bookmarks
+                      i.ts-icon.la.la-bookmark
+                      span 122
+                .card-body
+                  p.project-card-desc Commodo magna nulla nulla cillum sunt enim pariatur. Aliquip velit minim laboris ipsum fugiat do qui sit ullamco cillum eu aute nulla.
+                .card-footer
+                  a(href="project_detail.html").project-card-btn-view-more Learn More
+                    i.ts-icon.la.la-angle-right
+                  button.btn-share-project.js-btn-share-project
+                    i.ts-icon.la.la-share-alt
+  
   +control
 append plugins  
   +lib
 append script
   script(src="js/main.min.js")
-  
+  script.
+    $(document).ready(function() {
+      'user strict';
+      
+      $('.js-btn-share-project').on('click', function() {
+        $(this).find('.ts-icon').toggleClass('la-share-alt');
+        $(this).find('.ts-icon').toggleClass('la-times');
+      });
+    });
   
     
 

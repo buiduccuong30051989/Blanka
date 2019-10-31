@@ -209,6 +209,9 @@
     align-items: center;
     padding: 15px 20px 20px;
     border-bottom: 3px solid color(color1, 1);
+    background: url('../images/bg-team-03.png') no-repeat;
+    background-position: top right;
+    background-size: 70% auto;
 
     .card-img {
       width: 80px;
@@ -283,18 +286,78 @@
 }
 
 .ts-team-card-04 {
+  background-color: $white;
+
   .card-cover {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url('../images/bg-team-04.png') no-repeat;
+    background-position: top left;
+    background-size: 70% auto;
   }
 
-  #raindropSVG {
-    width: 0;
-    height: 0;
-}
-  
+  .team-card {
+    &-info {
+      margin-right: 0px;
+      margin-left: auto;
+      text-align: right;
+      padding-left: 10px;
+    }
+
+    &-name {
+      font-size: 18px;
+      font-weight: 300;
+      margin-bottom: 0;
+    }
+
+    &-title {
+      color: $gray40;
+      font-size: 13px;
+      margin-bottom: 0;
+    }
+  }
+
   .card-img {
-    clip-path: url(#raindropClipPath);
+    clip-path: url(#ts-team-card-04-clip);
+    width: 40%;
+  }
+
+  .card-footer {
+    background-color: transparent;
+    display: flex;
+    font-size: 22px;
     width: 100%;
-    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0;
+    padding: 0;
+
+    a {
+      text-decoration: none;
+      line-height: 1;
+      transition: $transition-base;
+      color: $gray40;
+
+      &:not(:last-of-type) {
+        margin-left: 20px;
+      }
+
+      &.read-more {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        background-color: color(color1, 1);
+        border-left: 1px solid rgba($black, 0.125);
+        color: $white;
+        text-align: center;
+        margin-top: -1px;
+
+        &:hover {
+          background-color: darkerColor(color1, 1);
+        }
+      }
+    }
   }
 }
 
