@@ -6,32 +6,31 @@
 
   .testimonial {
     &-content {
-
       .desc {
         position: relative;
         padding: 10px 0 10px 50px;
         font-style: italic;
 
         &:before {
-          content: '\f2cd';
+          content: "\f2cd";
           font-family: $lineAwesome;
           font-size: 30px;
           line-height: 1;
           position: absolute;
           top: 3px;
           left: 13px;
-          color: color(color3, .5);
+          color: color(color3, 0.5);
         }
 
         &:after {
-          content: '\f2ce';
+          content: "\f2ce";
           font-family: $lineAwesome;
           line-height: 0;
           font-size: 30px;
           position: relative;
           bottom: -10px;
           margin-left: 5px;
-          color: color(color3, .5);
+          color: color(color3, 0.5);
         }
       }
     }
@@ -47,8 +46,8 @@
       margin-right: 15px;
       border-radius: 50%;
       overflow: hidden;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-      @include aspect-ratio(1, 1, '.img-card');
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      @include aspect-ratio(1, 1, ".img-card");
 
       .img-card {
         @include fitImage();
@@ -102,7 +101,7 @@
         position: relative;
 
         &:after {
-          content: '\f2cd';
+          content: "\f2cd";
           font-family: $lineAwesome;
           color: #dae6f0;
           font-size: 58px;
@@ -262,6 +261,47 @@
     min-height: 160px;
   }
 
+  .testimonial-card-content {
+    font-style: italic;
+
+    &:before {
+      content: "\f2cd";
+      font-family: $lineAwesome;
+      font-size: 24px;
+      line-height: 1;
+      position: relative;
+      top: 3px;
+      padding-right: 5px;
+      color: color(color1, 0.5);
+    }
+
+    &:after {
+      content: "\f2ce";
+      font-family: $lineAwesome;
+      line-height: 0;
+      font-size: 24px;
+      position: relative;
+      bottom: -10px;
+      margin-left: 5px;
+      color: color(color1, 0.5);
+    }
+  }
+
+  .card-body {
+    padding: 30px 30px 0 30px;
+    position: relative;
+
+    .ts-icon {
+      position: absolute;
+      top: -4px;
+      left: 8px;
+      opacity: 0.1;
+      font-size: 56px;
+      line-height: 1;
+      color: color(color1, 1);
+    }
+  }
+
   .card-cover {
     position: relative;
 
@@ -272,6 +312,74 @@
       top: 20px;
       left: 50%;
       transform: translateX(-50%);
+    }
+
+    .testimonial-card-info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      padding: 10px 15px;
+
+      .testimonial-card-name {
+        color: $white;
+        font-weight: 200;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.ts-testimonial-card-05 {
+  background-color: $white;
+
+  .card-body {
+    padding: 40px 30px 30px;
+    position: relative;
+    border-top: 3px solid color(color1, 1);
+
+    .ts-icon {
+      font-size: 72px;
+      opacity: .1;
+      color: color(color1, 1);
+      position: absolute;
+      top: -20px;
+      right: 15px;
+      line-height: 1;
+    }
+
+    .testimonial-card-content {
+      font-style: italic;
+      margin-bottom: 0;
+    }
+  }
+
+  .card-cover {
+    background-color: color(color1, 1);
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+
+    .card-img {
+      border-radius: 50%;
+      width: 60px;
+      margin-right: 15px;
+    }
+
+    .testimonial-card-info {
+      .testimonial-card-name {
+        font-size: 18px;
+        font-weight: 200;
+        color: color(dynamicColor, 1);
+        margin-bottom: 0;
+      }
+
+      .testimonial-card-title {
+        font-size: 13px;
+        color: color(dynamicColor, .7);
+        margin-bottom: 0;
+      }
     }
   }
 }

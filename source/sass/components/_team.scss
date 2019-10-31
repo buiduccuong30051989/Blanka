@@ -121,11 +121,18 @@
 
 .ts-team-card-02 {
   @extend .card;
+  background-color: $white;
   border: 0;
+  border-radius: 2px;
+  overflow: hidden;
 
   .card-cover {
     padding: 30px;
-    background-color: color(color1, 1);
+    background-image: linear-gradient(
+      to top right,
+      color(color1, 0.9) 50%,
+      color(color1, 1) 50%
+    );
 
     .card-img {
       display: block;
@@ -136,23 +143,158 @@
     }
   }
 
+  .card-body {
+    background-color: transparent;
+  }
+
   .team-card {
     &-name {
       font-size: 18px;
+      font-weight: 300;
+      margin-bottom: 4px;
     }
 
     &-title {
       color: $gray40;
-      margin-bottom: 0;
-    }
-
-    &-phone {
-      color: $gray40;
+      font-size: 13px;
     }
   }
 
   .card-footer {
-    
+    background-color: transparent;
+    display: flex;
+    font-size: 22px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0;
+    padding: 0;
+
+    a {
+      text-decoration: none;
+      line-height: 1;
+      transition: $transition-base;
+      color: $gray40;
+
+      &:not(:last-of-type) {
+        margin-left: 20px;
+      }
+
+      &.read-more {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        background-color: color(color1, 1);
+        border-left: 1px solid rgba($black, 0.125);
+        color: $white;
+        text-align: center;
+        margin-top: -1px;
+
+        &:hover {
+          background-color: darkerColor(color1, 1);
+        }
+      }
+    }
+  }
+}
+
+.ts-team-card-03 {
+  background-color: $white;
+  border-radius: 2px;
+  overflow: hidden;
+
+  .card-cover {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px 20px;
+    border-bottom: 3px solid color(color1, 1);
+
+    .card-img {
+      width: 80px;
+      border-radius: 50%;
+      position: relative;
+      margin-right: 15px;
+    }
+  }
+
+  &-layer {
+    width: 240px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: color(color1, 1);
+  }
+
+  .team-card {
+    &-info {
+      padding-top: 10px;
+    }
+
+    &-name {
+      padding-top: 10px;
+      font-size: 18px;
+      font-weight: 300;
+      margin-bottom: 4px;
+    }
+
+    &-title {
+      color: $gray40;
+      font-size: 13px;
+    }
+  }
+
+  .card-footer {
+    background-color: transparent;
+    display: flex;
+    font-size: 22px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0;
+    padding: 0;
+
+    a {
+      text-decoration: none;
+      line-height: 1;
+      transition: $transition-base;
+      color: $gray40;
+
+      &:not(:last-of-type) {
+        margin-left: 20px;
+      }
+
+      &.read-more {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        background-color: color(color1, 1);
+        border-left: 1px solid rgba($black, 0.125);
+        color: $white;
+        text-align: center;
+        margin-top: -1px;
+
+        &:hover {
+          background-color: darkerColor(color1, 1);
+        }
+      }
+    }
+  }
+}
+
+.ts-team-card-04 {
+  .card-cover {
+  }
+
+  #raindropSVG {
+    width: 0;
+    height: 0;
+}
+  
+  .card-img {
+    clip-path: url(#raindropClipPath);
+    width: 100%;
+    height: auto;
   }
 }
 

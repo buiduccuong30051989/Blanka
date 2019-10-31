@@ -14,38 +14,91 @@ append content
         .card-body
           .row
             .col-lg-7
-              +team06("images/team-02.jpg", 'Team Card 01', 'Operations Manager')
+              +team06("https://i.pravatar.cc/600?img=1", 'Team Card 01', 'Operations Manager')
       
       .card.mb-3.d-block.bg-light.border-0
         .card-body
           .row
             .col-lg-7
-              +team05("images/team-04.jpg", 'Team Card 02', 'Operations Manager')
+              +team05("https://i.pravatar.cc/600?img=2", 'Team Card 02', 'Operations Manager')
       
       .card.mb-3.d-block.bg-light.border-0
         .card-body
           .row
-            .col-lg-7
+            .col-lg-4
               .ts-team-card-02
                 .card-cover
                   img.card-img(src='https://i.pravatar.cc/600?img=11', alt="avatar")
                 .card-body
                   h4.team-card-name Adam Larson
-                  p.team-card-title Developer
-                  p.team-card-phone
-                    a(href="tel:18604193333") 1860-419-3333
-                  p.team-card-desc Fusce lorem risus, congue a ligula ut, lacinia ultricies ligula. Class aptent taciti sociosqu ad litora torquent.
+                  p.team-card-title Financial Consultant
+                  p.team-card-desc Ullamco minim in enim consectetur labore voluptate et non non. Officia dolor qui cupidatat tempor qui ex labore veniam dolore.
                 .card-footer
-                  .social-list-01.in-light
-                    a(href="#")
-                      i.ts-icon.la.la-facebook
-                    a(href="#")
-                      i.ts-icon.la.la-twitter
-                    a(href="#")
-                      i.ts-icon.la.la-linkedin
-                  a(href="team_detail.html")
+                  a(href="#").hcl--facebook
+                    i.ts-icon.la.la-facebook
+                  a(href="#").hcl--twitter
+                    i.ts-icon.la.la-twitter
+                  a(href="#").hcl--instagram
+                    i.ts-icon.la.la-instagram
+                  a(href="team_detail.html").read-more
                     i.ts-icon.la.la-angle-right
-
+      
+      .card.mb-3.d-block.bg-light.border-0
+        .card-body
+          .row
+            .col-lg-4
+              .ts-team-card-03
+                .card-cover
+                  svg.ts-team-card-03-layer(viewbox="1 1 240 120" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+                    g(stroke="none" fill-rule="evenodd")
+                      //- path.layer-01(d="M244,1 L1,1 L1,105 C13.947828,76.9985587 32.5389132,57.0267296 56.7732557,45.0845126 C81.0075982,33.1422956 143.416513,18.4474581 244,1 Z")
+                      path.layer-01(d="M241,1 L1,1 L1,121 C22.4335969,80.1669811 45.1179719,52.8607311 69.053125,39.08125 C92.9882781,25.3017689 150.303903,12.6080189 241,1 Z")
+                  img.card-img(src='https://i.pravatar.cc/600?img=11', alt="avatar")
+                  .team-card-info
+                    h4.team-card-name Adam Larson
+                    p.team-card-title Financial Consultant 
+                .card-body
+                  p.team-card-desc Ullamco minim in enim consectetur labore voluptate et non non. Officia dolor qui cupidatat tempor qui ex labore veniam dolore.
+                .card-footer
+                  a(href="#").hcl--facebook
+                    i.ts-icon.la.la-facebook
+                  a(href="#").hcl--twitter
+                    i.ts-icon.la.la-twitter
+                  a(href="#").hcl--instagram
+                    i.ts-icon.la.la-instagram
+                  a(href="team_detail.html").read-more
+                    i.ts-icon.la.la-angle-right
+      
+      .card.mb-3.d-block.bg-light.border-0
+        .card-body
+          .row
+            .col-lg-4
+              .ts-team-card-04
+                .card-cover
+                  svg(height="0" width="0" viewBox="0 0 304 279" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+                    defs
+                      clippath#raindropClipPath(clipPathUnits="objectBoundingBox")
+                        path#Path(transform="scale(0.0012345, 0.00098814)" d="M0.08203125,1.35546875 L1226.73828,1.35546875 L1226.73828,844.355469 L8.83203125,844.355469 C203.334635,445.46224 361.15625,281.138021 482.296875,351.382812 C603.4375,421.627604 696.324219,352.451823 760.957031,143.855469 L0.08203125,1.35546875 Z")
+                        //- path(transform="scale(0.0012345, 0.00098814)" fill="#FFFFFF" stroke="#000000" stroke-width="1.5794" stroke-miterlimit="10" d="M215,100.3c97.8-32.6,90.5-71.9,336-77.6\
+                        //- c92.4-2.1,98.1,81.6,121.8,116.4c101.7,149.9,53.5,155.9,14.7,178c-96.4,54.9,5.4,269-257,115.1c-57-33.5-203,46.3-263.7,20.1\
+                        //- c-33.5-14.5-132.5-45.5-95-111.1C125.9,246.6,98.6,139.1,215,100.3z")
+                        //- path(transform="scale(0.0012345, 0.00098814)" d="M0,604.4C0,523.7,30.7,408.8,97.5,320,217,160.9,409.2,0,409.2,0S597.2,167.8,717,331c63,85.7,93,196.4,93,274,0,224.5-181.3,407-405,407S0,829.5,0,604.4Z")
+                  img.card-img(src='https://i.pravatar.cc/600?img=11', alt='cover')
+                  .team-card-info
+                    h4.team-card-name Adam Larson
+                    p.team-card-title Financial Consultant 
+                .card-body
+                  p.team-card-desc Ullamco minim in enim consectetur labore voluptate et non non. Officia dolor qui cupidatat tempor qui ex labore veniam dolore.
+                .card-footer
+                  a(href="#").hcl--facebook
+                    i.ts-icon.la.la-facebook
+                  a(href="#").hcl--twitter
+                    i.ts-icon.la.la-twitter
+                  a(href="#").hcl--instagram
+                    i.ts-icon.la.la-instagram
+                  a(href="team_detail.html").read-more
+                    i.ts-icon.la.la-angle-right
+      
   +control
 append plugins  
   +lib

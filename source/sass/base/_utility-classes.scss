@@ -50,6 +50,18 @@ $classColorFadeBlack: color--fb-;
   }
 }
 
+@mixin color-modifiers-hover-social($attribute: 'background-color', $prefix: '--') {
+  @each $name, $hex in $colors-social {
+    &#{$prefix}#{$name}:hover {
+      #{$attribute}: $hex !important;
+    }
+  }
+}
+
+.hcl {
+  @include color-modifiers-hover-social('color');
+}
+
 // background
 .bg {
   @include color-modifiers($attribute: 'background-color', $prefix: '--');
@@ -69,7 +81,7 @@ $classBackgroundFadeBlack: bg--fb-;
   }
 }
 
-@mixin color-modifiers-hover-bg($attribute: 'background-color', $prefix: '--') {
+@mixin color-modifiers-hover-social($attribute: 'background-color', $prefix: '--') {
   @each $name, $hex in $colors-social {
     &#{$prefix}#{$name}:hover {
       #{$attribute}: $hex !important;
@@ -78,7 +90,7 @@ $classBackgroundFadeBlack: bg--fb-;
 }
 
 .hbg {
-  @include color-modifiers-hover-bg();
+  @include color-modifiers-hover-social();
 }
 
 //
