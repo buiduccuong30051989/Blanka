@@ -49,7 +49,7 @@
     border-radius: 0;
     overflow: hidden;
 
-    @include aspect-ratio(4, 3, '.card-img');
+    @include aspect-ratio(4, 3, ".card-img");
 
     .card-img {
       @include fitImage();
@@ -137,7 +137,7 @@
     // width: 25%;
 
     .card-cover {
-      @include aspect-ratio(1, 1, '.card-img');
+      @include aspect-ratio(1, 1, ".card-img");
     }
   }
 
@@ -145,7 +145,7 @@
     // width: 25%;
 
     .card-cover {
-      @include aspect-ratio(1, 2, '.card-img');
+      @include aspect-ratio(1, 2, ".card-img");
     }
   }
 
@@ -153,7 +153,7 @@
     // width: 50%;
 
     .card-cover {
-      @include aspect-ratio(2, 0.94736842105, '.card-img');
+      @include aspect-ratio(2, 0.94736842105, ".card-img");
     }
   }
 
@@ -161,7 +161,7 @@
     // width: 50%;
 
     .card-cover {
-      @include aspect-ratio(1, 1, '.card-img');
+      @include aspect-ratio(1, 1, ".card-img");
     }
   }
 
@@ -217,7 +217,7 @@
     border-radius: 0;
     overflow: hidden;
 
-    @include aspect-ratio(4, 3, '.card-img');
+    @include aspect-ratio(4, 3, ".card-img");
 
     .card-img {
       @include fitImage();
@@ -268,7 +268,7 @@
     height: 100%;
     @extend .bg--whitesmoke;
 
-    @include aspect-ratio(4, 3, '.card-img');
+    @include aspect-ratio(4, 3, ".card-img");
 
     .card-img {
       @include fitImage();
@@ -284,7 +284,7 @@
     padding: 0;
     display: flex;
     align-items: center;
-    color: rgba($white, .7);
+    color: rgba($white, 0.7);
     padding: 30px 0;
 
     &-inner {
@@ -339,7 +339,7 @@
 
       a {
         &:not(:last-of-type):after {
-          content: ',';
+          content: ",";
           padding-right: 4px;
           @extend .color--fw-7;
         }
@@ -374,15 +374,50 @@
   .card-header {
     border-bottom: 0;
     position: relative;
+    padding-right: 50px;
 
     &:before {
-      content: '';
+      content: "";
       width: 5px;
       height: 42px;
       background-color: color(color1, 1);
       position: absolute;
       top: 12px;
       left: 0;
+    }
+
+    &:after {
+      content: "\f15c";
+      font-family: $lineAwesome;
+      font-size: 24px;
+      color: $gray40;
+      position: absolute;
+      top: 16px;
+      right: 10px;
+    }
+  }
+
+  &.ts-portfolio-type-audio {
+    .card-header:after {
+      content: "\f1c7";
+    }
+  }
+
+  &.ts-portfolio-type-video {
+    .card-header:after {
+      content: "\f1c8";
+    }
+  }
+
+  &.ts-portfolio-type-pdf {
+    .card-header:after {
+      content: "\f1c1";
+    }
+  }
+
+  &.ts-portfolio-type-pp {
+    .card-header:after {
+      content: "\f1c4";
     }
   }
 
@@ -405,6 +440,145 @@
     &-catalog {
       font-size: 13px;
       margin-bottom: 0;
+      color: $gray40;
+      transition: $transition-base;
+      text-decoration: none;
+
+      &:hover {
+        color: color(color1, 1);
+      }
+    }
+
+    &-btn-view-more {
+      text-decoration: none;
+      color: $gray20;
+      transition: $transition-base;
+
+      &:hover {
+        color: color(color1, 1);
+      }
+    }
+  }
+
+  .card-cover {
+    position: relative;
+
+    .ts-overlay {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: $white;
+      font-size: 18px;
+
+      [class^="item"] {
+        margin: 0 10px;
+        cursor: pointer;
+
+        .ts-icon {
+          margin-right: 5px;
+          transition: $transition-base;
+        }
+      }
+
+      .item {
+        &-favourite {
+          &:hover,
+          &.active {
+            .ts-icon {
+              color: $red;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .card-img {
+    border-radius: 0;
+  }
+
+  .card-body {
+  }
+
+  .card-footer {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .btn-share-project {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+  }
+
+  &:hover {
+    .ts-overlay {
+      opacity: 0.9;
+    }
+  }
+}
+
+.ts-portfolio-05 {
+  background-color: $white;
+
+  &.ts-portfolio-type-audio {
+    .card-body:after {
+      content: "\f1c7";
+    }
+  }
+
+  &.ts-portfolio-type-video {
+    .card-body:after {
+      content: "\f1c8";
+    }
+  }
+
+  &.ts-portfolio-type-pdf {
+    .card-body:after {
+      content: "\f1c1";
+    }
+  }
+
+  &.ts-portfolio-type-pp {
+    .card-body:after {
+      content: "\f1c4";
+    }
+  }
+
+  .project-card {
+    &-title {
+      font-weight: 200;
+      font-size: 18px;
+      margin-bottom: 4px;
+      padding-right: 20px;
+
+      a {
+        color: $gray20;
+        text-decoration: none;
+
+        &:hover {
+          color: color(color1, 1);
+        }
+      }
+    }
+
+    &-catalog {
+      font-size: 13px;
+      display: inline-block;
+      margin-bottom: 15px;
+      text-decoration: none;
+      color: $gray40;
+      padding-right: 20px;
+
+      &:hover {
+        color: color(color1, 1);
+      }
     }
 
     &-btn-view-more {
@@ -427,8 +601,9 @@
       align-items: center;
       color: $white;
       font-size: 18px;
+      // opacity: 1;
 
-      .item {
+      [class^="item"] {
         margin: 0 10px;
         cursor: pointer;
 
@@ -436,22 +611,21 @@
           margin-right: 5px;
           transition: $transition-base;
         }
+      }
 
-        &.favourite {
-          &:hover {
+      .item {
+        &-favourite {
+          &:hover,
+          &.active {
             .ts-icon {
               color: $red;
             }
           }
         }
+      }
 
-        &.bookmarks {
-          &:hover {
-            .ts-icon {
-              color: $yellow;
-            }
-          }
-        }
+      .ts-social-list-01 {
+        display: none;
       }
     }
   }
@@ -461,7 +635,17 @@
   }
 
   .card-body {
+    position: relative;
 
+    &:after {
+      content: "\f15c";
+      font-family: $lineAwesome;
+      font-size: 24px;
+      color: $gray40;
+      position: absolute;
+      top: 16px;
+      right: 15px;
+    }
   }
 
   .card-footer {
@@ -482,7 +666,7 @@
 
   &:hover {
     .ts-overlay {
-      opacity: .9;
+      opacity: 0.9;
     }
   }
 }

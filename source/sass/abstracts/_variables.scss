@@ -236,23 +236,23 @@ $colors-theme: (
 );
 
 $colors-theme-02: (
-  'red': $red,
-  'pink': $pink,
-  'purple': $purple,
-  'deepPurple': $deepPurple,
-  'indigo': $indigo,
-  'blue': $blue,
-  'cyan': $cyan,
-  'teal': $teal,
-  'green': $green,
-  'lightGreen': $lightGreen,
-  'lime': $lime,
-  'yellow': $yellow,
-  'amber': $amber,
-  'orange': $orange,
-  'deepOrange': $deepOrange,
-  'brown': $brown,
-  'grey': $grey
+  "red": $red,
+  "pink": $pink,
+  "purple": $purple,
+  "deepPurple": $deepPurple,
+  "indigo": $indigo,
+  "blue": $blue,
+  "cyan": $cyan,
+  "teal": $teal,
+  "green": $green,
+  "lightGreen": $lightGreen,
+  "lime": $lime,
+  "yellow": $yellow,
+  "amber": $amber,
+  "orange": $orange,
+  "deepOrange": $deepOrange,
+  "brown": $brown,
+  "grey": $grey
 );
 
 $colors-social: (
@@ -288,13 +288,13 @@ $lh1: 1;
 
 /// Font Family
 /// -------------------------------------------------
-$openSans: 'Open Sans', sans-serif;
-$lineAwesome: 'lineAwesome';
+$openSans: "Open Sans", sans-serif;
+$lineAwesome: "Line Awesome Free";
 // $fontawesome: 'FontAwesome';
 // $poppinsFont: 'Poppins', sans-serif;
-$lato: 'Lato', sans-serif;
-$oswald: 'Oswald', sans-serif;
-$roboto: 'Roboto', sans-serif;
+$lato: "Lato", sans-serif;
+$oswald: "Oswald", sans-serif;
+$roboto: "Roboto", sans-serif;
 
 /// Transitions
 /// -------------------------------------------------
