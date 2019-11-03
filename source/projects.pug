@@ -148,32 +148,33 @@ append content
           .row
             .col-lg-4
               .ts-portfolio-05.ts-portfolio-type-video
-                .card-cover
-                  a(href='project_detail.html')
-                    img.card-img(src='https://picsum.photos/600/300?random=6', alt='cover')
-                  .ts-overlay.bg--color1
-                    .ts-social-list-01.align-right
-                      a.hcl--facebook(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="facebook")
-                        i.ts-icon.lab.la-facebook-square
-                      a.hcl--twitter(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="twitter")
-                        i.ts-icon.lab.la-twitter
-                      a.hcl--instagram(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="instagram")
-                        i.ts-icon.lab.la-instagram
-                    .item-favourite.js-control-project-card-05
-                      i.ts-icon.las.la-heart
-                      span 98
-                    .item-comment
-                      i.ts-icon.la.la-comments
-                      span 102
-                .card-body
-                  h4.project-card-title
-                    a(href="project_detail.html") Project Card 05
-                  a(href="projects_list.html").project-card-catalog  Consultant
-                  p.project-card-desc Commodo magna nulla nulla cillum sunt enim pariatur. Aliquip velit minim laboris ipsum fugiat do qui sit ullamco cillum eu aute nulla.
-                .card-footer
-                  a(href="project_detail.html").project-card-btn-view-more Join the Conversation
-                    i.ts-icon.la.la-angle-right
+                a(href='project_detail.html').card-cover
+                  img.card-img(src='https://picsum.photos/600/400?random=5', alt='cover')
+                  .ts-overlay.portfolio-card-overlay
+                  .card-cover-inner
+                    h4.portfolio-card-title Project Card 05
+                    p.portfolio-card-catalog Consultant
+                .portfolio-card-meta
+                  .item-favourite.js-control-project-card-04
+                    i.ts-icon.las.la-heart
+                    span 98
+                  .item-comment
+                    i.ts-icon.la.la-comments
+                    span 102
 
+      .card.mb-3.d-block.bg--gainsboro.border-0
+        .card-body
+          .row
+            .col-lg-4
+              a(href='project_detail.html').ts-portfolio-06.ts-portfolio-type-video
+                .card-cover
+                  img.card-img(src='https://picsum.photos/600/400?random=6', alt='cover')
+                  .ts-overlay.portfolio-card-overlay
+                  .card-cover-inner
+                    h4.portfolio-card-title Project Card 06
+                    .portfolio-card-divider
+                    p.portfolio-card-catalog Consultant
+                    p.portfolio-card-desc Commodo magna nulla nulla cillum sunt enim pariatur. Aliquip velit minim laboris ipsum .
   +control
 append plugins  
   +lib

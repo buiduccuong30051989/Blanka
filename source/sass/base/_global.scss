@@ -2,9 +2,9 @@
 // Base :: Global
 // --------------------------------------------------
 body {
-  font-family: $roboto;
-  color: $gray40;
-  font-size: 15px;
+  font-family: $lato;
+  color: $gray20;
+  font-size: 13px;
   line-height: 1.6;
 
   @include media-breakpoint-down(md) {

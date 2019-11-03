@@ -8,7 +8,7 @@ append head
   link(href="css/main.min.css" rel="stylesheet")
 append header
 append content
-  .bg--gray60.py-7
+  .py-7
     .container
       .card.mb-3.d-block.bg-light.border-0
         .card-body
@@ -72,6 +72,56 @@ append content
             .col-md-5
               +blog08('https://picsum.photos/400?random=5', 'Blog Card Widget', 'OCT 18, 2019')
       
+      .card.mb-3.d-block.bg--gainsboro.border-0
+        .card-body
+          .row
+            .col-lg-6
+              .ts-blog-card-07
+                .card-cover
+                  img.card-img(alt="cover", src='https://picsum.photos/400?random=13')
+                  .blog-card-meta
+                    p.blog-card-time
+                      i.ts-icon.la.la-clock
+                      | Oct 15, 2019
+                    p.blog-card-catalog
+                      i.ts-icon.la.la-tags
+                      a(href="blog_list01.html") Skills
+                      a(href="blog_list01.html") Financial
+                    p.blog-card-author
+                      i.ts-icon.la.la-user-tie
+                      | John Doe
+                .card-body
+                  h3.title 
+                    a(href="blog_detail.html") Blog Card 07
+                  p.desc With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...
+                  .card-footer
+                    a(href="blog_detail.html").blog-card-readmore
+                      | Continue Reading
+                      i.ts-icon.la.la-angle-right
+            .col-lg-6
+              .ts-blog-card-07.align-right
+                .card-cover
+                  img.card-img(alt="cover", src='https://picsum.photos/400?random=15')
+                  .blog-card-meta
+                    p.blog-card-time
+                      i.ts-icon.la.la-clock
+                      | Oct 15, 2019
+                    p.blog-card-catalog
+                      i.ts-icon.la.la-tags
+                      a(href="blog_list01.html") Skills
+                      a(href="blog_list01.html") Financial
+                    p.blog-card-author
+                      i.ts-icon.la.la-user-tie
+                      | John Doe
+                .card-body
+                  h3.title 
+                    a(href="blog_detail.html") Blog Card 07
+                  p.desc With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...
+                  .card-footer
+                    a(href="blog_detail.html").blog-card-readmore
+                      | Continue Reading
+                      i.ts-icon.la.la-angle-right
+  
   +control
 append plugins  
   +lib
