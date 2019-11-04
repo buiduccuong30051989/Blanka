@@ -497,6 +497,22 @@
   }
 
   .blog-card {
+    &-title {
+      font-size: 18px;
+      margin-bottom: 12px;
+      font-weight: 300;
+  
+      a {
+        color: $gray20;
+        transition: $transition-base;
+  
+        &:hover {
+          color: color(color1, 1);
+          text-decoration: none;
+        }
+      }
+    }
+
     &-readmore {
       color: color(color1, 1);
       padding-right: 5px;
@@ -552,22 +568,6 @@
 
       a {
         color: $white;
-      }
-    }
-  }
-
-  .title {
-    font-size: 18px;
-    margin-bottom: 12px;
-    font-weight: 300;
-
-    a {
-      color: $gray20;
-      transition: $transition-base;
-
-      &:hover {
-        color: color(color1, 1);
-        text-decoration: none;
       }
     }
   }
@@ -633,5 +633,171 @@
       flex: 0 0 100%;
       padding: 30px 0 0;
     }
+  }
+}
+
+.ts-blog-card-08 {
+  @extend .card;
+  background-color: $white;
+  border: 0;
+  border-radius: 2px;
+  overflow: hidden;
+
+  .card-cover {
+    position: relative;
+    overflow: hidden;
+    @include aspect-ratio(4, 2.6, '.card-img');
+
+    .card-img {
+      @include fitImage();
+    }
+  }
+
+  .blog-card {
+    &-meta {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 23px 15px 15px 85px;
+      background-color: color(color1, 0.9);
+      opacity: 0;
+      z-index: 0;
+      color: $white;
+      transition: $transition-base;
+
+      .ts-icon {
+        padding-right: 4px;
+        font-size: 16px;
+      }
+
+      [class^='blog-card-'] {
+        margin-bottom: 4px;
+        transition: opacity 0.35s, transform 0.35s;
+        transform: translate3d(0, 30px, 0);
+        opacity: 0;
+      }
+    }
+
+    &-title {
+      font-size: 18px;
+      margin-bottom: 12px;
+      font-weight: 300;
+  
+      a {
+        color: $gray20;
+        transition: $transition-base;
+  
+        &:hover {
+          color: color(color1, 1);
+          text-decoration: none;
+        }
+      }
+    }
+
+    &-time {
+      background-color: rgba($white, 0.8);
+      padding: 5px 15px;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      text-align: center;
+      letter-spacing: 1px;
+      z-index: 1;
+      border-radius: 2px;
+      
+      &-date {
+        font-family: $oswald;
+        font-size: 24px;
+        line-height: 1;
+        color: $white;
+        font-weight: 500;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        color: color(color1, 1);
+        margin-bottom: 2px;
+      }
+
+      &-month {
+        color: $gray40;
+        text-transform: uppercase;
+        margin: 0;
+        font-size: 13px;
+      }
+    }
+
+    &-catalog {
+      color: $white;
+
+      a {
+        color: $white;
+      }
+    }
+
+    &-readmore {
+      color: color(color1, 1);
+      padding-right: 5px;
+      position: relative;
+      transition: all 0.35s;
+      text-decoration: none;
+
+      .ts-icon {
+        position: absolute;
+        opacity: 0;
+        transform: translate3d(-5px, 5px, 0);
+        transition: all 0.35s;
+        right: 0;
+      }
+
+      &:hover {
+        padding-right: 16px;
+
+        .ts-icon {
+          opacity: 1;
+          transform: translate3d(0, 5px, 0);
+        }
+      }
+    }
+  }
+
+  .card-body {
+    
+  }
+
+  .card-footer {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    text-align: right;
+  }
+
+  &:hover {
+    .blog-card {
+      &-meta {
+        opacity: 1;
+
+        [class*='blog-card-'] {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+  
+          &:first-child {
+            transition-delay: 0.1s;
+          }
+  
+          &:nth-child(2) {
+            transition-delay: 0.15s;
+          }
+
+          &:nth-child(3) {
+            transition-delay: 0.2s;
+          }
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    
   }
 }

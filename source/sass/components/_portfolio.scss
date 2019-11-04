@@ -49,7 +49,7 @@
     border-radius: 0;
     overflow: hidden;
 
-    @include aspect-ratio(4, 3, '.card-img');
+    @include aspect-ratio(4, 3, ".card-img");
 
     .card-img {
       @include fitImage();
@@ -137,7 +137,7 @@
     // width: 25%;
 
     .card-cover {
-      @include aspect-ratio(1, 1, '.card-img');
+      @include aspect-ratio(1, 1, ".card-img");
     }
   }
 
@@ -145,7 +145,7 @@
     // width: 25%;
 
     .card-cover {
-      @include aspect-ratio(1, 2, '.card-img');
+      @include aspect-ratio(1, 2, ".card-img");
     }
   }
 
@@ -153,7 +153,7 @@
     // width: 50%;
 
     .card-cover {
-      @include aspect-ratio(2, 0.94736842105, '.card-img');
+      @include aspect-ratio(2, 0.94736842105, ".card-img");
     }
   }
 
@@ -161,7 +161,7 @@
     // width: 50%;
 
     .card-cover {
-      @include aspect-ratio(1, 1, '.card-img');
+      @include aspect-ratio(1, 1, ".card-img");
     }
   }
 
@@ -217,7 +217,7 @@
     border-radius: 0;
     overflow: hidden;
 
-    @include aspect-ratio(4, 3, '.card-img');
+    @include aspect-ratio(4, 3, ".card-img");
 
     .card-img {
       @include fitImage();
@@ -268,7 +268,7 @@
     height: 100%;
     @extend .bg--whitesmoke;
 
-    @include aspect-ratio(4, 3, '.card-img');
+    @include aspect-ratio(4, 3, ".card-img");
 
     .card-img {
       @include fitImage();
@@ -339,7 +339,7 @@
 
       a {
         &:not(:last-of-type):after {
-          content: ',';
+          content: ",";
           padding-right: 4px;
           @extend .color--fw-7;
         }
@@ -377,7 +377,7 @@
     padding-right: 50px;
 
     &:before {
-      content: '';
+      content: "";
       width: 5px;
       height: 42px;
       background-color: color(color1, 1);
@@ -387,7 +387,7 @@
     }
 
     &:after {
-      content: '\f15c';
+      content: "\f15c";
       font-family: $lineAwesome;
       font-size: 24px;
       color: $gray40;
@@ -399,25 +399,25 @@
 
   &.ts-portfolio-type-audio {
     .card-header:after {
-      content: '\f1c7';
+      content: "\f1c7";
     }
   }
 
   &.ts-portfolio-type-video {
     .card-header:after {
-      content: '\f1c8';
+      content: "\f1c8";
     }
   }
 
   &.ts-portfolio-type-pdf {
     .card-header:after {
-      content: '\f1c1';
+      content: "\f1c1";
     }
   }
 
   &.ts-portfolio-type-pp {
     .card-header:after {
-      content: '\f1c4';
+      content: "\f1c4";
     }
   }
 
@@ -471,24 +471,26 @@
       color: $white;
       font-size: 18px;
 
-      [class^='item'] {
-        margin: 0 10px;
-        cursor: pointer;
-
-        .ts-icon {
-          margin-right: 5px;
-          transition: $transition-base;
-        }
-      }
-
       .item {
-        &-favourite {
-          &:hover,
-          &.active {
-            .ts-icon {
-              color: $red;
-            }
+        opacity: 0;
+        transition: opacity 0.35s, transform 0.35s;
+
+        [class^="item"] {
+          margin: 0 10px;
+          cursor: pointer;
+
+          .ts-icon {
+            margin-right: 5px;
           }
+        }
+
+        &:first-child {
+          transform: translate3d(0, 20px, 0);
+        }
+
+        &:nth-child(2) {
+          transform: translate3d(0, 20px, 0);
+          transition-delay: .05s;
         }
       }
     }
@@ -498,9 +500,6 @@
     border-radius: 0;
   }
 
-  .card-body {
-  }
-
   .card-footer {
     background-color: transparent;
     display: flex;
@@ -508,18 +507,21 @@
     align-items: center;
   }
 
-  .btn-share-project {
-    padding: 0;
-    border: 0;
-    background-color: transparent;
-    font-size: 22px;
-    line-height: 1;
-    cursor: pointer;
-  }
-
   &:hover {
     .ts-overlay {
       opacity: 0.9;
+
+      .item {
+        opacity: 1;
+
+        &:first-child {
+          transform: translate3d(0,0,0);
+        }
+
+        &:nth-child(2) {
+          transform: translate3d(0,0,0);
+        }
+      }
     }
   }
 }
@@ -534,6 +536,10 @@
 
     .ts-overlay {
       opacity: 1;
+    }
+
+    .card-img {
+      border-radius: 0;
     }
 
     &-inner {
@@ -556,7 +562,7 @@
         height: 0;
         padding-top: 120%;
         background-color: $white;
-        content: '';
+        content: "";
         transition: opacity 0.45s, transform 0.45s;
         transform: rotate3d(0, 0, 1, 90deg);
         transform-origin: bottom left;
@@ -571,7 +577,7 @@
     bottom: 0;
     padding: 15px 30px;
 
-    [class*='item-'] {
+    [class*="item-"] {
       display: inline-block;
       color: $gray20;
       opacity: 0;
@@ -622,7 +628,7 @@
 
   &:hover {
     .portfolio-card-meta {
-      [class*='item-'] {
+      [class*="item-"] {
         opacity: 1;
         transform: translate3d(0, 0, 0);
 

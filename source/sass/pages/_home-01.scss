@@ -1,1 +1,12 @@
+//
+// Layout :: Home 01
+// --------------------------------------------------
+.home-01 {
+  &-slider {
+    height: 590px;
 
+    img {
+      @include fitImage();
+    }
+  }
+}

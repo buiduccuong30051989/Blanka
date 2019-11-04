@@ -1,78 +1,76 @@
 //
 // Components :: Team
 // --------------------------------------------------
-.ts-team-card {
-  &-01 {
-    @extend .card;
-    flex-direction: unset;
-    border: 0;
+.ts-team-card-01 {
+  @extend .card;
+  flex-direction: unset;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+
+  .card-cover {
     border-radius: 0;
-    background-color: transparent;
-    background-color: transparent;
+    overflow: hidden;
+    flex: 0 0 150px;
+    border-radius: 2px;
+    @include aspect-ratio(1, 1.5, ".card-img");
 
-    .card-cover {
+    .card-img {
+      @include fitImage();
       border-radius: 0;
-      overflow: hidden;
-      flex: 0 0 150px;
-      border-radius: 2px;
-      @include aspect-ratio(1, 1.5, ".card-img");
-
-      .card-img {
-        @include fitImage();
-        border-radius: 0;
-      }
     }
+  }
 
-    .card-body {
-      padding: 15px;
-      position: relative;
-      padding-top: 0;
-      padding-bottom: 40px;
-    }
+  .card-body {
+    padding: 15px;
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
 
-    .team-card-name {
+  .team-card {
+    &-name {
       color: $gray20;
       font-size: 18px;
       font-weight: bold;
       margin-bottom: 0;
     }
 
-    .team-card-title {
+    &-title {
       color: $gray40;
       margin-bottom: 0;
       @extend .color--fb-6;
     }
 
-    .team-card-desc {
-      margin: 0;
+    &-desc {
       color: $gray40;
     }
 
-    .team-card-phone {
+    &-phone {
       // font-size: 13px;
       margin-bottom: 10px;
-
+  
       a {
         // color: color(color1, 1);
         color: $gray40;
       }
       // display: none;
-
+  
       .ts-icon {
         display: none;
       }
-
+  
       a {
         @extend .color--fb-5;
         transition: $transition-base;
-
+  
         &:hover {
           color: color(color1, 1);
         }
       }
     }
 
-    .social-list-01 {
+    &-social {
       margin-bottom: 18px;
       font-size: 22px;
       position: absolute;
@@ -82,16 +80,16 @@
       padding: 0 15px 0;
       margin: 0;
     }
+  }
 
-    &.in-dark {
+  &.in-dark {
+    color: $white;
+    background-color: $gray20;
+
+    a,
+    .team-card-name,
+    .team-card-title {
       color: $white;
-      background-color: $gray20;
-
-      a,
-      .team-card-name,
-      .team-card-title {
-        color: $white;
-      }
     }
   }
 
@@ -209,7 +207,7 @@
     align-items: center;
     padding: 15px 20px 20px;
     border-bottom: 3px solid color(color1, 1);
-    background: url('../images/bg-team-03.png') no-repeat;
+    background: url("../images/bg-team-03.png") no-repeat;
     background-position: top right;
     background-size: 70% auto;
 
@@ -292,7 +290,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: url('../images/bg-team-04.png') no-repeat;
+    background: url("../images/bg-team-04.png") no-repeat;
     background-position: top left;
     background-size: 70% auto;
   }
@@ -374,8 +372,6 @@
     border-radius: 2px;
     position: relative;
     height: 100%;
-    @extend .bg--whitesmoke;
-
     @include aspect-ratio(1, 1.3, ".card-img");
 
     .card-img {
@@ -406,13 +402,20 @@
       @extend .shadow02;
     }
 
-    .title {
+    a:hover {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+
+  .team-card {
+    &-title {
       font-size: pxtorem(18);
       margin-bottom: 15px;
       color: $white;
     }
 
-    .team-card-phone a {
+    &-phone a {
       color: rgba($white, 0.7);
       transition: $transition-base;
 
@@ -421,7 +424,7 @@
       }
     }
 
-    .meta {
+    &-meta {
       display: flex;
       width: 100%;
       align-items: center;
@@ -435,7 +438,6 @@
       span,
       a {
         @extend .color--fw-7;
-        font-size: 13px;
         text-transform: uppercase;
       }
 
@@ -444,14 +446,9 @@
       }
     }
 
-    .category {
+    &-catalog {
       display: flex;
       align-items: center;
-    }
-
-    a:hover {
-      color: $white;
-      text-decoration: none;
     }
   }
 
@@ -459,7 +456,6 @@
     .card-cover {
       flex: 0 0 35%;
       height: auto;
-      // @include aspect-ratio(1, 1.3, '.card-img');
     }
 
     .card-body {
@@ -475,8 +471,10 @@
         transform: none;
         font-size: 13px;
       }
+    }
 
-      .meta {
+    .team-card {
+      &-meta {
         position: static;
         padding: 0;
 

@@ -2,6 +2,9 @@
 // Layout :: Desktop Navigation
 // --------------------------------------------------
 .ts-main-menu {
+  font-family: $oswald;
+  font-weight: 300;
+
   // all ul
   ul {
     padding: 0;
@@ -15,7 +18,7 @@
 
   // all a
   a {
-    color: $gray20;
+    color: $color5;
     text-decoration: none;
   }
 
@@ -112,7 +115,8 @@
 
         &.has-sub {
           & > a:after {
-            content: '\f112';
+            content: "\f105";
+            font-weight: 900;
             font-family: $lineAwesome;
             font-size: 10px;
             padding-left: 5px;
@@ -346,7 +350,7 @@
           position: relative;
 
           &:before {
-            content: '';
+            content: "";
             height: 3px;
             width: 100%;
             background-color: color(color1, 1);
@@ -381,7 +385,7 @@
           position: relative;
 
           &:before {
-            content: '';
+            content: "";
             height: 3px;
             width: 100%;
             background-color: color(color1, 1);
@@ -416,11 +420,9 @@
           position: relative;
 
           &:before {
-            content: '';
+            content: "";
             height: 100%;
             width: 100%;
-            // background-color: color(color1, 1);
-            // background-clip: content-box;
             border-top: 3px solid color(color1, 1);
             border-bottom: 3px solid color(color1, 1);
             padding-left: inherit;
@@ -453,7 +455,7 @@
           position: relative;
 
           &:before {
-            content: '●';
+            content: "●";
             color: color(color1, 1);
             padding-right: 2px;
             opacity: 0;
@@ -501,7 +503,7 @@
           z-index: 2;
 
           &:before {
-            content: '';
+            content: "";
             height: 100%;
             width: 100%;
             background-color: color(color1, 1);
@@ -540,7 +542,7 @@
           z-index: 2;
 
           &:before {
-            content: '';
+            content: "";
             height: 3px;
             width: 100%;
             background-color: color(color1, 0.5);
@@ -577,8 +579,9 @@
         // a level 1
         & > a {
           &:after {
-            content: '\f110';
+            content: "\f107";
             font-family: $lineAwesome;
+            font-weight: 900;
             font-size: 10px;
             padding-left: 5px;
             color: inherit;
@@ -590,7 +593,7 @@
         li.has-sub {
           & > a {
             &:after {
-              content: '\f112';
+              content: "\f105";
               font-family: $lineAwesome;
               font-size: 10px;
               color: inherit;
@@ -613,7 +616,7 @@
         & > li.has-sub {
           & > a {
             &:after {
-              content: '\f165';
+              content: "\f0d7";
             }
           }
         }
@@ -622,7 +625,7 @@
           li.has-sub {
             & > a {
               &:after {
-                content: '\f167';
+                content: "\f0da";
               }
             }
           }
@@ -635,7 +638,7 @@
         & > li.has-sub {
           & > a {
             &:after {
-              content: '\f2c2';
+              content: "\f067";
             }
           }
         }
@@ -644,7 +647,7 @@
           li.has-sub {
             & > a {
               &:after {
-                content: '\f2c2';
+                content: "\f067";
               }
             }
           }
@@ -785,7 +788,7 @@
   &.divider {
     & > ul > li:not(:last-of-type) {
       &:after {
-        content: '/';
+        content: "/";
         position: absolute;
         right: -5px;
         top: 50%;
@@ -798,43 +801,43 @@
 
     &.line {
       & > ul > li:not(:last-of-type):after {
-        content: '|';
+        content: "|";
       }
     }
 
     &.dot {
       & > ul > li:not(:last-of-type):after {
-        content: '○';
+        content: "○";
       }
     }
 
     &.dot-black {
       & > ul > li:not(:last-of-type):after {
-        content: '●';
+        content: "●";
       }
     }
 
     &.square {
       & > ul > li:not(:last-of-type):after {
-        content: '□';
+        content: "□";
       }
     }
 
     &.square-black {
       & > ul > li:not(:last-of-type):after {
-        content: '■';
+        content: "■";
       }
     }
 
     &.diamond {
       & > ul > li:not(:last-of-type):after {
-        content: '◇';
+        content: "◇";
       }
     }
 
     &.diamond-black {
       & > ul > li:not(:last-of-type):after {
-        content: '◆';
+        content: "◆";
       }
     }
 

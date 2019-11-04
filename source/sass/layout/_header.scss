@@ -20,7 +20,7 @@
 }
 
 .ts-topbar {
-  font-size: pxtorem(13);
+  font-size: 13px;
 
   a:hover {
     text-decoration: none;
@@ -33,19 +33,27 @@
       align-items: center;
     }
 
+    .item {
+      opacity: .9;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
     &-left {
       flex-grow: 1;
 
       .item {
-        border-left: 1px solid rgba($white, 0.2);
-        padding: 16px 28px;
+        border-left: 1px solid rgba($white, 0.1);
+        padding: 11px 28px;
 
         &:last-of-type {
-          border-right: 1px solid rgba($white, 0.2);
+          border-right: 1px solid rgba($white, 0.1);
         }
 
         .ts-icon {
-          font-size: 18px;
+          font-size: 16px;
         }
       }
     }
@@ -166,13 +174,14 @@
 }
 
 .header-container {
-  box-shadow: 0 1px 3px rgba($black, 0.15);
+  // box-shadow: 0 1px 3px rgba($black, 0.15);
 }
 
 .ts-header {
   &-01 {
     padding: 25px 0;
     position: relative;
+    box-shadow: 0 1px 1px rgba($black, 0.05);
 
     &-inner {
       display: flex;

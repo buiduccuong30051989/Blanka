@@ -54,14 +54,14 @@ append content
                   a(href='project_detail.html')
                     img.card-img(src='https://picsum.photos/600/300?random=4', alt='cover')
                   .ts-overlay.bg--color1
-                    .d-flex.mb-4
-                      .item-favourite.js-control-project-card-04
+                    .item.d-flex.mb-4
+                      .item-favourite
                         i.ts-icon.las.la-heart
                         span 98
                       .item-comment
                         i.ts-icon.la.la-comments
                         span 102
-                    a(href='project_detail.html#comments').ts-btn.btn-cta-01
+                    a(href='project_detail.html#comments').ts-btn.btn-cta-01.item
                       span Join the conversation
                       i.ts-icon.la.la-angle-right
                 .card-body
@@ -87,14 +87,14 @@ append content
                   a(href='project_detail.html')
                     img.card-img(src='https://picsum.photos/600/300?random=1', alt='cover')
                   .ts-overlay.bg--color1
-                    .d-flex.mb-4
-                      .item-favourite.js-control-project-card-04
+                    .item.d-flex.mb-4
+                      .item-favourite
                         i.ts-icon.las.la-heart
                         span 98
                       .item-comment
                         i.ts-icon.la.la-comments
                         span 102
-                    a(href='project_detail.html#comments').ts-btn.btn-cta-01
+                    a(href='project_detail.html#comments').ts-btn.btn-cta-01.item
                       span Join the conversation
                       i.ts-icon.la.la-angle-right
                 .card-body
@@ -120,14 +120,14 @@ append content
                   a(href='project_detail.html')
                     img.card-img(src='https://picsum.photos/600/300?random=14', alt='cover')
                   .ts-overlay.bg--color1
-                    .d-flex.mb-4
-                      .item-favourite.js-control-project-card-04
+                    .item.d-flex.mb-4
+                      .item-favourite
                         i.ts-icon.las.la-heart
                         span 98
                       .item-comment
                         i.ts-icon.la.la-comments
                         span 102
-                    a(href='project_detail.html#comments').ts-btn.btn-cta-01
+                    a(href='project_detail.html#comments').ts-btn.btn-cta-01.item
                       span Join the conversation
                       i.ts-icon.la.la-angle-right
                 .card-body
@@ -155,7 +155,7 @@ append content
                     h4.portfolio-card-title Project Card 05
                     p.portfolio-card-catalog Consultant
                 .portfolio-card-meta
-                  .item-favourite.js-control-project-card-04
+                  .item-favourite
                     i.ts-icon.las.la-heart
                     span 98
                   .item-comment
@@ -183,13 +183,6 @@ append script
   script.
     $(document).ready(function() {
       'user strict';
-      $('.js-control-project-card-04').on('click', function() {
-        $(this).toggleClass('active');
-      });
-
-      $('.js-control-project-card-05').on('click', function() {
-        $(this).toggleClass('active');
-      });
     });
   
     

@@ -350,7 +350,13 @@
   border: 1px solid $gray90;
 
   .ts-icon-box-05-inner {
-    padding: 0 30px 40px;
+    padding: 0 30px 35px;
+
+    & > .ts-icon {
+      font-size: 72px;
+      margin-bottom: 22px;
+      color: $color5;
+    }
   }
 
   &-layer {
@@ -364,33 +370,30 @@
     }
   }
 
-  .ts-icon {
-    font-size: 56px;
-    margin-bottom: 30px;
-    color: $gray20;
-  }
-
   &-content {
     .title {
       font-size: 18px;
+      font-weight: 300;
+      text-transform: uppercase;
     }
 
     .sub-title {
       font-size: 14px;
       font-style: italic;
       font-weight: normal;
-      margin-bottom: 30px;
+      margin-bottom: 18px;
+      color: color(color1, 1);
     }
 
     .desc {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
   }
 }
 
 .ts-icon-box-06 {
   border: 1px solid $gray90;
-  position: relative;  
+  position: relative;
 
   .ts-icon-box-06-inner {
     padding: 30px 100px 30px 50px;

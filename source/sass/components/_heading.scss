@@ -62,3 +62,16 @@
     }
   }
 }
+
+.ts-section-heading-01 {
+  margin-bottom: 28px;
+
+  h2 {
+    font-weight: 300;
+    color: $color5;
+  }
+
+  &.align-center {
+    text-align: center;
+  }
+}

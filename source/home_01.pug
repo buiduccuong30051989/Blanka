@@ -1,0 +1,213 @@
+extends modules/layout/layout.pug
+include modules/script/lib
+include modules/header_mixin/header_mixin
+include modules/team/team
+include modules/portfolio/portfolio
+include modules/services/services
+include modules/footer/footer
+include modules/control/control
+append head
+  title="Home Page - 01"
+  link(href="css/main.min.css" rel="stylesheet")
+append header
+  .header-container
+    .ts-topbar.ts-topbar-01.in-dark.bg--color1
+      .container
+        .ts-topbar-01-inner
+          .ts-topbar-01-left
+            .item.ts-icon-box-info-01.in-dark
+              i.ts-icon.la.la-phone
+              a(href="tel:18604193333") 1860-419-3331
+            .item.ts-icon-box-info-01.in-dark
+              i.ts-icon.la.la-envelope
+              a(href="mailto:contact@ananci.com") consultant@ananci.com
+            .item.ts-icon-box-info-01.in-dark
+              i.ts-icon.la.la-clock
+              span Mon - Fri: 8am - 6pm
+          .ts-topbar-01-right
+            //- .item.topbar-social.pr-4
+            //-   span.pr-3.follow-us Follow Us:
+            //-   .ts-social-list-01.fs--16.align-left.in-dark
+            //-     +tsSocialList01
+            .item.ts-language.in-dark.justify-content-end
+              +selectLanguage
+    .ts-header.ts-header-01.bg--white
+      .container
+        .ts-header-01-inner
+          .ts-header-01-left
+            a.ts-header-logo-wrap(href="index.html")
+              img.header-logo(src="images/logo-dark.png" alt="logo")
+          .ts-header-01-right.d-none.d-lg-flex
+            nav.ts-main-menu
+              +navigation
+            .header-01-control
+              .item.search-popup-btn.js-search-popup-btn
+                +popupSearch
+          a(href="#js-mobile-menu-btn").ts-btn-mobile-menu
+            i.ts-icon.la.la-bars
+append content
+  .home-01-slider
+    img(src="http://templates.thememodern.com/compact/img-rev-slider/bg-2.jpg")
+  
+  .home-01-services.py-7
+    .container
+      .row
+        .col-lg-12.mb-lg-5
+          .ts-section-heading-01.align-center
+            h2 Choose Dotted Template For Your Purpose
+          p.font-italic.text-center Phasellus id lacus neque. Proin vestibulum leo at turpis rhoncus, sed lacinia sem mollis. Etiam cursus bibendum dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam auctor eu nunc nec facilisis. Duis in felis eget eros tristique ornare. Maecenas volutpat, nisi id pretium imperdiet, odio neque pellentesque erat.
+      .row.services-wrap
+        .col-lg-3
+          .ts-icon-box-05.bg-white
+            svg.ts-icon-box-05-layer(viewbox="0 0 221 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+              g(stroke="none" fill-rule="evenodd")
+                polygon.layer-01(points="0 0 174 0 0 47")
+                polygon.layer-02(points="221 0 0 0 221 47")
+            .ts-icon-box-05-inner
+              i.ts-icon.la.la-chart-pie
+              .ts-icon-box-05-content
+                h3.title Icon Box 05
+                h5.sub-title Lorem Ipsum dore si amnet
+                p.desc Donec lacinia mi rutrum sagittis consequat. Donec sagittis, tellus sodales sollicitudin commodo, risus urna interdum massa
+                a(href="#").ts-btn.btn-outline-color1 Know More
+                  i.ts-icon.la.la-plus.pl-1.fs--16
+        
+        .col-lg-3
+          .ts-icon-box-05.bg-white
+            svg.ts-icon-box-05-layer(viewbox="0 0 221 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+              g(stroke="none" fill-rule="evenodd")
+                polygon.layer-01(points="0 0 174 0 0 47")
+                polygon.layer-02(points="221 0 0 0 221 47")
+            .ts-icon-box-05-inner
+              i.ts-icon.la.la-chart-pie
+              .ts-icon-box-05-content
+                h3.title Icon Box 05
+                h5.sub-title Lorem Ipsum dore si amnet
+                p.desc Donec lacinia mi rutrum sagittis consequat. Donec sagittis, tellus sodales sollicitudin commodo, risus urna interdum massa
+                a(href="#").ts-btn.btn-outline-color1 Know More
+                  i.ts-icon.la.la-plus.pl-1.fs--16
+        
+        .col-lg-3
+          .ts-icon-box-05.bg-white
+            svg.ts-icon-box-05-layer(viewbox="0 0 221 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+              g(stroke="none" fill-rule="evenodd")
+                polygon.layer-01(points="0 0 174 0 0 47")
+                polygon.layer-02(points="221 0 0 0 221 47")
+            .ts-icon-box-05-inner
+              i.ts-icon.la.la-chart-pie
+              .ts-icon-box-05-content
+                h3.title Icon Box 05
+                h5.sub-title Lorem Ipsum dore si amnet
+                p.desc Donec lacinia mi rutrum sagittis consequat. Donec sagittis, tellus sodales sollicitudin commodo, risus urna interdum massa
+                a(href="#").ts-btn.btn-outline-color1 Know More
+                  i.ts-icon.la.la-plus.pl-1.fs--16
+        
+        .col-lg-3
+          .ts-icon-box-05.bg-white
+            svg.ts-icon-box-05-layer(viewbox="0 0 221 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+              g(stroke="none" fill-rule="evenodd")
+                polygon.layer-01(points="0 0 174 0 0 47")
+                polygon.layer-02(points="221 0 0 0 221 47")
+            .ts-icon-box-05-inner
+              i.ts-icon.la.la-chart-pie
+              .ts-icon-box-05-content
+                h3.title Icon Box 05
+                h5.sub-title Lorem Ipsum dore si amnet
+                p.desc Donec lacinia mi rutrum sagittis consequat. Donec sagittis, tellus sodales sollicitudin commodo, risus urna interdum massa
+                a(href="#").ts-btn.btn-outline-color1 Know More
+                  i.ts-icon.la.la-plus.pl-1.fs--16
+  
+  .home-01-why-us.bg--whitesmoke.py-7
+    .container
+      .row
+        .col-lg-8
+          .ts-section-heading-01
+            h2 Why You Should Choose Us?
+          p.mb-4 Integer est arcu, congue nec vulputate faucibus, aliquam eget tellus. Aliquam laoreet aliquam mi, vitae tempus orci mattis vitae. Cras ultricies mauris est, ultricies sagittis diam euismod et. Curabitur at dolor vitae felis semper ullamcorper eu mattis felis. Phasellus felis diam, egestas non hendrerit a, lacinia a neque.
+
+  .home-01-projects.py-7
+    .container
+      .row
+        .col-lg-12
+          .ts-section-heading-01
+            h2 Why You Should Choose Us?
+      .row
+        .col.p-0
+          .ts-portfolio-05.rounded-0
+            a(href='project_detail.html').card-cover
+              img.card-img(src='https://picsum.photos/600/400?random=5', alt='cover')
+              .ts-overlay.portfolio-card-overlay
+              .card-cover-inner
+                h4.portfolio-card-title Project Card 05
+                p.portfolio-card-catalog Consultant
+            .portfolio-card-meta
+              .item-favourite
+                i.ts-icon.las.la-heart
+                span 98
+              .item-comment
+                i.ts-icon.la.la-comments
+                span 102
+        .col.p-0
+          .ts-portfolio-05.rounded-0
+            a(href='project_detail.html').card-cover
+              img.card-img(src='https://picsum.photos/600/400?random=5', alt='cover')
+              .ts-overlay.portfolio-card-overlay
+              .card-cover-inner
+                h4.portfolio-card-title Project Card 05
+                p.portfolio-card-catalog Consultant
+            .portfolio-card-meta
+              .item-favourite
+                i.ts-icon.las.la-heart
+                span 98
+              .item-comment
+                i.ts-icon.la.la-comments
+                span 102
+        .col.p-0
+          .ts-portfolio-05.rounded-0
+            a(href='project_detail.html').card-cover
+              img.card-img(src='https://picsum.photos/600/400?random=5', alt='cover')
+              .ts-overlay.portfolio-card-overlay
+              .card-cover-inner
+                h4.portfolio-card-title Project Card 05
+                p.portfolio-card-catalog Consultant
+            .portfolio-card-meta
+              .item-favourite
+                i.ts-icon.las.la-heart
+                span 98
+              .item-comment
+                i.ts-icon.la.la-comments
+                span 102
+        .col.p-0
+          .ts-portfolio-05.rounded-0
+            a(href='project_detail.html').card-cover
+              img.card-img(src='https://picsum.photos/600/400?random=5', alt='cover')
+              .ts-overlay.portfolio-card-overlay
+              .card-cover-inner
+                h4.portfolio-card-title Project Card 05
+                p.portfolio-card-catalog Consultant
+            .portfolio-card-meta
+              .item-favourite
+                i.ts-icon.las.la-heart
+                span 98
+              .item-comment
+                i.ts-icon.la.la-comments
+                span 102
+
+  
+  +control
+append plugins  
+  +lib
+append script
+  //- script(src='revolution-slider/revolution/js/jquery.themepunch.tools.min.js')
+  //- script(src='revolution-slider/revolution/js/jquery.themepunch.revolution.min.js')
+  //- Uncomment codes below to run
+  //- script(src='revolution-slider/revolution/js/extensions/revolution.extension.actions.min.js')
+  //- script(src='revolution-slider/revolution/js/extensions/revolution.extension.carousel.min.js')
+  //- script(src='revolution-slider/revolution/js/extensions/revolution.extension.kenburn.min.js')
+  //- script(src='revolution-slider/revolution/js/extensions/revolution.extension.layeranimation.min.js')
+  //- script(src='revolution-slider/revolution/js/extensions/revolution.extension.migration.min.js')
+  //- script(src='revolution-slider/revolution/js/extensions/revolution.extension.navigation.min.js')
+  //- script(src='revolution-slider/revolution/js/extensions/revolution.extension.parallax.min.js')
+  //- script(src='revolution-slider/revolution/js/extensions/revolution.extension.slideanims.min.js')
+  //- script(src='revolution-slider/revolution/js/extensions/revolution.extension.video.min.js')
+  script(src="js/main.min.js")

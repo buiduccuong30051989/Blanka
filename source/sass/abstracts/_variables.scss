@@ -24,11 +24,11 @@ $deepOrange: #ff5722;
 $brown: #795548;
 $grey: #9e9e9e;
 // $color1: #1f5ca9;
-$color1: #002e5b;
-$color2: #fde428;
-$color3: darken(desaturate(adjust-hue($color1, 5), 14.53), 15.1);
-$color4: #2e363a;
-$color5: #0c1223;
+$color1: #3fa037;
+$color2: lighten(saturate(adjust-hue($color1, -1), 14.19), 11.18);
+$color3: #c1bebc;
+$color4: #e8e7d5;
+$color5: #3f3e42;
 $dynamicColor: #ffffff;
 
 /// shades of grey
@@ -232,6 +232,10 @@ $colors-gray: (
 
 $colors-theme: (
   color1: $color1,
+  color2: $color2,
+  color3: $color3,
+  color4: $color4,
+  color5: $color5,
   dynamicColor: $dynamicColor
 );
 
@@ -298,6 +302,7 @@ $roboto: "Roboto", sans-serif;
 
 /// Transitions
 /// -------------------------------------------------
+$transition-base: all .35s;
 
 /// Boder radius
 /// -------------------------------------------------

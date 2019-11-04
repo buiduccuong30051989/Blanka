@@ -4,7 +4,12 @@
 .ts-btn {
   @extend .btn;
   border-radius: 2px;
-
+  font-family: $oswald;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 13px;
+  
   &:focus {
     box-shadow: none;
   }
