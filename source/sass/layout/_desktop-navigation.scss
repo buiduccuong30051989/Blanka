@@ -80,7 +80,6 @@
 
       // ul level 2
       & > ul {
-        padding: 14px 0;
         top: 100%;
         left: 0;
         transition-property: opacity, top;
@@ -101,7 +100,7 @@
       opacity: 0;
       transform: scale(0);
       height: auto;
-      min-width: 230px;
+      min-width: 200px;
       position: absolute;
       z-index: 1021;
       background: $white;
@@ -130,7 +129,7 @@
           width: 100%;
           justify-content: space-between;
           align-items: center;
-          padding: 8px 26px;
+          padding: 8px 15px;
           width: 100%;
         }
 
@@ -150,6 +149,10 @@
             transform: scale(1);
             left: 100%;
           }
+        }
+
+        &:not(:last-of-type) {
+          border-bottom: 1px solid rgba($black, .03);
         }
       }
     }

@@ -123,3 +123,13 @@ mixin blog08(cover, title, time)
         a(href="blog_detail.html")=title
       .ts-blog-card-meta
         span.time=time
+
+mixin blog09(cover, title, desc)
+  .ts-blog-card-widget-02.in-dark
+    .ts-blog-card-cover
+      a(href="blog_detail.html")
+        img(src=cover, alt="cover")
+    .ts-blog-card-content
+      h4.ts-blog-card-title 
+        a(href="blog_detail.html")=title
+      p.ts-blog-card-desc=desc
