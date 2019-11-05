@@ -1,0 +1,26 @@
+//
+// Layout :: Call To Action
+// --------------------------------------------------
+.ts-box-cta-01 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  border-radius: 2px;
+  overflow: hidden;
+
+  .box-cta {
+    &-title {
+      font-weight: 300;
+      margin-bottom: 15px;
+    }
+
+    &-desc {
+      margin-bottom: 0;
+    }
+  }
+
+  .ts-btn {
+    white-space: nowrap;
+  }
+}

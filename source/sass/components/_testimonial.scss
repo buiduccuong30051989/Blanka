@@ -387,3 +387,48 @@
     }
   }
 }
+
+.ts-testimonial-card-06 {
+  background-color: rgba($black, .7);
+  color: rgba($white, .7);
+  border-bottom: 4px solid color(color1, 1);
+  padding: 40px 80px 30px;
+  text-align: center;
+  font-style: italic;
+  font-size: 16px;
+  position: relative;
+  margin-bottom: 12px;
+  width: 100%;
+
+  &:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 12px solid color(color1, 1);
+    border-right: 12px solid color(color1, 1);
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top-width: 14px;
+    border-top-style: solid;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &:before {
+    content: "\f10d";
+    font-weight: 900;
+    font-family: $lineAwesome;
+    color: $color5;
+    font-size: 64px;
+    position: absolute;
+    top: 12px;
+    left: 5px;
+    line-height: 1;
+  }
+
+  .blockquote-footer {
+    // color: $color4;
+  }
+}

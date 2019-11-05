@@ -23,19 +23,22 @@
 
   &.list-circle {
     li:before {
-      content: '\f17c';
+      content: "\f058";
+      font-weight: 900;
     }
   }
 
   &.list-square {
     li:before {
-      content: '\f17e';
+      content: "\f14a";
+      font-weight: 900;
     }
   }
 
   &.list-check {
     li:before {
-      content: '\f17b';
+      content: "\f00c";
+      font-weight: 900;
     }
   }
 

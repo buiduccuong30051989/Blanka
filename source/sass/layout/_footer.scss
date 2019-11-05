@@ -4,7 +4,7 @@
 .footer {
   &-01 {
     position: relative;
-    background-color: color(color4, 1);
+    background-color: $color8;
 
     .footer {
       &-inner {
@@ -26,7 +26,6 @@
   }
 
   &-02 {
-
     .footer {
       &-inner {
         @extend .row;
@@ -148,10 +147,10 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    background-color: color(color4, 1);
+    background-color: $color7;
     padding: 17px 0;
     border-top: 1px solid rgba($white, 0.1);
-    @extend .color--fw-7;
+    color: rgba($white, 0.7);
 
     .copyright-inner {
       display: flex;

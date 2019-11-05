@@ -100,3 +100,84 @@
     margin-top: 15px;
   }
 }
+
+.ts-accrodion-01 {
+  background-color: transparent;
+  border: 0;
+
+  .card-header {
+    border: 0;
+    border-radius: 0;
+    color: $white;
+    padding: 0;
+
+    .ts-btn {
+      font-size: 15px;
+      position: relative;
+      padding-right: 45px;
+      overflow: hidden;
+      transition: $transition-base;
+      text-transform: capitalize;
+      padding-top: 8px;
+      padding-bottom: 8px;
+
+      &:after {
+        content: "\f107";
+        font-family: $lineAwesome;
+        font-weight: 900;
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translate3d(0, -50%, 0);
+        transition: transform 0.35s, opacity 0.35s;
+      }
+
+      &:before {
+        content: "\f106";
+        font-family: $lineAwesome;
+        font-weight: 900;
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translate3d(0, 50%, 0);
+        opacity: 0;
+        transition: transform 0.35s, opacity 0.35s;
+      }
+
+      &[aria-expanded="true"] {
+        pointer-events: none;
+        background-color: color(color1, 1);
+        color: color(dynamicColor, 1);
+
+        &:before {
+          color: $white;
+          opacity: 1;
+          transform: translate3d(0, -50%, 0);
+        }
+
+        &:after {
+          opacity: 0;
+          transform: translate3d(0, -100%, 0);
+        }
+      }
+
+      &:hover {
+        background-color: color(color1, .9);
+        color: $white;
+      }
+    }
+  }
+
+  .card-body {
+    color: $gray40;
+    border-left: 1px solid rgba($black, .1);
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 5px 15px 5px 15px;
+  }
+
+  &:not(:first-of-type) {
+    margin-top: 15px;
+  }
+}

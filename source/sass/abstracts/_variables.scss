@@ -29,6 +29,9 @@ $color2: lighten(saturate(adjust-hue($color1, -1), 14.19), 11.18);
 $color3: #c1bebc;
 $color4: #e8e7d5;
 $color5: #3f3e42;
+$color6: #34623F;
+$color7: #1E2F23;
+$color8: darken(desaturate(adjust-hue($color1, 11), 62.90), 31.96);
 $dynamicColor: #ffffff;
 
 /// shades of grey

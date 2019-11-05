@@ -157,3 +157,30 @@
     }
   }
 }
+
+.ts-input-02 {
+  @extend .form-control;
+  border-radius: 2px;
+  transition: $transition-base;
+  font-weight: 300;
+  border-color: $color7;
+  background-color: $color7;
+  color: $white;
+  font-family: $lato;
+  height: 40px;
+
+  @include placeholder() {
+    color: $white;
+    font-family: $lato;
+    font-size: 13px;
+  }
+
+  &:hover,
+  &:focus {
+    outline: 0;
+    box-shadow: none;
+    background-color: $color6;
+    border-color: $color6;
+    color: $white;
+  }
+}
