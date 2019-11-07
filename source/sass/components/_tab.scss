@@ -53,3 +53,49 @@
     padding: 15px;
   }
 }
+
+.ts-nav-tabs-01 {
+  border-bottom: 5px solid $color1;
+
+  .nav-link {
+    padding: 9px 25px;
+    background-color: $color7;
+    border-radius: 0;
+    color: $white;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+    margin-bottom: 0;
+    font-family: $oswald;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+
+    &:not(:last-of-type) {
+      margin-right: 10px;
+    }
+
+    &.active {
+      background-color: color(color1, 1);
+      color: $white;
+      border-color: color(color1, 1);
+
+      &:hover {
+        background-color: color(color1, 1);
+        color: $white;
+        border-color: color(color1, 1);
+      }
+    }
+
+    &:hover {
+      background-color: color(color1, 1);
+      border-color: color(color1, 1);
+      color: $white;
+    }
+  }
+}
+
+.ts-tab-content-01 {
+  padding: 30px;
+  color: $color3;
+  background-color: $color7;
+}

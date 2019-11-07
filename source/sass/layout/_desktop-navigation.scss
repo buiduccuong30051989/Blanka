@@ -152,7 +152,7 @@
         }
 
         &:not(:last-of-type) {
-          border-bottom: 1px solid rgba($black, .03);
+          border-bottom: 1px solid rgba($black, 0.03);
         }
       }
     }
@@ -508,17 +508,17 @@
           &:before {
             content: "";
             height: 100%;
-            width: 100%;
+            width: 106%;
             background-color: color(color1, 1);
             padding-left: inherit;
             padding-right: inherit;
-            left: 0;
+            left: -2px;
             top: 0;
             position: absolute;
             opacity: 0;
             transition: $transition-base;
             z-index: -1;
-            transform: skewX(-24deg);
+            transform: skewX(-17deg);
           }
         }
 
@@ -531,6 +531,16 @@
               opacity: 1;
             }
           }
+        }
+
+        & > ul {
+          left: -14px;
+        }
+
+        &:last-child > ul,
+        &:nth-last-child(2) > ul {
+          right: 9px;
+          left: auto;
         }
       }
     }
@@ -729,46 +739,16 @@
       & > li {
         & > a {
           font-size: 1rem;
-          padding: 21px 15px;
-          color: color(color1, 1);
-          font-weight: 700;
-          text-transform: lowercase;
+          padding: 20px;
+          color: $gray20;
+          padding: 32px 25px;
+          // text-transform: lowercase;
         }
 
         &:hover,
         &.active {
           & > a {
-            color: #6c98e1;
-          }
-        }
-
-        & > ul {
-          & > li {
-            &:hover {
-              background-color: color(color1, 1);
-
-              & > a {
-                color: $yellow;
-              }
-            }
-          }
-
-          ul {
-            background-color: color(color1, 1);
-
-            li {
-              a {
-                color: $white;
-              }
-
-              &:hover {
-                background-color: transparent;
-
-                & > a {
-                  color: $yellow;
-                }
-              }
-            }
+            color: $white;
           }
         }
       }

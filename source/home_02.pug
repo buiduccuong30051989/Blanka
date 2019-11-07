@@ -12,44 +12,60 @@ append head
   link(href="css/main.min.css" rel="stylesheet")
 append header
   .header-container
-    .ts-topbar.ts-topbar-01.in-dark.bg--color1
+    .ts-topbar.ts-topbar-06.in-dark.bg--color7
       .container
-        .ts-topbar-01-inner
-          .ts-topbar-01-left
-            .item.ts-icon-box-info-01.in-dark
-              i.ts-icon.la.la-phone
-              a(href="tel:18604193333") 1860-419-3331
-            .item.ts-icon-box-info-01.in-dark
-              i.ts-icon.la.la-envelope
-              a(href="mailto:contact@ananci.com") consultant@ananci.com
-            .item.ts-icon-box-info-01.in-dark
-              i.ts-icon.la.la-clock
-              span Mon - Fri: 8am - 6pm
-          .ts-topbar-01-right
-            //- .item.topbar-social.pr-4
-            //-   span.pr-3.follow-us Follow Us:
-            //-   .ts-social-list-01.fs--16.align-left.in-dark
-            //-     +tsSocialList01
+        .ts-topbar-06-inner
+          .ts-topbar-06-left
             .item.ts-language.in-dark.justify-content-end
               +selectLanguage
-    .ts-header.ts-header-01.bg--white
+          .ts-topbar-06-right
+            .item.ts-icon-box-info-01.in-dark
+              i.ts-icon.la.la-map-marker
+              span 1010 Avenue of the Moon
+            .item.ts-icon-box-info-01.in-dark
+              i.ts-icon.la.la-clock
+              span Mon - Sat 8.00 - 18.00. Sunday CLOSED
+            .item.ts-icon-box-info-01.in-dark
+              i.ts-icon.la.la-phone
+              a(href="tel:18604193333") +321 123 456 7
+    .ts-header.ts-header-08.bg--white
       .container
-        .ts-header-01-inner
-          .ts-header-01-left
+        .ts-header-08-inner
+          .ts-header-08-left
             a.ts-header-logo-wrap(href="index.html")
-              img.header-logo(src="images/logo-dark.png" alt="logo")
-          .ts-header-01-right.d-none.d-lg-flex
-            nav.ts-main-menu
+              img.header-logo(src="images/logo-dark.png", alt="logo")
+          .ts-header-08-right.d-none.d-lg-flex
+            nav.ts-main-menu.mr-5.style-02.divider.sub-dark.active-background-skewX
               +navigation
-            .header-01-control
+            .ts-header-08-control
+              .item.ts-social-list-01.align-right
+                a(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="facebook")
+                  i.ts-icon.lab.la-facebook-square
+                a(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="twitter")
+                  i.ts-icon.lab.la-twitter
+                a(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="instagram")
+                  i.ts-icon.lab.la-instagram
               .item.search-popup-btn.js-search-popup-btn
                 +popupSearch
           a(href="#js-mobile-menu-btn").ts-btn-mobile-menu
             i.ts-icon.la.la-bars
+
 append content
   .home-01-slider
     img(src="http://templates.thememodern.com/compact/img-rev-slider/bg-1.jpg")
   
+  .home-01-cta.bg--whitesmoke.py-7
+    .container
+      .row
+        .ts-box-cta-01.bg-white
+          .left.pr-lg-4
+            h3.box-cta-title Quisque hendrerit sed lorem nec ornare. Proin sed turpis at odio molestie cursus.
+            p.box-cta-desc Fusce nec velit elementum arcu tincidunt venenatis blandit id lorem. Cras commodo risus massa, at volutpat neque hendrerit a. Ut sed auctor nisl. Quisque pulvinar urna nec diam congue, quis accumsan arcu dapibus.
+          .right
+            a(href="/").ts-btn.btn-color1.btn-lg
+              i.ts-icon.la.la-phone.fs--18.mr-2
+              | GET A CALLBACK
+
   .home-01-services.py-7
     .container
       .row
@@ -57,249 +73,290 @@ append content
           .ts-section-heading-01.align-center
             h2 Choose Dotted Template For Your Purpose
           p.font-italic.text-center Phasellus id lacus neque. Proin vestibulum leo at turpis rhoncus, sed lacinia sem mollis. Etiam cursus bibendum dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam auctor eu nunc nec facilisis. Duis in felis eget eros tristique ornare. Maecenas volutpat, nisi id pretium imperdiet, odio neque pellentesque erat.
-      .row.services-wrap
-        .col-lg-3
-          .ts-icon-box-05.bg-white
-            svg.ts-icon-box-05-layer(viewbox="0 0 221 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
-              g(stroke="none" fill-rule="evenodd")
-                polygon.layer-01(points="0 0 174 0 0 47")
-                polygon.layer-02(points="221 0 0 0 221 47")
-            .ts-icon-box-05-inner
-              i.ts-icon.la.la-chart-pie
-              .ts-icon-box-05-content
-                h3.title Icon Box 05
-                h5.sub-title Lorem Ipsum dore si amnet
-                p.desc Donec lacinia mi rutrum sagittis consequat. Donec sagittis, tellus sodales sollicitudin commodo, risus urna interdum massa
-                a(href="#").ts-btn.btn-outline-color1 Know More
+      .row-g-40.services-wrap
+        .col-lg-6.mb-40
+          .ts-icon-box-07.bg-white
+            .ts-icon-box-07-inner
+              .ts-icon-box-07-icon-wrap
+                i.ts-icon.la.la-chart-pie
+                .ts-icon-box-07-info
+                  h3.icon-box-title Icon Box 05
+                  h5.icon-box-sub-title Lorem Ipsum dore si amnet
+              .ts-icon-box-07-content
+                p.icon-box-desc Donec lacinia mi rutrum sagittis consequat. Donec sagittis, tellus sodales sollicitudin commodo, risus urna interdum massa
+                a(href="#").ts-btn.btn-color1 Learn More
                   i.ts-icon.la.la-plus.pl-1.fs--16
+            svg.ts-icon-box-07-layer(viewbox="0 0 69 231" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+              g(stroke="none" fill-rule="evenodd")
+                polygon.layer-01(points="0 0 70 0 70 150")
+                polygon.layer-02(points="70 51 70 231 0 231")
         
-        .col-lg-3
-          .ts-icon-box-05.bg-white
-            svg.ts-icon-box-05-layer(viewbox="0 0 221 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
-              g(stroke="none" fill-rule="evenodd")
-                polygon.layer-01(points="0 0 174 0 0 47")
-                polygon.layer-02(points="221 0 0 0 221 47")
-            .ts-icon-box-05-inner
-              i.ts-icon.la.la-chart-pie
-              .ts-icon-box-05-content
-                h3.title Icon Box 05
-                h5.sub-title Lorem Ipsum dore si amnet
-                p.desc Donec lacinia mi rutrum sagittis consequat. Donec sagittis, tellus sodales sollicitudin commodo, risus urna interdum massa
-                a(href="#").ts-btn.btn-outline-color1 Know More
+        .col-lg-6.mb-40
+          .ts-icon-box-07.bg-white
+            .ts-icon-box-07-inner
+              .ts-icon-box-07-icon-wrap
+                i.ts-icon.la.la-chart-pie
+                .ts-icon-box-07-info
+                  h3.icon-box-title Icon Box 05
+                  h5.icon-box-sub-title Lorem Ipsum dore si amnet
+              .ts-icon-box-07-content
+                p.icon-box-desc Donec lacinia mi rutrum sagittis consequat. Donec sagittis, tellus sodales sollicitudin commodo, risus urna interdum massa
+                a(href="#").ts-btn.btn-color1 Learn More
                   i.ts-icon.la.la-plus.pl-1.fs--16
+            svg.ts-icon-box-07-layer(viewbox="0 0 69 231" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+              g(stroke="none" fill-rule="evenodd")
+                polygon.layer-01(points="0 0 70 0 70 150")
+                polygon.layer-02(points="70 51 70 231 0 231")
         
-        .col-lg-3
-          .ts-icon-box-05.bg-white
-            svg.ts-icon-box-05-layer(viewbox="0 0 221 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
-              g(stroke="none" fill-rule="evenodd")
-                polygon.layer-01(points="0 0 174 0 0 47")
-                polygon.layer-02(points="221 0 0 0 221 47")
-            .ts-icon-box-05-inner
-              i.ts-icon.la.la-chart-pie
-              .ts-icon-box-05-content
-                h3.title Icon Box 05
-                h5.sub-title Lorem Ipsum dore si amnet
-                p.desc Donec lacinia mi rutrum sagittis consequat. Donec sagittis, tellus sodales sollicitudin commodo, risus urna interdum massa
-                a(href="#").ts-btn.btn-outline-color1 Know More
+        .col-lg-6
+          .ts-icon-box-07.bg-white
+            .ts-icon-box-07-inner
+              .ts-icon-box-07-icon-wrap
+                i.ts-icon.la.la-chart-pie
+                .ts-icon-box-07-info
+                  h3.icon-box-title Icon Box 05
+                  h5.icon-box-sub-title Lorem Ipsum dore si amnet
+              .ts-icon-box-07-content
+                p.icon-box-desc Donec lacinia mi rutrum sagittis consequat. Donec sagittis, tellus sodales sollicitudin commodo, risus urna interdum massa
+                a(href="#").ts-btn.btn-color1 Learn More
                   i.ts-icon.la.la-plus.pl-1.fs--16
-        
-        .col-lg-3
-          .ts-icon-box-05.bg-white
-            svg.ts-icon-box-05-layer(viewbox="0 0 221 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+            svg.ts-icon-box-07-layer(viewbox="0 0 69 231" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
               g(stroke="none" fill-rule="evenodd")
-                polygon.layer-01(points="0 0 174 0 0 47")
-                polygon.layer-02(points="221 0 0 0 221 47")
-            .ts-icon-box-05-inner
-              i.ts-icon.la.la-chart-pie
-              .ts-icon-box-05-content
-                h3.title Icon Box 05
-                h5.sub-title Lorem Ipsum dore si amnet
-                p.desc Donec lacinia mi rutrum sagittis consequat. Donec sagittis, tellus sodales sollicitudin commodo, risus urna interdum massa
-                a(href="#").ts-btn.btn-outline-color1 Know More
-                  i.ts-icon.la.la-plus.pl-1.fs--16
-  
-  .home-01-why-us.bg--whitesmoke.py-7
-    .container
-      .row
-        .col-lg-8
-          .ts-section-heading-01
-            h2 Why You Should Choose Us?
-          p.mb-lg-5 Integer est arcu, congue nec vulputate faucibus, aliquam eget tellus. Aliquam laoreet aliquam mi, vitae tempus orci mattis vitae. Cras ultricies mauris est, ultricies sagittis diam euismod et. Curabitur at dolor vitae felis semper ullamcorper eu mattis felis. Phasellus felis diam, egestas non hendrerit a, lacinia a neque.
-          .d-flex
-            .left.mr-4
-              img(src='http://templates.thememodern.com/dotted/images/Feature/7.png', alt='demo')
-            .right
-              ul.list-style-01.list-square.color.mb-lg-4
-                li EASY CUSTOMIZATION RESPONSIVE 
-                li TEMPLATE MULTIPLE 
-                li PORTFOLIO COLUMNS 
-                li AMAZING SLIDER 
-                li 10 AMAZING SKINS 
-                li AND MANY MORE...
-              a(href="about.html").ts-btn.btn-color5.btn-lg DISCOVER MORE
-                i.ts-icon.la.la-plus.pl-3
+                polygon.layer-01(points="0 0 70 0 70 150")
+                polygon.layer-02(points="70 51 70 231 0 231")
 
-        .col-lg-4
-          #process
-            .card.ts-accrodion-01
-              #step01.card-header
-                h5.mb-0
-                  button.ts-btn.btn-lg.w-100.text-left(
-                    data-toggle="collapse" 
-                    data-target="#step01Content" 
-                    aria-expanded="true" 
-                    aria-controls="step01Content") Discuss your goals
-              #step01Content.collapse.show(
-                aria-labelledby="step01" 
-                data-parent="#process")
-                .card-body
-                  | When you get in touch with us, we set up a 45-60 minute consultation that is at no cost to you. We will discuss your current situation.
-            .card.ts-accrodion-01
-              #step02.card-header
-                h5.mb-0
-                  button.ts-btn.btn-lg.w-100.text-left(
-                    data-toggle="collapse" 
-                    data-target="#step02Content" 
-                    aria-expanded="false" 
-                    aria-controls="step02Content") Define what advice you are looking for
-              #step02Content.collapse(
-                aria-labelledby="step02" 
-                data-parent="#process")
-                .card-body
-                  | Identifying exactly what you are looking for is the foundation for creating your plan. Your adviser will go over which specific areas of.
-            .card.ts-accrodion-01
-              #step03.card-header
-                h5.mb-0
-                  button.ts-btn.btn-lg.w-100.text-left(
-                    data-toggle="collapse" 
-                    data-target="#step03Content" 
-                    aria-expanded="false" 
-                    aria-controls="step03Content") A plan to help you achieve your goals
-              #step03Content.collapse(
-                aria-labelledby="step03" 
-                data-parent="#process")
-                .card-body
-                  | After we have met, your financial adviser will develop a plan based on all the information they have collected from you.
-            .card.ts-accrodion-01
-                #step04.card-header
-                  h5.mb-0
-                    button.ts-btn.btn-lg.w-100.text-left(
-                      data-toggle="collapse" 
-                      data-target="#step04Content" 
-                      aria-expanded="false" 
-                      aria-controls="step04Content") Present your plan and answer any questions
-                #step04Content.collapse(
-                  aria-labelledby="step04" 
-                  data-parent="#process")
-                  .card-body
-                    | After about two weeks, your financial adviser will be in touch to present their findings and recommendations and go into.
-        
-  .home-01-projects.py-7
+        .col-lg-6
+          .ts-icon-box-07.bg-white
+            .ts-icon-box-07-inner
+              .ts-icon-box-07-icon-wrap
+                i.ts-icon.la.la-chart-pie
+                .ts-icon-box-07-info
+                  h3.icon-box-title Icon Box 05
+                  h5.icon-box-sub-title Lorem Ipsum dore si amnet
+              .ts-icon-box-07-content
+                p.icon-box-desc Donec lacinia mi rutrum sagittis consequat. Donec sagittis, tellus sodales sollicitudin commodo, risus urna interdum massa
+                a(href="#").ts-btn.btn-color1 Learn More
+                  i.ts-icon.la.la-plus.pl-1.fs--16
+            svg.ts-icon-box-07-layer(viewbox="0 0 69 231" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+              g(stroke="none" fill-rule="evenodd")
+                polygon.layer-01(points="0 0 70 0 70 150")
+                polygon.layer-02(points="70 51 70 231 0 231")
+
+  .home-01-projects.py-7.bg--whitesmoke
     .container
       .row
         .col-lg-12
           .ts-section-heading-01
-            h2 Why You Should Choose Us?
+            h2 Our Latest Projects
       .col-lg-12
         .row
           .col.p-0
-            .ts-portfolio-05.rounded-0
-              a(href='project_detail.html').card-cover
-                img.card-img(src='https://picsum.photos/600/400?random=1', alt='cover')
+            a(href='project_detail.html').ts-portfolio-06.rounded-0
+              .card-cover
+                img.card-img(src='https://picsum.photos/600/400?random=6', alt='cover')
                 .ts-overlay.portfolio-card-overlay
                 .card-cover-inner
-                  h4.portfolio-card-title Project Card 05
+                  h4.portfolio-card-title Project Card 06
+                  .portfolio-card-divider
                   p.portfolio-card-catalog Consultant
-              .portfolio-card-meta
-                .item-favourite
-                  i.ts-icon.las.la-heart
-                  span 98
-                .item-comment
-                  i.ts-icon.la.la-comments
-                  span 102
+                  p.portfolio-card-desc Commodo magna nulla nulla cillum sunt enim pariatur.
+          
           .col.p-0
-            .ts-portfolio-05.rounded-0
-              a(href='project_detail.html').card-cover
-                img.card-img(src='https://picsum.photos/600/400?random=2', alt='cover')
+            a(href='project_detail.html').ts-portfolio-06.rounded-0
+              .card-cover
+                img.card-img(src='https://picsum.photos/600/400?random=5', alt='cover')
                 .ts-overlay.portfolio-card-overlay
                 .card-cover-inner
-                  h4.portfolio-card-title Project Card 05
+                  h4.portfolio-card-title Project Card 06
+                  .portfolio-card-divider
                   p.portfolio-card-catalog Consultant
-              .portfolio-card-meta
-                .item-favourite
-                  i.ts-icon.las.la-heart
-                  span 98
-                .item-comment
-                  i.ts-icon.la.la-comments
-                  span 102
+                  p.portfolio-card-desc Commodo magna nulla nulla cillum sunt enim pariatur.
+          
           .col.p-0
-            .ts-portfolio-05.rounded-0
-              a(href='project_detail.html').card-cover
-                img.card-img(src='https://picsum.photos/600/400?random=3', alt='cover')
-                .ts-overlay.portfolio-card-overlay
-                .card-cover-inner
-                  h4.portfolio-card-title Project Card 05
-                  p.portfolio-card-catalog Consultant
-              .portfolio-card-meta
-                .item-favourite
-                  i.ts-icon.las.la-heart
-                  span 98
-                .item-comment
-                  i.ts-icon.la.la-comments
-                  span 102
-          .col.p-0
-            .ts-portfolio-05.rounded-0
-              a(href='project_detail.html').card-cover
+            a(href='project_detail.html').ts-portfolio-06.rounded-0
+              .card-cover
                 img.card-img(src='https://picsum.photos/600/400?random=4', alt='cover')
                 .ts-overlay.portfolio-card-overlay
                 .card-cover-inner
-                  h4.portfolio-card-title Project Card 05
+                  h4.portfolio-card-title Project Card 06
+                  .portfolio-card-divider
                   p.portfolio-card-catalog Consultant
-              .portfolio-card-meta
-                .item-favourite
-                  i.ts-icon.las.la-heart
-                  span 98
-                .item-comment
-                  i.ts-icon.la.la-comments
-                  span 102
+                  p.portfolio-card-desc Commodo magna nulla nulla cillum sunt enim pariatur.
+          
+          .col.p-0
+            a(href='project_detail.html').ts-portfolio-06.rounded-0
+              .card-cover
+                img.card-img(src='https://picsum.photos/600/400?random=2', alt='cover')
+                .ts-overlay.portfolio-card-overlay
+                .card-cover-inner
+                  h4.portfolio-card-title Project Card 06
+                  .portfolio-card-divider
+                  p.portfolio-card-catalog Consultant
+                  p.portfolio-card-desc Commodo magna nulla nulla cillum sunt enim pariatur.
 
-  .home-01-testimonial.py-7
-    .ts-overlay
+  .home-02-callback.bg--color8
+    .container
+      .row
+        .col-lg-8.pr-lg-5.py-7
+          nav.nav.nav-tabs.ts-nav-tabs-01
+            a.nav-item.nav-link.active(data-toggle='tab', href='#nav-home') Long terms
+            a.nav-item.nav-link(data-toggle='tab', href='#nav-profile') Safe
+            a.nav-item.nav-link(data-toggle='tab', href='#nav-dropdown1') Opportunity
+            a.nav-item.nav-link(data-toggle='tab', href='#nav-dropdown2') Investment
+          .tab-content.ts-tab-content-01
+            #nav-home.tab-pane.fade.show.active
+              .d-flex
+                img.pr-4(src='http://templates.thememodern.com/dotted/images/Feature/3.png', style="max-width: 200px")
+                p Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed velit. Proin gravida arcu nisl, a dignissim mauris placerat id. Vivamus interdum urna at sapien varius elementum. Suspendisse ut mi felis et interdum libero lacinia vel. Aenean elementum odio ut lorem cursus, eu auctor magna pellentesque.
+            #nav-profile.tab-pane.fade
+              p Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed velit. Proin gravida arcu nisl, a dignissim mauris placerat id. Vivamus interdum urna at sapien varius elementum. Suspendisse ut mi felis et interdum libero lacinia vel. Aenean elementum odio ut lorem cursus, eu auctor magna pellentesque.
+            #nav-dropdown1.tab-pane.fade
+              p Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed velit. Proin gravida arcu nisl, a dignissim mauris placerat id. Vivamus interdum urna at sapien varius elementum. Suspendisse ut mi felis et interdum libero lacinia vel. Aenean elementum odio ut lorem cursus, eu auctor magna pellentesque.
+            #nav-dropdown2.tab-pane.fade
+              p Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed velit. Proin gravida arcu nisl, a dignissim mauris placerat id. Vivamus interdum urna at sapien varius elementum. Suspendisse ut mi felis et interdum libero lacinia vel. Aenean elementum odio ut lorem cursus, eu auctor magna pellentesque.
+        .col-lg-4
+          form.call-back-form-03.h-100
+            h5.in-dark.mb-4 REQUEST A CALLBACK
+            .row
+              .col-lg-12.consultant-select-wrap.mb-4
+                +selectDiscuss
+              .col-lg-12.mb-4
+                input.ts-input(type="text" placeholder="Your Name")
+              .col-lg-12.mb-4
+                input.ts-input(type="text" placeholder="Your Phone")
+              .col-lg-12
+                a(href="#").ts-btn.btn-color1 Submit
+        
+  .home-02-testimonial.py-7
     .container
       .row
         .col-lg-12
-          .ts-section-heading-01.align-center.in-dark
+          .ts-section-heading-01.align-center
             h2 Testimonials
       .row
         .col-lg-12
-          .carousel.align-center-items.arrows-intro.in-dark.dots-theme(
-            data-items="1" 
-            data-items-md="1" 
+          .carousel.align-center-items.arrows-intro.dots-theme.carousel-focus(
+            data-items="3" 
+            data-items-md="3" 
             data-items-sm="1" 
             data-items-xs="1" 
-            data-margin="0" 
-            data-dots="true"
-            data-arrows="false" 
+            data-margin="40"
+            data-center="true"
+            data-dots="false"
+            data-arrows="true" 
             data-autoplay='true' 
             data-hoverpause="true"
             data-autoplay-timeout="9000"
-            data-loop="true"
-            data-animate-in="fadeIn"
-            data-animate-out="fadeOut")
-            .item.d-flex.justify-content-center
-              .ts-testimonial-card-06
-                p.testtimonial-card-desc Being a client of .Ananci, i don't need to worry about what to and what not to do with my portfolio. I have been in the Stock Market since 2004 but never had an equity portfolio advisor like you.
-                footer.blockquote-footer Vice President
-                  | - 
-                  cite(title="Source Title") Bank of American
+            data-loop="true")
             .item
-              .ts-testimonial-card-06
-                p.testtimonial-card-desc Since .Ananci aided me in the search for a solution to successfully improve my cash flow, everything has been going very well. My business continues to grow and I now have the cash to ensure that growth is suitably funded.
-                footer.blockquote-footer Adam Naville
-                  | - 
-                  cite(title="Source Title") Director, Renvilles Law Costs Draftsmen & Consultants Ltd
+              .ts-testimonial-card-04
+                .card-body
+                  p.testimonial-card-content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.
+                .card-cover
+                  img.card-img(src="https://i.pravatar.cc/120?img=1", alt='cover')
+                  .testimonial-card-info
+                    h4.testimonial-card-name Adam Slander
+                    .ts-rating-list-01
+                      i.ts-icon.las.la-star
+                      i.ts-icon.las.la-star
+                      i.ts-icon.las.la-star
+                      i.ts-icon.las.la-star
+                      i.disabled.ts-icon.las.la-star-o
+                  svg.ts-testimonial-card-04-layer(preserveAspectRatio="none" viewbox="4 -4 160 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+                    g(stroke="none" fill-rule="evenodd")
+                      path.layer-01(d="M170.862242,10.0375199 L171.001782,37.3328422 L1.44318778,37.3328422 L1,16.2134485 C16.3921107,5.83456934 29.3972691,0.662391392 40.0154754,0.696914659 C74.4099826,0.808742471 79.5815795,15.1075516 111.560081,18.6593529 C142.052268,22.0460716 170.917856,9.8653566 171.078013,10.3887941")
+            
+            .item
+              .ts-testimonial-card-04
+                .card-body
+                  p.testimonial-card-content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.
+                .card-cover
+                  img.card-img(src="https://i.pravatar.cc/120?img=1", alt='cover')
+                  .testimonial-card-info
+                    h4.testimonial-card-name Adam Slander
+                    .ts-rating-list-01
+                      i.ts-icon.las.la-star
+                      i.ts-icon.las.la-star
+                      i.ts-icon.las.la-star
+                      i.ts-icon.las.la-star
+                      i.disabled.ts-icon.las.la-star-o
+                  svg.ts-testimonial-card-04-layer(preserveAspectRatio="none" viewbox="4 -4 160 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+                    g(stroke="none" fill-rule="evenodd")
+                      path.layer-01(d="M170.862242,10.0375199 L171.001782,37.3328422 L1.44318778,37.3328422 L1,16.2134485 C16.3921107,5.83456934 29.3972691,0.662391392 40.0154754,0.696914659 C74.4099826,0.808742471 79.5815795,15.1075516 111.560081,18.6593529 C142.052268,22.0460716 170.917856,9.8653566 171.078013,10.3887941")
 
-  .home-01-partner.py-7
+            .item
+              .ts-testimonial-card-04
+                .card-body
+                  p.testimonial-card-content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.
+                .card-cover
+                  img.card-img(src="https://i.pravatar.cc/120?img=1", alt='cover')
+                  .testimonial-card-info
+                    h4.testimonial-card-name Adam Slander
+                    .ts-rating-list-01
+                      i.ts-icon.las.la-star
+                      i.ts-icon.las.la-star
+                      i.ts-icon.las.la-star
+                      i.ts-icon.las.la-star
+                      i.disabled.ts-icon.las.la-star-o
+                  svg.ts-testimonial-card-04-layer(preserveAspectRatio="none" viewbox="4 -4 160 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+                    g(stroke="none" fill-rule="evenodd")
+                      path.layer-01(d="M170.862242,10.0375199 L171.001782,37.3328422 L1.44318778,37.3328422 L1,16.2134485 C16.3921107,5.83456934 29.3972691,0.662391392 40.0154754,0.696914659 C74.4099826,0.808742471 79.5815795,15.1075516 111.560081,18.6593529 C142.052268,22.0460716 170.917856,9.8653566 171.078013,10.3887941")
+  
+            .item
+              .ts-testimonial-card-04
+                .card-body
+                  p.testimonial-card-content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.
+                .card-cover
+                  img.card-img(src="https://i.pravatar.cc/120?img=1", alt='cover')
+                  .testimonial-card-info
+                    h4.testimonial-card-name Adam Slander
+                    .ts-rating-list-01
+                      i.ts-icon.las.la-star
+                      i.ts-icon.las.la-star
+                      i.ts-icon.las.la-star
+                      i.ts-icon.las.la-star
+                      i.disabled.ts-icon.las.la-star-o
+                  svg.ts-testimonial-card-04-layer(preserveAspectRatio="none" viewbox="4 -4 160 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+                    g(stroke="none" fill-rule="evenodd")
+                      path.layer-01(d="M170.862242,10.0375199 L171.001782,37.3328422 L1.44318778,37.3328422 L1,16.2134485 C16.3921107,5.83456934 29.3972691,0.662391392 40.0154754,0.696914659 C74.4099826,0.808742471 79.5815795,15.1075516 111.560081,18.6593529 C142.052268,22.0460716 170.917856,9.8653566 171.078013,10.3887941")
+
+            .item
+              .ts-testimonial-card-04
+                .card-body
+                  p.testimonial-card-content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.
+                .card-cover
+                  img.card-img(src="https://i.pravatar.cc/120?img=1", alt='cover')
+                  .testimonial-card-info
+                    h4.testimonial-card-name Adam Slander
+                    .ts-rating-list-01
+                      i.ts-icon.las.la-star
+                      i.ts-icon.las.la-star
+                      i.ts-icon.las.la-star
+                      i.ts-icon.las.la-star
+                      i.disabled.ts-icon.las.la-star-o
+                  svg.ts-testimonial-card-04-layer(preserveAspectRatio="none" viewbox="4 -4 160 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+                    g(stroke="none" fill-rule="evenodd")
+                      path.layer-01(d="M170.862242,10.0375199 L171.001782,37.3328422 L1.44318778,37.3328422 L1,16.2134485 C16.3921107,5.83456934 29.3972691,0.662391392 40.0154754,0.696914659 C74.4099826,0.808742471 79.5815795,15.1075516 111.560081,18.6593529 C142.052268,22.0460716 170.917856,9.8653566 171.078013,10.3887941")
+  
+            .item
+              .ts-testimonial-card-04
+                .card-body
+                  p.testimonial-card-content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.
+                .card-cover
+                  img.card-img(src="https://i.pravatar.cc/120?img=1", alt='cover')
+                  .testimonial-card-info
+                    h4.testimonial-card-name Adam Slander
+                    .ts-rating-list-01
+                      i.ts-icon.las.la-star
+                      i.ts-icon.las.la-star
+                      i.ts-icon.las.la-star
+                      i.ts-icon.las.la-star
+                      i.disabled.ts-icon.las.la-star-o
+                  svg.ts-testimonial-card-04-layer(preserveAspectRatio="none" viewbox="4 -4 160 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+                    g(stroke="none" fill-rule="evenodd")
+                      path.layer-01(d="M170.862242,10.0375199 L171.001782,37.3328422 L1.44318778,37.3328422 L1,16.2134485 C16.3921107,5.83456934 29.3972691,0.662391392 40.0154754,0.696914659 C74.4099826,0.808742471 79.5815795,15.1075516 111.560081,18.6593529 C142.052268,22.0460716 170.917856,9.8653566 171.078013,10.3887941")
+
+  .home-01-partner.bg--whitesmoke.py-7
     .container
       .row
         .col-lg-12
@@ -339,86 +396,92 @@ append content
                 a(href="#")
                   img(src="images/partner-logo-05.svg", alt='cover')
 
-  .home-01-cta.bg--whitesmoke.py-7
+  .home-02-subcrible.py-5
+    .ts-overlay.bg--color7
     .container
       .row
-        .ts-box-cta-01.bg-white
-          .left.pr-lg-4
-            h3.box-cta-title Quisque hendrerit sed lorem nec ornare. Proin sed turpis at odio molestie cursus.
-            p.box-cta-desc Fusce nec velit elementum arcu tincidunt venenatis blandit id lorem. Cras commodo risus massa, at volutpat neque hendrerit a. Ut sed auctor nisl. Quisque pulvinar urna nec diam congue, quis accumsan arcu dapibus.
-          .right
-            a(href="/").ts-btn.btn-color1.btn-lg PURCHASE NOW 
-              i.ts-icon.la.la-arrow-circle-right
-  
-  .home-01-footer
-    .footer-01.py-lg-7.py-5
+        .col-lg-12
+          .row.align-items-center
+            .col-lg-4.mb-4.mb-lg-0
+              h3.title.color--white SUBSCRIBE TO NEWSLETTERS
+              span.color--lightgray And stay informed about our news and events
+            .col-lg-8
+              form.row
+                .col-lg-5.mb-3.mb-lg-0
+                  input.ts-input(type="text" placeholder="Your Name")
+                .col-lg-4.mb-3.mb-lg-0
+                  input.ts-input(type="text" placeholder="Your Name")
+                .col
+                  a(href="#").ts-btn.btn-outline-light.w-100 Submit
+
+  .home-03-footer
+    .footer-02.py-lg-7.py-5.bg--black
       .container
-        .row.footer-inner
-          .col-lg-4.mb-5.mb-lg-0.pr-lg-4
+        .footer-inner
+          .col-lg-3.mb-5.mb-lg-0
             .widget-text.company-info.in-dark
               .footer-logo
                 a(href="/")
                   img(src="images/logo-light.png", alt="logo")
-              p.mb-4 Without finance, plans stay as plans. That’s why we exists, we here to help clients make the most of these opportunities. We take the time to gain a deep understanding of our clients' financial requirements to bringing a passion for client success.
+              p.mb-4 We give value to the excellence and top class engineers, but in terms of accurate service.
               .info
                 .item.mb-3
                   i.ts-icon.la.la-phone.pr-1.fs--18
-                  a(href="tel:18604193333") 1860-419-3333
+                  a.link-unset(href="tel:18604193333") 1860-419-3331
                 .item.mb-3
                   i.ts-icon.la.la-envelope.pr-1.fs--18
-                  a(href="mailto:contact@ananci.com") consultant@ananci.com
-                .item
-                  i.ts-icon.la.la-clock.pr-1.fs--18
-                  span Mon - Fri: 8am - 6pm
-          .col-lg-4.d-none.d-lg-block.pr-lg-4
-            .widget-latest-news.in-dark
-              h4.widget-title-01.in-dark Latest News
+                  a.link-unset(href="mailto:contact@ananci.com") consultant@ananci.com
+          .col-lg-4.mb-5.mb-lg-0.pl-lg-4
+            .widget-opening-hours.in-dark
+              h4.widget-title-01.in-dark Opening Hours
               ul
                 li
-                  +blog09('https://picsum.photos/600?random=1', 'Lorem Ipsum', 'Without finance, plans stay as plans. That’s why we exists...')
+                  span Mon - Tues :
+                  span 6.00 am - 10.00 pm
+                li 
+                  span Wednes - Thurs :
+                  span 8.00 am - 6.00 pm
                 li
-                  +blog09('https://picsum.photos/600?random=2', 'Lorem Ipsum', 'Without finance, plans stay as plans. That’s why we exists...')
+                  span Fri :
+                  span 3.00 pm - 8.00 pm
                 li
-                  +blog09('https://picsum.photos/600?random=3', 'Lorem Ipsum', 'Without finance, plans stay as plans. That’s why we exists...')
-          .col-lg-4
-            .widget-subcrible-01.in-dark
-              h4.widget-title-01.in-dark Subscribe
-              p Subscribe to our newsletter to receive latest news on our services.
-              .input-lg
-                input.mb-3.ts-input-02(type='text' placeholder="Email Address")
-                button.ts-btn.btn-color1(type='button') Subscribe
-              .ts-divider-01.my-3
-              .d-flex.justify-content-between.align-items-center
-                h4.in-dark.fs--18 Follow Us: 
-                .d-flex.justify-content-end
-                  a(href="#").square.bg--fw-1.in-dark.hbg--facebook.ml-3
-                    i.ts-icon.lab.la-facebook-square
-                  a(href="#").square.bg--fw-1.in-dark.hbg--twitter.ml-3
-                    i.ts-icon.lab.la-twitter
-                  a(href="#").square.bg--fw-1.in-dark.hbg--instagram.ml-3
-                    i.ts-icon.lab.la-instagram
-                  a(href="#").square.bg--fw-1.in-dark.hbg--linkedin.ml-3
-                    i.ts-icon.lab.la-linkedin
-
-    .copyright-02
-      .container
-        .copyright-inner.justify-content-center.justify-content-md-between
+                  span Sun :
+                  span Closed
+          .col.pl-lg-5
+            .widget-quick-links-3-cols.in-dark
+              h4.widget-title-01.in-dark Quick Link
+              ul
+                li
+                  a(href="/") Home
+                li
+                  a(href="/") About Us
+                li
+                  a(href="/") Our Services
+                li
+                  a(href="/") Blog
+                li
+                  a(href="/") Projects
+                li
+                  a(href="/") Contacts
+                li
+                  a(href="/") Shop
+                li
+                  a(href="/") Customers
+                li
+                  a(href="/") Customers
+    .copyright-01
+      .ts-overlay.bg--color1
+      .container.position-relative
+        .copyright-inner
           .copyright-left
             p Copyright © 2019 
               a(href="/")
                 strong  .Ananci 
               | All Right Reserved
-          .copyright-right.d-none.d-md-block
-            .widget-footer-links.in-dark
-              ul
-                li
-                  a(href="/") Terms of use 
-                li
-                  a(href="/") Privacy Policy
-                li
-                  a(href="/") Faq
-                li
-                  a(href="/") Support
+          .copyright-right.fs--22
+            .ts-social-list-01.align-left.in-dark
+              +tsSocialList01
+
   a#to-the-top
     i.ts-icon.la.la-angle-up
   //- +footer01

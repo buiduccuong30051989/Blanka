@@ -665,8 +665,16 @@
 }
 
 .ts-portfolio-06 {
+  border-radius: 2px;
+  overflow: hidden;
+  display: block;
+
   .card-cover {
     position: relative;
+
+    .card-img {
+      border-radius: 0;
+    }
 
     .ts-overlay {
       opacity: 1;
@@ -691,10 +699,16 @@
     &-overlay {
       background: linear-gradient(
         to bottom,
-        color(color1, 1) 0%,
-        color(color1, 0.9) 15%,
-        color(color1, 0) 100%
+        color(color7, 1) 0%,
+        color(color7, 0.9) 15%,
+        color(color7, 0) 100%
       );
+      // background: linear-gradient(
+      //   to bottom,
+      //   rgba($black, 1) 0%,
+      //   rgba($black, .9) 15%,
+      //   rgba($black, 0) 100%
+      // );
       background-size: 100% 100%;
       transition: background-size 0.35s;
     }

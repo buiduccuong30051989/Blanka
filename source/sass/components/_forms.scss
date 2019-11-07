@@ -104,22 +104,46 @@
   border-radius: 2px;
   transition: $transition-base;
   font-weight: 300;
-  font-size: 1rem;
-  border-color: rgba($black, 0.1);
+  font-size: 13px;
+  border-color: $white;
   line-height: 32px;
+  height: 40px;
 
   @include placeholder {
-    color: $gray60;
-    font-weight: 300;
-    font-size: 1rem;
-    line-height: 32px;
+    color: $gray40;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    font-family: $lato;
+    transition: $transition-base;
   }
 
-  &:focus {
-    background-color: $white;
+  &:focus,
+  &:hover {
+    background-color: color(color1, 1);
     box-shadow: none;
     outline: 0;
     border-color: color(color1, 1);
+    color: $white;
+
+    @include placeholder {
+      color: $white;
+    }
+  }
+
+  &.ts-input-ghost {
+    background-color: rgba($black, .7);
+    border-color: rgba($black, .7);
+
+    @include placeholder {
+      color: $white;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: rgba($black, 1);
+      border-color: rgba($black, 1);
+    }
   }
 }
 
@@ -183,4 +207,13 @@
     border-color: $color6;
     color: $white;
   }
+}
+
+.call-back-form-03 {
+  padding: 30px;
+  background-color: color(color7, 1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

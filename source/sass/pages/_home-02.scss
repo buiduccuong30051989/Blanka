@@ -1,0 +1,35 @@
+//
+// Layout :: Home 02  
+// --------------------------------------------------
+.home-02 {
+  &-slider {
+
+  }
+  
+  &-callback {
+    .consultant-select {
+    
+      // &.bootstrap-select {
+      //   & > .dropdown-toggle {
+      //     background-color: color(color6, 1);
+
+      //     .option-select-team {
+      //       color: $white;
+
+      //       .name {
+      //         color: $white;
+      //       }
+      //     }
+      //   }
+      // }
+    }
+  }
+
+  &-subcrible {
+    position: relative;
+
+    .ts-overlay {
+      opacity: 1;
+    }
+  }
+}

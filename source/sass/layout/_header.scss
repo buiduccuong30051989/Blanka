@@ -159,7 +159,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
   }
 
   &-right {
@@ -168,7 +167,7 @@
     }
 
     .ts-icon {
-      color: $yellow;
+      color: $orange;
     }
   }
 }
@@ -654,7 +653,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 26px 0;
   }
 
   &-left {
@@ -675,14 +673,13 @@
 
   &-control {
     display: inline-flex;
-    color: color(color1, 1);
 
     a {
-      color: color(color1, 1);
+      // color: color(color1, 1);
 
-      &:hover {
-        color: #6c98e1;
-      }
+      // &:hover {
+      //   color: #6c98e1;
+      // }
     }
 
     [class*='ts-social-list'] {
@@ -702,7 +699,7 @@
       font-size: 20px;
 
       &:hover {
-        color: #6c98e1;
+        color: color(color1, 1);
       }
     }
 
@@ -711,7 +708,7 @@
 
       &:hover {
         &:hover {
-          color: #6c98e1;
+          color: color(color1, 1);
         }
       }
     }
