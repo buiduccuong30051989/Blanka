@@ -94,6 +94,17 @@
   }
 }
 
+.ts-footer-04 {
+  position: relative;
+
+  .footer {
+    &-desc {
+      width: 100%;
+      max-width: 320px;
+    }
+  }
+}
+
 .copyright {
   &-01 {
     display: flex;
@@ -195,6 +206,31 @@
 
     .copyright-right {
       margin-left: auto;
+    }
+  }
+}
+
+.ts-copyright-04 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-top: 1px solid rgba($white, 0.1);
+  color: $color3;
+
+  .copyright-inner {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+
+  .copyright-left {
+    p {
+      margin: 0;
+    }
+
+    a {
+      color: $white;
     }
   }
 }

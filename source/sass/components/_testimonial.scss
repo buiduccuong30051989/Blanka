@@ -260,7 +260,7 @@
   &-layer {
     fill: color(color1, 1);
     width: 100%;
-    min-height: 160px;
+    height: 148px;
   }
 
   .testimonial-card-content {
@@ -308,12 +308,16 @@
 
   .card-cover {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 160px;
 
     .card-img {
       border-radius: 50%;
       position: absolute;
       width: 70px;
-      top: 20px;
+      top: 15px;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -330,6 +334,10 @@
         color: $white;
         font-weight: 200;
         font-size: 18px;
+      }
+
+      [class^='ts-rating-list'] {
+        margin-bottom: 10px;
       }
     }
   }

@@ -1,0 +1,447 @@
+extends modules/layout/layout.pug
+include modules/script/lib
+include modules/header_mixin/header_mixin
+include modules/team/team
+include modules/portfolio/portfolio
+include modules/services/services
+include modules/testimonial/testimonial
+include modules/footer/footer
+include modules/control/control
+append head
+  title="Home Page - 04"
+  link(href="css/main.min.css" rel="stylesheet")
+append header
+  .header-container.ts-header-07.fixed-top
+    .ts-header-07-info
+      .container
+        .ts-header-07-info-inner
+          .ts-header-07-info-left
+            a.ts-header-logo-wrap(href="index.html")
+              img.header-logo(src="images/logo-dark.png", alt="logo")
+          .ts-header-07-info-right
+            .item.ts-icon-box-info-03
+              .icon.color--orange
+                i.ts-icon.la.la-map-marker
+              .content
+                span 1010 Avenue of the Moon
+                span New York, NY 10018 US.
+            .item.ts-icon-box-info-03
+              .icon.color--orange
+                i.ts-icon.la.la-clock
+              .content
+                span Mon - Sat 8.00 - 18.00
+                span Sunday CLOSED
+            a(href="tel:18604193333").item.ts-icon-box-info-03
+              .icon.color--orange
+                i.ts-icon.la.la-phone
+              .content
+                strong.fs--14 212 386 5575
+                span Free call
+          a(href="#js-mobile-menu-btn").ts-btn-mobile-menu
+            i.ts-icon.la.la-bars
+    .ts-header.ts-header-07.d-none.d-lg-block
+      .container
+        .ts-header-07-inner
+          .ts-header-07-left
+            nav.ts-main-menu.style-01.sub-icon.caret
+              +navigation
+          .ts-header-07-right.pl-4
+            .ts-social-list-01.in-dark.align-right.pl-3
+              +tsSocialList01
+
+
+append content
+  .home-03-slider
+    //- img(src="https://seniorthemes.com/images/home-04-slider-08.jpg")
+    img(src="https://seniorthemes.com/images/home-05-slider-04.jpg")
+  
+  .home-01-services.py-7
+    .container
+      .row
+        .col-lg-12.mb-lg-5
+          .ts-section-heading-01.align-center
+            h2 Choose Dotted Template For Your Purpose
+          p.font-italic.text-center Phasellus id lacus neque. Proin vestibulum leo at turpis rhoncus, sed lacinia sem mollis. Etiam cursus bibendum dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam auctor eu nunc nec facilisis. Duis in felis eget eros tristique ornare. Maecenas volutpat, nisi id pretium imperdiet, odio neque pellentesque erat.
+      .row.services-wrap
+        .col-lg-3
+          .ts-icon-box-05.bg-white
+            svg.ts-icon-box-05-layer(viewbox="0 0 221 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+              g(stroke="none" fill-rule="evenodd")
+                polygon.layer-01(points="0 0 174 0 0 47")
+                polygon.layer-02(points="221 0 0 0 221 47")
+            .ts-icon-box-05-inner
+              i.ts-icon.la.la-chart-pie
+              .ts-icon-box-05-content
+                h3.title Icon Box 05
+                h5.sub-title Lorem Ipsum dore si amnet
+                p.desc Donec lacinia mi rutrum sagittis consequat. Donec sagittis, tellus sodales sollicitudin commodo, risus urna interdum massa
+                a(href="#").ts-btn.btn-outline-color1 Know More
+                  i.ts-icon.la.la-plus.pl-1.fs--16
+        
+        .col-lg-3
+          .ts-icon-box-05.bg-white
+            svg.ts-icon-box-05-layer(viewbox="0 0 221 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+              g(stroke="none" fill-rule="evenodd")
+                polygon.layer-01(points="0 0 174 0 0 47")
+                polygon.layer-02(points="221 0 0 0 221 47")
+            .ts-icon-box-05-inner
+              i.ts-icon.la.la-chart-pie
+              .ts-icon-box-05-content
+                h3.title Icon Box 05
+                h5.sub-title Lorem Ipsum dore si amnet
+                p.desc Donec lacinia mi rutrum sagittis consequat. Donec sagittis, tellus sodales sollicitudin commodo, risus urna interdum massa
+                a(href="#").ts-btn.btn-outline-color1 Know More
+                  i.ts-icon.la.la-plus.pl-1.fs--16
+        
+        .col-lg-3
+          .ts-icon-box-05.bg-white
+            svg.ts-icon-box-05-layer(viewbox="0 0 221 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+              g(stroke="none" fill-rule="evenodd")
+                polygon.layer-01(points="0 0 174 0 0 47")
+                polygon.layer-02(points="221 0 0 0 221 47")
+            .ts-icon-box-05-inner
+              i.ts-icon.la.la-chart-pie
+              .ts-icon-box-05-content
+                h3.title Icon Box 05
+                h5.sub-title Lorem Ipsum dore si amnet
+                p.desc Donec lacinia mi rutrum sagittis consequat. Donec sagittis, tellus sodales sollicitudin commodo, risus urna interdum massa
+                a(href="#").ts-btn.btn-outline-color1 Know More
+                  i.ts-icon.la.la-plus.pl-1.fs--16
+        
+        .col-lg-3
+          .ts-icon-box-05.bg-white
+            svg.ts-icon-box-05-layer(viewbox="0 0 221 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+              g(stroke="none" fill-rule="evenodd")
+                polygon.layer-01(points="0 0 174 0 0 47")
+                polygon.layer-02(points="221 0 0 0 221 47")
+            .ts-icon-box-05-inner
+              i.ts-icon.la.la-chart-pie
+              .ts-icon-box-05-content
+                h3.title Icon Box 05
+                h5.sub-title Lorem Ipsum dore si amnet
+                p.desc Donec lacinia mi rutrum sagittis consequat. Donec sagittis, tellus sodales sollicitudin commodo, risus urna interdum massa
+                a(href="#").ts-btn.btn-outline-color1 Know More
+                  i.ts-icon.la.la-plus.pl-1.fs--16
+  
+  .home-01-why-us.bg--whitesmoke.py-7
+    .container
+      .row
+        .col-lg-8
+          .ts-section-heading-01
+            h2 Why You Should Choose Us?
+          p.mb-lg-5 Integer est arcu, congue nec vulputate faucibus, aliquam eget tellus. Aliquam laoreet aliquam mi, vitae tempus orci mattis vitae. Cras ultricies mauris est, ultricies sagittis diam euismod et. Curabitur at dolor vitae felis semper ullamcorper eu mattis felis. Phasellus felis diam, egestas non hendrerit a, lacinia a neque.
+          .d-flex
+            .left.mr-4
+              img(src='http://templates.thememodern.com/dotted/images/Feature/7.png', alt='demo')
+            .right
+              ul.list-style-01.list-square.color.mb-lg-4
+                li EASY CUSTOMIZATION RESPONSIVE 
+                li TEMPLATE MULTIPLE 
+                li PORTFOLIO COLUMNS 
+                li AMAZING SLIDER 
+                li 10 AMAZING SKINS 
+                li AND MANY MORE...
+              a(href="about.html").ts-btn.btn-orange.btn-lg REQUEST A CALLBACK
+                i.ts-icon.la.la-plus.pl-3
+
+        .col-lg-4
+          #process
+            .card.ts-accrodion-01
+              #step01.card-header
+                h5.mb-0
+                  button.ts-btn.btn-lg.w-100.text-left(
+                    data-toggle="collapse" 
+                    data-target="#step01Content" 
+                    aria-expanded="true" 
+                    aria-controls="step01Content") Discuss your goals
+              #step01Content.collapse.show(
+                aria-labelledby="step01" 
+                data-parent="#process")
+                .card-body
+                  | When you get in touch with us, we set up a 45-60 minute consultation that is at no cost to you. We will discuss your current situation.
+            .card.ts-accrodion-01
+              #step02.card-header
+                h5.mb-0
+                  button.ts-btn.btn-lg.w-100.text-left(
+                    data-toggle="collapse" 
+                    data-target="#step02Content" 
+                    aria-expanded="false" 
+                    aria-controls="step02Content") Define what advice you are looking for
+              #step02Content.collapse(
+                aria-labelledby="step02" 
+                data-parent="#process")
+                .card-body
+                  | Identifying exactly what you are looking for is the foundation for creating your plan. Your adviser will go over which specific areas of.
+            .card.ts-accrodion-01
+              #step03.card-header
+                h5.mb-0
+                  button.ts-btn.btn-lg.w-100.text-left(
+                    data-toggle="collapse" 
+                    data-target="#step03Content" 
+                    aria-expanded="false" 
+                    aria-controls="step03Content") A plan to help you achieve your goals
+              #step03Content.collapse(
+                aria-labelledby="step03" 
+                data-parent="#process")
+                .card-body
+                  | After we have met, your financial adviser will develop a plan based on all the information they have collected from you.
+            .card.ts-accrodion-01
+                #step04.card-header
+                  h5.mb-0
+                    button.ts-btn.btn-lg.w-100.text-left(
+                      data-toggle="collapse" 
+                      data-target="#step04Content" 
+                      aria-expanded="false" 
+                      aria-controls="step04Content") Present your plan and answer any questions
+                #step04Content.collapse(
+                  aria-labelledby="step04" 
+                  data-parent="#process")
+                  .card-body
+                    | After about two weeks, your financial adviser will be in touch to present their findings and recommendations and go into.
+        
+  .home-01-projects.py-7
+    .container
+      .row
+        .col-lg-12
+          .ts-section-heading-01
+            h2 Our Latest Projects
+      .col-lg-12
+        .row
+          .col.p-0
+            .ts-portfolio-05.rounded-0
+              a(href='project_detail.html').card-cover
+                img.card-img(src='https://picsum.photos/600/400?random=1', alt='cover')
+                .ts-overlay.portfolio-card-overlay
+                .card-cover-inner
+                  h4.portfolio-card-title Project Card 05
+                  p.portfolio-card-catalog Consultant
+              .portfolio-card-meta
+                .item-favourite
+                  i.ts-icon.las.la-heart
+                  span 98
+                .item-comment
+                  i.ts-icon.la.la-comments
+                  span 102
+          .col.p-0
+            .ts-portfolio-05.rounded-0
+              a(href='project_detail.html').card-cover
+                img.card-img(src='https://picsum.photos/600/400?random=2', alt='cover')
+                .ts-overlay.portfolio-card-overlay
+                .card-cover-inner
+                  h4.portfolio-card-title Project Card 05
+                  p.portfolio-card-catalog Consultant
+              .portfolio-card-meta
+                .item-favourite
+                  i.ts-icon.las.la-heart
+                  span 98
+                .item-comment
+                  i.ts-icon.la.la-comments
+                  span 102
+          .col.p-0
+            .ts-portfolio-05.rounded-0
+              a(href='project_detail.html').card-cover
+                img.card-img(src='https://picsum.photos/600/400?random=3', alt='cover')
+                .ts-overlay.portfolio-card-overlay
+                .card-cover-inner
+                  h4.portfolio-card-title Project Card 05
+                  p.portfolio-card-catalog Consultant
+              .portfolio-card-meta
+                .item-favourite
+                  i.ts-icon.las.la-heart
+                  span 98
+                .item-comment
+                  i.ts-icon.la.la-comments
+                  span 102
+          .col.p-0
+            .ts-portfolio-05.rounded-0
+              a(href='project_detail.html').card-cover
+                img.card-img(src='https://picsum.photos/600/400?random=4', alt='cover')
+                .ts-overlay.portfolio-card-overlay
+                .card-cover-inner
+                  h4.portfolio-card-title Project Card 05
+                  p.portfolio-card-catalog Consultant
+              .portfolio-card-meta
+                .item-favourite
+                  i.ts-icon.las.la-heart
+                  span 98
+                .item-comment
+                  i.ts-icon.la.la-comments
+                  span 102
+
+  .home-01-testimonial.py-7
+    .ts-overlay
+    .container
+      .row
+        .col-lg-12
+          .ts-section-heading-01.align-center.in-dark
+            h2 Testimonials
+      .row
+        .col-lg-12
+          .carousel.align-center-items.arrows-intro.in-dark.dots-theme(
+            data-items="1" 
+            data-items-md="1" 
+            data-items-sm="1" 
+            data-items-xs="1" 
+            data-margin="0" 
+            data-dots="true"
+            data-arrows="false" 
+            data-autoplay='true' 
+            data-hoverpause="true"
+            data-autoplay-timeout="9000"
+            data-loop="true"
+            data-animate-in="fadeIn"
+            data-animate-out="fadeOut")
+            .item.d-flex.justify-content-center
+              .ts-testimonial-card-06
+                p.testtimonial-card-desc Being a client of .Ananci, i don't need to worry about what to and what not to do with my portfolio. I have been in the Stock Market since 2004 but never had an equity portfolio advisor like you.
+                footer.blockquote-footer Vice President
+                  | - 
+                  cite(title="Source Title") Bank of American
+            .item
+              .ts-testimonial-card-06
+                p.testtimonial-card-desc Since .Ananci aided me in the search for a solution to successfully improve my cash flow, everything has been going very well. My business continues to grow and I now have the cash to ensure that growth is suitably funded.
+                footer.blockquote-footer Adam Naville
+                  | - 
+                  cite(title="Source Title") Director, Renvilles Law Costs Draftsmen & Consultants Ltd
+
+  .home-01-partner.py-7
+    .container
+      .row
+        .col-lg-12
+          .ts-section-heading-01
+            h2 Respective Partners
+      .row
+        .col-lg-12
+          .carousel.arrows-square.arrows-dark(
+            data-items="5" 
+            data-items-md="4" 
+            data-items-sm="2" 
+            data-items-xs="1" 
+            data-margin="20"
+            data-dots="false"
+            data-arrows="true" 
+            data-autoplay="true" 
+            data-autoplay-timeout="3000" 
+            data-loop="true")
+            .item
+              .border
+                a(href="#")
+                  img(src="images/partner-logo-01.svg", alt='cover')
+            .item
+              .border
+                a(href="#")
+                  img(src="images/partner-logo-02.svg", alt='cover')
+            .item
+              .border
+                a(href="#")
+                  img(src="images/partner-logo-03.svg", alt='cover')
+            .item
+              .border
+                a(href="#")
+                  img(src="images/partner-logo-04.svg", alt='cover')
+            .item
+              .border
+                a(href="#")
+                  img(src="images/partner-logo-05.svg", alt='cover')
+
+  .home-01-cta.bg--whitesmoke.py-7
+    .container
+      .row
+        .ts-box-cta-01.bg-white
+          .left.pr-lg-4
+            h3.box-cta-title Quisque hendrerit sed lorem nec ornare. Proin sed turpis at odio molestie cursus.
+            p.box-cta-desc Fusce nec velit elementum arcu tincidunt venenatis blandit id lorem. Cras commodo risus massa, at volutpat neque hendrerit a. Ut sed auctor nisl. Quisque pulvinar urna nec diam congue, quis accumsan arcu dapibus.
+          .right
+            a(href="/").ts-btn.btn-orange.btn-lg PURCHASE NOW 
+              i.ts-icon.la.la-arrow-circle-right
+  
+  .home-01-footer
+    .footer-01.py-lg-7.py-5
+      .container
+        .row.footer-inner
+          .col-lg-4.mb-5.mb-lg-0.pr-lg-4
+            .widget-text.company-info.in-dark
+              .footer-logo
+                a(href="/")
+                  img(src="images/logo-light.png", alt="logo")
+              p.mb-4 Without finance, plans stay as plans. That’s why we exists, we here to help clients make the most of these opportunities. We take the time to gain a deep understanding of our clients' financial requirements to bringing a passion for client success.
+              .info
+                .item.mb-3
+                  i.ts-icon.la.la-phone.pr-1.fs--18
+                  a(href="tel:18604193333") 1860-419-3333
+                .item.mb-3
+                  i.ts-icon.la.la-envelope.pr-1.fs--18
+                  a(href="mailto:contact@ananci.com") consultant@ananci.com
+                .item
+                  i.ts-icon.la.la-clock.pr-1.fs--18
+                  span Mon - Fri: 8am - 6pm
+          .col-lg-4.d-none.d-lg-block.pr-lg-4
+            .widget-latest-news.in-dark
+              h4.widget-title-01.in-dark Latest News
+              ul
+                li
+                  +blog09('https://picsum.photos/600?random=1', 'Lorem Ipsum', 'Without finance, plans stay as plans. That’s why we exists...')
+                li
+                  +blog09('https://picsum.photos/600?random=2', 'Lorem Ipsum', 'Without finance, plans stay as plans. That’s why we exists...')
+                li
+                  +blog09('https://picsum.photos/600?random=3', 'Lorem Ipsum', 'Without finance, plans stay as plans. That’s why we exists...')
+          .col-lg-4
+            .widget-subcrible-01.in-dark
+              h4.widget-title-01.in-dark Subscribe
+              p Subscribe to our newsletter to receive latest news on our services.
+              .input-lg
+                input.mb-3.ts-input-02(type='text' placeholder="Email Address")
+                button.ts-btn.btn-color1(type='button') Subscribe
+              .ts-divider-01.my-4
+              .d-flex.justify-content-between.align-items-center
+                h4.in-dark.fs--18 Follow Us: 
+                .d-flex.justify-content-end
+                  a(href="#").square.bg--fw-1.in-dark.hbg--facebook.ml-3
+                    i.ts-icon.lab.la-facebook-square
+                  a(href="#").square.bg--fw-1.in-dark.hbg--twitter.ml-3
+                    i.ts-icon.lab.la-twitter
+                  a(href="#").square.bg--fw-1.in-dark.hbg--instagram.ml-3
+                    i.ts-icon.lab.la-instagram
+                  a(href="#").square.bg--fw-1.in-dark.hbg--linkedin.ml-3
+                    i.ts-icon.lab.la-linkedin
+
+    .copyright-02
+      .container
+        .copyright-inner.justify-content-center.justify-content-md-between
+          .copyright-left
+            p Copyright © 2019 
+              a(href="/")
+                strong  .Ananci 
+              | All Right Reserved
+          .copyright-right.d-none.d-md-block
+            .widget-footer-links.in-dark
+              ul
+                li
+                  a(href="/") Terms of use 
+                li
+                  a(href="/") Privacy Policy
+                li
+                  a(href="/") Faq
+                li
+                  a(href="/") Support
+  a#to-the-top
+    i.ts-icon.la.la-angle-up
+  //- +footer01
+  +control
+append plugins  
+  +lib
+append script
+  //- script(src='revolution-slider/revolution/js/jquery.themepunch.tools.min.js')
+  //- script(src='revolution-slider/revolution/js/jquery.themepunch.revolution.min.js')
+  //- Uncomment codes below to run
+  //- script(src='revolution-slider/revolution/js/extensions/revolution.extension.actions.min.js')
+  //- script(src='revolution-slider/revolution/js/extensions/revolution.extension.carousel.min.js')
+  //- script(src='revolution-slider/revolution/js/extensions/revolution.extension.kenburn.min.js')
+  //- script(src='revolution-slider/revolution/js/extensions/revolution.extension.layeranimation.min.js')
+  //- script(src='revolution-slider/revolution/js/extensions/revolution.extension.migration.min.js')
+  //- script(src='revolution-slider/revolution/js/extensions/revolution.extension.navigation.min.js')
+  //- script(src='revolution-slider/revolution/js/extensions/revolution.extension.parallax.min.js')
+  //- script(src='revolution-slider/revolution/js/extensions/revolution.extension.slideanims.min.js')
+  //- script(src='revolution-slider/revolution/js/extensions/revolution.extension.video.min.js')
+  script(src="js/main.min.js")
+  script(src="js/carousel-testimonial-home-04.min.js")

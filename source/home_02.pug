@@ -3,6 +3,7 @@ include modules/script/lib
 include modules/header_mixin/header_mixin
 include modules/team/team
 include modules/portfolio/portfolio
+include modules/blog/blog
 include modules/services/services
 include modules/testimonial/testimonial
 include modules/footer/footer
@@ -227,7 +228,7 @@ append content
               .col-lg-12
                 a(href="#").ts-btn.btn-color1 Submit
         
-  .home-02-testimonial.py-7
+  .home-02-testimonial
     .container
       .row
         .col-lg-12
@@ -244,7 +245,7 @@ append content
             data-center="true"
             data-dots="false"
             data-arrows="true" 
-            data-autoplay='true' 
+            data-autoplay='false' 
             data-hoverpause="true"
             data-autoplay-timeout="9000"
             data-loop="true")
@@ -403,7 +404,7 @@ append content
         .col-lg-12
           .row.align-items-center
             .col-lg-4.mb-4.mb-lg-0
-              h3.title.color--white SUBSCRIBE TO NEWSLETTERS
+              h3.in-dark.fs--24 SUBSCRIBE TO NEWSLETTERS
               span.color--lightgray And stay informed about our news and events
             .col-lg-8
               form.row
@@ -414,41 +415,41 @@ append content
                 .col
                   a(href="#").ts-btn.btn-outline-light.w-100 Submit
 
-  .home-03-footer
-    .footer-02.py-lg-7.py-5.bg--black
+  .home-02-footer
+    .ts-overlay
+    .ts-footer-04.py-lg-7.py-5
       .container
-        .footer-inner
-          .col-lg-3.mb-5.mb-lg-0
+        .row.footer-inner
+          .col.mb-5.mb-lg-0
             .widget-text.company-info.in-dark
               .footer-logo
                 a(href="/")
                   img(src="images/logo-light.png", alt="logo")
-              p.mb-4 We give value to the excellence and top class engineers, but in terms of accurate service.
+              p.mb-4.footer-desc Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed velit. Proin gravida arcu nisl, a dignissim mauris placerat id. Vivamus interdum urna at sapien varius elementum.
               .info
-                .item.mb-3
-                  i.ts-icon.la.la-phone.pr-1.fs--18
-                  a.link-unset(href="tel:18604193333") 1860-419-3331
-                .item.mb-3
-                  i.ts-icon.la.la-envelope.pr-1.fs--18
-                  a.link-unset(href="mailto:contact@ananci.com") consultant@ananci.com
-          .col-lg-4.mb-5.mb-lg-0.pl-lg-4
-            .widget-opening-hours.in-dark
-              h4.widget-title-01.in-dark Opening Hours
-              ul
-                li
-                  span Mon - Tues :
-                  span 6.00 am - 10.00 pm
-                li 
-                  span Wednes - Thurs :
-                  span 8.00 am - 6.00 pm
-                li
-                  span Fri :
-                  span 3.00 pm - 8.00 pm
-                li
-                  span Sun :
-                  span Closed
-          .col.pl-lg-5
-            .widget-quick-links-3-cols.in-dark
+                .item.mb-2
+                  .ts-icon-box-info-01.in-dark
+                    i.ts-icon.la.la-phone
+                    a(href="tel:18604193333") 1860-419-3331
+                .item.mb-2
+                  .ts-icon-box-info-01.in-dark
+                    i.ts-icon.la.la-envelope
+                    a(href="mailto:contact@ananci.com") consultant@ananci.com
+                .item.mb-4
+                  .ts-icon-box-info-01.in-dark
+                    i.ts-icon.la.la-map-marker
+                    span 151 Hudson St, New York, NY
+              .ts-social-list-01.align-left
+                a(href="#").square.bg--fw-1.in-dark.hbg--facebook
+                  i.ts-icon.lab.la-facebook-square
+                a(href="#").square.bg--fw-1.in-dark.hbg--twitter
+                  i.ts-icon.lab.la-twitter
+                a(href="#").square.bg--fw-1.in-dark.hbg--instagram
+                  i.ts-icon.lab.la-instagram
+                a(href="#").square.bg--fw-1.in-dark.hbg--linkedin
+                  i.ts-icon.lab.la-linkedin
+          .col-lg-3.mb-5.mb-lg-0.pl-lg-4
+            .widget-quick-links-02.in-dark.style-long-arrow
               h4.widget-title-01.in-dark Quick Link
               ul
                 li
@@ -458,29 +459,43 @@ append content
                 li
                   a(href="/") Our Services
                 li
-                  a(href="/") Blog
+                  a(href="/") Cases Study
                 li
-                  a(href="/") Projects
+                  a(href="/") Latest Projects
                 li
-                  a(href="/") Contacts
+                  a(href="/") Our Expertise
                 li
-                  a(href="/") Shop
+                  a(href="/") Contacts Us
+          .col-lg-4.pl-lg-5
+            .widget-latest-news.in-dark
+              h4.widget-title-01.in-dark Latest News
+              ul
                 li
-                  a(href="/") Customers
+                  +blog09('https://picsum.photos/600?random=1', 'Lorem Ipsum', 'Without finance, plans stay as plans. That’s why we exists...')
                 li
-                  a(href="/") Customers
-    .copyright-01
-      .ts-overlay.bg--color1
-      .container.position-relative
-        .copyright-inner
+                  +blog09('https://picsum.photos/600?random=2', 'Lorem Ipsum', 'Without finance, plans stay as plans. That’s why we exists...')
+                li
+                  +blog09('https://picsum.photos/600?random=3', 'Lorem Ipsum', 'Without finance, plans stay as plans. That’s why we exists...')
+    
+    .ts-copyright-04
+      .container
+        .copyright-inner.justify-content-center.justify-content-md-between
           .copyright-left
             p Copyright © 2019 
               a(href="/")
                 strong  .Ananci 
               | All Right Reserved
-          .copyright-right.fs--22
-            .ts-social-list-01.align-left.in-dark
-              +tsSocialList01
+          .copyright-right.d-none.d-md-block
+            .widget-footer-links.in-dark
+              ul
+                li
+                  a(href="/") Terms of use 
+                li
+                  a(href="/") Privacy Policy
+                li
+                  a(href="/") Faq
+                li
+                  a(href="/") Support
 
   a#to-the-top
     i.ts-icon.la.la-angle-up

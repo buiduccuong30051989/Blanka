@@ -39,7 +39,7 @@
     margin-bottom: 40px;
 
     &:after {
-      content: '';
+      content: "";
       position: absolute;
       width: 50px;
       height: 2px;
@@ -112,6 +112,91 @@
     @extend .widget-quick-links-3-cols;
     ul li {
       width: 50%;
+    }
+  }
+}
+
+.widget-quick-links-02 {
+  ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    display: block;
+    width: 100%;
+    font-family: $oswald;
+    font-weight: 300;
+    font-size: 16px;
+
+    li {
+      margin-bottom: 10px;
+
+      a {
+        text-decoration: none;
+        transition: $transition-base;
+        position: relative;
+        padding-left: 25px;
+
+        &:before {
+          content: "\f45c";
+          font-family: $lineAwesome;
+          font-weight: 900;
+          position: absolute;
+          top: 6px;
+          left: 0;
+          font-size: 13px;
+          line-height: 1;
+        }
+      }
+    }
+  }
+
+  &.style-minus {
+    ul li a:before {
+      content: "\f068";
+      top: 11px;
+    }
+  }
+
+  &.style-circle {
+    ul li a:before {
+      content: "\f111";
+    }
+  }
+
+  &.style-circle {
+    ul li a:before {
+      content: "\f105";
+    }
+  }
+
+  &.style-long-arrow {
+    ul li a {
+      &:before {
+        content: "\f30b";
+        transition: transform .35s;
+      }
+      
+      &:hover {
+        &:before {
+          transform: translateX(3px);
+        }
+      }
+    }
+  }
+
+  &.in-dark {
+    a {
+      color: $white;
+
+      &:hover {
+        color: color(color1, 1);
+      }
+    }
+  }
+
+  &.in-light {
+    a {
+      color: $gray20;
     }
   }
 }
@@ -241,7 +326,7 @@
       transition: all 0.3s ease-in-out;
 
       &:before {
-        content: '\f112';
+        content: "\f112";
         font-family: $lineAwesome;
         font-size: 13px;
         margin-right: 5px;
@@ -303,7 +388,6 @@
 }
 
 .widget-services {
-
   .widget-title {
     background-color: color(color1, 1);
     color: $white;
@@ -322,7 +406,7 @@
       border-bottom: 1px dashed rgba($black, 0.1);
 
       a {
-        transition: all .3s ease-in-out;
+        transition: all 0.3s ease-in-out;
         padding: 12px 20px;
         display: block;
         color: $gray20;

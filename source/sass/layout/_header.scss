@@ -34,7 +34,7 @@
     }
 
     .item {
-      opacity: .9;
+      opacity: 0.9;
 
       &:hover {
         opacity: 1;
@@ -113,7 +113,7 @@
           border-right: 0;
         }
 
-        [class^='ts-social-list'] {
+        [class^="ts-social-list"] {
           &:hover {
             a {
               opacity: 0.7;
@@ -135,7 +135,7 @@
       align-items: center;
     }
 
-    [class^='ts-social-list'] {
+    [class^="ts-social-list"] {
       display: inline-flex;
       align-items: center;
     }
@@ -624,7 +624,7 @@
   &-right {
     padding-right: 20px;
 
-    [class^='ts-social-list'] {
+    [class^="ts-social-list"] {
       font-size: 22px;
 
       a {
@@ -682,7 +682,7 @@
       // }
     }
 
-    [class*='ts-social-list'] {
+    [class*="ts-social-list"] {
       font-size: 20px;
 
       a {
@@ -713,6 +713,77 @@
       }
     }
   }
+}
+
+.ts-header-09 {
+  border-bottom: 1px solid rgba($white, 0.15);
+  // backdrop-filter: blur(5px);
+
+  .ts-header {
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 35px;
+    }
+
+    &-left {
+      display: inline-flex;
+      align-items: center;
+
+      .ts-header-logo-wrap {
+        .header-logo {
+          height: 40px;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+
+    &-right {
+      display: flex;
+      align-items: center;
+    }
+
+    &-control {
+      display: flex;
+      align-items: center;
+      padding-left: 35px;
+
+      .item {
+        cursor: pointer;
+
+        &:not(:last-of-type) {
+          margin-right: 18px;
+        }
+      }
+
+      a:hover {
+        transition: $transition-base;
+        color: $white;
+        text-decoration: none;
+      }
+    }
+  }
+
+  // @media (max-width: 1400px) {
+  //   &-left {
+  //     justify-content: space-between;
+  //   }
+
+  //   &-right {
+  //     display: none;
+  //   }
+  // }
+
+  // @include media-breakpoint-down(md) {
+  //   &-inner {
+  //     padding: 8px 15px;
+
+  //     .ts-header-02-left .ts-header-logo-wrap .header-logo {
+  //       height: 30px;
+  //     }
+  //   }
+  // }
 }
 
 .search-popup-btn {

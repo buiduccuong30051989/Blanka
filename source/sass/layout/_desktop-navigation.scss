@@ -767,6 +767,54 @@
     }
   }
 
+  &.style-03 {
+    & > ul {
+      & > li {
+        & > a {
+          font-size: 1rem;
+          color: $white;
+          padding: 42px 25px;
+          opacity: 0.9;
+        }
+
+        &:hover,
+        &.active {
+          & > a {
+            color: $white;
+            opacity: 1;
+          }
+        }
+      }
+
+      // ul level 2,3...
+      ul {
+        background: rgba($white, 0.15);
+        backdrop-filter: blur(5px);
+        box-shadow: none;
+        // padding: 10px 0;
+
+        li {
+          a {
+            color: $white;
+            text-transform: uppercase;
+          }
+
+          &:not(:last-of-type) {
+            border-bottom-color: rgba($white, 0.05);
+          }
+
+          &:hover {
+            background-color: $white;
+            
+            & > a {
+              color: $gray20;
+            }
+          }
+        }
+      }
+    }
+  }
+
   // divider
   &.divider {
     & > ul > li:not(:last-of-type) {
