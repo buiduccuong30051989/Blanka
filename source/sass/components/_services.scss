@@ -7,7 +7,7 @@
   background-color: transparent;
 
   .card-cover {
-    @include aspect-ratio(16, 9, '.card-img');
+    @include aspect-ratio(16, 9, ".card-img");
     margin-bottom: 30px;
     overflow: hidden;
 
@@ -26,7 +26,103 @@
     }
 
     .services-desc {
-      color: rgba($black, .6);
+      color: rgba($black, 0.6);
+    }
+  }
+}
+
+.ts-services-card-02 {
+  @extend .card;
+  border: 0;
+  background-color: transparent;
+
+  .card-cover {
+    margin-bottom: 15px;
+    overflow: hidden;
+    position: relative;
+
+    .card-img {
+      border-radius: 0;
+      transition: all 0.35s;
+      filter: brightness(70%);
+    }
+
+    .services-title {
+      font-size: 18px;
+      color: $white;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      margin-bottom: 0;
+      width: 100%;
+      font-weight: 300;
+      padding: 8px 15px;
+      background-color: rgba($black, 0.7);
+      transition: background-color 0.35s;
+    }
+  }
+
+  .card-body {
+    padding: 0;
+  }
+
+  .card-footer {
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+  }
+
+  // .services-card-readmore {
+  //   color: color(color1, 1);
+  //   position: relative;
+  //   transition: all 0.35s;
+  //   text-decoration: none;
+  //   font-family: $oswald;
+  //   font-weight: 300;
+  //   font-size: 15px;
+
+  //   .ts-icon {
+  //     position: absolute;
+  //     opacity: 0;
+  //     transform: translate3d(-25px, 4px, 0);
+  //     transition: all 0.35s ease-out 0s;
+  //     left: 0;
+  //     font-size: 18px;
+  //   }
+
+  //   &:hover {
+  //     padding-left: 24px;
+
+  //     .ts-icon {
+  //       opacity: 1;
+  //       transform: translate3d(0, 4px, 0);
+  //       transition: all 0.35s ease-out 0.05s;
+  //     }
+  //   }
+  // }
+
+  .services-card-readmore {
+    color: $gray20;
+    text-decoration: none;
+    transition: all 0.35s;
+    font-family: $oswald;
+    font-weight: 300;
+
+    &:hover {
+      color: color(color1, 1);
+    }
+  }
+
+  &:hover {
+    .card-cover {
+      .card-img {
+        filter: brightness(100%);
+      }
+    }
+
+    .services-title {
+      background-color: color(color1, 0.9);
     }
   }
 }

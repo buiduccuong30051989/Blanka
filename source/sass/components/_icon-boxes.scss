@@ -126,6 +126,48 @@
   }
 }
 
+.ts-icon-box-info-04 {
+  display: flex;
+
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+
+  .icon {
+    display: flex;
+    font-size: 48px;
+    border-right: 1px solid rgba($white, .1);
+    margin-right: 22px;
+    padding-right: 10px;
+  }
+
+  .content {
+    font-size: 13px;
+    color: $white;
+
+    h5 {
+      color: $white;
+    }
+
+    & > * {
+      display: block;
+    }
+  }
+
+  &.in-dark {
+    color: $white;
+
+    a {
+      color: $white;
+    }
+
+    [class^="ts-box-square"] {
+      @extend .in-dark;
+    }
+  }
+}
+
 .ts-box-square-01 {
   border-width: 1px;
   border-style: solid;

@@ -90,3 +90,45 @@
     }
   }
 }
+
+.counter-up-03 {
+  text-align: center;
+  color: rgba($white, 0.7);
+  // color: $white;
+  background-color: rgba($black, 0.7);
+  padding: 20px 30px 40px 30px;
+  position: relative;
+
+  // &:after {
+  //   content: "";
+  //   width: 0;
+  //   height: 0;
+  //   border-bottom: 12px solid color(color1, 1);
+  //   border-left: 12px solid transparent;
+  //   border-right: 12px solid transparent;
+  //   border-bottom-width: 14px;
+  //   border-bottom-style: solid;
+  //   position: absolute;
+  //   top: 100%;
+  //   left: 50%;
+  //   transform: translate(-50%, -100%);
+  // }
+
+  .ts-icon {
+    font-size: 72px;
+    color: color(color1, 1);
+    margin-bottom: 10px;
+  }
+
+  .counter {
+    font-size: 36px;
+    font-family: $oswald;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+
+  .desc {
+    font-family: $oswald;
+    font-weight: 300;
+  }
+}

@@ -24,3 +24,14 @@ mixin testimonial02(desc, name, title)
     .testimonial-meta.mb-4
       h4.testimonial-meta-name=name
       span.testimonial-meta-title=title
+
+mixin testimonial07(desc, name, title, avatar)
+  .ts-testimonial-card-07
+    .ts-testimonial-content
+      i.testtimonial-card-desc=desc
+    .ts-testimonial-thumb 
+      .testimonial-avatar
+        img.img-card(src=avatar, alt='cover')
+      .testimonial-info
+        h5.testimonial-name=name
+        span.testimonial-title=title

@@ -105,6 +105,22 @@
   }
 }
 
+.ts-footer-05 {
+  background: url("https://images.unsplash.com/photo-1510130146128-7a7b6afb6f9d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+  background-size: cover;
+  background-position: center;
+
+  .ts-footer-info-inner {
+    border-radius: 2px;
+    background-color: color(color7, 1);
+    padding: 40px 30px;
+    // position: absolute;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: 100%;
+  }
+}
+
 .copyright {
   &-01 {
     display: flex;

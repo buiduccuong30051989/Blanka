@@ -2,8 +2,41 @@
 // Layout :: Home 03
 // -----------------------------------------------
 .home-03 {
-  
   &-slider {
+  }
 
+  &-counter-up {
+    background-image: url("http://templates.thememodern.com/dotted/images/Testimonials/bg1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    perspective: 3px;
+
+    .ts-overlay {
+      opacity: 0.7;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($black, 0.5);
+    }
+  }
+
+  &-commitment {
+    .cover {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+
+  &-footer {
+    position: relative;
+
+    .ts-overlay {
+      opacity: 1;
+      background-color: rgba($color8, 0.9);
+    }
   }
 }
