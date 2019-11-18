@@ -123,7 +123,7 @@ append content
                 a(href="#").ts-btn.btn-outline-color1 Know More
                   i.ts-icon.la.la-plus.pl-1.fs--16
   
-  .home-01-why-us.bg--whitesmoke.py-7
+  .home-01-why-us.bg--white.py-7
     .container
       .row
         .col-lg-8
@@ -132,7 +132,7 @@ append content
           p.mb-lg-5 Integer est arcu, congue nec vulputate faucibus, aliquam eget tellus. Aliquam laoreet aliquam mi, vitae tempus orci mattis vitae. Cras ultricies mauris est, ultricies sagittis diam euismod et. Curabitur at dolor vitae felis semper ullamcorper eu mattis felis. Phasellus felis diam, egestas non hendrerit a, lacinia a neque.
           .d-flex
             .left.mr-4
-              img(src='http://templates.thememodern.com/dotted/images/Feature/7.png', alt='demo')
+              img.thumb(src='http://templates.thememodern.com/dotted/images/Feature/7.png', alt='demo')
             .right
               ul.list-style-01.list-square.color.mb-lg-4
                 li EASY CUSTOMIZATION RESPONSIVE 
@@ -145,128 +145,130 @@ append content
                 i.ts-icon.la.la-plus.pl-3
 
         .col-lg-4
-          #process
-            .card.ts-accrodion-01
-              #step01.card-header
-                h5.mb-0
-                  button.ts-btn.btn-lg.w-100.text-left(
-                    data-toggle="collapse" 
-                    data-target="#step01Content" 
-                    aria-expanded="true" 
-                    aria-controls="step01Content") Discuss your goals
-              #step01Content.collapse.show(
-                aria-labelledby="step01" 
-                data-parent="#process")
-                .card-body
-                  | When you get in touch with us, we set up a 45-60 minute consultation that is at no cost to you. We will discuss your current situation.
-            .card.ts-accrodion-01
-              #step02.card-header
-                h5.mb-0
-                  button.ts-btn.btn-lg.w-100.text-left(
-                    data-toggle="collapse" 
-                    data-target="#step02Content" 
-                    aria-expanded="false" 
-                    aria-controls="step02Content") Define what advice you are looking for
-              #step02Content.collapse(
-                aria-labelledby="step02" 
-                data-parent="#process")
-                .card-body
-                  | Identifying exactly what you are looking for is the foundation for creating your plan. Your adviser will go over which specific areas of.
-            .card.ts-accrodion-01
-              #step03.card-header
-                h5.mb-0
-                  button.ts-btn.btn-lg.w-100.text-left(
-                    data-toggle="collapse" 
-                    data-target="#step03Content" 
-                    aria-expanded="false" 
-                    aria-controls="step03Content") A plan to help you achieve your goals
-              #step03Content.collapse(
-                aria-labelledby="step03" 
-                data-parent="#process")
-                .card-body
-                  | After we have met, your financial adviser will develop a plan based on all the information they have collected from you.
-            .card.ts-accrodion-01
-                #step04.card-header
-                  h5.mb-0
-                    button.ts-btn.btn-lg.w-100.text-left(
-                      data-toggle="collapse" 
-                      data-target="#step04Content" 
-                      aria-expanded="false" 
-                      aria-controls="step04Content") Present your plan and answer any questions
-                #step04Content.collapse(
-                  aria-labelledby="step04" 
-                  data-parent="#process")
-                  .card-body
-                    | After about two weeks, your financial adviser will be in touch to present their findings and recommendations and go into.
+          .ts-section-heading-01
+            h2 Meet our expertise
+          .ts-team-card-02
+            .card-cover
+              img.card-img(src='https://i.pravatar.cc/600?img=11', alt="avatar")
+            .card-body
+              h4.team-card-name Adam Larson
+              p.team-card-title Financial Consultant
+              p.team-card-desc Ullamco minim in enim consectetur labore voluptate et non non. Officia dolor qui cupidatat tempor qui ex labore veniam dolore.
+            .card-footer
+              a(href="#").hcl--facebook
+                i.ts-icon.lab.la-facebook-square
+              a(href="#").hcl--twitter
+                i.ts-icon.lab.la-twitter
+              a(href="#").hcl--instagram
+                i.ts-icon.lab.la-instagram
+              a(href="team_detail.html").read-more
+                i.ts-icon.la.la-angle-right
         
-  .home-01-projects.py-7
+  .home-01-projects.py-7.bg--whitesmoke
     .container
       .row
         .col-lg-12
           .ts-section-heading-01
             h2 Our Latest Projects
-      .col-lg-12
-        .row
-          .col.p-0
-            .ts-portfolio-05.rounded-0
-              a(href='project_detail.html').card-cover
-                img.card-img(src='https://picsum.photos/600/400?random=1', alt='cover')
-                .ts-overlay.portfolio-card-overlay
-                .card-cover-inner
-                  h4.portfolio-card-title Project Card 05
-                  p.portfolio-card-catalog Consultant
-              .portfolio-card-meta
-                .item-favourite
-                  i.ts-icon.las.la-heart
-                  span 98
-                .item-comment
-                  i.ts-icon.la.la-comments
-                  span 102
-          .col.p-0
-            .ts-portfolio-05.rounded-0
-              a(href='project_detail.html').card-cover
-                img.card-img(src='https://picsum.photos/600/400?random=2', alt='cover')
-                .ts-overlay.portfolio-card-overlay
-                .card-cover-inner
-                  h4.portfolio-card-title Project Card 05
-                  p.portfolio-card-catalog Consultant
-              .portfolio-card-meta
-                .item-favourite
-                  i.ts-icon.las.la-heart
-                  span 98
-                .item-comment
-                  i.ts-icon.la.la-comments
-                  span 102
-          .col.p-0
-            .ts-portfolio-05.rounded-0
-              a(href='project_detail.html').card-cover
-                img.card-img(src='https://picsum.photos/600/400?random=3', alt='cover')
-                .ts-overlay.portfolio-card-overlay
-                .card-cover-inner
-                  h4.portfolio-card-title Project Card 05
-                  p.portfolio-card-catalog Consultant
-              .portfolio-card-meta
-                .item-favourite
-                  i.ts-icon.las.la-heart
-                  span 98
-                .item-comment
-                  i.ts-icon.la.la-comments
-                  span 102
-          .col.p-0
-            .ts-portfolio-05.rounded-0
-              a(href='project_detail.html').card-cover
-                img.card-img(src='https://picsum.photos/600/400?random=4', alt='cover')
-                .ts-overlay.portfolio-card-overlay
-                .card-cover-inner
-                  h4.portfolio-card-title Project Card 05
-                  p.portfolio-card-catalog Consultant
-              .portfolio-card-meta
-                .item-favourite
-                  i.ts-icon.las.la-heart
-                  span 98
-                .item-comment
-                  i.ts-icon.la.la-comments
-                  span 102
+      .row-g-40
+        .col-lg-4
+          .ts-portfolio-04
+            .card-header
+              h4.project-card-title
+                a(href="project_detail.html") Project Card 04
+              a(href="projects_list.html").project-card-catalog  Consultant
+            .card-cover
+              a(href='project_detail.html')
+                img.card-img(src='https://picsum.photos/600/300?random=4', alt='cover')
+              .ts-overlay.bg--color1
+                .item.d-flex.mb-4
+                  .item-favourite
+                    i.ts-icon.las.la-heart
+                    span 98
+                  .item-comment
+                    i.ts-icon.la.la-comments
+                    span 102
+                a(href='project_detail.html#comments').ts-btn.btn-cta-01.item
+                  span Join the conversation
+                  i.ts-icon.la.la-angle-right
+            .card-body
+              p.project-card-desc Commodo magna nulla nulla cillum sunt enim pariatur. Aliquip velit minim laboris ipsum fugiat do qui sit ullamco cillum eu aute nulla.
+            .card-footer
+              a(href="project_detail.html").project-card-btn-view-more Learn More
+                i.ts-icon.la.la-angle-right
+              .ts-social-list-01.align-right
+                a.hcl--facebook(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="facebook")
+                  i.ts-icon.lab.la-facebook-square
+                a.hcl--twitter(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="twitter")
+                  i.ts-icon.lab.la-twitter
+                a.hcl--instagram(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="instagram")
+                  i.ts-icon.lab.la-instagram
+
+        .col-lg-4
+          .ts-portfolio-04.ts-portfolio-type-video
+            .card-header
+              h4.project-card-title
+                a(href="project_detail.html") Project Card 04
+              a(href="projects_list.html").project-card-catalog  Consultant
+            .card-cover
+              a(href='project_detail.html')
+                img.card-img(src='https://picsum.photos/600/300?random=1', alt='cover')
+              .ts-overlay.bg--color1
+                .item.d-flex.mb-4
+                  .item-favourite
+                    i.ts-icon.las.la-heart
+                    span 98
+                  .item-comment
+                    i.ts-icon.la.la-comments
+                    span 102
+                a(href='project_detail.html#comments').ts-btn.btn-cta-01.item
+                  span Join the conversation
+                  i.ts-icon.la.la-angle-right
+            .card-body
+              p.project-card-desc Commodo magna nulla nulla cillum sunt enim pariatur. Aliquip velit minim laboris ipsum fugiat do qui sit ullamco cillum eu aute nulla.
+            .card-footer
+              a(href="project_detail.html").project-card-btn-view-more Learn More
+                i.ts-icon.la.la-angle-right
+              .ts-social-list-01.align-right
+                a.hcl--facebook(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="facebook")
+                  i.ts-icon.lab.la-facebook-square
+                a.hcl--twitter(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="twitter")
+                  i.ts-icon.lab.la-twitter
+                a.hcl--instagram(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="instagram")
+                  i.ts-icon.lab.la-instagram
+
+        .col-lg-4
+          .ts-portfolio-04.ts-portfolio-type-audio
+            .card-header
+              h4.project-card-title
+                a(href="project_detail.html") Project Card 04
+              a(href="projects_list.html").project-card-catalog  Consultant
+            .card-cover
+              a(href='project_detail.html')
+                img.card-img(src='https://picsum.photos/600/300?random=14', alt='cover')
+              .ts-overlay.bg--color1
+                .item.d-flex.mb-4
+                  .item-favourite
+                    i.ts-icon.las.la-heart
+                    span 98
+                  .item-comment
+                    i.ts-icon.la.la-comments
+                    span 102
+                a(href='project_detail.html#comments').ts-btn.btn-cta-01.item
+                  span Join the conversation
+                  i.ts-icon.la.la-angle-right
+            .card-body
+              p.project-card-desc Commodo magna nulla nulla cillum sunt enim pariatur. Aliquip velit minim laboris ipsum fugiat do qui sit ullamco cillum eu aute nulla.
+            .card-footer
+              a(href="project_detail.html").project-card-btn-view-more Learn More
+                i.ts-icon.la.la-angle-right
+              .ts-social-list-01.align-right
+                a.hcl--facebook(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="facebook")
+                  i.ts-icon.lab.la-facebook-square
+                a.hcl--twitter(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="twitter")
+                  i.ts-icon.lab.la-twitter
+                a.hcl--instagram(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="instagram")
+                  i.ts-icon.lab.la-instagram
 
   .home-01-testimonial.py-7
     .ts-overlay
@@ -303,6 +305,85 @@ append content
                 footer.blockquote-footer Adam Naville
                   | - 
                   cite(title="Source Title") Director, Renvilles Law Costs Draftsmen & Consultants Ltd
+
+  .home-01-blogs.py-7.bg--whitesmoke
+    .container
+      .row
+        .col-lg-12
+          .ts-section-heading-01
+            h2 Our Latest Projects
+      .row-g-40
+        .col-lg-4
+          .ts-blog-card-08
+            .card-cover
+              img.card-img(alt="cover", src='https://picsum.photos/400?random=15')
+              .blog-card-time 
+                p.blog-card-time-date 15
+                p.blog-card-time-month Oct
+              .blog-card-meta
+                p.blog-card-catalog
+                  i.ts-icon.la.la-tags
+                  a(href="blog_list01.html") Skills
+                  a(href="blog_list01.html") Financial
+                p.blog-card-author
+                  i.ts-icon.la.la-user-tie
+                  | John Doe
+            .card-body
+              h3.blog-card-title
+                a(href="blog_detail.html") Blog Card 08
+              p.blog-card-desc With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...
+              .card-footer
+                a(href="blog_detail.html").blog-card-readmore
+                  | Continue Reading
+                  i.ts-icon.la.la-angle-right
+        
+        .col-lg-4
+          .ts-blog-card-08
+            .card-cover
+              img.card-img(alt="cover", src='https://picsum.photos/400?random=11')
+              .blog-card-time 
+                p.blog-card-time-date 15
+                p.blog-card-time-month Oct
+              .blog-card-meta
+                p.blog-card-catalog
+                  i.ts-icon.la.la-tags
+                  a(href="blog_list01.html") Skills
+                  a(href="blog_list01.html") Financial
+                p.blog-card-author
+                  i.ts-icon.la.la-user-tie
+                  | John Doe
+            .card-body
+              h3.blog-card-title
+                a(href="blog_detail.html") Blog Card 08
+              p.blog-card-desc With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...
+              .card-footer
+                a(href="blog_detail.html").blog-card-readmore
+                  | Continue Reading
+                  i.ts-icon.la.la-angle-right
+        
+        .col-lg-4
+          .ts-blog-card-08
+            .card-cover
+              img.card-img(alt="cover", src='https://picsum.photos/400?random=9')
+              .blog-card-time 
+                p.blog-card-time-date 15
+                p.blog-card-time-month Oct
+              .blog-card-meta
+                p.blog-card-catalog
+                  i.ts-icon.la.la-tags
+                  a(href="blog_list01.html") Skills
+                  a(href="blog_list01.html") Financial
+                p.blog-card-author
+                  i.ts-icon.la.la-user-tie
+                  | John Doe
+            .card-body
+              h3.blog-card-title
+                a(href="blog_detail.html") Blog Card 08
+              p.blog-card-desc With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...
+              .card-footer
+                a(href="blog_detail.html").blog-card-readmore
+                  | Continue Reading
+                  i.ts-icon.la.la-angle-right
 
   .home-01-partner.py-7
     .container
