@@ -20,19 +20,19 @@ append header
               img.header-logo(src="images/logo-dark.png", alt="logo")
           .ts-header-07-info-right
             .item.ts-icon-box-info-03
-              .icon.color--color1
+              .icon.color--orange
                 i.ts-icon.la.la-map-marker
               .content
                 span 1010 Avenue of the Moon
                 span New York, NY 10018 US.
             .item.ts-icon-box-info-03
-              .icon.color--color1
+              .icon.color--orange
                 i.ts-icon.la.la-clock
               .content
                 span Mon - Sat 8.00 - 18.00
                 span Sunday CLOSED
             a(href="tel:18604193333").item.ts-icon-box-info-03
-              .icon.color--color1
+              .icon.color--orange
                 i.ts-icon.la.la-phone
               .content
                 strong.fs--14 212 386 5575
@@ -54,111 +54,141 @@ append content
     //- img(src="https://seniorthemes.com/images/home-04-slider-08.jpg")
     img(src="https://seniorthemes.com/images/home-05-slider-04.jpg")
   
+  .home-05-cta.bg--color7.py-5
+    .container
+      .row
+        .col-lg-12
+          h5.in-dark.mb-4 Leave us your informations, and we will in touch soon.
+          form.call-back-form-04
+            .consultant-select-wrap
+              +selectDiscuss
+            input.ts-input(type="text" placeholder="Your Name")
+            input.ts-input(type="text" placeholder="Your Phone")
+            a(href="#").ts-btn.btn-color1 Submit
+        //- .ts-box-cta-01
+        //-   .left.pr-lg-4
+        //-     h3.box-cta-title.color--white Quisque hendrerit sed lorem nec ornare. Proin sed turpis at odio molestie cursus.
+        //-     p.box-cta-desc.color--graylight Fusce nec velit elementum arcu tincidunt venenatis blandit id lorem. Cras commodo risus massa, at volutpat neque hendrerit a. Ut sed auctor nisl. Quisque pulvinar urna nec diam congue, quis accumsan arcu dapibus.
+        //-   .right
+        //-     a(href="/").ts-btn.btn-orange.btn-lg PURCHASE NOW 
+        //-       i.ts-icon.la.la-arrow-circle-right
+
   .home-01-services.py-7
     .container
-      .row
-        .col-lg-12.mb-lg-5
-          .ts-section-heading-01.align-center
-            h2 Choose Dotted Template For Your Purpose
-          p.font-italic.text-center Phasellus id lacus neque. Proin vestibulum leo at turpis rhoncus, sed lacinia sem mollis. Etiam cursus bibendum dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam auctor eu nunc nec facilisis. Duis in felis eget eros tristique ornare. Maecenas volutpat, nisi id pretium imperdiet, odio neque pellentesque erat.
       .row-g-40
-        .col-lg-4.mb-40
-          .ts-icon-box-09
+        .col-lg-4.mb-lg-40
+          .ts-icon-box-08.bg--gray20
             .icon-box-inner
-              .icon-box-wrap  
-                i.ts-icon.la.la-chart-pie
+              i.ts-icon.la.la-chart-pie
               .icon-box-content
                 h3.icon-box-title Icon Box 06
                 h5.icon-box-sub-title Lorem Ipsum dore si amnet
                 p.icon-box-desc Donec lacinia mi rutrum sagittis consequat. Donec sagittis commodo.
             svg.icon-box-layer(viewbox="0 0 69 231" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
               g(stroke="none" fill-rule="evenodd")
-                polygon.layer-01(points="0 0 70 0 70 170")
+                polygon.layer-01(points="0 0 70 0 70 150")
                 polygon.layer-02(points="70 51 70 231 0 231")
-        .col-lg-4.mb-40
-          .ts-icon-box-09
+        .col-lg-4.mb-lg-40
+          .ts-icon-box-08.bg--gray20
             .icon-box-inner
-              .icon-box-wrap  
-                i.ts-icon.las.la-hand-holding-usd
+              i.ts-icon.la.la-hand-holding-usd
               .icon-box-content
                 h3.icon-box-title Icon Box 06
                 h5.icon-box-sub-title Lorem Ipsum dore si amnet
                 p.icon-box-desc Donec lacinia mi rutrum sagittis consequat. Donec sagittis commodo.
             svg.icon-box-layer(viewbox="0 0 69 231" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
               g(stroke="none" fill-rule="evenodd")
-                polygon.layer-01(points="0 0 70 0 70 170")
+                polygon.layer-01(points="0 0 70 0 70 150")
                 polygon.layer-02(points="70 51 70 231 0 231")
-        .col-lg-4.mb-40
-          .ts-icon-box-09
+        .col-lg-4.mb-lg-40
+          .ts-icon-box-08.bg--gray20
             .icon-box-inner
-              .icon-box-wrap  
-                i.ts-icon.la.la-chart-pie
+              i.ts-icon.la.la-landmark
               .icon-box-content
                 h3.icon-box-title Icon Box 06
                 h5.icon-box-sub-title Lorem Ipsum dore si amnet
                 p.icon-box-desc Donec lacinia mi rutrum sagittis consequat. Donec sagittis commodo.
             svg.icon-box-layer(viewbox="0 0 69 231" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
               g(stroke="none" fill-rule="evenodd")
-                polygon.layer-01(points="0 0 70 0 70 170")
+                polygon.layer-01(points="0 0 70 0 70 150")
                 polygon.layer-02(points="70 51 70 231 0 231")
-        .col-lg-4.mb-40
-          .ts-icon-box-09
+        .col-lg-4
+          .ts-icon-box-08.bg--gray20
             .icon-box-inner
-              .icon-box-wrap  
-                i.ts-icon.la.la-chart-pie
+              i.ts-icon.la.la-chart-pie
               .icon-box-content
                 h3.icon-box-title Icon Box 06
                 h5.icon-box-sub-title Lorem Ipsum dore si amnet
                 p.icon-box-desc Donec lacinia mi rutrum sagittis consequat. Donec sagittis commodo.
             svg.icon-box-layer(viewbox="0 0 69 231" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
               g(stroke="none" fill-rule="evenodd")
-                polygon.layer-01(points="0 0 70 0 70 170")
+                polygon.layer-01(points="0 0 70 0 70 150")
                 polygon.layer-02(points="70 51 70 231 0 231")
-        .col-lg-4.mb-40
-          .ts-icon-box-09
+        .col-lg-4
+          .ts-icon-box-08.bg--gray20
             .icon-box-inner
-              .icon-box-wrap  
-                i.ts-icon.la.la-chart-pie
+              i.ts-icon.la.la-hand-holding-usd
               .icon-box-content
                 h3.icon-box-title Icon Box 06
                 h5.icon-box-sub-title Lorem Ipsum dore si amnet
                 p.icon-box-desc Donec lacinia mi rutrum sagittis consequat. Donec sagittis commodo.
             svg.icon-box-layer(viewbox="0 0 69 231" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
               g(stroke="none" fill-rule="evenodd")
-                polygon.layer-01(points="0 0 70 0 70 170")
+                polygon.layer-01(points="0 0 70 0 70 150")
                 polygon.layer-02(points="70 51 70 231 0 231")
-        .col-lg-4.mb-40
-          .ts-icon-box-09
+        .col-lg-4
+          .ts-icon-box-08.bg--gray20
             .icon-box-inner
-              .icon-box-wrap  
-                i.ts-icon.la.la-chart-pie
+              i.ts-icon.la.la-landmark
               .icon-box-content
                 h3.icon-box-title Icon Box 06
                 h5.icon-box-sub-title Lorem Ipsum dore si amnet
                 p.icon-box-desc Donec lacinia mi rutrum sagittis consequat. Donec sagittis commodo.
             svg.icon-box-layer(viewbox="0 0 69 231" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
               g(stroke="none" fill-rule="evenodd")
-                polygon.layer-01(points="0 0 70 0 70 170")
+                polygon.layer-01(points="0 0 70 0 70 150")
                 polygon.layer-02(points="70 51 70 231 0 231")
-
-  .home-04-about-us.bg--whitesmoke.py-7
+        
+  .home-05-about-us.bg--whitesmoke.py-7
     .container
       .row
-        .col-lg-7.d-flex.align-items-center
-          img.thumb(src='http://templates.thememodern.com/dotted/images/Feature/1.png', alt='cover')
-        .col-lg-5.pl-lg-5  
+        .col-lg-9
           .ts-section-heading-01
             h2 Why You Should Choose Us?
-          p.mb-lg-4 Integer est arcu, congue nec vulputate faucibus, aliquam eget tellus. Aliquam laoreet aliquam mi, vitae tempus orci mattis vitae. Cras ultricies mauris est, ultricies sagittis diam euismod et. Curabitur at dolor vitae felis semper ul
-          ul.list-style-01.list-square.color.mb-lg-4
-            li FULLY RESPONSIVE 
-            li TEMPLATE MULTIPLE 
-            li PORTFOLIO COLUMNS 
-            li AMAZING SLIDER 
-            li 10 AMAZING SKINS 
-            li AND MANY MORE...
-          a(href="about.html").ts-btn.btn-orange.btn-lg EXPLORE US
-            i.ts-icon.la.la-plus.pl-3
+          p.mb-lg-5 Integer est arcu, congue nec vulputate faucibus, aliquam eget tellus. Aliquam laoreet aliquam mi, vitae tempus orci mattis vitae. Cras ultricies mauris est, ultricies sagittis diam euismod et. Curabitur at dolor vitae felis semper ullamcorper eu mattis felis. Phasellus felis diam, egestas non hendrerit a, lacinia a neque.
+          .d-flex
+            .left.pr-lg-5
+              img.thumb(src='http://templates.thememodern.com/dotted/images/Feature/1.png', alt='cover')
+            .right
+              ul.list-style-01.list-square.color.mb-lg-4
+                li EASY CUSTOMIZATION RESPONSIVE 
+                li TEMPLATE MULTIPLE 
+                li PORTFOLIO COLUMNS 
+                li AMAZING SLIDER 
+                li 10 AMAZING SKINS 
+                li AND MANY MORE...
+              a(href="about.html").ts-btn.btn-orange.btn-lg EXPLORE US
+                i.ts-icon.la.la-plus.pl-3
+
+        .col-lg-3
+          .ts-section-heading-01
+            h2 Meet our expertise
+          .ts-team-card-02
+            .card-cover
+              img.card-img(src='https://i.pravatar.cc/600?img=11', alt="avatar")
+            .card-body
+              h4.team-card-name Adam Larson
+              p.team-card-title Financial Consultant
+              p.team-card-desc Ullamco minim in enim consectetur labore voluptate et non non. Officia dolor qui cupidatat tempor qui ex labore veniam dolore.
+            .card-footer
+              a(href="#").hcl--facebook
+                i.ts-icon.lab.la-facebook-square
+              a(href="#").hcl--twitter
+                i.ts-icon.lab.la-twitter
+              a(href="#").hcl--instagram
+                i.ts-icon.lab.la-instagram
+              a(href="team_detail.html").read-more
+                i.ts-icon.la.la-angle-right
         
   .home-01-projects.py-7.bg--white
     .container
@@ -302,15 +332,15 @@ append content
                   | - 
                   cite(title="Source Title") Director, Renvilles Law Costs Draftsmen & Consultants Ltd
 
-  .home-01-blogs.py-7.bg--white
+  .home-01-blogs.py-7.bg--whitesmoke
     .container
       .row
         .col-lg-12
           .ts-section-heading-01
-            h2 Our Latest Posts
+            h2 Our Latest Projects
       .row-g-40
         .col-lg-4
-          .ts-blog-card-08.bg--whitesmoke
+          .ts-blog-card-08
             .card-cover
               img.card-img(alt="cover", src='https://picsum.photos/400?random=15')
               .blog-card-time 
@@ -334,7 +364,7 @@ append content
                   i.ts-icon.la.la-angle-right
         
         .col-lg-4
-          .ts-blog-card-08.bg--whitesmoke
+          .ts-blog-card-08
             .card-cover
               img.card-img(alt="cover", src='https://picsum.photos/400?random=11')
               .blog-card-time 
@@ -358,7 +388,7 @@ append content
                   i.ts-icon.la.la-angle-right
         
         .col-lg-4
-          .ts-blog-card-08.bg--whitesmoke
+          .ts-blog-card-08
             .card-cover
               img.card-img(alt="cover", src='https://picsum.photos/400?random=9')
               .blog-card-time 
@@ -380,37 +410,6 @@ append content
                 a(href="blog_detail.html").blog-card-readmore
                   | Continue Reading
                   i.ts-icon.la.la-angle-right
-
-  .home-01-teams.py-lg-7.bg--whitesmoke
-    .container
-      .row
-        .col-lg-12
-          .ts-section-heading-01
-            h2 Our Teams
-          svg.ts-team-card-04-layer(height="0" width="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
-            defs
-              clippath#ts-team-card-04-clip(clipPathUnits="objectBoundingBox")
-                path.layer-01(transform="scale(0.0012345, 0.00098814)" d="M0.523749826,0.5 C0.507918786,2.82739485 0.5,5.1557469 0.5,7.48502994 C0.5,555.361288 438.60968,999.5 979.041916,999.5 C985.869691,999.5 992.689294,999.429109 999.5,999.287507 L999.5,0.5 L0.523749826,0.5 Z" stroke="#979797" fill="#D8D8D8")
-      .row
-        .col-lg-3
-          .ts-team-card-05
-            .card-cover
-              img.card-img(src='https://i.pravatar.cc/600?img=11', alt="avatar")
-            .card-body
-              .team-card-info
-                h4.team-card-name Adam Larson
-                p.team-card-title Financial Consultant 
-              p.team-card-desc Ullamco minim in enim consectetur labore voluptate et non non. Officia dolor qui cupidatat tempor qui ex labore veniam dolore.
-            .card-footer
-              a(href="#").hcl--facebook
-                i.ts-icon.lab.la-facebook-square
-              a(href="#").hcl--twitter
-                i.ts-icon.lab.la-twitter
-              a(href="#").hcl--instagram
-                i.ts-icon.lab.la-instagram
-              a(href="team_detail.html").read-more
-                i.ts-icon.la.la-angle-right
-        
 
   .home-01-partner.py-7
     .container
@@ -463,55 +462,91 @@ append content
             a(href="/").ts-btn.btn-orange.btn-lg PURCHASE NOW 
               i.ts-icon.la.la-arrow-circle-right
   
-  .home-01-footer
-    .footer-01.py-lg-7.py-5
-      .container
-        .row.footer-inner
-          .col-lg-4.mb-5.mb-lg-0.pr-lg-4
-            .widget-text.company-info.in-dark
-              .footer-logo
-                a(href="/")
-                  img(src="images/logo-light.png", alt="logo")
-              p.mb-4 Without finance, plans stay as plans. That’s why we exists, we here to help clients make the most of these opportunities. We take the time to gain a deep understanding of our clients' financial requirements to bringing a passion for client success.
-              .info
-                .item.mb-3
-                  i.ts-icon.la.la-phone.pr-1.fs--18
-                  a(href="tel:18604193333") 1860-419-3333
-                .item.mb-3
-                  i.ts-icon.la.la-envelope.pr-1.fs--18
-                  a(href="mailto:contact@ananci.com") consultant@ananci.com
-                .item
-                  i.ts-icon.la.la-clock.pr-1.fs--18
-                  span Mon - Fri: 8am - 6pm
-          .col-lg-4.d-none.d-lg-block.pr-lg-4
-            .widget-latest-news.in-dark
-              h4.widget-title-01.in-dark Latest News
-              ul
-                li
-                  +blog09('https://picsum.photos/600?random=1', 'Lorem Ipsum', 'Without finance, plans stay as plans. That’s why we exists...')
-                li
-                  +blog09('https://picsum.photos/600?random=2', 'Lorem Ipsum', 'Without finance, plans stay as plans. That’s why we exists...')
-                li
-                  +blog09('https://picsum.photos/600?random=3', 'Lorem Ipsum', 'Without finance, plans stay as plans. That’s why we exists...')
-          .col-lg-4
-            .widget-subcrible-01.in-dark
-              h4.widget-title-01.in-dark Subscribe
-              p Subscribe to our newsletter to receive latest news on our services.
-              .input-lg
-                input.mb-3.ts-input-02(type='text' placeholder="Email Address")
-                button.ts-btn.btn-color1(type='button') Subscribe
-              .ts-divider-01.my-4
-              .d-flex.justify-content-between.align-items-center
-                h4.in-dark.fs--18 Follow Us: 
-                .d-flex.justify-content-end
-                  a(href="#").square.bg--fw-1.in-dark.hbg--facebook.ml-3
+  .home-05-footer.bg--whitesmoke.mt-7
+    .ts-overlay
+    .ts-footer-05
+      .ts-footer-info
+        .container
+          .ts-footer-info-inner
+            .row
+              .col-lg-4
+                .ts-icon-box-info-04
+                  .icon.color--orange
+                    i.ts-icon.la.la-map-marker
+                  .content
+                    h5 Drop Us A Call
+                    a(href="tel:18604193333") 1860-419-3333
+              
+              .col-lg-4
+                .ts-icon-box-info-04
+                  .icon.color--orange
+                    i.ts-icon.la.la-map-marker
+                  .content
+                    h5 Or Email Us
+                    a(href="mailto:contact@ananci.com") consultant@ananci.com
+              
+              .col-lg-4
+                .ts-icon-box-info-04
+                  .icon.color--orange
+                    i.ts-icon.la.la-map-marker
+                  .content
+                    h5 Our Main Office
+                    span New York, NY 10018 US.
+
+      .ts-footer-main.pb-lg-7.pb-5
+        .container
+          .row.footer-inner
+            .col-lg-5.mb-5.mb-lg-0.pr-lg-5
+              .widget-text.company-info.in-dark
+                .footer-logo
+                  a(href="/")
+                    img(src="images/logo-light.png", alt="logo")
+                p.mb-5 Without finance, plans stay as plans. That’s why we exists, we here to help clients make the most of these opportunities. We take the time to gain a deep understanding of our clients' financial requirements to bringing a passion for client success.
+                .d-flex
+                  a(href="#").square.bg--fw-1.in-dark.hbg--facebook.mr-3
                     i.ts-icon.lab.la-facebook-square
-                  a(href="#").square.bg--fw-1.in-dark.hbg--twitter.ml-3
+                  a(href="#").square.bg--fw-1.in-dark.hbg--twitter.mr-3
                     i.ts-icon.lab.la-twitter
-                  a(href="#").square.bg--fw-1.in-dark.hbg--instagram.ml-3
+                  a(href="#").square.bg--fw-1.in-dark.hbg--instagram.mr-3
                     i.ts-icon.lab.la-instagram
-                  a(href="#").square.bg--fw-1.in-dark.hbg--linkedin.ml-3
+                  a(href="#").square.bg--fw-1.in-dark.hbg--linkedin.mr-3
                     i.ts-icon.lab.la-linkedin
+
+            .col-lg-3
+              .widget-quick-links-02.in-dark.style-long-arrow
+                h4.widget-title-01.in-dark Services
+                ul
+                  li
+                    a(href="/") Home
+                  li
+                    a(href="/") About Us
+                  li
+                    a(href="/") Our Services
+                  li
+                    a(href="/") Cases Study
+                  li
+                    a(href="/") Latest Projects
+
+            .col-lg-4.d-none.d-lg-block.pr-lg-4
+              .widget-instagram
+                h4.widget-title-01.in-dark Instagram
+                ul
+                  li
+                    img(src='https://picsum.photos/600?random=1', alt='thumb')
+                  li
+                    img(src='https://picsum.photos/600?random=2', alt='thumb')
+                  li
+                    img(src='https://picsum.photos/600?random=3', alt='thumb')
+                  li
+                    img(src='https://picsum.photos/600?random=4', alt='thumb')
+                  li
+                    img(src='https://picsum.photos/600?random=5', alt='thumb')
+                  li
+                    img(src='https://picsum.photos/600?random=6', alt='thumb')
+                  li
+                    img(src='https://picsum.photos/600?random=7', alt='thumb')
+                  li
+                    img(src='https://picsum.photos/600?random=8', alt='thumb')
 
     .copyright-02
       .container

@@ -1,0 +1,34 @@
+.home-05 {
+  &-about-us {
+    .list-style-01 {
+      li {
+        margin-bottom: 10px;
+      }
+    }
+
+    .thumb {
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+
+  &-footer {
+    position: relative;
+
+    .ts-overlay {
+      opacity: 1;
+      background-color: rgba($color8, 0.9);
+    }
+
+    .copyright-02 {
+      position: relative;
+    }
+  }
+}
+
+.header-container.ts-header-07 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}

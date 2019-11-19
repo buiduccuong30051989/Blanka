@@ -673,9 +673,12 @@
   &.style-01 {
     & > ul {
       & > li {
+        transition: background-color 0.1s;
+
         & > a {
           color: $white;
-          font-weight: 700;
+          transition: color 0.35s;
+          // font-weight: 300;
         }
 
         &.has-sub > a {
@@ -686,6 +689,8 @@
 
         &:hover,
         &.active {
+          background-color: $color7;
+
           & > a {
             color: $orange;
           }
