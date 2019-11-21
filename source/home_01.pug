@@ -136,7 +136,7 @@ append content
                 li AMAZING SLIDER 
                 li 10 AMAZING SKINS 
                 li AND MANY MORE...
-              a(href="about.html").ts-btn.btn-orange.btn-lg REQUEST A CALLBACK
+              a(href="about.html").ts-btn.btn-color1.btn-lg REQUEST A CALLBACK
                 i.ts-icon.la.la-plus.pl-3
 
         .col-lg-4
@@ -153,7 +153,9 @@ append content
                 aria-labelledby="step01" 
                 data-parent="#process")
                 .card-body
-                  | When you get in touch with us, we set up a 45-60 minute consultation that is at no cost to you. We will discuss your current situation.
+                  | When you get in touch with us, we set up a 45-60 minute consultation that is at no cost to you.
+                  br
+                  | After about two weeks, your financial adviser will be in touch.
             .card.ts-accrodion-01
               #step02.card-header
                 h5.mb-0
@@ -192,6 +194,21 @@ append content
                   aria-labelledby="step04" 
                   data-parent="#process")
                   .card-body
+                    | After about two weeks, your financial adviser will be in touch to present their findings and recommendations and go into.
+            .card.ts-accrodion-01
+                #step05.card-header
+                  h5.mb-0
+                    button.ts-btn.btn-lg.w-100.text-left(
+                      data-toggle="collapse" 
+                      data-target="#step05Content" 
+                      aria-expanded="false" 
+                      aria-controls="step05Content") Present your plan and answer any questions
+                #step05Content.collapse(
+                  aria-labelledby="step05" 
+                  data-parent="#process")
+                  .card-body
+                    | After about two weeks, your financial adviser will be in touch to present their findings and recommendations and go into.
+                    br
                     | After about two weeks, your financial adviser will be in touch to present their findings and recommendations and go into.
         
   .home-01-projects.py-7
@@ -347,7 +364,7 @@ append content
             h3.box-cta-title Quisque hendrerit sed lorem nec ornare. Proin sed turpis at odio molestie cursus.
             p.box-cta-desc Fusce nec velit elementum arcu tincidunt venenatis blandit id lorem. Cras commodo risus massa, at volutpat neque hendrerit a. Ut sed auctor nisl. Quisque pulvinar urna nec diam congue, quis accumsan arcu dapibus.
           .right
-            a(href="/").ts-btn.btn-orange.btn-lg PURCHASE NOW 
+            a(href="/").ts-btn.btn-color1.btn-lg PURCHASE NOW 
               i.ts-icon.la.la-arrow-circle-right
   
   .home-01-footer
@@ -385,7 +402,7 @@ append content
               h4.widget-title-01.in-dark Subscribe
               p Subscribe to our newsletter to receive latest news on our services.
               .input-lg
-                input.mb-3.ts-input-02(type='text' placeholder="Email Address")
+                input.mb-3.ts-input--ghost-02(type='text' placeholder="Email Address")
                 button.ts-btn.btn-color1(type='button') Subscribe
               .ts-divider-01.my-4
               .d-flex.justify-content-between.align-items-center

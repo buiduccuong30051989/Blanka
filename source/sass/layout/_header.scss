@@ -167,7 +167,7 @@
     }
 
     .ts-icon {
-      color: $orange;
+      // color: $orange;
     }
   }
 }
@@ -652,6 +652,8 @@
 }
 
 .ts-header-08 {
+  color: $gray20;
+  
   &-inner {
     display: flex;
     align-items: center;
