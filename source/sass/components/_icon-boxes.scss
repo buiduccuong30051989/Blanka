@@ -541,6 +541,7 @@
 
 .ts-icon-box-08 {
   position: relative;
+  transition: box-shadow .35s;
 
   // &-icon-wrap {
   //   display: flex;
@@ -554,24 +555,45 @@
   //   }
   // }
 
-  .ts-icon {
-    font-size: 28px;
-    // color: $gray20;
-    // background-color: $color1;
-    border: 1px solid $orange;
-    color: $orange;
-    border-radius: 50%;
-    // color: $white;
+  .icon-box-wrap {
     position: absolute;
     right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
     z-index: 2;
     width: 70px;
-    height: 70px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .ts-icon {
+      font-size: 100px;
+      transition: all 0.35s;
+      color: $white;
+      opacity: .3;
+      transform: translateY(-20px);
+      z-index: 2;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 5px;
+      height: 0;
+      transition: height 0.35s;
+      background-color: color(color1, 1);
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 5px;
+      height: 0;
+      transition: height 0.35s;
+      background-color: color(color1, 1);
+    }
   }
 
   .icon-box {
@@ -608,12 +630,35 @@
       font-style: italic;
       font-weight: normal;
       margin-bottom: 15px;
-      color: $white;
+      color: color(color1, 1);
     }
 
     &-desc {
       margin-bottom: 0;
       color: $graylight;
+    }
+  }
+
+  &:hover {
+    @extend .shadow;
+
+    .icon-box-wrap {
+      .ts-icon {
+        opacity: 1;
+        color: color(color1, 1);
+        // font-size: 72px;
+        transform: translateY(0);
+      }
+
+      &:before {
+        height: 20px;
+        opacity: 1;
+      }
+
+      &:after {
+        height: 20px;
+        opacity: 1;
+      }
     }
   }
 }

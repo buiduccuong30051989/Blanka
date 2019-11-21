@@ -867,3 +867,186 @@
     
   }
 }
+
+.ts-blog-card-09 {
+  background-color: $white;
+
+  .card-header {
+    border-bottom: 0;
+    position: relative;
+    padding-right: 50px;
+
+    &:before {
+      content: "";
+      width: 5px;
+      height: 42px;
+      background-color: color(color1, 1);
+      position: absolute;
+      top: 12px;
+      left: 0;
+    }
+
+    &:after {
+      content: "\f15c";
+      font-family: $lineAwesome;
+      font-size: 24px;
+      color: $gray40;
+      position: absolute;
+      top: 16px;
+      right: 10px;
+    }
+  }
+
+  &.ts-blog-type-audio {
+    .card-header:after {
+      content: "\f1c7";
+    }
+  }
+
+  &.ts-blog-type-video {
+    .card-header:after {
+      content: "\f1c8";
+    }
+  }
+
+  &.ts-blog-type-pdf {
+    .card-header:after {
+      content: "\f1c1";
+    }
+  }
+
+  &.ts-blog-type-pp {
+    .card-header:after {
+      content: "\f1c4";
+    }
+  }
+
+  .blog-card {
+    &-title {
+      font-weight: 200;
+      font-size: 18px;
+      margin-bottom: 4px;
+
+      a {
+        color: $gray20;
+        text-decoration: none;
+        transition: $transition-base;
+
+        &:hover {
+          color: color(color1, 1);
+        }
+      }
+    }
+
+    &-catalog {
+      font-size: 13px;
+      margin-bottom: 0;
+      color: $gray60;
+      transition: $transition-base;
+      text-decoration: none;
+
+      &:hover {
+        color: color(color1, 1);
+      }
+    }
+
+    &-desc {
+      margin-bottom: 0;
+    }
+
+    &-author {
+      color: $gray60;
+
+      a {
+        text-decoration: none;
+        transition: $transition-base;
+
+        &:hover {
+          color: color(color1, 1);
+        }
+      }
+    }
+  }
+
+  .card-cover {
+    position: relative;
+
+    .ts-overlay {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: $white;
+      font-size: 18px;
+      opacity: 0;
+      background: linear-gradient(
+        to bottom,
+        color(color7, 1) 0%,
+        color(color7, 0.9) 15%,
+        color(color7, 0) 100%
+      );
+      background-size: 100% 170%;
+
+      .item {
+        opacity: 0;
+        transition: opacity 0.35s, transform 0.35s;
+
+        [class^="item"] {
+          margin: 0 10px;
+          cursor: pointer;
+
+          .ts-icon {
+            margin-right: 5px;
+          }
+        }
+
+        &:first-child {
+          transform: translate3d(0, 20px, 0);
+        }
+
+        &:nth-child(2) {
+          transform: translate3d(0, 20px, 0);
+          transition-delay: .05s;
+        }
+      }
+    }
+  }
+
+  .card-img {
+    border-radius: 0;
+  }
+
+  .card-footer {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top-color: rgba($black, 0.05);
+
+    a {
+      color: $gray40;
+      transition: $transition-base;
+    }
+  }
+
+  &:hover {
+    .ts-overlay {
+      opacity: 0.9;
+
+      .item {
+        opacity: 1;
+
+        &:first-child {
+          transform: translate3d(0,0,0);
+        }
+
+        &:nth-child(2) {
+          transform: translate3d(0,0,0);
+        }
+      }
+    }
+  }
+}

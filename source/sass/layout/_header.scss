@@ -361,13 +361,17 @@
     }
 
     &-top {
-      padding: 17px 0 14px;
+      padding: 17px 0 0px;
       display: flex;
       justify-content: flex-end;
       // transition: all 0.3s ease-in-out;
 
       .item {
         color: $white;
+
+        &.ts-icon-box-info-02 {
+          opacity: .7;
+        }
 
         &:not(:last-child) {
           margin-right: 30px;
@@ -396,8 +400,7 @@
     }
 
     .ts-main-menu > ul > li > a {
-      padding-top: 28px;
-      padding-bottom: 28px;
+      padding: 28px 25px 23px;
     }
 
     @include media-breakpoint-down(md) {

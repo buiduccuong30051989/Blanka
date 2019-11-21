@@ -136,3 +136,49 @@ $classTsBtnOutline: btn-outline-;
     }
   }
 }
+
+.btn-cta-02 {
+  display: inline-flex;
+  align-items: center;
+  overflow: hidden;
+  border-color: $white;
+  color: $white;
+  position: relative;
+  padding: 8px 60px 8px 16px;
+  font-weight: 300;
+
+  span {
+    position: relative;
+    display: inline-block;
+    transition: all .3s ease;
+  }
+
+  .ts-icon {
+    transition: all .3s ease;
+    position: relative;
+    position: absolute;
+    display: inline-block;
+    width: 44px;
+    height: 18px;
+    text-align: center;
+    line-height: 19px;
+    right: 0;
+    border-left: 1px solid rgba($white, 0.1);
+    margin-right: 0;
+  }
+
+  &:hover {
+    color: $white;
+
+    span {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+
+    .ts-icon {
+      right: 50%;
+      transform: translateX(50%) scale(1.8);
+      border-left: 0;
+    }
+  }
+}

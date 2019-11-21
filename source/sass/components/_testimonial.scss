@@ -347,7 +347,7 @@
   background-color: $white;
 
   .card-body {
-    padding: 40px 30px 30px;
+    padding: 40px 30px 40px;
     position: relative;
     border-top: 3px solid color(color1, 1);
 
@@ -364,11 +364,13 @@
     .testimonial-card-content {
       font-style: italic;
       margin-bottom: 0;
+      font-size: 16px;
     }
   }
 
   .card-cover {
-    background-color: color(color1, 1);
+    // background-color: color(color7, 1);
+    background-color: $gray40;
     display: flex;
     align-items: center;
     padding: 15px 30px;

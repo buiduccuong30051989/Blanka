@@ -23,4 +23,16 @@
   .ts-btn {
     white-space: nowrap;
   }
+
+  &.in-dark {
+    .box-cta {
+      &-title {
+        color: $white;
+      }
+
+      &-desc {
+        color: $gray60;
+      }
+    }
+  }
 }

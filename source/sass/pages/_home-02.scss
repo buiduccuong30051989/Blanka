@@ -1,14 +1,12 @@
 //
-// Layout :: Home 02  
+// Layout :: Home 02
 // --------------------------------------------------
 .home-02 {
   &-slider {
-
   }
-  
+
   &-callback {
     .consultant-select {
-    
       // &.bootstrap-select {
       //   & > .dropdown-toggle {
       //     background-color: color(color6, 1);
@@ -26,16 +24,6 @@
   }
 
   &-testimonial {
-    padding-top: 80px;
-    padding-bottom: 25px;
-
-    [class^='ts-section-heading'] {
-      margin-bottom: 0;
-    }
-
-    .owl-item {
-      padding: 40px 0 56px 0;
-    }
   }
 
   &-subcrible {
@@ -57,11 +45,11 @@
       background-color: rgba($color8, 0.9);
     }
 
-    [class^='ts-footer'] {
+    [class^="ts-footer"] {
       background-color: transparent;
     }
 
-    [class^='ts-copyright'] {
+    [class^="ts-copyright"] {
       background-color: transparent;
       position: relative;
       z-index: 1;
