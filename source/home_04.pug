@@ -756,32 +756,16 @@ append script
     $(window).scroll(function () { 
         //- var $Fade = $('.fade-elements');
         var $Fade = document.getElementById('fade-elements')
-        //Get scroll position of window 
-        //- var windowScroll = $(this).offset();
         var windowScroll = $Fade.getBoundingClientRect().top;
-        //- console.log(windowScroll)
-        //- console.log($(window).height());
         var windowHeight = $(window).height();
         var fadeHeight = $($Fade).height();
-        //- if(windowScroll > windowHeight/2) {
-        //-   console.log('scroll 1 nua')
-        //- } else {
-        //-   console.log('scroll qua nua')
-        //- }
-        //Slow scroll and fade it out
-        //- if(windowScroll > 0)
-        //- console.log(windowHeight/2 - windowScroll)
-        //- var a = Math.abs(windowHeight/2 - windowScroll)
-        //- console.log(a)
-        //- console.log($(window).scrollTop())
-        //- console.log($($Fade).offset())
-        //- console.log(windowHeight - $(window).scrollTop() - fadeHeight);
         var offsetFade = $($Fade).offset();
-        console.log(offsetFade.top);
-        console.log("_______SCROLL TOP_____")
-        console.log($(window).scrollTop());
-        $($Fade).css({
-            //- 'opacity': 1 - (windowScroll / 400)
-            'opacity': 1
+        var offsetTop = offsetFade.top;
+        var scroll = $(window).scrollTop() + windowHeight;
+        if((offsetTop - scroll) < 0) {
+          var opacity = Math.abs(offsetTop - scroll - windowHeight/2)/1000
+          $($Fade).css({
+            'opacity': opacity
         });
+        }
     })
