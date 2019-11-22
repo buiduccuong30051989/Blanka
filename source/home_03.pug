@@ -81,7 +81,7 @@ append content
   
   .home-03-about-us.bg--whitesmoke.py-7
     .container
-      .row
+      .row-g-40
         .col-lg-6.pr-lg-4
           .ts-section-heading-01
             h2 We are Finance
@@ -90,7 +90,8 @@ append content
             li.mb-2 Nullam consequat lacus non luctus finibus.
             li.mb-2 Nullam consequat lacus non luctus finibus.
             li.mb-2 Nullam consequat lacus non luctus finibus.
-          a(href="about.html").ts-btn.btn-orange REQUEST A CALLBACK
+            li Nullam consequat lacus non luctus finibus.
+          a(href="about.html").ts-btn.btn-color1 REQUEST A CALLBACK
             i.ts-icon.la.la-plus.pl-3
 
         .col-lg-6
@@ -416,55 +417,55 @@ append content
   
   //- .bg--whitesmoke.py-7.py-lg-5
   
-  .home-01-footer
+  .home-03-footer
     .footer-01.py-lg-7.py-5
       .container
         .row.footer-inner
-          .col-lg-4.mb-5.mb-lg-0.pr-lg-4
+          .col-lg-4.mb-5.mb-lg-0.pr-lg-5
             .widget-text.company-info.in-dark
-              .footer-logo
-                a(href="/")
-                  img(src="images/logo-light.png", alt="logo")
-              p.mb-4 Without finance, plans stay as plans. That’s why we exists, we here to help clients make the most of these opportunities. We take the time to gain a deep understanding of our clients' financial requirements to bringing a passion for client success.
-              .info
-                .item.mb-3
-                  i.ts-icon.la.la-phone.pr-1.fs--18
-                  a(href="tel:18604193333") 1860-419-3333
-                .item.mb-3
-                  i.ts-icon.la.la-envelope.pr-1.fs--18
-                  a(href="mailto:contact@ananci.com") consultant@ananci.com
-                .item
-                  i.ts-icon.la.la-clock.pr-1.fs--18
-                  span Mon - Fri: 8am - 6pm
-          .col-lg-4.d-none.d-lg-block.pr-lg-4
-            .widget-latest-news.in-dark
-              h4.widget-title-01.in-dark Latest News
+              h4.widget-title-01.in-dark Company Name
+              p Without finance, plans stay as plans. That’s why we exists, we here to help clients make the most of these opportunities. We take the time to gain a deep understanding of our clients' financial requirements to bringing a passion for client success.
+              
+          .col
+            .widget-quick-links-02.in-dark.style-minus
+              h4.widget-title-01.in-dark Our Services
               ul
                 li
-                  +blog09('https://picsum.photos/600?random=1', 'Lorem Ipsum', 'Without finance, plans stay as plans. That’s why we exists...')
+                  a(href="/") Home
                 li
-                  +blog09('https://picsum.photos/600?random=2', 'Lorem Ipsum', 'Without finance, plans stay as plans. That’s why we exists...')
+                  a(href="/") About Us
                 li
-                  +blog09('https://picsum.photos/600?random=3', 'Lorem Ipsum', 'Without finance, plans stay as plans. That’s why we exists...')
-          .col-lg-4
-            .widget-subcrible-01.in-dark
-              h4.widget-title-01.in-dark Subscribe
-              p Subscribe to our newsletter to receive latest news on our services.
-              .input-lg
-                input.mb-3.ts-input-02(type='text' placeholder="Email Address")
-                button.ts-btn.btn-color1(type='button') Subscribe
-              .ts-divider-01.my-4
-              .d-flex.justify-content-between.align-items-center
-                h4.in-dark.fs--18 Follow Us: 
-                .d-flex.justify-content-end
-                  a(href="#").square.bg--fw-1.in-dark.hbg--facebook.ml-3
-                    i.ts-icon.lab.la-facebook-square
-                  a(href="#").square.bg--fw-1.in-dark.hbg--twitter.ml-3
-                    i.ts-icon.lab.la-twitter
-                  a(href="#").square.bg--fw-1.in-dark.hbg--instagram.ml-3
-                    i.ts-icon.lab.la-instagram
-                  a(href="#").square.bg--fw-1.in-dark.hbg--linkedin.ml-3
-                    i.ts-icon.lab.la-linkedin
+                  a(href="/") Our Services
+                li
+                  a(href="/") Cases Study
+          .col
+            .widget-quick-links-02.in-dark.style-minus
+              h4.widget-title-01.in-dark Useful Links
+              ul
+                li
+                  a(href="/") Home
+                li
+                  a(href="/") About Us
+                li
+                  a(href="/") Our Services
+                li
+                  a(href="/") Cases Study
+          .col-lg-3
+            .widget-quick-links-02.in-dark
+              h4.widget-title-01.in-dark Our Contact
+              .info
+                .item.mb-3
+                  i.ts-icon.la.la-home.pr-2.fs--18
+                  span 151 Hudson St, New York, NY
+                .item.mb-3
+                  i.ts-icon.la.la-phone.pr-2.fs--18
+                  a(href="tel:18604193333") 1860-419-3333
+                .item.mb-3
+                  i.ts-icon.la.la-envelope.pr-2.fs--18
+                  a(href="mailto:contact@ananci.com") consultant@ananci.com
+                .item
+                  i.ts-icon.la.la-clock.pr-2.fs--18
+                  span Mon - Fri: 8am - 6pm
 
     .copyright-02
       .container
@@ -474,17 +475,15 @@ append content
               a(href="/")
                 strong  .Ananci 
               | All Right Reserved
-          .copyright-right.d-none.d-md-block
-            .widget-footer-links.in-dark
-              ul
-                li
-                  a(href="/") Terms of use 
-                li
-                  a(href="/") Privacy Policy
-                li
-                  a(href="/") Faq
-                li
-                  a(href="/") Support
+          .copyright-right
+            a(href="#").square.square-sm.bg--fw-1.in-dark.hbg--facebook.ml-3
+              i.ts-icon.lab.la-facebook-square
+            a(href="#").square.square-sm.bg--fw-1.in-dark.hbg--twitter.ml-3
+              i.ts-icon.lab.la-twitter
+            a(href="#").square.square-sm.bg--fw-1.in-dark.hbg--instagram.ml-3
+              i.ts-icon.lab.la-instagram
+            a(href="#").square.square-sm.bg--fw-1.in-dark.hbg--linkedin.ml-3
+              i.ts-icon.lab.la-linkedin
   a#to-the-top
     i.ts-icon.la.la-angle-up
   //- +footer01

@@ -81,6 +81,8 @@
 
       img {
         @include fitImage();
+        filter: brightness(90%);
+        transition: filter .35s;
       }
     }
 
@@ -128,6 +130,16 @@
       &-meta {
         .time {
           @extend .color--fw-6;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    .ts-blog-card {
+      &-cover {
+        img {
+          filter: brightness(100%);
         }
       }
     }
@@ -525,6 +537,7 @@
   border-radius: 2px;
   overflow: hidden;
   flex-direction: unset;
+  transition: box-shadow .35s;
 
   .card-cover {
     overflow: hidden;
@@ -608,13 +621,19 @@
       position: absolute;
       top: 0;
       left: 0;
-      background-color: color(color1, 0.9);
+      background: linear-gradient(
+        to bottom,
+        color(color7, 1) 0%,
+        color(color7, 0.9) 15%,
+        color(color7, 0) 100%
+      );
+      background-size: 100% 300%;
       width: 100%;
       height: 100%;
       color: $white;
       padding: 15px;
       opacity: 0;
-      transition: $transition-base;
+      transition: opacity .35s;
 
       .ts-icon {
         padding-right: 4px;
@@ -666,9 +685,12 @@
   }
 
   &:hover {
+    @extend .shadow;
+
     .blog-card {
       &-meta {
         opacity: 1;
+        // background-size: 100% 300%;
 
         [class*='blog-card-'] {
           opacity: 1;
@@ -870,6 +892,7 @@
 
 .ts-blog-card-09 {
   background-color: $white;
+  transition: box-shadow .35s;
 
   .card-header {
     border-bottom: 0;
@@ -1033,6 +1056,8 @@
   }
 
   &:hover {
+    @extend .shadow;
+
     .ts-overlay {
       opacity: 0.9;
 

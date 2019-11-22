@@ -214,6 +214,13 @@
       background-color: color(color1, 1);
     }
   }
+
+  &.square-sm {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+  }
 }
 
 .ts-icon-box-01 {

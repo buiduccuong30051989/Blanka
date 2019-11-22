@@ -689,17 +689,13 @@
 
         &:hover,
         &.active {
-          background-color: $color7;
-
-          & > a {
-            color: $orange;
-          }
+          background-color: $color1;
         }
 
         & > ul {
           & > li {
             &:hover {
-              background-color: $black1;
+              background-color: color(color1, 1);
 
               & > a {
                 color: $white;
@@ -708,7 +704,7 @@
           }
 
           ul {
-            background-color: $black1;
+            background-color: color(color7 ,1);
 
             li {
               a {
@@ -716,10 +712,10 @@
               }
 
               &:hover {
-                background-color: transparent;
+                background-color: color(color1, 1);
 
                 & > a {
-                  color: $orange;
+                  color: $white;
                 }
               }
             }
@@ -732,7 +728,7 @@
       ul {
         li.has-sub:hover {
           & > a {
-            color: $orange;
+            color: $white;
           }
         }
       }

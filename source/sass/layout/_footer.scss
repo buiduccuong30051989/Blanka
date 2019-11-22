@@ -112,12 +112,16 @@
 
   .ts-footer-info-inner {
     border-radius: 2px;
-    background-color: color(color7, 1);
+    background-color: $black;
     padding: 40px 30px;
     // position: absolute;
     transform: translateY(-50%);
     z-index: 1;
     width: 100%;
+
+    .ts-icon-box-info-04 .icon {
+      padding-right: 12px;
+    }
   }
 }
 

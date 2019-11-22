@@ -99,3 +99,50 @@
   color: $color3;
   background-color: $color7;
 }
+
+.ts-nav-tabs-02 {
+  border-bottom: 5px solid color(color1, .7);
+
+  .nav-link {
+    padding: 9px 25px;
+    background-color: transparent;
+    border-radius: 0;
+    color: $white;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+    margin-bottom: 0;
+    font-family: $oswald;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+    border: 0;
+
+    &:not(:last-of-type) {
+      margin-right: 10px;
+    }
+
+    &.active {
+      background-color: color(color1, .7);
+      color: $white;
+      border-color: color(color1, .7);
+
+      &:hover {
+        background-color: color(color1, .7);
+        color: $white;
+        border-color: color(color1, .7);
+      }
+    }
+
+    &:hover {
+      background-color: color(color1, .7);
+      border-color: color(color1, .7);
+      color: $white;
+    }
+  }
+}
+
+.ts-tab-content-02 {
+  padding: 30px;
+  color: $color3;
+  background-color: rgba($black, 0.3);
+}

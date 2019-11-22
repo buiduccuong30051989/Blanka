@@ -27,6 +27,16 @@ mixin selectDiscuss(type)
     option(data-content="<div class='option-select-team'><i class='ts-icon la la-shield-alt'></i><div class='content'><h5 class='name'>Finance Insurance</h5></div></div>") Finance Insurance
     option(data-content="<div class='option-select-team'><i class='ts-icon la la-question-circle'></i><div class='content'><h5 class='name'>OTHER...</h5></div></div>") OTHER...
 
+mixin selectOptions(type)
+  select.js-select(title="I would like to discuss:", class=type)
+    option(data-content="<div class='option-select-team'><i class='ts-icon la la-comments'></i><div class='content'><h5 class='name'>Accounting Advisory</h5></div></div>") Accounting Advisory
+    option(data-content="<div class='option-select-team'><i class='ts-icon la la-cogs'></i><div class='content'><h5 class='name'>Finance Operations</h5></div></div>") Finance Operations
+    option(data-content="<div class='option-select-team'><i class='ts-icon la la-gem'></i><div class='content'><h5 class='name'>Funds Management</h5></div></div>") Funds Management
+    option(data-content="<div class='option-select-team'><i class='ts-icon la la-clipboard'></i><div class='content'><h5 class='name'>Tax Consultant</h5></div></div>") Tax Consultant
+    option(data-content="<div class='option-select-team'><i class='ts-icon la la-money-bill'></i><div class='content'><h5 class='name'>Financial Investment</h5></div></div>") Financial Investment
+    option(data-content="<div class='option-select-team'><i class='ts-icon la la-shield-alt'></i><div class='content'><h5 class='name'>Finance Insurance</h5></div></div>") Finance Insurance
+    option(data-content="<div class='option-select-team'><i class='ts-icon la la-question-circle'></i><div class='content'><h5 class='name'>OTHER...</h5></div></div>") OTHER...
+
 mixin cart
   a.dropdown-toggle(href="#" data-toggle="dropdown")
     i.control-icon.ts-icon.la.la-shopping-cart

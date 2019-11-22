@@ -194,41 +194,71 @@ append content
                   .portfolio-card-divider
                   p.portfolio-card-catalog Consultant
                   p.portfolio-card-desc Commodo magna nulla nulla cillum sunt enim pariatur.
-
-  .home-02-callback.bg--color8
+  
+  .home-02-callback.bg--color7.py-lg-7.py-5
     .container
-      .row
-        .col-lg-8.pr-lg-5.py-7
-          nav.nav.nav-tabs.ts-nav-tabs-01
-            a.nav-item.nav-link.active(data-toggle='tab', href='#nav-home') Long terms
-            a.nav-item.nav-link(data-toggle='tab', href='#nav-profile') Safe
-            a.nav-item.nav-link(data-toggle='tab', href='#nav-dropdown1') Opportunity
-            a.nav-item.nav-link(data-toggle='tab', href='#nav-dropdown2') Investment
-          .tab-content.ts-tab-content-01
-            #nav-home.tab-pane.fade.show.active
-              .d-flex
-                img.pr-4(src='http://templates.thememodern.com/dotted/images/Feature/3.png', style="max-width: 200px")
-                p Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed velit. Proin gravida arcu nisl, a dignissim mauris placerat id. Vivamus interdum urna at sapien varius elementum. Suspendisse ut mi felis et interdum libero lacinia vel. Aenean elementum odio ut lorem cursus, eu auctor magna pellentesque.
-            #nav-profile.tab-pane.fade
-              p Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed velit. Proin gravida arcu nisl, a dignissim mauris placerat id. Vivamus interdum urna at sapien varius elementum. Suspendisse ut mi felis et interdum libero lacinia vel. Aenean elementum odio ut lorem cursus, eu auctor magna pellentesque.
-            #nav-dropdown1.tab-pane.fade
-              p Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed velit. Proin gravida arcu nisl, a dignissim mauris placerat id. Vivamus interdum urna at sapien varius elementum. Suspendisse ut mi felis et interdum libero lacinia vel. Aenean elementum odio ut lorem cursus, eu auctor magna pellentesque.
-            #nav-dropdown2.tab-pane.fade
-              p Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed velit. Proin gravida arcu nisl, a dignissim mauris placerat id. Vivamus interdum urna at sapien varius elementum. Suspendisse ut mi felis et interdum libero lacinia vel. Aenean elementum odio ut lorem cursus, eu auctor magna pellentesque.
-        .col-lg-4
-          form.call-back-form-03.h-100
-            h5.in-dark.mb-4 REQUEST A CALLBACK
-            .row
-              .col-lg-12.consultant-select-wrap.mb-4
-                +selectDiscuss
-              .col-lg-12.mb-4
-                input.ts-input(type="text" placeholder="Your Name")
-              .col-lg-12.mb-4
-                input.ts-input(type="text" placeholder="Your Phone")
-              .col-lg-12
-                a(href="#").ts-btn.btn-color1 Submit
+      .home-02-callback-inner
+        .row
+          .col-lg-5.pr-lg-4
+            .text-lg-right
+              h2.title.mb-3.color--white Request A Callback
+              strong.sub-title.color--white Thank you for your interest in .Ananci Financial Solutions.
+              br
+              br
+              p.desc.mb-0 We appreciate that now may not be a convenient time to contact us to discuss your requirements. Simply complete our call back form as below giving contact numbers a member of our team will be in touch.
+          .col-lg-7.pl-lg-4
+            form.pl-lg-4
+              .row.mb-4.mb-lg-0
+                .col-lg-12.mb-3
+                  p.color--white.mb-2 How can we help*:
+                  +selectOptions('select-ghost')
+              .row-g-20.mb-3
+                .col-lg-6
+                  input.ts-input--ghost(type="text", placeholder="Your Name")
+                .col-lg-6
+                  input.ts-input--ghost(type="text", placeholder="Your Phone")
+              .row
+                .col-lg-3
+                  a(href="#").ts-btn.btn-color1.w-100 Submit
+
+  //- .home-02-callback
+  //-   video(class="intro-video", autoplay, loop)
+  //-     source(src="https://seniorthemes.com/images/video-intro.mp4" type="video/mp4")
+  //-   .ts-overlay
+  //-   .container
+  //-     .row
+  //-       .col-lg-8.pr-lg-5.py-7
+  //-         nav.nav.nav-tabs.ts-nav-tabs-02
+  //-           a.nav-item.nav-link.active(data-toggle='tab', href='#nav-home') Long terms
+  //-           a.nav-item.nav-link(data-toggle='tab', href='#nav-profile') Safe
+  //-           a.nav-item.nav-link(data-toggle='tab', href='#nav-dropdown1') Opportunity
+  //-           a.nav-item.nav-link(data-toggle='tab', href='#nav-dropdown2') Investment
+  //-         .tab-content.ts-tab-content-02
+  //-           #nav-home.tab-pane.fade.show.active
+  //-             .d-flex
+  //-               img.pr-4(src='http://templates.thememodern.com/dotted/images/Feature/3.png', style="max-width: 200px")
+  //-               p Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed velit. Proin gravida arcu nisl, a dignissim mauris placerat id. Vivamus interdum urna at sapien varius elementum. Suspendisse ut mi felis et interdum libero lacinia vel. Aenean elementum odio ut lorem cursus, eu auctor magna pellentesque.
+  //-           #nav-profile.tab-pane.fade
+  //-             p Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed velit. Proin gravida arcu nisl, a dignissim mauris placerat id. Vivamus interdum urna at sapien varius elementum. Suspendisse ut mi felis et interdum libero lacinia vel. Aenean elementum odio ut lorem cursus, eu auctor magna pellentesque.
+  //-           #nav-dropdown1.tab-pane.fade
+  //-             p Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed velit. Proin gravida arcu nisl, a dignissim mauris placerat id. Vivamus interdum urna at sapien varius elementum. Suspendisse ut mi felis et interdum libero lacinia vel. Aenean elementum odio ut lorem cursus, eu auctor magna pellentesque.
+  //-           #nav-dropdown2.tab-pane.fade
+  //-             p Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed velit. Proin gravida arcu nisl, a dignissim mauris placerat id. Vivamus interdum urna at sapien varius elementum. Suspendisse ut mi felis et interdum libero lacinia vel. Aenean elementum odio ut lorem cursus, eu auctor magna pellentesque.
+  //-       .col-lg-4
+  //-         form.call-back-form-03.h-100
+  //-           h5.in-dark.mb-4 REQUEST A CALLBACK
+  //-           .row
+  //-             .col-lg-12.consultant-select-wrap.mb-4
+  //-               +selectDiscuss
+  //-             .col-lg-12.mb-4
+  //-               input.ts-input(type="text" placeholder="Your Name")
+  //-             .col-lg-12.mb-4
+  //-               input.ts-input(type="text" placeholder="Your Phone")
+  //-             .col-lg-12
+  //-               a(href="#").ts-btn.btn-color1 Submit
         
   .home-02-testimonial.bg--whitesmoke
+    .ts-overlay
     .container
       .row
         .col-lg-12

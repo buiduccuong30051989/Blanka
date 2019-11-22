@@ -274,3 +274,190 @@
     }
   }
 }
+
+.select-ghost {
+  min-width: 100%;
+
+  &.show {
+    &.bootstrap-select {
+      & > .dropdown-toggle {
+        background-color: color(color1, 1);
+        color: $white;
+
+        .option-select-team {
+          color: $white;
+
+          .name {
+            color: $white;
+          }
+        }
+      }
+
+      .dropdown-item {
+        &.active {
+          background-color: color(color1, 1);
+        }
+      }
+    }
+  }
+
+  &.bootstrap-select {
+    & > .dropdown-toggle {
+      background-color: rgba($white, .3);
+      border: 0;
+      border-radius: 2px;
+      padding: 10px 15px;
+      font-size: 13px;
+      line-height: 1.6;
+      height: 40px;
+      color: $white;
+      font-weight: 300;
+      padding-left: 12px;
+      transition: $transition-base;
+
+      .option-select-team {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        color: $gray20;
+  
+        .ts-icon {
+          font-size: 22px;
+          margin-right: 5px;
+          transition: $transition-base;
+          color: $white;
+        }
+    
+        .name {
+          font-size: 13px;
+          margin: 0;
+          line-height: 22px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          transition: $transition-base;
+          color: $white;
+        }
+      }
+
+      &.btn-light {
+        &:hover,
+        &:focus {
+          box-shadow: none;
+          color: $white;
+          background-color: color(color1, 1);
+
+          .option-select-team {
+            color: $white;
+
+            .name {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+
+    & > select {
+      left: 0;
+      border-radius: 2px;
+    }
+  }
+
+  .dropdown-menu {
+    padding: 0;
+    background-color: $black;
+    border: 0;
+    @extend .shadow-lg;
+
+    .dropdown-item {
+      padding: 8px 15px 9px;
+      border-bottom: 1px solid rgba($white, .1);
+      font-size: 13px;
+
+      .text {
+        display: flex;
+      }
+
+      .ts-icon {
+        font-size: 18px;
+        margin-right: 5px;
+      }
+
+      &:last-child {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+
+      &:first-child {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+
+      &:hover {
+        background-color: $gray60;
+      }
+    }
+
+    &.show {
+      min-width: 100%;
+      max-width: 100%;
+    }
+
+    .option-select-team {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      color: $white;
+
+      .filter-option-inner-inner {
+        .ts-icon {
+          color: $white;
+          font-size: 22px;
+          margin-right: 5px;
+        }
+      }
+  
+      .name {
+        color: $white;
+        font-size: 13px;
+        margin: 0;
+        line-height: 22px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &.in-dark {
+    &.bootstrap-select {
+      & > .dropdown-toggle {
+        background-color: $whitesmoke;
+        color: $gray20;
+
+        &.btn-light {
+          &:hover,
+          &:focus {
+            box-shadow: none;
+            color: $gray20;
+            background-color: $white;
+          }
+        }
+      }
+    }
+
+    .filter-option-inner-inner {
+      .option-select-team {
+        color: $gray20;
+
+        .name {
+          color: $gray20;
+        }
+      }
+
+      .ts-icon {
+        font-size: 22px;
+        margin-right: 5px;
+      }
+    }
+  }
+}

@@ -13,13 +13,13 @@
   border: 0;
   transition: $transition-base;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 13px;
   line-height: 32px;
 
   @include placeholder {
     color: $white;
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 13px;
     line-height: 32px;
   }
 
@@ -70,18 +70,24 @@
   border: 0;
   transition: $transition-base;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 13px;
   line-height: 32px;
 
   @include placeholder {
-    color: $white;
+    color: rgba($white, 0.5);
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 13px;
     line-height: 32px;
   }
 
+  &:hover {
+    background-color: color(color1, .5);
+    color: $white;
+    box-shadow: none;
+  }
+
   &:focus {
-    background-color: color(color7, 1);
+    background-color: color(color1, 1);
     color: $white;
     box-shadow: none;
   }
