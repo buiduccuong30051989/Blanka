@@ -1,4 +1,12 @@
 .home-05 {
+  &-slider {
+    height: calc(100vh - 121px);
+    
+    img {
+      @include fitImage();
+    }
+  }
+
   &-about-us {
     .list-style-01 {
       li {

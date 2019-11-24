@@ -40,19 +40,19 @@ append header
 
 
 append content
-  .home-03-slider
+  .home-05-slider
     img(src="http://templates.thememodern.com/finance/images/Slider/10.jpg")
   
-  .home-05-callback.bg--color7.py-3
+  .home-05-callback.bg--gray20.py-3
     .container
       .row
         .col-lg-12
-          .ts-box-cta-01.in-dark.bg--color7.px-0
+          .ts-box-cta-01.in-dark
             .left.pr-lg-4
               h3.box-cta-title Quisque hendrerit sed lorem nec ornare. Proin sed turpis at odio molestie cursus.
               p.box-cta-desc Fusce nec velit elementum arcu tincidunt venenatis blandit id lorem. Cras commodo risus massa, at volutpat neque hendrerit a. Ut sed auctor nisl. Quisque pulvinar urna nec diam congue, quis accumsan arcu dapibus.
             .right
-              a(href="/").ts-btn.btn-orange.btn-lg PURCHASE NOW 
+              a(href="/").ts-btn.btn-color1.btn-lg PURCHASE NOW 
                 i.ts-icon.la.la-arrow-circle-right
 
   .home-01-services.py-7
@@ -140,7 +140,7 @@ append content
   .home-01-why-us.bg--whitesmoke.py-7
     .container
       .row
-        .col-lg-8
+        .col-lg-8.pr-lg-5
           .ts-section-heading-01
             h2 Why You Should Choose Us?
           p.mb-lg-5 Integer est arcu, congue nec vulputate faucibus, aliquam eget tellus. Aliquam laoreet aliquam mi, vitae tempus orci mattis vitae. Cras ultricies mauris est, ultricies sagittis diam euismod et. Curabitur at dolor vitae felis semper ullamcorper eu mattis felis. Phasellus felis diam, egestas non hendrerit a, lacinia a neque.
@@ -149,21 +149,22 @@ append content
               img(src='http://templates.thememodern.com/dotted/images/Feature/7.png', alt='demo')
             .right
               ul.list-style-01.list-square.color.mb-lg-4
-                li EASY CUSTOMIZATION RESPONSIVE 
+                li FULLY RESPONSIVE 
                 li TEMPLATE MULTIPLE 
                 li PORTFOLIO COLUMNS 
                 li AMAZING SLIDER 
                 li 10 AMAZING SKINS 
                 li AND MANY MORE...
-              a(href="about.html").ts-btn.btn-orange.btn-lg Request A CallBack
-                i.ts-icon.la.la-plus.pl-3
+              a(href="about.html").ts-btn.btn-color1 More About Us
+                i.ts-icon.la.la-angle-right.pl-3
 
-        .col-lg-4
-          .ts-section-heading-01
-            h2 Request A CallBack
-          form.call-back-form-05
+        .col-lg-4.p-0
+          .ts-section-heading-01.pl-lg-5
+            h2 Get A CallBack
+          form.call-back-form-05.border-left.pl-lg-5
             .row
               .col-lg-12.consultant-select-wrap.mb-4
+                p How can we help:
                 +selectDiscuss
               .col-lg-12.mb-4
                 input.ts-input(type="text" placeholder="Your Name")
@@ -254,7 +255,7 @@ append content
             p.counter.js-counter-up 30
             span.desc Years of Experience
   
-  .home-02-testimonial
+  .home-05-testimonial.py-lg-7.py-5
     .container
       .row
         .col-lg-12
@@ -280,7 +281,7 @@ append content
                 .card-body
                   p.testimonial-card-content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.
                 .card-cover
-                  img.card-img(src="https://i.pravatar.cc/120?img=1", alt='cover')
+                  img.card-img(src="https://randomuser.me/api/portraits/women/2.jpg", alt='cover')
                   .testimonial-card-info
                     h4.testimonial-card-name Adam Slander
                     .ts-rating-list-01
@@ -383,21 +384,45 @@ append content
                     g(stroke="none" fill-rule="evenodd")
                       path.layer-01(d="M170.862242,10.0375199 L171.001782,37.3328422 L1.44318778,37.3328422 L1,16.2134485 C16.3921107,5.83456934 29.3972691,0.662391392 40.0154754,0.696914659 C74.4099826,0.808742471 79.5815795,15.1075516 111.560081,18.6593529 C142.052268,22.0460716 170.917856,9.8653566 171.078013,10.3887941")
 
-  .home-01-blogs.py-7.bg--whitesmoke
+  .home-03-blogs.py-lg-7.py-5.bg--whitesmoke
     .container
       .row
         .col-lg-12
           .ts-section-heading-01
-            h2 Our Latest Projects
+            h2 Our Latest Posts
       .row-g-40
-        .col-lg-4
-          .ts-blog-card-08
+        .col-lg-6.mb-40
+          .ts-blog-card-07
+            .card-cover
+              img.card-img(alt="cover", src='https://picsum.photos/400?random=13')
+              .blog-card-meta
+                p.blog-card-time
+                  i.ts-icon.la.la-clock
+                  | Oct 15, 2019
+                p.blog-card-catalog
+                  i.ts-icon.la.la-tags
+                  a(href="blog_list01.html") Skills
+                  a(href="blog_list01.html") Financial
+                p.blog-card-author
+                  i.ts-icon.la.la-user-tie
+                  | John Doe
+            .card-body
+              h3.blog-card-title
+                a(href="blog_detail.html") Blog Card 07
+              p.desc With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...
+              .card-footer
+                a(href="blog_detail.html").blog-card-readmore
+                  | Continue Reading
+                  i.ts-icon.la.la-angle-right
+
+        .col-lg-6.mb-40
+          .ts-blog-card-07.align-right
             .card-cover
               img.card-img(alt="cover", src='https://picsum.photos/400?random=15')
-              .blog-card-time 
-                p.blog-card-time-date 15
-                p.blog-card-time-month Oct
               .blog-card-meta
+                p.blog-card-time
+                  i.ts-icon.la.la-clock
+                  | Oct 15, 2019
                 p.blog-card-catalog
                   i.ts-icon.la.la-tags
                   a(href="blog_list01.html") Skills
@@ -406,22 +431,22 @@ append content
                   i.ts-icon.la.la-user-tie
                   | John Doe
             .card-body
-              h3.blog-card-title
-                a(href="blog_detail.html") Blog Card 08
-              p.blog-card-desc With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...
+              h3.blog-card-title 
+                a(href="blog_detail.html") Blog Card 07
+              p.desc With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...
               .card-footer
                 a(href="blog_detail.html").blog-card-readmore
                   | Continue Reading
                   i.ts-icon.la.la-angle-right
         
-        .col-lg-4
-          .ts-blog-card-08
+        .col-lg-6
+          .ts-blog-card-07
             .card-cover
-              img.card-img(alt="cover", src='https://picsum.photos/400?random=11')
-              .blog-card-time 
-                p.blog-card-time-date 15
-                p.blog-card-time-month Oct
+              img.card-img(alt="cover", src='https://picsum.photos/400?random=7')
               .blog-card-meta
+                p.blog-card-time
+                  i.ts-icon.la.la-clock
+                  | Oct 15, 2019
                 p.blog-card-catalog
                   i.ts-icon.la.la-tags
                   a(href="blog_list01.html") Skills
@@ -431,21 +456,21 @@ append content
                   | John Doe
             .card-body
               h3.blog-card-title
-                a(href="blog_detail.html") Blog Card 08
-              p.blog-card-desc With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...
+                a(href="blog_detail.html") Blog Card 07
+              p.desc With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...
               .card-footer
                 a(href="blog_detail.html").blog-card-readmore
                   | Continue Reading
                   i.ts-icon.la.la-angle-right
-        
-        .col-lg-4
-          .ts-blog-card-08
+                  
+        .col-lg-6
+          .ts-blog-card-07.align-right
             .card-cover
-              img.card-img(alt="cover", src='https://picsum.photos/400?random=9')
-              .blog-card-time 
-                p.blog-card-time-date 15
-                p.blog-card-time-month Oct
+              img.card-img(alt="cover", src='https://picsum.photos/400?random=12')
               .blog-card-meta
+                p.blog-card-time
+                  i.ts-icon.la.la-clock
+                  | Oct 15, 2019
                 p.blog-card-catalog
                   i.ts-icon.la.la-tags
                   a(href="blog_list01.html") Skills
@@ -454,9 +479,9 @@ append content
                   i.ts-icon.la.la-user-tie
                   | John Doe
             .card-body
-              h3.blog-card-title
-                a(href="blog_detail.html") Blog Card 08
-              p.blog-card-desc With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...
+              h3.blog-card-title 
+                a(href="blog_detail.html") Blog Card 07
+              p.desc With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...
               .card-footer
                 a(href="blog_detail.html").blog-card-readmore
                   | Continue Reading
@@ -502,24 +527,23 @@ append content
                 a(href="#")
                   img(src="images/partner-logo-05.svg", alt='cover')
 
-  .home-05-callback.bg--color7.py-5
+  .home-02-subcrible.py-5
+    .ts-overlay.bg--color7
     .container
       .row
         .col-lg-12
-          h5.in-dark.mb-4 Leave us your informations, and we will in touch soon.
-          form.call-back-form-04
-            .consultant-select-wrap
-              +selectDiscuss
-            input.ts-input(type="text" placeholder="Your Name")
-            input.ts-input(type="text" placeholder="Your Phone")
-            a(href="#").ts-btn.btn-color1 Submit
-        //- .ts-box-cta-01
-        //-   .left.pr-lg-4
-        //-     h3.box-cta-title.color--white Quisque hendrerit sed lorem nec ornare. Proin sed turpis at odio molestie cursus.
-        //-     p.box-cta-desc.color--graylight Fusce nec velit elementum arcu tincidunt venenatis blandit id lorem. Cras commodo risus massa, at volutpat neque hendrerit a. Ut sed auctor nisl. Quisque pulvinar urna nec diam congue, quis accumsan arcu dapibus.
-        //-   .right
-        //-     a(href="/").ts-btn.btn-orange.btn-lg PURCHASE NOW 
-        //-       i.ts-icon.la.la-arrow-circle-right
+          .row.align-items-center
+            .col-lg-4.mb-4.mb-lg-0
+              h3.in-dark.fs--24 SUBSCRIBE TO NEWSLETTERS
+              span.color--lightgray And stay informed about our news and events
+            .col-lg-8
+              form.row
+                .col-lg-5.mb-3.mb-lg-0
+                  input.ts-input(type="text" placeholder="Your Name")
+                .col-lg-4.mb-3.mb-lg-0
+                  input.ts-input(type="text" placeholder="Your Name")
+                .col
+                  a(href="#").ts-btn.btn-outline-light.w-100 Submit
 
   .home-05-footer.bg--whitesmoke
     .ts-overlay
