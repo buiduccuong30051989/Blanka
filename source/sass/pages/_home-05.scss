@@ -1,22 +1,49 @@
 .home-05 {
   &-slider {
     height: calc(100vh - 121px);
-    
+
     img {
       @include fitImage();
     }
   }
 
-  &-about-us {
-    .list-style-01 {
+  &-why-us {
+    .thumb {
+      min-width: 180px;
+    }
+
+    [class^="list-style-"] {
+      display: flex;
+      flex-wrap: wrap;
+
       li {
-        margin-bottom: 10px;
+        width: 50%;
+        padding-right: 8px;
+        padding-bottom: 15px;
       }
     }
 
-    .thumb {
-      width: 100%;
-      max-width: 500px;
+    .call-back-form-05 {
+      
+    }
+  }
+
+  &-testimonial {
+    padding-top: 80px;
+    padding-bottom: 25px;
+    position: relative;
+
+    [class^="ts-section-heading"] {
+      margin-bottom: 0;
+    }
+
+    .owl-item {
+      padding: 40px 0 56px 0;
+    }
+
+    .carousel {
+      z-index: 1;
+      position: relative;
     }
   }
 
@@ -32,11 +59,4 @@
       position: relative;
     }
   }
-}
-
-.header-container.ts-header-07 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
 }

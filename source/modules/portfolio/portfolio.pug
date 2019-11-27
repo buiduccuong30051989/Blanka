@@ -34,3 +34,14 @@ mixin portfolio03(img, title, desc, cat, time)
             i.ts-icon.la.la-tag.mr-2.fs--22
             a(href="cases_detail.pug")=cat
           span.time=time
+
+mixin portfolio04(img, title, cat, desc)
+  a(href='portfolio_detail.html').ts-portfolio-06.rounded-0
+    .card-cover
+      img.card-img(src=img, alt='cover')
+      .ts-overlay.portfolio-card-overlay
+      .card-cover-inner
+        h4.portfolio-card-title=title
+        .portfolio-card-divider
+        p.portfolio-card-catalog=cat
+        p.portfolio-card-desc=desc

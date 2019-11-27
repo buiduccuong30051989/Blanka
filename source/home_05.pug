@@ -137,16 +137,16 @@ append content
                 polygon.layer-01(points="0 0 70 0 70 150")
                 polygon.layer-02(points="70 51 70 231 0 231")
         
-  .home-01-why-us.bg--whitesmoke.py-7
+  .home-05-why-us.bg--whitesmoke.py-7
     .container
       .row
         .col-lg-8.pr-lg-5
           .ts-section-heading-01
             h2 Why You Should Choose Us?
           p.mb-lg-5 Integer est arcu, congue nec vulputate faucibus, aliquam eget tellus. Aliquam laoreet aliquam mi, vitae tempus orci mattis vitae. Cras ultricies mauris est, ultricies sagittis diam euismod et. Curabitur at dolor vitae felis semper ullamcorper eu mattis felis. Phasellus felis diam, egestas non hendrerit a, lacinia a neque.
-          .d-flex
+          .d-flex.align-items-end
             .left.mr-4
-              img(src='http://templates.thememodern.com/dotted/images/Feature/7.png', alt='demo')
+              img.thumb(src='http://templates.thememodern.com/dotted/images/Feature/7.png', alt='demo')
             .right
               ul.list-style-01.list-square.color.mb-lg-4
                 li FULLY RESPONSIVE 
@@ -165,11 +165,11 @@ append content
             .row
               .col-lg-12.consultant-select-wrap.mb-4
                 p How can we help:
-                +selectDiscuss
+                +selectDiscuss('line')
               .col-lg-12.mb-4
-                input.ts-input(type="text" placeholder="Your Name")
-              .col-lg-12.mb-4
-                input.ts-input(type="text" placeholder="Your Phone")
+                input.ts-input-line(type="text" placeholder="Your Name")
+              .col-lg-12.mb-5
+                input.ts-input-line(type="text" placeholder="Your Phone")
               .col-lg-12
                 a(href="#").ts-btn.btn-color1 Submit
         
@@ -255,7 +255,7 @@ append content
             p.counter.js-counter-up 30
             span.desc Years of Experience
   
-  .home-05-testimonial.py-lg-7.py-5
+  .home-05-testimonial
     .container
       .row
         .col-lg-12
@@ -263,7 +263,7 @@ append content
             h2 Testimonials
       .row
         .col-lg-12
-          .carousel.align-center-items.arrows-intro.dots-theme.carousel-focus(
+          .carousel.align-center-items.arrows-intro.carousel-focus(
             data-items="3" 
             data-items-md="3" 
             data-items-sm="1" 
@@ -281,18 +281,10 @@ append content
                 .card-body
                   p.testimonial-card-content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.
                 .card-cover
-                  img.card-img(src="https://randomuser.me/api/portraits/women/2.jpg", alt='cover')
+                  img.card-img(src="https://i.pravatar.cc/120?img=1", alt='cover')
                   .testimonial-card-info
                     h4.testimonial-card-name Adam Slander
-                    .ts-rating-list-01
-                      i.ts-icon.las.la-star
-                      i.ts-icon.las.la-star
-                      i.ts-icon.las.la-star
-                      i.ts-icon.las.la-star
-                      i.disabled.ts-icon.las.la-star-o
-                  svg.ts-testimonial-card-04-layer(preserveAspectRatio="none" viewbox="4 -4 160 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
-                    g(stroke="none" fill-rule="evenodd")
-                      path.layer-01(d="M170.862242,10.0375199 L171.001782,37.3328422 L1.44318778,37.3328422 L1,16.2134485 C16.3921107,5.83456934 29.3972691,0.662391392 40.0154754,0.696914659 C74.4099826,0.808742471 79.5815795,15.1075516 111.560081,18.6593529 C142.052268,22.0460716 170.917856,9.8653566 171.078013,10.3887941")
+                    p.testimonial-card-title Developer
             
             .item
               .ts-testimonial-card-04
@@ -302,15 +294,7 @@ append content
                   img.card-img(src="https://i.pravatar.cc/120?img=1", alt='cover')
                   .testimonial-card-info
                     h4.testimonial-card-name Adam Slander
-                    .ts-rating-list-01
-                      i.ts-icon.las.la-star
-                      i.ts-icon.las.la-star
-                      i.ts-icon.las.la-star
-                      i.ts-icon.las.la-star
-                      i.disabled.ts-icon.las.la-star-o
-                  svg.ts-testimonial-card-04-layer(preserveAspectRatio="none" viewbox="4 -4 160 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
-                    g(stroke="none" fill-rule="evenodd")
-                      path.layer-01(d="M170.862242,10.0375199 L171.001782,37.3328422 L1.44318778,37.3328422 L1,16.2134485 C16.3921107,5.83456934 29.3972691,0.662391392 40.0154754,0.696914659 C74.4099826,0.808742471 79.5815795,15.1075516 111.560081,18.6593529 C142.052268,22.0460716 170.917856,9.8653566 171.078013,10.3887941")
+                    p.testimonial-card-title Developer
 
             .item
               .ts-testimonial-card-04
@@ -320,15 +304,7 @@ append content
                   img.card-img(src="https://i.pravatar.cc/120?img=1", alt='cover')
                   .testimonial-card-info
                     h4.testimonial-card-name Adam Slander
-                    .ts-rating-list-01
-                      i.ts-icon.las.la-star
-                      i.ts-icon.las.la-star
-                      i.ts-icon.las.la-star
-                      i.ts-icon.las.la-star
-                      i.disabled.ts-icon.las.la-star-o
-                  svg.ts-testimonial-card-04-layer(preserveAspectRatio="none" viewbox="4 -4 160 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
-                    g(stroke="none" fill-rule="evenodd")
-                      path.layer-01(d="M170.862242,10.0375199 L171.001782,37.3328422 L1.44318778,37.3328422 L1,16.2134485 C16.3921107,5.83456934 29.3972691,0.662391392 40.0154754,0.696914659 C74.4099826,0.808742471 79.5815795,15.1075516 111.560081,18.6593529 C142.052268,22.0460716 170.917856,9.8653566 171.078013,10.3887941")
+                    p.testimonial-card-title Developer
   
             .item
               .ts-testimonial-card-04
@@ -338,15 +314,7 @@ append content
                   img.card-img(src="https://i.pravatar.cc/120?img=1", alt='cover')
                   .testimonial-card-info
                     h4.testimonial-card-name Adam Slander
-                    .ts-rating-list-01
-                      i.ts-icon.las.la-star
-                      i.ts-icon.las.la-star
-                      i.ts-icon.las.la-star
-                      i.ts-icon.las.la-star
-                      i.disabled.ts-icon.las.la-star-o
-                  svg.ts-testimonial-card-04-layer(preserveAspectRatio="none" viewbox="4 -4 160 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
-                    g(stroke="none" fill-rule="evenodd")
-                      path.layer-01(d="M170.862242,10.0375199 L171.001782,37.3328422 L1.44318778,37.3328422 L1,16.2134485 C16.3921107,5.83456934 29.3972691,0.662391392 40.0154754,0.696914659 C74.4099826,0.808742471 79.5815795,15.1075516 111.560081,18.6593529 C142.052268,22.0460716 170.917856,9.8653566 171.078013,10.3887941")
+                    p.testimonial-card-title Developer
 
             .item
               .ts-testimonial-card-04
@@ -356,15 +324,7 @@ append content
                   img.card-img(src="https://i.pravatar.cc/120?img=1", alt='cover')
                   .testimonial-card-info
                     h4.testimonial-card-name Adam Slander
-                    .ts-rating-list-01
-                      i.ts-icon.las.la-star
-                      i.ts-icon.las.la-star
-                      i.ts-icon.las.la-star
-                      i.ts-icon.las.la-star
-                      i.disabled.ts-icon.las.la-star-o
-                  svg.ts-testimonial-card-04-layer(preserveAspectRatio="none" viewbox="4 -4 160 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
-                    g(stroke="none" fill-rule="evenodd")
-                      path.layer-01(d="M170.862242,10.0375199 L171.001782,37.3328422 L1.44318778,37.3328422 L1,16.2134485 C16.3921107,5.83456934 29.3972691,0.662391392 40.0154754,0.696914659 C74.4099826,0.808742471 79.5815795,15.1075516 111.560081,18.6593529 C142.052268,22.0460716 170.917856,9.8653566 171.078013,10.3887941")
+                    p.testimonial-card-title Developer
   
             .item
               .ts-testimonial-card-04
@@ -374,15 +334,7 @@ append content
                   img.card-img(src="https://i.pravatar.cc/120?img=1", alt='cover')
                   .testimonial-card-info
                     h4.testimonial-card-name Adam Slander
-                    .ts-rating-list-01
-                      i.ts-icon.las.la-star
-                      i.ts-icon.las.la-star
-                      i.ts-icon.las.la-star
-                      i.ts-icon.las.la-star
-                      i.disabled.ts-icon.las.la-star-o
-                  svg.ts-testimonial-card-04-layer(preserveAspectRatio="none" viewbox="4 -4 160 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
-                    g(stroke="none" fill-rule="evenodd")
-                      path.layer-01(d="M170.862242,10.0375199 L171.001782,37.3328422 L1.44318778,37.3328422 L1,16.2134485 C16.3921107,5.83456934 29.3972691,0.662391392 40.0154754,0.696914659 C74.4099826,0.808742471 79.5815795,15.1075516 111.560081,18.6593529 C142.052268,22.0460716 170.917856,9.8653566 171.078013,10.3887941")
+                    p.testimonial-card-title Developer
 
   .home-03-blogs.py-lg-7.py-5.bg--whitesmoke
     .container

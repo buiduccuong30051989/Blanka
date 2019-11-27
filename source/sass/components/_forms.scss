@@ -81,7 +81,7 @@
   }
 
   &:hover {
-    background-color: color(color1, .5);
+    background-color: color(color1, 0.5);
     color: $white;
     box-shadow: none;
   }
@@ -166,7 +166,6 @@
   @extend .form-control;
   border-radius: 2px;
   transition: $transition-base;
-  font-weight: 300;
   font-size: 13px;
   border-color: $white;
   line-height: 32px;
@@ -206,6 +205,60 @@
     &:focus {
       background-color: rgba($black, 1);
       border-color: rgba($black, 1);
+    }
+  }
+
+  &.ts-input-grey {
+    background-color: $whitesmoke;
+
+    &:focus,
+    &:hover {
+      background-color: color(color1, 1);
+      box-shadow: none;
+      outline: 0;
+      border-color: color(color1, 1);
+      color: $white;
+
+      @include placeholder {
+        color: $white;
+      }
+    }
+  }
+}
+
+.ts-input-line {
+  @extend .form-control;
+  border-radius: 0;
+  transition: $transition-base;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 13px;
+  border: 0;
+  border-bottom: 1px solid rgba($black, 0.3);
+  line-height: 32px;
+  height: 40px;
+  padding-left: 0;
+  color: $gray20;
+
+  @include placeholder {
+    color: $gray60;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    font-family: $lato;
+    transition: $transition-base;
+  }
+
+  &:focus,
+  &:hover {
+    background-color: transparent;
+    box-shadow: none;
+    outline: 0;
+    border-color: color(color1, 1);
+    // color: $white;
+
+    @include placeholder {
+      color: $gray60;
     }
   }
 }

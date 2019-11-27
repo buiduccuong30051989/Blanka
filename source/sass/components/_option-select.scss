@@ -80,6 +80,10 @@
         border-top-left-radius: 0;
         border-top-right-radius: 0;
       }
+
+      &:focus {
+        outline: 0;
+      }
     }
   }
 
@@ -270,6 +274,88 @@
       .ts-icon {
         font-size: 22px;
         margin-right: 5px;
+      }
+    }
+  }
+
+  &.line {
+    &.show {
+      &.bootstrap-select {
+        & > .dropdown-toggle {
+          background-color: transparent;
+          color: $gray40;
+          border-color: color(color1, 1);
+  
+          .option-select-team {
+            color: $gray20;
+  
+            .name {
+              color: $gray20;
+            }
+          }
+        }
+  
+        .dropdown-item {
+          &.active {
+            background-color: color(color1, 1);
+          }
+        }
+      }
+    }
+
+    &.bootstrap-select {
+      & > .dropdown-toggle {
+        background-color: transparent;
+        border-radius: 0;
+        padding: 10px 15px 10px 0;
+        border-bottom: 1px solid rgba($black, .3);
+  
+        &.btn-light {
+          color: $gray60;
+          
+          &:hover,
+          &:focus {
+            color: $gray60;
+            background-color: transparent;
+            border-color: color(color1, 1);
+
+            .option-select-team {
+              color: $gray20;
+  
+              .name {
+                color: $gray20;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.select-grey {
+    &.bootstrap-select {
+      & > .dropdown-toggle {
+        background-color: $whitesmoke;
+      }
+    }
+
+    &.show {
+      &.bootstrap-select {
+        & > .dropdown-toggle {
+          background-color: color(color1, 1);
+  
+          .option-select-team {
+  
+            .name {
+            }
+          }
+        }
+  
+        .dropdown-item {
+          &.active {
+            background-color: color(color1, 1);
+          }
+        }
       }
     }
   }

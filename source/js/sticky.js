@@ -2,6 +2,7 @@ $(document).ready(function() {
   'user strict';
 
   var stickyMenu = $('#js-sticked-menu');
+  var stickyMenuFixed = $('#js-sticked-menu-fixed');
   if (stickyMenu.length > 0) {
     var headerHeight = stickyMenu.height();
     var headerWidth = $('#js-sticked-menu').width();
@@ -14,6 +15,19 @@ $(document).ready(function() {
     var header = new Headroom(document.querySelector('#js-sticked-menu'), {
       tolerance: 5,
       offset: headerHeight + offsetHeader,
+      classes: {
+        initial: 'headroom',
+        pinned: 'headroom--pinned',
+        unpinned: 'headroom--unpinned'
+      }
+    });
+    header.init();
+  }
+
+  if (stickyMenuFixed.length > 0) {
+    var header = new Headroom(document.querySelector('#js-sticked-menu-fixed'), {
+      tolerance: 5,
+      offset: 200,
       classes: {
         initial: 'headroom',
         pinned: 'headroom--pinned',

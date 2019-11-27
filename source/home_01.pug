@@ -11,44 +11,47 @@ append head
   title="Home Page - 01"
   link(href="css/main.min.css" rel="stylesheet")
 append header
-  .header-container
-    .ts-topbar.ts-topbar-01.in-dark.bg--color1
+  .header-container.home-01-header.ts-header-07#js-sticked-menu-fixed
+    .ts-header-07-info
       .container
-        .ts-topbar-01-inner
-          .ts-topbar-01-left
-            .item.ts-icon-box-info-01.in-dark
-              i.ts-icon.la.la-phone
-              a(href="tel:18604193333") 1860-419-3331
-            .item.ts-icon-box-info-01.in-dark
-              i.ts-icon.la.la-envelope
-              a(href="mailto:contact@ananci.com") consultant@ananci.com
-            .item.ts-icon-box-info-01.in-dark
-              i.ts-icon.la.la-clock
-              span Mon - Fri: 8am - 6pm
-          .ts-topbar-01-right
-            //- .item.topbar-social.pr-4
-            //-   span.pr-3.follow-us Follow Us:
-            //-   .ts-social-list-01.fs--16.align-left.in-dark
-            //-     +tsSocialList01
-            .item.ts-language.in-dark.justify-content-end
-              +selectLanguage
-    .ts-header.ts-header-01.bg--white
-      .container
-        .ts-header-01-inner
-          .ts-header-01-left
+        .ts-header-07-info-inner
+          .ts-header-07-info-left
             a.ts-header-logo-wrap(href="index.html")
-              img.header-logo(src="images/logo-dark.png" alt="logo")
-          .ts-header-01-right.d-none.d-lg-flex
-            nav.ts-main-menu
-              +navigation
-            .header-01-control
-              .item.search-popup-btn.js-search-popup-btn
-                +popupSearch
+              img.header-logo(src="images/logo-dark.png", alt="logo")
+          .ts-header-07-info-right
+            .item.ts-icon-box-info-03
+              .icon.color--color1
+                i.ts-icon.la.la-map-marker
+              .content
+                span 3005 Figueroa 
+                span Los Angeles 10018 US.
+            .item.ts-icon-box-info-03
+              .icon.color--color1
+                i.ts-icon.la.la-clock
+              .content
+                span Mon - Sat 8.00 - 18.00
+                span Sunday CLOSED
+            a(href="tel:0944764545").item.ts-icon-box-info-03
+              .icon.color--color1
+                i.ts-icon.la.la-phone
+              .content
+                strong.fs--14 0944 76 4545
+                span Free call
           a(href="#js-mobile-menu-btn").ts-btn-mobile-menu
             i.ts-icon.la.la-bars
+    .ts-header.ts-header-07.d-none.d-lg-block
+      .container
+        .ts-header-07-inner
+          .ts-header-07-left
+            nav.ts-main-menu.style-01.sub-icon.caret
+              +navigation
+          .ts-header-07-right.pl-4
+            .ts-social-list-01.in-dark.align-right.pl-3
+              +tsSocialList01
+
 append content
   .home-01-slider
-    img(src="http://templates.thememodern.com/compact/img-rev-slider/bg-2.jpg")
+    img(src="https://seniorthemes.com/images/home-05-slider-04.jpg")
   
   .home-01-services.py-7
     .container
@@ -57,231 +60,60 @@ append content
           .ts-section-heading-01.align-center
             h2 Choose Dotted Template For Your Purpose
           p.font-italic.text-center Phasellus id lacus neque. Proin vestibulum leo at turpis rhoncus, sed lacinia sem mollis. Etiam cursus bibendum dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam auctor eu nunc nec facilisis. Duis in felis eget eros tristique ornare. Maecenas volutpat, nisi id pretium imperdiet, odio neque pellentesque erat.
-      .row.services-wrap
-        .col-lg-3
-          .ts-icon-box-05.bg-white
-            svg.ts-icon-box-05-layer(viewbox="0 0 221 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
-              g(stroke="none" fill-rule="evenodd")
-                polygon.layer-01(points="0 0 174 0 0 47")
-                polygon.layer-02(points="221 0 0 0 221 47")
-            .ts-icon-box-05-inner
-              i.ts-icon.la.la-chart-pie
-              .ts-icon-box-05-content
-                h3.title Icon Box 05
-                h5.sub-title Lorem Ipsum dore si amnet
-                p.desc Donec lacinia mi rutrum sagittis consequat. Donec sagittis, tellus sodales sollicitudin commodo, risus urna interdum massa
-                a(href="#").ts-btn.btn-outline-color1 Know More
-                  i.ts-icon.la.la-plus.pl-1.fs--16
-        
-        .col-lg-3
-          .ts-icon-box-05.bg-white
-            svg.ts-icon-box-05-layer(viewbox="0 0 221 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
-              g(stroke="none" fill-rule="evenodd")
-                polygon.layer-01(points="0 0 174 0 0 47")
-                polygon.layer-02(points="221 0 0 0 221 47")
-            .ts-icon-box-05-inner
-              i.ts-icon.la.la-chart-pie
-              .ts-icon-box-05-content
-                h3.title Icon Box 05
-                h5.sub-title Lorem Ipsum dore si amnet
-                p.desc Donec lacinia mi rutrum sagittis consequat. Donec sagittis, tellus sodales sollicitudin commodo, risus urna interdum massa
-                a(href="#").ts-btn.btn-outline-color1 Know More
-                  i.ts-icon.la.la-plus.pl-1.fs--16
-        
-        .col-lg-3
-          .ts-icon-box-05.bg-white
-            svg.ts-icon-box-05-layer(viewbox="0 0 221 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
-              g(stroke="none" fill-rule="evenodd")
-                polygon.layer-01(points="0 0 174 0 0 47")
-                polygon.layer-02(points="221 0 0 0 221 47")
-            .ts-icon-box-05-inner
-              i.ts-icon.la.la-chart-pie
-              .ts-icon-box-05-content
-                h3.title Icon Box 05
-                h5.sub-title Lorem Ipsum dore si amnet
-                p.desc Donec lacinia mi rutrum sagittis consequat. Donec sagittis, tellus sodales sollicitudin commodo, risus urna interdum massa
-                a(href="#").ts-btn.btn-outline-color1 Know More
-                  i.ts-icon.la.la-plus.pl-1.fs--16
-        
-        .col-lg-3
-          .ts-icon-box-05.bg-white
-            svg.ts-icon-box-05-layer(viewbox="0 0 221 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
-              g(stroke="none" fill-rule="evenodd")
-                polygon.layer-01(points="0 0 174 0 0 47")
-                polygon.layer-02(points="221 0 0 0 221 47")
-            .ts-icon-box-05-inner
-              i.ts-icon.la.la-chart-pie
-              .ts-icon-box-05-content
-                h3.title Icon Box 05
-                h5.sub-title Lorem Ipsum dore si amnet
-                p.desc Donec lacinia mi rutrum sagittis consequat. Donec sagittis, tellus sodales sollicitudin commodo, risus urna interdum massa
-                a(href="#").ts-btn.btn-outline-color1 Know More
-                  i.ts-icon.la.la-plus.pl-1.fs--16
-  
-  .home-01-why-us.bg--whitesmoke.py-7
+      .row-g-40
+        - for(var i = 0; i < 3; i++) {
+          .col-lg-4.mb-40
+            +services09('la la-chart-pie', 'Consultant Services', 'We here to help', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis commodo.')
+        - }
+
+        - for(var i = 0; i < 3; i++) {
+          .col-lg-4
+            +services09('la la-hand-holding-usd', 'Consultant Services', 'We here to help', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis commodo.')
+        - }
+
+  .home-04-about-us.bg--whitesmoke.py-7
     .container
       .row
-        .col-lg-8
+        .col-lg-7.d-flex.align-items-center
+          img.thumb(src='http://templates.thememodern.com/dotted/images/Feature/1.png', alt='cover')
+        .col-lg-5.pl-lg-5  
           .ts-section-heading-01
             h2 Why You Should Choose Us?
-          p.mb-lg-5 Integer est arcu, congue nec vulputate faucibus, aliquam eget tellus. Aliquam laoreet aliquam mi, vitae tempus orci mattis vitae. Cras ultricies mauris est, ultricies sagittis diam euismod et. Curabitur at dolor vitae felis semper ullamcorper eu mattis felis. Phasellus felis diam, egestas non hendrerit a, lacinia a neque.
-          .d-flex
-            .left.mr-4
-              img(src='http://templates.thememodern.com/dotted/images/Feature/7.png', alt='demo')
-            .right
-              ul.list-style-01.list-square.color.mb-lg-4
-                li EASY CUSTOMIZATION RESPONSIVE 
-                li TEMPLATE MULTIPLE 
-                li PORTFOLIO COLUMNS 
-                li AMAZING SLIDER 
-                li 10 AMAZING SKINS 
-                li AND MANY MORE...
-              a(href="about.html").ts-btn.btn-color1.btn-lg REQUEST A CALLBACK
-                i.ts-icon.la.la-plus.pl-3
-
-        .col-lg-4
-          #process
-            .card.ts-accrodion-01
-              #step01.card-header
-                h5.mb-0
-                  button.ts-btn.btn-lg.w-100.text-left(
-                    data-toggle="collapse" 
-                    data-target="#step01Content" 
-                    aria-expanded="true" 
-                    aria-controls="step01Content") Discuss your goals
-              #step01Content.collapse.show(
-                aria-labelledby="step01" 
-                data-parent="#process")
-                .card-body
-                  | When you get in touch with us, we set up a 45-60 minute consultation that is at no cost to you.
-                  br
-                  | After about two weeks, your financial adviser will be in touch.
-            .card.ts-accrodion-01
-              #step02.card-header
-                h5.mb-0
-                  button.ts-btn.btn-lg.w-100.text-left(
-                    data-toggle="collapse" 
-                    data-target="#step02Content" 
-                    aria-expanded="false" 
-                    aria-controls="step02Content") Define what advice you are looking for
-              #step02Content.collapse(
-                aria-labelledby="step02" 
-                data-parent="#process")
-                .card-body
-                  | Identifying exactly what you are looking for is the foundation for creating your plan. Your adviser will go over which specific areas of.
-            .card.ts-accrodion-01
-              #step03.card-header
-                h5.mb-0
-                  button.ts-btn.btn-lg.w-100.text-left(
-                    data-toggle="collapse" 
-                    data-target="#step03Content" 
-                    aria-expanded="false" 
-                    aria-controls="step03Content") A plan to help you achieve your goals
-              #step03Content.collapse(
-                aria-labelledby="step03" 
-                data-parent="#process")
-                .card-body
-                  | After we have met, your financial adviser will develop a plan based on all the information they have collected from you.
-            .card.ts-accrodion-01
-                #step04.card-header
-                  h5.mb-0
-                    button.ts-btn.btn-lg.w-100.text-left(
-                      data-toggle="collapse" 
-                      data-target="#step04Content" 
-                      aria-expanded="false" 
-                      aria-controls="step04Content") Present your plan and answer any questions
-                #step04Content.collapse(
-                  aria-labelledby="step04" 
-                  data-parent="#process")
-                  .card-body
-                    | After about two weeks, your financial adviser will be in touch to present their findings and recommendations and go into.
-            .card.ts-accrodion-01
-                #step05.card-header
-                  h5.mb-0
-                    button.ts-btn.btn-lg.w-100.text-left(
-                      data-toggle="collapse" 
-                      data-target="#step05Content" 
-                      aria-expanded="false" 
-                      aria-controls="step05Content") Present your plan and answer any questions
-                #step05Content.collapse(
-                  aria-labelledby="step05" 
-                  data-parent="#process")
-                  .card-body
-                    | After about two weeks, your financial adviser will be in touch to present their findings and recommendations and go into.
-                    br
-                    | After about two weeks, your financial adviser will be in touch to present their findings and recommendations and go into.
+          p.mb-lg-4 Integer est arcu, congue nec vulputate faucibus, aliquam eget tellus. Aliquam laoreet aliquam mi, vitae tempus orci mattis vitae. Cras ultricies mauris est, ultricies sagittis diam euismod et.
+          ul.list-style-01.list-square.color.mb-lg-4
+            li FULLY RESPONSIVE 
+            li TEMPLATE MULTIPLE 
+            li PORTFOLIO COLUMNS 
+            li AMAZING SLIDER 
+            li 10 AMAZING SKINS 
+            li AND MANY MORE...
+          a(href="about.html").ts-btn.btn-color1 EXPLORE US
+            i.ts-icon.la.la-plus.pl-3
         
-  .home-01-projects.py-7
+  .home-01-projects.py-7.bg--white
     .container
       .row
         .col-lg-12
           .ts-section-heading-01
             h2 Our Latest Projects
-      .col-lg-12
-        .row
-          .col.p-0
-            .ts-portfolio-05.rounded-0
-              a(href='project_detail.html').card-cover
-                img.card-img(src='https://picsum.photos/600/400?random=1', alt='cover')
-                .ts-overlay.portfolio-card-overlay
-                .card-cover-inner
-                  h4.portfolio-card-title Project Card 05
-                  p.portfolio-card-catalog Consultant
-              .portfolio-card-meta
-                .item-favourite
-                  i.ts-icon.las.la-heart
-                  span 98
-                .item-comment
-                  i.ts-icon.la.la-comments
-                  span 102
-          .col.p-0
-            .ts-portfolio-05.rounded-0
-              a(href='project_detail.html').card-cover
-                img.card-img(src='https://picsum.photos/600/400?random=2', alt='cover')
-                .ts-overlay.portfolio-card-overlay
-                .card-cover-inner
-                  h4.portfolio-card-title Project Card 05
-                  p.portfolio-card-catalog Consultant
-              .portfolio-card-meta
-                .item-favourite
-                  i.ts-icon.las.la-heart
-                  span 98
-                .item-comment
-                  i.ts-icon.la.la-comments
-                  span 102
-          .col.p-0
-            .ts-portfolio-05.rounded-0
-              a(href='project_detail.html').card-cover
-                img.card-img(src='https://picsum.photos/600/400?random=3', alt='cover')
-                .ts-overlay.portfolio-card-overlay
-                .card-cover-inner
-                  h4.portfolio-card-title Project Card 05
-                  p.portfolio-card-catalog Consultant
-              .portfolio-card-meta
-                .item-favourite
-                  i.ts-icon.las.la-heart
-                  span 98
-                .item-comment
-                  i.ts-icon.la.la-comments
-                  span 102
-          .col.p-0
-            .ts-portfolio-05.rounded-0
-              a(href='project_detail.html').card-cover
-                img.card-img(src='https://picsum.photos/600/400?random=4', alt='cover')
-                .ts-overlay.portfolio-card-overlay
-                .card-cover-inner
-                  h4.portfolio-card-title Project Card 05
-                  p.portfolio-card-catalog Consultant
-              .portfolio-card-meta
-                .item-favourite
-                  i.ts-icon.las.la-heart
-                  span 98
-                .item-comment
-                  i.ts-icon.la.la-comments
-                  span 102
 
-  .home-01-testimonial.py-7
-    .ts-overlay
+      .col-lg-12    
+        .row
+          - for(var i = 0; i < 4; i++) {
+            .col.p-0
+              +portfolio04('https://picsum.photos/600/400?random=' + i, 'Project Card 06', 'Consultant', 'Commodo magna nulla nulla cillum sunt enim pariatur.')
+          - }
+
+  .home-04-testimonial
+    //- .ts-overlay
+    .waveWrapper.waveAnimation#fade-elements
+      .waveWrapperInner.bgTop
+        .wave.waveTop(style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')")
+      .waveWrapperInner.bgMiddle
+        .wave.waveMiddle(style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')")
+      .waveWrapperInner.bgBottom
+        .wave.waveBottom(style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')")
+    
     .container
       .row
         .col-lg-12
@@ -289,32 +121,300 @@ append content
             h2 Testimonials
       .row
         .col-lg-12
-          .carousel.align-center-items.arrows-intro.in-dark.dots-theme(
-            data-items="1" 
-            data-items-md="1" 
+          .carousel.align-center-items.arrows-intro.arrows-in-dark.carousel-focus(
+            data-items="3" 
+            data-items-md="3" 
             data-items-sm="1" 
             data-items-xs="1" 
-            data-margin="0" 
-            data-dots="true"
-            data-arrows="false" 
-            data-autoplay='true' 
+            data-margin="40"
+            data-center="true"
+            data-dots="false"
+            data-arrows="true" 
+            data-autoplay='false' 
             data-hoverpause="true"
             data-autoplay-timeout="9000"
-            data-loop="true"
-            data-animate-in="fadeIn"
-            data-animate-out="fadeOut")
-            .item.d-flex.justify-content-center
-              .ts-testimonial-card-06
-                p.testtimonial-card-desc Being a client of .Ananci, i don't need to worry about what to and what not to do with my portfolio. I have been in the Stock Market since 2004 but never had an equity portfolio advisor like you.
-                footer.blockquote-footer Vice President
-                  | - 
-                  cite(title="Source Title") Bank of American
+            data-loop="true")
             .item
-              .ts-testimonial-card-06
-                p.testtimonial-card-desc Since .Ananci aided me in the search for a solution to successfully improve my cash flow, everything has been going very well. My business continues to grow and I now have the cash to ensure that growth is suitably funded.
-                footer.blockquote-footer Adam Naville
-                  | - 
-                  cite(title="Source Title") Director, Renvilles Law Costs Draftsmen & Consultants Ltd
+              .ts-testimonial-card-04
+                .card-body
+                  p.testimonial-card-content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.
+                .card-cover
+                  img.card-img(src="https://i.pravatar.cc/120?img=1", alt='cover')
+                  .testimonial-card-info
+                    h4.testimonial-card-name Adam Slander
+                    p.testimonial-card-title Developer
+            
+            .item
+              .ts-testimonial-card-04
+                .card-body
+                  p.testimonial-card-content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.
+                .card-cover
+                  img.card-img(src="https://i.pravatar.cc/120?img=1", alt='cover')
+                  .testimonial-card-info
+                    h4.testimonial-card-name Adam Slander
+                    p.testimonial-card-title Developer
+
+            .item
+              .ts-testimonial-card-04
+                .card-body
+                  p.testimonial-card-content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.
+                .card-cover
+                  img.card-img(src="https://i.pravatar.cc/120?img=1", alt='cover')
+                  .testimonial-card-info
+                    h4.testimonial-card-name Adam Slander
+                    p.testimonial-card-title Developer
+  
+            .item
+              .ts-testimonial-card-04
+                .card-body
+                  p.testimonial-card-content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.
+                .card-cover
+                  img.card-img(src="https://i.pravatar.cc/120?img=1", alt='cover')
+                  .testimonial-card-info
+                    h4.testimonial-card-name Adam Slander
+                    p.testimonial-card-title Developer
+
+            .item
+              .ts-testimonial-card-04
+                .card-body
+                  p.testimonial-card-content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.
+                .card-cover
+                  img.card-img(src="https://i.pravatar.cc/120?img=1", alt='cover')
+                  .testimonial-card-info
+                    h4.testimonial-card-name Adam Slander
+                    p.testimonial-card-title Developer
+  
+            .item
+              .ts-testimonial-card-04
+                .card-body
+                  p.testimonial-card-content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.
+                .card-cover
+                  img.card-img(src="https://i.pravatar.cc/120?img=1", alt='cover')
+                  .testimonial-card-info
+                    h4.testimonial-card-name Adam Slander
+                    p.testimonial-card-title Developer
+
+  .home-01-blogs.py-7.bg--white
+    .container
+      .row
+        .col-lg-12
+          .ts-section-heading-01
+            h2 Our Latest Posts
+      .row-g-40
+        .col-lg-4
+          .ts-blog-card-09.bg--whitesmoke
+            .card-header
+              h4.blog-card-title
+                a(href="blog_detail.html") Blog Card 04
+              a(href="blogs_list.html").blog-card-catalog  Consultant
+            .card-cover
+              a(href='blog_detail.html')
+                img.card-img(src='https://picsum.photos/600/300?random=4', alt='cover')
+              .ts-overlay
+                .item.d-flex.mb-4
+                  .item-favourite
+                    i.ts-icon.las.la-heart
+                    span 98
+                  .item-comment
+                    i.ts-icon.la.la-comments
+                    span 102
+                a(href='blog_detail.html#comments').ts-btn.btn-cta-02.item
+                  span Read More
+                  i.ts-icon.la.la-angle-right
+            .card-body
+              p.blog-card-desc Commodo magna nulla nulla cillum sunt enim pariatur. Aliquip velit minim laboris ipsum fugiat do qui sit ullamco cillum eu aute nulla.
+            .card-footer
+              span.blog-card-author Post by 
+                a(href="blog_detail.html")  Adam Slander
+              .ts-social-list-01.align-right
+                a.hcl--facebook(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="facebook")
+                  i.ts-icon.lab.la-facebook-square
+                a.hcl--twitter(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="twitter")
+                  i.ts-icon.lab.la-twitter
+                a.hcl--instagram(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="instagram")
+                  i.ts-icon.lab.la-instagram    
+
+        .col-lg-4
+          .ts-blog-card-09.ts-blog-type-audio.bg--whitesmoke
+            .card-header
+              h4.blog-card-title
+                a(href="blog_detail.html") Blog Card 04
+              a(href="blogs_list.html").blog-card-catalog  Consultant
+            .card-cover
+              a(href='blog_detail.html')
+                img.card-img(src='https://picsum.photos/600/300?random=3', alt='cover')
+              .ts-overlay
+                .item.d-flex.mb-4
+                  .item-favourite
+                    i.ts-icon.las.la-heart
+                    span 98
+                  .item-comment
+                    i.ts-icon.la.la-comments
+                    span 102
+                a(href='blog_detail.html#comments').ts-btn.btn-cta-02.item
+                  span Read More
+                  i.ts-icon.la.la-angle-right
+            .card-body
+              p.blog-card-desc Commodo magna nulla nulla cillum sunt enim pariatur. Aliquip velit minim laboris ipsum fugiat do qui sit ullamco cillum eu aute nulla.
+            .card-footer
+              span.blog-card-author Post by 
+                a(href="blog_detail.html")  Adam Slander
+              .ts-social-list-01.align-right
+                a.hcl--facebook(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="facebook")
+                  i.ts-icon.lab.la-facebook-square
+                a.hcl--twitter(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="twitter")
+                  i.ts-icon.lab.la-twitter
+                a.hcl--instagram(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="instagram")
+                  i.ts-icon.lab.la-instagram    
+
+        .col-lg-4
+          .ts-blog-card-09.ts-blog-type-video.bg--whitesmoke
+            .card-header
+              h4.blog-card-title
+                a(href="blog_detail.html") Blog Card 04
+              a(href="blogs_list.html").blog-card-catalog  Consultant
+            .card-cover
+              a(href='blog_detail.html')
+                img.card-img(src='https://picsum.photos/600/300?random=2', alt='cover')
+              .ts-overlay
+                .item.d-flex.mb-4
+                  .item-favourite
+                    i.ts-icon.las.la-heart
+                    span 98
+                  .item-comment
+                    i.ts-icon.la.la-comments
+                    span 102
+                a(href='blog_detail.html#comments').ts-btn.btn-cta-02.item
+                  span Read More
+                  i.ts-icon.la.la-angle-right
+            .card-body
+              p.blog-card-desc Commodo magna nulla nulla cillum sunt enim pariatur. Aliquip velit minim laboris ipsum fugiat do qui sit ullamco cillum eu aute nulla.
+            .card-footer
+              span.blog-card-author Post by 
+                a(href="blog_detail.html")  Adam Slander
+              .ts-social-list-01.align-right
+                a.hcl--facebook(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="facebook")
+                  i.ts-icon.lab.la-facebook-square
+                a.hcl--twitter(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="twitter")
+                  i.ts-icon.lab.la-twitter
+                a.hcl--instagram(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="instagram")
+                  i.ts-icon.lab.la-instagram    
+
+  .home-04-teams.bg--whitesmoke
+    .ts-overlay
+    .container
+      .row
+        .col-lg-12
+          .ts-section-heading-01.align-center
+            h2 Our Teams
+          svg.ts-team-card-04-layer(height="0" width="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+            defs
+              clippath#ts-team-card-04-clip(clipPathUnits="objectBoundingBox")
+                path.layer-01(transform="scale(0.0012345, 0.00098814)" d="M0.523749826,0.5 C0.507918786,2.82739485 0.5,5.1557469 0.5,7.48502994 C0.5,555.361288 438.60968,999.5 979.041916,999.5 C985.869691,999.5 992.689294,999.429109 999.5,999.287507 L999.5,0.5 L0.523749826,0.5 Z" stroke="#979797" fill="#D8D8D8")
+      
+      .carousel.align-center-items.arrows-intro.dots-theme.carousel-focus(
+        data-items="3" 
+        data-items-md="3" 
+        data-items-sm="1" 
+        data-items-xs="1" 
+        data-margin="40"
+        data-center="true"
+        data-dots="false"
+        data-arrows="true" 
+        data-autoplay='false' 
+        data-hoverpause="true"
+        data-autoplay-timeout="9000"
+        data-loop="true")
+        .item
+          .ts-team-card-05
+            .card-cover
+              img.card-img(src='https://i.pravatar.cc/600?img=4', alt="avatar")
+            .card-body
+              .team-card-info
+                h4.team-card-name Adam Larson
+                p.team-card-title Financial Consultant 
+              p.team-card-desc Ullamco minim in enim consectetur labore voluptate et non non. Officia dolor qui cupidatat tempor qui ex labore veniam dolore.
+            .card-footer
+              a(href="#").hcl--facebook
+                i.ts-icon.lab.la-facebook-square
+              a(href="#").hcl--twitter
+                i.ts-icon.lab.la-twitter
+              a(href="#").hcl--instagram
+                i.ts-icon.lab.la-instagram
+              a(href="team_detail.html").read-more
+                i.ts-icon.la.la-angle-right
+        .item
+          .ts-team-card-05
+            .card-cover
+              img.card-img(src='https://i.pravatar.cc/600?img=1', alt="avatar")
+            .card-body
+              .team-card-info
+                h4.team-card-name Adam Larson
+                p.team-card-title Financial Consultant 
+              p.team-card-desc Ullamco minim in enim consectetur labore voluptate et non non. Officia dolor qui cupidatat tempor qui ex labore veniam dolore.
+            .card-footer
+              a(href="#").hcl--facebook
+                i.ts-icon.lab.la-facebook-square
+              a(href="#").hcl--twitter
+                i.ts-icon.lab.la-twitter
+              a(href="#").hcl--instagram
+                i.ts-icon.lab.la-instagram
+              a(href="team_detail.html").read-more
+                i.ts-icon.la.la-angle-right
+        .item
+          .ts-team-card-05
+            .card-cover
+              img.card-img(src='https://i.pravatar.cc/600?img=2', alt="avatar")
+            .card-body
+              .team-card-info
+                h4.team-card-name Adam Larson
+                p.team-card-title Financial Consultant 
+              p.team-card-desc Ullamco minim in enim consectetur labore voluptate et non non. Officia dolor qui cupidatat tempor qui ex labore veniam dolore.
+            .card-footer
+              a(href="#").hcl--facebook
+                i.ts-icon.lab.la-facebook-square
+              a(href="#").hcl--twitter
+                i.ts-icon.lab.la-twitter
+              a(href="#").hcl--instagram
+                i.ts-icon.lab.la-instagram
+              a(href="team_detail.html").read-more
+                i.ts-icon.la.la-angle-right
+        .item
+          .ts-team-card-05
+            .card-cover
+              img.card-img(src='https://i.pravatar.cc/600?img=12', alt="avatar")
+            .card-body
+              .team-card-info
+                h4.team-card-name Adam Larson
+                p.team-card-title Financial Consultant 
+              p.team-card-desc Ullamco minim in enim consectetur labore voluptate et non non. Officia dolor qui cupidatat tempor qui ex labore veniam dolore.
+            .card-footer
+              a(href="#").hcl--facebook
+                i.ts-icon.lab.la-facebook-square
+              a(href="#").hcl--twitter
+                i.ts-icon.lab.la-twitter
+              a(href="#").hcl--instagram
+                i.ts-icon.lab.la-instagram
+              a(href="team_detail.html").read-more
+                i.ts-icon.la.la-angle-right
+        //- .col-lg-3
+        //-   .ts-team-card-05
+        //-     .card-cover
+        //-       img.card-img(src='https://i.pravatar.cc/600?img=3', alt="avatar")
+        //-     .card-body
+        //-       .team-card-info
+        //-         h4.team-card-name Adam Larson
+        //-         p.team-card-title Financial Consultant 
+        //-       p.team-card-desc Ullamco minim in enim consectetur labore voluptate et non non. Officia dolor qui cupidatat tempor qui ex labore veniam dolore.
+        //-     .card-footer
+        //-       a(href="#").hcl--facebook
+        //-         i.ts-icon.lab.la-facebook-square
+        //-       a(href="#").hcl--twitter
+        //-         i.ts-icon.lab.la-twitter
+        //-       a(href="#").hcl--instagram
+        //-         i.ts-icon.lab.la-instagram
+        //-       a(href="team_detail.html").read-more
+        //-         i.ts-icon.la.la-angle-right
 
   .home-01-partner.py-7
     .container
@@ -356,69 +456,104 @@ append content
                 a(href="#")
                   img(src="images/partner-logo-05.svg", alt='cover')
 
-  .home-01-cta.bg--whitesmoke.py-7
-    .container
-      .row
-        .ts-box-cta-01.bg-white
-          .left.pr-lg-4
-            h3.box-cta-title Quisque hendrerit sed lorem nec ornare. Proin sed turpis at odio molestie cursus.
-            p.box-cta-desc Fusce nec velit elementum arcu tincidunt venenatis blandit id lorem. Cras commodo risus massa, at volutpat neque hendrerit a. Ut sed auctor nisl. Quisque pulvinar urna nec diam congue, quis accumsan arcu dapibus.
-          .right
-            a(href="/").ts-btn.btn-color1.btn-lg PURCHASE NOW 
-              i.ts-icon.la.la-arrow-circle-right
-  
-  .home-01-footer
-    .footer-01.py-lg-7.py-5
+  .pb-7.bg--whitesmoke
+    .home-01-cta.py-7
       .container
-        .row.footer-inner
-          .col-lg-4.mb-5.mb-lg-0.pr-lg-4
-            .widget-text.company-info.in-dark
-              .footer-logo
-                a(href="/")
-                  img(src="images/logo-light.png", alt="logo")
-              p.mb-4 Without finance, plans stay as plans. That’s why we exists, we here to help clients make the most of these opportunities. We take the time to gain a deep understanding of our clients' financial requirements to bringing a passion for client success.
-              .info
-                .item.mb-2
-                  .ts-icon-box-info-01.in-dark
+        .row
+          .col-lg-12
+            .ts-box-cta-01.bg-white
+              .left.pr-lg-4
+                h3.box-cta-title Quisque hendrerit sed lorem nec ornare. Proin sed turpis at odio molestie cursus.
+                p.box-cta-desc Fusce nec velit elementum arcu tincidunt venenatis blandit id lorem. Cras commodo risus massa, at volutpat neque hendrerit a. Ut sed auctor nisl. Quisque pulvinar urna nec diam congue, quis accumsan arcu dapibus.
+              .right
+                a(href="/").ts-btn.btn-color1.btn-lg PURCHASE NOW 
+                  i.ts-icon.la.la-arrow-circle-right
+  
+  .home-04-footer.bg--whitesmoke
+    .ts-overlay
+    .ts-footer-05
+      .ts-footer-info
+        .container
+          .ts-footer-info-inner
+            .row
+              .col-lg-4
+                .ts-icon-box-info-04
+                  .icon.color--color1
                     i.ts-icon.la.la-phone
-                    a(href="tel:18604193333") 1860-419-3331
-                .item.mb-2
-                  .ts-icon-box-info-01.in-dark
+                  .content
+                    h5 Drop Us A Call
+                    a(href="tel:18604193333") 1860-419-3333
+              
+              .col-lg-4
+                .ts-icon-box-info-04
+                  .icon.color--color1
                     i.ts-icon.la.la-envelope
+                  .content
+                    h5 Or Email Us
                     a(href="mailto:contact@ananci.com") consultant@ananci.com
-                .item.mb-4
-                  .ts-icon-box-info-01.in-dark
+              
+              .col-lg-4
+                .ts-icon-box-info-04
+                  .icon.color--color1
                     i.ts-icon.la.la-map-marker
-                    span 151 Hudson St, New York, NY
-          .col-lg-4.d-none.d-lg-block.pr-lg-4
-            .widget-latest-news.in-dark
-              h4.widget-title-01.in-dark Latest News
-              ul
-                li
-                  +blog09('https://picsum.photos/600?random=1', 'Lorem Ipsum', 'Without finance, plans stay as plans. That’s why we exists...')
-                li
-                  +blog09('https://picsum.photos/600?random=2', 'Lorem Ipsum', 'Without finance, plans stay as plans. That’s why we exists...')
-                li
-                  +blog09('https://picsum.photos/600?random=3', 'Lorem Ipsum', 'Without finance, plans stay as plans. That’s why we exists...')
-          .col-lg-4
-            .widget-subcrible-01.in-dark
-              h4.widget-title-01.in-dark Subscribe
-              p Subscribe to our newsletter to receive latest news on our services.
-              .input-lg
-                input.mb-3.ts-input--ghost-02(type='text' placeholder="Email Address")
-                button.ts-btn.btn-color1(type='button') Subscribe
-              .ts-divider-01.my-4
-              .d-flex.justify-content-between.align-items-center
-                h4.in-dark.fs--18 Follow Us: 
-                .d-flex.justify-content-end
-                  a(href="#").square.bg--fw-1.in-dark.hbg--facebook.ml-3
+                  .content
+                    h5 Our Main Office
+                    span New York, NY 10018 US.
+
+      .ts-footer-main.pb-lg-7.pb-5
+        .container
+          .row.footer-inner
+            .col-lg-5.mb-5.mb-lg-0.pr-lg-5
+              .widget-text.company-info.in-dark
+                .footer-logo
+                  a(href="/")
+                    img(src="images/logo-light.png", alt="logo")
+                p.mb-5 Without finance, plans stay as plans. That’s why we exists, we here to help clients make the most of these opportunities. We take the time to gain a deep understanding of our clients' financial requirements to bringing a passion for client success.
+                .d-flex
+                  a(href="#").square.bg--fw-1.in-dark.hbg--facebook.mr-3
                     i.ts-icon.lab.la-facebook-square
-                  a(href="#").square.bg--fw-1.in-dark.hbg--twitter.ml-3
+                  a(href="#").square.bg--fw-1.in-dark.hbg--twitter.mr-3
                     i.ts-icon.lab.la-twitter
-                  a(href="#").square.bg--fw-1.in-dark.hbg--instagram.ml-3
+                  a(href="#").square.bg--fw-1.in-dark.hbg--instagram.mr-3
                     i.ts-icon.lab.la-instagram
-                  a(href="#").square.bg--fw-1.in-dark.hbg--linkedin.ml-3
+                  a(href="#").square.bg--fw-1.in-dark.hbg--linkedin.mr-3
                     i.ts-icon.lab.la-linkedin
+
+            .col-lg-3
+              .widget-quick-links-02.in-dark.style-long-arrow
+                h4.widget-title-01.in-dark Services
+                ul
+                  li
+                    a(href="/") Home
+                  li
+                    a(href="/") About Us
+                  li
+                    a(href="/") Our Services
+                  li
+                    a(href="/") Cases Study
+                  li
+                    a(href="/") Latest Projects
+
+            .col-lg-4.d-none.d-lg-block.pr-lg-4
+              .widget-instagram
+                h4.widget-title-01.in-dark Instagram
+                ul
+                  li
+                    img(src='https://picsum.photos/600?random=1', alt='thumb')
+                  li
+                    img(src='https://picsum.photos/600?random=2', alt='thumb')
+                  li
+                    img(src='https://picsum.photos/600?random=3', alt='thumb')
+                  li
+                    img(src='https://picsum.photos/600?random=4', alt='thumb')
+                  li
+                    img(src='https://picsum.photos/600?random=5', alt='thumb')
+                  li
+                    img(src='https://picsum.photos/600?random=6', alt='thumb')
+                  li
+                    img(src='https://picsum.photos/600?random=7', alt='thumb')
+                  li
+                    img(src='https://picsum.photos/600?random=8', alt='thumb')
 
     .copyright-02
       .container
@@ -439,9 +574,9 @@ append content
                   a(href="/") Faq
                 li
                   a(href="/") Support
+    
   a#to-the-top
     i.ts-icon.la.la-angle-up
-  //- +footer01
   +control
 append plugins  
   +lib
@@ -460,3 +595,20 @@ append script
   //- script(src='revolution-slider/revolution/js/extensions/revolution.extension.video.min.js')
   script(src="js/main.min.js")
   script(src="js/carousel-testimonial-home-04.min.js")
+  script.
+    $(window).scroll(function () { 
+        //- var $Fade = $('.fade-elements');
+        var $Fade = document.getElementById('fade-elements')
+        var windowScroll = $Fade.getBoundingClientRect().top;
+        var windowHeight = $(window).height();
+        var fadeHeight = $($Fade).height();
+        var offsetFade = $($Fade).offset();
+        var offsetTop = offsetFade.top;
+        var scroll = $(window).scrollTop() + windowHeight;
+        if((offsetTop - scroll) < 0) {
+          var opacity = Math.abs(offsetTop - scroll - windowHeight/2)/1000
+          $($Fade).css({
+            'opacity': opacity
+        });
+        }
+    })

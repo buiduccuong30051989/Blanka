@@ -52,3 +52,13 @@ mixin services05(icon, title, space)
       a(href="services_01.html") 
         i.ts-icon.la.la-angle-double-right.pr-1
         | View More
+
+mixin services09(icon, title, subTitle, desc)
+  .ts-icon-box-09
+    .icon-box-inner
+      .icon-box-wrap  
+        i.ts-icon(class=icon)
+      .icon-box-content
+        h3.icon-box-title=title
+        h5.icon-box-sub-title=subTitle
+        p.icon-box-desc=desc

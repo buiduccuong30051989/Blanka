@@ -397,6 +397,7 @@
 .ts-icon-box-05 {
   text-align: center;
   border: 1px solid $gray90;
+  transition: $transition-base;
 
   .ts-icon-box-05-inner {
     padding: 0 30px 35px;
@@ -437,6 +438,10 @@
     .desc {
       margin-bottom: 20px;
     }
+  }
+
+  &:hover {
+    @extend .shadow;
   }
 }
 
@@ -493,6 +498,7 @@
 .ts-icon-box-07 {
   border: 1px solid $gray90;
   position: relative;
+  transition: box-shadow .35s;
 
   .ts-icon-box-07-inner {
     // padding: 30px 100px 30px 50px;
@@ -545,6 +551,10 @@
     &-desc {
       margin-bottom: 20px;
     }
+  }
+
+  &:hover {
+    @extend .shadow;
   }
 }
 

@@ -34,10 +34,14 @@
     }
 
     .item {
-      opacity: 0.9;
+      opacity: 0.8;
 
       &:hover {
         opacity: 1;
+      }
+
+      &.ts-language {
+        z-index: 2;
       }
     }
 
@@ -578,6 +582,8 @@
 
 .ts-header-07 {
   box-shadow: none;
+  z-index: 1071;
+  transition: background-color 0.35s;
 
   &-info {
     padding: 37px 0 37px;
@@ -648,6 +654,19 @@
   .ts-main-menu > ul > li > a {
     padding-top: 25px;
     padding-bottom: 25px;
+  }
+
+  &.headroom--not-top {
+    .ts-header-07 {
+      background-color: color(color1, .9);
+      &-info {
+        display: none;
+      }
+
+      &-inner {
+        background-color: transparent;
+      }
+    }
   }
 }
 
@@ -883,8 +902,8 @@
 }
 
 .search-open {
-  height: 100vh;
   overflow: hidden;
+  padding-right: 15px;
 
   .sticky-top {
     z-index: 0;

@@ -32,6 +32,17 @@
   }
 
   &-footer {
+    .footer-01 {
+      position: relative;
+
+      .ts-overlay {
+        opacity: .05;
+        background: url('../images/bg-footer-03.png') no-repeat;
+        background-size: auto 80%;
+        background-position: bottom center;
+      }
+    }
+
     .copyright-02 {
       padding: 10px 0;
     }
