@@ -2,6 +2,7 @@ extends modules/layout/layout.pug
 include modules/script/lib
 include modules/header_mixin/header_mixin
 include modules/team/team
+include modules/blog/blog
 include modules/portfolio/portfolio
 include modules/services/services
 include modules/testimonial/testimonial
@@ -71,7 +72,7 @@ append content
             +services09('la la-hand-holding-usd', 'Consultant Services', 'We here to help', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis commodo.')
         - }
 
-  .home-04-about-us.bg--whitesmoke.py-7
+  .home-01-about-us.bg--whitesmoke.py-7
     .container
       .row
         .col-lg-7.d-flex.align-items-center
@@ -104,15 +105,14 @@ append content
               +portfolio04('https://picsum.photos/600/400?random=' + i, 'Project Card 06', 'Consultant', 'Commodo magna nulla nulla cillum sunt enim pariatur.')
           - }
 
-  .home-04-testimonial
-    //- .ts-overlay
-    .waveWrapper.waveAnimation#fade-elements
+  .home-01-testimonial
+    .waveWrapper.waveAnimation#js-fade-elements
       .waveWrapperInner.bgTop
-        .wave.waveTop(style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')")
+        .wave.waveTop
       .waveWrapperInner.bgMiddle
-        .wave.waveMiddle(style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')")
+        .wave.waveMiddle
       .waveWrapperInner.bgBottom
-        .wave.waveBottom(style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')")
+        .wave.waveBottom
     
     .container
       .row
@@ -134,65 +134,10 @@ append content
             data-hoverpause="true"
             data-autoplay-timeout="9000"
             data-loop="true")
-            .item
-              .ts-testimonial-card-04
-                .card-body
-                  p.testimonial-card-content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.
-                .card-cover
-                  img.card-img(src="https://i.pravatar.cc/120?img=1", alt='cover')
-                  .testimonial-card-info
-                    h4.testimonial-card-name Adam Slander
-                    p.testimonial-card-title Developer
-            
-            .item
-              .ts-testimonial-card-04
-                .card-body
-                  p.testimonial-card-content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.
-                .card-cover
-                  img.card-img(src="https://i.pravatar.cc/120?img=1", alt='cover')
-                  .testimonial-card-info
-                    h4.testimonial-card-name Adam Slander
-                    p.testimonial-card-title Developer
-
-            .item
-              .ts-testimonial-card-04
-                .card-body
-                  p.testimonial-card-content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.
-                .card-cover
-                  img.card-img(src="https://i.pravatar.cc/120?img=1", alt='cover')
-                  .testimonial-card-info
-                    h4.testimonial-card-name Adam Slander
-                    p.testimonial-card-title Developer
-  
-            .item
-              .ts-testimonial-card-04
-                .card-body
-                  p.testimonial-card-content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.
-                .card-cover
-                  img.card-img(src="https://i.pravatar.cc/120?img=1", alt='cover')
-                  .testimonial-card-info
-                    h4.testimonial-card-name Adam Slander
-                    p.testimonial-card-title Developer
-
-            .item
-              .ts-testimonial-card-04
-                .card-body
-                  p.testimonial-card-content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.
-                .card-cover
-                  img.card-img(src="https://i.pravatar.cc/120?img=1", alt='cover')
-                  .testimonial-card-info
-                    h4.testimonial-card-name Adam Slander
-                    p.testimonial-card-title Developer
-  
-            .item
-              .ts-testimonial-card-04
-                .card-body
-                  p.testimonial-card-content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.
-                .card-cover
-                  img.card-img(src="https://i.pravatar.cc/120?img=1", alt='cover')
-                  .testimonial-card-info
-                    h4.testimonial-card-name Adam Slander
-                    p.testimonial-card-title Developer
+            - for(var i = 1; i < 7; i ++) {
+              .item
+                +testimonial08('https://i.pravatar.cc/120?img=' + i, 'Adam Slander', 'Developer', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.')
+            - }
 
   .home-01-blogs.py-7.bg--white
     .container
@@ -201,104 +146,10 @@ append content
           .ts-section-heading-01
             h2 Our Latest Posts
       .row-g-40
-        .col-lg-4
-          .ts-blog-card-09.bg--whitesmoke
-            .card-header
-              h4.blog-card-title
-                a(href="blog_detail.html") Blog Card 04
-              a(href="blogs_list.html").blog-card-catalog  Consultant
-            .card-cover
-              a(href='blog_detail.html')
-                img.card-img(src='https://picsum.photos/600/300?random=4', alt='cover')
-              .ts-overlay
-                .item.d-flex.mb-4
-                  .item-favourite
-                    i.ts-icon.las.la-heart
-                    span 98
-                  .item-comment
-                    i.ts-icon.la.la-comments
-                    span 102
-                a(href='blog_detail.html#comments').ts-btn.btn-cta-02.item
-                  span Read More
-                  i.ts-icon.la.la-angle-right
-            .card-body
-              p.blog-card-desc Commodo magna nulla nulla cillum sunt enim pariatur. Aliquip velit minim laboris ipsum fugiat do qui sit ullamco cillum eu aute nulla.
-            .card-footer
-              span.blog-card-author Post by 
-                a(href="blog_detail.html")  Adam Slander
-              .ts-social-list-01.align-right
-                a.hcl--facebook(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="facebook")
-                  i.ts-icon.lab.la-facebook-square
-                a.hcl--twitter(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="twitter")
-                  i.ts-icon.lab.la-twitter
-                a.hcl--instagram(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="instagram")
-                  i.ts-icon.lab.la-instagram    
-
-        .col-lg-4
-          .ts-blog-card-09.ts-blog-type-audio.bg--whitesmoke
-            .card-header
-              h4.blog-card-title
-                a(href="blog_detail.html") Blog Card 04
-              a(href="blogs_list.html").blog-card-catalog  Consultant
-            .card-cover
-              a(href='blog_detail.html')
-                img.card-img(src='https://picsum.photos/600/300?random=3', alt='cover')
-              .ts-overlay
-                .item.d-flex.mb-4
-                  .item-favourite
-                    i.ts-icon.las.la-heart
-                    span 98
-                  .item-comment
-                    i.ts-icon.la.la-comments
-                    span 102
-                a(href='blog_detail.html#comments').ts-btn.btn-cta-02.item
-                  span Read More
-                  i.ts-icon.la.la-angle-right
-            .card-body
-              p.blog-card-desc Commodo magna nulla nulla cillum sunt enim pariatur. Aliquip velit minim laboris ipsum fugiat do qui sit ullamco cillum eu aute nulla.
-            .card-footer
-              span.blog-card-author Post by 
-                a(href="blog_detail.html")  Adam Slander
-              .ts-social-list-01.align-right
-                a.hcl--facebook(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="facebook")
-                  i.ts-icon.lab.la-facebook-square
-                a.hcl--twitter(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="twitter")
-                  i.ts-icon.lab.la-twitter
-                a.hcl--instagram(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="instagram")
-                  i.ts-icon.lab.la-instagram    
-
-        .col-lg-4
-          .ts-blog-card-09.ts-blog-type-video.bg--whitesmoke
-            .card-header
-              h4.blog-card-title
-                a(href="blog_detail.html") Blog Card 04
-              a(href="blogs_list.html").blog-card-catalog  Consultant
-            .card-cover
-              a(href='blog_detail.html')
-                img.card-img(src='https://picsum.photos/600/300?random=2', alt='cover')
-              .ts-overlay
-                .item.d-flex.mb-4
-                  .item-favourite
-                    i.ts-icon.las.la-heart
-                    span 98
-                  .item-comment
-                    i.ts-icon.la.la-comments
-                    span 102
-                a(href='blog_detail.html#comments').ts-btn.btn-cta-02.item
-                  span Read More
-                  i.ts-icon.la.la-angle-right
-            .card-body
-              p.blog-card-desc Commodo magna nulla nulla cillum sunt enim pariatur. Aliquip velit minim laboris ipsum fugiat do qui sit ullamco cillum eu aute nulla.
-            .card-footer
-              span.blog-card-author Post by 
-                a(href="blog_detail.html")  Adam Slander
-              .ts-social-list-01.align-right
-                a.hcl--facebook(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="facebook")
-                  i.ts-icon.lab.la-facebook-square
-                a.hcl--twitter(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="twitter")
-                  i.ts-icon.lab.la-twitter
-                a.hcl--instagram(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="instagram")
-                  i.ts-icon.lab.la-instagram    
+        - for(var i = 1; i < 4; i++) {
+          .col-lg-4
+            +blog10('Blog Title', 'Consultant', 'https://picsum.photos/600/300?random=' + i, 'Admin', 'Commodo magna nulla nulla cillum sunt enim pariatur. Aliquip velit minim laboris ipsum fugiat do qui sit ullamco cillum eu aute nulla.')
+        - }
 
   .home-04-teams.bg--whitesmoke
     .ts-overlay
@@ -307,10 +158,6 @@ append content
         .col-lg-12
           .ts-section-heading-01.align-center
             h2 Our Teams
-          svg.ts-team-card-04-layer(height="0" width="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
-            defs
-              clippath#ts-team-card-04-clip(clipPathUnits="objectBoundingBox")
-                path.layer-01(transform="scale(0.0012345, 0.00098814)" d="M0.523749826,0.5 C0.507918786,2.82739485 0.5,5.1557469 0.5,7.48502994 C0.5,555.361288 438.60968,999.5 979.041916,999.5 C985.869691,999.5 992.689294,999.429109 999.5,999.287507 L999.5,0.5 L0.523749826,0.5 Z" stroke="#979797" fill="#D8D8D8")
       
       .carousel.align-center-items.arrows-intro.dots-theme.carousel-focus(
         data-items="3" 
@@ -325,151 +172,18 @@ append content
         data-hoverpause="true"
         data-autoplay-timeout="9000"
         data-loop="true")
-        .item
-          .ts-team-card-05
-            .card-cover
-              img.card-img(src='https://i.pravatar.cc/600?img=4', alt="avatar")
-            .card-body
-              .team-card-info
-                h4.team-card-name Adam Larson
-                p.team-card-title Financial Consultant 
-              p.team-card-desc Ullamco minim in enim consectetur labore voluptate et non non. Officia dolor qui cupidatat tempor qui ex labore veniam dolore.
-            .card-footer
-              a(href="#").hcl--facebook
-                i.ts-icon.lab.la-facebook-square
-              a(href="#").hcl--twitter
-                i.ts-icon.lab.la-twitter
-              a(href="#").hcl--instagram
-                i.ts-icon.lab.la-instagram
-              a(href="team_detail.html").read-more
-                i.ts-icon.la.la-angle-right
-        .item
-          .ts-team-card-05
-            .card-cover
-              img.card-img(src='https://i.pravatar.cc/600?img=1', alt="avatar")
-            .card-body
-              .team-card-info
-                h4.team-card-name Adam Larson
-                p.team-card-title Financial Consultant 
-              p.team-card-desc Ullamco minim in enim consectetur labore voluptate et non non. Officia dolor qui cupidatat tempor qui ex labore veniam dolore.
-            .card-footer
-              a(href="#").hcl--facebook
-                i.ts-icon.lab.la-facebook-square
-              a(href="#").hcl--twitter
-                i.ts-icon.lab.la-twitter
-              a(href="#").hcl--instagram
-                i.ts-icon.lab.la-instagram
-              a(href="team_detail.html").read-more
-                i.ts-icon.la.la-angle-right
-        .item
-          .ts-team-card-05
-            .card-cover
-              img.card-img(src='https://i.pravatar.cc/600?img=2', alt="avatar")
-            .card-body
-              .team-card-info
-                h4.team-card-name Adam Larson
-                p.team-card-title Financial Consultant 
-              p.team-card-desc Ullamco minim in enim consectetur labore voluptate et non non. Officia dolor qui cupidatat tempor qui ex labore veniam dolore.
-            .card-footer
-              a(href="#").hcl--facebook
-                i.ts-icon.lab.la-facebook-square
-              a(href="#").hcl--twitter
-                i.ts-icon.lab.la-twitter
-              a(href="#").hcl--instagram
-                i.ts-icon.lab.la-instagram
-              a(href="team_detail.html").read-more
-                i.ts-icon.la.la-angle-right
-        .item
-          .ts-team-card-05
-            .card-cover
-              img.card-img(src='https://i.pravatar.cc/600?img=12', alt="avatar")
-            .card-body
-              .team-card-info
-                h4.team-card-name Adam Larson
-                p.team-card-title Financial Consultant 
-              p.team-card-desc Ullamco minim in enim consectetur labore voluptate et non non. Officia dolor qui cupidatat tempor qui ex labore veniam dolore.
-            .card-footer
-              a(href="#").hcl--facebook
-                i.ts-icon.lab.la-facebook-square
-              a(href="#").hcl--twitter
-                i.ts-icon.lab.la-twitter
-              a(href="#").hcl--instagram
-                i.ts-icon.lab.la-instagram
-              a(href="team_detail.html").read-more
-                i.ts-icon.la.la-angle-right
-        //- .col-lg-3
-        //-   .ts-team-card-05
-        //-     .card-cover
-        //-       img.card-img(src='https://i.pravatar.cc/600?img=3', alt="avatar")
-        //-     .card-body
-        //-       .team-card-info
-        //-         h4.team-card-name Adam Larson
-        //-         p.team-card-title Financial Consultant 
-        //-       p.team-card-desc Ullamco minim in enim consectetur labore voluptate et non non. Officia dolor qui cupidatat tempor qui ex labore veniam dolore.
-        //-     .card-footer
-        //-       a(href="#").hcl--facebook
-        //-         i.ts-icon.lab.la-facebook-square
-        //-       a(href="#").hcl--twitter
-        //-         i.ts-icon.lab.la-twitter
-        //-       a(href="#").hcl--instagram
-        //-         i.ts-icon.lab.la-instagram
-        //-       a(href="team_detail.html").read-more
-        //-         i.ts-icon.la.la-angle-right
+        - for(var i = 1; i < 8; i ++) {
+          .item
+            +team07('https://i.pravatar.cc/600?img=' + i, 'Adam Larson', 'Financial Consultant', 'Ullamco minim in enim consectetur labore voluptate et non non. Officia dolor qui cupidatat tempor qui ex labore veniam dolore.')
+        - }
 
-  .home-01-partner.py-7
-    .container
-      .row
-        .col-lg-12
-          .ts-section-heading-01
-            h2 Respective Partners
-      .row
-        .col-lg-12
-          .carousel.arrows-square.arrows-dark(
-            data-items="5" 
-            data-items-md="4" 
-            data-items-sm="2" 
-            data-items-xs="1" 
-            data-margin="20"
-            data-dots="false"
-            data-arrows="true" 
-            data-autoplay="true" 
-            data-autoplay-timeout="3000" 
-            data-loop="true")
-            .item
-              .border
-                a(href="#")
-                  img(src="images/partner-logo-01.svg", alt='cover')
-            .item
-              .border
-                a(href="#")
-                  img(src="images/partner-logo-02.svg", alt='cover')
-            .item
-              .border
-                a(href="#")
-                  img(src="images/partner-logo-03.svg", alt='cover')
-            .item
-              .border
-                a(href="#")
-                  img(src="images/partner-logo-04.svg", alt='cover')
-            .item
-              .border
-                a(href="#")
-                  img(src="images/partner-logo-05.svg", alt='cover')
+  +partner
 
   .pb-7.bg--whitesmoke
     .home-01-cta.py-7
-      .container
-        .row
-          .col-lg-12
-            .ts-box-cta-01.bg-white
-              .left.pr-lg-4
-                h3.box-cta-title Quisque hendrerit sed lorem nec ornare. Proin sed turpis at odio molestie cursus.
-                p.box-cta-desc Fusce nec velit elementum arcu tincidunt venenatis blandit id lorem. Cras commodo risus massa, at volutpat neque hendrerit a. Ut sed auctor nisl. Quisque pulvinar urna nec diam congue, quis accumsan arcu dapibus.
-              .right
-                a(href="/").ts-btn.btn-color1.btn-lg PURCHASE NOW 
-                  i.ts-icon.la.la-arrow-circle-right
+      +boxCta01
   
-  .home-04-footer.bg--whitesmoke
+  .home-01-footer.bg--whitesmoke
     .ts-overlay
     .ts-footer-05
       .ts-footer-info
@@ -598,7 +312,7 @@ append script
   script.
     $(window).scroll(function () { 
         //- var $Fade = $('.fade-elements');
-        var $Fade = document.getElementById('fade-elements')
+        var $Fade = document.getElementById('js-fade-elements')
         var windowScroll = $Fade.getBoundingClientRect().top;
         var windowHeight = $(window).height();
         var fadeHeight = $($Fade).height();

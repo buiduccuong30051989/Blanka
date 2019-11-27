@@ -133,3 +133,36 @@ mixin blog09(cover, title, desc)
       h4.ts-blog-card-title 
         a(href="blog_detail.html")=title
       p.ts-blog-card-desc=desc
+
+mixin blog10(title, cat, cover, author, desc)
+  .ts-blog-card-09.bg--whitesmoke
+    .card-header
+      h4.blog-card-title
+        a(href="blog_detail.html")=title
+      a(href="blogs_list.html").blog-card-catalog=cat
+    .card-cover
+      a(href='blog_detail.html')
+        img.card-img(src=cover, alt='cover')
+      .ts-overlay
+        .item.d-flex.mb-4
+          .item-favourite
+            i.ts-icon.las.la-heart
+            span 98
+          .item-comment
+            i.ts-icon.la.la-comments
+            span 102
+        a(href='blog_detail.html#comments').ts-btn.btn-cta-02.item
+          span Read More
+          i.ts-icon.la.la-angle-right
+    .card-body
+      p.blog-card-desc=desc
+    .card-footer
+      span.blog-card-author Post by 
+        a(href="blog_detail.html")=author
+      .ts-social-list-01.align-right
+        a.hcl--facebook(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="facebook")
+          i.ts-icon.lab.la-facebook-square
+        a.hcl--twitter(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="twitter")
+          i.ts-icon.lab.la-twitter
+        a.hcl--instagram(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="instagram")
+          i.ts-icon.lab.la-instagram

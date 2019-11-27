@@ -35,3 +35,13 @@ mixin testimonial07(desc, name, title, avatar)
       .testimonial-info
         h5.testimonial-name=name
         span.testimonial-title=title
+
+mixin testimonial08(avatar, name, title, desc)
+  .ts-testimonial-card-04
+    .card-body
+      p.testimonial-card-content=desc
+    .card-cover
+      img.card-img(src=avatar, alt='cover')
+      .testimonial-card-info
+        h4.testimonial-card-name=name
+        p.testimonial-card-title=title

@@ -17,9 +17,9 @@
   &-slider {
   }
 
-  &-why-us {
+  &-about-us {
     .thumb {
-      min-width: 180px;
+      width: 100%;
     }
 
     [class^="list-style-"] {
@@ -27,46 +27,153 @@
       flex-wrap: wrap;
 
       li {
-        width: 50%;
-        padding-right: 8px;
-        padding-bottom: 15px;
+        width: calc(50% - 15px);
+        padding-bottom: 10px;
       }
     }
   }
 
-  &-testimonial {
-    background-image: url("http://templates.thememodern.com/dotted/images/Testimonials/bg1.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    position: relative;
-    perspective: 3px;
+  // &-why-us {
+  //   .thumb {
+  //     min-width: 180px;
+  //   }
 
-    .ts-overlay {
-      opacity: 0.7;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: color;
-      // background: linear-gradient(-45deg, #1e2f23, #34623f, #3fa037, #3f3e42);
-      // background-size: 400% 400%;
-      // animation: gradientBG 15s ease infinite;
+  //   [class^="list-style-"] {
+  //     display: flex;
+  //     flex-wrap: wrap;
+
+  //     li {
+  //       width: 50%;
+  //       padding-right: 8px;
+  //       padding-bottom: 15px;
+  //     }
+  //   }
+  // }
+
+  &-testimonial {
+    padding-top: 80px;
+    padding-bottom: 25px;
+    position: relative;
+
+    [class^="ts-section-heading"] {
+      margin-bottom: 0;
     }
 
-    // @keyframes gradientBG {
-    //   0% {
-    //     background-position: 0% 50%;
-    //   }
-    //   50% {
-    //     background-position: 100% 50%;
-    //   }
-    //   100% {
-    //     background-position: 0% 50%;
-    //   }
-    // }
+    .owl-item {
+      padding: 40px 0 56px 0;
+    }
+
+    .carousel {
+      z-index: 1;
+      position: relative;
+    }
+
+    @keyframes move_wave {
+      0% {
+        transform: translateX(0) translateZ(0) scaleY(1);
+      }
+      50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55);
+      }
+      100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1);
+      }
+    }
+    .waveWrapper {
+      overflow: hidden;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      margin: auto;
+      z-index: 0;
+    }
+    .waveWrapperInner {
+      position: absolute;
+      width: 100%;
+      overflow: hidden;
+      height: 100%;
+      bottom: -1px;
+      background-image: linear-gradient(to top, $color1 10%, $color7 80%);
+    }
+    .bgTop {
+      z-index: 15;
+      opacity: 0.5;
+    }
+    .bgMiddle {
+      z-index: 10;
+      opacity: 0.75;
+    }
+    .bgBottom {
+      z-index: 5;
+    }
+    .wave {
+      position: absolute;
+      left: 0;
+      width: 200%;
+      height: 100%;
+      background-repeat: repeat no-repeat;
+      background-position: 0 bottom;
+      transform-origin: center bottom;
+    }
+    .waveTop {
+      background-size: 50% 100px;
+      background-image: url(../images/wave-top.png);
+    }
+    .waveAnimation .waveTop {
+      animation: move-wave 3s;
+      animation-delay: 1s;
+    }
+    .waveMiddle {
+      background-size: 50% 120px;
+      background-image: url(../images/wave-mid.png);
+    }
+    .waveAnimation .waveMiddle {
+      animation: move_wave 10s linear infinite;
+    }
+    .waveBottom {
+      background-size: 50% 100px;
+      background-image: url(../images/wave-bot.png);
+    }
+    .waveAnimation .waveBottom {
+      animation: move_wave 15s linear infinite;
+    }
   }
+
+  // &-testimonial {
+  //   background-image: url("http://templates.thememodern.com/dotted/images/Testimonials/bg1.jpg");
+  //   background-size: cover;
+  //   background-position: center;
+  //   background-attachment: fixed;
+  //   position: relative;
+  //   perspective: 3px;
+
+  //   .ts-overlay {
+  //     opacity: 0.7;
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     width: 100%;
+  //     height: 100%;
+  //     background-color: color;
+  //     // background: linear-gradient(-45deg, #1e2f23, #34623f, #3fa037, #3f3e42);
+  //     // background-size: 400% 400%;
+  //     // animation: gradientBG 15s ease infinite;
+  //   }
+
+  //   // @keyframes gradientBG {
+  //   //   0% {
+  //   //     background-position: 0% 50%;
+  //   //   }
+  //   //   50% {
+  //   //     background-position: 100% 50%;
+  //   //   }
+  //   //   100% {
+  //   //     background-position: 0% 50%;
+  //   //   }
+  //   // }
+  // }
 
   &-partner {
     .item {
@@ -80,6 +187,22 @@
       &:hover {
         opacity: 1;
       }
+    }
+  }
+
+  &-footer {
+    position: relative;
+    background: url("https://images.unsplash.com/photo-1510130146128-7a7b6afb6f9d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+    background-size: cover;
+    background-position: center;
+
+    .ts-overlay {
+      opacity: 1;
+      background-color: rgba($black, 0.9);
+    }
+
+    .copyright-02 {
+      position: relative;
     }
   }
 }

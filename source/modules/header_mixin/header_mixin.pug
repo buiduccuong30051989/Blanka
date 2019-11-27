@@ -180,37 +180,45 @@ mixin boxInfo05
       span  North cost, USA
 
 mixin partner
-  .carousel.arrows-square.arrows-dark(
-    data-items="5" 
-    data-items-md="4" 
-    data-items-sm="2" 
-    data-items-xs="1" 
-    data-margin="20"
-    data-dots="false"
-    data-arrows="true" 
-    data-autoplay="true" 
-    data-autoplay-timeout="3000" 
-    data-loop="true")
-    .item
-      .border
-        a(href="#")
-          img(src="images/partner-logo-01.svg", alt='cover')
-    .item
-      .border
-        a(href="#")
-          img(src="images/partner-logo-02.svg", alt='cover')
-    .item
-      .border
-        a(href="#")
-          img(src="images/partner-logo-03.svg", alt='cover')
-    .item
-      .border
-        a(href="#")
-          img(src="images/partner-logo-04.svg", alt='cover')
-    .item
-      .border
-        a(href="#")
-          img(src="images/partner-logo-05.svg", alt='cover')
+  .home-01-partner.py-lg-7.py-5
+    .container
+      .row
+        .col-lg-12
+          .ts-section-heading-01
+            h2 Respective Partners
+      .row
+        .col-lg-12
+          .carousel.arrows-square.arrows-dark(
+            data-items="5" 
+            data-items-md="4" 
+            data-items-sm="2" 
+            data-items-xs="1" 
+            data-margin="20"
+            data-dots="false"
+            data-arrows="true" 
+            data-autoplay="true" 
+            data-autoplay-timeout="3000" 
+            data-loop="true")
+            .item
+              .border
+                a(href="#")
+                  img(src="images/partner-logo-01.svg", alt='cover')
+            .item
+              .border
+                a(href="#")
+                  img(src="images/partner-logo-02.svg", alt='cover')
+            .item
+              .border
+                a(href="#")
+                  img(src="images/partner-logo-03.svg", alt='cover')
+            .item
+              .border
+                a(href="#")
+                  img(src="images/partner-logo-04.svg", alt='cover')
+            .item
+              .border
+                a(href="#")
+                  img(src="images/partner-logo-05.svg", alt='cover')
 
 mixin groupText
   .row-g-40
@@ -315,3 +323,15 @@ mixin header01
             i.ts-icon.la.la-bars.fs--22
   nav#js-mobile-menu-btn
     +navigation
+
+mixin boxCta01
+  .container
+    .row
+      .col-lg-12
+        .ts-box-cta-01.bg-white
+          .left.pr-lg-4
+            h3.box-cta-title Quisque hendrerit sed lorem nec ornare. Proin sed turpis at odio molestie cursus.
+            p.box-cta-desc Fusce nec velit elementum arcu tincidunt venenatis blandit id lorem. Cras commodo risus massa, at volutpat neque hendrerit a. Ut sed auctor nisl. Quisque pulvinar urna nec diam congue, quis accumsan arcu dapibus.
+          .right
+            a(href="/").ts-btn.btn-color1.btn-lg PURCHASE NOW 
+              i.ts-icon.la.la-arrow-circle-right

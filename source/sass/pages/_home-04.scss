@@ -1,19 +1,19 @@
 .home-04 {
-  &-about-us {
-    .thumb {
-      width: 100%;
-    }
+  // &-about-us {
+  //   .thumb {
+  //     width: 100%;
+  //   }
 
-    [class^="list-style-"] {
-      display: flex;
-      flex-wrap: wrap;
+  //   [class^="list-style-"] {
+  //     display: flex;
+  //     flex-wrap: wrap;
 
-      li {
-        width: calc(50% - 15px);
-        padding-bottom: 10px;
-      }
-    }
-  }
+  //     li {
+  //       width: calc(50% - 15px);
+  //       padding-bottom: 10px;
+  //     }
+  //   }
+  // }
 
   &-testimonial {
     padding-top: 80px;
@@ -133,16 +133,16 @@
     }
   }
 
-  &-footer {
-    position: relative;
+  // &-footer {
+  //   position: relative;
 
-    .ts-overlay {
-      opacity: 1;
-      background-color: rgba($color8, 0.9);
-    }
+  //   .ts-overlay {
+  //     opacity: 1;
+  //     background-color: rgba($color8, 0.9);
+  //   }
 
-    .copyright-02 {
-      position: relative;
-    }
-  }
+  //   .copyright-02 {
+  //     position: relative;
+  //   }
+  // }
 }
