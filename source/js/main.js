@@ -20,6 +20,9 @@ $(document).ready(function() {
   if ($carousel.length > 0) {
     $carousel.each(function() {
       var elem = $(this);
+      var customNextButton = elem.attr('data-next');
+      var customPrevButton = elem.attr('data-prev');
+
       elem.options = {
         nav: elem.attr('data-arrows'),
         dots: elem.attr('data-dots'),
@@ -98,6 +101,18 @@ $(document).ready(function() {
         },
         responsive: elem.responsive
       });
+
+      if(customNextButton) {
+        $('.' + customNextButton).click(function() {
+          elem.trigger('next.owl.carousel');
+        });
+      }
+
+      if(customPrevButton) {
+        $('.' + customPrevButton).click(function() {
+          elem.trigger('prev.owl.carousel');
+        });
+      }
     });
   } // tooltip
 

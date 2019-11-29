@@ -11,75 +11,26 @@ append head
   title="Home Page - 03"
   link(href="css/main.min.css" rel="stylesheet")
 append header
-  .header-container.fixed-top
-    .ts-header.ts-header-09.bg-transparent
-      .ts-header-inner
-        .ts-header-left.flex-grow-1
-          a.ts-header-logo-wrap.d-inline-flex.pr-5.mr-5(href="index.html")
-            img.header-logo(src="images/logo-light.png", alt="logo")
-          nav.ts-main-menu.d-none.d-lg-inline-flex.sub-icon.style-03
-            +navigation
-        .ts-header-right
-          .ts-header-control
-            .item.mr-4.ts-icon-box-info-02.in-dark
-              .ts-box-square-01
-                i.ts-icon.la.la-phone
-              .content
-                a(href="tel:0110-126-1111") 0110-126-1111
-            .item
-              a(href='#').ts-btn.btn-color1 Get A Quote
-        a(href="#js-mobile-menu-btn").ts-btn-mobile-menu.in-dark
-          i.ts-icon.la.la-bars
+  +headerHome03
+
 append content
   .home-03-slider
     img(src="https://seniorthemes.com/images/home-04-slider-08.jpg")
     //- img(src="http://templates.thememodern.com/finance/images/Slider/10.jpg")
   
-  .home-01-services.py-7
+  .home-03-services.py-lg-7.py-5
     .container
-      //- .row
-      //-   .col-lg-12
-      //-     .ts-section-heading-01.align-center
-      //-       h2 Choose Dotted Template For Your Purpose
-      //-     p.font-italic.text-center Phasellus id lacus neque. Proin vestibulum leo at turpis rhoncus, sed lacinia sem mollis. Etiam cursus bibendum dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam auctor eu nunc nec facilisis. Duis in felis eget eros tristique ornare. Maecenas volutpat, nisi id pretium imperdiet, odio neque pellentesque erat.
       .row-g-45
         .col-lg-4
-          .ts-services-card-02
-            a(href="services_01.html").card-cover
-              img.card-img(src='https://source.unsplash.com/user/erondu/720x340', alt='cover')
-              h2.services-title Finance Invesment
-            .card-body
-              p.services-desc Businesses are increasingly affected by tax, legislative..., understanding the impact of these developments on business operations...
-            .card-footer
-              a(href="services_01.html").services-card-readmore
-                i.ts-icon.la.la-arrow-right.pr-1
-                | Learn More
+          +services11('https://source.unsplash.com/user/erondu/720x340', 'Finance Invesment', 'Businesses are increasingly affected by tax, legislative..., understanding the impact of these developments on business operations...')
                 
         .col-lg-4
-          .ts-services-card-02
-            a(href="services_01.html").card-cover
-              img.card-img(src='https://source.unsplash.com/720x340/?nature,water', alt='cover')
-              h2.services-title Finance Invesment
-            .card-body
-              p.services-desc Businesses are increasingly affected by tax, legislative..., understanding the impact of these developments on business operations...
-            .card-footer
-              a(href="services_01.html").services-card-readmore
-                i.ts-icon.la.la-arrow-right.pr-1
-                | Learn More
+          +services11('https://source.unsplash.com/720x340/?nature,water', 'Finance Invesment', 'Businesses are increasingly affected by tax, legislative..., understanding the impact of these developments on business operations...')
         
         .col-lg-4
-          .ts-services-card-02
-            a(href="services_01.html").card-cover
-              img.card-img(src='https://source.unsplash.com/collection/190727/720x340', alt='cover')
-              h2.services-title Finance Invesment
-            .card-body
-              p.services-desc Businesses are increasingly affected by tax, legislative..., understanding the impact of these developments on business operations...
-            .card-footer
-              a(href="services_01.html").services-card-readmore
-                i.ts-icon.la.la-arrow-right.pr-1
-                | Learn More
+          +services11('https://source.unsplash.com/collection/190727/720x340', 'Finance Invesment', 'Businesses are increasingly affected by tax, legislative..., understanding the impact of these developments on business operations...')
   
-  .home-03-about-us.bg--whitesmoke.py-7
+  .home-03-about-us.bg--whitesmoke.py-lg-7.py-5
     .container
       .row-g-40
         .col-lg-6.pr-lg-4
@@ -95,8 +46,14 @@ append content
             i.ts-icon.la.la-plus.pl-3
 
         .col-lg-6
-          .ts-section-heading-01
+          .ts-section-heading-01.has-controls
             h2 Testimonials
+            .group-carousel-controls
+              button.btn-carousel-01.testimonial-prev
+                i.ts-icon.las.la-angle-left
+              button.btn-carousel-01.testimonial-next
+                i.ts-icon.las.la-angle-right
+
           .testimonial-wrap
             .carousel(
               data-items="1" 
@@ -111,7 +68,9 @@ append content
               data-autoplay-timeout="9000"
               data-loop="true"
               data-animate-in="fadeIn"
-              data-animate-out="fadeOut")
+              data-animate-out="fadeOut"
+              data-next="testimonial-next"
+              data-prev="testimonial-prev")
               .item  
                 +testimonial07(
                   "We subscribe to Evaluate because of the accuracy, formatting, and speed. It lets us generate data on market or application areas with efficiency and reliability.",
@@ -143,34 +102,14 @@ append content
                   "Seo Specialist",
                   "https://i.pravatar.cc/120?img=5")
 
-  .home-03-counter-up.py-7
+  .home-03-counter-up.py-lg-7.py-5
     .ts-overlay
     .container
       .row
         .col-lg-12
           .ts-section-heading-01.align-center.in-dark.mb-5
             h2 More than 25 Years of Experience
-      .row
-        .col-lg-3
-          .counter-up-03
-            i.ts-icon.las.la-hand-holding-usd
-            p.counter.js-counter-up 30
-            span.desc Years of Experience
-        .col-lg-3
-          .counter-up-03
-            i.ts-icon.las.la-hand-holding-usd
-            p.counter.js-counter-up 30
-            span.desc Years of Experience
-        .col-lg-3
-          .counter-up-03
-            i.ts-icon.las.la-hand-holding-usd
-            p.counter.js-counter-up 30
-            span.desc Years of Experience
-        .col-lg-3
-          .counter-up-03
-            i.ts-icon.las.la-hand-holding-usd
-            p.counter.js-counter-up 30
-            span.desc Years of Experience
+      +counterUp02
   
   .home-03-commitment.bg--whitesmoke
     .container
@@ -208,286 +147,64 @@ append content
               .ts-progress
                 .progress-bar.bg--color1(role='progressbar' aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
 
-  .home-01-projects.py-7.bg--white
+  .home-01-projects.py-lg-7.py-5.bg--white
     .container
       .row
         .col-lg-12
-          .ts-section-heading-01
+          .ts-section-heading-01.has-controls
             h2 Our Latest Projects
-      .col-lg-12
+            .group-carousel-controls
+              button.btn-carousel-01.case-prev
+                i.ts-icon.las.la-angle-left
+              button.btn-carousel-01.case-next
+                i.ts-icon.las.la-angle-right
+
+      .col-lg-12    
         .row
-          .col.p-0
-            a(href='project_detail.html').ts-portfolio-06.rounded-0
-              .card-cover
-                img.card-img(src='https://picsum.photos/600/400?random=6', alt='cover')
-                .ts-overlay.portfolio-card-overlay
-                .card-cover-inner
-                  h4.portfolio-card-title Project Card 06
-                  .portfolio-card-divider
-                  p.portfolio-card-catalog Consultant
-                  p.portfolio-card-desc Commodo magna nulla nulla cillum sunt enim pariatur.
-          
-          .col.p-0
-            a(href='project_detail.html').ts-portfolio-06.rounded-0
-              .card-cover
-                img.card-img(src='https://picsum.photos/600/400?random=5', alt='cover')
-                .ts-overlay.portfolio-card-overlay
-                .card-cover-inner
-                  h4.portfolio-card-title Project Card 06
-                  .portfolio-card-divider
-                  p.portfolio-card-catalog Consultant
-                  p.portfolio-card-desc Commodo magna nulla nulla cillum sunt enim pariatur.
-          
-          .col.p-0
-            a(href='project_detail.html').ts-portfolio-06.rounded-0
-              .card-cover
-                img.card-img(src='https://picsum.photos/600/400?random=4', alt='cover')
-                .ts-overlay.portfolio-card-overlay
-                .card-cover-inner
-                  h4.portfolio-card-title Project Card 06
-                  .portfolio-card-divider
-                  p.portfolio-card-catalog Consultant
-                  p.portfolio-card-desc Commodo magna nulla nulla cillum sunt enim pariatur.
-          
-          .col.p-0
-            a(href='project_detail.html').ts-portfolio-06.rounded-0
-              .card-cover
-                img.card-img(src='https://picsum.photos/600/400?random=2', alt='cover')
-                .ts-overlay.portfolio-card-overlay
-                .card-cover-inner
-                  h4.portfolio-card-title Project Card 06
-                  .portfolio-card-divider
-                  p.portfolio-card-catalog Consultant
-                  p.portfolio-card-desc Commodo magna nulla nulla cillum sunt enim pariatur.
+          .carousel.align-center-items(
+            data-items="4" 
+            data-items-md="3" 
+            data-items-sm="1" 
+            data-items-xs="1" 
+            data-margin="0"
+            data-center="false"
+            data-dots="false"
+            data-arrows="false" 
+            data-autoplay='false' 
+            data-hoverpause="true"
+            data-autoplay-timeout="9000"
+            data-loop="true"
+            data-next="case-next"
+            data-prev="case-prev")
+            - for(var i = 0; i < 7; i++) {
+              .item
+                +portfolio04('https://picsum.photos/600/400?random=' + i, 'Project Card 06', 'Consultant', 'Commodo magna nulla nulla cillum sunt enim pariatur.')
+            - }
   
-  .home-03-blogs.py-7.py-lg-5.bg--whitesmoke
+  .home-03-blogs.py-lg-7.py-5.bg--whitesmoke
     .container
       .row
         .col-lg-12
-          .ts-section-heading-01
+          .ts-section-heading-01.has-controls
             h2 Our Latest Posts
+            a.view-all(href="blog_list01.html") View All
       .row-g-40
         .col-lg-6.mb-40
-          .ts-blog-card-07
-            .card-cover
-              img.card-img(alt="cover", src='https://picsum.photos/400?random=13')
-              .blog-card-meta
-                p.blog-card-time
-                  i.ts-icon.la.la-clock
-                  | Oct 15, 2019
-                p.blog-card-catalog
-                  i.ts-icon.la.la-tags
-                  a(href="blog_list01.html") Skills
-                  a(href="blog_list01.html") Financial
-                p.blog-card-author
-                  i.ts-icon.la.la-user-tie
-                  | John Doe
-            .card-body
-              h3.blog-card-title
-                a(href="blog_detail.html") Blog Card 07
-              p.desc With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...
-              .card-footer
-                a(href="blog_detail.html").blog-card-readmore
-                  | Continue Reading
-                  i.ts-icon.la.la-angle-right
+          +blog11('', 'Blog Card 07', ['Skills', 'Financial'], 'Adam Levine', 'Oct 15, 2019', 'https://picsum.photos/760?random=13', 'With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...')
 
         .col-lg-6.mb-40
-          .ts-blog-card-07.align-right
-            .card-cover
-              img.card-img(alt="cover", src='https://picsum.photos/400?random=15')
-              .blog-card-meta
-                p.blog-card-time
-                  i.ts-icon.la.la-clock
-                  | Oct 15, 2019
-                p.blog-card-catalog
-                  i.ts-icon.la.la-tags
-                  a(href="blog_list01.html") Skills
-                  a(href="blog_list01.html") Financial
-                p.blog-card-author
-                  i.ts-icon.la.la-user-tie
-                  | John Doe
-            .card-body
-              h3.blog-card-title 
-                a(href="blog_detail.html") Blog Card 07
-              p.desc With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...
-              .card-footer
-                a(href="blog_detail.html").blog-card-readmore
-                  | Continue Reading
-                  i.ts-icon.la.la-angle-right
+          +blog11('align-right', 'Blog Card 07', ['Skills', 'Financial'], 'Adam Levine', 'Oct 15, 2019', 'https://picsum.photos/760?random=14', 'With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...')
         
         .col-lg-6
-          .ts-blog-card-07
-            .card-cover
-              img.card-img(alt="cover", src='https://picsum.photos/400?random=7')
-              .blog-card-meta
-                p.blog-card-time
-                  i.ts-icon.la.la-clock
-                  | Oct 15, 2019
-                p.blog-card-catalog
-                  i.ts-icon.la.la-tags
-                  a(href="blog_list01.html") Skills
-                  a(href="blog_list01.html") Financial
-                p.blog-card-author
-                  i.ts-icon.la.la-user-tie
-                  | John Doe
-            .card-body
-              h3.blog-card-title
-                a(href="blog_detail.html") Blog Card 07
-              p.desc With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...
-              .card-footer
-                a(href="blog_detail.html").blog-card-readmore
-                  | Continue Reading
-                  i.ts-icon.la.la-angle-right
+          +blog11('', 'Blog Card 07', ['Skills', 'Financial'], 'Adam Levine', 'Oct 15, 2019', 'https://picsum.photos/760?random=15', 'With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...')
                   
         .col-lg-6
-          .ts-blog-card-07.align-right
-            .card-cover
-              img.card-img(alt="cover", src='https://picsum.photos/400?random=12')
-              .blog-card-meta
-                p.blog-card-time
-                  i.ts-icon.la.la-clock
-                  | Oct 15, 2019
-                p.blog-card-catalog
-                  i.ts-icon.la.la-tags
-                  a(href="blog_list01.html") Skills
-                  a(href="blog_list01.html") Financial
-                p.blog-card-author
-                  i.ts-icon.la.la-user-tie
-                  | John Doe
-            .card-body
-              h3.blog-card-title 
-                a(href="blog_detail.html") Blog Card 07
-              p.desc With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...
-              .card-footer
-                a(href="blog_detail.html").blog-card-readmore
-                  | Continue Reading
-                  i.ts-icon.la.la-angle-right
+          +blog11('align-right', 'Blog Card 07', ['Skills', 'Financial'], 'Adam Levine', 'Oct 15, 2019', 'https://picsum.photos/760?random=16', 'With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...')
   
-  .home-01-partner.py-7.bg--white
-    .container
-      .row
-        .col-lg-12
-          .ts-section-heading-01
-            h2 Respective Partners
-      .row
-        .col-lg-12
-          .carousel.arrows-square.arrows-dark(
-            data-items="5" 
-            data-items-md="4" 
-            data-items-sm="2" 
-            data-items-xs="1" 
-            data-margin="20"
-            data-dots="false"
-            data-arrows="true" 
-            data-autoplay="true" 
-            data-autoplay-timeout="3000" 
-            data-loop="true")
-            .item
-              .border
-                a(href="#")
-                  img(src="images/partner-logo-01.svg", alt='cover')
-            .item
-              .border
-                a(href="#")
-                  img(src="images/partner-logo-02.svg", alt='cover')
-            .item
-              .border
-                a(href="#")
-                  img(src="images/partner-logo-03.svg", alt='cover')
-            .item
-              .border
-                a(href="#")
-                  img(src="images/partner-logo-04.svg", alt='cover')
-            .item
-              .border
-                a(href="#")
-                  img(src="images/partner-logo-05.svg", alt='cover')
+  +partner
+  
+  +footer05
 
-  //- .home-01-cta.bg--whitesmoke.py-7.py-lg-5
-  //-   .container
-  //-     .row
-  //-       .col-lg-12
-  //-         .ts-box-cta-01.bg--white
-  //-           .left.pr-lg-4
-  //-             h3.box-cta-title Quisque hendrerit sed lorem nec ornare. Proin sed turpis at odio molestie cursus.
-  //-             p.box-cta-desc Fusce nec velit elementum arcu tincidunt venenatis blandit id lorem. Cras commodo risus massa, at volutpat neque hendrerit a. Ut sed auctor nisl. Quisque pulvinar urna nec diam congue, quis accumsan arcu dapibus.
-  //-           .right
-  //-             a(href="/").ts-btn.btn-orange.btn-lg PURCHASE NOW 
-  //-               i.ts-icon.la.la-arrow-circle-right
-  
-  //- .bg--whitesmoke.py-7.py-lg-5
-  
-  .home-03-footer
-    .footer-01.py-lg-7.py-5
-      .ts-overlay
-      .container
-        .row.footer-inner
-          .col-lg-4.mb-5.mb-lg-0.pr-lg-5
-            .widget-text.company-info.in-dark
-              h4.widget-title-01.in-dark Company Name
-              p Without finance, plans stay as plans. That’s why we exists, we here to help clients make the most of these opportunities. We take the time to gain a deep understanding of our clients' financial requirements to bringing a passion for client success.
-              
-          .col
-            .widget-quick-links-02.in-dark.style-minus
-              h4.widget-title-01.in-dark Our Services
-              ul
-                li
-                  a(href="/") Home
-                li
-                  a(href="/") About Us
-                li
-                  a(href="/") Our Services
-                li
-                  a(href="/") Cases Study
-          .col
-            .widget-quick-links-02.in-dark.style-minus
-              h4.widget-title-01.in-dark Useful Links
-              ul
-                li
-                  a(href="/") Home
-                li
-                  a(href="/") About Us
-                li
-                  a(href="/") Our Services
-                li
-                  a(href="/") Cases Study
-          .col-lg-3
-            .widget-quick-links-02.in-dark
-              h4.widget-title-01.in-dark Our Contact
-              .info
-                .item.mb-3
-                  i.ts-icon.la.la-home.pr-2.fs--18
-                  span 151 Hudson St, New York, NY
-                .item.mb-3
-                  i.ts-icon.la.la-phone.pr-2.fs--18
-                  a(href="tel:18604193333") 1860-419-3333
-                .item.mb-3
-                  i.ts-icon.la.la-envelope.pr-2.fs--18
-                  a(href="mailto:contact@ananci.com") consultant@bifirm.com
-                .item
-                  i.ts-icon.la.la-clock.pr-2.fs--18
-                  span Mon - Fri: 8am - 6pm
-
-    .copyright-02
-      .container
-        .copyright-inner.justify-content-center.justify-content-md-between
-          .copyright-left
-            p Copyright © 2019 
-              a(href="/")
-                strong  .Ananci 
-              | All Right Reserved
-          .copyright-right
-            a(href="#").square.square-sm.bg--fw-1.in-dark.hbg--facebook.ml-3
-              i.ts-icon.lab.la-facebook-square
-            a(href="#").square.square-sm.bg--fw-1.in-dark.hbg--twitter.ml-3
-              i.ts-icon.lab.la-twitter
-            a(href="#").square.square-sm.bg--fw-1.in-dark.hbg--instagram.ml-3
-              i.ts-icon.lab.la-instagram
-            a(href="#").square.square-sm.bg--fw-1.in-dark.hbg--linkedin.ml-3
-              i.ts-icon.lab.la-linkedin
-  a#to-the-top
-    i.ts-icon.la.la-angle-up
-  //- +footer01
   +control
 append plugins  
   +lib
@@ -504,52 +221,7 @@ append script
   //- script(src='revolution-slider/revolution/js/extensions/revolution.extension.parallax.min.js')
   //- script(src='revolution-slider/revolution/js/extensions/revolution.extension.slideanims.min.js')
   //- script(src='revolution-slider/revolution/js/extensions/revolution.extension.video.min.js')
+  script(src="js/extention/on-screen.min.js")
+  script(src="js/counter-up.min.js")
+  script(src="js/progress-bar.min.js")
   script(src="js/main.min.js")
-  script.
-    jQuery(document).ready(function($) {
-      'use strict';
-      $.fn.isInViewport = function() {
-        var elementTop = $(this).offset().top;
-        var elementBottom = elementTop + $(this).outerHeight();
-
-        var viewportTop = $(window).scrollTop();
-        var viewportBottom = viewportTop + $(window).height();
-
-        return elementBottom > viewportTop && elementTop < viewportBottom;
-      };
-    });
-
-    jQuery(document).ready(function($) {
-      'use strict';
-      $(window).on('resize scroll', function() {
-        $('.js-progress-bar').each(function() {
-          if ($(this).isInViewport()) {
-            var value = $(this)
-              .find('.progress-bar')
-              .attr('aria-valuenow');
-            if (value > 100) value = 100;
-            var progressBar = $(this).find('.progress-bar');
-            var percentageText = $(this).find('.ts-progress-percentage');
-            var currentValue = $(percentageText).text();
-            if (currentValue !== value) {
-              $(percentageText)
-                .prop('Counter', 0)
-                .animate(
-                  {
-                    Counter: value
-                  },
-                  {
-                    duration: 1000,
-                    easing: 'swing',
-                    step: function(now) {
-                      $(percentageText).text(Math.ceil(now));
-                    }
-                  }
-                );
-            }
-            progressBar.css('width', value + '%');
-            $(this).removeClass('js-progress-bar');
-          }
-        });
-      });
-    });

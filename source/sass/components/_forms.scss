@@ -14,13 +14,13 @@
   transition: $transition-base;
   font-weight: 300;
   font-size: 13px;
-  line-height: 32px;
+  line-height: 28px;
 
   @include placeholder {
     color: $white;
     font-weight: 300;
     font-size: 13px;
-    line-height: 32px;
+    line-height: 28px;
   }
 
   &:focus {

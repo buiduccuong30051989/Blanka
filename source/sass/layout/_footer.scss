@@ -108,10 +108,8 @@
 .ts-footer-05 {
   .ts-footer-info-inner {
     border-radius: 2px;
-    // background-color: $black;
-    background: linear-gradient(to top right, $color7, $black);
+    background: linear-gradient(to top right, color(color3, 1), $black);
     padding: 40px 30px;
-    // position: absolute;
     transform: translateY(-50%);
     z-index: 1;
     width: 100%;
@@ -178,7 +176,7 @@
     // background-color: $color8;
     padding: 17px 0;
     border-top: 1px solid rgba($white, 0.1);
-    color: $color3;
+    color: rgba($white, 0.7);
 
     .copyright-inner {
       display: flex;
@@ -231,9 +229,9 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 12px 0;
+  padding: 17px 0;
   border-top: 1px solid rgba($white, 0.1);
-  color: $color3;
+  color: rgba($white, 0.7);
 
   .copyright-inner {
     display: flex;

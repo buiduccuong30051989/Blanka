@@ -73,6 +73,32 @@
     margin-bottom: 0;
   }
 
+  &.has-controls {
+    display: flex;
+    align-items: center;
+
+    .group-carousel-controls {
+      margin-left: 20px;
+
+      button:first-child {
+        margin-right: 4px;
+      }
+    }
+
+    .view-all {
+      display: inline-flex;
+      line-height: 1;
+      font-size: 16px;
+      padding-left: 20px;
+      margin-left: 20px;
+      border-left: 1px solid rgba($black, .1);
+
+      &:hover {
+        color: color(color1, 1);
+      }
+    }
+  }
+
   &.align-center {
     text-align: center;
   }

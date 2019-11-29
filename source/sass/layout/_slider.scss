@@ -302,6 +302,29 @@
   }
 }
 
+.btn-carousel-01 {
+  background-color: transparent;
+  border-color: $gray80;
+  color: $gray60;
+  padding: 0;
+  width: 25px;
+  line-height: 22px;
+  text-align: center;
+  transition: all .35s;
+  font-size: 16px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: color(color1, 1);
+    background-color: color(color1, 1);
+    border-style: solid;
+    color: $white;
+    outline: 0;
+    box-shadow: none;
+  }
+}
+
 .block-caption-01 {
   width: 100%;
   max-width: 767px;

@@ -26,12 +26,12 @@ $grey: #9e9e9e;
 // $color1: #1f5ca9;
 $color1: #3fa037;
 $color2: lighten(saturate(adjust-hue($color1, -1), 14.19), 11.18);
-$color3: #c1bebc;
+$color3: darken(desaturate(adjust-hue($color1, 22), 26.76), 27.06);
 $color4: #e8e7d5;
 $color5: #3f3e42;
-$color6: #34623F;
-$color7: #1E2F23;
-$color8: darken(desaturate(adjust-hue($color1, 11), 62.90), 31.96);
+$color6: #34623f;
+$color7: darken(desaturate(adjust-hue($color1, 22), 26.76), 27.06);
+$color8: darken(desaturate(adjust-hue($color1, 11), 62.9), 31.96);
 $dynamicColor: #ffffff;
 
 /// shades of grey
@@ -305,11 +305,11 @@ $lineAwesome: "Line Awesome Free";
 $lato: "Lato", sans-serif;
 $oswald: "Oswald", sans-serif;
 $roboto: "Roboto", sans-serif;
-$lora: 'Lora', serif;
+$lora: "Lora", serif;
 
 /// Transitions
 /// -------------------------------------------------
-$transition-base: all .35s;
+$transition-base: all 0.35s;
 
 /// Boder radius
 /// -------------------------------------------------

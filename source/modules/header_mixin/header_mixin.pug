@@ -184,8 +184,13 @@ mixin partner
     .container
       .row
         .col-lg-12
-          .ts-section-heading-01
+          .ts-section-heading-01.has-controls
             h2 Respective Partners
+            .group-carousel-controls
+              button.btn-carousel-01.partner-prev
+                i.ts-icon.las.la-angle-left
+              button.btn-carousel-01.partner-next
+                i.ts-icon.las.la-angle-right
       .row
         .col-lg-12
           .carousel.arrows-square.arrows-dark(
@@ -195,10 +200,12 @@ mixin partner
             data-items-xs="1" 
             data-margin="20"
             data-dots="false"
-            data-arrows="true" 
+            data-arrows="false" 
             data-autoplay="true" 
             data-autoplay-timeout="3000" 
-            data-loop="true")
+            data-loop="true"
+            data-next="partner-next"
+            data-prev="partner-prev")
             .item
               .border
                 a(href="#")
@@ -243,6 +250,29 @@ mixin counter01
     .item.counter-up-01
       p.counter.js-counter-up.color--color20 192
       span.desc.color--fb06 Super Advisor
+
+mixin counterUp02
+  .row
+    .col-lg-3
+      .counter-up-03
+        i.ts-icon.las.la-hand-holding-usd
+        p.counter.js-counter-up 30
+        span.desc Years of Experience
+    .col-lg-3
+      .counter-up-03
+        i.ts-icon.las.la-hand-holding-usd
+        p.counter.js-counter-up 30
+        span.desc Years of Experience
+    .col-lg-3
+      .counter-up-03
+        i.ts-icon.las.la-hand-holding-usd
+        p.counter.js-counter-up 30
+        span.desc Years of Experience
+    .col-lg-3
+      .counter-up-03
+        i.ts-icon.las.la-hand-holding-usd
+        p.counter.js-counter-up 30
+        span.desc Years of Experience
 
 mixin listFeature
   ul.list-unstyled
@@ -335,3 +365,148 @@ mixin boxCta01
           .right
             a(href="/").ts-btn.btn-color1.btn-lg PURCHASE NOW 
               i.ts-icon.la.la-arrow-circle-right
+
+mixin headerHome01
+  //- headroom .header-container.home-01-header.ts-header-07.fixed-top#js-headroom-fixed
+  //- sticky .header-container.home-01-header.ts-header-07.fixed-top.header-sticky
+  //- .header-menu.d-none.d-lg-block#js-header-sticky.full-width
+  .header-container.home-01-header.ts-header-07.fixed-top.header-sticky
+    .header-info
+      .container
+        .header-info-inner
+          .header-info-left
+            a.header-logo-wrap(href="index.html")
+              img.header-logo(src="images/logo-dark.png", alt="logo")
+          .header-info-right
+            .item.ts-icon-box-info-03
+              .icon.color--color1
+                i.ts-icon.la.la-map-marker
+              .content
+                span 3005 Figueroa 
+                span Los Angeles 10018 US.
+            .item.ts-icon-box-info-03
+              .icon.color--color1
+                i.ts-icon.la.la-clock
+              .content
+                span Mon - Sat 8.00 - 18.00
+                span Sunday CLOSED
+            a(href="tel:0944764545").item.ts-icon-box-info-03
+              .icon.color--color1
+                i.ts-icon.la.la-phone
+              .content
+                strong.fs--14 0944 76 4545
+                span Free call
+          a(href="#js-mobile-menu-btn").ts-btn-mobile-menu
+            i.ts-icon.la.la-bars
+    .header-menu.d-none.d-lg-block#js-header-sticky.full-width
+      .container
+        .header-menu-inner
+          .header-menu-left
+            nav.ts-main-menu.style-01.sub-icon.caret
+              +navigation
+          .header-menu-right.pl-4
+            .ts-social-list-01.in-dark.align-right.pl-3
+              +tsSocialList01
+
+mixin headerHome02
+  //- headroom .header-container.home-02-header#js-headroom-static
+  //- sticky .header-container.home-02-header.header-sticky
+  //- .ts-header.ts-header-08.bg--white#js-header-sticky
+  .header-container.home-02-header.header-sticky
+    .ts-topbar.ts-topbar-06.in-dark.bg--color1
+      .container
+        .ts-topbar-06-inner
+          .ts-topbar-06-left
+            .item.ts-language.in-dark.justify-content-end
+              +selectLanguage
+          .ts-topbar-06-right
+            .item.ts-icon-box-info-01.in-dark
+              i.ts-icon.la.la-map-marker
+              span 1010 Avenue of the Moon
+            .item.ts-icon-box-info-01.in-dark
+              i.ts-icon.la.la-clock
+              span Mon - Sat 8.00 - 18.00. Sunday CLOSED
+            .item.ts-icon-box-info-01.in-dark
+              i.ts-icon.la.la-phone
+              a(href="tel:18604193333") +321 123 456 7
+    .ts-header.ts-header-08.bg--white#js-header-sticky
+      .container
+        .ts-header-08-inner
+          .ts-header-08-left
+            a.ts-header-logo-wrap(href="index.html")
+              img.header-logo(src="images/logo-dark.png", alt="logo")
+          .ts-header-08-right.d-none.d-lg-flex
+            nav.ts-main-menu.mr-5.style-02.divider.active-background-skewX
+              +navigation
+            .ts-header-08-control
+              .item.ts-social-list-01.align-right
+                a(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="facebook")
+                  i.ts-icon.lab.la-facebook-square
+                a(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="twitter")
+                  i.ts-icon.lab.la-twitter
+                a(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="instagram")
+                  i.ts-icon.lab.la-instagram
+              .item.search-popup-btn.js-search-popup-btn
+                +popupSearch
+          a(href="#js-mobile-menu-btn").ts-btn-mobile-menu
+            i.ts-icon.la.la-bars
+
+mixin headerHome03
+  //- headroom .header-container.home-03-header.fixed-top#js-headroom-fixed
+  //- sticky .header-container.home-03-header.fixed-top#js-header-fixed-sticky
+  .header-container.home-03-header.fixed-top#js-header-fixed-sticky
+    .ts-header.ts-header-09
+      .ts-header-inner
+        .ts-header-left.flex-grow-1
+          a.ts-header-logo-wrap.d-inline-flex.pr-5.mr-5(href="index.html")
+            img.header-logo(src="images/logo-light.png", alt="logo")
+          nav.ts-main-menu.d-none.d-lg-inline-flex.sub-icon.style-03
+            +navigation
+        .ts-header-right
+          .ts-header-control
+            .item.mr-4.ts-icon-box-info-02.in-dark
+              .ts-box-square-01
+                i.ts-icon.la.la-phone
+              .content
+                a(href="tel:0110-126-1111") 0110-126-1111
+            .item
+              a(href='#').ts-btn.btn-color1 Get A Quote
+        a(href="#js-mobile-menu-btn").ts-btn-mobile-menu.in-dark
+          i.ts-icon.la.la-bars
+
+mixin photoSwiper
+  // Root element of PhotoSwipe. Must have class pswp.
+  .pswp(tabindex="-1" role="dialog" aria-hidden="true")
+    //
+      Background of PhotoSwipe.
+      It's a separate element, as animating opacity is faster than rgba().
+    .pswp__bg
+    // Slides wrapper with overflow:hidden.
+    .pswp__scroll-wrap
+      // Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory.
+      // don't modify these 3 pswp__item elements, data is added later on.
+      .pswp__container
+        .pswp__item
+        .pswp__item
+        .pswp__item
+      // Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed.
+      .pswp__ui.pswp__ui--hidden
+        .pswp__top-bar
+          // Controls are self-explanatory. Order can be changed.
+          .pswp__counter
+          button.pswp__button.pswp__button--close(title="Close (Esc)")
+          button.pswp__button.pswp__button--share(title="Share")
+          button.pswp__button.pswp__button--fs(title="Toggle fullscreen")
+          button.pswp__button.pswp__button--zoom(title="Zoom in/out")
+          // Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR
+          // element will get class pswp__preloader--active when preloader is running
+          .pswp__preloader
+            .pswp__preloader__icn
+              .pswp__preloader__cut
+                .pswp__preloader__donut
+        .pswp__share-modal.pswp__share-modal--hidden.pswp__single-tap
+          .pswp__share-tooltip
+        button.pswp__button.pswp__button--arrow--left(title="Previous (arrow left)")
+        button.pswp__button.pswp__button--arrow--right(title="Next (arrow right)")
+        .pswp__caption
+          .pswp__caption__center

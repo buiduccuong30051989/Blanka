@@ -127,6 +127,10 @@
         }
       }
 
+      &-desc {
+        color: rgba($white, 0.7);
+      }
+
       &-meta {
         .time {
           @extend .color--fw-6;
@@ -1004,9 +1008,9 @@
       opacity: 0;
       background: linear-gradient(
         to bottom,
-        color(color7, 1) 0%,
-        color(color7, 0.9) 15%,
-        color(color7, 0) 100%
+        color(color3, 1) 0%,
+        color(color3, 0.9) 15%,
+        color(color3, 0) 100%
       );
       background-size: 100% 170%;
 

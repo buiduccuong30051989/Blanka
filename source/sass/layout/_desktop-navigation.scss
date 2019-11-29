@@ -689,7 +689,7 @@
 
         &:hover,
         &.active {
-          background-color: $color1;
+          background-color: color(color3, 1);
         }
 
         & > ul {
@@ -704,7 +704,7 @@
           }
 
           ul {
-            background-color: color(color7 ,1);
+            background-color: color(color3, 1);
 
             li {
               a {
@@ -771,6 +771,8 @@
   &.style-03 {
     & > ul {
       & > li {
+        position: relative;
+
         & > a {
           font-size: 1rem;
           color: $white;
@@ -780,6 +782,19 @@
 
         &:hover,
         &.active {
+          // &:after {
+          //   content: "";
+          //   width: 0;
+          //   height: 0;
+          //   border-top: 8px solid rgba($white, .7);
+          //   border-left: 8px solid transparent;
+          //   border-right: 8px solid transparent;
+          //   position: absolute;
+          //   top: 0;
+          //   left: 50%;
+          //   transform: translateX(-50%);
+          // }
+
           & > a {
             color: $white;
             opacity: 1;
@@ -806,7 +821,7 @@
 
           &:hover {
             background-color: $white;
-            
+
             & > a {
               color: $gray20;
             }

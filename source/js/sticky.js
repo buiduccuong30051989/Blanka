@@ -1,40 +1,102 @@
 $(document).ready(function() {
-  'user strict';
+  "user strict";
 
-  var stickyMenu = $('#js-sticked-menu');
-  var stickyMenuFixed = $('#js-sticked-menu-fixed');
-  if (stickyMenu.length > 0) {
-    var headerHeight = stickyMenu.height();
-    var headerWidth = $('#js-sticked-menu').width();
-    var offsetHeader = $('#js-sticked-menu').offset().top;
-    $('#js-sticked-menu').wrap("<div class='wrap-sticky'></div>");
-    $('.wrap-sticky').css({
-      width: headerWidth,
-      height: headerHeight
-    });
-    var header = new Headroom(document.querySelector('#js-sticked-menu'), {
+  var stickyStaticHeader = $("#js-headroom-static");
+  var stickyHeaderFixed = $("#js-headroom-fixed");
+  var stickyHeader = $("#js-header-sticky");
+  var fixedStickyHeader = $("#js-header-fixed-sticky");
+  if (stickyStaticHeader.length > 0) {
+    // var headerHeight = stickyStaticHeader.outerHeight(true);
+    setTimeout(function() {
+      var headerHeight = stickyStaticHeader.outerHeight(true);
+      var headerWidth = stickyStaticHeader.width();
+      var offsetHeader = stickyStaticHeader.offset().top;
+      stickyStaticHeader.wrap("<div class='wrap-sticky'></div>");
+      $(".wrap-sticky").css({
+        width: headerWidth,
+        height: headerHeight
+      });
+      var header = new Headroom(document.querySelector("#js-headroom-static"), {
+        tolerance: 5,
+        offset: headerHeight + offsetHeader,
+        classes: {
+          initial: "headroom",
+          pinned: "headroom--pinned",
+          unpinned: "headroom--unpinned"
+        }
+      });
+      header.init();
+
+      // Setup a timer
+      var timeout;
+
+      // Listen for scroll/resize events
+      window.addEventListener(
+        "scroll",
+        function(event) {
+          // If there's a timer, cancel it
+          if (timeout) {
+            window.cancelAnimationFrame(timeout);
+          }
+
+          // Setup the new requestAnimationFrame()
+          timeout = window.requestAnimationFrame(function() {
+            // Run our scroll functions
+            if ($(document).scrollTop() > offsetHeader + 200) {
+              $(".header-container").addClass("fixed-top");
+            } else {
+              $(".header-container").removeClass("fixed-top");
+            }
+          });
+        },
+        false
+      );
+    }, 1);
+  }
+
+  if (stickyHeaderFixed.length > 0) {
+    var headerHeight = stickyHeaderFixed.height();
+    var header = new Headroom(document.querySelector("#js-headroom-fixed"), {
       tolerance: 5,
-      offset: headerHeight + offsetHeader,
+      offset: headerHeight,
       classes: {
-        initial: 'headroom',
-        pinned: 'headroom--pinned',
-        unpinned: 'headroom--unpinned'
+        initial: "headroom",
+        pinned: "headroom--pinned",
+        unpinned: "headroom--unpinned"
       }
     });
     header.init();
   }
 
-  if (stickyMenuFixed.length > 0) {
-    var header = new Headroom(document.querySelector('#js-sticked-menu-fixed'), {
-      tolerance: 5,
-      offset: 200,
-      classes: {
-        initial: 'headroom',
-        pinned: 'headroom--pinned',
-        unpinned: 'headroom--unpinned'
+  if (stickyHeader.length > 0) {
+    var headerWidth = stickyHeader.width();
+    var headerHeight = stickyHeader.height();
+    stickyHeader.wrap("<div class='wrap-sticky'></div>");
+    $(".wrap-sticky").css({
+      width: headerWidth,
+      height: headerHeight
+    });
+
+    $(window).scroll(function() {
+      var headerContainerHeight = $(".header-container").height();
+      var headerHeight = stickyHeader.height();
+      var windowScroll = $(window).scrollTop();
+      if (windowScroll >= headerContainerHeight - headerHeight) {
+        stickyHeader.addClass("fixed-top");
+      } else {
+        stickyHeader.removeClass("fixed-top");
       }
     });
-    header.init();
+  }
+
+  if (fixedStickyHeader.length > 0) {
+    $(window).scroll(function() {
+      if ($(window).scrollTop() > 0) {
+        fixedStickyHeader.addClass('sticky-header');
+      } else {
+        fixedStickyHeader.removeClass('sticky-header');
+      }
+    });
   }
 
   // Polyfill for request animation frame
@@ -48,13 +110,13 @@ $(document).ready(function() {
 
   (function() {
     var lastTime = 0;
-    var vendors = ['ms', 'moz', 'webkit', 'o'];
+    var vendors = ["ms", "moz", "webkit", "o"];
     for (var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
       window.requestAnimationFrame =
-        window[vendors[x] + 'RequestAnimationFrame'];
+        window[vendors[x] + "RequestAnimationFrame"];
       window.cancelAnimationFrame =
-        window[vendors[x] + 'CancelAnimationFrame'] ||
-        window[vendors[x] + 'CancelRequestAnimationFrame'];
+        window[vendors[x] + "CancelAnimationFrame"] ||
+        window[vendors[x] + "CancelRequestAnimationFrame"];
     }
 
     if (!window.requestAnimationFrame)
@@ -75,39 +137,39 @@ $(document).ready(function() {
   })();
 
   // Setup a timer
-  var timeout;
+  // var timeout;
 
   // Listen for scroll/resize events
-  window.addEventListener(
-    'scroll',
-    function(event) {
-      // If there's a timer, cancel it
-      if (timeout) {
-        window.cancelAnimationFrame(timeout);
-      }
+  // window.addEventListener(
+  //   "scroll",
+  //   function(event) {
+  //     // If there's a timer, cancel it
+  //     if (timeout) {
+  //       window.cancelAnimationFrame(timeout);
+  //     }
 
-      // Setup the new requestAnimationFrame()
-      timeout = window.requestAnimationFrame(function() {
-        // Run our scroll functions
-        if ($(document).scrollTop() > offsetHeader + 200) {
-          $('.header-container').addClass('header-fixed');
-        } else {
-          $('.header-container').removeClass('header-fixed');
-        }
-      });
-    },
-    false
-  );
+  //     // Setup the new requestAnimationFrame()
+  //     timeout = window.requestAnimationFrame(function() {
+  //       // Run our scroll functions
+  //       if ($(document).scrollTop() > offsetHeader + 200) {
+  //         $(".header-container").addClass("header-fixed");
+  //       } else {
+  //         $(".header-container").removeClass("header-fixed");
+  //       }
+  //     });
+  //   },
+  //   false
+  // );
 
-  $(window).on('resize', function() {
-    if (stickyMenu.length > 0) {
-      var headerHeight = $('#js-sticked-menu').height();
-      var headerWidth = $('#js-sticked-menu').width();
-      var offsetHeader = $('#js-sticked-menu').offset().top;
-      $('.wrap-sticky').css({
-        width: headerWidth,
-        height: headerHeight
-      });
-    }
-  });
+  // $(window).on("resize", function() {
+  //   if (stickyMenu.length > 0) {
+  //     var headerHeight = $("#js-headroom-menu").height();
+  //     var headerWidth = $("#js-headroom-menu").width();
+  //     var offsetHeader = $("#js-headroom-menu").offset().top;
+  //     $(".wrap-sticky").css({
+  //       width: headerWidth,
+  //       height: headerHeight
+  //     });
+  //   }
+  // });
 });

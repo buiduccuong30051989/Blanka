@@ -45,3 +45,14 @@ mixin testimonial08(avatar, name, title, desc)
       .testimonial-card-info
         h4.testimonial-card-name=name
         p.testimonial-card-title=title
+
+mixin testimonial09(avatar, name, title, desc)
+  .ts-testimonial-card-05
+    .card-body
+      i.ts-icon.la.la-quote-right
+      p.testimonial-card-content=desc
+    .card-cover
+      img.card-img(src=avatar, alt='cover')
+      .testimonial-card-info
+        h4.testimonial-card-name=name
+        p.testimonial-card-title=title

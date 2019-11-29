@@ -166,3 +166,27 @@ mixin blog10(title, cat, cover, author, desc)
           i.ts-icon.lab.la-twitter
         a.hcl--instagram(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="instagram")
           i.ts-icon.lab.la-instagram
+
+mixin blog11(type, title, cat, author, time, cover, desc)
+  .ts-blog-card-07(class=type)
+    .card-cover
+      img.card-img(alt="cover", src=cover)
+      .blog-card-meta
+        p.blog-card-time
+          i.ts-icon.la.la-clock
+          =time
+        p.blog-card-catalog
+          i.ts-icon.la.la-tags
+          each val in cat
+            a(href="blog_list01.html")=val
+        p.blog-card-author
+          i.ts-icon.la.la-user-tie
+          =author
+    .card-body
+      h3.blog-card-title
+        a(href="blog_detail.html")=title
+      p.desc=desc
+      .card-footer
+        a(href="blog_detail.html").blog-card-readmore
+          | Continue Reading
+          i.ts-icon.la.la-angle-right          
