@@ -95,7 +95,7 @@
   text-align: center;
   color: rgba($white, 0.7);
   backdrop-filter: blur(5px);
-  background-color: rgba($black, 0.7);
+  background-color: rgba($color8, 0.8);
   padding: 20px 30px 40px 30px;
   position: relative;
 
@@ -115,5 +115,48 @@
   .desc {
     font-family: $oswald;
     font-weight: 300;
+  }
+}
+
+.counter-up-04 {
+  color: rgba($white, 0.7);
+  background-color: $whitesmoke;
+  padding: 20px 30px;
+  position: relative;
+  border-radius: 2px;
+  transition: box-shadow 0.35s;
+
+  .ts-icon {
+    font-size: 132px;
+    color: $gray20;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0.1;
+    transition: all 0.35s;
+  }
+
+  .counter {
+    font-size: 48px;
+    font-family: $oswald;
+    font-weight: 300;
+    margin-bottom: 0;
+    color: $gray20;
+  }
+
+  .desc {
+    font-family: $oswald;
+    font-weight: 300;
+    color: $gray40;
+    margin: 0;
+  }
+
+  &:hover {
+    @extend .shadow;
+
+    .ts-icon {
+      color: color(color1, 1);
+      opacity: .9;
+    }
   }
 }

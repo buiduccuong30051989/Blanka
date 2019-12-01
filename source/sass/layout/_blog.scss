@@ -1,3 +1,18 @@
 //
 // Layout :: Blog
 // --------------------------------------------------
+.blog-grid-01 {
+  .ts-blog-card-10 {
+    .card-footer {
+      [class^="blog-card"] {
+        label {
+          display: none;
+        }
+        
+        &:before {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

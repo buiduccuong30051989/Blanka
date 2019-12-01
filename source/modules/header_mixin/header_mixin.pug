@@ -1,7 +1,6 @@
 include ../navigation/navigation
 
 mixin popupSearch
-  i.control-icon.ts-icon.la.la-search
   .search-popup.js-search-popup
     .search-popup__logo
       img(src="images/logo-dark.png" alt="Logo")
@@ -346,7 +345,7 @@ mixin header01
               +navigation
             .header-01-control.d-flex.align-items-center
               .item.search-popup-btn.js-search-popup-btn.in-light.d-inline-flex.mr-3
-                +popupSearch
+                i.control-icon.ts-icon.la.la-search
               .item.btn-cart.has-notify.in-light.d-inline-flex
                 +cart
           a(href="#js-mobile-menu-btn").btn-mobile-menu.d-block.d-lg-none
@@ -359,6 +358,18 @@ mixin boxCta01
     .row
       .col-lg-12
         .ts-box-cta-01.bg-white
+          .left.pr-lg-4
+            h3.box-cta-title Quisque hendrerit sed lorem nec ornare. Proin sed turpis at odio molestie cursus.
+            p.box-cta-desc Fusce nec velit elementum arcu tincidunt venenatis blandit id lorem. Cras commodo risus massa, at volutpat neque hendrerit a. Ut sed auctor nisl. Quisque pulvinar urna nec diam congue, quis accumsan arcu dapibus.
+          .right
+            a(href="/").ts-btn.btn-color1.btn-lg PURCHASE NOW 
+              i.ts-icon.la.la-arrow-circle-right
+
+mixin boxCta02
+  .container
+    .row
+      .col-lg-12
+        .ts-box-cta-01.bg--whitesmoke
           .left.pr-lg-4
             h3.box-cta-title Quisque hendrerit sed lorem nec ornare. Proin sed turpis at odio molestie cursus.
             p.box-cta-desc Fusce nec velit elementum arcu tincidunt venenatis blandit id lorem. Cras commodo risus massa, at volutpat neque hendrerit a. Ut sed auctor nisl. Quisque pulvinar urna nec diam congue, quis accumsan arcu dapibus.
@@ -408,6 +419,45 @@ mixin headerHome01
             .ts-social-list-01.in-dark.align-right.pl-3
               +tsSocialList01
 
+mixin headerHome01Static
+  .header-container.home-01-header.ts-header-07.position-static
+    .header-info
+      .container
+        .header-info-inner
+          .header-info-left
+            a.header-logo-wrap(href="index.html")
+              img.header-logo(src="images/logo-dark.png", alt="logo")
+          .header-info-right
+            .item.ts-icon-box-info-03
+              .icon.color--color1
+                i.ts-icon.la.la-map-marker
+              .content
+                span 3005 Figueroa 
+                span Los Angeles 10018 US.
+            .item.ts-icon-box-info-03
+              .icon.color--color1
+                i.ts-icon.la.la-clock
+              .content
+                span Mon - Sat 8.00 - 18.00
+                span Sunday CLOSED
+            a(href="tel:0944764545").item.ts-icon-box-info-03
+              .icon.color--color1
+                i.ts-icon.la.la-phone
+              .content
+                strong.fs--14 0944 76 4545
+                span Free call
+          a(href="#js-mobile-menu-btn").ts-btn-mobile-menu
+            i.ts-icon.la.la-bars
+    .header-menu.d-none.d-lg-block#js-header-sticky
+      .container
+        .header-menu-inner
+          .header-menu-left
+            nav.ts-main-menu.style-01.sub-icon.caret
+              +navigation
+          .header-menu-right.pl-4
+            .ts-social-list-01.in-dark.align-right.pl-3
+              +tsSocialList01
+
 mixin headerHome02
   //- headroom .header-container.home-02-header#js-headroom-static
   //- sticky .header-container.home-02-header.header-sticky
@@ -447,7 +497,7 @@ mixin headerHome02
                 a(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="instagram")
                   i.ts-icon.lab.la-instagram
               .item.search-popup-btn.js-search-popup-btn
-                +popupSearch
+                i.control-icon.ts-icon.la.la-search
           a(href="#js-mobile-menu-btn").ts-btn-mobile-menu
             i.ts-icon.la.la-bars
 
@@ -473,6 +523,71 @@ mixin headerHome03
               a(href='#').ts-btn.btn-color1 Get A Quote
         a(href="#js-mobile-menu-btn").ts-btn-mobile-menu.in-dark
           i.ts-icon.la.la-bars
+
+mixin headerHome04
+  //- headroom .header-container.home-04-header#js-headroom-static
+  //- sticky .header-container.home-04-header.header-sticky
+  //- .ts-header.ts-header-08.bg--white#js-header-sticky
+  .header-container.home-04-header.header-sticky
+    .ts-topbar.ts-topbar-01.in-dark.bg--color1
+      .container
+        .ts-topbar-01-inner
+          .ts-topbar-01-left
+            .item.ts-icon-box-info-01.in-dark
+              i.ts-icon.la.la-phone
+              a(href="tel:18604193333") 1860-419-3331
+            .item.ts-icon-box-info-01.in-dark
+              i.ts-icon.la.la-envelope
+              a(href="mailto:consultant@bifirm.com") consultant@bifirm.com
+            .item.ts-icon-box-info-01.in-dark
+              i.ts-icon.la.la-clock
+              span Mon - Fri: 8am - 6pm
+          .ts-topbar-01-right
+            .item.ts-language.in-dark.justify-content-end
+              +selectLanguage
+    .ts-header.ts-header-01.bg--white#js-header-sticky
+      .container
+        .ts-header-01-inner
+          .ts-header-01-left
+            a.ts-header-logo-wrap(href="index.html")
+              img.header-logo(src="images/logo-dark.png" alt="logo")
+          .ts-header-01-right.d-none.d-lg-flex
+            nav.ts-main-menu
+              +navigation
+            .header-01-control
+              .item.search-popup-btn.js-search-popup-btn
+                i.control-icon.ts-icon.la.la-search
+
+mixin headerHome05
+  //- headroom .header-container.home-05-header#js-headroom-static
+  //- sticky .header-container.home-05-header.header-sticky#js-header-sticky
+  .header-container.home-05-header.header-sticky#js-header-sticky-home-05
+    .ts-header.ts-header-04.bg--color8.in-dark
+      .container
+        .ts-header-04-inner
+          .item
+            a.ts-header-logo-wrap(href="index.html")
+              img.header-logo(src="images/logo-light.png", alt="logo")
+          .item.flex-grow-1
+            .ts-header-04-top
+              .item.mr-4.ts-icon-box-info-02.in-dark
+                .ts-box-square-01
+                  i.ts-icon.la.la-phone
+                .content
+                  a.color--gray60(href="tel:0110-126-1111") 0110-126-1111
+              .item.mr-4.ts-icon-box-info-02.in-dark
+                .ts-box-square-01
+                  i.ts-icon.la.la-map-marker
+                .content
+                  span.color--gray60 1010 Avenue of the Moon
+              .item
+                a(href="#").ts-btn.btn-success Get A Quote
+            .ts-header-04-bottom
+              nav.ts-main-menu.in-dark.trim
+                +navigation
+          a(href="#js-mobile-menu-btn").ts-btn-mobile-menu
+            i.ts-icon.la.la-bars
+
 
 mixin photoSwiper
   // Root element of PhotoSwipe. Must have class pswp.
@@ -510,3 +625,24 @@ mixin photoSwiper
         button.pswp__button.pswp__button--arrow--right(title="Next (arrow right)")
         .pswp__caption
           .pswp__caption__center
+
+mixin modalCallBack
+  #modalCallBack.modal.fade.ts-modal-callback-01(tabindex="-1" role="dialog" aria-labelledby="modalCallbackTitle" aria-hidden="true")
+    .modal-dialog.modal-dialog-centered(role="document")
+      .modal-content
+        .modal-header
+          h5#modalCallbackTitle.modal-title Request A Call Back
+          button.close(type="button" data-dismiss="modal" aria-label="Close")
+            i.ts-icon.las.la-times
+        .modal-body
+          form
+            .row
+              .col-lg-12.mb-3
+                p.mb-2 How can we help*:
+                +selectDiscuss('select-grey')
+              .col-lg-12.mb-3
+                input.ts-input.ts-input-grey(type="text", placeholder="Your Name")
+              .col-lg-12
+                input.ts-input.ts-input-grey(type="text", placeholder="Your Phone")
+        .modal-footer.justify-content-center
+          button.ts-btn.btn-color1(type="button") Submit

@@ -8,42 +8,17 @@ include modules/testimonial/testimonial
 include modules/footer/footer
 include modules/control/control
 append head
-  title="Home Page - 04"
+  title="Home Page - 05"
+  link(href="css/extention/photoswipe.min.css" rel="stylesheet")
   link(href="css/main.min.css" rel="stylesheet")
 append header
-  .header-container
-    .ts-header.ts-header-04.bg--gray20.in-dark
-      .container
-        .ts-header-04-inner
-          .item
-            a.ts-header-logo-wrap(href="index.html")
-              img.header-logo(src="images/logo-light.png", alt="logo")
-          .item.flex-grow-1
-            .ts-header-04-top
-              .item.mr-4.ts-icon-box-info-02.in-dark
-                .ts-box-square-01
-                  i.ts-icon.la.la-phone
-                .content
-                  a.color--gray60(href="tel:0110-126-1111") 0110-126-1111
-              .item.mr-4.ts-icon-box-info-02.in-dark
-                .ts-box-square-01
-                  i.ts-icon.la.la-map-marker
-                .content
-                  span.color--gray60 1010 Avenue of the Moon
-              .item
-                a(href="#").ts-btn.btn-success Get A Quote
-            .ts-header-04-bottom
-              nav.ts-main-menu.in-dark.trim
-                +navigation
-          a(href="#js-mobile-menu-btn").ts-btn-mobile-menu
-            i.ts-icon.la.la-bars
-
+  +headerHome05
 
 append content
   .home-05-slider
     img(src="http://templates.thememodern.com/finance/images/Slider/10.jpg")
   
-  .home-05-callback.bg--gray20.py-3
+  .bg--color8.py-3
     .container
       .row
         .col-lg-12
@@ -55,87 +30,26 @@ append content
               a(href="/").ts-btn.btn-color1.btn-lg PURCHASE NOW 
                 i.ts-icon.la.la-arrow-circle-right
 
-  .home-01-services.py-7
+  .home-05-services.py-lg-7.py-5
     .container
       .row-g-40
         .col-lg-4.mb-lg-40
-          .ts-icon-box-08.bg--gray20
-            .icon-box-inner
-              .icon-box-wrap
-                i.ts-icon.la.la-chart-pie
-              .icon-box-content
-                h3.icon-box-title Icon Box 06
-                h5.icon-box-sub-title Lorem Ipsum dore si amnet
-                p.icon-box-desc Donec lacinia mi rutrum sagittis consequat. Donec sagittis commodo.
-            svg.icon-box-layer(viewbox="0 0 69 231" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
-              g(stroke="none" fill-rule="evenodd")
-                polygon.layer-01(points="0 0 70 0 70 150")
-                polygon.layer-02(points="70 51 70 231 0 231")
+          +services13('la la-chart-pie', 'Icon Box 05', 'Lorem Ipsum dore si amnet', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis')
+        
         .col-lg-4.mb-lg-40
-          .ts-icon-box-08.bg--gray20
-            .icon-box-inner
-              .icon-box-wrap
-                i.ts-icon.la.la-chart-pie
-              .icon-box-content
-                h3.icon-box-title Icon Box 06
-                h5.icon-box-sub-title Lorem Ipsum dore si amnet
-                p.icon-box-desc Donec lacinia mi rutrum sagittis consequat. Donec sagittis commodo.
-            svg.icon-box-layer(viewbox="0 0 69 231" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
-              g(stroke="none" fill-rule="evenodd")
-                polygon.layer-01(points="0 0 70 0 70 150")
-                polygon.layer-02(points="70 51 70 231 0 231")
+          +services13('la la-chart-pie', 'Icon Box 05', 'Lorem Ipsum dore si amnet', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis')
+
         .col-lg-4.mb-lg-40
-          .ts-icon-box-08.bg--gray20
-            .icon-box-inner
-              .icon-box-wrap
-                i.ts-icon.la.la-chart-pie
-              .icon-box-content
-                h3.icon-box-title Icon Box 06
-                h5.icon-box-sub-title Lorem Ipsum dore si amnet
-                p.icon-box-desc Donec lacinia mi rutrum sagittis consequat. Donec sagittis commodo.
-            svg.icon-box-layer(viewbox="0 0 69 231" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
-              g(stroke="none" fill-rule="evenodd")
-                polygon.layer-01(points="0 0 70 0 70 150")
-                polygon.layer-02(points="70 51 70 231 0 231")
+          +services13('la la-chart-pie', 'Icon Box 05', 'Lorem Ipsum dore si amnet', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis')
+
         .col-lg-4.mb-lg-0.mb-40
-          .ts-icon-box-08.bg--gray20
-            .icon-box-inner
-              .icon-box-wrap
-                i.ts-icon.la.la-chart-pie
-              .icon-box-content
-                h3.icon-box-title Icon Box 06
-                h5.icon-box-sub-title Lorem Ipsum dore si amnet
-                p.icon-box-desc Donec lacinia mi rutrum sagittis consequat. Donec sagittis commodo.
-            svg.icon-box-layer(viewbox="0 0 69 231" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
-              g(stroke="none" fill-rule="evenodd")
-                polygon.layer-01(points="0 0 70 0 70 150")
-                polygon.layer-02(points="70 51 70 231 0 231")
+          +services13('la la-chart-pie', 'Icon Box 05', 'Lorem Ipsum dore si amnet', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis')
+
         .col-lg-4.mb-lg-0.mb-40
-          .ts-icon-box-08.bg--gray20
-            .icon-box-inner
-              .icon-box-wrap
-                i.ts-icon.la.la-chart-pie
-              .icon-box-content
-                h3.icon-box-title Icon Box 06
-                h5.icon-box-sub-title Lorem Ipsum dore si amnet
-                p.icon-box-desc Donec lacinia mi rutrum sagittis consequat. Donec sagittis commodo.
-            svg.icon-box-layer(viewbox="0 0 69 231" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
-              g(stroke="none" fill-rule="evenodd")
-                polygon.layer-01(points="0 0 70 0 70 150")
-                polygon.layer-02(points="70 51 70 231 0 231")
+          +services13('la la-chart-pie', 'Icon Box 05', 'Lorem Ipsum dore si amnet', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis')
+
         .col-lg-4.mb-lg-0.mb-40
-          .ts-icon-box-08.bg--gray20
-            .icon-box-inner
-              .icon-box-wrap
-                i.ts-icon.la.la-chart-pie
-              .icon-box-content
-                h3.icon-box-title Icon Box 06
-                h5.icon-box-sub-title Lorem Ipsum dore si amnet
-                p.icon-box-desc Donec lacinia mi rutrum sagittis consequat. Donec sagittis commodo.
-            svg.icon-box-layer(viewbox="0 0 69 231" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
-              g(stroke="none" fill-rule="evenodd")
-                polygon.layer-01(points="0 0 70 0 70 150")
-                polygon.layer-02(points="70 51 70 231 0 231")
+          +services13('la la-chart-pie', 'Icon Box 05', 'Lorem Ipsum dore si amnet', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis')
         
   .home-05-why-us.bg--whitesmoke.py-7
     .container
@@ -177,83 +91,44 @@ append content
     .container
       .row
         .col-lg-12
-          .ts-section-heading-01
+          .ts-section-heading-01.has-controls
             h2 Our Latest Projects
+            .group-carousel-controls
+              button.btn-carousel-01.case-prev
+                i.ts-icon.las.la-angle-left
+              button.btn-carousel-01.case-next
+                i.ts-icon.las.la-angle-right
 
       .col-lg-12    
         .row
-          .col.p-0
-            a(href='project_detail.html').ts-portfolio-06.rounded-0
-              .card-cover
-                img.card-img(src='https://picsum.photos/600/400?random=6', alt='cover')
-                .ts-overlay.portfolio-card-overlay
-                .card-cover-inner
-                  h4.portfolio-card-title Project Card 06
-                  .portfolio-card-divider
-                  p.portfolio-card-catalog Consultant
-                  p.portfolio-card-desc Commodo magna nulla nulla cillum sunt enim pariatur.
-          
-          .col.p-0
-            a(href='project_detail.html').ts-portfolio-06.rounded-0
-              .card-cover
-                img.card-img(src='https://picsum.photos/600/400?random=5', alt='cover')
-                .ts-overlay.portfolio-card-overlay
-                .card-cover-inner
-                  h4.portfolio-card-title Project Card 06
-                  .portfolio-card-divider
-                  p.portfolio-card-catalog Consultant
-                  p.portfolio-card-desc Commodo magna nulla nulla cillum sunt enim pariatur.
-          
-          .col.p-0
-            a(href='project_detail.html').ts-portfolio-06.rounded-0
-              .card-cover
-                img.card-img(src='https://picsum.photos/600/400?random=4', alt='cover')
-                .ts-overlay.portfolio-card-overlay
-                .card-cover-inner
-                  h4.portfolio-card-title Project Card 06
-                  .portfolio-card-divider
-                  p.portfolio-card-catalog Consultant
-                  p.portfolio-card-desc Commodo magna nulla nulla cillum sunt enim pariatur.
-          
-          .col.p-0
-            a(href='project_detail.html').ts-portfolio-06.rounded-0
-              .card-cover
-                img.card-img(src='https://picsum.photos/600/400?random=2', alt='cover')
-                .ts-overlay.portfolio-card-overlay
-                .card-cover-inner
-                  h4.portfolio-card-title Project Card 06
-                  .portfolio-card-divider
-                  p.portfolio-card-catalog Consultant
-                  p.portfolio-card-desc Commodo magna nulla nulla cillum sunt enim pariatur.
+          .carousel.align-center-items(
+            data-items="4" 
+            data-items-md="3" 
+            data-items-sm="1" 
+            data-items-xs="1" 
+            data-margin="0"
+            data-center="false"
+            data-dots="false"
+            data-arrows="false" 
+            data-autoplay='false' 
+            data-hoverpause="true"
+            data-autoplay-timeout="9000"
+            data-loop="true"
+            data-next="case-next"
+            data-prev="case-prev")
+            - for(var i = 0; i < 7; i++) {
+              .item
+                +portfolio04('https://picsum.photos/600/400?random=' + i, 'Project Card 06', 'Consultant', 'Commodo magna nulla nulla cillum sunt enim pariatur.')
+            - }
 
-  .home-03-counter-up.py-7
+  .home-03-counter-up.py-lg-7.py-5
     .ts-overlay
     .container
       .row
         .col-lg-12
           .ts-section-heading-01.align-center.in-dark.mb-5
             h2 More than 25 Years of Experience
-      .row
-        .col-lg-3
-          .counter-up-03
-            i.ts-icon.las.la-hand-holding-usd
-            p.counter.js-counter-up 30
-            span.desc Years of Experience
-        .col-lg-3
-          .counter-up-03
-            i.ts-icon.las.la-hand-holding-usd
-            p.counter.js-counter-up 30
-            span.desc Years of Experience
-        .col-lg-3
-          .counter-up-03
-            i.ts-icon.las.la-hand-holding-usd
-            p.counter.js-counter-up 30
-            span.desc Years of Experience
-        .col-lg-3
-          .counter-up-03
-            i.ts-icon.las.la-hand-holding-usd
-            p.counter.js-counter-up 30
-            span.desc Years of Experience
+      +counterUp02
   
   .home-05-testimonial
     .container
@@ -276,211 +151,34 @@ append content
             data-hoverpause="true"
             data-autoplay-timeout="9000"
             data-loop="true")
-            .item
-              .ts-testimonial-card-04
-                .card-body
-                  p.testimonial-card-content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.
-                .card-cover
-                  img.card-img(src="https://i.pravatar.cc/120?img=1", alt='cover')
-                  .testimonial-card-info
-                    h4.testimonial-card-name Adam Slander
-                    p.testimonial-card-title Developer
-            
-            .item
-              .ts-testimonial-card-04
-                .card-body
-                  p.testimonial-card-content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.
-                .card-cover
-                  img.card-img(src="https://i.pravatar.cc/120?img=1", alt='cover')
-                  .testimonial-card-info
-                    h4.testimonial-card-name Adam Slander
-                    p.testimonial-card-title Developer
-
-            .item
-              .ts-testimonial-card-04
-                .card-body
-                  p.testimonial-card-content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.
-                .card-cover
-                  img.card-img(src="https://i.pravatar.cc/120?img=1", alt='cover')
-                  .testimonial-card-info
-                    h4.testimonial-card-name Adam Slander
-                    p.testimonial-card-title Developer
-  
-            .item
-              .ts-testimonial-card-04
-                .card-body
-                  p.testimonial-card-content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.
-                .card-cover
-                  img.card-img(src="https://i.pravatar.cc/120?img=1", alt='cover')
-                  .testimonial-card-info
-                    h4.testimonial-card-name Adam Slander
-                    p.testimonial-card-title Developer
-
-            .item
-              .ts-testimonial-card-04
-                .card-body
-                  p.testimonial-card-content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.
-                .card-cover
-                  img.card-img(src="https://i.pravatar.cc/120?img=1", alt='cover')
-                  .testimonial-card-info
-                    h4.testimonial-card-name Adam Slander
-                    p.testimonial-card-title Developer
-  
-            .item
-              .ts-testimonial-card-04
-                .card-body
-                  p.testimonial-card-content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.
-                .card-cover
-                  img.card-img(src="https://i.pravatar.cc/120?img=1", alt='cover')
-                  .testimonial-card-info
-                    h4.testimonial-card-name Adam Slander
-                    p.testimonial-card-title Developer
+            - for(var i = 1; i < 7; i ++) {
+              .item
+                +testimonial08('https://i.pravatar.cc/120?img=' + i, 'Adam Slander', 'Developer', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.')
+            - }
 
   .home-03-blogs.py-lg-7.py-5.bg--whitesmoke
     .container
       .row
         .col-lg-12
-          .ts-section-heading-01
+          .ts-section-heading-01.has-controls
             h2 Our Latest Posts
+            a.view-all(href="blog_list01.html") View All
       .row-g-40
         .col-lg-6.mb-40
-          .ts-blog-card-07
-            .card-cover
-              img.card-img(alt="cover", src='https://picsum.photos/400?random=13')
-              .blog-card-meta
-                p.blog-card-time
-                  i.ts-icon.la.la-clock
-                  | Oct 15, 2019
-                p.blog-card-catalog
-                  i.ts-icon.la.la-tags
-                  a(href="blog_list01.html") Skills
-                  a(href="blog_list01.html") Financial
-                p.blog-card-author
-                  i.ts-icon.la.la-user-tie
-                  | John Doe
-            .card-body
-              h3.blog-card-title
-                a(href="blog_detail.html") Blog Card 07
-              p.desc With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...
-              .card-footer
-                a(href="blog_detail.html").blog-card-readmore
-                  | Continue Reading
-                  i.ts-icon.la.la-angle-right
+          +blog11('', 'Blog Card 07', ['Skills', 'Financial'], 'Adam Levine', 'Oct 15, 2019', 'https://picsum.photos/760?random=13', 'With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...')
 
         .col-lg-6.mb-40
-          .ts-blog-card-07.align-right
-            .card-cover
-              img.card-img(alt="cover", src='https://picsum.photos/400?random=15')
-              .blog-card-meta
-                p.blog-card-time
-                  i.ts-icon.la.la-clock
-                  | Oct 15, 2019
-                p.blog-card-catalog
-                  i.ts-icon.la.la-tags
-                  a(href="blog_list01.html") Skills
-                  a(href="blog_list01.html") Financial
-                p.blog-card-author
-                  i.ts-icon.la.la-user-tie
-                  | John Doe
-            .card-body
-              h3.blog-card-title 
-                a(href="blog_detail.html") Blog Card 07
-              p.desc With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...
-              .card-footer
-                a(href="blog_detail.html").blog-card-readmore
-                  | Continue Reading
-                  i.ts-icon.la.la-angle-right
+          +blog11('align-right', 'Blog Card 07', ['Skills', 'Financial'], 'Adam Levine', 'Oct 15, 2019', 'https://picsum.photos/760?random=14', 'With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...')
         
         .col-lg-6
-          .ts-blog-card-07
-            .card-cover
-              img.card-img(alt="cover", src='https://picsum.photos/400?random=7')
-              .blog-card-meta
-                p.blog-card-time
-                  i.ts-icon.la.la-clock
-                  | Oct 15, 2019
-                p.blog-card-catalog
-                  i.ts-icon.la.la-tags
-                  a(href="blog_list01.html") Skills
-                  a(href="blog_list01.html") Financial
-                p.blog-card-author
-                  i.ts-icon.la.la-user-tie
-                  | John Doe
-            .card-body
-              h3.blog-card-title
-                a(href="blog_detail.html") Blog Card 07
-              p.desc With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...
-              .card-footer
-                a(href="blog_detail.html").blog-card-readmore
-                  | Continue Reading
-                  i.ts-icon.la.la-angle-right
+          +blog11('', 'Blog Card 07', ['Skills', 'Financial'], 'Adam Levine', 'Oct 15, 2019', 'https://picsum.photos/760?random=15', 'With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...')
                   
         .col-lg-6
-          .ts-blog-card-07.align-right
-            .card-cover
-              img.card-img(alt="cover", src='https://picsum.photos/400?random=12')
-              .blog-card-meta
-                p.blog-card-time
-                  i.ts-icon.la.la-clock
-                  | Oct 15, 2019
-                p.blog-card-catalog
-                  i.ts-icon.la.la-tags
-                  a(href="blog_list01.html") Skills
-                  a(href="blog_list01.html") Financial
-                p.blog-card-author
-                  i.ts-icon.la.la-user-tie
-                  | John Doe
-            .card-body
-              h3.blog-card-title 
-                a(href="blog_detail.html") Blog Card 07
-              p.desc With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...
-              .card-footer
-                a(href="blog_detail.html").blog-card-readmore
-                  | Continue Reading
-                  i.ts-icon.la.la-angle-right
+          +blog11('align-right', 'Blog Card 07', ['Skills', 'Financial'], 'Adam Levine', 'Oct 15, 2019', 'https://picsum.photos/760?random=16', 'With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...')
 
-  .home-01-partner.py-7
-    .container
-      .row
-        .col-lg-12
-          .ts-section-heading-01
-            h2 Respective Partners
-      .row
-        .col-lg-12
-          .carousel.arrows-square.arrows-dark(
-            data-items="5" 
-            data-items-md="4" 
-            data-items-sm="2" 
-            data-items-xs="1" 
-            data-margin="20"
-            data-dots="false"
-            data-arrows="true" 
-            data-autoplay="true" 
-            data-autoplay-timeout="3000" 
-            data-loop="true")
-            .item
-              .border
-                a(href="#")
-                  img(src="images/partner-logo-01.svg", alt='cover')
-            .item
-              .border
-                a(href="#")
-                  img(src="images/partner-logo-02.svg", alt='cover')
-            .item
-              .border
-                a(href="#")
-                  img(src="images/partner-logo-03.svg", alt='cover')
-            .item
-              .border
-                a(href="#")
-                  img(src="images/partner-logo-04.svg", alt='cover')
-            .item
-              .border
-                a(href="#")
-                  img(src="images/partner-logo-05.svg", alt='cover')
+  +partner
 
-  .home-02-subcrible.py-5
-    .ts-overlay.bg--color7
+  .home-02-subcrible.py-5.bg--color3
     .container
       .row
         .col-lg-12
@@ -491,92 +189,14 @@ append content
             .col-lg-8
               form.row
                 .col-lg-5.mb-3.mb-lg-0
-                  input.ts-input(type="text" placeholder="Your Name")
+                  input.ts-input--light-02(type="text" placeholder="Your Name")
                 .col-lg-4.mb-3.mb-lg-0
-                  input.ts-input(type="text" placeholder="Your Name")
+                  input.ts-input--light-02(type="email" placeholder="Your Email")
                 .col
                   a(href="#").ts-btn.btn-outline-light.w-100 Submit
 
-  .home-05-footer.bg--whitesmoke
-    .ts-overlay
-    .ts-footer-05
-      .ts-footer-main.py-lg-7.py-5
-        .container
-          .row.footer-inner
-            .col-lg-5.mb-5.mb-lg-0.pr-lg-5
-              .widget-text.company-info.in-dark
-                .footer-logo
-                  a(href="/")
-                    img(src="images/logo-light.png", alt="logo")
-                p.mb-5 Without finance, plans stay as plans. That’s why we exists, we here to help clients make the most of these opportunities. We take the time to gain a deep understanding of our clients' financial requirements to bringing a passion for client success.
-                .d-flex
-                  a(href="#").square.bg--fw-1.in-dark.hbg--facebook.mr-3
-                    i.ts-icon.lab.la-facebook-square
-                  a(href="#").square.bg--fw-1.in-dark.hbg--twitter.mr-3
-                    i.ts-icon.lab.la-twitter
-                  a(href="#").square.bg--fw-1.in-dark.hbg--instagram.mr-3
-                    i.ts-icon.lab.la-instagram
-                  a(href="#").square.bg--fw-1.in-dark.hbg--linkedin.mr-3
-                    i.ts-icon.lab.la-linkedin
+  +footer07
 
-            .col-lg-3
-              .widget-quick-links-02.in-dark.style-long-arrow
-                h4.widget-title-01.in-dark Services
-                ul
-                  li
-                    a(href="/") Home
-                  li
-                    a(href="/") About Us
-                  li
-                    a(href="/") Our Services
-                  li
-                    a(href="/") Cases Study
-                  li
-                    a(href="/") Latest Projects
-
-            .col-lg-4.d-none.d-lg-block.pr-lg-4
-              .widget-instagram
-                h4.widget-title-01.in-dark Instagram
-                ul
-                  li
-                    img(src='https://picsum.photos/600?random=1', alt='thumb')
-                  li
-                    img(src='https://picsum.photos/600?random=2', alt='thumb')
-                  li
-                    img(src='https://picsum.photos/600?random=3', alt='thumb')
-                  li
-                    img(src='https://picsum.photos/600?random=4', alt='thumb')
-                  li
-                    img(src='https://picsum.photos/600?random=5', alt='thumb')
-                  li
-                    img(src='https://picsum.photos/600?random=6', alt='thumb')
-                  li
-                    img(src='https://picsum.photos/600?random=7', alt='thumb')
-                  li
-                    img(src='https://picsum.photos/600?random=8', alt='thumb')
-
-    .copyright-02
-      .container
-        .copyright-inner.justify-content-center.justify-content-md-between
-          .copyright-left
-            p Copyright © 2019 
-              a(href="/")
-                strong  .Ananci 
-              | All Right Reserved
-          .copyright-right.d-none.d-md-block
-            .widget-footer-links.in-dark
-              ul
-                li
-                  a(href="/") Terms of use 
-                li
-                  a(href="/") Privacy Policy
-                li
-                  a(href="/") Faq
-                li
-                  a(href="/") Support
-  
-  a#to-the-top
-    i.ts-icon.la.la-angle-up
   +control
 append plugins  
   +lib
@@ -593,5 +213,35 @@ append script
   //- script(src='revolution-slider/revolution/js/extensions/revolution.extension.parallax.min.js')
   //- script(src='revolution-slider/revolution/js/extensions/revolution.extension.slideanims.min.js')
   //- script(src='revolution-slider/revolution/js/extensions/revolution.extension.video.min.js')
+  script(src="js/extention/photoswipe.min.js")
+  script(src="js/extention/photoswipe-ui-default.min.js")
+  script(src="js/photoswipe-function.min.js")
+  script(src="js/extention/on-screen.min.js")
+  script(src="js/counter-up.min.js")
   script(src="js/main.min.js")
-  script(src="js/carousel-testimonial-home-04.min.js")
+  script.
+    $(document).ready(function() {
+      "user strict";
+
+      var stickyHeader = $("#js-header-sticky-home-05");
+
+      if (stickyHeader.length > 0) {
+        var headerWidth = stickyHeader.width();
+        var headerHeight = stickyHeader.outerHeight(true);
+        stickyHeader.wrap("<div class='wrap-sticky'></div>");
+        $(".wrap-sticky").css({
+          width: headerWidth,
+          height: headerHeight
+        });
+
+        $(window).scroll(function() {
+          var windowScroll = $(window).scrollTop();
+          if (windowScroll > 57) {
+            stickyHeader.addClass("fixed-top");
+          } else {
+            stickyHeader.removeClass("fixed-top");
+          }
+        });
+      }
+    });
+

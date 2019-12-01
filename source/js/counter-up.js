@@ -2,6 +2,7 @@ jQuery(document).ready(function ($) {
   'use strict';
 
   $(window).on('resize scroll', function () {
+    
     $('.js-counter-up').each(function () {
       if ($(this).isInViewport()) {
         var originValue = $(this).text();

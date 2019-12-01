@@ -55,7 +55,7 @@ $(document).ready(function() {
   }
 
   if (stickyHeaderFixed.length > 0) {
-    var headerHeight = stickyHeaderFixed.height();
+    var headerHeight = stickyHeaderFixed.outerHeight(true);
     var header = new Headroom(document.querySelector("#js-headroom-fixed"), {
       tolerance: 5,
       offset: headerHeight,
@@ -70,7 +70,7 @@ $(document).ready(function() {
 
   if (stickyHeader.length > 0) {
     var headerWidth = stickyHeader.width();
-    var headerHeight = stickyHeader.height();
+    var headerHeight = stickyHeader.outerHeight(true);
     stickyHeader.wrap("<div class='wrap-sticky'></div>");
     $(".wrap-sticky").css({
       width: headerWidth,
@@ -78,10 +78,10 @@ $(document).ready(function() {
     });
 
     $(window).scroll(function() {
-      var headerContainerHeight = $(".header-container").height();
-      var headerHeight = stickyHeader.height();
+      var headerContainerHeight = $(".header-container").outerHeight(true);
+      var headerHeight = stickyHeader.outerHeight(true);
       var windowScroll = $(window).scrollTop();
-      if (windowScroll >= headerContainerHeight - headerHeight) {
+      if (windowScroll > headerContainerHeight - headerHeight) {
         stickyHeader.addClass("fixed-top");
       } else {
         stickyHeader.removeClass("fixed-top");
@@ -91,7 +91,7 @@ $(document).ready(function() {
 
   if (fixedStickyHeader.length > 0) {
     $(window).scroll(function() {
-      if ($(window).scrollTop() > 0) {
+      if ($(window).scrollTop() > 10) {
         fixedStickyHeader.addClass('sticky-header');
       } else {
         fixedStickyHeader.removeClass('sticky-header');

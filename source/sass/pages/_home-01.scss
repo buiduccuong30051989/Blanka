@@ -3,6 +3,52 @@
 // --------------------------------------------------
 .home-01 {
   &-header {
+    &.header-fixed {
+      &.headroom--not-top {
+        .header {
+          &-info {
+            display: none;
+          }
+        }
+
+        &.full-width {
+          background-color: color(color1, 0.9);
+          backdrop-filter: blur(5px);
+
+          .header-menu-inner {
+            backdrop-filter: none;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+
+    &.header-sticky {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+
+      .fixed-top.full-width {
+        background-color: color(color1, 0.9);
+        backdrop-filter: blur(5px);
+
+        .header-menu-inner {
+          background-color: transparent;
+          backdrop-filter: none;
+        }
+      }
+    }
+
+    &.position-static {
+      .header-info-right .item  {
+        color: $gray60;
+
+        strong {
+          color: $gray20;
+        }
+      }
+    }
   }
 
   &-slider {
@@ -23,23 +69,6 @@
       }
     }
   }
-
-  // &-why-us {
-  //   .thumb {
-  //     min-width: 180px;
-  //   }
-
-  //   [class^="list-style-"] {
-  //     display: flex;
-  //     flex-wrap: wrap;
-
-  //     li {
-  //       width: 50%;
-  //       padding-right: 8px;
-  //       padding-bottom: 15px;
-  //     }
-  //   }
-  // }
 
   &-testimonial {
     padding-top: 80px;
@@ -78,40 +107,6 @@
       position: relative;
     }
   }
-
-  // &-testimonial {
-  //   background-image: url("http://templates.thememodern.com/dotted/images/Testimonials/bg1.jpg");
-  //   background-size: cover;
-  //   background-position: center;
-  //   background-attachment: fixed;
-  //   position: relative;
-  //   perspective: 3px;
-
-  //   .ts-overlay {
-  //     opacity: 0.7;
-  //     position: absolute;
-  //     top: 0;
-  //     left: 0;
-  //     width: 100%;
-  //     height: 100%;
-  //     background-color: color;
-  //     // background: linear-gradient(-45deg, #1e2f23, #34623f, #3fa037, #3f3e42);
-  //     // background-size: 400% 400%;
-  //     // animation: gradientBG 15s ease infinite;
-  //   }
-
-  //   // @keyframes gradientBG {
-  //   //   0% {
-  //   //     background-position: 0% 50%;
-  //   //   }
-  //   //   50% {
-  //   //     background-position: 100% 50%;
-  //   //   }
-  //   //   100% {
-  //   //     background-position: 0% 50%;
-  //   //   }
-  //   // }
-  // }
 
   &-partner {
     .item {

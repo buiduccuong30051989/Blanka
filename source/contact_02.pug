@@ -7,21 +7,20 @@ append head
   title="Contact - Contact 02"
   link(href="css/main.min.css" rel="stylesheet")
 append header
-  +header01
-append content
-  section.sub-header.bg--whitesmoke
-    .container
-      h2.title Contact Version 02
+  +headerHome04
 
-  section.section-breadcrumb.bg-white.py-2
+append content
+  .ts-sub-header-02.border-bottom
     .container
-      nav(aria-label="breadcrumb")
-        ol.ts-breadcrumb
-          li.breadcrumb-item
-            a(href="index.html") 
-              i.ts-icon.la.la-home.mr-1
-              | Home
-          li.breadcrumb-item.active(aria-current="page") Contact 02
+      .row
+        .col-lg-12
+          .sub-header-inner
+            h2 Contact Us
+            nav(aria-label="breadcrumb")
+              ol.ts-breadcrumb-01
+                li.breadcrumb-item
+                  a(href="home_01.html") Home
+                li.breadcrumb-item.active(aria-current="page") Contact Us
 
   section.bg--white.py-7
     .container
@@ -35,20 +34,23 @@ append content
             form(action="/contact_02.html")
               .row-g-20.mb-4
                 .col-lg-4.mb-4.mb-lg-0
-                  input.ts-input.form-control-lg(type="text", placeholder="Your Name")
+                  input.ts-input-03(type="text", placeholder="Your Name")
                 .col-lg-4.mb-4.mb-lg-0
-                  input.ts-input.form-control-lg(type="email", placeholder="Your Email")
+                  input.ts-input-03(type="email", placeholder="Your Email")
                 .col-lg-4
-                  input.ts-input.form-control-lg(type="text", placeholder="Your Phone")
+                  input.ts-input-03(type="text", placeholder="Your Phone")
               .row.mb-4
                 .col-lg-12
-                  textarea.ts-input(rows="7")
+                  textarea.ts-input-03(rows="7")
               .row
                 .col-lg-12
                   button.ts-btn.btn-color1.btn-lg Send Mail
   section#js-map-canvas.map-01
 
-  +footer01
+  +footer04
+
+  +popupSearch
+  
   +control
 append plugins  
   +lib

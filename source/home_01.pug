@@ -137,7 +137,7 @@ append content
                 i.ts-icon.las.la-angle-right
       .row
         .col-lg-12
-          .carousel.arrows-square.arrows-dark(
+          .carousel(
             data-items="3" 
             data-items-md="2" 
             data-items-sm="1" 
@@ -152,7 +152,7 @@ append content
             data-prev="blog-prev")
             - for(var i = 1; i < 8; i++) {
               .item
-                +blog10('Blog Title', 'Consultant', 'https://picsum.photos/600/300?random=' + i, 'Admin', 'Commodo magna nulla nulla cillum sunt enim pariatur. Aliquip velit minim laboris ipsum fugiat do qui sit ullamco cillum eu aute nulla.')
+                +blog10('Blog Title', 'Consultant', 'https://picsum.photos/600/300?random=' + i, 'Admin', 'Commodo magna nulla nulla cillum sunt enim pariatur. Aliquip velit minim laboris ipsum fugiat do qui sit ullamco cillum eu aute nulla.', 'March', '22', '2019')
             - }
 
   .home-04-teams.bg--whitesmoke
@@ -188,6 +188,8 @@ append content
       +boxCta01
   
   +footer03
+
+  +popupSearch
   
   +control
 append plugins  

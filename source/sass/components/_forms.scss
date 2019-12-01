@@ -168,14 +168,13 @@
   transition: $transition-base;
   font-size: 13px;
   border-color: $white;
-  line-height: 32px;
-  height: 40px;
+  line-height: 22px;
 
   @include placeholder {
     color: $gray40;
     font-weight: 400;
     font-size: 13px;
-    line-height: 24px;
+    line-height: 22px;
     font-family: $lato;
     transition: $transition-base;
   }
@@ -263,6 +262,39 @@
   }
 }
 
+.ts-input--ghost-03 {
+  @extend .form-control;
+  background-color: $white;
+  border-radius: 2px;
+  color: $white;
+  border: 0;
+  transition: $transition-base;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 28px;
+
+  @include placeholder {
+    color: $white;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 28px;
+    transition: $transition-base;
+  }
+
+  &:focus,
+  &:hover {
+    // border-color: color(color1, 1);
+    
+    background-color: rgba($white, 0.3);
+    color: $gray40;
+    box-shadow: none;
+
+    @include placeholder {
+      color: $gray40;
+    }
+  }
+}
+
 .call-back-form-02 {
   margin-bottom: 0;
   display: flex;
@@ -322,6 +354,60 @@
     background-color: $color6;
     border-color: $color6;
     color: $white;
+  }
+}
+
+.ts-input-03 {
+  @extend .form-control;
+  border-radius: 2px;
+  transition: $transition-base;
+  font-weight: 300;
+  font-family: $lato;
+  background-color: $whitesmoke;
+  border-color: $gray90;
+  font-size: 13px;
+  padding: 12px 15px;
+
+  @include placeholder() {
+    color: $gray60;
+    font-family: $lato;
+    font-size: 13px;
+  }
+
+  &:hover,
+  &:focus {
+    outline: 0;
+    box-shadow: none;
+    background-color: $white;
+  }
+
+  &:focus {
+    border-color: color(color1, 1);
+  }
+}
+
+.ts-input--light-02 {
+  @extend .form-control;
+  // background-color: $whitesmoke;
+  background-color: rgba($white, 0.9);
+  border-radius: 2px;
+  color: $gray20;
+  border: 0;
+  transition: $transition-base;
+  font-size: 13px;
+  line-height: 32px;
+  height: 40px;
+
+  @include placeholder {
+    color: $gray20;
+    font-size: 13px;
+    line-height: 32px;
+  }
+
+  &:focus {
+    background-color: $white;
+    box-shadow: none;
+    color: $gray20;
   }
 }
 

@@ -45,3 +45,19 @@ mixin portfolio04(img, title, cat, desc)
         .portfolio-card-divider
         p.portfolio-card-catalog=cat
         p.portfolio-card-desc=desc
+
+mixin portfolio05(img, title, cat, heart, comment)
+  .ts-portfolio-05.rounded-0
+    a(href='project_detail.html').card-cover
+      img.card-img(src=img, alt='cover')
+      .ts-overlay.portfolio-card-overlay
+      .card-cover-inner
+        h4.portfolio-card-title=title
+        p.portfolio-card-catalog=cat
+    .portfolio-card-meta
+      .item-favourite
+        i.ts-icon.las.la-heart
+        span=heart
+      .item-comment
+        i.ts-icon.la.la-comments
+        span=comment

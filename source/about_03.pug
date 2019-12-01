@@ -1,0 +1,212 @@
+extends modules/layout/layout.pug
+include modules/script/lib
+include modules/header_mixin/header_mixin
+include modules/team/team
+include modules/blog/blog
+include modules/portfolio/portfolio
+include modules/services/services
+include modules/testimonial/testimonial
+include modules/footer/footer
+include modules/control/control
+append head
+  title="About Page - 03"
+  link(href="css/extention/photoswipe.min.css" rel="stylesheet")
+  link(href="css/main.min.css" rel="stylesheet")
+append header
+  +headerHome03
+
+append content
+  .about-03-intro
+    .ts-sub-header-02
+      .container
+        .row
+          .col-lg-12
+            .sub-header-inner
+              h2 About Us
+              nav(aria-label="breadcrumb")
+                ol.ts-breadcrumb-01
+                  li.breadcrumb-item
+                    a(href="home_01.html") Home
+                  li.breadcrumb-item.active(aria-current="page") About Us
+  
+  .home-01-about-us.bg--white.py-lg-7.py-5
+    .container
+      .row
+        .col-lg-7.d-flex.align-items-center
+          img.thumb(src='images/home-04-slider-08.jpg', alt='cover')
+        .col-lg-5.pl-lg-5  
+          .ts-section-heading-01
+            h2 We are BiFirm
+          p.mb-lg-4 Integer est arcu, congue nec vulputate faucibus, aliquam eget tellus. Aliquam laoreet aliquam mi, vitae tempus orci mattis vitae. Cras ultricies mauris est, ultricies sagittis diam euismod et.
+          ul.list-style-01.list-square.color.mb-lg-4
+            li FULLY RESPONSIVE 
+            li TEMPLATE MULTIPLE 
+            li PORTFOLIO COLUMNS 
+            li AMAZING SLIDER 
+            li 10 AMAZING SKINS 
+            li AND MANY MORE...
+          button(data-toggle="modal", data-target="#modalCallBack").ts-btn.btn-color1.btn-cta-03 
+            span.pr-2 REQUEST A CALLBACK
+            i.ts-icon.la.la-phone-alt.fs--16
+  
+  .container
+    .row
+      .col-lg-12
+        .border-bottom
+  
+  .home-01-services.py-7
+    .container
+      .row
+        .col-lg-12.mb-lg-5
+          .ts-section-heading-01.align-center
+            h2 What We Offers To You
+          p.font-italic.text-center.w-75.mx-auto Phasellus id lacus neque. Proin vestibulum leo at turpis rhoncus, sed lacinia sem mollis. Etiam cursus bibendum dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam auctor eu nunc nec facilisis. Duis in felis eget eros tristique ornare. Maecenas volutpat, nisi id pretium imperdiet, odio neque pellentesque erat.
+      .row-g-40
+        - for(var i = 0; i < 3; i++) {
+          .col-lg-4
+            +services09('la la-chart-pie', 'Consultant Services', 'We here to help', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis commodo.')
+        - }
+  
+  .container
+    .row
+      .col-lg-12
+        .border-bottom
+
+  .home-03-commitment.bg--white
+    .container
+      .row
+        .col-lg-5.pr-lg-5
+          .d-none.d-lg-flex.justify-content-end.h-100
+            img.cover.align-self-end(src="https://seniorthemes.com/images/commit-03-demo.png" alt="cover")
+        .col-lg-7.pl-lg-5.py-lg-7.py-5.d-flex.flex-column.justify-content-center.pl-lg-5
+          .ts-section-heading-01
+            h2 What We Commit To You
+          p.mb-5 We lead with a commitment to quality and consistency across our global network, bringing a passion for client success and a purpose to serve and improve the communities in which member firms operate. We lead with a commitment to quality and consistency across our global network, bringing a passion for client success and a purpose to serve and improve the communities in which member firms operate.
+          .process-wrap
+            .ts-progress-wrapper.mb-4.js-progress-bar
+              .ts-progress-title-wrap
+                h5.ts-progress-title Web Design
+                .ts-progress-info  
+                  span.ts-progress-percentage
+                  i.ts-progress-unit %
+              .ts-progress
+                .progress-bar.bg--color1(role='progressbar' aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+            .ts-progress-wrapper.mb-4.js-progress-bar
+              .ts-progress-title-wrap
+                h5.ts-progress-title Web Design
+                .ts-progress-info  
+                  span.ts-progress-percentage
+                  i.ts-progress-unit %
+              .ts-progress
+                .progress-bar.bg--color1(role='progressbar' aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+            .ts-progress-wrapper.js-progress-bar
+              .ts-progress-title-wrap
+                h5.ts-progress-title Web Design
+                .ts-progress-info  
+                  span.ts-progress-percentage
+                  i.ts-progress-unit %
+              .ts-progress
+                .progress-bar.bg--color1(role='progressbar' aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+
+  .container
+    .row
+      .col-lg-12
+        .border-bottom
+
+  .about-03-counter-up.py-lg-7.py-5
+    .container
+      .row
+        .col-lg-12
+          .ts-section-heading-01.align-center.mb-5
+            h2 Our Achievements & Milestones
+      .row
+        .col-lg-3
+          .counter-up-04
+            i.ts-icon.las.la-hand-holding-usd
+            p.counter.js-counter-up 30
+            span.desc Years of Experience
+        .col-lg-3
+          .counter-up-04
+            i.ts-icon.las.la-hand-holding-usd
+            p.counter.js-counter-up 30
+            span.desc Years of Experience
+        .col-lg-3
+          .counter-up-04
+            i.ts-icon.las.la-hand-holding-usd
+            p.counter.js-counter-up 30
+            span.desc Years of Experience
+        .col-lg-3
+          .counter-up-04
+            i.ts-icon.las.la-hand-holding-usd
+            p.counter.js-counter-up 30
+            span.desc Years of Experience
+
+  .container
+    .row
+      .col-lg-12
+        .border-bottom
+
+  .home-04-teams.bg--white
+    .ts-overlay
+    .container
+      .row
+        .col-lg-12
+          .ts-section-heading-01.align-center
+            h2 Our Leaders
+      
+      .carousel.align-center-items.arrows-intro.dots-theme.carousel-focus(
+        data-items="3" 
+        data-items-md="3" 
+        data-items-sm="1" 
+        data-items-xs="1" 
+        data-margin="40"
+        data-center="true"
+        data-dots="false"
+        data-arrows="true" 
+        data-autoplay='false' 
+        data-hoverpause="true"
+        data-autoplay-timeout="9000"
+        data-loop="true")
+        - for(var i = 1; i < 8; i ++) {
+          .item
+            +team07('https://i.pravatar.cc/600?img=' + i, 'Adam Larson', 'Financial Consultant', 'Ullamco minim in enim consectetur labore voluptate et non non. Officia dolor qui cupidatat tempor qui ex labore veniam dolore.')
+        - }
+
+  .container
+    .row
+      .col-lg-12
+        .border-bottom
+
+  .bg--white
+    .home-01-cta.py-7
+      +boxCta02
+  
+  +footer07
+
+  +modalCallBack
+  
+  +control
+append plugins  
+  +lib
+append script
+  //- script(src='revolution-slider/revolution/js/jquery.themepunch.tools.min.js')
+  //- script(src='revolution-slider/revolution/js/jquery.themepunch.revolution.min.js')
+  //- Uncomment codes below to run
+  //- script(src='revolution-slider/revolution/js/extensions/revolution.extension.actions.min.js')
+  //- script(src='revolution-slider/revolution/js/extensions/revolution.extension.carousel.min.js')
+  //- script(src='revolution-slider/revolution/js/extensions/revolution.extension.kenburn.min.js')
+  //- script(src='revolution-slider/revolution/js/extensions/revolution.extension.layeranimation.min.js')
+  //- script(src='revolution-slider/revolution/js/extensions/revolution.extension.migration.min.js')
+  //- script(src='revolution-slider/revolution/js/extensions/revolution.extension.navigation.min.js')
+  //- script(src='revolution-slider/revolution/js/extensions/revolution.extension.parallax.min.js')
+  //- script(src='revolution-slider/revolution/js/extensions/revolution.extension.slideanims.min.js')
+  //- script(src='revolution-slider/revolution/js/extensions/revolution.extension.video.min.js')
+  script(src="js/extention/photoswipe.min.js")
+  script(src="js/extention/photoswipe-ui-default.min.js")
+  script(src="js/photoswipe-function.min.js")
+  script(src="js/extention/on-screen.min.js")
+  script(src="js/counter-up.min.js")
+  script(src="js/progress-bar.min.js")
+  script(src="js/main.min.js")
+  script.
+    

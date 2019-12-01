@@ -134,7 +134,7 @@ mixin blog09(cover, title, desc)
         a(href="blog_detail.html")=title
       p.ts-blog-card-desc=desc
 
-mixin blog10(title, cat, cover, author, desc)
+mixin blog10(title, cat, cover, author, desc, month, day, year)
   .ts-blog-card-09.bg--whitesmoke
     .card-header
       h4.blog-card-title
@@ -159,13 +159,10 @@ mixin blog10(title, cat, cover, author, desc)
     .card-footer
       span.blog-card-author Post by 
         a(href="blog_detail.html")=author
-      .ts-social-list-01.align-right
-        a.hcl--facebook(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="facebook")
-          i.ts-icon.lab.la-facebook-square
-        a.hcl--twitter(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="twitter")
-          i.ts-icon.lab.la-twitter
-        a.hcl--instagram(href="#", data-toggle="tooltip", data-placement="bottom", data-original-title="instagram")
-          i.ts-icon.lab.la-instagram
+      span.blog-card-time
+        span.month=month
+        span.day=day
+        span.year=year
 
 mixin blog11(type, title, cat, author, time, cover, desc)
   .ts-blog-card-07(class=type)
@@ -189,4 +186,58 @@ mixin blog11(type, title, cat, author, time, cover, desc)
       .card-footer
         a(href="blog_detail.html").blog-card-readmore
           | Continue Reading
-          i.ts-icon.la.la-angle-right          
+          i.ts-icon.la.la-angle-right 
+
+mixin blog12(type, cover, title, day, month, desc, author, cat, comment)
+  .ts-blog-card-11
+    .card-cover
+      a(href='blog_detail.html')
+        img.card-img(src=cover, alt='cover')
+    .card-body
+      .blog-card-meta
+        .blog-card-time
+          .day=day
+          .month=month
+        .blog-card-type
+          i.ts-icon.la(class=type)
+      .blog-card-content
+        h4.blog-card-title
+          a(href="blog_detail.html")=title
+        p.blog-card-desc=desc
+        .card-footer
+          span.blog-card-author 
+            label Post by 
+            a(href="blog_detail.html")=author
+          span.blog-card-catalog
+            label On  
+            a(href="blog_list_01.html")=cat
+          span.blog-card-comment
+            label Comment 
+            =comment
+
+mixin blog13(cover, title, type, desc, author, cat, comment, day, month)
+  .ts-blog-card-10
+    .card-cover
+      a(href='blog_detail.html')
+        img.card-img(src=cover, alt='cover')
+    .card-body
+      .blog-card-meta
+        .blog-card-time
+          .day=day
+          .month=month
+        .blog-card-type
+          i.ts-icon(class=type)
+      .blog-card-content
+        h4.blog-card-title
+          a(href="blog_detail.html")=title
+        p.blog-card-desc=desc
+    .card-footer
+      span.blog-card-author 
+        label Post by 
+        a(href="blog_detail.html")=author
+      span.blog-card-catalog
+        label On  
+        a(href="blog_list_01.html")=cat
+      span.blog-card-comment
+        label Comment 
+        =comment

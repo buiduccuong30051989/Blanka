@@ -210,7 +210,7 @@
   &.carousel-focus {
     .owl-item {
       .item {
-        opacity: .2;
+        opacity: .7;
         transform: scale3d(0.8, 0.8, 1);
         transition: all 0.35s ease-in-out;
   
@@ -314,14 +314,17 @@
   font-size: 16px;
 
   &:hover,
-  &:focus,
-  &:active {
+  &:focus {
     border-color: color(color1, 1);
     background-color: color(color1, 1);
     border-style: solid;
     color: $white;
     outline: 0;
     box-shadow: none;
+  }
+
+  &:active {
+    border-style: solid;
   }
 }
 
