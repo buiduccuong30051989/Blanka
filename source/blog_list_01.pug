@@ -24,8 +24,8 @@ append content
 
   section.bg--white
     .container
-      .row.py-5.py-lg-7
-        .col-lg-9
+      .row.vertical-divider-lg.pt-5.pt-lg-7
+        .col-lg-9.pr-lg-5
           .blog-list-01
             article.mb-5
               .ts-blog-card-10
@@ -169,7 +169,7 @@ append content
                     span Comment 
                     |  102
 
-            article.mb-5
+            article
               .ts-blog-card-10
                 .card-cover
                   .embed-responsive.embed-responsive-16by9
@@ -194,46 +194,23 @@ append content
                   span.blog-card-comment
                     span Comment 
                     |  102
-
-            nav.ts-pagination-01.pt-lg-4.mb-5.mb-lg-0(aria-label="Page navigation example")
-              ul.pagination
-                li.page-item
-                  a.page-link(href="#")
-                    i.ts-icon.la.la-angle-double-left
-                li.page-item.active
-                  a.page-link(href="#") 1
-                li.page-item
-                  a.page-link(href="#") 2
-                li.page-item
-                  a.page-link(href="#") 3
-                li.page-item
-                  a.page-link(href="#") ...
-                li.page-item
-                  a.page-link(href="#") 25
-                li.page-item
-                  a.page-link(href="#")
-                    i.ts-icon.la.la-angle-double-right
             
-        .col-lg-3
+        .col-lg-3.pl-lg-5
           .main-sidebar
             aside.widget.widget-text
-              h3.widget-title
-                i.ts-icon.la.la-angle-double-right.mr-1
-                | About
+              h3.widget-title About
               .textwidget
                 p
                   | Nulla eleifend, sapien eget porttitor maximus, nisl ante convallis dolor, nec consequat felis ex a ex. Etiam vestibulum enim euismod dui vestibulum, vitae fringilla nibh consectetur. Integer at volutpat augue. Donec consectetur, est nec laoreet scelerisque, lacus nulla fermentum odio, ut accumsan enim ipsum a justo.
             aside.widget.widget_search
               form.form-inline(action="" method="get" role="search")
                 .input-group
-                  input.ts-input.border-right-0(type="search" name="s" value="" placeholder="Search …")
+                  input.ts-input.ts-input-grey.border-right-0(type="search" name="s" value="" placeholder="Search …")
                   .input-group-append
                     button.ts-btn.btn-color1(type="submit")
-                      i.ts-icon.la.la-search
+                      i.ts-icon.la.la-search.fs--18
             aside.widget.widget-catalog
-              h3.widget-title
-                i.ts-icon.la.la-angle-double-right.mr-1
-                | Categories
+              h3.widget-title Categories
               ul
                 li.cat-item
                   a(href="#") Business Market
@@ -251,9 +228,7 @@ append content
                   a(href="#") Socials Ecommerce
                   |  (6)
             aside.widget.widget-tags
-              h3.widget-title
-                i.ts-icon.la.la-angle-double-right.mr-1
-                | Tags
+              h3.widget-title Tags
               ul
                 li
                   a(href="#") audio
@@ -276,9 +251,7 @@ append content
                 li
                   a(href="#") youtube
             aside.widget.widget-archive
-              h3.widget-title
-                i.ts-icon.la.la-angle-double-right.mr-1
-                | Archives
+              h3.widget-title Archives
               ul
                 li
                   a(href="#") September 2016
@@ -302,9 +275,7 @@ append content
                   a(href="#") October 2010
                   |  (1)
             aside.widget.widget-meta
-              h3.widget-title
-                i.ts-icon.la.la-angle-double-right.mr-1
-                | Meta
+              h3.widget-title Meta
               ul
                 li
                   a(href="#") Site Admin
@@ -320,7 +291,27 @@ append content
                     abbr RSS
                 li
                   a(href="#") WordPress.org
-  
+      
+      .row.py-7
+        .col-lg-12
+          nav.ts-pagination-01(aria-label="Page navigation example")
+            ul.pagination
+              li.page-item
+                a.page-link(href="#")
+                  i.ts-icon.la.la-angle-double-left
+              li.page-item.active
+                a.page-link(href="#") 1
+              li.page-item
+                a.page-link(href="#") 2
+              li.page-item
+                a.page-link(href="#") 3
+              li.page-item
+                a.page-link(href="#") ...
+              li.page-item
+                a.page-link(href="#") 25
+              li.page-item
+                a.page-link(href="#")
+                  i.ts-icon.la.la-angle-double-right
   +footer04
 
   +popupSearch

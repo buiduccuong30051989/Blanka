@@ -209,17 +209,17 @@
 
   &.ts-input-grey {
     background-color: $whitesmoke;
+    border: 0;
 
     &:focus,
     &:hover {
-      background-color: color(color1, 1);
+      background-color: $gray90;
       box-shadow: none;
       outline: 0;
-      border-color: color(color1, 1);
-      color: $white;
+      color: $gray40;
 
       @include placeholder {
-        color: $white;
+        color: $gray40;
       }
     }
   }

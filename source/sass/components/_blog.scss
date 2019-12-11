@@ -921,38 +921,13 @@
       left: 0;
     }
 
-    &:after {
-      content: "\f15c";
-      font-family: $lineAwesome;
+    .ts-icon {
       font-size: 24px;
-      color: $gray40;
       position: absolute;
-      top: 16px;
-      right: 10px;
-    }
-  }
-
-  &.ts-blog-type-audio {
-    .card-header:after {
-      content: "\f1c7";
-    }
-  }
-
-  &.ts-blog-type-video {
-    .card-header:after {
-      content: "\f1c8";
-    }
-  }
-
-  &.ts-blog-type-pdf {
-    .card-header:after {
-      content: "\f1c1";
-    }
-  }
-
-  &.ts-blog-type-pp {
-    .card-header:after {
-      content: "\f1c4";
+      top: 50%;
+      right: 15px;
+      transform: translateY(-50%);
+      color: $gray60;
     }
   }
 

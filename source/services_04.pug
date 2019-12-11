@@ -1,0 +1,106 @@
+extends modules/layout/layout.pug
+include modules/script/lib
+include modules/header_mixin/header_mixin
+include modules/services/services
+include modules/footer/footer
+include modules/control/control
+append head
+  title="Services - Services 04"
+  link(href="css/main.min.css" rel="stylesheet")
+append header
+  +headerHome04
+
+append content
+  .ts-sub-header-02.border-bottom
+    .container
+      .row
+        .col-lg-12
+          .sub-header-inner
+            h2 Services
+            nav(aria-label="breadcrumb")
+              ol.ts-breadcrumb-01
+                li.breadcrumb-item
+                  a(href="home_01.html") Home
+                li.breadcrumb-item.active(aria-current="page") Our Services
+
+  .home-05-services.py-lg-7.py-5
+    .container
+      .row
+        .col-lg-12.mb-lg-5
+          .ts-section-heading-01.align-center
+            h2 Choose Dotted Template For Your Purpose
+          p.font-italic.text-center Phasellus id lacus neque. Proin vestibulum leo at turpis rhoncus, sed lacinia sem mollis. Etiam cursus bibendum dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam auctor eu nunc nec facilisis. Duis in felis eget eros tristique ornare. Maecenas volutpat, nisi id pretium imperdiet, odio neque pellentesque erat.
+      .row-g-40
+        .col-lg-4.mb-lg-40
+          +services13('la la-chart-pie', 'Icon Box 05', 'Lorem Ipsum dore si amnet', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis')
+        
+        .col-lg-4.mb-lg-40
+          +services13('la la-chart-pie', 'Icon Box 05', 'Lorem Ipsum dore si amnet', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis')
+
+        .col-lg-4.mb-lg-40
+          +services13('la la-chart-pie', 'Icon Box 05', 'Lorem Ipsum dore si amnet', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis')
+
+        .col-lg-4.mb-lg-0.mb-40
+          +services13('la la-chart-pie', 'Icon Box 05', 'Lorem Ipsum dore si amnet', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis')
+
+        .col-lg-4.mb-lg-0.mb-40
+          +services13('la la-chart-pie', 'Icon Box 05', 'Lorem Ipsum dore si amnet', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis')
+
+        .col-lg-4.mb-lg-0.mb-40
+          +services13('la la-chart-pie', 'Icon Box 05', 'Lorem Ipsum dore si amnet', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis')
+  
+  .bg--color8.py-3
+    .container
+      .row
+        .col-lg-12
+          .ts-box-cta-01.in-dark
+            .left.pr-lg-4
+              h3.box-cta-title Quisque hendrerit sed lorem nec ornare. Proin sed turpis at odio molestie cursus.
+              p.box-cta-desc Fusce nec velit elementum arcu tincidunt venenatis blandit id lorem. Cras commodo risus massa, at volutpat neque hendrerit a. Ut sed auctor nisl. Quisque pulvinar urna nec diam congue, quis accumsan arcu dapibus.
+            .right
+              a(href="/").ts-btn.btn-color1.btn-lg PURCHASE NOW 
+                i.ts-icon.la.la-arrow-circle-right
+
+  .bg--white.py-lg-7.py-5
+    .container
+      .row
+        .col-lg-12
+          .ts-section-heading-01.align-center
+            h2 Our Great Partners
+      .row-g-40
+        .col-lg-3.mb-40
+          .border
+            img(src="images/partner-logo-01.svg", alt='cover')
+        .col-lg-3.mb-40
+          .border
+            img(src="images/partner-logo-02.svg", alt='cover')
+        .col-lg-3.mb-40
+          .border
+            img(src="images/partner-logo-03.svg", alt='cover')
+        .col-lg-3.mb-40
+          .border
+            img(src="images/partner-logo-04.svg", alt='cover')
+        .col-lg-3
+          .border
+            img(src="images/partner-logo-05.svg", alt='cover')
+        .col-lg-3
+          .border
+            img(src="images/partner-logo-06.svg", alt='cover')
+        .col-lg-3
+          .border
+            img(src="images/partner-logo-07.svg", alt='cover')
+        .col-lg-3
+          .border
+            img(src="images/partner-logo-04.svg", alt='cover')
+
+  +footer04
+
+  +popupSearch
+
+  +control
+append plugins  
+  +lib
+append script
+  script(defer src="js/main.min.js")
+  
+

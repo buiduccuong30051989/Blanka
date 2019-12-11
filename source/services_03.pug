@@ -1,0 +1,152 @@
+extends modules/layout/layout.pug
+include modules/script/lib
+include modules/header_mixin/header_mixin
+include modules/services/services
+include modules/footer/footer
+include modules/control/control
+append head
+  title="Services - Services 03"
+  link(href="css/main.min.css" rel="stylesheet")
+append header
+  +headerHome04
+
+append content
+  .ts-sub-header-02.border-bottom
+    .container
+      .row
+        .col-lg-12
+          .sub-header-inner
+            h2 Services
+            nav(aria-label="breadcrumb")
+              ol.ts-breadcrumb-01
+                li.breadcrumb-item
+                  a(href="home_01.html") Home
+                li.breadcrumb-item.active(aria-current="page") Our Services
+
+  .home-04-services.py-lg-7.py-5
+    .container
+      .row
+        .col-lg-12.mb-lg-5
+          .ts-section-heading-01.align-center
+            h2 Choose Dotted Template For Your Purpose
+          p.font-italic.text-center Phasellus id lacus neque. Proin vestibulum leo at turpis rhoncus, sed lacinia sem mollis. Etiam cursus bibendum dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam auctor eu nunc nec facilisis. Duis in felis eget eros tristique ornare. Maecenas volutpat, nisi id pretium imperdiet, odio neque pellentesque erat.
+      .row
+        .col-lg-3
+          +services12('la la-chart-pie', 'Icon Box 05', 'Lorem Ipsum dore si amnet', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis, tellus sodales sollicitudin commodo, risus urna interdum massa')
+        
+        .col-lg-3
+          +services12('la la-chart-pie', 'Icon Box 05', 'Lorem Ipsum dore si amnet', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis, tellus sodales sollicitudin commodo, risus urna interdum massa')
+
+        .col-lg-3
+          +services12('la la-chart-pie', 'Icon Box 05', 'Lorem Ipsum dore si amnet', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis, tellus sodales sollicitudin commodo, risus urna interdum massa')
+        
+        .col-lg-3
+          +services12('la la-chart-pie', 'Icon Box 05', 'Lorem Ipsum dore si amnet', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis, tellus sodales sollicitudin commodo, risus urna interdum massa')
+  
+  .container
+    .ts-divider-02
+
+  .home-04-why-us.bg--white.py-lg-7.py-5
+    .container
+      .row
+        .col-lg-8
+          .ts-section-heading-01
+            h2 Why You Should Choose Us?
+          p.mb-lg-5 Integer est arcu, congue nec vulputate faucibus, aliquam eget tellus. Aliquam laoreet aliquam mi, vitae tempus orci mattis vitae. Cras ultricies mauris est, ultricies sagittis diam euismod et. Curabitur at dolor vitae felis semper ullamcorper eu mattis felis. Phasellus felis diam, egestas non hendrerit a, lacinia a neque.
+          .d-flex
+            .left.mr-4
+              img(src='http://templates.thememodern.com/dotted/images/Feature/7.png', alt='demo')
+            .right
+              ul.list-style-01.list-square.color.mb-lg-4
+                li EASY CUSTOMIZATION RESPONSIVE 
+                li TEMPLATE MULTIPLE 
+                li PORTFOLIO COLUMNS 
+                li AMAZING SLIDER 
+                li 10 AMAZING SKINS 
+                li AND MANY MORE...
+              button(data-toggle="modal", data-target="#modalCallBack").ts-btn.btn-color1.btn-cta-03 
+                span.pr-2 REQUEST A CALLBACK
+                i.ts-icon.la.la-phone-alt.fs--16
+
+        .col-lg-4
+          #process
+            .card.ts-accrodion-01
+              #step01.card-header
+                h5.mb-0
+                  button.ts-btn.btn-lg.w-100.text-left(
+                    data-toggle="collapse" 
+                    data-target="#step01Content" 
+                    aria-expanded="true" 
+                    aria-controls="step01Content") Discuss your goals
+              #step01Content.collapse.show(
+                aria-labelledby="step01" 
+                data-parent="#process")
+                .card-body
+                  | When you get in touch with us, we set up a 45-60 minute consultation that is at no cost to you.
+            .card.ts-accrodion-01
+              #step02.card-header
+                h5.mb-0
+                  button.ts-btn.btn-lg.w-100.text-left(
+                    data-toggle="collapse" 
+                    data-target="#step02Content" 
+                    aria-expanded="false" 
+                    aria-controls="step02Content") Define what advice you are looking for
+              #step02Content.collapse(
+                aria-labelledby="step02" 
+                data-parent="#process")
+                .card-body
+                  | When you get in touch with us, we set up a 45-60 minute consultation that is at no cost to you.
+            .card.ts-accrodion-01
+              #step03.card-header
+                h5.mb-0
+                  button.ts-btn.btn-lg.w-100.text-left(
+                    data-toggle="collapse" 
+                    data-target="#step03Content" 
+                    aria-expanded="false" 
+                    aria-controls="step03Content") A plan to help you achieve your goals
+              #step03Content.collapse(
+                aria-labelledby="step03" 
+                data-parent="#process")
+                .card-body
+                  | After we have met, your financial adviser will develop a plan based on all the information they have collected from you.
+            .card.ts-accrodion-01
+                #step04.card-header
+                  h5.mb-0
+                    button.ts-btn.btn-lg.w-100.text-left(
+                      data-toggle="collapse" 
+                      data-target="#step04Content" 
+                      aria-expanded="false" 
+                      aria-controls="step04Content") Present your plan and answer any questions
+                #step04Content.collapse(
+                  aria-labelledby="step04" 
+                  data-parent="#process")
+                  .card-body
+                    | After about two weeks, your financial adviser will be in touch to present their findings and recommendations and go into.
+            .card.ts-accrodion-01
+                #step05.card-header
+                  h5.mb-0
+                    button.ts-btn.btn-lg.w-100.text-left(
+                      data-toggle="collapse" 
+                      data-target="#step05Content" 
+                      aria-expanded="false" 
+                      aria-controls="step05Content") Present your plan and answer any questions
+                #step05Content.collapse(
+                  aria-labelledby="step05" 
+                  data-parent="#process")
+                  .card-body
+                    | After about two weeks, your financial adviser will be in touch to present their findings and recommendations and go into.
+
+  .home-01-cta.bg--whitesmoke.py-5
+    +boxCta01
+
+  +footer04
+
+  +popupSearch
+
+  +control
+append plugins  
+  +lib
+append script
+  script(defer src="js/main.min.js")
+  
+

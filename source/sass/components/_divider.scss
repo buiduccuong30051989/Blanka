@@ -3,5 +3,26 @@
 // --------------------------------------------------
 .ts-divider-01 {
   height: 1px;
-  background-color: rgba($white, .1);
+  background-color: rgba($white, 0.1);
+}
+
+.ts-divider-02 {
+  height: 1px;
+  background-color: $whitesmoke;
+}
+
+.row.vertical-divider-lg [class*="col-"]:not(:last-child)::after {
+  background: $whitesmoke;
+  width: 1px;
+  content: "";
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  min-height: 70px;
+
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
 }

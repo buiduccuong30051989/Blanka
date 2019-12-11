@@ -1,0 +1,69 @@
+extends modules/layout/layout.pug
+include modules/script/lib
+include modules/header_mixin/header_mixin
+include modules/blog/blog
+include modules/footer/footer
+include modules/control/control
+append head
+  title="Blog - Blog Grid 02"
+  link(href="css/main.min.css" rel="stylesheet")
+append header
+  +headerHome04
+
+append content
+  .ts-sub-header-02.border-bottom
+    .container
+      .row
+        .col-lg-12
+          .sub-header-inner
+            h2 Blog Grid
+            nav(aria-label="breadcrumb")
+              ol.ts-breadcrumb-01
+                li.breadcrumb-item
+                  a(href="home_01.html") Home
+                li.breadcrumb-item.active(aria-current="page") Blog Grid
+
+  section.bg--white
+    .container
+      .row.py-5.py-lg-7
+        .col-lg-12
+          .blog-grid-01
+            .row.js-isotope-projects.mansory-gutter-30.mb-5
+              .grid-sizer.col-lg-4.col-md-6
+              - for(var i = 1; i < 8; i++) {
+                  article.item.col-lg-4.col-md-6
+                    +blog10('Blog Title', 'Consultant', 'images/blog-0' + i + '.jpg', 'Admin', 'Commodo magna nulla nulla cillum sunt enim pariatur. Aliquip velit minim laboris ipsum fugiat do qui sit ullamco cillum eu aute nulla.', 'March', '22', '2019', 'la la-file-alt')
+              - }
+
+            nav.ts-pagination-01.pt-lg-4.mb-5.mb-lg-0(aria-label="Page navigation example")
+              ul.pagination
+                li.page-item
+                  a.page-link(href="#")
+                    i.ts-icon.la.la-angle-double-left
+                li.page-item.active
+                  a.page-link(href="#") 1
+                li.page-item
+                  a.page-link(href="#") 2
+                li.page-item
+                  a.page-link(href="#") 3
+                li.page-item
+                  a.page-link(href="#") ...
+                li.page-item
+                  a.page-link(href="#") 25
+                li.page-item
+                  a.page-link(href="#")
+                    i.ts-icon.la.la-angle-double-right
+            
+  +footer04
+
+  +popupSearch
+
+  +control
+append plugins  
+  +lib
+append script
+  script(src='js/extention/isotope.pkgd.min.js')
+  script(src="js/filter-portfolio.min.js")
+  script(src="js/main.min.js")
+  
+

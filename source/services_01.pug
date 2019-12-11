@@ -1,0 +1,60 @@
+extends modules/layout/layout.pug
+include modules/script/lib
+include modules/header_mixin/header_mixin
+include modules/services/services
+include modules/footer/footer
+include modules/control/control
+append head
+  title="Services - Services 01"
+  link(href="css/main.min.css" rel="stylesheet")
+append header
+  +headerHome04
+
+append content
+  .ts-sub-header-02.border-bottom
+    .container
+      .row
+        .col-lg-12
+          .sub-header-inner
+            h2 Services
+            nav(aria-label="breadcrumb")
+              ol.ts-breadcrumb-01
+                li.breadcrumb-item
+                  a(href="home_01.html") Home
+                li.breadcrumb-item.active(aria-current="page") Our Services
+
+  .home-03-services.bg--white.py-lg-7.py-5
+    .container
+      .row-g-45
+        .col-lg-4.mb-g-45
+          +services11('https://source.unsplash.com/user/erondu/720x340', 'Finance Invesment', 'Businesses are increasingly affected by tax, legislative..., understanding the impact of these developments on business operations...')
+                
+        .col-lg-4.mb-g-45
+          +services11('https://source.unsplash.com/720x340/?nature,water', 'Finance Invesment', 'Businesses are increasingly affected by tax, legislative..., understanding the impact of these developments on business operations...')
+        
+        .col-lg-4.mb-g-45
+          +services11('https://source.unsplash.com/collection/190727/720x340', 'Finance Invesment', 'Businesses are increasingly affected by tax, legislative..., understanding the impact of these developments on business operations...')
+        
+        .col-lg-4
+          +services11('https://source.unsplash.com/collection/21/720x340', 'Finance Invesment', 'Businesses are increasingly affected by tax, legislative..., understanding the impact of these developments on business operations...')
+                
+        .col-lg-4
+          +services11('https://source.unsplash.com/collection/2/720x340', 'Finance Invesment', 'Businesses are increasingly affected by tax, legislative..., understanding the impact of these developments on business operations...')
+        
+        .col-lg-4
+          +services11('https://source.unsplash.com/collection/1/720x340', 'Finance Invesment', 'Businesses are increasingly affected by tax, legislative..., understanding the impact of these developments on business operations...')
+
+  .home-01-cta.bg--whitesmoke.py-5
+    +boxCta01
+
+  +footer04
+
+  +popupSearch
+
+  +control
+append plugins  
+  +lib
+append script
+  script(defer src="js/main.min.js")
+  
+

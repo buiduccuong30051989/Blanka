@@ -1,0 +1,95 @@
+extends modules/layout/layout.pug
+include modules/script/lib
+include modules/header_mixin/header_mixin
+include modules/services/services
+include modules/footer/footer
+include modules/control/control
+append head
+  title="Services - Services 04"
+  link(href="css/main.min.css" rel="stylesheet")
+append header
+  +headerHome04
+
+append content
+  .ts-sub-header-02.border-bottom
+    .container
+      .row
+        .col-lg-12
+          .sub-header-inner
+            h2 Services
+            nav(aria-label="breadcrumb")
+              ol.ts-breadcrumb-01
+                li.breadcrumb-item
+                  a(href="home_01.html") Home
+                li.breadcrumb-item.active(aria-current="page") Our Services
+
+  .home-01-services.py-lg-7.py-5
+    .container
+      .row
+        .col-lg-12.mb-lg-5
+          .ts-section-heading-01.align-center
+            h2 Choose Dotted Template For Your Purpose
+          p.font-italic.text-center Phasellus id lacus neque. Proin vestibulum leo at turpis rhoncus, sed lacinia sem mollis. Etiam cursus bibendum dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam auctor eu nunc nec facilisis. Duis in felis eget eros tristique ornare. Maecenas volutpat, nisi id pretium imperdiet, odio neque pellentesque erat.
+      .row-g-40.services-wrap
+        .col-lg-6.mb-40
+          +services10('la la-chart-pie', 'Insurance', 'We here to help', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis, tellus sodales sollicitudin commodo, risus urna interdum massa')
+        .col-lg-6.mb-40
+          +services10('la la-chart-pie', 'Insurance', 'We here to help', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis, tellus sodales sollicitudin commodo, risus urna interdum massa')
+        .col-lg-6
+          +services10('la la-chart-pie', 'Insurance', 'We here to help', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis, tellus sodales sollicitudin commodo, risus urna interdum massa')
+        .col-lg-6
+          +services10('la la-chart-pie', 'Insurance', 'We here to help', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis, tellus sodales sollicitudin commodo, risus urna interdum massa')
+  
+  .container
+    .ts-divider-02
+
+  .home-05-why-us.bg--white.py-7
+    .container
+      .row
+        .col-lg-8.pr-lg-5
+          .ts-section-heading-01
+            h2 Why You Should Choose Us?
+          p.mb-lg-5 Integer est arcu, congue nec vulputate faucibus, aliquam eget tellus. Aliquam laoreet aliquam mi, vitae tempus orci mattis vitae. Cras ultricies mauris est, ultricies sagittis diam euismod et. Curabitur at dolor vitae felis semper ullamcorper eu mattis felis. Phasellus felis diam, egestas non hendrerit a, lacinia a neque.
+          .d-flex.align-items-end
+            .left.mr-4
+              img.thumb(src='http://templates.thememodern.com/dotted/images/Feature/7.png', alt='demo')
+            .right
+              ul.list-style-01.list-square.color.mb-lg-4
+                li FULLY RESPONSIVE 
+                li TEMPLATE MULTIPLE 
+                li PORTFOLIO COLUMNS 
+                li AMAZING SLIDER 
+                li 10 AMAZING SKINS 
+                li AND MANY MORE...
+              a(href="about.html").ts-btn.btn-color1 More About Us
+                i.ts-icon.la.la-angle-right.pl-3
+
+        .col-lg-4.p-0
+          .ts-section-heading-01.pl-lg-5
+            h2 Get A CallBack
+          form.call-back-form-05.border-left.pl-lg-5
+            .row
+              .col-lg-12.consultant-select-wrap.mb-4
+                p How can we help:
+                +selectDiscuss('line')
+              .col-lg-12.mb-4
+                input.ts-input-line(type="text" placeholder="Your Name")
+              .col-lg-12.mb-5
+                input.ts-input-line(type="text" placeholder="Your Phone")
+              .col-lg-12
+                a(href="#").ts-btn.btn-color1 Submit
+
+  .home-01-cta.py-5.bg--whitesmoke
+      +boxCta01
+
+  +footer04
+
+  +popupSearch
+
+  +control
+append plugins  
+  +lib
+append script
+  script(defer src="js/main.min.js")
+  
+

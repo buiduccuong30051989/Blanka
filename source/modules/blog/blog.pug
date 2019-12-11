@@ -134,12 +134,13 @@ mixin blog09(cover, title, desc)
         a(href="blog_detail.html")=title
       p.ts-blog-card-desc=desc
 
-mixin blog10(title, cat, cover, author, desc, month, day, year)
+mixin blog10(title, cat, cover, author, desc, month, day, year, type)
   .ts-blog-card-09.bg--whitesmoke
     .card-header
       h4.blog-card-title
         a(href="blog_detail.html")=title
       a(href="blogs_list.html").blog-card-catalog=cat
+      i.ts-icon(class=type)
     .card-cover
       a(href='blog_detail.html')
         img.card-img(src=cover, alt='cover')
