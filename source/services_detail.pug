@@ -1,0 +1,191 @@
+extends modules/layout/layout.pug
+include modules/script/lib
+include modules/header_mixin/header_mixin
+include modules/footer/footer
+include modules/control/control
+append head
+  title="Service - Service Detail"
+  link(href="css/main.min.css" rel="stylesheet")
+append header
+  +headerHome04
+
+append content
+  .ts-sub-header-02.border-bottom
+    .container
+      .row
+        .col-lg-12
+          .sub-header-inner
+            h2 Services Detail
+            nav(aria-label="breadcrumb")
+              ol.ts-breadcrumb-01
+                li.breadcrumb-item
+                  a(href="home_01.html") Home
+                li.breadcrumb-item.active(aria-current="page") Services Detail
+
+  section.bg--white.py-7
+    .container
+      .row
+        .col-lg-3.mb-5.mb-lg-0
+          .main-sidebar.sticky
+            aside.widget.widget-services
+              ul
+                li.cat-item.active
+                  a(href="#") All Services
+                li.cat-item
+                  a(href="#") Business Market
+                li.cat-item
+                  a(href="#") Socials Network
+                li.cat-item
+                  a(href="#") Team Work
+                li.cat-item
+                  a(href="#") Product Services
+                li.cat-item
+                  a(href="#") Socials Ecommerce
+        
+            aside.widget.widget-text
+              a(href="#").ts-btn.btn-color1.btn-lg.d-block
+                i.las.la-file-pdf.mr-2.fs--22
+                | Company Presentation
+
+            aside.widget.widget-text
+              .ts-box-contact.bg--whitesmoke.p-4
+                h4.mb-4 How can we help you?
+                p Contact us at the Consulting WP office nearest to you or submit a business inquiry online.
+                a(href="#").ts-btn.btn-color1.px-4
+                  i.las.la-phone-volume.fs--18.mr-3
+                  | Contact
+
+        .col-lg-9
+          .services-detail
+            .services-detail__cover.mb-4
+              .carousel.align-center-items.arrows-dark.arrows-square(
+                data-items="1" 
+                data-items-md="1" 
+                data-items-sm="1" 
+                data-items-xs="1" 
+                data-margin="0"
+                data-center="false"
+                data-dots="false"
+                data-arrows="true" 
+                data-autoplay='true' 
+                data-hoverpause="true"
+                data-autoplay-timeout="9000"
+                data-loop="true")
+                - for(var i = 0; i < 7; i++) {
+                  .item
+                    img.w-100(src=`https://picsum.photos/860/340?random=${25 + i}`, alt="cover")
+                - }
+              
+            .services-detail__content
+              h5.mb-4 Overview
+              p.mb-5 Temporibus autem quibusdam et aut officiis debitis is aut rerum necessitatibus saepes eveniet ut etes seo lage voluptates repudiandae sintt et molestiae non mes for Creating futures through building pres preservation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Rising commodity prices tend to push bond prices lower, while falling commodity prices lead to higher bond prices. In other words.
+              blockquote.ts-blockquote.mb-5
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                footer.blockquote-footer
+                  | Someone famous in 
+                  cite(title="Source Title") Source Title
+              .row
+                .col-lg-6
+                  h5.mb-4 Overview
+                  canvas#myChart.mb-6(style="width: 100%; height: 300px")
+                .col-lg-6
+                  h5.mb-4 Income Statement
+                  p Morbi eros augue, euismod non posuere vel, accumsan at nulla. Mauris sit amet tempus orci. Sed vel bibendum urna, in blandit nunc. Praesent eget mauris auctor, efficitur justo sed, consectetur dolor. Cras aliquet mi vitae convallis luctus. Aenean imperdiet mi et eleifend efficitur.
+                  ul.list-style-01.color.list-check
+                    li.mb-2 EASY CUSTOMIZATION RESPONSIVE
+                    li.mb-2 PORTFOLIO COLUMNS
+                    li.mb-2 AMAZING SLIDER
+                    li.mb-2 TEMPLATE MULTIPLE
+                    li.mb-2 10 AMAZING SKINS
+                    li AND MANY MORE...
+
+              .row.mb-5  
+                .col-lg-12
+                  h5.mb-4 Overview
+                  #process.px-lg-5
+                    .card.ts-accrodion-01
+                      #step01.card-header
+                        h5.mb-0
+                          button.ts-btn.btn-lg.w-100.text-left(
+                            data-toggle="collapse" 
+                            data-target="#step01Content" 
+                            aria-expanded="true" 
+                            aria-controls="step01Content") Discuss your goals
+                      #step01Content.collapse.show(
+                        aria-labelledby="step01" 
+                        data-parent="#process")
+                        .card-body
+                          | When you get in touch with us, we set up a 45-60 minute consultation that is at no cost to you. When you get in touch with us, we set up a 45-60 minute consultation that is at no cost to you.
+                    .card.ts-accrodion-01
+                      #step02.card-header
+                        h5.mb-0
+                          button.ts-btn.btn-lg.w-100.text-left(
+                            data-toggle="collapse" 
+                            data-target="#step02Content" 
+                            aria-expanded="false" 
+                            aria-controls="step02Content") Define what advice you are looking for
+                      #step02Content.collapse(
+                        aria-labelledby="step02" 
+                        data-parent="#process")
+                        .card-body
+                          | When you get in touch with us, we set up a 45-60 minute consultation that is at no cost to you.
+                    .card.ts-accrodion-01
+                      #step03.card-header
+                        h5.mb-0
+                          button.ts-btn.btn-lg.w-100.text-left(
+                            data-toggle="collapse" 
+                            data-target="#step03Content" 
+                            aria-expanded="false" 
+                            aria-controls="step03Content") A plan to help you achieve your goals
+                      #step03Content.collapse(
+                        aria-labelledby="step03" 
+                        data-parent="#process")
+                        .card-body
+                          | After we have met, your financial adviser will develop a plan based on all the information they have collected from you.
+                    .card.ts-accrodion-01
+                        #step04.card-header
+                          h5.mb-0
+                            button.ts-btn.btn-lg.w-100.text-left(
+                              data-toggle="collapse" 
+                              data-target="#step04Content" 
+                              aria-expanded="false" 
+                              aria-controls="step04Content") Present your plan and answer any questions
+                        #step04Content.collapse(
+                          aria-labelledby="step04" 
+                          data-parent="#process")
+                          .card-body
+                            | After about two weeks, your financial adviser will be in touch to present their findings and recommendations and go into.
+                    
+              .row.mb-5
+                .col-lg-6
+                  h5.mb-4 Balance Sheet
+                  p Duis nunc tortor, condimentum porta leo id, tempus mollis nulla. Suspendisse blandit congue rutrum. Proin nec porttitor arcu. Etiam a dictum odio. 
+                  p Vivamus massa purus, dignissim vitae volutpat ac, fringilla in orci. Nulla faecenas blandit bibendum laoreet. Nam justo arcu, tempor eu dolor nec, suscipit laoreet odio. Donec mattis est eget sem euismod, in cursus massa ullamcorper.
+                  ul.list-style-01.color.list-check
+                    li.mb-2 EASY CUSTOMIZATION RESPONSIVE
+                    li.mb-2 PORTFOLIO COLUMNS
+                    li.mb-2 AMAZING SLIDER
+                    li.mb-2 TEMPLATE MULTIPLE
+                    li.mb-2 10 AMAZING SKINS
+                    li AND MANY MORE...
+                .col-lg-6
+                  h5.mb-4 Balance Sheet
+                  canvas#myChart2.mb-6(style="width: 100%; height: 400px")
+
+  .home-01-cta.py-5.bg--whitesmoke
+    +boxCta01
+
+  +footer04
+
+  +popupSearch
+
+  +control
+append plugins  
+  +lib
+append script
+  script(src="js/extention/Chart.bundle.min.js")
+  script(src="js/chartjs03.min.js")
+  script(src="js/chartjs04.min.js")
+  script(src="js/main.min.js")
+  

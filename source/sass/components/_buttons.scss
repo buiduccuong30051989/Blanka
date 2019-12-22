@@ -62,6 +62,17 @@
   }
 }
 
+.btn-white {
+  background-color: $white;
+  color: $black;
+
+  &:hover {
+    background-color: $black;
+    color: $white;
+    text-decoration: none;
+  }
+}
+
 // generate ts button color themes
 $classTsBtn: btn-;
 @each $name, $hex in $colors-theme {
