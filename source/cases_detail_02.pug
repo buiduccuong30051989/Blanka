@@ -1,0 +1,111 @@
+extends modules/layout/layout.pug
+include modules/script/lib
+include modules/header_mixin/header_mixin
+include modules/footer/footer
+include modules/control/control
+append head
+  title="Cases - Cases Detail"
+  link(href="css/extention/photoswipe.min.css" rel="stylesheet")
+  link(href="css/main.min.css" rel="stylesheet")
+append header
+  +headerHome04
+
+append content
+  .ts-sub-header-02.border-bottom
+    .container
+      .row
+        .col-lg-12
+          .sub-header-inner
+            h2 Cases Detail
+            nav(aria-label="breadcrumb")
+              ol.ts-breadcrumb-01
+                li.breadcrumb-item
+                  a(href="home_01.html") Home
+                li.breadcrumb-item.active(aria-current="page") Cases Detail
+
+  section.bg--white.py-7
+    .container
+      .row
+        .col-lg-12
+          .cases-detail
+            .row.mb-5
+              .col-lg-12.text-center
+                h2 Temporibus autem quibusdam et aut officiis
+                a.cases-detail__cat(href="#") 
+                  i.las.la-minus.mr-1.fs--18
+                  | Overview
+                  i.las.la-minus.ml-1.fs--18
+            .row.mb-5
+              .col-lg-4
+                h5.mb-4 Abstract
+                p.mb-4 Steel Authority of India Limited (SAIL), one of the world’s largest government-owned steel making companies and India’s largest, was incorporated on January 24, 1973. The Government of India held 75% of the stake in SAIL
+                .widget-opening-hours.in-light
+                  ul
+                    li 
+                      span Industry :
+                      span Manufacturing
+                    li 
+                      span Teaching Note :
+                      span Available
+                    li 
+                      span Structured Assignment :
+                      span Not Available
+                    li
+                      span Region :
+                      span India
+                .mb-4
+                .pt-lg-2
+                  a(href="#").ts-btn.btn-color1.btn-lg.d-block
+                    i.las.la-download.mr-2.fs--22
+                    | Download Case
+              .col-lg-8
+                .pl-lg-5
+                  .embed-responsive.embed-responsive-16by9
+                    iframe.embed-responsive-item(src="https://docs.google.com/presentation/d/e/2PACX-1vRNjT8EfOUkwmYMC3y6BCwV4-Wm2x-LsnZ1GvZA6FACGLqIlNqZFIKleloTA78lJg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true")
+            .ts-divider-02.my-5
+            .row
+              .col-lg-6
+                #myChart2.mb-6(style="width: 100%; height: 250px")
+              .col-lg-6
+                h5.mb-4 Pedagogical Objectives:
+                p Duis nunc tortor, condimentum porta leo id, tempus mollis nulla. Suspendisse blandit congue rutrum. Proin nec porttitor arcu. Etiam a dictum odio. 
+                ul.list-style-01.list-dot
+                  li.mb-2 Understand the working capital situation in a steel manufacturing compan
+                  li.mb-2 Analyze how the global market situation may impact a firm’s working capital.
+                  li.mb-2 Identify the areas where business can take strategic decisions for optimizing the operating cycle.
+                  li Understand the concept of Working Capital, Working Capital Gap, Gross Operating Cycle, Net Operating Cycle or Cash Cycle.
+            .ts-divider-02.mb-5
+            .row
+              .col-lg-12
+                nav.nav.nav-tabs.ts-nav-tabs
+                  a.nav-item.nav-link.active(data-toggle='tab', href='#Customer') Customer Profile
+                  a.nav-item.nav-link(data-toggle='tab', href='#Business') Business Situation
+                  a.nav-item.nav-link(data-toggle='tab', href='#Solutions') Solutions
+                .tab-content.ts-tab-content
+                  #Customer.tab-pane.fade.show.active
+                    p Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed velit. Proin gravida arcu nisl, a dignissim mauris placerat id. Vivamus interdum urna at sapien varius elementum. Suspendisse ut mi felis et interdum libero lacinia vel. Aenean elementum odio ut lorem cursus, eu auctor magna pellentesque.
+                  #Business.tab-pane.fade
+                    p 2
+                  #Solutions.tab-pane.fade
+                    p 3   
+           
+
+  .home-01-cta.py-5.bg--whitesmoke
+    +boxCta01
+
+  +footer04
+
+  +popupSearch
+
+  +control
+append plugins  
+  +lib
+append script
+  //- script(src="js/extention/Chart.bundle.min.js")
+  script(src="js/main.min.js")
+  script(src="https://www.gstatic.com/charts/loader.js")
+  script(src="js/chartjs04.min.js")
+
+    
+  
+  

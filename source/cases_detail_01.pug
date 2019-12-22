@@ -1,0 +1,136 @@
+extends modules/layout/layout.pug
+include modules/script/lib
+include modules/header_mixin/header_mixin
+include modules/footer/footer
+include modules/control/control
+append head
+  title="Cases - Cases Detail"
+  link(href="css/extention/photoswipe.min.css" rel="stylesheet")
+  link(href="css/main.min.css" rel="stylesheet")
+append header
+  +headerHome04
+
+append content
+  .ts-sub-header-02.border-bottom
+    .container
+      .row
+        .col-lg-12
+          .sub-header-inner
+            h2 Cases Detail
+            nav(aria-label="breadcrumb")
+              ol.ts-breadcrumb-01
+                li.breadcrumb-item
+                  a(href="home_01.html") Home
+                li.breadcrumb-item.active(aria-current="page") Cases Detail
+
+  section.bg--white.py-7
+    .container
+      .row
+        .col-lg-9
+          .cases-detail
+            .cases-detail__cover.mb-5
+              .carousel.align-center-items.arrows-dark.arrows-square(
+                data-items="1" 
+                data-items-md="1" 
+                data-items-sm="1" 
+                data-items-xs="1" 
+                data-margin="0"
+                data-center="false"
+                data-dots="false"
+                data-arrows="true" 
+                data-autoplay='true' 
+                data-hoverpause="true"
+                data-autoplay-timeout="9000"
+                data-loop="true")
+                - for(var i = 0; i < 7; i++) {
+                  .item
+                    img.w-100(src=`https://picsum.photos/860/340?random=${25 + i}`, alt="cover")
+                - }
+              
+            .cases-detail__content
+              h2 Temporibus autem quibusdam et aut officiis
+              a.cases-detail__cat.pl-3.d-block(href="#") 
+                i.las.la-minus.mr-1.fs--18
+                | Overview
+              .mb-4
+              .row
+                .col-lg-6
+                  p Duis nunc tortor, condimentum porta leo id, tempus mollis nulla. Suspendisse blandit congue rutrum. Proin nec porttitor arcu. Etiam a dictum odio. 
+                  p Vivamus massa purus, dignissim vitae volutpat ac, fringilla in orci. Nulla faecenas blandit bibendum laoreet. Nam justo arcu, tempor eu dolor nec, suscipit laoreet odio. Donec mattis est eget sem euismod, in cursus massa ullamcorper.
+                  ul.list-style-01.color.list-check
+                    li.mb-2 EASY CUSTOMIZATION RESPONSIVE
+                    li.mb-2 PORTFOLIO COLUMNS
+                    li.mb-2 TEMPLATE MULTIPLE
+                    li AND MANY MORE...
+                .col-lg-6
+                  canvas#myChart2.mb-6(style="width: 100%; height: 300px")
+              .ts-divider-02.mb-5
+              .row.mb-5
+                .col-lg-10.offset-lg-1
+                  .embed-responsive.embed-responsive-16by9
+                    iframe.embed-responsive-item(src="https://docs.google.com/presentation/d/e/2PACX-1vRNjT8EfOUkwmYMC3y6BCwV4-Wm2x-LsnZ1GvZA6FACGLqIlNqZFIKleloTA78lJg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true")
+              .ts-divider-02.mb-5
+              .row
+                .col-lg-12
+                  nav.nav.nav-tabs.ts-nav-tabs
+                    a.nav-item.nav-link.active(data-toggle='tab', href='#challenge') Challenge
+                    a.nav-item.nav-link(data-toggle='tab', href='#solutions') Solutions
+                    a.nav-item.nav-link(data-toggle='tab', href='#result') Result
+                  .tab-content.ts-tab-content
+                    #challenge.tab-pane.fade.show.active
+                      p Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed velit. Proin gravida arcu nisl, a dignissim mauris placerat id. Vivamus interdum urna at sapien varius elementum. Suspendisse ut mi felis et interdum libero lacinia vel. Aenean elementum odio ut lorem cursus, eu auctor magna pellentesque.
+                    #solutions.tab-pane.fade
+                      p 2
+                    #result.tab-pane.fade
+                      p 3
+        
+        .col-lg-3.mb-5.mb-lg-0
+          .main-sidebar.sticky
+            aside.widget.widget-services
+              h3.widget-title
+                i.ts-icon.la.la-angle-double-right.mr-1
+                | Cases Categories
+              ul
+                li.cat-item.active
+                  a(href="#") All Services
+                li.cat-item
+                  a(href="#") Business Market
+                li.cat-item
+                  a(href="#") Socials Network
+                li.cat-item
+                  a(href="#") Team Work
+                li.cat-item
+                  a(href="#") Product Services
+                li.cat-item
+                  a(href="#") Socials Ecommerce
+        
+            aside.widget.widget-text
+              a(href="#").ts-btn.btn-color1.btn-lg.d-block
+                i.las.la-download.mr-2.fs--22
+                | Download PDF
+
+            aside.widget.widget-text
+              .ts-box-contact.bg--whitesmoke.p-4
+                h4.mb-4 How can we help you?
+                p Contact us at the Consulting WP office nearest to you or submit a business inquiry online.
+                a(href="#").ts-btn.btn-color1.px-4
+                  i.las.la-phone-volume.fs--18.mr-3
+                  | Contact
+
+  .home-01-cta.py-5.bg--whitesmoke
+    +boxCta01
+
+  +footer04
+
+  +popupSearch
+
+  +control
+append plugins  
+  +lib
+append script
+  script(src="js/extention/Chart.bundle.min.js")
+  script(src="js/chartjs03.min.js")
+  script(src="js/chartjs04.min.js")
+  script(src="js/main.min.js")
+  
+  

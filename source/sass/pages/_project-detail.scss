@@ -1,3 +1,9 @@
 //
 // Components :: Project Detail
 // --------------------------------------------------
+.cases-detail {
+  &__cat {
+    font-size: 16px;
+    color: $gray40;
+  }
+}

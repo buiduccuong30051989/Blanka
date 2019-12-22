@@ -28,6 +28,12 @@
     }
   }
 
+  &.list-dot {
+    li:before {
+      content: "●";
+    }
+  }
+
   &.list-square {
     li:before {
       content: "\f14a";
