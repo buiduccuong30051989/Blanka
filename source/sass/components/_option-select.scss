@@ -547,3 +547,126 @@
     }
   }
 }
+
+.border-select {
+  min-width: 100%;
+
+  &.show {
+    &.bootstrap-select {
+      & > .dropdown-toggle {
+        border-color: color(color1, 1);
+        background-color: $white;
+      }
+    }
+  }
+
+  &.bootstrap-select {
+    & > .dropdown-toggle {
+      background-color: $whitesmoke;
+      border: 1px solid $gray90;
+      border-radius: 2px;
+      padding: 10px 15px;
+      font-size: 13px;
+      line-height: 1.6;
+      height: 40px;
+      color: $gray40;
+      transition: $transition-base;
+
+      &.btn-light {
+        &:hover,
+        &:focus {
+          box-shadow: none;
+          // color: $white;
+          // background-color: color(color1, 1);
+          border-color: color(color1, 1);
+
+          .option-select-team {
+            color: $white;
+
+            .name {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+
+    & > select {
+      left: 0;
+      border-radius: 2px;
+    }
+  }
+
+  .dropdown-menu {
+    padding: 0;
+    background-color: $whitesmoke;
+    border: 0;
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.27);
+    border-radius: 2px;
+
+    .dropdown-item {
+      padding: 8px 15px 9px;
+      border-bottom: 1px solid rgba($white, .1);
+      font-size: 13px;
+
+      &:last-child {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+
+      &:first-child {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+
+      &:hover {
+        background-color: $gray90;
+      }
+
+      &.active {
+        background-color: color(color1, 1);
+
+        &:hover {
+          color: $white;
+        }
+      }
+
+      &:focus {
+        outline: 0;
+      }
+    }
+
+    &.show {
+      min-width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  &.select-grey {
+    &.bootstrap-select {
+      & > .dropdown-toggle {
+        background-color: $whitesmoke;
+      }
+    }
+
+    &.show {
+      &.bootstrap-select {
+        & > .dropdown-toggle {
+          background-color: color(color1, 1);
+  
+          .option-select-team {
+  
+            .name {
+            }
+          }
+        }
+  
+        .dropdown-item {
+          &.active {
+            background-color: color(color1, 1);
+          }
+        }
+      }
+    }
+  }
+}

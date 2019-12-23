@@ -174,9 +174,9 @@
     ul li a {
       &:before {
         content: "\f30b";
-        transition: transform .35s;
+        transition: transform 0.35s;
       }
-      
+
       &:hover {
         &:before {
           transform: translateX(3px);
@@ -204,7 +204,6 @@
 
 .widget-subcrible {
   &-01 {
-    
   }
 }
 
@@ -342,7 +341,7 @@
       &:hover {
         padding-left: 4px;
         color: color(color1, 1);
-        
+
         a {
           text-decoration: none;
           color: color(color1, 1);
@@ -382,7 +381,6 @@
 }
 
 .widget-archive {
-  @extend .widget-catalog;
 }
 
 .widget-meta {
@@ -428,3 +426,23 @@
     }
   }
 }
+
+.widget-gallery {
+  .photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+
+    .item {
+      padding: 5px;
+      width: 33.333%;
+      margin: 0;
+    }
+  }
+}
+
+.widget_search {
+  .ts-btn {
+    height: 40px;
+  }
+}
+

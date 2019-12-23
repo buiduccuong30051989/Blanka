@@ -5,6 +5,7 @@ include modules/footer/footer
 include modules/control/control
 append head
   title="Blog - Blog Detail"
+  link(href="css/extention/photoswipe.min.css" rel="stylesheet")
   link(href="css/main.min.css" rel="stylesheet")
 
 append header
@@ -77,9 +78,6 @@ append content
                   i.ts-icon.la.la-angle-double-left.pr-1
                   | PREVIEW
                 h5 10 skills propelling finance functions forward in 2019
-              a(href="blog_grid.html").ts-btn.btn-lg
-                i.ts-icon.la.la-th.mr-2.fs--18
-                | Blogs
               a(href="#").item.text-right
                 span
                   | NEXT
@@ -98,8 +96,8 @@ append content
                     .comment-content
                       p Nunc risus ex, tempus quis purus ac, tempor consequat ex. Vivamus sem magna, maximus at est id, maximus aliquet nunc. Suspendisse lacinia velit a eros porttitor, in interdum ante faucibus.
                       cite
-                        a(href="#") Angela Allen 
-                        |  -      
+                        a(href="#") Angela Allen
+                        |  -
                       a.comment-date(href="")
                         span March 30, 2016
                       .reply
@@ -117,7 +115,7 @@ append content
                             | Nullam ipsum urna, dapibus sed justo sed, imperdiet malesuada commodo, eros eleifend laoreet fringilla,
                           cite
                             a(href="#") Angela Allen
-                          |   -      
+                          |   -
                           a.comment-date(href="#")
                             span March 30, 2016
                 li.comment.last-comment
@@ -130,7 +128,7 @@ append content
                         | Nunc risus ex, tempus quis purus ac, tempor consequat ex. Vivamus sem magna, maximus at est id, maximus aliquet nunc. Suspendisse lacinia velit a eros porttitor, in interdum ante faucibus.
                       cite
                         a(href="#") Angela Allen
-                      |   -      
+                      |   -
                       a.comment-date(href="#")
                         span March 30, 2016
                       .reply
@@ -139,40 +137,38 @@ append content
                           | Reply
             .divider-section-01
             .comment-respond.py-5
-              h3.comment-reply-title Leave a Reply 
+              h3.comment-reply-title Leave a Reply
               p.mb-4.fs--13
-                a.color--fb5(href="#") You must be logged in to post a comment...
+                a.text-muted(href="#") You must be logged in to post a comment...
               form.comment-form(action="GET", method="post")
                 .row-g-40
                   .col-lg-6.mb-lg-40.mb-4
-                    input#inputName.ts-input.form-control-lg(type="text", placeholder="Your Name")
+                    input#inputName.ts-input-grey.form-control-lg(type="text", placeholder="Your Name")
                   .col-lg-6.mb-lg-40.mb-4
-                    input#inputEmail.ts-input.form-control-lg(type="email", placeholder="Your Email")
+                    input#inputEmail.ts-input-grey.form-control-lg(type="email", placeholder="Your Email")
                 .row.mb-lg-40.mb-4
                   .col
-                    textarea.ts-input(rows="5")
+                    textarea.ts-input-grey(rows="5")
                 .row
                   .col
-                    button.ts-btn.btn-color1.btn-lg(name="submit", type="submit") Comment 
+                    button.ts-btn.btn-color1.btn-lg(name="submit", type="submit") Comment
         .col-lg-3
           .main-sidebar
-            aside.widget.widget-text
-              h3.widget-title
-                i.ts-icon.la.la-angle-double-right.mr-1
-                | About
-              .textwidget
-                p
-                  | Nulla eleifend, sapien eget porttitor maximus, nisl ante convallis dolor, nec consequat felis ex a ex. Etiam vestibulum enim euismod dui vestibulum, vitae fringilla nibh consectetur. Integer at volutpat augue. Donec consectetur, est nec laoreet scelerisque, lacus nulla fermentum odio, ut accumsan enim ipsum a justo.
+            //- aside.widget.widget-text
+            //-   h3.widget-title
+            //-     | About
+            //-   .textwidget
+            //-     p
+            //-       | Nulla eleifend, sapien eget porttitor maximus, nisl ante convallis dolor, nec consequat felis ex a ex. Etiam vestibulum enim euismod dui vestibulum, vitae fringilla nibh consectetur. Integer at volutpat augue. Donec consectetur, est nec laoreet scelerisque, lacus nulla fermentum odio, ut accumsan enim ipsum a justo.
             aside.widget.widget_search
               form.form-inline(action="" method="get" role="search")
-                .input-group
-                  input.ts-input.border-right-0(type="search" name="s" value="" placeholder="Search …")
+                .input-group.w-100
+                  input.ts-input-grey.border-right-0(type="search" name="s" value="" placeholder="Search …")
                   .input-group-append
                     button.ts-btn.btn-color1(type="submit")
-                      i.ts-icon.la.la-search
+                      i.ts-icon.la.la-search.fs--18
             aside.widget.widget-catalog
               h3.widget-title
-                i.ts-icon.la.la-angle-double-right.mr-1
                 | Categories
               ul
                 li.cat-item
@@ -192,7 +188,6 @@ append content
                   |  (6)
             aside.widget.widget-tags
               h3.widget-title
-                i.ts-icon.la.la-angle-double-right.mr-1
                 | Tags
               ul
                 li
@@ -217,33 +212,36 @@ append content
                   a(href="#") youtube
             aside.widget.widget-archive
               h3.widget-title
-                i.ts-icon.la.la-angle-double-right.mr-1
                 | Archives
-              ul
-                li
-                  a(href="#") September 2016
-                  |  (14)
-                li
-                  a(href="#") September 2015
-                  |  (10)
-                li
-                  a(href="#") January 2013
-                  |  (5)
-                li
-                  a(href="#") March 2012
-                  |  (5)
-                li
-                  a(href="#") January 2012
-                  |  (6)
-                li
-                  a(href="#") March 2011
-                  |  (1)
-                li
-                  a(href="#") October 2010
-                  |  (1)
+              select.js-select.border-select
+                option Select Month
+                option December 2019
+                option January 2016
+                option December 2015
+            aside.widget.widget-gallery
+              h3.widget-title
+                | Gallery
+              .photo-gallery.js-photo-gallery
+                figure.item(tabindex="1")
+                  a(href="https://picsum.photos/id/1006/1200/1200", data-size="1200x1200")
+                    img(src='https://picsum.photos/id/1006/300/300', alt='thumb')
+                figure.item(tabindex="2")
+                  a(href="https://picsum.photos/id/1002/1200/1200", data-size="1200x1200")
+                    img(src='https://picsum.photos/id/1002/300/300', alt='thumb')
+                figure.item(tabindex="3")
+                  a(href="https://picsum.photos/id/100/1200/1200", data-size="1200x1200")
+                    img(src='https://picsum.photos/id/100/300/300', alt='thumb')
+                figure.item(tabindex="4")
+                  a(href="https://picsum.photos/id/1001/1200/1200", data-size="1200x1200")
+                    img(src='https://picsum.photos/id/1001/300/300', alt='thumb')
+                figure.item(tabindex="5")
+                  a(href="https://picsum.photos/id/1029/1200/1200", data-size="1200x1200")
+                    img(src='https://picsum.photos/id/1029/300/300', alt='thumb')
+                figure.item(tabindex="6")
+                  a(href="https://picsum.photos/id/1037/1200/1200", data-size="1200x1200")
+                    img(src='https://picsum.photos/id/1037/300/300', alt='thumb')
             aside.widget.widget-meta
               h3.widget-title
-                i.ts-icon.la.la-angle-double-right.mr-1
                 | Meta
               ul
                 li
@@ -252,20 +250,28 @@ append content
                   a(href="#") Log out
                 li
                   a(href="#")
-                    | Entries 
+                    | Entries
                     abbr RSS
                 li
                   a(href="#")
-                    | Comments 
+                    | Comments
                     abbr RSS
                 li
                   a(href="#") WordPress.org
-  
-  +footer01
+
+  +footer04
+
+  +popupSearch
+
+  +photoSwiper
+
   +control
-append plugins  
+append plugins
   +lib
 append script
-  script(defer src="js/main.min.js")
-  
+  script(src="js/extention/photoswipe.min.js")
+  script(src="js/extention/photoswipe-ui-default.min.js")
+  script(src="js/photoswipe-function.min.js")
+  script(src="js/main.min.js")
+
 
