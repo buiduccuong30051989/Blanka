@@ -386,6 +386,32 @@
   }
 }
 
+.ts-input-grey {
+  @extend .form-control;
+  border-radius: 2px;
+  transition: $transition-base;
+  font-weight: 300;
+  font-family: $lato;
+  background-color: $whitesmoke;
+  border-color: $gray90;
+  font-size: 13px;
+  min-height: 40px;
+
+  @include placeholder() {
+    color: $gray60;
+    font-family: $lato;
+    font-size: 13px;
+  }
+
+  &:hover,
+  &:focus {
+    outline: 0;
+    box-shadow: none;
+    background-color: $white;
+    border-color: $gray90;
+  }
+}
+
 .ts-input--light-02 {
   @extend .form-control;
   // background-color: $whitesmoke;

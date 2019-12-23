@@ -30,15 +30,15 @@ append content
           .cases-detail
             .cases-detail__cover.mb-5
               .carousel.align-center-items.arrows-dark.arrows-square(
-                data-items="1" 
-                data-items-md="1" 
-                data-items-sm="1" 
-                data-items-xs="1" 
+                data-items="1"
+                data-items-md="1"
+                data-items-sm="1"
+                data-items-xs="1"
                 data-margin="0"
                 data-center="false"
                 data-dots="false"
-                data-arrows="true" 
-                data-autoplay='true' 
+                data-arrows="true"
+                data-autoplay='true'
                 data-hoverpause="true"
                 data-autoplay-timeout="9000"
                 data-loop="true")
@@ -46,10 +46,10 @@ append content
                   .item
                     img.w-100(src=`https://picsum.photos/860/340?random=${25 + i}`, alt="cover")
                 - }
-              
+
             .cases-detail__content
               h2 Temporibus autem quibusdam et aut officiis
-              a.cases-detail__cat.pl-3.d-block(href="#") 
+              a.cases-detail__cat.pl-3.d-block(href="#")
                 i.las.la-minus.mr-1.fs--18
                 | Overview
               .mb-4
@@ -63,7 +63,7 @@ append content
                     li.mb-2 TEMPLATE MULTIPLE
                     li AND MANY MORE...
                 .col-lg-6
-                  canvas#myChart2.mb-6(style="width: 100%; height: 300px")
+                  canvas#myChart.mb-6(style="width: 100%; height: 300px")
               .ts-divider-02.mb-5
               .row.mb-5
                 .col-lg-10.offset-lg-1
@@ -83,7 +83,6 @@ append content
                       p 2
                     #result.tab-pane.fade
                       p 3
-        
         .col-lg-3.mb-5.mb-lg-0
           .main-sidebar.sticky
             aside.widget.widget-services
@@ -103,7 +102,6 @@ append content
                   a(href="#") Product Services
                 li.cat-item
                   a(href="#") Socials Ecommerce
-        
             aside.widget.widget-text
               a(href="#").ts-btn.btn-color1.btn-lg.d-block
                 i.las.la-download.mr-2.fs--22
@@ -125,12 +123,10 @@ append content
   +popupSearch
 
   +control
-append plugins  
+append plugins
   +lib
 append script
   script(src="js/extention/Chart.bundle.min.js")
   script(src="js/chartjs03.min.js")
-  script(src="js/chartjs04.min.js")
   script(src="js/main.min.js")
-  
-  
+
