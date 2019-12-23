@@ -6,84 +6,84 @@ include modules/control/control
 append head
   title="Blog - Blog Detail"
   link(href="css/main.min.css" rel="stylesheet")
-append header
-  +header01
-append content
-  section.sub-header.bg--whitesmoke
-    .container
-      h2.title Blog Detail
 
-  section.section-breadcrumb.bg-white.py-2
+append header
+  +headerHome04
+
+append content
+  .ts-sub-header-02.border-bottom
     .container
-      nav(aria-label="breadcrumb")
-        ol.ts-breadcrumb
-          li.breadcrumb-item
-            a(href="index.html") 
-              i.ts-icon.la.la-home.mr-1
-              | Home
-          li.breadcrumb-item.active(aria-current="page") Blog Detail
+      .row
+        .col-lg-12
+          .sub-header-inner
+            h2 Blog Detail
+            nav(aria-label="breadcrumb")
+              ol.ts-breadcrumb-01
+                li.breadcrumb-item
+                  a(href="home_01.html") Home
+                li.breadcrumb-item.active(aria-current="page") Blog Detail
 
   section.bg--white
     .container
       .row.py-5.py-lg-7
         .col-lg-9
           .blog-detail
-            h2.blog-detail__title.mb-4 The best experience from the experts
-            .blog-detail__meta-top
-              .catalog
-                a.color--color1(href="#") Financial
-                | , 
-                a.color--color1(href="#") Consultant
-              .time
-                span JULY 18, 2019
-            .blog-detail__cover.mb-4
+            .card-cover
               img(src="https://picsum.photos/879/490?random=10", alt="cover")
-            .blog-detail__content
-              h5.mb-3 Lorem Ipsum Doren se amet
-              p Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed velit. Proin gravida arcu nisl, a dignissim mauris placerat id. Vivamus interdum urna at sapien varius elementum. Suspendisse ut mi felis et interdum libero lacinia vel. Aenean elementum odio ut lorem cursus, eu auctor magna pellentesque. Cras facilisis quam sed rhoncus dapibus. Quisque lorem enim, dictum at magna eu, hendrerit hendrerit arcu. Etiam vulputate ac tortor ac gravida. Proin accumsan placerat rutrum. Praesent ut eros ac nisi ultrices rhoncus et.
-              p Nulla fermentum eros vitae est finibus dapibus. Aliquam porta nulla a elit varius efficitur. In in magna sed turpis venenatis tristique eu eget neque. Duis condimentum libero ornare quam tincidunt interdum. Phasellus porttitor nisi ut lectus pellentesque, ut fringilla leo convallis
-              blockquote.ts-blockquote.my-4
-                p.mb-0
-                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-                footer.blockquote-footer
-                  | Someone famous in 
-                  cite(title="Source Title") Source Title
-              p Duis gravida tempus imperdiet. Vivamus elit vel consequat elementum. Cras consequat lorem non orci sagittis, eget volutpat neque imperdiet. Nam auctor nisi vitae enim accumsan, ac dignissim tortor consequat.
-              ul.list-style-01.list-check.color.mb-3
-                li.mb-1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                li.mb-1 Phasellus id lectus quis dui euismod consectetur.
-                li.mb-1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                li.mb-1 Phasellus id lectus quis dui euismod consectetur.
-                li.mb-1 Phasellus id lectus quis dui euismod consectetur. 
-            .blog-detail__meta-bottom.py-4
-              .tags
-                span.pr-1 TAGS: 
-                a.color--color1(href = "#") FINANCIAL
-                | , 
-                a.color--color1.pl-1(href="#") BUSINESS
-                | ,
-                a.color--color1.pl-1(href="#") CONSULTANT
-                | ,
-                a.color--color1.pl-1(href="#") TAX
-              .share
-                span.pr-1 SHARE: 
-                a.color--color1.pl-1(href = "#") FACEBOOK
-                | , 
-                a.color--color1.pl-1(href="#") TWITTER
+            .card-body
+              .blog-card-meta
+                .blog-card-time
+                  .day 15
+                  .month OCT
+                .blog-card-type
+                  i.ts-icon.la.la-file-image
+              .blog-detail-content
+                h2.blog-card-title.mb-4 The best experience from the experts
+                h5.mb-3 Lorem Ipsum Doren se amet
+                p Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed velit. Proin gravida arcu nisl, a dignissim mauris placerat id. Vivamus interdum urna at sapien varius elementum. Suspendisse ut mi felis et interdum libero lacinia vel. Aenean elementum odio ut lorem cursus, eu auctor magna pellentesque. Cras facilisis quam sed rhoncus dapibus. Quisque lorem enim, dictum at magna eu, hendrerit hendrerit arcu. Etiam vulputate ac tortor ac gravida. Proin accumsan placerat rutrum. Praesent ut eros ac nisi ultrices rhoncus et.
+                p Nulla fermentum eros vitae est finibus dapibus. Aliquam porta nulla a elit varius efficitur. In in magna sed turpis venenatis tristique eu eget neque. Duis condimentum libero ornare quam tincidunt interdum. Phasellus porttitor nisi ut lectus pellentesque, ut fringilla leo convallis
+                blockquote.ts-blockquote.my-4
+                  p.mb-0
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                  footer.blockquote-footer
+                    | Someone famous in
+                    cite(title="Source Title") Source Title
+                p Duis gravida tempus imperdiet. Vivamus elit vel consequat elementum. Cras consequat lorem non orci sagittis, eget volutpat neque imperdiet. Nam auctor nisi vitae enim accumsan, ac dignissim tortor consequat.
+                ul.list-style-01.list-check.color.mb-3
+                  li.mb-1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  li.mb-1 Phasellus id lectus quis dui euismod consectetur.
+                  li.mb-1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  li.mb-1 Phasellus id lectus quis dui euismod consectetur.
+                  li.mb-1 Phasellus id lectus quis dui euismod consectetur.
+            .card-footer
+              .meta
+                span.blog-card-author
+                  label Post by
+                  a(href="blog_detail.html") Admin
+                span.blog-card-catalog
+                  label On
+                  a(href="blog_list_01.html") Business, Consultant
+                span.blog-card-comment
+                  label Comment
+                  | 123
+              .share.d-flex.align-items-center
+                span.pr-2 Share this Article:
+                .ts-social-list-01.align-right
+                  +tsSocialList01
             .divider-section-01
             .blog-detail__control.py-5
               a(href="#").item
                 span
-                  i.ts-icon.la.la-angle-double-left.pr-1  
+                  i.ts-icon.la.la-angle-double-left.pr-1
                   | PREVIEW
                 h5 10 skills propelling finance functions forward in 2019
-              a(href="blog_grid.html").ts-btn.btn-outline-color4.btn-lg
+              a(href="blog_grid.html").ts-btn.btn-lg
                 i.ts-icon.la.la-th.mr-2.fs--18
                 | Blogs
               a(href="#").item.text-right
                 span
                   | NEXT
-                  i.ts-icon.la.la-angle-double-right.pl-1 
+                  i.ts-icon.la.la-angle-double-right.pl-1
                 h5 Teamwork: The Hidden Ingredient In Trading Success
             .divider-section-01
             .comments-area.py-5
