@@ -56,7 +56,7 @@ append content
                   | Contact
 
         .col-lg-9
-          .services-detail
+          .services-detail.has-sidebar
             .services-detail__cover.mb-4
               .carousel.align-center-items.arrows-dark.arrows-square(
                 data-items="1" 
@@ -157,21 +157,21 @@ append content
                           .card-body
                             | After about two weeks, your financial adviser will be in touch to present their findings and recommendations and go into.
                     
-              .row.mb-5
-                .col-lg-6
+              .row
+                .col-lg-6.pr-lg-5
                   h5.mb-4 Balance Sheet
                   p Duis nunc tortor, condimentum porta leo id, tempus mollis nulla. Suspendisse blandit congue rutrum. Proin nec porttitor arcu. Etiam a dictum odio. 
                   p Vivamus massa purus, dignissim vitae volutpat ac, fringilla in orci. Nulla faecenas blandit bibendum laoreet. Nam justo arcu, tempor eu dolor nec, suscipit laoreet odio. Donec mattis est eget sem euismod, in cursus massa ullamcorper.
-                  ul.list-style-01.color.list-check
+                  ul.list-style-01.list-dot
                     li.mb-2 EASY CUSTOMIZATION RESPONSIVE
                     li.mb-2 PORTFOLIO COLUMNS
                     li.mb-2 AMAZING SLIDER
                     li.mb-2 TEMPLATE MULTIPLE
                     li.mb-2 10 AMAZING SKINS
                     li AND MANY MORE...
-                .col-lg-6
+                .col-lg-6.pl-lg-5
                   h5.mb-4 Balance Sheet
-                  canvas#myChart2.mb-6(style="width: 100%; height: 400px")
+                  #myChart2.mb-6(style="width: 100%; height: 400px")
 
   .home-01-cta.py-5.bg--whitesmoke
     +boxCta01
@@ -184,6 +184,7 @@ append content
 append plugins  
   +lib
 append script
+  script(src="https://www.gstatic.com/charts/loader.js")
   script(src="js/extention/Chart.bundle.min.js")
   script(src="js/chartjs03.min.js")
   script(src="js/chartjs04.min.js")

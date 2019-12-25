@@ -38,8 +38,8 @@
   &-author {
     width: 54px;
     height: 54px;
-    border-radius: 50%;
     overflow: hidden;
+    border: 4px solid $whitesmoke;
 
     .avatar {
       @include fitImage();
@@ -52,7 +52,6 @@
 
     a {
       transition: $transition-base;
-      text-transform: uppercase;
       font-size: 13px;
 
       &:hover {
@@ -64,7 +63,14 @@
     .reply {
       display: inline-block;
       margin-left: 30px;
-      color: color(color1, 1);
+      
+      .comment-reply-link {
+        color: $gray60;
+        
+        &:hover {
+          color: $gray20;
+        }
+      }
     }
 
     cite {
