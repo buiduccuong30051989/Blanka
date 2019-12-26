@@ -1,8 +1,24 @@
 mixin team05(avatar, name, title)
   .ts-team-card-01
     
-mixin team06(avatar, name, title)
-  .ts-team-card-06
+mixin team06(avatar, name, title, desc)
+  .ts-team-card-03
+    .card-cover
+      img.card-img(src=avatar, alt="avatar")
+      .team-card-info
+        h4.team-card-name=name
+        p.team-card-title=title
+    .card-body
+      p.team-card-desc=desc
+    .card-footer
+      a(href="#").hcl--facebook
+        i.ts-icon.lab.la-facebook-square
+      a(href="#").hcl--twitter
+        i.ts-icon.lab.la-twitter
+      a(href="#").hcl--instagram
+        i.ts-icon.lab.la-instagram
+      a(href="team_detail.html").read-more
+        i.ts-icon.la.la-angle-right
 
 mixin team07(avatar, name, title, desc)
   .ts-team-card-05

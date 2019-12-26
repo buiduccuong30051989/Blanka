@@ -1,0 +1,76 @@
+extends modules/layout/layout.pug
+include modules/script/lib
+include modules/header_mixin/header_mixin
+include modules/team/team
+include modules/blog/blog
+include modules/portfolio/portfolio
+include modules/services/services
+include modules/testimonial/testimonial
+include modules/footer/footer
+include modules/control/control
+append head
+  title="Testimonials Page - 01"
+  link(href="css/main.min.css" rel="stylesheet")
+append header
+  +headerHome04
+  
+append content
+
+  .ts-sub-header-02.border-bottom
+    .container
+      .row
+        .col-lg-12
+          .sub-header-inner
+            h2 Our Happy Client
+            nav(aria-label="breadcrumb")
+              ol.ts-breadcrumb-01
+                li.breadcrumb-item
+                  a(href="home_01.html") Home
+                li.breadcrumb-item.active(aria-current="page") Our Happy Client
+  
+  .py-lg-7.py-5.bg--whitesmoke.testimonials-01
+    .container
+      .row.mb-5
+        .col-lg-12.text-center
+          h2.mb-3 WE ARE BIFIRM
+          h5 We’re help your vulputate bibendum justo sed, tincidunt quisque dictum eget dolor vel maximus.
+      .row
+        .col-lg-12
+          .ts-section-heading-01
+            h2 Testimonials Style 01
+      .row-g-40
+        - for(var i = 1; i < 4; i ++) {
+          .col-lg-4.col-md-6
+            +testimonial08('https://i.pravatar.cc/120?img=' + i, 'Adam Slander', 'Developer', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.')
+        - }
+
+    .container
+      .row.py-7
+        .col-lg-12
+          .border-bottom
+
+      .row
+        .col-lg-12
+          .ts-section-heading-01
+            h2 Testimonials Style 02
+      .row-g-40.mb-5
+        - for(var i = 1; i < 4; i ++) {
+          .col-lg-4.col-md-6
+            +testimonial09('https://i.pravatar.cc/120?img=' + i, 'Adam Slander', 'Developer', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.')
+        - }
+
+  .bg--white
+    .home-01-cta.py-7
+      +boxCta02
+
+  +footer04
+
+  +popupSearch
+
+  +control
+append plugins  
+  +lib
+append script
+  script(src="js/main.min.js")
+  script.
+    
