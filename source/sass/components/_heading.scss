@@ -75,7 +75,8 @@
 
   &.has-controls {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    justify-content: space-between;
 
     .group-carousel-controls {
       margin-left: 20px;
@@ -89,9 +90,6 @@
       display: inline-flex;
       line-height: 1;
       font-size: 16px;
-      padding-left: 20px;
-      margin-left: 20px;
-      border-left: 1px solid rgba($black, .1);
 
       &:hover {
         color: color(color1, 1);

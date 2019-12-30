@@ -2,12 +2,21 @@
 // Page :: Testimonials
 // --------------------------------------------------
 .testimonials-01 {
-  [class*='ts-testimonial-'] {
+  [class*='ts-testimonial-card'] {
     box-shadow: 0 1px 1px 0 rgba($black, .15);
     transition: $transition-base;
 
     &:hover {
       box-shadow: 0 5px 11px 0 rgba($black, 0.27);
+    }
+  }
+
+  .ts-testimonial-card-07,
+  .ts-testimonial-card-06 {
+    box-shadow: none;
+
+    &:hover {
+      box-shadow: none;
     }
   }
 }

@@ -21,6 +21,8 @@
 
 .ts-topbar {
   font-size: 13px;
+  position: relative;
+  z-index: 1032;
 
   a:hover {
     text-decoration: none;
