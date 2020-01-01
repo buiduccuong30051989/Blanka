@@ -59,7 +59,8 @@ mixin services09(icon, title, subTitle, desc)
       .icon-box-wrap  
         i.ts-icon(class=icon)
       .icon-box-content
-        h3.icon-box-title=title
+        h3.icon-box-title
+          a(href='services_detail.html')=title
         h5.icon-box-sub-title=subTitle
         p.icon-box-desc=desc
 

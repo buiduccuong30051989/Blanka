@@ -249,7 +249,7 @@ gulp.task('compile-css', ['copy-fonts'], function(cb) {
     .src(options.scss.in)
     .pipe($.sourcemaps.init())
     .pipe($.sass(options.scss).on('error', $.sass.logError))
-    .pipe($.autoprefixer())
+    .pipe($.autoprefixer({browsers: ['last 2 version'] , remove: false}))
     .pipe(
       $.sourcemaps.write('./', {
         includeContent: false,

@@ -92,3 +92,20 @@
     bottom: 0;
   }
 }
+
+@mixin truncate-multiline-new($line-number) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* stylelint-disable-next-line value-no-vendor-prefix */
+  display: -webkit-box;
+  /* stylelint-disable property-no-vendor-prefix */
+  -webkit-line-clamp: $line-number;
+
+  -webkit-box-orient: vertical;
+}
+
+@mixin truncate-oneline() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
