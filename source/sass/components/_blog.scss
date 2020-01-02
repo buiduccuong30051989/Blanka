@@ -1009,7 +1009,7 @@
       justify-content: center;
       align-items: center;
       color: $white;
-      font-size: 18px;
+      font-size: 13px;
       opacity: 0;
       background: linear-gradient(
         to bottom,
@@ -1025,15 +1025,23 @@
 
         [class^="item"] {
           margin: 0 10px;
-          cursor: pointer;
 
           .ts-icon {
             margin-right: 5px;
+            font-size: 18px;
           }
         }
 
         &:first-child {
           transform: translate3d(0, 20px, 0);
+
+          a {
+            color: $white;
+
+            &:hover {
+              color: $white;
+            }
+          }
         }
 
         &:nth-child(2) {

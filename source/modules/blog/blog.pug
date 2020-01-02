@@ -134,24 +134,22 @@ mixin blog09(cover, title, desc)
         a(href="blog_detail.html")=title
       p.ts-blog-card-desc=desc
 
-mixin blog10(title, cat, cover, author, desc, month, day, year, type)
+mixin blog10(title, cat, cover, author, desc, month, day, year, type, typeText)
   .ts-blog-card-09.bg--whitesmoke
     .card-header
       h4.blog-card-title
         a(href="blog_detail.html")=title
-      a(href="blogs_list.html").blog-card-catalog=cat
-      i.ts-icon(class=type)
     .card-cover
       a(href='blog_detail.html')
         img.card-img(src=cover, alt='cover')
       .ts-overlay
         .item.d-flex.mb-4
-          .item-favourite
-            i.ts-icon.las.la-heart
-            span 98
-          .item-comment
-            i.ts-icon.la.la-comments
-            span 102
+          a(href='blog_grid_01.html').item-cat
+            i.ts-icon.las.la-tags
+            span=cat
+          .item-type
+            i.ts-icon(class=type)
+            span=typeText
         a(href='blog_detail.html#comments').ts-btn.btn-cta-02.item
           span Read More
           i.ts-icon.la.la-angle-right

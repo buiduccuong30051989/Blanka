@@ -198,10 +198,48 @@ append content
             data-hoverpause="true"
             data-autoplay-timeout="9000"
             data-loop="true")
-            - for(var i = 1; i < 7; i ++) {
+            -
+              var testimonials = [
+                {
+                  cover: 'https://i.pravatar.cc/120?img=1',
+                  name: 'Vismash',
+                  title: 'Vice president',
+                  desc: `I can't imagine doing our job without Evaluate. It should be part of the package for anyone working in life sciences investment banking.`
+                },
+                {
+                  cover: 'https://i.pravatar.cc/120?img=21',
+                  name: 'Vice President',
+                  title: 'Venture cappital',
+                  desc: `We subscribe to Evaluate because of the accuracy, formatting, and speed. It lets us generate data on market or application areas with efficiency and reliability.`
+                },
+                {
+                  cover: 'https://i.pravatar.cc/120?img=11',
+                  name: 'Adam Naville',
+                  title: 'Director & Consultants',
+                  desc: `Being a client of BiFirm, i don't need to worry about what to and what not to do with my portfolio. I have been in the Stock Market since 2004 but never had an equity portfolio advisor like you.`
+                },
+                {
+                  cover: 'https://i.pravatar.cc/120?img=12',
+                  name: 'Hazem khan',
+                  title: 'Management firm',
+                  desc: `Since BiFirm aided me in the search for a solution to successfully improve my cash flow, everything has been going very well. My business continues to grow and I now have the cash to ensure that growth is suitably funded.`
+                },
+                {
+                  cover: 'https://i.pravatar.cc/120?img=13',
+                  name: 'Adam Larson',
+                  title: 'Ceo - Founder',
+                  desc: `Thanks for helping me with my first home loan. You have made the process very easy. I will definitely be back.`
+                },
+                {
+                  cover: 'https://i.pravatar.cc/120?img=14',
+                  name: 'Tom Frankin',
+                  title: 'Seo Specialist',
+                  desc: `The guys from BiFirm made the process of buying our dream home possible! We can't thank them enough. From the moment we found the house to the moment we moved in they were very helpful every step of the way.`
+                }
+              ]
+            each item in testimonials
               .item
-                +testimonial08('https://i.pravatar.cc/120?img=' + i, 'Adam Slander', 'Developer', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.')
-            - }
+                +testimonial08(item.cover, item.name, item.title, item.desc)
 
   .home-01-blogs.bg--white
     .container
@@ -240,7 +278,8 @@ append content
                     month: 'March',
                     day: '01',
                     year: '2019',
-                    type: 'la la-file-alt'
+                    type: 'la la-photo-video',
+                    typeText: 'Video'
                   },
                   {
                     title: 'Teamwork: The Hidden Ingredient In Trading Success',
@@ -251,7 +290,8 @@ append content
                     month: 'March',
                     day: '02',
                     year: '2019',
-                    type: 'la la-file-alt'
+                    type: 'la la-file-pdf',
+                    typeText: 'Pdf'
                   },
                   {
                     title: 'A Day In the Life of a Financial Analyst',
@@ -262,7 +302,8 @@ append content
                     month: 'March',
                     day: '01',
                     year: '2019',
-                    type: 'la la-file-alt'
+                    type: 'la la-file-powerpoint',
+                    typeText: 'Slide'
                   },
                   {
                     title: 'Are You Up-to-Speed with Important Accounting Changes for Private Companies in 2019?',
@@ -273,7 +314,8 @@ append content
                     month: 'March',
                     day: '04',
                     year: '2019',
-                    type: 'la la-file-alt'
+                    type: 'la la-file-alt',
+                    typeText: 'Document'
                   },
                   {
                     title: 'Marketing for a Massive Online University',
@@ -284,7 +326,8 @@ append content
                     month: 'March',
                     day: '01',
                     year: '2019',
-                    type: 'la la-file-alt'
+                    type: 'la la-file-alt',
+                    typeText: 'Document'
                   },
                   {
                     title: 'Here Are the Business Expenses You Cannot Write Off on Your Taxes',
@@ -295,7 +338,8 @@ append content
                     month: 'March',
                     day: '01',
                     year: '2019',
-                    type: 'la la-file-alt'
+                    type: 'la la-file-alt',
+                    typeText: 'Document'
                   },
                   {
                     title: 'Financial Success Formula: key to your success',
@@ -306,7 +350,8 @@ append content
                     month: 'March',
                     day: '01',
                     year: '2019',
-                    type: 'la la-file-alt'
+                    type: 'la la-file-alt',
+                    typeText: 'Document'
                   },
                   {
                     title: 'Creating a Productive & Happy Work Environment',
@@ -317,7 +362,8 @@ append content
                     month: 'March',
                     day: '01',
                     year: '2019',
-                    type: 'la la-file-alt'
+                    type: 'la la-file-alt',
+                    typeText: 'Document'
                   },
                   {
                     title: `Personal finance takeaways from RBI's monetary policy`,
@@ -328,7 +374,8 @@ append content
                     month: 'March',
                     day: '01',
                     year: '2019',
-                    type: 'la la-file-alt'
+                    type: 'la la-file-alt',
+                    typeText: 'Document'
                   },
                   {
                     title: 'Have You Done a Paycheck Check Up?',
@@ -339,12 +386,13 @@ append content
                     month: 'March',
                     day: '01',
                     year: '2019',
-                    type: 'la la-file-alt'
+                    type: 'la la-file-alt',
+                    typeText: 'Document'
                   }
                 ]
               each item in blogs
                 .item
-                  +blog10(item.title, item.cat, item.cover, item.author, item.desc, item.month, item.day, item.year, item.type)
+                  +blog10(item.title, item.cat, item.cover, item.author, item.desc, item.month, item.day, item.year, item.type, item.typeText)
 
   .home-04-teams.bg--whitesmoke
     .ts-overlay
