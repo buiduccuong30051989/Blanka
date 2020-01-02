@@ -725,6 +725,7 @@
       text-transform: uppercase;
       font-weight: 300;
       color: $white;
+      @include truncate-oneline();
     }
 
     &-catalog {
@@ -741,6 +742,7 @@
       opacity: 0;
       transform: translate3d(0, 100%, 0);
       transition: opacity 0.35s, transform 0.35s;
+      @include truncate-multiline-new(3);
     }
   }
 

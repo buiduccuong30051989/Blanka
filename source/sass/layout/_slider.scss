@@ -9,6 +9,24 @@
     }
   }
 
+  &.equal-height {
+    .owl-stage {
+      display: flex;
+
+      .owl-item {
+        .item,
+        .card-cover,
+        [class*='ts-portfolio-'] {
+          height: 100%;
+        }
+
+        .card-img {
+          @include fitImage();
+        }
+      }
+    }
+  }
+
   .owl-nav {
     [class*="owl-"] {
       width: 40px;
