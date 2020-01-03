@@ -1,4 +1,296 @@
 {
+	"cases": {
+		"data": [
+			{
+				"cover": "images/cases-01.jpg",
+				"title": "Better Business Program",
+				"cat": "Accounting",
+				"desc": "Our Better Business Program is a unique advisory service we offer to small, SME and multi-owner businesses."
+			},
+			{
+				"cover": "images/cases-02.jpg",
+				"title": "Income Protection Insurance",
+				"cat": "Planning & Investments",
+				"desc": "Your ability to earn is your greatest asset. Have you protected your greatest asset?"
+			},
+			{
+				"cover": "images/cases-03.jpg",
+				"title": "Risk Insurance",
+				"cat": "Insurance",
+				"desc": "Risk insurance becomes the superhero when Adelaide entrepreneur breaks his neck."
+			},
+			{
+				"cover": "images/cases-04.jpg",
+				"title": "Foundations for Business Success",
+				"cat": "Consulting",
+				"desc": "Helping build successful business foundations with proven methodologies."
+			},
+			{
+				"cover": "images/cases-05.jpg",
+				"title": "Mastering Leadership and Influence",
+				"cat": "Performance Coaching",
+				"desc": "A business will never consistently outperform the leadership that guides it."
+			},
+			{
+				"cover": "images/cases-06.jpg",
+				"title": "Investment in collectables",
+				"cat": "Investment",
+				"desc": "Restrictions apply for SMSF investments in collectables such as artworks."
+			},
+			{
+				"cover": "images/cases-07.jpg",
+				"title": "Tax and property sales",
+				"cat": "Tax",
+				"desc": "Australia’s property tax law is fraught with complexity so it pays to understand the red flags."
+			},
+			{
+				"cover": "images/cases-08.jpg",
+				"title": "Generating an income in retirement",
+				"cat": "Retirement",
+				"desc": "If you are like many busy working people with many responsibilities and stresses, you probably have little time to think about retirement. "
+			},
+			{
+				"cover": "images/cases-09.jpg",
+				"title": "Funding a child’s education",
+				"cat": "Investing",
+				"desc": "The estimated balance required and estimated school fees are in today’s dollars."
+			},
+			{
+				"cover": "images/cases-10.jpg",
+				"title": "Understanding the Investment Strategy",
+				"cat": "Strategy",
+				"desc": "In consectetur vel dui ac accumsan. Suspendisse malesuada est vel eleifend aliquam. Mauris dapibus venenatis bibendum. "
+			},
+			{
+				"cover": "images/cases-11.jpg",
+				"title": "Borrowing to invest (gearing)",
+				"cat": "Investing",
+				"desc": "Figures shown after tax and loan interest costs have been paid. Assumes the same growth investment for each strategy with an average return of 9% pa (4% income plus 5% growth, with a 50% franked component of income return)."
+			},
+			{
+				"cover": "images/cases-12.jpg",
+				"title": "Making the transition to retirement",
+				"cat": "Retirement",
+				"desc": "This case study assumes: 7% pa earning rate; 2007–08 tax rates; minimum pension 5% of super balance at age 65."
+			}
+		]
+	},
+	"testimonials": {
+		"data": [
+			{
+				"cover": "https://i.pravatar.cc/120?img=1",
+				"name": "Vismash",
+				"title": "Vice president",
+				"desc": "I can't imagine doing our job without Evaluate. It should be part of the package for anyone working in life sciences investment banking."
+			},
+			{
+				"cover": "https://i.pravatar.cc/120?img=21",
+				"name": "Vice President",
+				"title": "Venture cappital",
+				"desc": "We subscribe to Evaluate because of the accuracy, formatting, and speed. It lets us generate data on market or application areas with efficiency and reliability."
+			},
+			{
+				"cover": "https://i.pravatar.cc/120?img=11",
+				"name": "Adam Naville",
+				"title": "Director & Consultants",
+				"desc": "Being a client of BiFirm, i don't need to worry about what to and what not to do with my portfolio. I have been in the Stock Market since 2004 but never had an equity portfolio advisor like you."
+			},
+			{
+				"cover": "https://i.pravatar.cc/120?img=12",
+				"name": "Hazem khan",
+				"title": "Management firm",
+				"desc": "Since BiFirm aided me in the search for a solution to successfully improve my cash flow, everything has been going very well. My business continues to grow and I now have the cash to ensure that growth is suitably funded."
+			},
+			{
+				"cover": "https://i.pravatar.cc/120?img=13",
+				"name": "Adam Larson",
+				"title": "Ceo - Founder",
+				"desc": "Thanks for helping me with my first home loan. You have made the process very easy. I will definitely be back."
+			},
+			{
+				"cover": "https://i.pravatar.cc/120?img=14",
+				"name": "Tom Frankin",
+				"title": "Seo Specialist",
+				"desc": "The guys from BiFirm made the process of buying our dream home possible! We can't thank them enough. From the moment we found the house to the moment we moved in they were very helpful every step of the way."
+			}
+		]
+	},
+	"blogs": {
+		"data": [
+			{
+				"title": "10 skills propelling finance functions forward in 2019",
+				"cover": "images/blog-01.jpg",
+				"cat": "Financial",
+				"desc": "With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes in the market...",
+				"author": "Admin",
+				"month": "March",
+				"day": "01",
+				"year": "2019",
+				"type": "la la-photo-video",
+				"typeText": "Video"
+			},
+			{
+				"title": "Teamwork: The Hidden Ingredient In Trading Success",
+				"cover": "images/blog-02.jpg",
+				"cat": "Financial",
+				"desc": "As we approach the tenth anniversary of the great financial crisis of 2008, it’s instructive to look back and appreciate how the world of finance has changed. One of the differences we’ve observed is that investors...",
+				"author": "Admin",
+				"month": "March",
+				"day": "02",
+				"year": "2019",
+				"type": "la la-file-pdf",
+				"typeText": "Pdf"
+			},
+			{
+				"title": "A Day In the Life of a Financial Analyst",
+				"cover": "images/blog-03.jpg",
+				"cat": "Financial",
+				"desc": "Among the more rigorous yet rewarding career options in the financial services industry is that of a financial analyst. But what, exactly, does a financial analyst do on a daily basis?",
+				"author": "Admin",
+				"month": "March",
+				"day": "01",
+				"year": "2019",
+				"type": "la la-file-powerpoint",
+				"typeText": "Slide"
+			},
+			{
+				"title": "Are You Up-to-Speed with Important Accounting Changes for Private Companies in 2019?",
+				"cover": "images/blog-04.jpg",
+				"cat": "Financial",
+				"desc": "Sweeping rule changes for private companies that follow U.S. Generally Accepted Accounting Principles (GAAP) have many CFOs and controllers under the gun. If your company is struggling to implement the Accounting...",
+				"author": "Admin",
+				"month": "March",
+				"day": "04",
+				"year": "2019",
+				"type": "la la-file-alt",
+				"typeText": "Document"
+			},
+			{
+				"title": "Marketing for a Massive Online University",
+				"cover": "images/blog-05.jpg",
+				"cat": "Financial",
+				"desc": "TV ads helped Southern New Hampshire University become a household name, but with mounting competition and increased scrutiny of spending, getting to the top -- and staying there -- isnt easy.",
+				"author": "Admin",
+				"month": "March",
+				"day": "01",
+				"year": "2019",
+				"type": "la la-file-alt",
+				"typeText": "Document"
+			},
+			{
+				"title": "Here Are the Business Expenses You Cannot Write Off on Your Taxes",
+				"cover": "images/blog-06.jpg",
+				"cat": "Financial",
+				"desc": "If you own a business, you’re always looking for ways to lower your tax payments. And while the U.S. Tax Code is a helpful reference for allowable expenses As a self-employer or founder of a small business, it can be difficult to navigate the waters of the IRS annual exam (i.e. taxes).",
+				"author": "Admin",
+				"month": "March",
+				"day": "01",
+				"year": "2019",
+				"type": "la la-file-alt",
+				"typeText": "Document"
+			},
+			{
+				"title": "Financial Success Formula: key to your success",
+				"cover": "images/blog-07.jpg",
+				"cat": "Financial",
+				"desc": "After my financial downfall, it become the foundation of my wealth creation and enable me to achieve financial security and financial freedom. In fact, if I didn’t apply it in my life, I would always have financial headaches.",
+				"author": "Admin",
+				"month": "March",
+				"day": "01",
+				"year": "2019",
+				"type": "la la-file-alt",
+				"typeText": "Document"
+			},
+			{
+				"title": "Creating a Productive & Happy Work Environment",
+				"cover": "images/blog-08.jpg",
+				"cat": "Financial",
+				"desc": "In the last fifty years, researchers studying the methods of motivating employees and building great teams have found that the single most important motivator turns out to be “clear expectations.”",
+				"author": "Admin",
+				"month": "March",
+				"day": "01",
+				"year": "2019",
+				"type": "la la-file-alt",
+				"typeText": "Document"
+			},
+			{
+				"title": "Personal finance takeaways from RBI's monetary policy",
+				"cover": "images/blog-09.jpg",
+				"cat": "Financial",
+				"desc": "For the fifth consecutive time this calendar year, the Reserve Bank of India (RBI) slashed the repo rate by 25 bps and the reverse repo by 25 bps. This cut is sweeter for new borrowers as banks are...",
+				"author": "Admin",
+				"month": "March",
+				"day": "01",
+				"year": "2019",
+				"type": "la la-file-alt",
+				"typeText": "Document"
+			},
+			{
+				"title": "Have You Done a Paycheck Check Up?",
+				"cover": "images/blog-10.jpg",
+				"cat": "Financial",
+				"desc": "The Tax Cuts and Jobs Act of 2017 made huge changes to the U.S. Tax Code, which caught many taxpayers off-guard. You might have noticed a change in your refund from last year...",
+				"author": "Admin",
+				"month": "March",
+				"day": "01",
+				"year": "2019",
+				"type": "la la-file-alt",
+				"typeText": "Document"
+			}
+		]
+	},
+	"teams": {
+		"data": [
+			{
+				"cover": "images/team-01.jpg",
+				"name": "Eben Rose",
+				"title": "Accounting Manager",
+				"desc": ""
+			},
+			{
+				"cover": "images/team-02.jpg",
+				"name": "Mert Ratcliffe",
+				"title": "Accounting Officer",
+				"desc": ""
+			},
+			{
+				"cover": "images/team-03.jpg",
+				"name": "Tomas Dunkley",
+				"title": "Business Analyst",
+				"desc": ""
+			},
+			{
+				"cover": "images/team-04.jpg",
+				"name": "Hamzah Sellers",
+				"title": "General Accountant",
+				"desc": ""
+			},
+			{
+				"cover": "images/team-05.jpg",
+				"name": "Huey Brewer",
+				"title": "Project Accountant",
+				"desc": ""
+			},
+			{
+				"cover": "images/team-06.jpg",
+				"name": "Gertrude Villarreal",
+				"title": "Internal Audit Director",
+				"desc": ""
+			},
+			{
+				"cover": "images/team-07.jpg",
+				"name": "Isaak Flower",
+				"title": "Planning Analyst",
+				"desc": ""
+			},
+			{
+				"cover": "images/team-08.jpg",
+				"name": "Heather Ballard",
+				"title": "Investment Analyst",
+				"desc": ""
+			}
+		]
+	},
 	"pageList": {
 		"data": [
 			{

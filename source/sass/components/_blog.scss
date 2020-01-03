@@ -97,6 +97,7 @@
       font-weight: 300;
       margin-bottom: 10px;
       margin-top: -3px;
+      @include truncate-oneline();
 
       a {
         transition: $transition-base;
@@ -114,6 +115,7 @@
       color: $color3;
       line-height: 1.4;
       margin-bottom: 0;
+      @include truncate-multiline-new(2);
     }
   }
 
@@ -909,7 +911,6 @@
   .card-header {
     border-bottom: 0;
     position: relative;
-    // padding-right: 50px;
     display: flex;
     align-items: center;
     height: 70px;
@@ -938,7 +939,7 @@
   .blog-card {
     &-title {
       font-weight: 200;
-      font-size: 18px;
+      font-size: 16px;
       margin-bottom: 0;
       @include truncate-multiline-new(2);
 

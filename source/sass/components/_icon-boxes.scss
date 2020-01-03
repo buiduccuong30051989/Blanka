@@ -236,7 +236,6 @@
     padding-left: 15px;
 
     .title {
-      font-weight: 600;
       margin-bottom: 10px;
       font-size: pxtorem(18);
       color: $gray20;
@@ -267,7 +266,7 @@
     flex: 0 0 50px;
     height: 50px;
     color: $white;
-    font-size: 30px;
+    font-size: 42px;
     border-radius: 2px;
     justify-content: center;
     align-items: center;
@@ -279,15 +278,23 @@
     padding-left: 15px;
 
     .title {
-      font-weight: 600;
       margin-bottom: 10px;
       font-size: pxtorem(18);
       color: $gray20;
+
+      a {
+        color: $gray20;
+
+        &:hover {
+          color: $gray20;
+        }
+      }
     }
 
     .desc {
       color: $gray40;
       margin: 0;
+      @include truncate-multiline-new(3);
     }
   }
 
@@ -527,7 +534,7 @@
     align-items: center;
 
     .ts-icon {
-      font-size: 72px;
+      font-size: 42px;
       margin-bottom: 15px;
       color: $gray20;
       margin-right: 15px;
@@ -537,6 +544,10 @@
   .icon-box {
     &-title {
       font-size: 18px;
+
+      a {
+        color: $gray20;
+      }
     }
 
     &-sub-title {
@@ -550,6 +561,7 @@
 
     &-desc {
       margin-bottom: 20px;
+      @include truncate-multiline-new(2);
     }
   }
 

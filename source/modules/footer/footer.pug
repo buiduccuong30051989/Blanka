@@ -232,15 +232,15 @@ mixin footer03
       .container
         .copyright-inner.justify-content-center.justify-content-md-between
           .copyright-left
-            p Copyright © 2019. 
+            p Copyright © 2019.
               a(href="/")
-                strong  BiFirm  
+                strong  BiFirm
               |  All Right Reserved
           .copyright-right.d-none.d-md-block
             .widget-footer-links.in-dark
               ul
                 li
-                  a(href="terms_01.html") Terms of use 
+                  a(href="terms_01.html") Terms of use
                 li
                   a(href="privacy_01.html") Privacy Policy
                 li
@@ -262,12 +262,12 @@ mixin footer04
               .footer-logo
                 a(href="/")
                   img(src="images/logo-light.png", alt="logo")
-              p.mb-4.footer-desc Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed velit. Proin gravida arcu nisl, a dignissim mauris placerat id. Vivamus interdum urna at sapien varius elementum.
+              p.mb-4.footer-desc Without finance, plans stay as plans. That’s why we exists, we here to help clients make the most of these opportunities. We take the time to gain a deep understanding of our clients' financial requirements to bringing a passion for client success.
               .info
                 .item.mb-2
                   .ts-icon-box-info-01.in-dark
                     i.ts-icon.la.la-phone
-                    a(href="tel:18604193333") 1860-419-3331
+                    a(href="tel:0944764545") 0944-76-4545
                 .item.mb-2
                   .ts-icon-box-info-01.in-dark
                     i.ts-icon.la.la-envelope
@@ -275,7 +275,7 @@ mixin footer04
                 .item.mb-4
                   .ts-icon-box-info-01.in-dark
                     i.ts-icon.la.la-map-marker
-                    span 151 Hudson St, New York, NY
+                    span New York, NY 10018 US.
               .ts-social-list-01.align-left
                 a(href="#").square.bg--fw-1.in-dark.hbg--facebook
                   i.ts-icon.lab.la-facebook-square
@@ -290,49 +290,46 @@ mixin footer04
               h4.widget-title-01.in-dark Quick Link
               ul
                 li
-                  a(href="/") Home
+                  a(href="home_01.html") Home
                 li
-                  a(href="/") About Us
+                  a(href="about_01.html") About Us
                 li
-                  a(href="/") Our Services
+                  a(href="services_01.html") Our Services
                 li
-                  a(href="/") Cases Study
+                  a(href="cases_01.html") Cases Study
                 li
-                  a(href="/") Latest Projects
+                  a(href="blogs_grid_01.html") Our Insights
                 li
-                  a(href="/") Our Expertise
+                  a(href="teams_01.html") Our Expertise
                 li
-                  a(href="/") Contacts Us
+                  a(href="contact_01.html") Contacts Us
           .col-lg-4.pl-lg-5
             .widget-latest-news.in-dark
               h4.widget-title-01.in-dark Latest News
               ul
-                li
-                  +blog09('https://picsum.photos/600?random=1', 'Lorem Ipsum', 'Without finance, plans stay as plans. That’s why we exists...')
-                li
-                  +blog09('https://picsum.photos/600?random=2', 'Lorem Ipsum', 'Without finance, plans stay as plans. That’s why we exists...')
-                li
-                  +blog09('https://picsum.photos/600?random=3', 'Lorem Ipsum', 'Without finance, plans stay as plans. That’s why we exists...')
-    
+                - for(var i = 0; i < 3; i++)
+                    li
+                      +blog09(blogs.data[i].cover, blogs.data[i].title, blogs.data[i].desc)
+
     .ts-copyright-04
       .container
         .copyright-inner.justify-content-center.justify-content-md-between
           .copyright-left
-            p Copyright © 2019. 
+            p Copyright © 2019.
               a(href="/")
-                strong  BiFirm  
+                strong  BiFirm
               |  All Right Reserved
           .copyright-right.d-none.d-md-block
             .widget-footer-links.in-dark
               ul
                 li
-                  a(href="/") Terms of use 
+                  a(href="terms_01.html") Terms of use
                 li
-                  a(href="/") Privacy Policy
+                  a(href="privacy_01.html") Privacy Policy
                 li
-                  a(href="/") Faq
+                  a(href="faq_01.html") Faq
                 li
-                  a(href="/") Support
+                  a(href="support_01.html") Support
 
   a#to-the-top
     i.ts-icon.la.la-angle-up
@@ -347,7 +344,7 @@ mixin footer05
             .widget-text.company-info.in-dark
               h4.widget-title-01.in-dark Company Name
               p Without finance, plans stay as plans. That’s why we exists, we here to help clients make the most of these opportunities. We take the time to gain a deep understanding of our clients' financial requirements to bringing a passion for client success.
-              
+
           .col
             .widget-quick-links-02.in-dark.style-minus
               h4.widget-title-01.in-dark Our Services

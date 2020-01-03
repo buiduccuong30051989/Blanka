@@ -22,20 +22,40 @@ append content
     .container
       .row-g-45
         .col-lg-4
-          +services11('https://source.unsplash.com/user/erondu/720x340', 'Finance Invesment', 'Businesses are increasingly affected by tax, legislative..., understanding the impact of these developments on business operations...')
-                
+          +services11('https://source.unsplash.com/user/erondu/720x340', 'Start A Good Plan', 'Businesses are increasingly affected by tax, legislative..., understanding the impact of these developments on business operations...')
+
         .col-lg-4
-          +services11('https://source.unsplash.com/720x340/?nature,water', 'Finance Invesment', 'Businesses are increasingly affected by tax, legislative..., understanding the impact of these developments on business operations...')
-        
+          +services11('https://source.unsplash.com/720x340/?nature,water', 'Experienced Experts', 'Businesses are increasingly affected by tax, legislative..., understanding the impact of these developments on business operations...')
+
         .col-lg-4
-          +services11('https://source.unsplash.com/collection/190727/720x340', 'Finance Invesment', 'Businesses are increasingly affected by tax, legislative..., understanding the impact of these developments on business operations...')
+          +services11('https://source.unsplash.com/collection/190727/720x340', 'Grow Your Financial', 'Businesses are increasingly affected by tax, legislative..., understanding the impact of these developments on business operations...')
 
   .home-03-about-us.bg--whitesmoke.py-lg-7.py-5
+    .container
+      .row
+        .col-lg-12
+          .ts-section-heading-01
+            h2 Our Services
+      .row-g-40
+        .col-lg-4.mb-40
+          +services14('bifirm-icon-speech-bubble', 'Accounting Advisory', 'Designed to deliver more timely and accurate reporting, accounting change standards pose significant challenges.')
+        .col-lg-4.mb-40
+          +services14('bifirm-icon-settings', 'Finance Operations', 'Finance Operations Management provides seamless cross collaboration through intelligent work management and digital workflows that help to unlock productivity, empower workforce and deliver predictable outcomes for your finance processes.')
+        .col-lg-4.mb-40
+          +services14('bifirm-icon-sprout', 'Investments Management', 'Investing in a managed portfolio means getting the help you need to pursue your financial goals. Just answer a series of questions and TD Ameritrade Investment Management, LLC will recommend a portfolio to fit your needs.')
+        .col-lg-4
+          +services14('bifirm-icon-home', 'Retirement Planning', 'Plan your retirement with effective protection and savings solutions for a wonderful independent retirement.')
+        .col-lg-4
+          +services14('bifirm-icon-coin', 'Insurance Consulting', 'We help leading insurers across the globe meet their strategic and operational goals.')
+        .col-lg-4
+          +services14('bifirm-icon-bar-chart', 'Financial Planning', "Financial Planning is an ongoing process to help you make sensible decisions about money that can help you achieve your goals in life; it's not just about buying products like a pension or an ISA. ... It's about getting organised; being in control of your finances rather than letting your finances control you.")
+
+  .home-03-about-us.bg--white.py-lg-7.py-5
     .container
       .row-g-40
         .col-lg-6.pr-lg-4
           .ts-section-heading-01
-            h2 We are Finance
+            h2 Why Choose Us
           p Integer est arcu, congue nec vulputate faucibus, aliquam eget tellus. Aliquam laoreet aliquam mi, vitae tempus orci mattis vitae. Cras ultricies mauris est, ultricies sagittis diam euismod et. Curabitur at dolor vitae felis semper ullamcorper eu mattis felis.
           ul.list-style-01.list-circle.color.mb-4
             li.mb-2 Nullam consequat lacus non luctus finibus.
@@ -56,14 +76,14 @@ append content
 
           .testimonial-wrap
             .carousel(
-              data-items="1" 
-              data-items-md="1" 
-              data-items-sm="1" 
-              data-items-xs="1" 
+              data-items="1"
+              data-items-md="1"
+              data-items-sm="1"
+              data-items-xs="1"
               data-margin="30"
               data-dots="false"
-              data-arrows="false" 
-              data-autoplay='true' 
+              data-arrows="false"
+              data-autoplay='true'
               data-hoverpause="true"
               data-autoplay-timeout="9000"
               data-loop="true"
@@ -71,36 +91,9 @@ append content
               data-animate-out="fadeOut"
               data-next="testimonial-next"
               data-prev="testimonial-prev")
-              .item
-                +testimonial07(
-                  "We subscribe to Evaluate because of the accuracy, formatting, and speed. It lets us generate data on market or application areas with efficiency and reliability.",
-                  "Vice President",
-                  "Venture cappital",
-                  "https://i.pravatar.cc/120?img=1")
-              .item
-                +testimonial07(
-                  "Being a client of .Ananci, i don't need to worry about what to and what not to do with my portfolio. I have been in the Stock Market since 2004 but never had an equity portfolio advisor like you.",
-                  "Adam Naville",
-                  "Director & Consultants",
-                  "https://i.pravatar.cc/120?img=2")
-              .item
-                +testimonial07(
-                  "Since .Ananci aided me in the search for a solution to successfully improve my cash flow, everything has been going very well. My business continues to grow and I now have the cash to ensure that growth is suitably funded.",
-                  "Hazem khan",
-                  "Management firm",
-                  "https://i.pravatar.cc/120?img=3")
-              .item
-                +testimonial07(
-                  "Thanks for helping me with my first home loan. You have made the process very easy. I will definitely be back.",
-                  "Adam Larson",
-                  "Ceo - Founder",
-                  "https://i.pravatar.cc/120?img=4")
-              .item
-                +testimonial07(
-                  "The guys from .Ananci made the process of buying our dream home possible! We can't thank them enough. From the moment we found the house to the moment we moved in they were very helpful every step of the way.",
-                  "Tom Frankin",
-                  "Seo Specialist",
-                  "https://i.pravatar.cc/120?img=5")
+                each item in testimonials.data
+                  .item
+                    +testimonial07(item.cover, item.name, item.title, item.desc)
 
   .home-03-counter-up.py-lg-7.py-5
     .ts-overlay
@@ -110,7 +103,7 @@ append content
           .ts-section-heading-01.align-center.in-dark.mb-5
             h2 More than 25 Years of Experience
       +counterUp02
-  
+
   .home-03-commitment.bg--whitesmoke
     .container
       .row
@@ -147,40 +140,39 @@ append content
               .ts-progress
                 .progress-bar.bg--color1(role='progressbar' aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
 
-  .home-01-projects.py-lg-7.py-5.bg--white
+  .home-01-projects.py-7.bg--whitesmoke
     .container
       .row
         .col-lg-12
           .ts-section-heading-01.has-controls
-            h2 Our Latest Projects
+            h2 Our Cases
             .group-carousel-controls
               button.btn-carousel-01.case-prev
                 i.ts-icon.las.la-angle-left
               button.btn-carousel-01.case-next
                 i.ts-icon.las.la-angle-right
 
-      .col-lg-12    
+      .col-lg-12
         .row
-          .carousel.align-center-items(
-            data-items="4" 
-            data-items-md="3" 
-            data-items-sm="1" 
-            data-items-xs="1" 
+          .carousel.equal-height(
+            data-items="4"
+            data-items-md="3"
+            data-items-sm="1"
+            data-items-xs="1"
             data-margin="0"
             data-center="false"
             data-dots="false"
-            data-arrows="false" 
-            data-autoplay='false' 
+            data-arrows="false"
+            data-autoplay='false'
             data-hoverpause="true"
             data-autoplay-timeout="9000"
             data-loop="true"
             data-next="case-next"
             data-prev="case-prev")
-            - for(var i = 0; i < 7; i++) {
-              .item
-                +portfolio04('https://picsum.photos/600/400?random=' + i, 'Project Card 06', 'Consultant', 'Commodo magna nulla nulla cillum sunt enim pariatur.')
-            - }
-  
+              each item in cases.data
+                .item
+                  +portfolio04(item.cover, item.title, item.cat, item.desc)
+
   .home-03-blogs.py-lg-7.py-5.bg--whitesmoke
     .container
       .row
@@ -200,13 +192,13 @@ append content
                   
         .col-lg-6
           +blog11('align-right', 'Blog Card 07', ['Skills', 'Financial'], 'Adam Levine', 'Oct 15, 2019', 'https://picsum.photos/760?random=16', 'With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...')
-  
+
   +partner
-  
+
   +footer05
 
   +control
-append plugins  
+append plugins
   +lib
 append script
   //- script(src='revolution-slider/revolution/js/jquery.themepunch.tools.min.js')

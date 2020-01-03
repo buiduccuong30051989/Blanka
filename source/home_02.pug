@@ -17,9 +17,8 @@ append header
 append content
   .home-01-slider
     img(src="http://templates.thememodern.com/compact/img-rev-slider/bg-1.jpg")
-  
+
   .home-01-cta.bg--whitesmoke.py-lg-7.py-5
-    //- +boxCta01
     .container
       .row
         .col-lg-12
@@ -28,59 +27,60 @@ append content
               h3.box-cta-title If you have a question, we have the answer
               p.box-cta-desc We understand that accounting, taxes, and audits can be daunting. The rules change all the time, and it can create anxiety if you aren’t sure you are completing everything correctly.
             .right
-              a(href="/").ts-btn.btn-color1.btn-lg PURCHASE NOW 
-                i.ts-icon.la.la-arrow-circle-right
+              a(href="/").ts-btn.btn-color1.btn-lg PURCHASE NOW
+                i.ts-icon.la.la-arrow-circle-right.pl-2
 
   .home-01-services.py-lg-7.py-5
     .container
       .row
         .col-lg-12.mb-lg-5
-          .ts-section-heading-01.align-center
-            h2 Choose Dotted Template For Your Purpose
-          p.font-italic.text-center Phasellus id lacus neque. Proin vestibulum leo at turpis rhoncus, sed lacinia sem mollis. Etiam cursus bibendum dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam auctor eu nunc nec facilisis. Duis in felis eget eros tristique ornare. Maecenas volutpat, nisi id pretium imperdiet, odio neque pellentesque erat.
+          .ts-section-heading-01.align-center.mb-4
+            h2 Managing Your Present And Future Finances
+          p.font-italic.text-center We're supporting the finance industry with an extensive range of solutions to meet ever-increasing digital and customer expectations and regulatory demand. 
+            br
+            | These challenges, alongside the need to lower the cost base, optimise multi-channel usage and explore new technologies, mean more organisations are partnering with us.
       .row-g-40.services-wrap
         .col-lg-6.mb-40
-          +services10('la la-chart-pie', 'Insurance', 'We here to help', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis, tellus sodales sollicitudin commodo, risus urna interdum massa')
+          +services10('bifirm-icon-coin', 'Insurance Consulting', 'We here to help', 'We help leading insurers across the globe meet their strategic and operational goals.')
         .col-lg-6.mb-40
-          +services10('la la-chart-pie', 'Insurance', 'We here to help', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis, tellus sodales sollicitudin commodo, risus urna interdum massa')
+          +services10('bifirm-icon-bar-chart', 'Financial Planning', 'Help you achieve your goals in life', "Financial Planning is an ongoing process to help you make sensible decisions about money that can help you achieve your goals in life; it's not just about buying products like a pension or an ISA. ... It's about getting organised; being in control of your finances rather than letting your finances control you.")
         .col-lg-6
-          +services10('la la-chart-pie', 'Insurance', 'We here to help', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis, tellus sodales sollicitudin commodo, risus urna interdum massa')
+          +services10('bifirm-icon-sprout', 'Investments Management', 'Get solutions that fit your goals', 'Investing in a managed portfolio means getting the help you need to pursue your financial goals. Just answer a series of questions and TD Ameritrade Investment Management, LLC will recommend a portfolio to fit your needs.')
         .col-lg-6
-          +services10('la la-chart-pie', 'Insurance', 'We here to help', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis, tellus sodales sollicitudin commodo, risus urna interdum massa')
+          +services10('bifirm-icon-home', 'Retirement Planning', 'Confidence in the future', 'Plan your retirement with effective protection and savings solutions for a wonderful independent retirement.')
 
   .home-01-projects.py-7.bg--whitesmoke
     .container
       .row
         .col-lg-12
           .ts-section-heading-01.has-controls
-            h2 Our Latest Projects
+            h2 Our Cases
             .group-carousel-controls
               button.btn-carousel-01.case-prev
                 i.ts-icon.las.la-angle-left
               button.btn-carousel-01.case-next
                 i.ts-icon.las.la-angle-right
 
-      .col-lg-12    
+      .col-lg-12
         .row
-          .carousel.align-center-items(
-            data-items="4" 
-            data-items-md="3" 
-            data-items-sm="1" 
-            data-items-xs="1" 
+          .carousel.equal-height(
+            data-items="4"
+            data-items-md="3"
+            data-items-sm="1"
+            data-items-xs="1"
             data-margin="0"
             data-center="false"
             data-dots="false"
-            data-arrows="false" 
-            data-autoplay='false' 
+            data-arrows="false"
+            data-autoplay='false'
             data-hoverpause="true"
             data-autoplay-timeout="9000"
             data-loop="true"
             data-next="case-next"
             data-prev="case-prev")
-            - for(var i = 0; i < 7; i++) {
-              .item
-                +portfolio04('https://picsum.photos/600/400?random=' + i, 'Project Card 06', 'Consultant', 'Commodo magna nulla nulla cillum sunt enim pariatur.')
-            - }
+              each item in cases.data
+                .item
+                  +portfolio04(item.cover, item.title, item.cat, item.desc)
 
   .home-02-callback.bg--color8.py-lg-7.py-5
     .container
@@ -107,7 +107,7 @@ append content
               .row
                 .col-lg-3
                   a(href="#").ts-btn.btn-color1.w-100 Submit
-        
+
   .home-02-testimonial.bg--whitesmoke
     .ts-overlay
     .container
@@ -118,22 +118,21 @@ append content
       .row
         .col-lg-12
           .carousel.align-center-items.arrows-intro.dots-theme.carousel-focus(
-            data-items="3" 
-            data-items-md="3" 
-            data-items-sm="1" 
-            data-items-xs="1" 
+            data-items="3"
+            data-items-md="3"
+            data-items-sm="1"
+            data-items-xs="1"
             data-margin="40"
             data-center="true"
             data-dots="false"
-            data-arrows="true" 
-            data-autoplay='false' 
+            data-arrows="true"
+            data-autoplay='false'
             data-hoverpause="true"
             data-autoplay-timeout="9000"
             data-loop="true")
-            - for(var i = 1; i < 7; i ++) {
-              .item
-                +testimonial09('https://i.pravatar.cc/120?img=' + i, 'Adam Slander', 'Developer', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.')
-            - }
+              each item in testimonials.data
+                .item
+                  +testimonial09(item.cover, item.name, item.title, item.desc)
 
   +partner
 
@@ -159,7 +158,7 @@ append content
   +popupSearch
 
   +control
-append plugins  
+append plugins
   +lib
 append script
   //- script(src='revolution-slider/revolution/js/jquery.themepunch.tools.min.js')

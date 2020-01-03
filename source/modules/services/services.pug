@@ -70,7 +70,8 @@ mixin services10(icon, title, subTitle, desc)
       .ts-icon-box-07-icon-wrap
         i.ts-icon(class=icon)
         .ts-icon-box-07-info
-          h3.icon-box-title=title
+          h3.icon-box-title
+            a(href="services_detail.html")=title
           h5.icon-box-sub-title.color--gray60=subTitle
       .ts-icon-box-07-content
         p.icon-box-desc=desc
@@ -121,3 +122,11 @@ mixin services13(icon, title, subTitle, desc)
       g(stroke="none" fill-rule="evenodd")
         polygon.layer-01(points="0 0 70 0 70 150")
         polygon.layer-02(points="70 51 70 231 0 231")
+
+mixin services14(icon, title, desc)
+  .ts-icon-box-01
+    i.ts-icon(class=icon)
+    .ts-icon-box-02-content
+      h5.title
+        a(href="services_detail.html")=title
+      p.desc=desc
