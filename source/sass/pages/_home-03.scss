@@ -63,12 +63,13 @@
   }
 
   &-counter-up {
-    background-image: url("http://templates.thememodern.com/dotted/images/Testimonials/bg1.jpg");
+    background-image: url("../images/slide-3.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     position: relative;
     perspective: 3px;
+    overflow: hidden;
 
     .ts-overlay {
       opacity: 0.7;
@@ -77,7 +78,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba($black, 0.5);
+      background-color: rgba($black, 1);
     }
   }
 

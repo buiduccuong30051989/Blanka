@@ -24,8 +24,8 @@ append content
         .col-lg-12
           .ts-box-cta-01.in-dark
             .left.pr-lg-4
-              h3.box-cta-title Quisque hendrerit sed lorem nec ornare. Proin sed turpis at odio molestie cursus.
-              p.box-cta-desc Fusce nec velit elementum arcu tincidunt venenatis blandit id lorem. Cras commodo risus massa, at volutpat neque hendrerit a. Ut sed auctor nisl. Quisque pulvinar urna nec diam congue, quis accumsan arcu dapibus.
+              h3.box-cta-title Our business is built on a foundation of thoughtful client relationships.
+              p.box-cta-desc Our aim is to provide the highest quality service to you and your business. We are transparent about all our costs and services, and will guide you through every step of the process.
             .right
               a(href="/").ts-btn.btn-color1.btn-lg PURCHASE NOW 
                 i.ts-icon.la.la-arrow-circle-right
@@ -33,23 +33,18 @@ append content
   .home-05-services.py-lg-7.py-5
     .container
       .row-g-40
-        .col-lg-4.mb-lg-40
-          +services13('la la-chart-pie', 'Icon Box 05', 'Lorem Ipsum dore si amnet', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis')
-        
-        .col-lg-4.mb-lg-40
-          +services13('la la-chart-pie', 'Icon Box 05', 'Lorem Ipsum dore si amnet', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis')
-
-        .col-lg-4.mb-lg-40
-          +services13('la la-chart-pie', 'Icon Box 05', 'Lorem Ipsum dore si amnet', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis')
-
-        .col-lg-4.mb-lg-0.mb-40
-          +services13('la la-chart-pie', 'Icon Box 05', 'Lorem Ipsum dore si amnet', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis')
-
-        .col-lg-4.mb-lg-0.mb-40
-          +services13('la la-chart-pie', 'Icon Box 05', 'Lorem Ipsum dore si amnet', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis')
-
-        .col-lg-4.mb-lg-0.mb-40
-          +services13('la la-chart-pie', 'Icon Box 05', 'Lorem Ipsum dore si amnet', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis')
+        .col-lg-4.mb-40
+          +services13('bifirm-icon-employees', 'Accounting Advisory', 'Support for accounting challenges', 'Designed to deliver more timely and accurate reporting, accounting...')
+        .col-lg-4.mb-40
+          +services13('bifirm-icon-settings', 'Finance Operations', 'Unlock productivity, Empower workforce', 'Finance Operations Management provides seamless cross collaboration...')
+        .col-lg-4.mb-40
+          +services13('bifirm-icon-sprout', 'Investments Management', 'Get solutions that fit your goals', 'Investing in a managed portfolio means getting the help you need to...')
+        .col-lg-4
+          +services13('bifirm-icon-home', 'Retirement Planning', 'Confidence in the future', 'Plan your retirement with effective protection and savings solutions for a...')
+        .col-lg-4
+          +services13('bifirm-icon-coin', 'Insurance Consulting', 'We here to help', 'We help leading insurers across the globe meet their strategic...')
+        .col-lg-4
+          +services13('bifirm-icon-bar-chart', 'Financial Planning', 'Help you achieve your goals in life', 'An ongoing process to help you make sensible decisions about money that...')
         
   .home-05-why-us.bg--whitesmoke.py-7
     .container
@@ -57,17 +52,17 @@ append content
         .col-lg-8.pr-lg-5
           .ts-section-heading-01
             h2 Why You Should Choose Us?
-          p.mb-lg-5 Integer est arcu, congue nec vulputate faucibus, aliquam eget tellus. Aliquam laoreet aliquam mi, vitae tempus orci mattis vitae. Cras ultricies mauris est, ultricies sagittis diam euismod et. Curabitur at dolor vitae felis semper ullamcorper eu mattis felis. Phasellus felis diam, egestas non hendrerit a, lacinia a neque.
+          p.mb-lg-5 The highest levels of service and technical expertise from experts all over the world. Together we understand the challenges you face and the importance of firm decisions... We will help you to find the right solutions, quickly and effectively.
           .d-flex.align-items-end
             .left.mr-4
               img.thumb(src='http://templates.thememodern.com/dotted/images/Feature/7.png', alt='demo')
             .right
               ul.list-style-01.list-square.color.mb-lg-4
-                li FULLY RESPONSIVE 
-                li TEMPLATE MULTIPLE 
-                li PORTFOLIO COLUMNS 
-                li AMAZING SLIDER 
-                li 10 AMAZING SKINS 
+                li FULLY RESPONSIVE
+                li CLEAN DESIGN
+                li PORTFOLIO COLUMNS
+                li DEEP RESEARCH
+                li 07 HOME PAGES
                 li AND MANY MORE...
               a(href="about.html").ts-btn.btn-color1 More About Us
                 i.ts-icon.la.la-angle-right.pl-3
@@ -82,9 +77,9 @@ append content
                 +selectDiscuss('line')
               .col-lg-12.mb-4
                 input.ts-input-line(type="text" placeholder="Your Name")
-              .col-lg-12.mb-5
+              .col-lg-12.mb-4
                 input.ts-input-line(type="text" placeholder="Your Phone")
-              .col-lg-12
+              .col-lg-12.pt-2
                 a(href="#").ts-btn.btn-color1 Submit
         
   .home-01-projects.py-7.bg--white
@@ -92,7 +87,7 @@ append content
       .row
         .col-lg-12
           .ts-section-heading-01.has-controls
-            h2 Our Latest Projects
+            h2 Our Cases Study
             .group-carousel-controls
               button.btn-carousel-01.case-prev
                 i.ts-icon.las.la-angle-left
@@ -101,7 +96,7 @@ append content
 
       .col-lg-12    
         .row
-          .carousel.align-center-items(
+          .carousel.equal-height(
             data-items="4" 
             data-items-md="3" 
             data-items-sm="1" 
@@ -116,10 +111,9 @@ append content
             data-loop="true"
             data-next="case-next"
             data-prev="case-prev")
-            - for(var i = 0; i < 7; i++) {
-              .item
-                +portfolio04('https://picsum.photos/600/400?random=' + i, 'Project Card 06', 'Consultant', 'Commodo magna nulla nulla cillum sunt enim pariatur.')
-            - }
+              each item in cases.data
+                .item
+                  +portfolio04(item.cover, item.title, item.cat, item.desc)
 
   .home-03-counter-up.py-lg-7.py-5
     .ts-overlay
@@ -151,10 +145,9 @@ append content
             data-hoverpause="true"
             data-autoplay-timeout="9000"
             data-loop="true")
-            - for(var i = 1; i < 7; i ++) {
+            each item in testimonials.data
               .item
-                +testimonial08('https://i.pravatar.cc/120?img=' + i, 'Adam Slander', 'Developer', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.')
-            - }
+                +testimonial08(item.cover, item.name, item.title, item.desc)
 
   .home-03-blogs.py-lg-7.py-5.bg--whitesmoke
     .container
@@ -165,16 +158,16 @@ append content
             a.view-all(href="blog_list01.html") View All
       .row-g-40
         .col-lg-6.mb-40
-          +blog11('', 'Blog Card 07', ['Skills', 'Financial'], 'Adam Levine', 'Oct 15, 2019', 'https://picsum.photos/760?random=13', 'With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...')
+          +blog11('', 'A Day In the Life of a Financial Analyst', ['Skills', 'Financial'], 'Adam Levine', 'Feb 02, 2020', 'images/blog-03.jpg', 'Among the more rigorous yet rewarding career options in the financial services industry is that of a financial analyst. But what, exactly, does a financial analyst do on a daily basis?')
 
         .col-lg-6.mb-40
-          +blog11('align-right', 'Blog Card 07', ['Skills', 'Financial'], 'Adam Levine', 'Oct 15, 2019', 'https://picsum.photos/760?random=14', 'With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...')
+          +blog11('align-right', 'What Is Thought Leadership?', ['Skills', 'Financial'], 'Adam Levine', 'Feb 01, 2020', 'images/blog-02.jpg', 'Thought leadership is a key component of content marketing. But I would caution brands to avoid what I call the “unique point of view trap.” I have heard more than a few executives delay going all in on thought leadership by focusing on “the unique point of view.” They say “there is so much noise in the marketplace. We can only compete if our content is differentiated and completely unique.”')
         
         .col-lg-6
-          +blog11('', 'Blog Card 07', ['Skills', 'Financial'], 'Adam Levine', 'Oct 15, 2019', 'https://picsum.photos/760?random=15', 'With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...')
+          +blog11('', 'Creating a Productive & Happy Work', ['Skills', 'Financial'], 'Adam Levine', 'Jan 15, 2020', 'images/blog-08.jpg', 'In the last fifty years, researchers studying the methods of motivating employees and building great teams have found that the single most important motivator turns out to be “clear expectations.')
                   
         .col-lg-6
-          +blog11('align-right', 'Blog Card 07', ['Skills', 'Financial'], 'Adam Levine', 'Oct 15, 2019', 'https://picsum.photos/760?random=16', 'With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...')
+          +blog11('align-right', 'Create your investment plan', ['Skills', 'Financial'], 'Adam Levine', 'Jan 12, 2020', 'images/blog-11.jpg', 'For example, instead of saying you want to have enough money to retire comfortably, think about how much money you’ll need. Your specific goal may be to save $500,000 by the time you’re 65.')
 
   +partner
 

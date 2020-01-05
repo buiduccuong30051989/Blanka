@@ -89,6 +89,7 @@
     &-content {
       flex-grow: 1;
       padding-left: 15px;
+      overflow: hidden;
     }
 
     &-title {
@@ -121,11 +122,15 @@
 
   &.in-dark {
     .ts-blog-card {
-      &-title a {
+      &-title {
         color: $white;
 
-        &:hover {
+        a {
           color: $white;
+  
+          &:hover {
+            color: $white;
+          }
         }
       }
 
@@ -588,6 +593,10 @@
       top: 0;
       bottom: 0;
       z-index: -1;
+    }
+
+    .desc {
+      @include truncate-multiline-new(4);
     }
   }
 

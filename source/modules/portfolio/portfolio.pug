@@ -46,7 +46,7 @@ mixin portfolio04(img, title, cat, desc)
         p.portfolio-card-catalog=cat
         p.portfolio-card-desc=desc
 
-mixin portfolio05(img, title, cat, heart, comment)
+mixin portfolio05(img, title, cat)
   .ts-portfolio-05.rounded-0
     a(href='project_detail.html').card-cover
       img.card-img(src=img, alt='cover')
@@ -57,7 +57,7 @@ mixin portfolio05(img, title, cat, heart, comment)
     .portfolio-card-meta
       .item-favourite
         i.ts-icon.las.la-heart
-        span=heart
+        span 12
       .item-comment
         i.ts-icon.la.la-comments
-        span=comment
+        span 21

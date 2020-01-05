@@ -45,20 +45,20 @@
   }
 
   &-testimonial {
-    background-image: url("http://templates.thememodern.com/dotted/images/Testimonials/bg1.jpg");
+    background-image: url("../images/bg-counter-01.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     position: relative;
 
     .ts-overlay {
-      opacity: 0.7;
+      opacity: 0.8;
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba($black, 0.7);
+      background-color: $black;
     }
   }
 
@@ -87,17 +87,4 @@
       opacity: 0.7;
     }
   }
-
-  // &-footer {
-  //   position: relative;
-
-  //   .ts-overlay {
-  //     opacity: 1;
-  //     background-color: rgba($color8, 0.9);
-  //   }
-
-  //   .copyright-02 {
-  //     position: relative;
-  //   }
-  // }
 }

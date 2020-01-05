@@ -15,30 +15,33 @@ append header
 
 append content
   .home-03-slider
-    img(src="http://ananci.seniorthemes.com/images/home-04-slider-08.jpg")
+    img(src="http://ananci.thetruesign.com/images/home-04-slider-08.jpg")
     //- img(src="http://templates.thememodern.com/finance/images/Slider/10.jpg")
 
   .home-03-services.py-lg-7.py-5
     .container
       .row-g-45
         .col-lg-4
-          +services11('https://source.unsplash.com/user/erondu/720x340', 'Start A Good Plan', 'Businesses are increasingly affected by tax, legislative..., understanding the impact of these developments on business operations...')
+          +services11('images/cases-13.jpg', 'Retirement Journey', 'At Retirement Solutions, we believe everyone should be able to live the retirement they’ve always wanted. Our team of professionals can help you create a well-thought-out strategy, using a variety of investments and insurance products and services, to help you address your financial needs and concerns.')
 
         .col-lg-4
-          +services11('https://source.unsplash.com/720x340/?nature,water', 'Experienced Experts', 'Businesses are increasingly affected by tax, legislative..., understanding the impact of these developments on business operations...')
+          +services11('images/cases-img-04.jpg', 'Experienced Experts', 'Together we understand the challenges you face and the importance of firm decisions and a flexible approach in a complex and ever-changing environment. We will help you to find the right solutions, quickly and effectively.')
 
         .col-lg-4
-          +services11('https://source.unsplash.com/collection/190727/720x340', 'Grow Your Financial', 'Businesses are increasingly affected by tax, legislative..., understanding the impact of these developments on business operations...')
+          +services11('images/cases-10.jpg', 'Grow Your Financial', 'We lead with a commitment to quality and consistency across our global network, bringing a passion for client success and a purpose to serve and improve the communities in which member firms operate.')
 
   .home-03-about-us.bg--whitesmoke.py-lg-7.py-5
     .container
-      .row
+      .row.mb-lg-5
         .col-lg-12
-          .ts-section-heading-01
-            h2 Our Services
+          .ts-section-heading-01.align-center.mb-4
+            h2 Services We Prodive
+          p.font-italic.text-center Our aim is to provide the highest quality service to you and your business. We are transparent about all our costs and services, and will guide you through every step of the process.
+            br
+            | All our consultants have more than 10+ years of experience & Trusted by thousands of people
       .row-g-40
         .col-lg-4.mb-40
-          +services14('bifirm-icon-speech-bubble', 'Accounting Advisory', 'Designed to deliver more timely and accurate reporting, accounting change standards pose significant challenges.')
+          +services14('bifirm-icon-employees', 'Accounting Advisory', 'Designed to deliver more timely and accurate reporting, accounting change standards pose significant challenges.')
         .col-lg-4.mb-40
           +services14('bifirm-icon-settings', 'Finance Operations', 'Finance Operations Management provides seamless cross collaboration through intelligent work management and digital workflows that help to unlock productivity, empower workforce and deliver predictable outcomes for your finance processes.')
         .col-lg-4.mb-40
@@ -56,18 +59,19 @@ append content
         .col-lg-6.pr-lg-4
           .ts-section-heading-01
             h2 Why Choose Us
-          p Integer est arcu, congue nec vulputate faucibus, aliquam eget tellus. Aliquam laoreet aliquam mi, vitae tempus orci mattis vitae. Cras ultricies mauris est, ultricies sagittis diam euismod et. Curabitur at dolor vitae felis semper ullamcorper eu mattis felis.
+          p Our mission is to provide quality guidance, build relationships of trust, and develop innovative solutions for our clients. We are perfectly positioned to meet your unique needs while striving to exceed your highest expectations.
           ul.list-style-01.list-circle.color.mb-4
-            li.mb-2 Nullam consequat lacus non luctus finibus.
-            li.mb-2 Nullam consequat lacus non luctus finibus.
-            li.mb-2 Nullam consequat lacus non luctus finibus.
-            li Nullam consequat lacus non luctus finibus.
-          a(href="about.html").ts-btn.btn-color1 REQUEST A CALLBACK
-            i.ts-icon.la.la-plus.pl-3
+            li.mb-2 Our prices will be completely Fair
+            li.mb-2 Complete Customer support
+            li.mb-2 High Quality Business & Startup Package
+            li Get Expert Advice on Phone, Email & Chat
+          button(data-toggle="modal", data-target="#modalCallBack").ts-btn.btn-color1.btn-cta-03 
+            span.pr-2 REQUEST A CALLBACK
+            i.ts-icon.la.la-phone-alt.fs--16
 
         .col-lg-6
           .ts-section-heading-01.has-controls
-            h2 Testimonials
+            h2 What Our Clients Say
             .group-carousel-controls
               button.btn-carousel-01.testimonial-prev
                 i.ts-icon.las.la-angle-left
@@ -104,12 +108,12 @@ append content
             h2 More than 25 Years of Experience
       +counterUp02
 
-  .home-03-commitment.bg--whitesmoke
+  .home-03-commitment.bg--white
     .container
       .row
         .col-lg-5.pr-lg-5
           .d-none.d-lg-flex.justify-content-end.h-100
-            img.cover.align-self-end(src="http://ananci.seniorthemes.com/images/commit-03-demo.png" alt="cover")
+            img.cover.align-self-end(src="http://ananci.thetruesign.com/images/commit-03-demo.png" alt="cover")
         .col-lg-7.pl-lg-5.py-lg-7.py-5.d-flex.flex-column.justify-content-center.pl-lg-5
           .ts-section-heading-01
             h2 Our Commitment
@@ -117,61 +121,28 @@ append content
           .process-wrap
             .ts-progress-wrapper.mb-4.js-progress-bar
               .ts-progress-title-wrap
-                h5.ts-progress-title Web Design
+                h5.ts-progress-title PARTNERSHIP
                 .ts-progress-info  
                   span.ts-progress-percentage
                   i.ts-progress-unit %
               .ts-progress
-                .progress-bar.bg--color1(role='progressbar' aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+                .progress-bar.bg--color1(role='progressbar' aria-valuenow='95', aria-valuemin='0', aria-valuemax='100')
             .ts-progress-wrapper.mb-4.js-progress-bar
               .ts-progress-title-wrap
-                h5.ts-progress-title Web Design
+                h5.ts-progress-title OPPORTUNITY
                 .ts-progress-info  
                   span.ts-progress-percentage
                   i.ts-progress-unit %
               .ts-progress
-                .progress-bar.bg--color1(role='progressbar' aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+                .progress-bar.bg--color1(role='progressbar' aria-valuenow='88', aria-valuemin='0', aria-valuemax='100')
             .ts-progress-wrapper.js-progress-bar
               .ts-progress-title-wrap
-                h5.ts-progress-title Web Design
+                h5.ts-progress-title INCOME
                 .ts-progress-info  
                   span.ts-progress-percentage
                   i.ts-progress-unit %
               .ts-progress
-                .progress-bar.bg--color1(role='progressbar' aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
-
-  .home-01-projects.py-7.bg--whitesmoke
-    .container
-      .row
-        .col-lg-12
-          .ts-section-heading-01.has-controls
-            h2 Our Cases
-            .group-carousel-controls
-              button.btn-carousel-01.case-prev
-                i.ts-icon.las.la-angle-left
-              button.btn-carousel-01.case-next
-                i.ts-icon.las.la-angle-right
-
-      .col-lg-12
-        .row
-          .carousel.equal-height(
-            data-items="4"
-            data-items-md="3"
-            data-items-sm="1"
-            data-items-xs="1"
-            data-margin="0"
-            data-center="false"
-            data-dots="false"
-            data-arrows="false"
-            data-autoplay='false'
-            data-hoverpause="true"
-            data-autoplay-timeout="9000"
-            data-loop="true"
-            data-next="case-next"
-            data-prev="case-prev")
-              each item in cases.data
-                .item
-                  +portfolio04(item.cover, item.title, item.cat, item.desc)
+                .progress-bar.bg--color1(role='progressbar' aria-valuenow='100', aria-valuemin='0', aria-valuemax='100')
 
   .home-03-blogs.py-lg-7.py-5.bg--whitesmoke
     .container
@@ -182,20 +153,22 @@ append content
             a.view-all(href="blog_list01.html") View All
       .row-g-40
         .col-lg-6.mb-40
-          +blog11('', 'Blog Card 07', ['Skills', 'Financial'], 'Adam Levine', 'Oct 15, 2019', 'https://picsum.photos/760?random=13', 'With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...')
+          +blog11('', 'A Day In the Life of a Financial Analyst', ['Skills', 'Financial'], 'Adam Levine', 'Feb 02, 2020', 'images/blog-03.jpg', 'Among the more rigorous yet rewarding career options in the financial services industry is that of a financial analyst. But what, exactly, does a financial analyst do on a daily basis?')
 
         .col-lg-6.mb-40
-          +blog11('align-right', 'Blog Card 07', ['Skills', 'Financial'], 'Adam Levine', 'Oct 15, 2019', 'https://picsum.photos/760?random=14', 'With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...')
+          +blog11('align-right', 'What Is Thought Leadership?', ['Skills', 'Financial'], 'Adam Levine', 'Feb 01, 2020', 'images/blog-02.jpg', 'Thought leadership is a key component of content marketing. But I would caution brands to avoid what I call the “unique point of view trap.” I have heard more than a few executives delay going all in on thought leadership by focusing on “the unique point of view.” They say “there is so much noise in the marketplace. We can only compete if our content is differentiated and completely unique.”')
         
         .col-lg-6
-          +blog11('', 'Blog Card 07', ['Skills', 'Financial'], 'Adam Levine', 'Oct 15, 2019', 'https://picsum.photos/760?random=15', 'With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...')
+          +blog11('', 'Creating a Productive & Happy Work', ['Skills', 'Financial'], 'Adam Levine', 'Jan 15, 2020', 'images/blog-08.jpg', 'In the last fifty years, researchers studying the methods of motivating employees and building great teams have found that the single most important motivator turns out to be “clear expectations.')
                   
         .col-lg-6
-          +blog11('align-right', 'Blog Card 07', ['Skills', 'Financial'], 'Adam Levine', 'Oct 15, 2019', 'https://picsum.photos/760?random=16', 'With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes...')
+          +blog11('align-right', 'Create your investment plan', ['Skills', 'Financial'], 'Adam Levine', 'Jan 12, 2020', 'images/blog-11.jpg', 'For example, instead of saying you want to have enough money to retire comfortably, think about how much money you’ll need. Your specific goal may be to save $500,000 by the time you’re 65.')
 
   +partner
 
   +footer05
+
+  +modalCallBack
 
   +control
 append plugins

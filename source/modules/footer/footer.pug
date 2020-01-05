@@ -350,13 +350,13 @@ mixin footer05
               h4.widget-title-01.in-dark Our Services
               ul
                 li
-                  a(href="/") Home
+                  a(href="/") Accounting Advisory
                 li
-                  a(href="/") About Us
+                  a(href="services_01.html") Finance Operations
                 li
-                  a(href="/") Our Services
+                  a(href="services_01.html") Investments Management
                 li
-                  a(href="/") Cases Study
+                  a(href="services_01.html") Retirement Planning
           .col
             .widget-quick-links-02.in-dark.style-minus
               h4.widget-title-01.in-dark Useful Links
@@ -364,11 +364,11 @@ mixin footer05
                 li
                   a(href="/") Home
                 li
-                  a(href="/") About Us
+                  a(href="about_01.html") About Us
                 li
-                  a(href="/") Our Services
+                  a(href="services_01.html") Our Services
                 li
-                  a(href="/") Cases Study
+                  a(href="cases_01.html") Cases Study
           .col-lg-3
             .widget-quick-links-02.in-dark
               h4.widget-title-01.in-dark Our Contact
@@ -378,10 +378,10 @@ mixin footer05
                   span 151 Hudson St, New York, NY
                 .item.mb-3
                   i.ts-icon.la.la-phone.pr-2.fs--18
-                  a(href="tel:18604193333") 1860-419-3333
+                  a(href="tel:0944764545") 0944-76-4545
                 .item.mb-3
                   i.ts-icon.la.la-envelope.pr-2.fs--18
-                  a(href="mailto:contact@ananci.com") consultant@bifirm.com
+                  a(href="mailto:contact@bifirm.com") consultant@bifirm.com
                 .item
                   i.ts-icon.la.la-clock.pr-2.fs--18
                   span Mon - Fri: 8am - 6pm
@@ -435,17 +435,14 @@ mixin footer06
                   .ts-icon-box-info-01.in-dark
                     i.ts-icon.la.la-map-marker
                     span 151 Hudson St, New York, NY
-          .col-lg-4.d-none.d-lg-block.pr-lg-4
+          .col-lg-5.d-none.d-lg-block.pr-lg-4
             .widget-latest-news.in-dark
               h4.widget-title-01.in-dark Latest News
               ul
-                li
-                  +blog09('https://picsum.photos/600?random=1', 'Lorem Ipsum', 'Without finance, plans stay as plans. That’s why we exists...')
-                li
-                  +blog09('https://picsum.photos/600?random=2', 'Lorem Ipsum', 'Without finance, plans stay as plans. That’s why we exists...')
-                li
-                  +blog09('https://picsum.photos/600?random=3', 'Lorem Ipsum', 'Without finance, plans stay as plans. That’s why we exists...')
-          .col-lg-4
+                - for(var i = 0; i < 3; i++)
+                    li
+                      +blog09(blogs.data[i].cover, blogs.data[i].title, blogs.data[i].desc)
+          .col-lg-3
             .widget-subcrible-01.in-dark
               h4.widget-title-01.in-dark Subscribe
               p Subscribe to our newsletter to receive latest news on our services.
@@ -453,8 +450,7 @@ mixin footer06
                 input.mb-3.ts-input--light-02(type='text' placeholder="Email Address")
                 button.ts-btn.btn-color1(type='button') Subscribe
               .ts-divider-01.my-4
-              .d-flex.justify-content-between.align-items-center
-                h4.in-dark.fs--18 Follow Us: 
+              .d-flex.justify-content-end.align-items-center
                 .d-flex.justify-content-end
                   a(href="#").square.bg--fw-1.in-dark.hbg--facebook.ml-3
                     i.ts-icon.lab.la-facebook-square
@@ -477,13 +473,13 @@ mixin footer06
             .widget-footer-links.in-dark
               ul
                 li
-                  a(href="/") Terms of use 
+                  a(href="terms_01.html") Terms of use
                 li
-                  a(href="/") Privacy Policy
+                  a(href="privacy_01.html") Privacy Policy
                 li
-                  a(href="/") Faq
+                  a(href="faq_01.html") Faq
                 li
-                  a(href="/") Support
+                  a(href="support_01.html") Support
   a#to-the-top
     i.ts-icon.la.la-angle-up
 
@@ -512,18 +508,18 @@ mixin footer07
 
             .col-lg-3
               .widget-quick-links-02.in-dark.style-long-arrow
-                h4.widget-title-01.in-dark Services
+                h4.widget-title-01.in-dark Useful Links
                 ul
                   li
                     a(href="/") Home
                   li
-                    a(href="/") About Us
+                    a(href="about_01.html") About Us
                   li
-                    a(href="/") Our Services
+                    a(href="services_01.html") Our Services
                   li
-                    a(href="/") Cases Study
+                    a(href="cases_01.html") Cases Study
                   li
-                    a(href="/") Latest Projects
+                    a(href="blog_grid_01.html") Our Insights
 
             .col-lg-4.d-none.d-lg-block.pr-lg-4
               .widget-instagram
@@ -566,13 +562,13 @@ mixin footer07
             .widget-footer-links.in-dark
               ul
                 li
-                  a(href="/") Terms of use 
+                  a(href="terms_01.html") Terms of use
                 li
-                  a(href="/") Privacy Policy
+                  a(href="privacy_01.html") Privacy Policy
                 li
-                  a(href="/") Faq
+                  a(href="faq_01.html") Faq
                 li
-                  a(href="/") Support
+                  a(href="support_01.html") Support
   a#to-the-top
     i.ts-icon.la.la-angle-up
   +photoSwiper

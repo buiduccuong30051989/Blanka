@@ -21,7 +21,7 @@ append content
       .row.mb-5
         .col-lg-12.text-center
           h2.mb-3 WE ARE BIFIRM
-          h5 We’re help your vulputate bibendum justo sed, tincidunt quisque dictum eget dolor vel maximus.
+          h5 Our business is built on a foundation of thoughtful client relationships.
       .row
         .col-lg-6.offset-lg-3
           img(src='images/about-us-02-demo.jpeg', alt='cover')
@@ -32,13 +32,15 @@ append content
         .col-lg-6.pr-lg-4
           .ts-section-heading-01
             h2 Our Mission
-          p Integer est arcu, congue nec vulputate faucibus, aliquam eget tellus. Aliquam laoreet aliquam mi, vitae tempus orci mattis vitae. Cras ultricies mauris est, ultricies sagittis diam euismod et. Curabitur at dolor vitae felis semper ullamcorper eu mattis felis.
+          p Our mission is to provide quality guidance, build relationships of trust, and develop innovative solutions for our clients. We are perfectly positioned to meet your unique needs while striving to exceed your highest expectations.
           ul.list-style-01.list-circle.color.mb-4
-            li.mb-2 Nullam consequat lacus non luctus finibus.
-            li.mb-2 Nullam consequat lacus non luctus finibus.
-            li.mb-2 Nullam consequat lacus non luctus finibus.
-            li.mb-2 Nullam consequat lacus non luctus finibus.
-            li Nullam consequat lacus non luctus finibus.
+            li.mb-2 Our prices will be completely Fair
+            li.mb-2 Complete Customer support
+            li.mb-2 High Quality Business & Startup Package
+            li Get Expert Advice on Phone, Email & Chat
+          button(data-toggle="modal", data-target="#modalCallBack").ts-btn.btn-color1.btn-cta-03 
+            span.pr-2 REQUEST A CALLBACK
+            i.ts-icon.la.la-phone-alt.fs--16
 
         .col-lg-6
           .ts-section-heading-01.has-controls
@@ -66,36 +68,9 @@ append content
               data-animate-out="fadeOut"
               data-next="testimonial-next"
               data-prev="testimonial-prev")
-              .item  
-                +testimonial07(
-                  "We subscribe to Evaluate because of the accuracy, formatting, and speed. It lets us generate data on market or application areas with efficiency and reliability.",
-                  "Vice President",
-                  "Venture cappital",
-                  "https://i.pravatar.cc/120?img=1")
-              .item  
-                +testimonial07(
-                  "Being a client of .Ananci, i don't need to worry about what to and what not to do with my portfolio. I have been in the Stock Market since 2004 but never had an equity portfolio advisor like you.",
-                  "Adam Naville",
-                  "Director & Consultants",
-                  "https://i.pravatar.cc/120?img=2")
-              .item  
-                +testimonial07(
-                  "Since .Ananci aided me in the search for a solution to successfully improve my cash flow, everything has been going very well. My business continues to grow and I now have the cash to ensure that growth is suitably funded.",
-                  "Hazem khan",
-                  "Management firm",
-                  "https://i.pravatar.cc/120?img=3")
-              .item  
-                +testimonial07(
-                  "Thanks for helping me with my first home loan. You have made the process very easy. I will definitely be back.",
-                  "Adam Larson",
-                  "Ceo - Founder",
-                  "https://i.pravatar.cc/120?img=4")
-              .item  
-                +testimonial07(
-                  "The guys from .Ananci made the process of buying our dream home possible! We can't thank them enough. From the moment we found the house to the moment we moved in they were very helpful every step of the way.",
-                  "Tom Frankin",
-                  "Seo Specialist",
-                  "https://i.pravatar.cc/120?img=5")
+              each item in testimonials.data
+                  .item
+                    +testimonial07(item.cover, item.name, item.title, item.desc)
 
   .home-03-counter-up.py-lg-7.py-5
     .ts-overlay
@@ -105,24 +80,6 @@ append content
           .ts-section-heading-01.align-center.in-dark.mb-5
             h2 Our Achievements & Milestones
       +counterUp02
-
-  //- .home-01-services.py-7
-  //-   .container
-  //-     .row
-  //-       .col-lg-12.mb-lg-5
-  //-         .ts-section-heading-01.align-center
-  //-           h2 Choose Dotted Template For Your Purpose
-  //-         p.font-italic.text-center Phasellus id lacus neque. Proin vestibulum leo at turpis rhoncus, sed lacinia sem mollis. Etiam cursus bibendum dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam auctor eu nunc nec facilisis. Duis in felis eget eros tristique ornare. Maecenas volutpat, nisi id pretium imperdiet, odio neque pellentesque erat.
-  //-     .row-g-40
-  //-       - for(var i = 0; i < 3; i++) {
-  //-         .col-lg-4.mb-40
-  //-           +services09('la la-chart-pie', 'Consultant Services', 'We here to help', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis commodo.')
-  //-       - }
-
-  //-       - for(var i = 0; i < 3; i++) {
-  //-         .col-lg-4
-  //-           +services09('la la-hand-holding-usd', 'Consultant Services', 'We here to help', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis commodo.')
-  //-       - }
 
   .container
     .row
@@ -135,20 +92,20 @@ append content
         .col-lg-8
           .ts-section-heading-01
             h2 Why You Should Choose Us?
-          p.mb-lg-5 Integer est arcu, congue nec vulputate faucibus, aliquam eget tellus. Aliquam laoreet aliquam mi, vitae tempus orci mattis vitae. Cras ultricies mauris est, ultricies sagittis diam euismod et. Curabitur at dolor vitae felis semper ullamcorper eu mattis felis. Phasellus felis diam, egestas non hendrerit a, lacinia a neque.
-          .d-flex
+          p.mb-lg-4 The highest levels of service and technical expertise from experts all over the world. Together we understand the challenges you face and the importance of firm decisions... We will help you to find the right solutions, quickly and effectively.
+          .d-flex.align-items-center
             .left.mr-4
               img(src='http://templates.thememodern.com/dotted/images/Feature/7.png', alt='demo')
             .right
               ul.list-style-01.list-square.color.mb-lg-4
-                li EASY CUSTOMIZATION RESPONSIVE 
-                li TEMPLATE MULTIPLE 
-                li PORTFOLIO COLUMNS 
-                li AMAZING SLIDER 
-                li 10 AMAZING SKINS 
+                li FULLY RESPONSIVE
+                li CLEAN DESIGN
+                li PORTFOLIO COLUMNS
+                li DEEP RESEARCH
+                li 07 HOME PAGES
                 li AND MANY MORE...
               button(data-toggle="modal", data-target="#modalCallBack").ts-btn.btn-color1.btn-cta-03 
-                span.pr-2 Free Consultant
+                span.pr-2 REQUEST A CALLBACK
                 i.ts-icon.la.la-phone-alt.fs--16
 
         .col-lg-4
@@ -207,19 +164,6 @@ append content
                   data-parent="#process")
                   .card-body
                     | After about two weeks, your financial adviser will be in touch to present their findings and recommendations and go into.
-            .card.ts-accrodion-01
-                #step05.card-header
-                  h5.mb-0
-                    button.ts-btn.btn-lg.w-100.text-left(
-                      data-toggle="collapse" 
-                      data-target="#step05Content" 
-                      aria-expanded="false" 
-                      aria-controls="step05Content") Present your plan and answer any questions
-                #step05Content.collapse(
-                  aria-labelledby="step05" 
-                  data-parent="#process")
-                  .card-body
-                    | After about two weeks, your financial adviser will be in touch to present their findings and recommendations and go into.
 
   .container
     .row
@@ -247,10 +191,10 @@ append content
         data-hoverpause="true"
         data-autoplay-timeout="9000"
         data-loop="true")
-        - for(var i = 1; i < 8; i ++) {
+        each item in teams.data
           .item
-            +team07('https://i.pravatar.cc/600?img=' + i, 'Adam Larson', 'Financial Consultant', 'Ullamco minim in enim consectetur labore voluptate et non non. Officia dolor qui cupidatat tempor qui ex labore veniam dolore.')
-        - }
+            +team07(item.cover, item.name, item.title, 'Ullamco minim in enim consectetur labore voluptate et non non. Officia dolor qui cupidatat tempor qui ex labore veniam dolore.')
+
 
   .container
     .row

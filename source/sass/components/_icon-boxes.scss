@@ -407,12 +407,13 @@
   transition: $transition-base;
 
   .ts-icon-box-05-inner {
-    padding: 0 30px 35px;
+    padding: 0 20px 35px;
 
     & > .ts-icon {
-      font-size: 72px;
+      font-size: 42px;
       margin-bottom: 22px;
-      color: $color5;
+      color: $gray20;
+      display: block;
     }
   }
 
@@ -444,6 +445,7 @@
 
     .desc {
       margin-bottom: 20px;
+      @include truncate-multiline-new(4);
     }
   }
 
@@ -574,18 +576,6 @@
   position: relative;
   transition: box-shadow .35s;
 
-  // &-icon-wrap {
-  //   display: flex;
-  //   align-items: center;
-
-  //   .ts-icon {
-  //     font-size: 72px;
-  //     margin-bottom: 15px;
-  //     color: $gray20;
-  //     margin-right: 15px;
-  //   }
-  // }
-
   .icon-box-wrap {
     position: absolute;
     right: 20px;
@@ -598,7 +588,7 @@
     align-items: center;
 
     .ts-icon {
-      font-size: 70px;
+      font-size: 48px;
       transition: all 0.35s;
       color: $white;
       opacity: .3;
@@ -629,7 +619,7 @@
 
   .icon-box {
     &-inner {
-      padding: 25px 90px 25px 30px;
+      padding: 15px 100px 25px 30px;
     }
 
     &-layer {
@@ -667,6 +657,7 @@
     &-desc {
       margin-bottom: 0;
       color: $graylight;
+      @include truncate-multiline-new(2);
     }
   }
 

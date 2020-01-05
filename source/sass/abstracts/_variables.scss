@@ -27,7 +27,7 @@ $grey: #9e9e9e;
 $color1: #3fa037;
 $color2: lighten(saturate(adjust-hue($color1, -1), 14.19), 11.18);
 $color3: darken(desaturate(adjust-hue($color1, 22), 26.76), 27.06);
-$color4: #e8e7d5;
+$color4:  darken(saturate(adjust-hue($color1, 65), 9.06), 38.43);
 $color5: #3f3e42;
 $color6: #34623f;
 $color7: darken(desaturate(adjust-hue($color1, 22), 26.76), 27.06);
