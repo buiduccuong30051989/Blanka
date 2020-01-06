@@ -35,8 +35,8 @@ mixin portfolio03(img, title, desc, cat, time)
             a(href="cases_detail.pug")=cat
           span.time=time
 
-mixin portfolio04(img, title, cat, desc)
-  a(href='cases_detail_01.html').ts-portfolio-06.rounded-0
+mixin portfolio04(img, title, cat, desc, type)
+  a(href='cases_detail_01.html').ts-portfolio-06.rounded-0(class=type)
     .card-cover
       img.card-img(src=img, alt='cover')
       .ts-overlay.portfolio-card-overlay
@@ -46,8 +46,8 @@ mixin portfolio04(img, title, cat, desc)
         p.portfolio-card-catalog=cat
         p.portfolio-card-desc=desc
 
-mixin portfolio05(img, title, cat)
-  .ts-portfolio-05.rounded-0
+mixin portfolio05(img, title, cat, type)
+  .ts-portfolio-05.rounded-0(class=type)
     a(href='project_detail.html').card-cover
       img.card-img(src=img, alt='cover')
       .ts-overlay.portfolio-card-overlay

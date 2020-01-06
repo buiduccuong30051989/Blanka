@@ -27,19 +27,30 @@ append content
     .container
       .row
         .col-lg-12.mb-lg-5
-          .ts-section-heading-01.align-center
-            h2 Choose Dotted Template For Your Purpose
-          p.font-italic.text-center Phasellus id lacus neque. Proin vestibulum leo at turpis rhoncus, sed lacinia sem mollis. Etiam cursus bibendum dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam auctor eu nunc nec facilisis. Duis in felis eget eros tristique ornare. Maecenas volutpat, nisi id pretium imperdiet, odio neque pellentesque erat.
+          .ts-section-heading-01.align-center.mb-4
+            h2 Managing Your Present And Future Finances
+          p.font-italic.text-center We're supporting the finance industry with an extensive range of solutions to meet ever-increasing digital and customer expectations and regulatory demand.
+            br
+            | These challenges, alongside the need to lower the cost base, optimise multi-channel usage and explore new technologies, mean more organisations are partnering with us.
       .row-g-40
-        - for(var i = 0; i < 6; i++) {
-          .col-lg-4.mb-40
-            +services09('la la-chart-pie', 'Consultant Services', 'We here to help', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis commodo.')
-        - }
-
-        - for(var i = 0; i < 3; i++) {
-          .col-lg-4
-            +services09('la la-hand-holding-usd', 'Consultant Services', 'We here to help', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis commodo.')
-        - }
+        .col-lg-4.mb-40
+          +services09('bifirm-icon-employees', 'Accounting Advisory', 'Support for accounting challenges', 'Designed to deliver more timely and accurate reporting, accounting...')
+        .col-lg-4.mb-40
+          +services09('bifirm-icon-settings', 'Finance Operations', 'Unlock productivity, Empower workforce', 'Finance Operations Management provides seamless cross collaboration...')
+        .col-lg-4.mb-40
+          +services09('bifirm-icon-sprout', 'Investments Management', 'Get solutions that fit your goals', 'Investing in a managed portfolio means getting the help you need to...')
+        .col-lg-4.mb-40
+          +services09('bifirm-icon-home', 'Retirement Planning', 'Confidence in the future', 'Plan your retirement with effective protection and savings solutions for a...')
+        .col-lg-4.mb-40
+          +services09('bifirm-icon-care', 'Insurance Consulting', 'We here to help', 'We help leading insurers across the globe meet their strategic...')
+        .col-lg-4.mb-40
+          +services09('bifirm-icon-bar-chart', 'Financial Planning', 'Help you achieve your goals in life', 'An ongoing process to help you make sensible decisions about money that...')
+        .col-lg-4.mb-40
+          +services09('bifirm-icon-coin', 'Funds Management', 'Agile, Quick, Responsive.', "Fund Management Services is UBS's center of excellence for fund corporate governance and white labelling services. We specialize in structuring, launching and administering individual and tailor-made solutions for our clients and partners in Switzerland and Europe, Middle East and APAC.")
+        .col-lg-4.mb-40
+          +services09('bifirm-icon-piggy-bank', 'Business Loan', 'Bigger better future', 'Raising finance to grow your business is not about today, it is about tomorrow. The right finance package can be a positive force within your business, one which can be used to propel your business forward.')
+        .col-lg-4.mb-40
+          +services09('bifirm-icon-technical-support', 'Audit & Assurance', 'Efficient and effective', 'Audit and assurance is all about meticulous data analysis. Everything needs to be checked, double checked, and triple checked.')
 
   .home-01-cta.bg--whitesmoke.py-5
     +boxCta01
@@ -49,9 +60,9 @@ append content
   +popupSearch
 
   +control
-append plugins  
+append plugins
   +lib
 append script
-  script(defer src="js/main.min.js")
-  
+  script(src="js/main.min.js")
+
 

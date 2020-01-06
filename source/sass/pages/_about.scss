@@ -60,4 +60,12 @@
       }
     }
   }
+
+  &-services {
+    .ts-icon-box-09 {
+      &:hover {
+        box-shadow: none;
+      }
+    }
+  }
 }

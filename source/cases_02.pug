@@ -34,24 +34,24 @@ append content
           a(href="#", data-filter=".Accounting") Accounting
           a(href="#", data-filter=".Risk") Financial Risk
           a(href="#", data-filter=".Insurance") Financial Insurance
-      .row.js-isotope-projects.mb-5
+      .row.js-isotope-projects.mb-5.mansory-gutter-30
         .col-lg-3.col-md-6.grid-sizer
-        .item.col-lg-6.col-md-6.mb-30.Theory.Strategy
-          +portfolio05('https://picsum.photos/id/11/570', 'Setting aims and objectives', 'Revision Theory')
-        .item.col-lg-6.col-md-6.item.mb-30.Theory.Strategy.Insurance
-          +portfolio05('https://picsum.photos/id/12/570/270', 'Thinking global – Acting local', 'Business Strategy')
-        .col-lg-3.col-md-6.item.mb-30.Strategy.Accounting
-          +portfolio05('https://picsum.photos/id/13/270', 'The business mission of Britannia A Britannia', 'Business Strategy')
-        .col-lg-3.col-md-6.item.mb-30.Insurance.Accounting.Risk
-          +portfolio05('https://picsum.photos/id/14/270', 'The Fake Accounts Scandal', 'Accounting')
-        .col-lg-3.col-md-6.item.mb-30.Accounting.Strategy
-          +portfolio05('https://picsum.photos/id/15/270', 'Financial Risk Management', 'Financial Risk')
-        .col-lg-3.col-md-6.item.mb-30.Risk.Accounting.Risk.Theory
-          +portfolio05('https://picsum.photos/id/16/270', 'Frank Frugale, The Lower Income Earner', 'Taxes')
-        .col-lg-3.col-md-6.item.mb-30.Risk.Strategy.Accounting
-          +portfolio05('https://picsum.photos/id/17/270', 'Understanding the Investment Strategy', 'Investment Strategy')
-        .col-lg-3.col-md-6.item.mb-30.Insurance.Accounting.Strategy
-          +portfolio05('https://picsum.photos/id/18/270', 'Investing in safety A First Group', 'Revision Theory')
+        .item.col-lg-6.col-md-6.Theory.Strategy
+          +portfolio04('images/cases-01.jpg', 'Better Business Program', 'Accounting', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.', 'w2-h2')
+        .item.col-lg-6.col-md-6.Insurance.Accounting.Risk
+          +portfolio04('images/cases-02.jpg', 'Income Protection Insurance', 'Planning & Investments', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.', 'w2-h1')
+        .item.col-lg-3.col-md-6.Theory.Strategy.Insurance
+          +portfolio04('images/cases-03.jpg', 'Risk Insurance', 'Risk Insurance', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.', 'w1-h1')
+        .item.col-lg-3.col-md-6.Strategy.Accounting
+          +portfolio04('images/cases-04.jpg', 'Foundations for Business Success', 'Consulting', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.', 'w1-h1')
+        .item.col-lg-3.col-md-6.Accounting.Strategy
+          +portfolio04('images/cases-05.jpg', 'Mastering Leadership and Influence', 'Performance Coaching', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.', 'w1-h1')
+        .item.col-lg-3.col-md-6.Risk.Accounting.Risk.Theory
+          +portfolio04('images/cases-06.jpg', 'Investment in collectables', 'Investment', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.', 'w1-h1')
+        .item.col-lg-3.col-md-6.Risk.Strategy.Accounting
+          +portfolio04('images/cases-07.jpg', 'Tax and property sales', 'Tax', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.', 'w1-h1')
+        .item.col-lg-3.col-md-6.Insurance.Accounting.Strategy
+          +portfolio04('images/cases-08.jpg', 'Generating an income in retirement', 'Retirement', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.', 'w1-h1')
       .row
         .col-lg-12.text-center
           a(href="#").ts-btn.btn-lg.btn-color1
@@ -69,8 +69,8 @@ append content
 append plugins
   +lib
 append script
-  script(defer src='js/extention/isotope.pkgd.min.js')
-  script(defer src="js/filter-portfolio.min.js")
-  script(defer src="js/main.min.js")
+  script(src='js/extention/isotope.pkgd.min.js')
+  script(src="js/filter-portfolio.min.js")
+  script(src="js/main.min.js")
 
 

@@ -128,11 +128,12 @@
   transition: box-shadow 0.35s;
 
   .ts-icon {
-    font-size: 132px;
+    font-size: 72px;
     color: $gray20;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
     opacity: 0.1;
     transition: all 0.35s;
   }

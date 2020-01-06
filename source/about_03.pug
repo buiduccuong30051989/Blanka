@@ -28,44 +28,58 @@ append content
                   li.breadcrumb-item
                     a(href="home_01.html") Home
                   li.breadcrumb-item.active(aria-current="page") About Us
-  
+
   .home-01-about-us.bg--white.py-lg-7.py-5
     .container
       .row.align-items-center
         .col-lg-7.d-flex.align-items-center
           img.thumb(src='images/home-04-slider-08.jpg', alt='cover')
-        .col-lg-5.pl-lg-5  
+        .col-lg-5.pl-lg-5
           .ts-section-heading-01.mb-4
             h2 We Are BiFirm
-          p.mb-lg-4.pb-2 The highest levels of service and technical expertise from experts all over the world. Together we understand the challenges you face and the importance of firm decisions... We will help you to find the right solutions, quickly and effectively.
-          ul.list-style-01.list-square.color.mb-lg-4
-            li FULLY RESPONSIVE
-            li CLEAN DESIGN
-            li PORTFOLIO COLUMNS
-            li DEEP RESEARCH
-            li 07 HOME PAGES
-            li AND MANY MORE...
+          p.mb-lg-4.pb-2 We're supporting the finance industry with an extensive range of solutions to meet ever-increasing digital and customer expectations and regulatory demand.
+          ul.list-style-01.list-circle.color.mb-lg-4
+            li Client Centric
+            li Trust and Integrity
+            li Excellence
+            li Accountability
+            li Community Leaders
+            li Employee Value
           a(href="about_01.html").ts-btn.btn-color1 KNOW MORE
             i.ts-icon.la.la-plus.pl-3
-  
+
   .container
     .row
       .col-lg-12
         .border-bottom
-  
-  .home-01-services.py-7
+
+  .about-03-services.py-7
     .container
       .row
         .col-lg-12.mb-lg-5
           .ts-section-heading-01.align-center
             h2 What We Offers To You
-          p.font-italic.text-center.w-75.mx-auto Phasellus id lacus neque. Proin vestibulum leo at turpis rhoncus, sed lacinia sem mollis. Etiam cursus bibendum dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam auctor eu nunc nec facilisis. Duis in felis eget eros tristique ornare. Maecenas volutpat, nisi id pretium imperdiet, odio neque pellentesque erat.
-      .row-g-40
-        - for(var i = 0; i < 3; i++) {
-          .col-lg-4
-            +services09('la la-chart-pie', 'Consultant Services', 'We here to help', 'Donec lacinia mi rutrum sagittis consequat. Donec sagittis commodo.')
-        - }
-  
+          p.font-italic.text-center.w-75.mx-auto The highest levels of service and technical expertise from experts all over the world. Together we understand the challenges you face and the importance of firm decisions... We will help you to find the right solutions, quickly and effectively.
+      .carousel.align-center-items.arrows-square.arrows-dark(
+        data-items="3"
+        data-items-md="3"
+        data-items-sm="1"
+        data-items-xs="1"
+        data-margin="40"
+        data-center="true"
+        data-dots="false"
+        data-arrows="true"
+        data-autoplay='true'
+        data-hoverpause="true"
+        data-autoplay-timeout="6000"
+        data-loop="true")
+        +services09('bifirm-icon-employees', 'Accounting Advisory', 'Support for accounting challenges', 'Designed to deliver more timely and accurate reporting, accounting...')
+        +services09('bifirm-icon-settings', 'Finance Operations', 'Unlock productivity, Empower workforce', 'Finance Operations Management provides seamless cross collaboration...')
+        +services09('bifirm-icon-sprout', 'Investments Management', 'Get solutions that fit your goals', 'Investing in a managed portfolio means getting the help you need to...')
+        +services09('bifirm-icon-home', 'Retirement Planning', 'Confidence in the future', 'Plan your retirement with effective protection and savings solutions for a...')
+        +services09('bifirm-icon-coin', 'Insurance Consulting', 'We here to help', 'We help leading insurers across the globe meet their strategic...')
+        +services09('bifirm-icon-bar-chart', 'Financial Planning', 'Help you achieve your goals in life', 'An ongoing process to help you make sensible decisions about money that...')
+
   .container
     .row
       .col-lg-12
@@ -76,7 +90,7 @@ append content
       .row
         .col-lg-5.pr-lg-5
           .d-none.d-lg-flex.justify-content-end.h-100
-            img.cover.align-self-end(src="http://ananci.seniorthemes.com/images/commit-03-demo.png" alt="cover")
+            img.cover.align-self-end(src="images/commit-03-demo.png" alt="cover")
         .col-lg-7.pl-lg-5.py-lg-7.py-5.d-flex.flex-column.justify-content-center.pl-lg-5
           .ts-section-heading-01
             h2 What We Commit To You
@@ -84,28 +98,28 @@ append content
           .process-wrap
             .ts-progress-wrapper.mb-4.js-progress-bar
               .ts-progress-title-wrap
-                h5.ts-progress-title Web Design
-                .ts-progress-info  
+                h5.ts-progress-title PARTNERSHIP
+                .ts-progress-info
                   span.ts-progress-percentage
                   i.ts-progress-unit %
               .ts-progress
-                .progress-bar.bg--color1(role='progressbar' aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+                .progress-bar.bg--color1(role='progressbar' aria-valuenow='95', aria-valuemin='0', aria-valuemax='100')
             .ts-progress-wrapper.mb-4.js-progress-bar
               .ts-progress-title-wrap
-                h5.ts-progress-title Web Design
-                .ts-progress-info  
+                h5.ts-progress-title OPPORTUNITY
+                .ts-progress-info
                   span.ts-progress-percentage
                   i.ts-progress-unit %
               .ts-progress
-                .progress-bar.bg--color1(role='progressbar' aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+                .progress-bar.bg--color1(role='progressbar' aria-valuenow='88', aria-valuemin='0', aria-valuemax='100')
             .ts-progress-wrapper.js-progress-bar
               .ts-progress-title-wrap
-                h5.ts-progress-title Web Design
-                .ts-progress-info  
+                h5.ts-progress-title INCOME
+                .ts-progress-info
                   span.ts-progress-percentage
                   i.ts-progress-unit %
               .ts-progress
-                .progress-bar.bg--color1(role='progressbar' aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+                .progress-bar.bg--color1(role='progressbar' aria-valuenow='100', aria-valuemin='0', aria-valuemax='100')
 
   .container
     .row
@@ -121,24 +135,24 @@ append content
       .row
         .col-lg-3
           .counter-up-04
-            i.ts-icon.las.la-hand-holding-usd
-            p.counter.js-counter-up 30
-            span.desc Years of Experience
+            i.ts-icon.bifirm-icon-diamond
+            p.counter.js-counter-up 115
+            span.desc Respective Partners
         .col-lg-3
           .counter-up-04
-            i.ts-icon.las.la-hand-holding-usd
-            p.counter.js-counter-up 30
-            span.desc Years of Experience
+            i.ts-icon.las.bifirm-icon-care-customers
+            p.counter.js-counter-up(data-unit='K') 365
+            span.desc Happy Clients
         .col-lg-3
           .counter-up-04
-            i.ts-icon.las.la-hand-holding-usd
-            p.counter.js-counter-up 30
-            span.desc Years of Experience
+            i.ts-icon.bifirm-icon-user
+            p.counter.js-counter-up(data-unit='+') 202
+            span.desc Executive Leaders
         .col-lg-3
           .counter-up-04
-            i.ts-icon.las.la-hand-holding-usd
-            p.counter.js-counter-up 30
-            span.desc Years of Experience
+            i.ts-icon.bifirm-icon-puzzle
+            p.counter.js-counter-up(data-unit='+') 305
+            span.desc Cases Resolved
 
   .container
     .row
@@ -152,24 +166,23 @@ append content
         .col-lg-12
           .ts-section-heading-01.align-center
             h2 Our Leaders
-      
+
       .carousel.align-center-items.arrows-intro.dots-theme.carousel-focus(
-        data-items="3" 
-        data-items-md="3" 
-        data-items-sm="1" 
-        data-items-xs="1" 
+        data-items="3"
+        data-items-md="3"
+        data-items-sm="1"
+        data-items-xs="1"
         data-margin="40"
         data-center="true"
         data-dots="false"
-        data-arrows="true" 
-        data-autoplay='false' 
+        data-arrows="true"
+        data-autoplay='true'
         data-hoverpause="true"
         data-autoplay-timeout="9000"
         data-loop="true")
-        - for(var i = 1; i < 8; i ++) {
+        each item in teams.data
           .item
-            +team07('https://i.pravatar.cc/600?img=' + i, 'Adam Larson', 'Financial Consultant', 'Ullamco minim in enim consectetur labore voluptate et non non. Officia dolor qui cupidatat tempor qui ex labore veniam dolore.')
-        - }
+            +team07(item.cover, item.name, item.title, 'Ullamco minim in enim consectetur labore voluptate et non non. Officia dolor qui cupidatat tempor qui ex labore veniam dolore.')
 
   .container
     .row
@@ -179,13 +192,13 @@ append content
   .bg--white
     .home-01-cta.py-7
       +boxCta02
-  
+
   +footer07
 
   +modalCallBack
-  
+
   +control
-append plugins  
+append plugins
   +lib
 append script
   //- script(src='revolution-slider/revolution/js/jquery.themepunch.tools.min.js')
