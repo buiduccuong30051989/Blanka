@@ -576,7 +576,7 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    padding: 10px 30px;
+    padding: 10px 15px;
 
     [class*="item-"] {
       display: inline-block;
@@ -694,6 +694,14 @@
     .portfolio-card-overlay {
       background-size: 100% 300%;
     }
+
+    &.w2-h1 {
+      .card-cover-inner:before {
+        opacity: 0.7;
+        transform: rotate3d(0, 0, 1, 83deg);
+      }
+    }
+
   }
 }
 
