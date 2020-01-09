@@ -145,11 +145,7 @@ mixin blog10(title, cat, cover, author, desc, month, day, year, type, typeText)
       .ts-overlay
         .item.d-flex.mb-4
           a(href='blog_grid_01.html').item-cat
-            i.ts-icon.las.la-tags
             span=cat
-          .item-type
-            i.ts-icon(class=type)
-            span=typeText
         a(href='blog_detail.html#comments').ts-btn.btn-cta-02.item
           span Read More
           i.ts-icon.la.la-angle-right
@@ -185,9 +181,9 @@ mixin blog11(type, title, cat, author, time, cover, desc)
       .card-footer
         a(href="blog_detail.html").blog-card-readmore
           | Continue Reading
-          i.ts-icon.la.la-angle-right 
+          i.ts-icon.la.la-angle-right
 
-mixin blog12(type, cover, title, day, month, desc, author, cat, comment)
+mixin blog12(title, cat, cover, author, desc, month, day, year, comment, type)
   .ts-blog-card-11
     .card-cover
       a(href='blog_detail.html')
@@ -198,20 +194,20 @@ mixin blog12(type, cover, title, day, month, desc, author, cat, comment)
           .day=day
           .month=month
         .blog-card-type
-          i.ts-icon.la(class=type)
+          i.ts-icon(class=type)
       .blog-card-content
         h4.blog-card-title
           a(href="blog_detail.html")=title
         p.blog-card-desc=desc
         .card-footer
-          span.blog-card-author 
-            label Post by 
+          span.blog-card-author
+            label Post by
             a(href="blog_detail.html")=author
           span.blog-card-catalog
-            label On  
+            label On
             a(href="blog_list_01.html")=cat
           span.blog-card-comment
-            label Comment 
+            label Comment
             =comment
 
 mixin blog13(cover, title, type, desc, author, cat, comment, day, month)

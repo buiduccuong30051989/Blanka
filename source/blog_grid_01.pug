@@ -30,33 +30,36 @@ append content
             .row.js-isotope-projects.mansory-gutter-30.mb-5
               .grid-sizer.col-lg-4.col-md-6
               article.item.col-lg-4.col-md-6
-                +blog13('https://picsum.photos/600/200?random=1',
-                  '10 skills propelling finance functions forward in 2019',
-                  'la la-file-image',
-                  'With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes in the market. Those with specialist knowledge will be in particularly high demand, along with experts in cross-border issues, and regulatory changes. In complex times where effective collaboration is essential, stakeholder management skills...',
-                  'Adam Slander',
-                  'Financial',
-                  '22',
-                  '15',
-                  'Oct')
-                
+                +blog13(blogs.data[0].cover,
+                  blogs.data[0].title,
+                  blogs.data[0].type,
+                  blogs.data[0].desc,
+                  blogs.data[0].author,
+                  blogs.data[0].cat,
+                  blogs.data[0].comment,
+                  blogs.data[0].day,
+                  blogs.data[0].monthSort)
+
               article.item.col-lg-4.col-md-6
                 .ts-blog-card-10
                   .card-cover
                     .carousel.arrows-square.arrows-themes(
-                      data-items="1" 
-                      data-items-md="1" 
-                      data-items-sm="1" 
-                      data-items-xs="1" 
+                      data-items="1"
+                      data-items-md="1"
+                      data-items-sm="1"
+                      data-items-xs="1"
                       data-margin="0"
                       data-dots="false"
-                      data-arrows="true" 
-                      data-autoplay="false" 
+                      data-arrows="true"
+                      data-autoplay="false"
                       data-loop="true")
-                      - for(var i = 2; i < 5; i++) {
-                        .item
-                          img.card-img(src='https://picsum.photos/600/200?random=' + i, alt='cover')
-                      - }
+                      .item
+                        img.card-img(src=cases.data[1].cover, alt='cover')
+                      .item
+                        img.card-img(src=cases.data[2].cover, alt='cover')
+                      .item
+                        img.card-img(src=cases.data[3].cover, alt='cover')
+
                   .card-body
                     .blog-card-meta
                       .blog-card-time
@@ -67,19 +70,19 @@ append content
                         i.ts-icon.la.la-images
                     .blog-card-content
                       h4.blog-card-title
-                        a(href="blog_detail.html") 10 skills propelling finance functions forward in 2019
+                        a(href="blog_detail.html") Feature Slider Image Post
                       p.blog-card-desc With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes in the market. Those with specialist knowledge will be in particularly high demand, along with experts in cross-border issues, and regulatory changes. In complex times where effective collaboration is essential, stakeholder management skills...
                   .card-footer
                     span.blog-card-author
-                      label Post by 
+                      label Post by
                       a(href="blog_detail.html") Adam Slander
                     span.blog-card-catalog
-                      label On  
+                      label On
                       a(href="blog_list_01.html")  Financial
                     span.blog-card-comment
-                      label Comment 
+                      label Comment
                       |  102
-              
+
               article.item.col-lg-4.col-md-6
                 .ts-blog-card-10
                   .card-cover
@@ -95,19 +98,19 @@ append content
                         i.ts-icon.la.la-file-video
                     .blog-card-content
                       h4.blog-card-title
-                        a(href="blog_detail.html") 10 skills propelling finance functions forward in 2019
+                        a(href="blog_detail.html") Feature Video Post
                       p.blog-card-desc With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes in the market. Those with specialist knowledge will be in particularly high demand, along with experts in cross-border issues, and regulatory changes. In complex times where effective collaboration is essential, stakeholder management skills...
                   .card-footer
                     span.blog-card-author
-                      label Post by 
+                      label Post by
                       a(href="blog_detail.html") Adam Slander
                     span.blog-card-catalog
-                      label On  
+                      label On
                       a(href="blog_list_01.html")  Financial
                     span.blog-card-comment
-                      label Comment 
+                      label Comment
                       |  102
-              
+
               article.item.col-lg-4.col-md-6
                 .ts-blog-card-10
                   .card-cover
@@ -123,17 +126,17 @@ append content
                         i.ts-icon.lab.la-youtube-square
                     .blog-card-content
                       h4.blog-card-title
-                        a(href="blog_detail.html") 10 skills propelling finance functions forward in 2019
+                        a(href="blog_detail.html") Feature Video Youtube Post
                       p.blog-card-desc With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes in the market. Those with specialist knowledge will be in particularly high demand, along with experts in cross-border issues, and regulatory changes. In complex times where effective collaboration is essential, stakeholder management skills...
                   .card-footer
                     span.blog-card-author
-                      label Post by 
+                      label Post by
                       a(href="blog_detail.html") Adam Slander
                     span.blog-card-catalog
-                      label On  
+                      label On
                       a(href="blog_list_01.html")  Financial
                     span.blog-card-comment
-                      label Comment 
+                      label Comment
                       |  102
 
               article.item.col-lg-4.col-md-6
@@ -151,17 +154,17 @@ append content
                         i.ts-icon.la.la-file-powerpoint
                     .blog-card-content
                       h4.blog-card-title
-                        a(href="blog_detail.html") 10 skills propelling finance functions forward in 2019
+                        a(href="blog_detail.html") Feature Google Slide Post
                       p.blog-card-desc With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes in the market. Those with specialist knowledge will be in particularly high demand, along with experts in cross-border issues, and regulatory changes. In complex times where effective collaboration is essential, stakeholder management skills...
                   .card-footer
                     span.blog-card-author
-                      label Post by 
+                      label Post by
                       a(href="blog_detail.html") Adam Slander
                     span.blog-card-catalog
-                      label On  
+                      label On
                       a(href="blog_list_01.html")  Financial
                     span.blog-card-comment
-                      label Comment 
+                      label Comment
                       |  102
 
               article.item.col-lg-4.col-md-6
@@ -179,48 +182,35 @@ append content
                           i.ts-icon.lab.la-vimeo-square
                       .blog-card-content
                         h4.blog-card-title
-                          a(href="blog_detail.html") 10 skills propelling finance functions forward in 2019
+                          a(href="blog_detail.html") Feature Video Vimeo Post
                         p.blog-card-desc With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes in the market. Those with specialist knowledge will be in particularly high demand, along with experts in cross-border issues, and regulatory changes. In complex times where effective collaboration is essential, stakeholder management skills...
                     .card-footer
                       span.blog-card-author
-                        label Post by 
+                        label Post by
                         a(href="blog_detail.html") Adam Slander
                       span.blog-card-catalog
-                        label On  
+                        label On
                         a(href="blog_list_01.html")  Financial
                       span.blog-card-comment
-                        label Comment 
+                        label Comment
                         |  102
 
-            nav.ts-pagination-01.pt-lg-4.mb-5.mb-lg-0(aria-label="Page navigation example")
-              ul.pagination
-                li.page-item
-                  a.page-link(href="#")
-                    i.ts-icon.la.la-angle-double-left
-                li.page-item.active
-                  a.page-link(href="#") 1
-                li.page-item
-                  a.page-link(href="#") 2
-                li.page-item
-                  a.page-link(href="#") 3
-                li.page-item
-                  a.page-link(href="#") ...
-                li.page-item
-                  a.page-link(href="#") 25
-                li.page-item
-                  a.page-link(href="#")
-                    i.ts-icon.la.la-angle-double-right
-            
+            .row
+              .col-lg-12.text-center
+                a(href="#").ts-btn.btn-lg.btn-color1
+                  | Load More
+                  i.ts-icon.las.la-sync.pl-2.fs--18
+
   +footer04
 
   +popupSearch
 
   +control
-append plugins  
+append plugins
   +lib
 append script
   script(src='js/extention/isotope.pkgd.min.js')
   script(src="js/filter-portfolio.min.js")
   script(src="js/main.min.js")
-  
+
 

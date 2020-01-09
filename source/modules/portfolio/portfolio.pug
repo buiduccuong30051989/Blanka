@@ -12,9 +12,9 @@ mixin portfolio02(img, title, cat)
     a(href="cases_detail.pug").card-cover
       img.card-img(src=img, alt="cover")
     .card-body
-      h4.title 
+      h4.title
         a(href="cases_detail.pug")=title
-      span.category 
+      span.category
         a(href="cases_detail.pug")=cat
 
 mixin portfolio03(img, title, desc, cat, time)
@@ -23,14 +23,14 @@ mixin portfolio03(img, title, desc, cat, time)
       img.card-img(src=img, alt="cover")
     .card-body
       .card-body-inner
-        h4.title 
+        h4.title
           a(href="cases_detail.pug")=title
         p.desc=desc
-        a(href="cases_detail.pug").ts-btn.btn-color1 
+        a(href="cases_detail.pug").ts-btn.btn-color1
           | View More
           i.ts-icon.la.la-angle-double-right.ml-1
         .meta
-          span.category 
+          span.category
             i.ts-icon.la.la-tag.mr-2.fs--22
             a(href="cases_detail.pug")=cat
           span.time=time

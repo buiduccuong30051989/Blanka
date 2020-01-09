@@ -8,22 +8,22 @@
 				"desc": "Our Better Business Program is a unique advisory service we offer to small, SME and multi-owner businesses."
 			},
 			{
-				"cover": "images/cases-02.jpg",
-				"title": "Income Protection Insurance",
-				"cat": "Planning & Investments",
-				"desc": "Your ability to earn is your greatest asset. Have you protected your greatest asset?"
-			},
-			{
-				"cover": "images/cases-03.jpg",
-				"title": "Risk Insurance",
-				"cat": "Insurance",
-				"desc": "Risk insurance becomes the superhero when Adelaide entrepreneur breaks his neck."
-			},
-			{
 				"cover": "images/cases-04.jpg",
 				"title": "Foundations for Business Success",
 				"cat": "Consulting",
 				"desc": "Helping build successful business foundations with proven methodologies."
+			},
+			{
+				"cover": "images/cases-09.jpg",
+				"title": "Funding a child’s education",
+				"cat": "Investing",
+				"desc": "The estimated balance required and estimated school fees are in today’s dollars."
+			},
+			{
+				"cover": "images/cases-10.jpg",
+				"title": "Understanding the Investment Strategy",
+				"cat": "Strategy",
+				"desc": "In consectetur vel dui ac accumsan. Suspendisse malesuada est vel eleifend aliquam. Mauris dapibus venenatis bibendum. "
 			},
 			{
 				"cover": "images/cases-05.jpg",
@@ -38,6 +38,18 @@
 				"desc": "Restrictions apply for SMSF investments in collectables such as artworks."
 			},
 			{
+				"cover": "images/cases-02.jpg",
+				"title": "Income Protection Insurance",
+				"cat": "Planning & Investments",
+				"desc": "Your ability to earn is your greatest asset. Have you protected your greatest asset?"
+			},
+			{
+				"cover": "images/cases-03.jpg",
+				"title": "Risk Insurance",
+				"cat": "Insurance",
+				"desc": "Risk insurance becomes the superhero when Adelaide entrepreneur breaks his neck."
+			},
+			{
 				"cover": "images/cases-07.jpg",
 				"title": "Tax and property sales",
 				"cat": "Tax",
@@ -48,18 +60,6 @@
 				"title": "Generating an income in retirement",
 				"cat": "Retirement",
 				"desc": "If you are like many busy working people with many responsibilities and stresses, you probably have little time to think about retirement. "
-			},
-			{
-				"cover": "images/cases-09.jpg",
-				"title": "Funding a child’s education",
-				"cat": "Investing",
-				"desc": "The estimated balance required and estimated school fees are in today’s dollars."
-			},
-			{
-				"cover": "images/cases-10.jpg",
-				"title": "Understanding the Investment Strategy",
-				"cat": "Strategy",
-				"desc": "In consectetur vel dui ac accumsan. Suspendisse malesuada est vel eleifend aliquam. Mauris dapibus venenatis bibendum. "
 			},
 			{
 				"cover": "images/cases-11.jpg",
@@ -118,76 +118,88 @@
 	"blogs": {
 		"data": [
 			{
-				"title": "10 skills propelling finance functions forward in 2019",
-				"cover": "images/blog-01.jpg",
-				"cat": "Financial",
-				"desc": "With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes in the market...",
-				"author": "Admin",
-				"month": "March",
-				"day": "01",
-				"year": "2019",
-				"type": "la la-photo-video",
-				"typeText": "Video"
-			},
-			{
-				"title": "Teamwork: The Hidden Ingredient In Trading Success",
-				"cover": "images/blog-02.jpg",
-				"cat": "Financial",
-				"desc": "As we approach the tenth anniversary of the great financial crisis of 2008, it’s instructive to look back and appreciate how the world of finance has changed. One of the differences we’ve observed is that investors...",
-				"author": "Admin",
-				"month": "March",
-				"day": "02",
-				"year": "2019",
-				"type": "la la-file-pdf",
-				"typeText": "Pdf"
-			},
-			{
 				"title": "A Day In the Life of a Financial Analyst",
 				"cover": "images/blog-03.jpg",
 				"cat": "Financial",
 				"desc": "Among the more rigorous yet rewarding career options in the financial services industry is that of a financial analyst. But what, exactly, does a financial analyst do on a daily basis?",
 				"author": "Admin",
 				"month": "March",
+				"monthSort": "Mar",
 				"day": "01",
 				"year": "2019",
 				"type": "la la-file-powerpoint",
-				"typeText": "Slide"
+				"typeText": "Slide",
+				"comment": "122"
 			},
 			{
-				"title": "Are You Up-to-Speed with Important Accounting Changes for Private Companies in 2019?",
-				"cover": "images/blog-04.jpg",
+				"title": "5 Ways to Boost Your Financial Confidence in 2020",
+				"cover": "images/blog-13.jpg",
 				"cat": "Financial",
 				"desc": "Sweeping rule changes for private companies that follow U.S. Generally Accepted Accounting Principles (GAAP) have many CFOs and controllers under the gun. If your company is struggling to implement the Accounting...",
 				"author": "Admin",
 				"month": "March",
+				"monthSort": "Mar",
 				"day": "04",
 				"year": "2019",
 				"type": "la la-file-alt",
-				"typeText": "Document"
+				"typeText": "Document",
+				"comment": "122"
 			},
 			{
-				"title": "Marketing for a Massive Online University",
-				"cover": "images/blog-05.jpg",
+				"title": "New Year, New You, New Personal Finance Goals",
+				"cover": "images/blog-14.jpg",
 				"cat": "Financial",
 				"desc": "TV ads helped Southern New Hampshire University become a household name, but with mounting competition and increased scrutiny of spending, getting to the top -- and staying there -- isnt easy.",
 				"author": "Admin",
 				"month": "March",
+				"monthSort": "Mar",
 				"day": "01",
 				"year": "2019",
 				"type": "la la-file-alt",
-				"typeText": "Document"
+				"typeText": "Document",
+				"comment": "122"
 			},
 			{
-				"title": "Here Are the Business Expenses You Cannot Write Off on Your Taxes",
-				"cover": "images/blog-06.jpg",
+				"title": "10 skills propelling finance functions forward in 2020",
+				"cover": "images/blog-05.jpg",
 				"cat": "Financial",
-				"desc": "If you own a business, you’re always looking for ways to lower your tax payments. And while the U.S. Tax Code is a helpful reference for allowable expenses As a self-employer or founder of a small business, it can be difficult to navigate the waters of the IRS annual exam (i.e. taxes).",
+				"desc": "With the political and economic climate remaining uncertain in 2020, finance professionals in a range of roles will need to be very adaptable to changes in the market...",
 				"author": "Admin",
 				"month": "March",
+				"monthSort": "Mar",
+				"day": "01",
+				"year": "2019",
+				"type": "la la-photo-video",
+				"typeText": "Video",
+				"comment": "122"
+			},
+			{
+				"title": "Teamwork: The Hidden Ingredient In Trading Success",
+				"cover": "images/blog-04.jpg",
+				"cat": "Financial",
+				"desc": "As we approach the tenth anniversary of the great financial crisis of 2008, it’s instructive to look back and appreciate how the world of finance has changed. One of the differences we’ve observed is that investors...",
+				"author": "Admin",
+				"month": "March",
+				"monthSort": "Mar",
+				"day": "02",
+				"year": "2019",
+				"type": "la la-file-pdf",
+				"typeText": "Pdf",
+				"comment": "122"
+			},
+			{
+				"title": "Five Ways to Finance Your Child's College Education",
+				"cover": "images/blog-06.jpg",
+				"cat": "Financial",
+				"desc": "ven in the early days of parenthood, it’s hard not to worry about how to pay for college. All you need to do is look at the headlines. Inflation rates have declined in recent years, and yet private non-profit tuition at four-year colleges rose 11% since 2010 and public tuition rose 13%. 1 So how will you finance college? For most people, there are 5 basic routes to paying for college: Save your money Apply for financial aid.",
+				"author": "Admin",
+				"month": "March",
+				"monthSort": "Mar",
 				"day": "01",
 				"year": "2019",
 				"type": "la la-file-alt",
-				"typeText": "Document"
+				"typeText": "Document",
+				"comment": "122"
 			},
 			{
 				"title": "Financial Success Formula: key to your success",
@@ -196,10 +208,12 @@
 				"desc": "After my financial downfall, it become the foundation of my wealth creation and enable me to achieve financial security and financial freedom. In fact, if I didn’t apply it in my life, I would always have financial headaches.",
 				"author": "Admin",
 				"month": "March",
+				"monthSort": "Mar",
 				"day": "01",
 				"year": "2019",
 				"type": "la la-file-alt",
-				"typeText": "Document"
+				"typeText": "Document",
+				"comment": "122"
 			},
 			{
 				"title": "Creating a Productive & Happy Work Environment",
@@ -208,34 +222,40 @@
 				"desc": "In the last fifty years, researchers studying the methods of motivating employees and building great teams have found that the single most important motivator turns out to be “clear expectations.”",
 				"author": "Admin",
 				"month": "March",
+				"monthSort": "Mar",
 				"day": "01",
 				"year": "2019",
 				"type": "la la-file-alt",
-				"typeText": "Document"
+				"typeText": "Document",
+				"comment": "122"
 			},
 			{
-				"title": "Personal finance takeaways from RBI's monetary policy",
-				"cover": "images/blog-09.jpg",
+				"title": "Americans Who Work With An Advisor Are Better Prepared",
+				"cover": "images/blog-15.jpg",
 				"cat": "Financial",
 				"desc": "For the fifth consecutive time this calendar year, the Reserve Bank of India (RBI) slashed the repo rate by 25 bps and the reverse repo by 25 bps. This cut is sweeter for new borrowers as banks are...",
 				"author": "Admin",
 				"month": "March",
+				"monthSort": "Mar",
 				"day": "01",
 				"year": "2019",
 				"type": "la la-file-alt",
-				"typeText": "Document"
+				"typeText": "Document",
+				"comment": "122"
 			},
 			{
 				"title": "Have You Done a Paycheck Check Up?",
-				"cover": "images/blog-10.jpg",
+				"cover": "images/blog-01.jpg",
 				"cat": "Financial",
-				"desc": "The Tax Cuts and Jobs Act of 2017 made huge changes to the U.S. Tax Code, which caught many taxpayers off-guard. You might have noticed a change in your refund from last year...",
+				"desc": "A major research study from BNY Mellon Investment Management revealed a dramatic difference in levels of sophistication about fixed income investing between those surveyed who have worked with professional financial advisors vs. those who have not.",
 				"author": "Admin",
 				"month": "March",
+				"monthSort": "Mar",
 				"day": "01",
 				"year": "2019",
 				"type": "la la-file-alt",
-				"typeText": "Document"
+				"typeText": "Document",
+				"comment": "122"
 			}
 		]
 	},

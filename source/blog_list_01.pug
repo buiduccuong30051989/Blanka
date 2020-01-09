@@ -5,6 +5,7 @@ include modules/footer/footer
 include modules/control/control
 append head
   title="Blog - Blog List 01"
+  link(href="css/extention/photoswipe.min.css" rel="stylesheet")
   link(href="css/main.min.css" rel="stylesheet")
 append header
   +headerHome04
@@ -24,34 +25,34 @@ append content
 
   section.bg--white
     .container
-      .row.vertical-divider-lg.pt-5.pt-lg-7
+      .row.vertical-divider-lg.py-7
         .col-lg-9.pr-lg-5
           .blog-list-01
             article.mb-5
               .ts-blog-card-10
                 .card-cover
                   a(href='blog_detail.html')
-                    img.card-img(src='images/blog-05.jpg', alt='cover')
+                    img.card-img(src=blogs.data[0].cover, alt='cover')
                 .card-body
                   .blog-card-meta
                     .blog-card-time
-                      .day 15
-                      .month Oct
-                      .year 2019
+                      .day=blogs.data[0].day
+                      .month=blogs.data[0].monthSort
+                      .year=blogs.data[0].year
                     .blog-card-type
-                      i.ts-icon.la.la-file-image
+                      i.ts-icon(class=blogs.data[0].type)
                   .blog-card-content
                     h4.blog-card-title
-                      a(href="blog_detail.html") 10 skills propelling finance functions forward in 2019
-                    p.blog-card-desc With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes in the market. Those with specialist knowledge will be in particularly high demand, along with experts in cross-border issues, and regulatory changes. In complex times where effective collaboration is essential, stakeholder management skills...
+                      a(href="blog_detail.html")=blogs.data[0].title
+                    p.blog-card-desc=blogs.data[0].desc
                 .card-footer
                   span.blog-card-author Post by
-                    a(href="blog_detail.html")  Adam Slander
+                    a(href="blog_detail.html")=blogs.data[0].author
                   span.blog-card-catalog On
-                    a(href="blog_list_01.html")  Financial
+                    a(href="blog_list_01.html")=blogs.data[0].cat
                   span.blog-card-comment
                     span Comment
-                    |  102
+                    =blogs.data[0].comment
 
             article.mb-5
               .ts-blog-card-10
@@ -67,30 +68,32 @@ append content
                     data-autoplay="false"
                     data-loop="true")
                       .item
-                        img.card-img(src='images/blog-06.jpg', alt='cover')
+                        img.card-img(src=cases.data[1].cover, alt='cover')
                       .item
-                        img.card-img(src='images/blog-cover-03.jpg', alt='cover')
+                        img.card-img(src=cases.data[2].cover, alt='cover')
+                      .item
+                        img.card-img(src=cases.data[3].cover, alt='cover')
                 .card-body
                   .blog-card-meta
                     .blog-card-time
-                      .day 15
-                      .month Oct
-                      .year 2019
+                      .day=blogs.data[1].day
+                      .month=blogs.data[1].monthSort
+                      .year=blogs.data[1].year
                     .blog-card-type
-                      i.ts-icon.la.la-images
+                      i.ts-icon(class=blogs.data[1].type)
                   .blog-card-content
                     h4.blog-card-title
-                      a(href="blog_detail.html") 10 skills propelling finance functions forward in 2019
-                    p.blog-card-desc With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes in the market. Those with specialist knowledge will be in particularly high demand, along with experts in cross-border issues, and regulatory changes. In complex times where effective collaboration is essential, stakeholder management skills...
+                      a(href="blog_detail.html") Feature Slider Image Post
+                    p.blog-card-desc=blogs.data[1].desc
                 .card-footer
-                  span.blog-card-author Post by 
-                    a(href="blog_detail.html")  Adam Slander
-                  span.blog-card-catalog On  
-                    a(href="blog_list_01.html")  Financial
+                  span.blog-card-author Post by
+                    a(href="blog_detail.html")=blogs.data[1].author
+                  span.blog-card-catalog On
+                    a(href="blog_list_01.html")=blogs.data[1].cat
                   span.blog-card-comment
-                    span Comment 
-                    |  102
-            
+                    span Comment
+                    =blogs.data[1].comment
+
             article.mb-5
               .ts-blog-card-10
                 .card-cover
@@ -106,17 +109,17 @@ append content
                       i.ts-icon.la.la-file-video
                   .blog-card-content
                     h4.blog-card-title
-                      a(href="blog_detail.html") 10 skills propelling finance functions forward in 2019
+                      a(href="blog_detail.html") Feature Video Post
                     p.blog-card-desc With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes in the market. Those with specialist knowledge will be in particularly high demand, along with experts in cross-border issues, and regulatory changes. In complex times where effective collaboration is essential, stakeholder management skills...
                 .card-footer
-                  span.blog-card-author Post by 
+                  span.blog-card-author Post by
                     a(href="blog_detail.html")  Adam Slander
-                  span.blog-card-catalog On  
+                  span.blog-card-catalog On
                     a(href="blog_list_01.html")  Financial
                   span.blog-card-comment
-                    span Comment 
+                    span Comment
                     |  102
-            
+
             article.mb-5
               .ts-blog-card-10
                 .card-cover
@@ -132,15 +135,15 @@ append content
                       i.ts-icon.lab.la-youtube-square
                   .blog-card-content
                     h4.blog-card-title
-                      a(href="blog_detail.html") 10 skills propelling finance functions forward in 2019
+                      a(href="blog_detail.html") Feature Video Youtube Post
                     p.blog-card-desc With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes in the market. Those with specialist knowledge will be in particularly high demand, along with experts in cross-border issues, and regulatory changes. In complex times where effective collaboration is essential, stakeholder management skills...
                 .card-footer
-                  span.blog-card-author Post by 
+                  span.blog-card-author Post by
                     a(href="blog_detail.html")  Adam Slander
-                  span.blog-card-catalog On  
+                  span.blog-card-catalog On
                     a(href="blog_list_01.html")  Financial
                   span.blog-card-comment
-                    span Comment 
+                    span Comment
                     |  102
 
             article.mb-5
@@ -158,18 +161,18 @@ append content
                       i.ts-icon.la.la-file-powerpoint
                   .blog-card-content
                     h4.blog-card-title
-                      a(href="blog_detail.html") 10 skills propelling finance functions forward in 2019
+                      a(href="blog_detail.html") Feature Google Slide Post
                     p.blog-card-desc With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes in the market. Those with specialist knowledge will be in particularly high demand, along with experts in cross-border issues, and regulatory changes. In complex times where effective collaboration is essential, stakeholder management skills...
                 .card-footer
-                  span.blog-card-author Post by 
+                  span.blog-card-author Post by
                     a(href="blog_detail.html")  Adam Slander
-                  span.blog-card-catalog On  
+                  span.blog-card-catalog On
                     a(href="blog_list_01.html")  Financial
                   span.blog-card-comment
-                    span Comment 
+                    span Comment
                     |  102
 
-            article
+            article.mb-5
               .ts-blog-card-10
                 .card-cover
                   .embed-responsive.embed-responsive-16by9
@@ -184,142 +187,34 @@ append content
                       i.ts-icon.lab.la-vimeo-square
                   .blog-card-content
                     h4.blog-card-title
-                      a(href="blog_detail.html") 10 skills propelling finance functions forward in 2019
+                      a(href="blog_detail.html") Feature Video Vimeo Post
                     p.blog-card-desc With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes in the market. Those with specialist knowledge will be in particularly high demand, along with experts in cross-border issues, and regulatory changes. In complex times where effective collaboration is essential, stakeholder management skills...
                 .card-footer
-                  span.blog-card-author Post by 
+                  span.blog-card-author Post by
                     a(href="blog_detail.html")  Adam Slander
-                  span.blog-card-catalog On  
+                  span.blog-card-catalog On
                     a(href="blog_list_01.html")  Financial
                   span.blog-card-comment
                     span Comment 
                     |  102
-            
+
+            +pagination
+
         .col-lg-3.pl-lg-5
-          .main-sidebar
-            aside.widget.widget-text
-              h3.widget-title About
-              .textwidget
-                p
-                  | Nulla eleifend, sapien eget porttitor maximus, nisl ante convallis dolor, nec consequat felis ex a ex. Etiam vestibulum enim euismod dui vestibulum, vitae fringilla nibh consectetur. Integer at volutpat augue. Donec consectetur, est nec laoreet scelerisque, lacus nulla fermentum odio, ut accumsan enim ipsum a justo.
-            aside.widget.widget_search
-              form.form-inline(action="" method="get" role="search")
-                .input-group
-                  input.ts-input.ts-input-grey.border-right-0(type="search" name="s" value="" placeholder="Search …")
-                  .input-group-append
-                    button.ts-btn.btn-color1(type="submit")
-                      i.ts-icon.la.la-search.fs--18
-            aside.widget.widget-catalog
-              h3.widget-title Categories
-              ul
-                li.cat-item
-                  a(href="#") Business Market
-                  |  (5)
-                li.cat-item
-                  a(href="#") Socials Network
-                  |  (12)
-                li.cat-item
-                  a(href="#") Team Work
-                  |  (10)
-                li.cat-item
-                  a(href="#") Product Services
-                  |  (9)
-                li.cat-item
-                  a(href="#") Socials Ecommerce
-                  |  (6)
-            aside.widget.widget-tags
-              h3.widget-title Tags
-              ul
-                li
-                  a(href="#") audio
-                li
-                  a(href="#") gallery
-                li
-                  a(href="#") image
-                li
-                  a(href="#") music
-                li
-                  a(href="#") photo
-                li
-                  a(href="#") quote
-                li
-                  a(href="#") text
-                li
-                  a(href="#") video
-                li
-                  a(href="#") vimeo
-                li
-                  a(href="#") youtube
-            aside.widget.widget-archive
-              h3.widget-title Archives
-              ul
-                li
-                  a(href="#") September 2016
-                  |  (14)
-                li
-                  a(href="#") September 2015
-                  |  (10)
-                li
-                  a(href="#") January 2013
-                  |  (5)
-                li
-                  a(href="#") March 2012
-                  |  (5)
-                li
-                  a(href="#") January 2012
-                  |  (6)
-                li
-                  a(href="#") March 2011
-                  |  (1)
-                li
-                  a(href="#") October 2010
-                  |  (1)
-            aside.widget.widget-meta
-              h3.widget-title Meta
-              ul
-                li
-                  a(href="#") Site Admin
-                li
-                  a(href="#") Log out
-                li
-                  a(href="#")
-                    | Entries 
-                    abbr RSS
-                li
-                  a(href="#")
-                    | Comments 
-                    abbr RSS
-                li
-                  a(href="#") WordPress.org
-      
-      .row.py-7
-        .col-lg-12
-          nav.ts-pagination-01(aria-label="Page navigation example")
-            ul.pagination
-              li.page-item
-                a.page-link(href="#")
-                  i.ts-icon.la.la-angle-double-left
-              li.page-item.active
-                a.page-link(href="#") 1
-              li.page-item
-                a.page-link(href="#") 2
-              li.page-item
-                a.page-link(href="#") 3
-              li.page-item
-                a.page-link(href="#") ...
-              li.page-item
-                a.page-link(href="#") 25
-              li.page-item
-                a.page-link(href="#")
-                  i.ts-icon.la.la-angle-double-right
+          +sideBar
   +footer04
 
   +popupSearch
 
+  +photoSwiper
+
   +control
-append plugins  
+append plugins
   +lib
 append script
-  script(defer src="js/main.min.js")
-  
+  script(src="js/extention/photoswipe.min.js")
+  script(src="js/extention/photoswipe-ui-default.min.js")
+  script(src="js/photoswipe-function.min.js")
+  script(src="js/main.min.js")
+
 

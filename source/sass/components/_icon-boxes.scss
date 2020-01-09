@@ -445,6 +445,7 @@
 
     .desc {
       margin-bottom: 20px;
+      padding: 0 5px;
       @include truncate-multiline-new(4);
     }
   }
