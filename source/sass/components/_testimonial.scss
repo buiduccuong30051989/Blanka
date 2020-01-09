@@ -476,8 +476,11 @@
   }
 
   .blockquote-footer {
-    // color: $color4;
     font-family: $lato;
+  }
+
+  &.no-opacity {
+    background-color: $black;
   }
 }
 

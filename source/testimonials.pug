@@ -70,30 +70,9 @@ append content
           .ts-section-heading-01
             h2 Tesimonials Style 03
       .row-g-40
-        .col-lg-6.mb-40
-          +testimonial07(
-            "We subscribe to Evaluate because of the accuracy, formatting, and speed. It lets us generate data on market or application areas with efficiency and reliability.",
-            "Vice President",
-            "Venture cappital",
-            "https://i.pravatar.cc/120?img=1")
-        .col-lg-6.mb-40
-          +testimonial07(
-            "Being a client of .Ananci, i don't need to worry about what to and what not to do with my portfolio. I have been in the Stock Market since 2004 but never had an equity portfolio advisor like you.",
-            "Adam Naville",
-            "Director & Consultants",
-            "https://i.pravatar.cc/120?img=2")
-        .col-lg-6.mb-40
-          +testimonial07(
-            "Since .Ananci aided me in the search for a solution to successfully improve my cash flow, everything has been going very well. My business continues to grow and I now have the cash to ensure that growth is suitably funded.",
-            "Hazem khan",
-            "Management firm",
-            "https://i.pravatar.cc/120?img=3")
-        .col-lg-6.mb-40
-          +testimonial07(
-            "Thanks for helping me with my first home loan. You have made the process very easy. I will definitely be back.",
-            "Adam Larson",
-            "Ceo - Founder",
-            "https://i.pravatar.cc/120?img=4")
+        each item in testimonials.data
+          .col-lg-6.mb-40
+            +testimonial07(item.cover, item.name, item.title, item.desc)
 
     .container
       .row.pb-5.pt-4
@@ -123,25 +102,25 @@ append content
             data-animate-in="fadeIn"
             data-animate-out="fadeOut")
             .item.d-flex.justify-content-center
-              .ts-testimonial-card-06
+              .ts-testimonial-card-06.no-opacity
                 p.testtimonial-card-desc Being a client of .Ananci, i don't need to worry about what to and what not to do with my portfolio. I have been in the Stock Market since 2004 but never had an equity portfolio advisor like you.
                 footer.blockquote-footer Vice President
                   | - 
                   cite(title="Source Title") Bank of American
             .item
-              .ts-testimonial-card-06
+              .ts-testimonial-card-06.no-opacity
                 p.testtimonial-card-desc Since .Ananci aided me in the search for a solution to successfully improve my cash flow, everything has been going very well. My business continues to grow and I now have the cash to ensure that growth is suitably funded.
                 footer.blockquote-footer Adam Naville
                   | - 
                   cite(title="Source Title") Director, Renvilles Law Costs Draftsmen & Consultants Ltd
             .item.d-flex.justify-content-center
-              .ts-testimonial-card-06
+              .ts-testimonial-card-06.no-opacity
                 p.testtimonial-card-desc Being a client of .Ananci, i don't need to worry about what to and what not to do with my portfolio. I have been in the Stock Market since 2004 but never had an equity portfolio advisor like you.
                 footer.blockquote-footer Vice President
                   | - 
                   cite(title="Source Title") Bank of American
             .item
-              .ts-testimonial-card-06
+              .ts-testimonial-card-06.no-opacity
                 p.testtimonial-card-desc Since .Ananci aided me in the search for a solution to successfully improve my cash flow, everything has been going very well. My business continues to grow and I now have the cash to ensure that growth is suitably funded.
                 footer.blockquote-footer Adam Naville
                   | - 

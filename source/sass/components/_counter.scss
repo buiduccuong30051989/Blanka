@@ -129,12 +129,11 @@
 
   .ts-icon {
     font-size: 72px;
-    color: $gray20;
+    color: color(color1, 1);
     position: absolute;
     top: 50%;
     right: 10px;
     transform: translateY(-50%);
-    opacity: 0.1;
     transition: all 0.35s;
   }
 
@@ -155,10 +154,5 @@
 
   &:hover {
     @extend .shadow;
-
-    .ts-icon {
-      color: color(color1, 1);
-      opacity: .9;
-    }
   }
 }
