@@ -33,3 +33,34 @@
     }
   }
 }
+
+.product-detail {
+  &-related-products {
+    padding-top: 80px;
+    padding-bottom: 25px;
+    position: relative;
+
+    [class^="ts-section-heading"] {
+      margin-bottom: 0;
+    }
+
+    .owl-item {
+      padding: 40px 10px 56px;
+    }
+  }
+}
+
+.shop-table {
+  &.table-cart-collaterals {
+    table-layout: fixed;
+
+    th {
+      width: 70px;
+      vertical-align: top;
+    }
+
+    .bootstrap-select {
+      max-width: 100%;
+    }
+  }
+}

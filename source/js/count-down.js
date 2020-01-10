@@ -97,7 +97,7 @@ jQuery(document).ready(function () {
     "use strict"; //Timer
 
     $('.countdown').downCount({
-      date: '12/30/2019 12:00:00',
+      date: '2/30/2020 12:00:00',
       offset: +10
     }, function () {
       alert('WOOT WOOT, done!');

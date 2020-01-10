@@ -8,28 +8,24 @@ append head
   title="Shop - Shop Detail"
   link(href="css/main.min.css" rel="stylesheet")
 append header
-  +header01
+  +headerHome04
 append content
-  section.sub-header.bg--whitesmoke
+  .ts-sub-header-02.border-bottom
     .container
-      h2.title Shop Detail
-
-  section.section-breadcrumb.bg-white.py-2
-    .container
-      nav(aria-label="breadcrumb")
-        ol.ts-breadcrumb
-          li.breadcrumb-item
-            a(href="index.html") 
-              i.ts-icon.la.la-home.mr-1
-              | Home
-          li.breadcrumb-item
-            a(href="shop_grid.html") Shop
-          li.breadcrumb-item.active(aria-current="page") Shop Detail
+      .row
+        .col-lg-12
+          .sub-header-inner
+            h2 Shop Detail
+            nav(aria-label="breadcrumb")
+              ol.ts-breadcrumb-01
+                li.breadcrumb-item
+                  a(href="home_01.html") Home
+                li.breadcrumb-item.active(aria-current="page") Shop Detail
 
   section.bg--white.py-5.py-lg-7
     .container
-      .row 
-        .col-lg-6.mb-5.mb-lg-0
+      .row
+        .col-lg-6.mb-5.pr-lg-30
           .product-detail-cover.mb-3
             img.w-100(src="https://picsum.photos/600/400?random=10")
           .row-g-10.d-flex.justify-content-between
@@ -41,24 +37,26 @@ append content
               img.w-100(src="https://picsum.photos/150?random=13")
             a.col(href="#")
               img.w-100(src="https://picsum.photos/150?random=14")
-        .col-lg-6
+        .col-lg-6.pl-lg-30
           .product-detail-info
             h2.product-detail-title.mb-3 Grey Soft Loft Sessel
             .d-flex.mb-3.align-items-center
-              span.rating-list-01.pr-5
-                i.ts-icon.la.la-star
-                i.ts-icon.la.la-star
-                i.ts-icon.la.la-star
-                i.ts-icon.la.la-star
-                i.disabled.ts-icon.la.la-star-o
+              .ts-rating-list-01.mr-3
+                i.ts-icon.bifirm-icon-star-full
+                i.ts-icon.bifirm-icon-star-full
+                i.ts-icon.bifirm-icon-star-full
+                i.disabled.ts-icon.bifirm-icon-star-half
+                i.disabled.ts-icon.bifirm-icon-star-half
               span 2 Reviews
             strong.product-detail-price.fs--18.mb-4.d-block £ 529
             .divider-section-01.mb-4
             .product-detail-data.d-flex.mb-5.align-items-center
               .product-detail-quantity.pr-5.d-inline-flex.align-items-center
                 span.pr-5 Quantity:
-                input.ts-input.d-inline-block(type="number", value="1")
-              a.ts-btn.btn-success(href="#") Add to Cart
+                input.ts-input-grey.form-control-lg.d-inline-block(type="number", value="1")
+              a.ts-btn.btn-success(href="#")
+                | Add to Cart
+                i.ts-icon.las.la-cart-plus.pl-2.fs--20
             nav.nav.nav-tabs.ts-nav-tabs
               a.nav-item.nav-link.active(data-toggle='tab', href='#description') Description
               a.nav-item.nav-link(data-toggle='tab', href='#comments') Reviews (2)
@@ -76,12 +74,12 @@ append content
                           strong Andrew
                           |  – 
                           time June 7, 2013
-                        .rating-list-01
-                          i.ts-icon.la.la-star
-                          i.ts-icon.la.la-star
-                          i.ts-icon.la.la-star
-                          i.disabled.ts-icon.la.la-star-o
-                          i.disabled.ts-icon.la.la-star-o
+                        .ts-rating-list-01
+                          i.ts-icon.bifirm-icon-star-full
+                          i.ts-icon.bifirm-icon-star-full
+                          i.ts-icon.bifirm-icon-star-full
+                          i.disabled.ts-icon.bifirm-icon-star-half
+                          i.disabled.ts-icon.bifirm-icon-star-half
                         .description
                           p I bought this thinking it was a nice green colour, apparently it GREY! I’m colour blind so I don’t care but my girlfriend says grey makes me look fat
                   li.comment
@@ -92,30 +90,30 @@ append content
                           strong Maria
                           |  – 
                           time June 7, 2013
-                        .rating-list-01
-                          i.ts-icon.la.la-star
-                          i.ts-icon.la.la-star
-                          i.ts-icon.la.la-star
-                          i.ts-icon.la.la-star
-                          i.disabled.ts-icon.la.la-star-o
+                        .ts-rating-list-01
+                          i.ts-icon.bifirm-icon-star-full
+                          i.ts-icon.bifirm-icon-star-full
+                          i.ts-icon.bifirm-icon-star-full
+                          i.disabled.ts-icon.bifirm-icon-star-half
+                          i.disabled.ts-icon.bifirm-icon-star-half
                         .description
                           p I love grey hoodies! This is perfect with my grey Ninja shirt, when I get cold I throw this on and I can still be a Ninja.
 
-  section.bg--white.py-5.py-lg-7
+  section.product-detail-related-products.bg--white
     .container
-      .section-title-wrap.center
-        h3.title Relate Products
+      .ts-section-heading-01.align-center
+        h2 Related Products
       .carousel.arrows-square.arrows-dark(
-        data-items="4" 
-        data-items-md="3" 
-        data-items-sm="2" 
-        data-items-xs="1" 
-        data-margin="30" 
+        data-items="4"
+        data-items-md="3"
+        data-items-sm="2"
+        data-items-xs="1"
+        data-margin="30"
         data-dots="false"
-        data-arrows="true" 
-        data-autoplay='true' 
+        data-arrows="true"
+        data-autoplay='true'
         data-hoverpause="true"
-        data-autoplay-timeout="3000" 
+        data-autoplay-timeout="3000"
         data-loop="true")
         .item
           +product01('https://picsum.photos/300?random=10')
@@ -135,11 +133,12 @@ append content
           +product01('https://picsum.photos/300?random=5')
 
 
-  +footer01
+  +footer04
+
   +control
-append plugins  
+append plugins
   +lib
 append script
   script(defer src="js/main.min.js")
-  
+
 

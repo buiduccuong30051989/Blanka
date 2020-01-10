@@ -8,40 +8,38 @@ append head
   title="Shop - Shop Checkout"
   link(href="css/main.min.css" rel="stylesheet")
 append header
-  +header01
+  +headerHome04
 append content
-  section.sub-header.bg--whitesmoke
-    .container
-      h2.title Shop Checkout
-
-  section.section-breadcrumb.bg-white.py-2
-    .container
-      nav(aria-label="breadcrumb")
-        ol.ts-breadcrumb
-          li.breadcrumb-item
-            a(href="index.html") 
-              i.ts-icon.la.la-home.mr-1
-              | Home
-          li.breadcrumb-item
-            a(href="shop_grid.html") Shop
-          li.breadcrumb-item.active(aria-current="page") Shop Checkout
-
-  section.bg--white.py-7
+  .ts-sub-header-02.border-bottom
     .container
       .row
-        .col-lg-8
-          h4.mb-5.fs--24 Ship to a Defferent Address? 
+        .col-lg-12
+          .sub-header-inner
+            h2 Shop Checkout
+            nav(aria-label="breadcrumb")
+              ol.ts-breadcrumb-01
+                li.breadcrumb-item
+                  a(href="home_01.html") Home
+                li.breadcrumb-item.active(aria-current="page") Shop Checkout
+
+  section.bg--white.py-5.py-lg-7
+    .container
+      .row.vertical-divider-lg
+        .col-lg-8.pr-lg-30
+          .ts-section-heading-01
+            h2 Related Products
           form
             .d-flex.justify-content-between.mb-4
-              .custom-control.custom-checkbox
-                input#createAccount.custom-control-input(type="checkbox")
-                label.custom-control-label(for="createAccount") Create an account?
+              .form-group
+                .custom-control.custom-checkbox
+                  input#createAccount.custom-control-input(type="checkbox")
+                  label.custom-control-label(for="createAccount") Create an account?
               span.text-right
                 | Returning customer?
                 a.colo--color1.ml-2(href="#") Click here to login
             .row-g-20
               .col-lg-12.mb-3
-                select.ts-input.w-100
+                select.js-select.border-select(name="orderby")
                   option(value="") Select a country…
                   option(value="AX") Åland Islands
                   option(value="AF") Afghanistan
@@ -288,28 +286,28 @@ append content
                   option(value="ZM") Zambia
                   option(value="ZW") Zimbabwe
               .col-lg-6.mb-3
-                input.ts-input(type="text", placeholder="First Name *")
+                input.ts-input-grey(type="text", placeholder="First Name *")
               .col-lg-6.mb-3
-                input.ts-input(type="text", placeholder="Last Name")
+                input.ts-input-grey(type="text", placeholder="Last Name")
               .col-lg-12.mb-3
-                input.ts-input(type="text", placeholder="Company Name")
+                input.ts-input-grey(type="text", placeholder="Company Name")
               .col-lg-6.mb-3
-                input.ts-input(type="text", placeholder="Street Address *")
+                input.ts-input-grey(type="text", placeholder="Street Address *")
               .col-lg-6.mb-3
-                input.ts-input(type="text", placeholder="Apartment, suite, unite ect (optinal)")
+                input.ts-input-grey(type="text", placeholder="Apartment, suite, unite ect (optinal)")
               .col-lg-12.mb-3
-                input.ts-input(type="text", placeholder="Town/City *")
+                input.ts-input-grey(type="text", placeholder="Town/City *")
               .col-lg-12.mb-3
-                input.ts-input(type="text", placeholder="Country/States")
+                input.ts-input-grey(type="text", placeholder="Country/States")
               .col-lg-12.mb-3
-                input.ts-input(type="text", placeholder="Postcode/ZIP *")
+                input.ts-input-grey(type="text", placeholder="Postcode/ZIP *")
               .col-lg-6.mb-3
-                input.ts-input(type="text", placeholder="Email Address *")
+                input.ts-input-grey(type="text", placeholder="Email Address *")
               .col-lg-6.mb-3
-                input.ts-input(type="text", placeholder="Phone Number")
+                input.ts-input-grey(type="text", placeholder="Phone Number")
               .col-lg-12.mb-3
-                input.ts-input(type="text", placeholder="Order Notes")
-        .col-lg-4
+                input.ts-input-grey(type="text", placeholder="Order Notes")
+        .col-lg-4.pl-lg-30
           .checkout-collaterals
             h3 Your Order
             table.shop-table.table-checkout-collaterals(cellspacing="0")
@@ -349,11 +347,13 @@ append content
                 input#payment_method_cod.custom-control-input(type="radio" name="customRadio")
                 label.custom-control-label(for="payment_method_cod") Cash on Delivery
             a.ts-btn.btn-success.btn-lg.d-block(href="#") Place Order
-  +footer01
+
+  +footer04
+
   +control
-append plugins  
+append plugins
   +lib
 append script
-  script(defer src="js/main.min.js")
-  
+  script(src="js/main.min.js")
+
 

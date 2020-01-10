@@ -8,28 +8,24 @@ append head
   title="Shop - Shop Cart"
   link(href="css/main.min.css" rel="stylesheet")
 append header
-  +header01
+  +headerHome04
 append content
-  section.sub-header.bg--whitesmoke
+  .ts-sub-header-02.border-bottom
     .container
-      h2.title Shop Cart
-
-  section.section-breadcrumb.bg-white.py-2
-    .container
-      nav(aria-label="breadcrumb")
-        ol.ts-breadcrumb
-          li.breadcrumb-item
-            a(href="index.html") 
-              i.ts-icon.la.la-home.mr-1
-              | Home
-          li.breadcrumb-item
-            a(href="shop_grid.html") Shop
-          li.breadcrumb-item.active(aria-current="page") Shop Cart
+      .row
+        .col-lg-12
+          .sub-header-inner
+            h2 Shop Cart
+            nav(aria-label="breadcrumb")
+              ol.ts-breadcrumb-01
+                li.breadcrumb-item
+                  a(href="home_01.html") Home
+                li.breadcrumb-item.active(aria-current="page") Shop Cart
 
   section.bg--white.py-7
     .container
-      .row
-        .col-lg-8.mb-5.mb-lg-0
+      .row.vertical-divider-lg
+        .col-lg-8.mb-5.mb-lg-0.pr-lg-30
           table.shop-table.table-cart(cellspacing="0")
             thead
               tr
@@ -88,10 +84,10 @@ append content
               tr
                 td.actions(colspan="6")
                   .coupon
-                    input.ts-input.d-inline-block(type="text", placeholder="Coupon code")
+                    input.ts-input-grey.d-inline-block.mr-2(type="text", placeholder="Coupon code")
                     input.ts-btn.btn-color1.btn-apply-coupon(type="submit", value="Apply Coupon")
                   input.ts-btn.btn-color1.btn-update-cart(type="submit", value="Update Cart")
-        .col-lg-4
+        .col-lg-4.pl-lg-30
           .cart-collaterals
             h3 Cart Totals
             table.shop-table.table-cart-collaterals(cellspacing="0")
@@ -110,7 +106,7 @@ append content
                         a.color--color1.font-weight-bold(href="#") Calculate Shipping
                       section
                         .mb-3
-                          select.ts-input
+                          select.js-select.border-select
                             option(value="") Select a country…
                             option(value="AX") Åland Islands
                             option(value="AF") Afghanistan
@@ -357,9 +353,9 @@ append content
                             option(value="ZM") Zambia
                             option(value="ZW") Zimbabwe
                         .mb-3
-                          input.ts-input(type="text", placeholder="State / county")
+                          input.ts-input-grey(type="text", placeholder="State / county")
                         .mb-3
-                          input.ts-input(type="text", placeholder="Postcode / ZIP")
+                          input.ts-input-grey(type="text", placeholder="Postcode / ZIP")
                         .mb-3
                           button.ts-btn.btn-color1(value="1", type="submit") Update Totals
                 tr.order-total
@@ -369,13 +365,14 @@ append content
                       span.amount £7,599
             .proceed-to-checkout
               a.ts-btn.btn-success.btn-lg.d-block(href="#")
-                | Proceed to Checkout 
+                | Proceed to Checkout
                 i.ts-icon.la.la-long-arrow-right
-  +footer01
+  +footer04
+
   +control
-append plugins  
+append plugins
   +lib
 append script
-  script(defer src="js/main.min.js")
-  
+  script(src="js/main.min.js")
+
 

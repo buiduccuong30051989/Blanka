@@ -5,34 +5,32 @@ include modules/product/product
 include modules/footer/footer
 include modules/control/control
 append head
-  title="Shop - Shop Grid"
+  title="Shop - Shop SideBar"
   link(href="css/main.min.css" rel="stylesheet")
 append header
-  +header01
+  +headerHome04
 append content
-  section.sub-header.bg--whitesmoke
+  .ts-sub-header-02.border-bottom
     .container
-      h2.title Shop Grid
+      .row
+        .col-lg-12
+          .sub-header-inner
+            h2 Shop SideBar
+            nav(aria-label="breadcrumb")
+              ol.ts-breadcrumb-01
+                li.breadcrumb-item
+                  a(href="home_01.html") Home
+                li.breadcrumb-item.active(aria-current="page") Shop SideBar
 
-  section.section-breadcrumb.bg-white.py-2
+  section.bg--white.py-5.py-lg-7
     .container
-      nav(aria-label="breadcrumb")
-        ol.ts-breadcrumb
-          li.breadcrumb-item
-            a(href="index.html") 
-              i.ts-icon.la.la-home.mr-1
-              | Home
-          li.breadcrumb-item.active(aria-current="page") Shop Grid
-
-  section.bg--white.py-7
-    .container
-      .row 
-        .col-lg-9.mb-5.mb-lg-0
+      .row.vertical-divider-lg
+        .col-lg-9.pr-lg-30
           .shop-grid
             .shop-filter.mb-5
               p.woocommerce-result-count Showing 1–9 of 14 results
               form.woocommerce-ordering(method="get")
-                select.js-select.select-orderby(name="orderby")
+                select.js-select.border-select(name="orderby")
                   option(selected="selected" value="menu_order") Default sorting
                   option(value="popularity") Sort by popularity
                   option(value="rating") Sort by average rating
@@ -58,37 +56,20 @@ append content
                 +product01('https://picsum.photos/300/300?random=17')
             .row
               .col-lg-12
-                nav.ts-pagination-01.pt-4(aria-label="Page navigation example")
-                  ul.pagination
-                    li.page-item
-                      a.page-link(href="#")
-                        i.ts-icon.la.la-angle-double-left
-                    li.page-item.active
-                      a.page-link(href="#") 1
-                    li.page-item
-                      a.page-link(href="#") 2
-                    li.page-item
-                      a.page-link(href="#") 3
-                    li.page-item
-                      a.page-link(href="#") ...
-                    li.page-item
-                      a.page-link(href="#") 25
-                    li.page-item
-                      a.page-link(href="#")
-                        i.ts-icon.la.la-angle-double-right
-        .col-lg-3
+                +pagination
+
+        .col-lg-3.pl-lg-30
           .main-sidebar
             aside.widget.widget_search
               form.form-inline(action="" method="get" role="search")
-                .input-group
-                  input.ts-input.border-right-0(type="search" name="s" value="" placeholder="Search …")
+                .input-group.w-100
+                  input.ts-input-grey.border-right-0(type="search" name="s" value="" placeholder="Search …")
                   .input-group-append
                     button.ts-btn.btn-color1(type="submit")
-                      i.ts-icon.la.la-search
+                      i.ts-icon.la.la-search.fs--18
             aside.widget.widget-catalog
               h3.widget-title
-                i.ts-icon.la.la-angle-double-right.mr-1
-                | Product Categories
+                | Categories
               ul
                 li.cat-item
                   a(href="#") Business Market
@@ -105,10 +86,16 @@ append content
                 li.cat-item
                   a(href="#") Socials Ecommerce
                   |  (6)
+            aside.widget.widget-text
+              .ts-box-contact.bg--whitesmoke.p-4
+                h4.mb-4 How can we help you?
+                p Contact us at the Consulting WP office nearest to you or submit a business inquiry online.
+                a(href="#").ts-btn.btn-color1.px-4
+                  i.las.la-phone-volume.fs--18.mr-3
+                  | Contact
             aside.widget.widget-tags
               h3.widget-title
-                i.ts-icon.la.la-angle-double-right.mr-1
-                | Product Tags
+                | Tags
               ul
                 li
                   a(href="#") audio
@@ -131,9 +118,7 @@ append content
                 li
                   a(href="#") youtube
             aside.widget.widget-product-list
-              h3.widget-title
-                i.ts-icon.la.la-angle-double-right.mr-1
-                | Top Rate Product 
+              h3.widget-title Top Rate Product
               ul
                 li
                   +product02('https://picsum.photos/150/150?random=10')
@@ -141,12 +126,13 @@ append content
                   +product02('https://picsum.photos/150/150?random=12')
                 li
                   +product02('https://picsum.photos/150/150?random=14')
-                  
-  +footer01
+
+  +footer04
+
   +control
-append plugins  
+append plugins
   +lib
 append script
-  script(defer src="js/main.min.js")
-  
+  script(src="js/main.min.js")
+
 

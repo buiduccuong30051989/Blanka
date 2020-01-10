@@ -734,6 +734,10 @@
       padding: 30px;
       color: $white;
       text-align: right;
+
+      @include media-breakpoint-down(lg) {
+        padding: 10px 15px;
+      }
     }
   }
 
@@ -768,6 +772,10 @@
       font-weight: 300;
       color: $white;
       @include truncate-oneline();
+
+      @include media-breakpoint-down(lg) {
+        font-size: 16px;
+      }
     }
 
     &-catalog {

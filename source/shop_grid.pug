@@ -8,21 +8,19 @@ append head
   title="Shop - Shop Grid"
   link(href="css/main.min.css" rel="stylesheet")
 append header
-  +header01
+  +headerHome04
 append content
-  section.sub-header.bg--whitesmoke
+  .ts-sub-header-02.border-bottom
     .container
-      h2.title Shop Grid
-
-  section.section-breadcrumb.bg-white.py-2
-    .container
-      nav(aria-label="breadcrumb")
-        ol.ts-breadcrumb
-          li.breadcrumb-item
-            a(href="index.html") 
-              i.ts-icon.la.la-home.mr-1
-              | Home
-          li.breadcrumb-item.active(aria-current="page") Shop Grid
+      .row
+        .col-lg-12
+          .sub-header-inner
+            h2 Shop Grid
+            nav(aria-label="breadcrumb")
+              ol.ts-breadcrumb-01
+                li.breadcrumb-item
+                  a(href="home_01.html") Home
+                li.breadcrumb-item.active(aria-current="page") Shop Grid
 
   section.bg--white.py-7
     .container
@@ -30,7 +28,7 @@ append content
         .shop-filter.mb-5
           p.woocommerce-result-count Showing 1–9 of 14 results
           form.woocommerce-ordering(method="get")
-            select.orderby.js-select.select-orderby(name="orderby")
+            select.js-select.border-select(name="orderby")
               option(selected="selected" value="menu_order") Default sorting
               option(value="popularity") Sort by popularity
               option(value="rating") Sort by average rating
@@ -74,11 +72,12 @@ append content
                 li.page-item
                   a.page-link(href="#")
                     i.ts-icon.la.la-angle-double-right
-  +footer01
+  +footer04
+
   +control
-append plugins  
+append plugins
   +lib
 append script
   script(defer src="js/main.min.js")
-  
+
 

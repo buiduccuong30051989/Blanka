@@ -1,17 +1,17 @@
 @font-face {
-  font-family: 'bifirm';
-  src:
-    url('../../fonts/bifirm//bifirm.ttf?6hqo02') format('truetype'),
-    url('../../fonts/bifirm//bifirm.woff?6hqo02') format('woff'),
-    url('../../fonts/bifirm//bifirm.svg?6hqo02#bifirm') format('svg');
+  font-family: "bifirm";
+  src: url("../../fonts/bifirm//bifirm.ttf?6hqo02") format("truetype"),
+    url("../../fonts/bifirm//bifirm.woff?6hqo02") format("woff"),
+    url("../../fonts/bifirm//bifirm.svg?6hqo02#bifirm") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="bifirm-icon-"], [class*=" bifirm-icon-"] {
+[class^="bifirm-icon-"],
+[class*=" bifirm-icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'bifirm' !important;
+  font-family: "bifirm" !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -92,4 +92,10 @@
 }
 .bifirm-icon-idea-1:before {
   content: "\e916";
+}
+.bifirm-icon-star-full:before {
+  content: "\e917";
+}
+.bifirm-icon-star-half:before {
+  content: "\e918";
 }

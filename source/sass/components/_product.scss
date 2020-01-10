@@ -74,7 +74,7 @@
   }
 
   &:hover {
-    @extend .shadow-lg;
+    @extend .shadow;
   }
 }
 
@@ -102,8 +102,8 @@
   }
 
   .product-title {
-    font-weight: 600;
-    margin: -4px 0 5px 0;
+    font-weight: 300;
+    margin: -4px 0 8px 0;
     line-height: 1;
 
     a {
@@ -116,6 +116,11 @@
         color: color(color1, 1);
       }
     }
+  }
+
+  .ts-rating-list-01 {
+    font-size: 12px;
+    margin-bottom: 3px;
   }
 
   .product-amount {

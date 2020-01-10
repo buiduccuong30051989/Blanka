@@ -141,7 +141,7 @@ mixin footer03
         .container
           .ts-footer-info-inner
             .row
-              .col-lg-4
+              .col-4
                 .ts-icon-box-info-04
                   .icon.color--color1
                     i.ts-icon.la.la-phone
@@ -149,7 +149,7 @@ mixin footer03
                     h5 Drop Us A Call
                     a(href="tel:18604193333") 0944-76-4545
 
-              .col-lg-4
+              .col-4
                 .ts-icon-box-info-04
                   .icon.color--color1
                     i.ts-icon.la.la-envelope
@@ -157,7 +157,7 @@ mixin footer03
                     h5 Or Email Us
                     a(href="mailto:contact@bifirm.com") consultant@bifirm.com
 
-              .col-lg-4
+              .col-4
                 .ts-icon-box-info-04
                   .icon.color--color1
                     i.ts-icon.la.la-map-marker
@@ -308,8 +308,8 @@ mixin footer04
               h4.widget-title-01.in-dark Latest News
               ul
                 - for(var i = 0; i < 3; i++)
-                    li
-                      +blog09(blogs.data[i].cover, blogs.data[i].title, blogs.data[i].desc)
+                  li
+                    +blog09(blogs.data[i].cover, blogs.data[i].title, blogs.data[i].desc)
 
     .ts-copyright-04
       .container

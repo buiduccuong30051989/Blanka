@@ -89,6 +89,12 @@
     }
   }
 
+  &-services {
+    [class^='ts-icon-box-'] {
+      height: 100%;
+    }
+  }
+
   &-blogs {
     padding-top: 80px;
     padding-bottom: 25px;
