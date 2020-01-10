@@ -1,0 +1,37 @@
+//
+// Base :: Author
+// --------------------------------------------------
+
+.ts-author-01 {
+  background-color: $white;
+  display: flex;
+
+  .author {
+    &-avatar {
+      flex: 0 0 200px;
+
+      img {
+        @include fitImage();
+      }
+    }
+
+    &-info {
+      border: 1px solid $gray90;
+      padding: 25px;
+      flex-grow: 1;
+    }
+
+    &-name {
+      font-size: 24px;
+    }
+
+    &-title {
+      color: color(color1, 1);
+      font-size: 16px;
+    }
+
+    &-desc {
+      margin: 0;
+    }
+  }
+}

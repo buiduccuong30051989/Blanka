@@ -93,6 +93,10 @@ $classBackgroundFadeBlack: bg--fb-;
   @include color-modifiers-hover-social();
 }
 
+.tbg {
+  @include color-modifiers-hover-social($attribute: 'color', $prefix: '--');
+}
+
 //
 // Generate border fade white & fade black
 // --------------------------------------------------

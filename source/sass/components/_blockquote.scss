@@ -38,3 +38,22 @@
     font-size: 1rem;
   }
 }
+
+.ts-blockquote-03 {
+  @extend .blockquote;
+  background-color: $whitesmoke;
+  font-size: 16px;
+  font-style: italic;
+  border-left: 4px solid color(color1, 1);
+  padding: 25px 30px;
+  color: $gray20;
+
+  p {
+    margin-bottom: 8px;
+    line-height: 1.2;
+  }
+
+  .blockquote-footer {
+    color: $gray50;
+  }
+}

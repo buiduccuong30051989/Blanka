@@ -27,7 +27,7 @@ append content
   section.bg--white
     .container
       .row.vertical-divider-lg.py-5.py-lg-7
-        .col-lg-9.pr-lg-40
+        .col-lg-9.pr-lg-30
           .blog-detail
             .card-cover
               img(src="https://picsum.photos/879/490?random=10", alt="cover")
@@ -40,11 +40,10 @@ append content
                   i.ts-icon.la.la-file-image
               .blog-detail-content
                 h2.blog-card-title.mb-4 The best experience from the experts
-                h5.mb-3 Lorem Ipsum Doren se amet
                 p Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed velit. Proin gravida arcu nisl, a dignissim mauris placerat id. Vivamus interdum urna at sapien varius elementum. Suspendisse ut mi felis et interdum libero lacinia vel. Aenean elementum odio ut lorem cursus, eu auctor magna pellentesque. Cras facilisis quam sed rhoncus dapibus. Quisque lorem enim, dictum at magna eu, hendrerit hendrerit arcu. Etiam vulputate ac tortor ac gravida. Proin accumsan placerat rutrum. Praesent ut eros ac nisi ultrices rhoncus et.
                 p Nulla fermentum eros vitae est finibus dapibus. Aliquam porta nulla a elit varius efficitur. In in magna sed turpis venenatis tristique eu eget neque. Duis condimentum libero ornare quam tincidunt interdum. Phasellus porttitor nisi ut lectus pellentesque, ut fringilla leo convallis
-                blockquote.ts-blockquote.my-4
-                  p.mb-0
+                blockquote.ts-blockquote-03.my-4
+                  p
                     | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
                   footer.blockquote-footer
                     | Someone famous in
@@ -56,6 +55,8 @@ append content
                   li.mb-1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   li.mb-1 Phasellus id lectus quis dui euismod consectetur.
                   li.mb-1 Phasellus id lectus quis dui euismod consectetur.
+                p Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed velit. Proin gravida arcu nisl, a dignissim mauris placerat id. Vivamus interdum urna at sapien varius elementum. Suspendisse ut mi felis et interdum libero lacinia vel. Aenean elementum odio ut lorem cursus, eu auctor magna pellentesque. Cras facilisis quam sed rhoncus dapibus. Quisque lorem enim, dictum at magna eu, hendrerit hendrerit arcu. Etiam vulputate ac tortor ac gravida. Proin accumsan placerat rutrum. Praesent ut eros ac nisi ultrices rhoncus et.
+                p Nulla fermentum eros vitae est finibus dapibus. Aliquam porta nulla a elit varius efficitur. In in magna sed turpis venenatis tristique eu eget neque. Duis condimentum libero ornare quam tincidunt interdum. Phasellus porttitor nisi ut lectus pellentesque, ut fringilla leo convallis
             .card-footer
               .meta
                 span.blog-card-author
@@ -63,14 +64,15 @@ append content
                   a(href="blog_detail.html") Admin
                 span.blog-card-catalog
                   label On
-                  a(href="blog_list_01.html") Business, Consultant
+                  a(href="blog_list_01.html") Business
+                  a(href="blog_list_01.html") Consultant
                 span.blog-card-comment
                   label Comment
                   | 123
               .share.d-flex.align-items-center
                 span.pr-2 Share this Article:
                 .ts-social-list-01.align-right
-                  +tsSocialList01
+                  +tsSocialList03
             .divider-section-01
             .blog-detail__control.py-5
               a(href="#").item
@@ -81,19 +83,45 @@ append content
                 span
                   | Next Article
                   i.ts-icon.la.la-angle-double-right.pl-1
-            .divider-section-01
-            .ts-author
+            .ts-author-01.mb-5
               .author-avatar
                 img(src="https://i.pravatar.cc/300?img=24" alt="Image")
               .author-info
-                h3.author-name Article Author: Mary C. Darnell
-                h5.author-title Athletic trainer, Creative Wealth Management
+                h3.author-name Article Author: Adam Levine
+                h5.author-title Director & Consultants Ltd
                 p.author-desc
                   | Aenean eleifend ornare molestie. Maecenas in leo fringilla sapien tincidunt volutpat in at nibh. Curabitur fringilla
                   | libero ac est viverra ultricies. Aenean vel lacus vitae erat posuere commodo. Donec id purus nulla.
             .divider-section-01
+            .related-posts.py-5
+              .ts-section-heading-01.has-controls
+                h2 Related Posts
+                .group-carousel-controls
+                  button.btn-carousel-01.relate-post-prev
+                    i.ts-icon.las.la-angle-left
+                  button.btn-carousel-01.relate-post-next
+                    i.ts-icon.las.la-angle-right
+              .carousel.arrows-square.arrows-dark(
+                data-items="2"
+                data-items-md="2"
+                data-items-sm="2"
+                data-items-xs="1"
+                data-margin="40"
+                data-dots="false"
+                data-arrows="false"
+                data-autoplay="true"
+                data-autoplay-timeout="9000"
+                data-loop="true"
+                data-next="relate-post-next"
+                data-prev="relate-post-prev")
+                each blog in blogs.data
+                  .item
+                    +blog09InLight(blog.cover, blog.title, blog.desc)
+
+            .divider-section-01
             .comments-area.py-5
-              h2.comments-title.mb-5 3 Comments
+              .ts-section-heading-01.has-controls
+                h2 3 Comments
               ol.comment-list
                 li.comment
                   .comment-body
@@ -142,7 +170,7 @@ append content
                         a.comment-reply-link(href="#")
                           | Reply
             .divider-section-01
-            .comment-respond.py-5
+            .comment-respond.pt-5
               h3.comment-reply-title Leave a Reply
               p.mb-4.fs--13
                 a.text-muted(href="#") You must be logged in to post a comment...
@@ -158,7 +186,7 @@ append content
                 .row
                   .col
                     button.ts-btn.btn-color1.btn-lg(name="submit", type="submit") Comment
-        .col-lg-3.pl-lg-40
+        .col-lg-3.pl-lg-30
           +sideBar
 
   +footer04

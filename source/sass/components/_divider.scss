@@ -11,7 +11,7 @@
   background-color: $whitesmoke;
 }
 
-.row.vertical-divider-lg [class*="col-"]:not(:last-child)::after {
+.row.vertical-divider-lg > [class*="col-"]:not(:last-child)::after {
   background: $whitesmoke;
   width: 1px;
   content: "";

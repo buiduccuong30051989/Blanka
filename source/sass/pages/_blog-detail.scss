@@ -129,18 +129,8 @@
   .blog-card {
     &-title {
       font-weight: 300;
-      font-size: 18px;
+      font-size: 24px;
       line-height: 1.4;
-
-      a {
-        color: $gray20;
-        text-decoration: none;
-        transition: $transition-base;
-
-        &:hover {
-          color: color(color1, 1);
-        }
-      }
     }
 
     &-meta {

@@ -107,13 +107,13 @@
 
         &:hover {
           text-decoration: underline;
-          color: $gray20;
+          color: color(color1, 1);
         }
       }
     }
 
     &-desc {
-      color: $color3;
+      color: $gray40;
       line-height: 1.4;
       margin-bottom: 0;
       @include truncate-multiline-new(2);
@@ -127,7 +127,7 @@
 
         a {
           color: $white;
-  
+
           &:hover {
             color: $white;
           }
@@ -1172,6 +1172,7 @@
 
     &-desc {
       margin-bottom: 0;
+      @include truncate-multiline-new(4);
     }
 
     &-author {

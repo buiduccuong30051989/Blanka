@@ -13,7 +13,7 @@ append head
   link(href="css/main.min.css" rel="stylesheet")
 append header
   +headerHome04
-  
+
 append content
 
   .ts-sub-header-02.border-bottom
@@ -27,18 +27,17 @@ append content
                 li.breadcrumb-item
                   a(href="home_01.html") Home
                 li.breadcrumb-item.active(aria-current="page") Our Team
-  
+
   .py-lg-7.py-5.bg--whitesmoke.team-01
     .container
       .row.mb-5
         .col-lg-12.text-center
-          h2.mb-3 WE ARE BIFIRM
-          h5 We’re help your vulputate bibendum justo sed, tincidunt quisque dictum eget dolor vel maximus.
+          h2.mb-3 Find experts and executives in finance with BiFirm
+          p.w-75.mx-auto At BiFirm, we provide our advisors with the independent research and other resources needed so they can give you objective advice — and you, in turn, can make informed decisions as you pursue your financial goals.
       .row-g-40
-        - for(var i = 1; i < 7; i ++) {
+        each item in teams.data
           .col-lg-4.col-md-6
-            +team07('https://i.pravatar.cc/600?img=' + i, 'Adam Larson', 'Financial Consultant', 'Ullamco minim in enim consectetur labore voluptate et non non. Officia dolor qui cupidatat tempor qui ex labore veniam dolore.')
-        - }
+            +team07(item.cover, item.name, item.title, 'Ullamco minim in enim consectetur labore voluptate et non non. Officia dolor qui cupidatat tempor qui ex labore veniam dolore.')
 
   .team-01-hr.py-7
     .ts-overlay
@@ -58,9 +57,8 @@ append content
   +popupSearch
 
   +control
-append plugins  
+append plugins
   +lib
 append script
   script(src="js/main.min.js")
-  script.
-    
+
