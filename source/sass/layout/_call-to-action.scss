@@ -35,4 +35,12 @@
       }
     }
   }
+
+  @include media-breakpoint-down(sm) {
+    display: block;
+
+    .left {
+      margin-bottom: 30px;
+    }
+  }
 }

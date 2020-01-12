@@ -113,9 +113,45 @@
     transform: translateY(-50%);
     z-index: 1;
     width: 100%;
+    
+    .ts-icon-box-info-04 .content {
+      h5 {
+        @include media-breakpoint-down(md) {
+          font-size: 16px;
+          margin-bottom: 4px;
+        }
+      }
+  
+      & > * {
+        display: block;
+      }
+    }
 
     .ts-icon-box-info-04 .icon {
       padding-right: 12px;
+
+      @include media-breakpoint-down(md) {
+        font-size: 24px;
+        padding-right: 8px;
+        margin-right: 18px;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      padding: 30px 15px;
+    }
+
+    // @include media-breakpoint-down(sm) {
+    //   .row {
+    //     display: block;
+    //   }
+    // }
+  }
+
+  @include media-breakpoint-down(md) {
+    .widget-quick-links-02 ul {
+      display: flex;
+      justify-content: space-between;
     }
   }
 }

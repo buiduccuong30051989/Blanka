@@ -81,6 +81,10 @@
 
     .owl-item {
       padding: 40px 0 56px 0;
+
+      @include media-breakpoint-down(sm) {
+        padding: 40px 30px 46px;
+      }
     }
 
     .owl-carousel.carousel-focus .owl-item .item {
