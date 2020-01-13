@@ -113,7 +113,7 @@
     transform: translateY(-50%);
     z-index: 1;
     width: 100%;
-    
+
     .ts-icon-box-info-04 .content {
       h5 {
         @include media-breakpoint-down(md) {
@@ -121,7 +121,7 @@
           margin-bottom: 4px;
         }
       }
-  
+
       & > * {
         display: block;
       }
@@ -141,11 +141,9 @@
       padding: 30px 15px;
     }
 
-    // @include media-breakpoint-down(sm) {
-    //   .row {
-    //     display: block;
-    //   }
-    // }
+    @include media-breakpoint-down(sm) {
+      transform: translateY(-25%);
+    }
   }
 
   @include media-breakpoint-down(md) {

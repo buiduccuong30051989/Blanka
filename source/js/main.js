@@ -62,10 +62,12 @@ $(document).ready(function() {
         Math.min(Number(elem.options.itemsSm), Number(1));
       elem.responsive = {
         0: {
-          items: Number(elem.options.itemsXs)
+          items: Number(elem.options.itemsXs),
+          margin: 0
         },
         576: {
-          items: Number(elem.options.itemsSm)
+          items: Number(elem.options.itemsSm),
+          margin: 0
         },
         768: {
           items: Number(elem.options.itemsMd)

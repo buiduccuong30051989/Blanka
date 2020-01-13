@@ -65,3 +65,23 @@
     'col1 col1 col2 col3'
     'col1 col1 col2 col3';
 }
+
+.pd-carousel-shadow {
+  padding-top: 80px;
+  padding-bottom: 65px;
+  position: relative;
+
+  @include media-breakpoint-down(md) {
+    padding: 48px 0 33px;
+  }
+}
+
+.pd-carousel-focus {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  position: relative;
+
+  @include media-breakpoint-down(md) {
+    padding: 48px 0;
+  }
+}

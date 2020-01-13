@@ -1083,7 +1083,7 @@
   }
 
   &:hover {
-    @extend .shadow;
+    box-shadow: 0 4px 8px rgba($black, 0.15);
 
     .ts-overlay {
       opacity: 0.9;

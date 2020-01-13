@@ -94,7 +94,7 @@ append content
                 .item
                   +portfolio04(item.cover, item.title, item.cat, item.desc)
 
-  .home-01-testimonial
+  .home-01-testimonial.pd-carousel-focus
     .waveWrapper.waveAnimation#js-fade-elements
       .waveWrapperInner.bgTop
         .wave.waveTop
@@ -106,7 +106,7 @@ append content
     .container
       .row
         .col-lg-12
-          .ts-section-heading-01.align-center.in-dark
+          .ts-section-heading-01.align-center.in-dark.heading-carousel-focus
             h2 Clients FeedBack
       .row
         .col-lg-12
@@ -127,11 +127,11 @@ append content
               .item
                 +testimonial08(item.cover, item.name, item.title, item.desc)
 
-  .home-01-blogs.bg--white
+  .home-01-blogs.bg--white.pd-carousel-shadow
     .container
       .row
         .col-lg-12
-          .ts-section-heading-01.has-controls
+          .ts-section-heading-01.has-controls.heading-carousel-shadow
             h2 Our Latest Posts
             .group-carousel-controls
               button.btn-carousel-01.blog-prev
@@ -157,12 +157,12 @@ append content
                 .item
                   +blog10(item.title, item.cat, item.cover, item.author, item.desc, item.month, item.day, item.year, item.type, item.typeText)
 
-  .home-04-teams.bg--whitesmoke
+  .home-04-teams.bg--whitesmoke.pd-carousel-focus
     .ts-overlay
     .container
       .row
         .col-lg-12
-          .ts-section-heading-01.align-center
+          .ts-section-heading-01.align-center.heading-carousel-focus
             h2 Meet Our Experts
       .carousel.align-center-items.arrows-intro.dots-theme.carousel-focus(
         data-items="3"
@@ -183,8 +183,8 @@ append content
 
   +partner
 
-  .pb-7.bg--whitesmoke
-    .home-01-cta.pb-7.py-5.py-lg-7
+  .pb-5.pb-lg-7.bg--whitesmoke
+    .home-01-cta.py-5.py-lg-7
       +boxCta01
 
   +footer03
