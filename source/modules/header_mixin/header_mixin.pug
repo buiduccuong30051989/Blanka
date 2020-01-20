@@ -262,22 +262,22 @@ mixin counter01
 
 mixin counterUp02
   .row
-    .col-lg-3
+    .col-lg-3.col-md-6.mb-30.mb-lg-0
       .counter-up-03
         i.ts-icon.bifirm-icon-diamond
         p.counter.js-counter-up 115
         span.desc Respective Partners
-    .col-lg-3
+    .col-lg-3.col-md-6.mb-30.mb-lg-0
       .counter-up-03
         i.ts-icon.bifirm-icon-care-customers
         p.counter.js-counter-up(data-unit='K') 365
         span.desc Happy Clients
-    .col-lg-3
-      .counter-up-03
+    .col-lg-3.col-md-6
+      .counter-up-03.mb-30.mb-md-0
         i.ts-icon.bifirm-icon-user
         p.counter.js-counter-up(data-unit='+') 202
         span.desc Executive Leaders
-    .col-lg-3
+    .col-lg-3.col-md-6
       .counter-up-03
         i.ts-icon.bifirm-icon-puzzle
         p.counter.js-counter-up(data-unit='+') 305
@@ -518,10 +518,10 @@ mixin headerHome03
     .ts-header.ts-header-09
       .ts-header-inner
         .ts-header-left.flex-grow-1
-          a.ts-header-logo-wrap.d-inline-flex.pr-5.mr-5(href="index.html")
+          a.ts-header-logo-wrap.d-inline-flex(href="index.html")
             img.header-logo(src="images/logo-light.png", alt="logo")
-          nav.ts-main-menu.d-none.d-lg-inline-flex.sub-icon.style-03
-            +navigation
+        nav.ts-main-menu.d-none.d-lg-inline-flex.sub-icon.style-03
+          +navigation
         .ts-header-right
           .ts-header-control
             .item.mr-4.ts-icon-box-info-02.in-dark
@@ -567,6 +567,8 @@ mixin headerHome04
             .header-01-control
               .item.search-popup-btn.js-search-popup-btn
                 i.control-icon.ts-icon.la.la-search
+          a(href="#js-mobile-menu-btn").ts-btn-mobile-menu
+            i.ts-icon.la.la-bars
 
 mixin headerHome05
   //- headroom .header-container.home-05-header#js-headroom-static

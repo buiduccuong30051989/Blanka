@@ -76,20 +76,32 @@
         padding-bottom: 15px;
       }
     }
+
+    @include media-breakpoint-down(md) {
+      .left {
+        img {
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+        }
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      [class^="list-style-"] {
+        display: block;
+
+        li {
+          width: 100%;
+          padding-right: 8px;
+          padding-bottom: 15px;
+        }
+      }
+    }
   }
 
   &-testimonial {
-    padding-top: 80px;
-    padding-bottom: 25px;
     position: relative;
-
-    [class^="ts-section-heading"] {
-      margin-bottom: 0;
-    }
-
-    .owl-item {
-      padding: 40px 0 56px 0;
-    }
 
     .carousel {
       z-index: 1;

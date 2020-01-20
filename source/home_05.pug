@@ -17,13 +17,13 @@ append header
 append content
   .home-05-slider
     img(src="http://templates.thememodern.com/finance/images/Slider/10.jpg")
-  
+
   .bg--color8.py-3
     .container
       .row
         .col-lg-12
           .ts-box-cta-01.in-dark
-            .left.pr-lg-4
+            .left.pr-md-4
               h3.box-cta-title Our business is built on a foundation of thoughtful client relationships.
               p.box-cta-desc Our aim is to provide the highest quality service to you and your business. We are transparent about all our costs and services, and will guide you through every step of the process.
             .right
@@ -39,22 +39,22 @@ append content
           +services13('bifirm-icon-settings', 'Finance Operations', 'Unlock productivity, Empower workforce', 'Finance Operations Management provides seamless cross collaboration through intelligent work management and digital workflows that help to unlock productivity, empower workforce and deliver predictable outcomes for your finance processes.')
         .col-lg-4.mb-40
           +services13('bifirm-icon-sprout', 'Investments Management', 'Get solutions that fit your goals', 'Investing in a managed portfolio means getting the help you need to pursue your financial goals. Just answer a series of questions and TD Ameritrade Investment Management, LLC will recommend a portfolio to fit your needs.')
-        .col-lg-4
+        .col-lg-4.mb-40.mb-lg-0
           +services13('bifirm-icon-home', 'Retirement Planning', 'Confidence in the future', 'Plan your retirement with effective protection and savings solutions for a wonderful independent retirement.')
-        .col-lg-4
+        .col-lg-4.mb-40.mb-lg-0
           +services13('bifirm-icon-coin', 'Insurance Consulting', 'We here to help', 'We help leading insurers across the globe meet their strategic and operational goals.')
         .col-lg-4
-          +services13('bifirm-icon-bar-chart', 'Financial Planning', "Financial Planning is an ongoing process to help you make sensible decisions about money that can help you achieve your goals in life; it's not just about buying products like a pension or an ISA. ... It's about getting organised; being in control of your finances rather than letting your finances control you.")
+          +services13('bifirm-icon-bar-chart', 'Financial Planning', 'Help you achieve your goals in life', "Financial Planning is an ongoing process to help you make sensible decisions about money that can help you achieve your goals in life; it's not just about buying products like a pension or an ISA. ... It's about getting organised; being in control of your finances rather than letting your finances control you.")
 
-  .home-05-why-us.bg--whitesmoke.py-7
+  .home-05-why-us.bg--whitesmoke.py-5.py-lg-7
     .container
       .row
-        .col-lg-8.pr-lg-5
+        .col-lg-8.pr-lg-5.mb-5.mb-lg-0
           .ts-section-heading-01
             h2 Why You Should Choose Us?
           p.mb-lg-5 The highest levels of service and technical expertise from experts all over the world. Together we understand the challenges you face and the importance of firm decisions... We will help you to find the right solutions, quickly and effectively.
-          .d-flex.align-items-end
-            .left.mr-4
+          .d-md-flex.align-items-center
+            .left.mr-md-4.my-md-0.my-4
               img.thumb(src='http://templates.thememodern.com/dotted/images/Feature/7.png', alt='demo')
             .right
               ul.list-style-01.list-square.color.mb-lg-4
@@ -67,10 +67,10 @@ append content
               a(href="about.html").ts-btn.btn-color1 More About Us
                 i.ts-icon.la.la-angle-right.pl-3
 
-        .col-lg-4.p-0
+        .col-lg-4.pl-lg-0
           .ts-section-heading-01.pl-lg-5
             h2 Get A CallBack
-          form.call-back-form-05.border-left.pl-lg-5
+          form.call-back-form-05.border-lg-left.pl-lg-5
             .row
               .col-lg-12.consultant-select-wrap.mb-4
                 p How can we help:
@@ -82,7 +82,7 @@ append content
               .col-lg-12.pt-2
                 a(href="#").ts-btn.btn-color1 Submit
 
-  .home-01-projects.py-7.bg--white
+  .home-01-projects.py-lg-7.py-5.bg--white
     .container
       .row
         .col-lg-12
@@ -124,24 +124,24 @@ append content
             h2 More than 25 Years of Experience
       +counterUp02
 
-  .home-05-testimonial
+  .home-05-testimonial.pd-carousel-focus
     .container
       .row
         .col-lg-12
-          .ts-section-heading-01.align-center
+          .ts-section-heading-01.align-center.heading-carousel-focus
             h2 Testimonials
       .row
         .col-lg-12
           .carousel.align-center-items.arrows-intro.carousel-focus(
             data-items="3"
-            data-items-md="3"
+            data-items-md="2"
             data-items-sm="1"
             data-items-xs="1"
             data-margin="40"
             data-center="true"
             data-dots="false"
             data-arrows="true"
-            data-autoplay='false'
+            data-autoplay='true'
             data-hoverpause="true"
             data-autoplay-timeout="9000"
             data-loop="true")
@@ -163,7 +163,7 @@ append content
         .col-lg-6.mb-40
           +blog11('align-right', 'What Is Thought Leadership?', ['Skills', 'Financial'], 'Adam Levine', 'Feb 01, 2020', 'images/blog-02.jpg', 'Thought leadership is a key component of content marketing. But I would caution brands to avoid what I call the “unique point of view trap.” I have heard more than a few executives delay going all in on thought leadership by focusing on “the unique point of view.” They say “there is so much noise in the marketplace. We can only compete if our content is differentiated and completely unique.”')
 
-        .col-lg-6
+        .col-lg-6.mb-40.mg-lg-0
           +blog11('', 'Creating a Productive & Happy Work', ['Skills', 'Financial'], 'Adam Levine', 'Jan 15, 2020', 'images/blog-08.jpg', 'In the last fifty years, researchers studying the methods of motivating employees and building great teams have found that the single most important motivator turns out to be “clear expectations.')
 
         .col-lg-6
@@ -191,7 +191,7 @@ append content
   +footer07
 
   +control
-append plugins  
+append plugins
   +lib
 append script
   //- script(src='revolution-slider/revolution/js/jquery.themepunch.tools.min.js')

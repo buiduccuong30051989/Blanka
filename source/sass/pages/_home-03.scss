@@ -80,6 +80,13 @@
       height: 100%;
       background-color: rgba($black, 1);
     }
+
+    @include media-breakpoint-down(sm) {
+      .counter-up-03 {
+        max-width: 250px;
+        margin: auto;
+      }
+    }
   }
 
   &-commitment {

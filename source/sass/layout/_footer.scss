@@ -152,6 +152,12 @@
       justify-content: space-between;
     }
   }
+
+  @include media-breakpoint-down(sm) {
+    .widget-quick-links-02 ul {
+      display: block;
+    }
+  }
 }
 
 .copyright {
