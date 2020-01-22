@@ -36,4 +36,17 @@
       transition: $transition-base;
     }
   }
+
+  @include media-breakpoint-down(md) {
+    .pagination {
+      .page-link {
+        min-width: 32px;
+        height: 30px;
+        line-height: 15px;
+        font-size: 13px;
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+    }
+  }
 }

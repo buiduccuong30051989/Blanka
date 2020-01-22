@@ -85,3 +85,10 @@
     padding: 48px 0;
   }
 }
+
+.ts-scroll-mobile {
+  @include media-breakpoint-down(md) {
+    flex-wrap: nowrap;
+    overflow-y: auto;
+  }
+}

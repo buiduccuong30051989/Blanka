@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) {
-  var btn = document.querySelector('#js-mobile-menu-btn');
-  if (btn) {
-    var menu = new MmenuLight(btn, {
+  var menu = document.querySelector('#js-mobile-menu');
+  if (menu) {
+    var menu = new MmenuLight(menu, {
       // title: 'Menu',
       // theme: 'light',// 'dark'
       // slidingSubmenus: true,// false

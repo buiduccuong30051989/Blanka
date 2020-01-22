@@ -96,6 +96,21 @@
     }
   }
 
+  &-blogs {
+    @include media-breakpoint-down(md) {
+      .ts-scroll-mobile {
+        & > [class*='col-'] {
+          .ts-blog-card-07 {
+            width: 70vw;
+            max-width: 320px;
+            height: 100%;
+          }
+        }
+      }
+
+    }
+  }
+
   &-footer {
     background-color: $black;
 
@@ -117,6 +132,12 @@
       z-index: 1;
       padding-top: 8px;
       padding-bottom: 8px;
+    }
+
+    @include media-breakpoint-down(md) {
+      .widget-quick-links-02 {
+        min-width: 320px;
+      }
     }
   }
 }

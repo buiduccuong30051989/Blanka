@@ -40,9 +40,9 @@ append content
           .ts-section-heading-01
             h2 Testimonials Style 01
       .row-g-40
-        - for(var i = 1; i < 4; i ++) {
+        - for(var i = 0; i < 3; i ++) {
           .col-lg-4.col-md-6
-            +testimonial08('https://i.pravatar.cc/120?img=' + i, 'Adam Slander', 'Developer', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.')
+            +testimonial08(testimonials.data[i].cover, testimonials.data[i].name, testimonials.data[i].title, testimonials.data[i].desc)
         - }
 
     .container
@@ -55,9 +55,9 @@ append content
           .ts-section-heading-01
             h2 Testimonials Style 02
       .row-g-40
-        - for(var i = 1; i < 4; i ++) {
+        - for(var i = 2; i < 5; i ++) {
           .col-lg-4.col-md-6
-            +testimonial09('https://i.pravatar.cc/120?img=' + i, 'Adam Slander', 'Developer', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Duo Reges: constructio interrete.')
+            +testimonial09(testimonials.data[i].cover, testimonials.data[i].name, testimonials.data[i].title, testimonials.data[i].desc)
         - }
 
     .container

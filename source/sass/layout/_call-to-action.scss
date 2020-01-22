@@ -38,6 +38,7 @@
 
   @include media-breakpoint-down(sm) {
     display: block;
+    padding: 30px 0;
 
     .left {
       margin-bottom: 30px;
