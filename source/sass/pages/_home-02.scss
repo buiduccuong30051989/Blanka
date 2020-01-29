@@ -98,5 +98,17 @@
       position: relative;
       z-index: 1;
     }
+
+    @include media-breakpoint-down(md) {
+      .ts-copyright-04 {
+        .copyright-inner {
+          padding: 0;
+        }
+
+        .copyright-left {
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 }

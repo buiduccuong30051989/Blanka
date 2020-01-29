@@ -32,13 +32,13 @@ append content
   .home-01-about-us.bg--white.py-lg-7.py-5
     .container
       .row.align-items-center
-        .col-lg-7.d-flex.align-items-center
+        .col-lg-7.d-flex.align-items-center.mb-5.mb-lg-0
           img.thumb(src='images/home-04-slider-08.jpg', alt='cover')
         .col-lg-5.pl-lg-5
           .ts-section-heading-01.mb-4
             h2 We Are BiFirm
           p.mb-lg-4.pb-2 We're supporting the finance industry with an extensive range of solutions to meet ever-increasing digital and customer expectations and regulatory demand.
-          ul.list-style-01.list-circle.color.mb-lg-4
+          ul.list-style-01.list-circle.color.mb-4
             li Client Centric
             li Trust and Integrity
             li Excellence
@@ -53,13 +53,13 @@ append content
       .col-lg-12
         .border-bottom
 
-  .about-03-services.py-7
+  .about-03-services.py-5.py-lg-7
     .container
       .row
         .col-lg-12.mb-lg-5
           .ts-section-heading-01.align-center
             h2 What We Offers To You
-          p.font-italic.text-center.w-75.mx-auto The highest levels of service and technical expertise from experts all over the world. Together we understand the challenges you face and the importance of firm decisions... We will help you to find the right solutions, quickly and effectively.
+          p.font-italic.text-center.w-75.mx-auto.mb-5.mb-lg-0 The highest levels of service and technical expertise from experts all over the world. Together we understand the challenges you face and the importance of firm decisions... We will help you to find the right solutions, quickly and effectively.
       .carousel.align-center-items.arrows-square.arrows-dark(
         data-items="3"
         data-items-md="3"
@@ -78,7 +78,7 @@ append content
         +services09('bifirm-icon-sprout', 'Investments Management', 'Get solutions that fit your goals', 'Investing in a managed portfolio means getting the help you need to pursue your financial goals. Just answer a series of questions and TD Ameritrade Investment Management, LLC will recommend a portfolio to fit your needs.')
         +services09('bifirm-icon-home', 'Retirement Planning', 'Confidence in the future', 'Plan your retirement with effective protection and savings solutions for a wonderful independent retirement.')
         +services09('bifirm-icon-coin', 'Insurance Consulting', 'We here to help', 'We help leading insurers across the globe meet their strategic and operational goals.')
-        +services09('bifirm-icon-bar-chart', 'Financial Planning', "Financial Planning is an ongoing process to help you make sensible decisions about money that can help you achieve your goals in life; it's not just about buying products like a pension or an ISA. ... It's about getting organised; being in control of your finances rather than letting your finances control you.")
+        +services09('bifirm-icon-bar-chart', 'Financial Planning', 'Help you achieve your goals in life', "Financial Planning is an ongoing process to help you make sensible decisions about money that can help you achieve your goals in life; it's not just about buying products like a pension or an ISA. ... It's about getting organised; being in control of your finances rather than letting your finances control you.")
 
   .container
     .row
@@ -133,43 +133,38 @@ append content
           .ts-section-heading-01.align-center.mb-5
             h2 Our Achievements & Milestones
       .row
-        .col-lg-3
+        .col-lg-3.col-md-6.mb-4.mb-lg-0
           .counter-up-04
             i.ts-icon.bifirm-icon-diamond
             p.counter.js-counter-up 115
             span.desc Respective Partners
-        .col-lg-3
+        .col-lg-3.col-md-6.mb-4.mb-lg-0
           .counter-up-04
             i.ts-icon.las.bifirm-icon-care-customers
             p.counter.js-counter-up(data-unit='K') 365
             span.desc Happy Clients
-        .col-lg-3
+        .col-lg-3.col-md-6.mb-4.mb-md-0
           .counter-up-04
             i.ts-icon.bifirm-icon-user
             p.counter.js-counter-up(data-unit='+') 202
             span.desc Executive Leaders
-        .col-lg-3
+        .col-lg-3.col-md-6
           .counter-up-04
             i.ts-icon.bifirm-icon-puzzle
             p.counter.js-counter-up(data-unit='+') 305
             span.desc Cases Resolved
 
-  .container
-    .row
-      .col-lg-12
-        .border-bottom
-
-  .home-04-teams.bg--white
+  .home-01-teams.bg--whitesmoke.pd-carousel-focus
     .ts-overlay
     .container
       .row
         .col-lg-12
-          .ts-section-heading-01.align-center
+          .ts-section-heading-01.align-center.heading-carousel-focus
             h2 Our Leaders
 
       .carousel.align-center-items.arrows-intro.dots-theme.carousel-focus(
         data-items="3"
-        data-items-md="3"
+        data-items-md="2"
         data-items-sm="1"
         data-items-xs="1"
         data-margin="40"
@@ -184,13 +179,8 @@ append content
           .item
             +team07(item.cover, item.name, item.title, 'Ullamco minim in enim consectetur labore voluptate et non non. Officia dolor qui cupidatat tempor qui ex labore veniam dolore.')
 
-  .container
-    .row
-      .col-lg-12
-        .border-bottom
-
   .bg--white
-    .home-01-cta.py-7
+    .home-01-cta.py-5.py-lg-7
       +boxCta02
 
   +footer07

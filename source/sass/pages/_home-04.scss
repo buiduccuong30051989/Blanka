@@ -89,20 +89,4 @@
       height: 100%;
     }
   }
-
-  &-teams {
-    position: relative;
-
-    .ts-overlay {
-      background: $whitesmoke
-        url("http://pluspng.com/img-png/wave-background-png--1920.png");
-      background-size: 100% 100%;
-      background-position: center;
-      opacity: 0.15;
-    }
-
-    .owl-carousel.carousel-focus .owl-item .item {
-      opacity: 0.7;
-    }
-  }
 }

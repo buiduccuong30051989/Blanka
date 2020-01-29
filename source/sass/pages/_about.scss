@@ -7,6 +7,10 @@
     background-size: 100% calc(100% - 85px);
     background-position: top center;
     padding-top: 300px;
+
+    @include media-breakpoint-down(md) {
+      padding-top: 100px;
+    }
   }
 }
 

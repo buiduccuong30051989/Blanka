@@ -29,24 +29,24 @@ append content
                   a(href="home_01.html") Home
                 li.breadcrumb-item.active(aria-current="page") About Us
 
-  .home-01-about-us.bg--whitesmoke.py-7
+  .home-01-about-us.bg--white.py-5.py-lg-7
     .container
       .row
-        .col-lg-7.d-flex.align-items-center
+        .col-xl-7.col-lg-6.d-flex.align-items-center.mb-5.mb-lg-0
           img.thumb(src='http://templates.thememodern.com/dotted/images/Feature/1.png', alt='cover')
-        .col-lg-5.pl-lg-5
+        .col-xl-5.col-lg-6.pl-lg-5
           .ts-section-heading-01.mb-4
             h2 What Can BiFirm Offer?
           p.mb-lg-4.pb-2 The highest levels of service and technical expertise from experts all over the world. Together we understand the challenges you face and the importance of firm decisions... We will help you to find the right solutions, quickly and effectively.
-          ul.list-style-01.list-square.color.mb-lg-4
+          ul.list-style-01.list-square.color.mb-lg-4.mb-3
             li FULLY RESPONSIVE
             li CLEAN DESIGN
             li PORTFOLIO COLUMNS
             li DEEP RESEARCH
             li 07 HOME PAGES
             li AND MANY MORE...
-          a(href="about_01.html").ts-btn.btn-color1 CONTACT US
-            i.ts-icon.la.la-phone-square-alt.fs--18.pl-3
+          a(href="about_01.html").ts-btn.btn-color1 KNOW MORE
+            i.ts-icon.la.la-plus.pl-3
 
   .container
     .row
@@ -56,7 +56,7 @@ append content
   .about-01-additional.py-lg-7.py-5
     .container
       .row
-        .col-lg-6.pr-lg-5
+        .col-lg-6.pr-lg-5.mb-5.mb-lg-0
           .ts-section-heading-01
             h2 Additional Information
           p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quam ipsum, elementum nec ipsum et, consequat blandit neque. Duis sed condimentum elit. Cras fermentum dolor est. Pellentesque accumsan placerat orci ac tempor. Vestibulum in justo blandit lacus suscipit consequat. Cras placerat ligula porta iaculis iaculis. Donec ut lorem at magna mollis vestibulum nec id orci. Nulla in dolor gravida justo viverra lacinia. Donec convallis nisi in velit ullamcorper interdum. Mauris blandit pulvinar odio non euismod. Cras viverra sodales pretium.
@@ -100,18 +100,18 @@ append content
       .col-lg-12
         .border-bottom
 
-  .home-04-teams.bg--white
+  .home-01-teams.bg--white.pd-carousel-focus
     .ts-overlay
     .container
       .row
         .col-lg-12
-          .ts-section-heading-01.align-center
+          .ts-section-heading-01.align-center.heading-carousel-focus
             h2 The Great Team
       
       .carousel.align-center-items.arrows-intro.dots-theme.carousel-focus(
-        data-items="3" 
-        data-items-md="3" 
-        data-items-sm="1" 
+        data-items="3"
+        data-items-md="2"
+        data-items-sm="1"
         data-items-xs="1" 
         data-margin="40"
         data-center="true"
@@ -125,14 +125,13 @@ append content
           .item
             +team07(item.cover, item.name, item.title, 'Ullamco minim in enim consectetur labore voluptate et non non. Officia dolor qui cupidatat tempor qui ex labore veniam dolore.')
 
-
   .container
     .row
       .col-lg-12
         .border-bottom
 
   .bg--white
-    .home-01-cta.py-7
+    .home-01-cta.py-5.py-lg-7
       +boxCta02
   
   +footer07

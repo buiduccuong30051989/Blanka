@@ -61,6 +61,18 @@
     }
   }
 
+  &-services {
+    [class^='ts-icon-box-'] {
+      height: 100%;
+    }
+  }
+
+  &-cta {
+    .ts-box-cta-01 {
+      padding: 30px 0;
+    }
+  }
+
   &-why-us {
     .thumb {
       min-width: 180px;

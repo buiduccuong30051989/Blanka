@@ -288,4 +288,15 @@
       color: $white;
     }
   }
+
+  @include media-breakpoint-down(sm) {
+    .copyright-inner {
+      flex-wrap: wrap;
+      padding: 8px 0 10px;
+    }
+
+    .copyright-left {
+      margin-bottom: 10px;
+    }
+  }
 }

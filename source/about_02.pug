@@ -29,7 +29,7 @@ append content
   .home-03-about-us.bg--white.py-lg-7.py-5
     .container
       .row-g-40
-        .col-lg-6.pr-lg-4
+        .col-lg-6.pr-lg-4.mb-5.mb-lg-0
           .ts-section-heading-01
             h2 Our Mission
           p Our mission is to provide quality guidance, build relationships of trust, and develop innovative solutions for our clients. We are perfectly positioned to meet your unique needs while striving to exceed your highest expectations.
@@ -89,12 +89,12 @@ append content
   .home-04-why-us.bg--white.py-lg-7.py-5
     .container
       .row
-        .col-lg-8
+        .col-lg-8.mb-5.mb-lg-0
           .ts-section-heading-01
             h2 Why You Should Choose Us?
           p.mb-lg-4 The highest levels of service and technical expertise from experts all over the world. Together we understand the challenges you face and the importance of firm decisions... We will help you to find the right solutions, quickly and effectively.
-          .d-flex.align-items-center
-            .left.mr-4
+          .d-md-flex.align-items-center
+            .left.mr-md-4.my-lg-0.my-4
               img(src='http://templates.thememodern.com/dotted/images/Feature/7.png', alt='demo')
             .right
               ul.list-style-01.list-square.color.mb-lg-4
@@ -104,13 +104,11 @@ append content
                 li DEEP RESEARCH
                 li 07 HOME PAGES
                 li AND MANY MORE...
-              button(data-toggle="modal", data-target="#modalCallBack").ts-btn.btn-color1.btn-cta-03 
+              button(data-toggle="modal", data-target="#modalCallBack").ts-btn.btn-color1.btn-cta-03
                 span.pr-2 REQUEST A CALLBACK
                 i.ts-icon.la.la-phone-alt.fs--16
 
         .col-lg-4
-          .ts-section-heading-01
-            h2 Our Process
           #process
             .card.ts-accrodion-01
               #step01.card-header
@@ -164,24 +162,32 @@ append content
                   data-parent="#process")
                   .card-body
                     | After about two weeks, your financial adviser will be in touch to present their findings and recommendations and go into.
+            .card.ts-accrodion-01
+                #step05.card-header
+                  h5.mb-0
+                    button.ts-btn.btn-lg.w-100.text-left(
+                      data-toggle="collapse" 
+                      data-target="#step05Content" 
+                      aria-expanded="false" 
+                      aria-controls="step05Content") Present your plan and answer any questions
+                #step05Content.collapse(
+                  aria-labelledby="step05" 
+                  data-parent="#process")
+                  .card-body
+                    | After about two weeks, your financial adviser will be in touch to present their findings and recommendations and go into.
 
-  .container
-    .row
-      .col-lg-12
-        .border-bottom
-
-  .home-04-teams.bg--white
+  .home-01-teams.bg--whitesmoke.pd-carousel-focus
     .ts-overlay
     .container
       .row
         .col-lg-12
-          .ts-section-heading-01.align-center
-            h2 Meet Our Expertise
+          .ts-section-heading-01.align-center.heading-carousel-focus
+            h2 The Great Team
       
       .carousel.align-center-items.arrows-intro.dots-theme.carousel-focus(
-        data-items="3" 
-        data-items-md="3" 
-        data-items-sm="1" 
+        data-items="3"
+        data-items-md="2"
+        data-items-sm="1"
         data-items-xs="1" 
         data-margin="40"
         data-center="true"
@@ -195,14 +201,8 @@ append content
           .item
             +team07(item.cover, item.name, item.title, 'Ullamco minim in enim consectetur labore voluptate et non non. Officia dolor qui cupidatat tempor qui ex labore veniam dolore.')
 
-
-  .container
-    .row
-      .col-lg-12
-        .border-bottom
-
   .bg--white
-    .home-01-cta.py-7
+    .home-01-cta.py-5.py-lg-7
       +boxCta02
   
   +footer07

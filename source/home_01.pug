@@ -14,8 +14,6 @@ append head
   link(href="css/main.min.css" rel="stylesheet")
 append header
   +headerHome01
-  nav#js-mobile-menu
-    +navigation
 
 append content
   .home-01-slider
@@ -23,8 +21,8 @@ append content
 
   .home-01-services.py-5.py-lg-7
     .container
-      .row.mb-4.mb-lg-0
-        .col-lg-12.mb-lg-5
+      .row.mb-4.mb-lg-5
+        .col-lg-12
           .ts-section-heading-01.align-center.mb-4
             h2 Managing Your Present And Future Finances
           p.font-italic.text-center We're supporting the finance industry with an extensive range of solutions to meet ever-increasing digital and customer expectations and regulatory demand.
@@ -159,7 +157,7 @@ append content
                 .item
                   +blog10(item.title, item.cat, item.cover, item.author, item.desc, item.month, item.day, item.year, item.type, item.typeText)
 
-  .home-04-teams.bg--whitesmoke.pd-carousel-focus
+  .home-01-teams.bg--whitesmoke.pd-carousel-focus
     .ts-overlay
     .container
       .row

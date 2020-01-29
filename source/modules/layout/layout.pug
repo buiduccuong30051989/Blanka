@@ -1,3 +1,4 @@
+include ../navigation/navigation
 doctype html
 html(lang="en")
   head
@@ -31,6 +32,8 @@ html(lang="en")
   body
     .page.animsition
       block header
+      nav#js-mobile-menu
+        +navigation
       block content
       block footer
     block plugins
