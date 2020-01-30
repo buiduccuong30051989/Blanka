@@ -34,4 +34,14 @@
       margin: 0;
     }
   }
+
+  @include media-breakpoint-down(sm) {
+    display: block;
+
+    .author {
+      &-info {
+        padding: 15px 8px;
+      }
+    }
+  }
 }

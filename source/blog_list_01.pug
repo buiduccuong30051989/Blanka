@@ -25,7 +25,7 @@ append content
 
   section.bg--white
     .container
-      .row.vertical-divider-lg.py-7
+      .row.vertical-divider-lg.py-5.py-lg-7
         .col-lg-9.pr-lg-30
           .blog-list-01
             article.mb-5
@@ -86,12 +86,14 @@ append content
                       a(href="blog_detail.html") Feature Slider Image Post
                     p.blog-card-desc=blogs.data[1].desc
                 .card-footer
-                  span.blog-card-author Post by
+                  span.blog-card-author
+                    label Post by
                     a(href="blog_detail.html")=blogs.data[1].author
-                  span.blog-card-catalog On
+                  span.blog-card-catalog
+                    label On
                     a(href="blog_list_01.html")=blogs.data[1].cat
                   span.blog-card-comment
-                    span Comment
+                    label Comment
                     =blogs.data[1].comment
 
             article.mb-5
@@ -112,12 +114,14 @@ append content
                       a(href="blog_detail.html") Feature Video Post
                     p.blog-card-desc With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes in the market. Those with specialist knowledge will be in particularly high demand, along with experts in cross-border issues, and regulatory changes. In complex times where effective collaboration is essential, stakeholder management skills...
                 .card-footer
-                  span.blog-card-author Post by
+                  span.blog-card-author
+                    label Post by
                     a(href="blog_detail.html")  Adam Slander
-                  span.blog-card-catalog On
+                  span.blog-card-catalog
+                    label On
                     a(href="blog_list_01.html")  Financial
                   span.blog-card-comment
-                    span Comment
+                    label Comment
                     |  102
 
             article.mb-5
@@ -138,12 +142,14 @@ append content
                       a(href="blog_detail.html") Feature Video Youtube Post
                     p.blog-card-desc With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes in the market. Those with specialist knowledge will be in particularly high demand, along with experts in cross-border issues, and regulatory changes. In complex times where effective collaboration is essential, stakeholder management skills...
                 .card-footer
-                  span.blog-card-author Post by
-                    a(href="blog_detail.html")  Adam Slander
-                  span.blog-card-catalog On
-                    a(href="blog_list_01.html")  Financial
+                  span.blog-card-author
+                    label Post by
+                    a(href="blog_detail.html") Adam Slander
+                  span.blog-card-catalog
+                    label On
+                    a(href="blog_list_01.html") Financial
                   span.blog-card-comment
-                    span Comment
+                    label Comment
                     |  102
 
             article.mb-5
@@ -164,12 +170,14 @@ append content
                       a(href="blog_detail.html") Feature Google Slide Post
                     p.blog-card-desc With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes in the market. Those with specialist knowledge will be in particularly high demand, along with experts in cross-border issues, and regulatory changes. In complex times where effective collaboration is essential, stakeholder management skills...
                 .card-footer
-                  span.blog-card-author Post by
-                    a(href="blog_detail.html")  Adam Slander
-                  span.blog-card-catalog On
-                    a(href="blog_list_01.html")  Financial
+                  span.blog-card-author
+                    label Post by
+                    a(href="blog_detail.html") Adam Slander
+                  span.blog-card-catalog
+                    label On
+                    a(href="blog_list_01.html") Financial
                   span.blog-card-comment
-                    span Comment
+                    label Comment
                     |  102
 
             article.mb-5
@@ -190,12 +198,14 @@ append content
                       a(href="blog_detail.html") Feature Video Vimeo Post
                     p.blog-card-desc With the political and economic climate remaining uncertain in 2019, finance professionals in a range of roles will need to be very adaptable to changes in the market. Those with specialist knowledge will be in particularly high demand, along with experts in cross-border issues, and regulatory changes. In complex times where effective collaboration is essential, stakeholder management skills...
                 .card-footer
-                  span.blog-card-author Post by
-                    a(href="blog_detail.html")  Adam Slander
-                  span.blog-card-catalog On
-                    a(href="blog_list_01.html")  Financial
+                  span.blog-card-author
+                    label Post by
+                    a(href="blog_detail.html") Adam Slander
+                  span.blog-card-catalog
+                    label On
+                    a(href="blog_list_01.html") Financial
                   span.blog-card-comment
-                    span Comment 
+                    label Comment
                     |  102
 
             +pagination
@@ -212,6 +222,7 @@ append content
 append plugins
   +lib
 append script
+  script(src="js/header-home-04.min.js")
   script(src="js/extention/photoswipe.min.js")
   script(src="js/extention/photoswipe-ui-default.min.js")
   script(src="js/photoswipe-function.min.js")

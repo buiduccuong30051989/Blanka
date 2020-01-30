@@ -3,33 +3,6 @@
 // -----------------------------------------------
 .home-03 {
   &-header {
-    &.headroom--not-top {
-      .ts-header {
-        border-bottom-color: transparent;
-        box-shadow: 0 1px 3px rgba($black, 0.15);
-        background-color: rgba($black, 0.85);
-        backdrop-filter: blur(5px);
-        border-bottom-color: transparent;
-      }
-
-      .ts-main-menu.style-03 > ul ul {
-        background-color: rgba($black, 0.95);
-
-        li:hover {
-          background-color: rgba($white, 0.7);
-        }
-      }
-
-      .ts-main-menu.style-03 > ul > li > a {
-        padding-top: 25px;
-        padding-bottom: 25px;
-      }
-
-      .ts-header-09 .ts-header-left .ts-header-logo-wrap .header-logo {
-        height: 30px;
-      }
-    }
-
     &.sticky-header {
       transition: all 0.35s;
       box-shadow: 0 1px 3px rgba($black, 0.15);
@@ -38,14 +11,6 @@
 
       .ts-header {
         border-bottom-color: transparent;
-      }
-
-      .ts-main-menu.style-03 > ul ul {
-        background-color: rgba($black, 0.95);
-
-        li:hover {
-          background-color: rgba($white, 0.7);
-        }
       }
 
       .ts-main-menu.style-03 > ul > li > a {

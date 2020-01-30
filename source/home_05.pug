@@ -208,33 +208,10 @@ append script
   //- script(src='revolution-slider/revolution/js/extensions/revolution.extension.video.min.js')
   script(src="js/extention/photoswipe.min.js")
   script(src="js/extention/photoswipe-ui-default.min.js")
+  script(src="js/header-home-05.min.js")
   script(src="js/photoswipe-function.min.js")
   script(src="js/extention/on-screen.min.js")
   script(src="js/counter-up.min.js")
   script(src="js/main.min.js")
-  script.
-    $(document).ready(function() {
-      "user strict";
 
-      var stickyHeader = $("#js-header-sticky-home-05");
-
-      if (stickyHeader.length > 0) {
-        var headerWidth = stickyHeader.width();
-        var headerHeight = stickyHeader.outerHeight(true);
-        stickyHeader.wrap("<div class='wrap-sticky'></div>");
-        $(".wrap-sticky").css({
-          width: headerWidth,
-          height: headerHeight
-        });
-
-        $(window).scroll(function() {
-          var windowScroll = $(window).scrollTop();
-          if (windowScroll > 57) {
-            stickyHeader.addClass("fixed-top");
-          } else {
-            stickyHeader.removeClass("fixed-top");
-          }
-        });
-      }
-    });
 

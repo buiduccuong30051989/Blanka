@@ -41,12 +41,12 @@ append content
             h2 Testimonials Style 01
       .row-g-40
         - for(var i = 0; i < 3; i ++) {
-          .col-lg-4.col-md-6
+          .col-lg-4.col-md-6.mb-40
             +testimonial08(testimonials.data[i].cover, testimonials.data[i].name, testimonials.data[i].title, testimonials.data[i].desc)
         - }
 
     .container
-      .row.pt-6.pb-5
+      .row.pt-4.pb-5
         .col-lg-12
           .border-bottom
 
@@ -56,12 +56,12 @@ append content
             h2 Testimonials Style 02
       .row-g-40
         - for(var i = 2; i < 5; i ++) {
-          .col-lg-4.col-md-6
+          .col-lg-4.col-md-6.mb-40
             +testimonial09(testimonials.data[i].cover, testimonials.data[i].name, testimonials.data[i].title, testimonials.data[i].desc)
         - }
 
     .container
-      .row.pt-6.pb-5
+      .row.pt-4.pb-5
         .col-lg-12
           .border-bottom
 
@@ -128,7 +128,7 @@ append content
                   cite(title="Source Title") Director, Renvilles Law Costs Draftsmen & Consultants Ltd
 
   .bg--white
-    .home-01-cta.py-7
+    .home-01-cta.py-5
       +boxCta02
 
   +footer04
@@ -139,6 +139,7 @@ append content
 append plugins
   +lib
 append script
+  script(src="js/header-home-04.min.js")
   script(src="js/main.min.js")
-  script.
+
 

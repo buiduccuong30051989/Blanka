@@ -4,13 +4,22 @@
 .blog-grid-01 {
   .ts-blog-card-10 {
     .card-footer {
+      font-size: 12px;
+      padding: 8px;
+
       [class^="blog-card"] {
         label {
           display: none;
         }
-        
+
         &:before {
           display: inline-block;
+        }
+      }
+
+      [class^="blog-card"]:not(:last-of-type) {
+        &:after {
+          margin: 0 8px;
         }
       }
     }

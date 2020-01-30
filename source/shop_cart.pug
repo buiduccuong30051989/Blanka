@@ -105,8 +105,8 @@ append content
                       p
                         a.color--color1.font-weight-bold(href="#") Calculate Shipping
                       section
-                        .mb-3
-                          select.js-select.border-select
+                        .mb-3.position-relative
+                          select.form-control.ts-input-grey
                             option(value="") Select a country…
                             option(value="AX") Åland Islands
                             option(value="AF") Afghanistan
@@ -369,10 +369,13 @@ append content
                 i.ts-icon.la.la-long-arrow-right
   +footer04
 
+  +popupSearch
+
   +control
 append plugins
   +lib
 append script
+  script(src="js/header-home-04.min.js")
   script(src="js/main.min.js")
 
 

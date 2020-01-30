@@ -391,7 +391,7 @@ mixin headerHome01
   //- headroom .header-container.home-01-header.ts-header-07.fixed-top#js-headroom-fixed
   //- sticky .header-container.home-01-header.ts-header-07.fixed-top.header-sticky
   //- .header-menu.d-none.d-lg-block#js-header-sticky.full-width
-  .header-container.home-01-header.ts-header-07.fixed-top.header-sticky
+  .header-container.home-01-header.ts-header-07
     .header-info
       .container
         .header-info-inner
@@ -419,46 +419,7 @@ mixin headerHome01
                 span Free call
           a(href="#js-mobile-menu-btn").ts-btn-mobile-menu
             i.ts-icon.la.la-bars
-    .header-menu.d-none.d-lg-block#js-header-sticky.full-width
-      .container
-        .header-menu-inner
-          .header-menu-left
-            nav.ts-main-menu.style-01.sub-icon.caret
-              +navigation
-          .header-menu-right.pl-4
-            .ts-social-list-01.in-dark.align-right.pl-3
-              +tsSocialList01
-
-mixin headerHome01Static
-  .header-container.home-01-header.ts-header-07.position-static
-    .header-info
-      .container
-        .header-info-inner
-          .header-info-left
-            a.header-logo-wrap(href="index.html")
-              img.header-logo(src="images/logo-dark.png", alt="logo")
-          .header-info-right
-            .item.ts-icon-box-info-03
-              .icon.color--color1
-                i.ts-icon.la.la-map-marker
-              .content
-                span 3005 Figueroa
-                span Los Angeles 10018 US.
-            .item.ts-icon-box-info-03
-              .icon.color--color1
-                i.ts-icon.la.la-clock
-              .content
-                span Mon - Sat 8.00 - 18.00
-                span Sunday CLOSED
-            a(href="tel:0944764545").item.ts-icon-box-info-03
-              .icon.color--color1
-                i.ts-icon.la.la-phone
-              .content
-                strong.fs--14 0944 76 4545
-                span Free call
-          a(href="#js-mobile-menu-btn").ts-btn-mobile-menu
-            i.ts-icon.la.la-bars
-    .header-menu.d-none.d-lg-block#js-header-sticky
+    .header-menu.d-none.d-lg-block#js-header-home-01
       .container
         .header-menu-inner
           .header-menu-left
@@ -472,7 +433,7 @@ mixin headerHome02
   //- headroom .header-container.home-02-header#js-headroom-static
   //- sticky .header-container.home-02-header.header-sticky
   //- .ts-header.ts-header-08.bg--white#js-header-sticky
-  .header-container.home-02-header.header-sticky
+  .header-container.home-02-header
     .ts-topbar.ts-topbar-06.in-dark.bg--color1
       .container
         .ts-topbar-06-inner
@@ -489,7 +450,7 @@ mixin headerHome02
             .item.ts-icon-box-info-01.in-dark
               i.ts-icon.la.la-phone
               a(href="tel:0944 76 4545") +84 944 76 4545
-    .ts-header.ts-header-08.bg--white#js-header-sticky
+    .ts-header.ts-header-08.bg--white#js-header-home-02
       .container
         .ts-header-08-inner
           .ts-header-08-left
@@ -514,7 +475,7 @@ mixin headerHome02
 mixin headerHome03
   //- headroom .header-container.home-03-header.fixed-top#js-headroom-fixed
   //- sticky .header-container.home-03-header.fixed-top#js-header-fixed-sticky
-  .header-container.home-03-header.fixed-top#js-header-fixed-sticky
+  .header-container.home-03-header.fixed-top#js-header-home-03
     .ts-header.ts-header-09
       .ts-header-inner
         .ts-header-left.flex-grow-1
@@ -538,7 +499,7 @@ mixin headerHome04
   //- headroom .header-container.home-04-header#js-headroom-static
   //- sticky .header-container.home-04-header.header-sticky
   //- .ts-header.ts-header-08.bg--white#js-header-sticky
-  .header-container.home-04-header.header-sticky
+  .header-container.home-04-header
     .ts-topbar.ts-topbar-01.in-dark.bg--color1
       .container
         .ts-topbar-01-inner
@@ -555,7 +516,7 @@ mixin headerHome04
           .ts-topbar-01-right
             .item.ts-language.in-dark.justify-content-end
               +selectLanguage
-    .ts-header.ts-header-01.bg--white#js-header-sticky
+    .ts-header.ts-header-01.bg--white#js-header-home-04
       .container
         .ts-header-01-inner
           .ts-header-01-left
@@ -573,7 +534,7 @@ mixin headerHome04
 mixin headerHome05
   //- headroom .header-container.home-05-header#js-headroom-static
   //- sticky .header-container.home-05-header.header-sticky#js-header-sticky
-  .header-container.home-05-header.header-sticky#js-header-sticky-home-05
+  .header-container.home-05-header#js-header-home-05
     .ts-header.ts-header-04.bg--color8.in-dark
       .container
         .ts-header-04-inner
@@ -599,7 +560,6 @@ mixin headerHome05
                 +navigation
           a(href="#js-mobile-menu-btn").ts-btn-mobile-menu
             i.ts-icon.la.la-bars
-
 
 mixin photoSwiper
   // Root element of PhotoSwipe. Must have class pswp.
@@ -747,7 +707,7 @@ mixin sideBar
         figure.item(tabindex="6")
           a(href="https://picsum.photos/id/1037/1200/1200", data-size="1200x1200")
             img(src='https://picsum.photos/id/1037/300/300', alt='thumb')
-    aside.widget.widget-meta
+    aside.widget.widget-meta.mb-0
       h3.widget-title
         | Meta
       ul

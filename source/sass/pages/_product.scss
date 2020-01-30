@@ -36,7 +36,7 @@
 
 .product-detail {
   &-related-products {
-    padding-top: 80px;
+    padding-top: 74px;
     padding-bottom: 25px;
     position: relative;
 
@@ -46,6 +46,13 @@
 
     .owl-item {
       padding: 40px 10px 56px;
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    &-related-products {
+      padding-top: 40px;
+      padding-bottom: 0;
     }
   }
 }

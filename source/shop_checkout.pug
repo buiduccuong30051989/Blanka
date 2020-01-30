@@ -39,7 +39,7 @@ append content
                 a.colo--color1.ml-2(href="#") Click here to login
             .row-g-20
               .col-lg-12.mb-3
-                select.js-select.border-select(name="orderby")
+                select.form-control.ts-input-grey(name="orderby")
                   option(value="") Select a country…
                   option(value="AX") Åland Islands
                   option(value="AF") Afghanistan
@@ -350,10 +350,13 @@ append content
 
   +footer04
 
+  +popupSearch
+
   +control
 append plugins
   +lib
 append script
+  script(src="js/header-home-04.min.js")
   script(src="js/main.min.js")
 
 

@@ -332,4 +332,49 @@
       filter: brightness(100%);
     }
   }
+
+  @include media-breakpoint-down(sm) {
+    .card-body {
+      display: block;
+      padding: 15px 8px;
+    }
+
+    .card-footer {
+      display: block;
+      padding: 8px;
+      font-size: 12px;
+
+      .meta {
+        [class^='blog-card-'] {
+          display: block;
+
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .blog-card {
+      &-meta {
+        margin-right: 0;
+        width: 100%;
+        flex: 0 0 100%;
+        display: flex;
+        margin-bottom: 15px;
+      }
+
+      &-time {
+        width: 50%;
+        padding: 4px 0;
+        height: auto;
+      }
+
+      &-type {
+        width: 50%;
+        padding: 4px 0;
+        height: auto;
+      }
+    }
+  }
 }

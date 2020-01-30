@@ -3,55 +3,23 @@
 // --------------------------------------------------
 .home-01 {
   &-header {
-    &.header-fixed {
-      &.headroom--not-top {
-        .header {
-          &-info {
-            display: none;
-          }
-        }
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 
-        &.full-width {
-          background-color: color(color1, 0.9);
-          backdrop-filter: blur(5px);
+    .fixed-top {
+      background-color: color(color1, 0.9);
+      backdrop-filter: blur(5px);
 
-          .header-menu-inner {
-            backdrop-filter: none;
-            background-color: transparent;
-          }
-        }
+      .header-menu-inner {
+        background-color: transparent;
+        backdrop-filter: none;
       }
     }
 
-    &.header-sticky {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-
-      .fixed-top.full-width {
-        background-color: color(color1, 0.9);
-        backdrop-filter: blur(5px);
-
-        .header-menu-inner {
-          background-color: transparent;
-          backdrop-filter: none;
-        }
-      }
-
-      @include media-breakpoint-down(md) {
-        position: fixed;
-      }
-    }
-
-    &.position-static {
-      .header-info-right .item  {
-        color: $gray60;
-
-        strong {
-          color: $gray20;
-        }
-      }
+    @include media-breakpoint-down(md) {
+      position: fixed;
     }
   }
 

@@ -36,25 +36,25 @@ append content
               option(value="price") Sort by price: low to high
               option(value="price-desc") Sort by price: high to low
         .row.mb-4
-          .col-lg-3.mb-4
+          .col-lg-3.mb-5
             +product01('https://picsum.photos/300/300?random=10')
-          .col-lg-3.mb-4
+          .col-lg-3.mb-5
             +product01('https://picsum.photos/300/300?random=11')
-          .col-lg-3.mb-4
+          .col-lg-3.mb-5
             +product01('https://picsum.photos/300/300?random=12')
-          .col-lg-3.mb-4
+          .col-lg-3.mb-5
             +product01('https://picsum.photos/300/300?random=13')
-          .col-lg-3.mb-4
+          .col-lg-3.mb-5
             +product01('https://picsum.photos/300/300?random=14')
-          .col-lg-3.mb-4
+          .col-lg-3.mb-5
             +product01('https://picsum.photos/300/300?random=15')
-          .col-lg-3.mb-4
+          .col-lg-3.mb-5
             +product01('https://picsum.photos/300/300?random=16')
-          .col-lg-3.mb-4
+          .col-lg-3
             +product01('https://picsum.photos/300/300?random=17')
         .row
           .col-lg-12
-            nav.ts-pagination-01.pt-4(aria-label="Page navigation example")
+            nav.ts-pagination-01(aria-label="Page navigation example")
               ul.pagination
                 li.page-item
                   a.page-link(href="#")
@@ -74,10 +74,13 @@ append content
                     i.ts-icon.la.la-angle-double-right
   +footer04
 
+  +popupSearch
+
   +control
 append plugins
   +lib
 append script
-  script(defer src="js/main.min.js")
+  script(src="js/header-home-04.min.js")
+  script(src="js/main.min.js")
 
 
