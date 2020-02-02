@@ -12,7 +12,6 @@ $(document).ready(function () {
         jsFileLocation: '../revolution-slider/revolution/js/',
         sliderLayout: 'fullscreen',
         delay: 9000,
-        fullScreenOffsetContainer: '.header-container',
         navigation: {
           arrows: {
             enable: true,
