@@ -23,8 +23,20 @@ append content
           h2.mb-3 WE ARE BIFIRM
           h5 Our business is built on a foundation of thoughtful client relationships.
       .row
-        .col-lg-6.offset-lg-3
-          img(src='images/about-us-02-demo.jpeg', alt='cover')
+        .col-lg-8.offset-lg-2
+          a.ts-video-wrap-01(href="#" data-toggle="modal" data-target="#videoModal" data-video="https://www.youtube.com/embed/gOqlwlQjVis")
+            img(src='images/about-02-video-01.jpg', alt='cover')
+            i.ts-icon.las.la-play
+          #videoModal.modal.ts-modal-video-01.fade(tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true")
+            .modal-dialog.modal-dialog-centered.modal-lg
+              .modal-content
+                .modal-header
+                  button.close(type="button" data-dismiss="modal" aria-label="Close")
+                    span(aria-hidden="true")
+                      i.ts-icon.las.la-times
+                .modal-body
+                  .embed-responsive.embed-responsive-16by9
+                    iframe.embed-responsive-item(src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
 
   .home-03-about-us.bg--white.py-lg-7.py-5
     .container
@@ -231,5 +243,6 @@ append script
   script(src="js/photoswipe-function.min.js")
   script(src="js/extention/on-screen.min.js")
   script(src="js/counter-up.min.js")
+  script(src="js/video-modal.min.js")
   script(src="js/main.min.js")
 

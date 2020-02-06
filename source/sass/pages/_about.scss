@@ -73,3 +73,43 @@
     }
   }
 }
+
+.ts-video-wrap-01 {
+  position: relative;
+  border-radius: 2px;
+  overflow: hidden;
+  display: block;
+  @extend .shadow;
+
+  img {
+    transition: filter .3s;
+  }
+
+  .ts-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 72px;
+    font-size: 48px;
+    transition: all .3s;
+    display: block;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: color(color1, 1);
+    color: $white;
+    text-align: center;
+    opacity: .7;
+  }
+
+  &:hover {
+    img {
+      filter: grayscale(10%);
+    }
+
+    .ts-icon {
+      opacity: 1;
+    }
+  }
+}

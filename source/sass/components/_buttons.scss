@@ -121,6 +121,20 @@ $classTsBtnOutline: btn-outline-;
   }
 }
 
+.btn-outline-white {
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-color: $white;
+  color: $white;
+
+  &:hover {
+    background-color: $white;
+    color: $gray20;
+    text-decoration: none;
+  }
+}
+
 // call to action button
 .btn-cta-01 {
   display: inline-flex;

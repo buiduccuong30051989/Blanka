@@ -39,3 +39,23 @@
     border-top-color: rgba($black, .05);
   }
 }
+
+.ts-modal-video-01 {
+  .modal-header {
+    border: 0;
+    padding-right: 0;
+
+    .ts-icon {
+      color: $white;
+    }
+  }
+
+  .modal-content {
+    background-color: transparent;
+    border: 0;
+  }
+
+  .modal-body {
+    padding: 0;
+  }
+}

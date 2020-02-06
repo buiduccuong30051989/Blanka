@@ -33,7 +33,19 @@ append content
     .container
       .row.align-items-center
         .col-lg-7.d-flex.align-items-center.mb-5.mb-lg-0
-          img.thumb(src='images/home-04-slider-08.jpg', alt='cover')
+          a.ts-video-wrap-01.shadow-none(href="#" data-toggle="modal" data-target="#videoModal" data-video="https://www.youtube.com/embed/gOqlwlQjVis")
+            img(src='images/about-03-video-01.jpg', alt='cover')
+            i.ts-icon.las.la-play
+          #videoModal.modal.ts-modal-video-01.fade(tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true")
+            .modal-dialog.modal-dialog-centered.modal-lg
+              .modal-content
+                .modal-header
+                  button.close(type="button" data-dismiss="modal" aria-label="Close")
+                    span(aria-hidden="true")
+                      i.ts-icon.las.la-times
+                .modal-body
+                  .embed-responsive.embed-responsive-16by9
+                    iframe.embed-responsive-item(src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
         .col-lg-5.pl-lg-5
           .ts-section-heading-01.mb-4
             h2 We Are BiFirm
@@ -45,8 +57,7 @@ append content
             li Accountability
             li Community Leaders
             li Employee Value
-          a(href="about_01.html").ts-btn.btn-color1 KNOW MORE
-            i.ts-icon.la.la-plus.pl-3
+          a(href="contact_01.html").ts-btn.btn-color1 CONTACT US
 
   .container
     .row
@@ -210,5 +221,6 @@ append script
   script(src="js/extention/on-screen.min.js")
   script(src="js/counter-up.min.js")
   script(src="js/progress-bar.min.js")
+  script(src="js/video-modal.min.js")
   script(src="js/main.min.js")
 
