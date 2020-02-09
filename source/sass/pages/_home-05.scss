@@ -1,10 +1,5 @@
 .home-05 {
   &-slider {
-    height: calc(100vh - 121px);
-
-    img {
-      @include fitImage();
-    }
   }
 
   &-header {
@@ -55,8 +50,11 @@
   }
 
   &-why-us {
-    .thumb {
-      min-width: 180px;
+    .left {
+      img {
+        width: 600px;
+        max-width: 100%;
+      }
     }
 
     [class^="list-style-"] {

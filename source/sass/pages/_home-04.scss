@@ -35,8 +35,11 @@
   }
 
   &-why-us {
-    .thumb {
-      min-width: 180px;
+    .left {
+      img {
+        width: 500px;
+        max-width: 100%;
+      }
     }
 
     [class^="list-style-"] {

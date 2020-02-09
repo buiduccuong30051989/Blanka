@@ -1,30 +1,33 @@
-mixin control
+mixin control(colors )
   .control.js-control
     button.ts-btn.btn-color1.btn-open
       i.la.la-cog
     .control-inner
       h3 Choose your color
       ul.list-color-pattern.mb-4
-        li.color-pattern.js-color-pattern(data-color="#2e5d9f")
-        li.color-pattern.js-color-pattern(data-color="#b13a1a")
-        li.color-pattern.js-color-pattern(data-color="#20639b")
-        li.color-pattern.js-color-pattern(data-color="#339c92")
-        li.color-pattern.js-color-pattern(data-color="#832c76")
-        li.color-pattern.js-color-pattern(data-color="#713c46")
-        li.color-pattern.js-color-pattern(data-color="#314570")
-        li.color-pattern.js-color-pattern(data-color="#164db0")
-        li.color-pattern.js-color-pattern(data-color="#287e9e")
-        li.color-pattern.js-color-pattern(data-color="#15A346")
-        li.color-pattern.js-color-pattern(data-color="#2F9599")
-        li.color-pattern.js-color-pattern(data-color="#e01e26")
-        li.color-pattern.js-color-pattern(data-color="#854442")
-        li.color-pattern.js-color-pattern(data-color="#339171")
-        li.color-pattern.js-color-pattern(data-color="#177365")
-        li.color-pattern.js-color-pattern(data-color="#ac6376")
-        li.color-pattern.js-color-pattern(data-color="#ffc31a")
-        li.color-pattern.js-color-pattern(data-color="#13A0B2")
-        li.color-pattern.js-color-pattern(data-color="#6a4e6c")
-        li.color-pattern.js-color-pattern(data-color="#7b885c")
+        - var listColorsDefault = ['#b13a1a', '#b13a1a', "#20639b","#339c92","#832c76","#713c46","#314570","#164db0","#287e9e","#15A346","#2F9599","#e01e26","#854442","#339171","#177365","#ac6376","#ffc31a","#13A0B2","#6a4e6c","#7b885c"]
+        - colors = colors || listColorsDefault
+        each color in colors
+          li.color-pattern.js-color-pattern(data-color=color)
+        //- li.color-pattern.js-color-pattern(data-color="#b13a1a")
+        //- li.color-pattern.js-color-pattern(data-color="#20639b")
+        //- li.color-pattern.js-color-pattern(data-color="#339c92")
+        //- li.color-pattern.js-color-pattern(data-color="#832c76")
+        //- li.color-pattern.js-color-pattern(data-color="#713c46")
+        //- li.color-pattern.js-color-pattern(data-color="#314570")
+        //- li.color-pattern.js-color-pattern(data-color="#164db0")
+        //- li.color-pattern.js-color-pattern(data-color="#287e9e")
+        //- li.color-pattern.js-color-pattern(data-color="#15A346")
+        //- li.color-pattern.js-color-pattern(data-color="#2F9599")
+        //- li.color-pattern.js-color-pattern(data-color="#e01e26")
+        //- li.color-pattern.js-color-pattern(data-color="#854442")
+        //- li.color-pattern.js-color-pattern(data-color="#339171")
+        //- li.color-pattern.js-color-pattern(data-color="#177365")
+        //- li.color-pattern.js-color-pattern(data-color="#ac6376")
+        //- li.color-pattern.js-color-pattern(data-color="#ffc31a")
+        //- li.color-pattern.js-color-pattern(data-color="#13A0B2")
+        //- li.color-pattern.js-color-pattern(data-color="#6a4e6c")
+        //- li.color-pattern.js-color-pattern(data-color="#7b885c")
         
       h3 Or Pick what you need
       .mb-4

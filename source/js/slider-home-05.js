@@ -19,9 +19,12 @@ $(document).ready(function () {
             style: 'metis'
           }
         },
-        responsiveLevels: [1920, 992, 768, 576],
-        gridwidth: [1200, 600, 600, 300],
-        gridheight: [500, 960, 720, 468]
+        responsiveLevels: [1920, 1200, 769, 576],
+        /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
+        gridwidth: [1140, 960, 720, 540],
+    
+        /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
+        // gridheight: [590, 400, 400, 400]
       });
     }
   });
