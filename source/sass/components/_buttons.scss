@@ -11,7 +11,7 @@
   font-size: 13px;
   padding: 10px 20px;
   line-height: 1.4;
-  
+
   &:focus {
     box-shadow: none;
   }
@@ -70,6 +70,23 @@
     background-color: $black;
     color: $white;
     text-decoration: none;
+  }
+}
+
+.btn-outline {
+  border-color: color(dynamicColor, 1);
+  background-color: color(color3, 1);
+
+  span {
+    background-color: inherit;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    filter: invert(1) grayscale(1) contrast(9);
+  }
+
+  &:hover {
+    background-color: color(dynamicColor, 1);
   }
 }
 
@@ -149,11 +166,11 @@ $classTsBtnOutline: btn-outline-;
   span {
     position: relative;
     display: inline-block;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
   }
 
   .ts-icon {
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     position: relative;
     position: absolute;
     display: inline-block;
@@ -195,11 +212,11 @@ $classTsBtnOutline: btn-outline-;
   span {
     position: relative;
     display: inline-block;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
   }
 
   .ts-icon {
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     position: relative;
     position: absolute;
     display: inline-block;

@@ -373,9 +373,10 @@
     border-color: color(color1, 1);
     background-color: color(color1, 1);
     border-style: solid;
-    color: $white;
+    color: color(dynamicColor, 1);
     outline: 0;
     box-shadow: none;
+    cursor: pointer;
   }
 
   &:active {
