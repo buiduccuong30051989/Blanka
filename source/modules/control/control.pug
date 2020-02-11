@@ -5,7 +5,7 @@ mixin control(colors )
     .control-inner
       h3 Choose your color
       ul.list-color-pattern.mb-4
-        - var listColorsDefault = ['#b13a1a', '#b13a1a', "#20639b","#339c92","#832c76","#713c46","#314570","#164db0","#287e9e","#15A346","#2F9599","#e01e26","#854442","#339171","#177365","#ac6376","#ffc31a","#13A0B2","#6a4e6c","#7b885c"]
+        - var listColorsDefault = ['#b13a1a', "#20639b","#339c92","#832c76","#314570","#164db0","#287e9e","#15A346","#2F9599","#854442","#177365"]
         - colors = colors || listColorsDefault
         each color in colors
           li.color-pattern.js-color-pattern(data-color=color)
@@ -28,7 +28,7 @@ mixin control(colors )
         //- li.color-pattern.js-color-pattern(data-color="#13A0B2")
         //- li.color-pattern.js-color-pattern(data-color="#6a4e6c")
         //- li.color-pattern.js-color-pattern(data-color="#7b885c")
-        
+
       h3 Or Pick what you need
       .mb-4
         input#js-color-picker(type="color", name='color2',  value="#00abc9")
