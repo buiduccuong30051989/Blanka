@@ -655,7 +655,7 @@
       background-size: 100% 300%;
       width: 100%;
       height: 100%;
-      color: $white;
+      color: color(dynamicColor, 1);
       padding: 15px;
       opacity: 0;
       transition: opacity 0.35s;
@@ -674,10 +674,10 @@
     }
 
     &-catalog {
-      color: $white;
+      color: color(dynamicColor, 1);
 
       a {
-        color: $white;
+        color: color(dynamicColor, 1);
       }
     }
   }
