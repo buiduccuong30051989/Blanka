@@ -70,7 +70,7 @@
     position: relative;
 
     .ts-overlay {
-      background: $whitesmoke url('http://pluspng.com/img-png/wave-background-png--1920.png');
+      background: $whitesmoke url('../images/bg-team-01.png');
       background-size: 100% 100%;
       background-position: center;
       opacity: .2;
@@ -86,7 +86,7 @@
   }
 
   &-footer {
-    background: url("https://images.unsplash.com/photo-1510130146128-7a7b6afb6f9d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+    background: url("../images/bg-footer-01.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
