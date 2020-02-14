@@ -1,19 +1,19 @@
 $(document).ready(function() {
-  'user strict';
+  "user strict";
 
-  $('.btn-open').on('click', function() {
-    $('.js-control').toggleClass('open');
+  $(".btn-open").on("click", function() {
+    $(".js-control").toggleClass("open");
   });
 
-  $('.button-toggle-wrap .toggler').click(function() {
-    $('img').toggleClass('dim-image');
-    var background = $('.tp-bgimg ');
-    var clipText = $('.clip-text');
+  $(".button-toggle-wrap .toggler").click(function() {
+    $("img").toggleClass("dim-image");
+    var background = $(".tp-bgimg ");
+    var clipText = $(".clip-text");
     if (background.length > 0) {
-      $('.tp-bgimg ').toggleClass('dim-image');
+      $(".tp-bgimg ").toggleClass("dim-image");
     }
     if (clipText.length > 0) {
-      clipText.toggleClass('dim-image');
+      clipText.toggleClass("dim-image");
     }
   });
 
@@ -41,10 +41,40 @@ $(document).ready(function() {
     }
     const toHex = x => {
       const hex = Math.round(x * 255).toString(16);
-      return hex.length === 1 ? '0' + hex : hex;
+      return hex.length === 1 ? "0" + hex : hex;
     };
     return `#${toHex(r)}${toHex(g)}${toHex(b)}`;
   }
+
+  function hslToRgb(h, s, l) {
+    var r, g, b;
+
+    if (s == 0) {
+      r = g = b = l; // achromatic
+    } else {
+      var hue2rgb = function hue2rgb(p, q, t) {
+        if (t < 0) t += 1;
+        if (t > 1) t -= 1;
+        if (t < 1 / 6) return p + (q - p) * 6 * t;
+        if (t < 1 / 2) return q;
+        if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
+        return p;
+      };
+
+      var q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+      var p = 2 * l - q;
+      r = hue2rgb(p, q, h + 1 / 3);
+      g = hue2rgb(p, q, h);
+      b = hue2rgb(p, q, h - 1 / 3);
+    }
+
+    return [Math.round(r * 255), Math.round(g * 255), Math.round(b * 255)];
+  }
+
+  const hex2rgb = (hex) => {
+    const [r, g, b] = hex.match(/\w\w/g).map(x => parseInt(x, 16));
+    return `rgb(${r},${g},${b})`;
+  };
 
   var threshold = 0.5;
 
@@ -55,14 +85,14 @@ $(document).ready(function() {
     var sum = r + g + b;
 
     var perceivedLightness = sum / 255;
-    var dynamicColor = perceivedLightness - threshold > 0 ? '0%' : '100%';
+    var dynamicColor = perceivedLightness - threshold > 0 ? "0%" : "100%";
     return dynamicColor;
   }
 
-  const colorsPattern = $('.js-color-pattern');
+  const colorsPattern = $(".js-color-pattern");
   for (let i = 0; i < colorsPattern.length; i++) {
-    let color = $(colorsPattern[i]).data('color');
-    $(colorsPattern[i]).css('background-color', color);
+    let color = $(colorsPattern[i]).data("color");
+    $(colorsPattern[i]).css("background-color", color);
     // $(colorsPattern[i]).on("click", function() {
     //   color = color.match(/[A-Za-z0-9]{2}/g);
 
@@ -100,8 +130,8 @@ $(document).ready(function() {
     // });
   }
 
-  $('.js-color-pattern').on('click', function() {
-    let color = $(this).data('color');
+  $(".js-color-pattern").on("click", function() {
+    let color = $(this).data("color");
     color = color.match(/[A-Za-z0-9]{2}/g);
 
     const rgbColorArray = color.map(function(v) {
@@ -119,41 +149,41 @@ $(document).ready(function() {
     //     ? '0%'
     //     : '100%';
 
-    $html.setProperty('--hue-color1', hslColorArray[0]);
+    $html.setProperty("--hue-color1", hslColorArray[0]);
 
-    $html.setProperty('--saturation-color1', hslColorArray[1] + '%');
+    $html.setProperty("--saturation-color1", hslColorArray[1] + "%");
 
-    $html.setProperty('--lightness-color1', hslColorArray[2] + '%');
+    $html.setProperty("--lightness-color1", hslColorArray[2] + "%");
 
-    $html.setProperty('--hue-color3', hslColorArray[0] + 5);
+    $html.setProperty("--hue-color3", hslColorArray[0] + 5);
 
-    $html.setProperty('--saturation-color3', hslColorArray[1] + '%');
+    $html.setProperty("--saturation-color3", hslColorArray[1] + "%");
 
-    $html.setProperty('--lightness-color3', hslColorArray[2] - 17 + '%');
+    $html.setProperty("--lightness-color3", hslColorArray[2] - 17 + "%");
 
-    $html.setProperty('--lightness-darker-color1', hslColorArray[2] - 5 + '%');
+    $html.setProperty("--lightness-darker-color1", hslColorArray[2] - 5 + "%");
 
-    $html.setProperty('--lightness-lighten-color1', hslColorArray[2] + 5 + '%');
+    $html.setProperty("--lightness-lighten-color1", hslColorArray[2] + 5 + "%");
 
-    $html.setProperty('--lightness-dynamicColor', dynamicColor);
+    $html.setProperty("--lightness-dynamicColor", dynamicColor);
 
-    if (dynamicColor === '0%') {
-      $('#js-dynamic-color').text('Dynamic color: #000000');
+    if (dynamicColor === "0%") {
+      $("#js-dynamic-color").text("Dynamic color: #000000");
     } else {
-      $('#js-dynamic-color').text('Dynamic color: #ffffff');
+      $("#js-dynamic-color").text("Dynamic color: #ffffff");
     }
 
-    $('#js-main-color').text('Main Color: ' + $(this).data('color'));
+    $("#js-main-color").text("Main Color: " + $(this).data("color"));
 
-    $('#js-main-color-rgb').text('Main Color RGB: ' + rgbColorArray);
+    $("#js-main-color-rgb").text("Main Color RGB: " + rgbColorArray);
 
-    $('#js-main-color-hover').text(
-      'Main Color Hover: ' +
+    $("#js-main-color-hover").text(
+      "Main Color Hover: " +
         hslToHex(hslColorArray[0], hslColorArray[1], hslColorArray[2] - 5)
     );
 
-    $('#js-sub-color').text(
-      'Sub Color: ' +
+    $("#js-sub-color").text(
+      "Sub Color: " +
         hslToHex(hslColorArray[0] + 5, hslColorArray[1], hslColorArray[2] - 17)
     );
   });
@@ -196,12 +226,12 @@ $(document).ready(function() {
     return result;
   }
 
-  $('#js-color-picker').spectrum({
+  $("#js-color-picker").spectrum({
     flat: true,
     showInput: true,
     // showAlpha: true,
     showInitial: true,
-    preferredFormat: 'hex',
+    preferredFormat: "hex",
     move: function(color) {
       var hslColorArray = color.toHsl();
       var rgbColorArray = color.toRgb();
@@ -217,51 +247,51 @@ $(document).ready(function() {
       //     ? '0%'
       //     : '100%';
 
-      $html.setProperty('--hue-color1', hslColorArray.h);
+      $html.setProperty("--hue-color1", hslColorArray.h);
 
-      $html.setProperty('--saturation-color1', hslColorArray.s * 100 + '%');
+      $html.setProperty("--saturation-color1", hslColorArray.s * 100 + "%");
 
-      $html.setProperty('--lightness-color1', hslColorArray.l * 100 + '%');
+      $html.setProperty("--lightness-color1", hslColorArray.l * 100 + "%");
 
-      $html.setProperty('--hue-color3', hslColorArray.h + 5);
+      $html.setProperty("--hue-color3", hslColorArray.h + 5);
 
-      $html.setProperty('--saturation-color3', hslColorArray.s * 100 + '%');
+      $html.setProperty("--saturation-color3", hslColorArray.s * 100 + "%");
 
-      $html.setProperty('--lightness-color3', hslColorArray.l * 100 - 17 + '%');
+      $html.setProperty("--lightness-color3", hslColorArray.l * 100 - 17 + "%");
 
       $html.setProperty(
-        '--lightness-darker-color1',
-        hslColorArray.l * 100 - 5 + '%'
+        "--lightness-darker-color1",
+        hslColorArray.l * 100 - 5 + "%"
       );
 
       $html.setProperty(
-        '--lightness-lighten-color1',
-        hslColorArray.l * 100 + 5 + '%'
+        "--lightness-lighten-color1",
+        hslColorArray.l * 100 + 5 + "%"
       );
 
-      $html.setProperty('--lightness-dynamicColor', dynamicColor);
+      $html.setProperty("--lightness-dynamicColor", dynamicColor);
 
-      if (dynamicColor === '0%') {
-        $('#js-dynamic-color').text('Dynamic color: #000000');
+      if (dynamicColor === "0%") {
+        $("#js-dynamic-color").text("Dynamic color: #000000");
       } else {
-        $('#js-dynamic-color').text('Dynamic color: #ffffff');
+        $("#js-dynamic-color").text("Dynamic color: #ffffff");
       }
 
-      $('#js-main-color').text('Main Color: #' + color.toHex());
+      $("#js-main-color").text("Main Color: #" + color.toHex());
 
-      $('#js-main-color-rgb').text(
-        'Main Color RGB: ' +
-          '(' +
+      $("#js-main-color-rgb").text(
+        "Main Color RGB: " +
+          "(" +
           rgbColorArray.r +
-          ', ' +
+          ", " +
           rgbColorArray.g +
-          ', ' +
+          ", " +
           rgbColorArray.b +
-          ')'
+          ")"
       );
 
-      $('#js-main-color-hover').text(
-        'Main Color Hover: ' +
+      $("#js-main-color-hover").text(
+        "Main Color Hover: " +
           hslToHex(
             hslColorArray.h,
             hslColorArray.s * 100,
@@ -269,14 +299,29 @@ $(document).ready(function() {
           )
       );
 
-      $('#js-sub-color').text(
-        'Sub Color: ' +
+      $("#js-sub-color").text(
+        "Sub Color: " +
           hslToHex(
             hslColorArray.h + 5,
             hslColorArray.s * 100,
             hslColorArray.l * 100 - 17
           )
       );
+
+      var hexSubColor = hslToHex(
+        hslColorArray.h + 5,
+        hslColorArray.s * 100,
+        hslColorArray.l * 100 - 17
+      );
+      console.log(hex2rgb(hexSubColor));
+
+      // console.log(
+      //   hslToRgb(
+      //     (hslColorArray.h+5)/100,
+      //     hslColorArray.s/100,
+      //     (hslColorArray.l- 17)/100
+      //   )
+      // );
     }
   });
 });
