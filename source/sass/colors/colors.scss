@@ -177,15 +177,6 @@ Sub Color
   background-color: #005974; // Sub Color
 }
 
-.ts-portfolio-06 .portfolio-card-overlay {
-  background: linear-gradient(
-    to bottom,
-    rgba(#005974, 1) 0%,
-    rgba(#005974, 0.9) 15%,
-    rgba(#005974, 0) 100%
-  );
-}
-
 .waveWrapperInner {
   background-image: linear-gradient(
     to top,
@@ -196,13 +187,15 @@ Sub Color
 
 .ts-blog-card-09 .card-cover .ts-overlay,
 .ts-blog-card-07 .blog-card-meta,
-.ts-portfolio-05 .portfolio-card-overlay {
+.ts-portfolio-05 .portfolio-card-overlay,
+.ts-portfolio-06 .portfolio-card-overlay {
   background: linear-gradient(
     to bottom,
     rgba(#005974, 1) 0%,
     rgba(#005974, 0.9) 15%,
     rgba(#005974, 0) 100%
   );
+  background-size: 100% 100%;
 }
 
 .ts-footer-05 .ts-footer-info-inner {
