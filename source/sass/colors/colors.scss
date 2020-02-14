@@ -29,7 +29,7 @@ Main Color
 .ts-accrodion-01 .card-header .ts-btn[aria-expanded="true"],
 .ts-accrodion-01 .card-header .ts-btn:hover,
 .ts-modal-callback-01 .modal-header,
-.consultant-select.select-grey.show.bootstrap-select>.dropdown-toggle,
+.consultant-select.select-grey.show.bootstrap-select > .dropdown-toggle,
 .owl-carousel.dots-theme [class*="owl-"].active span,
 .ts-icon-box-08 .icon-box-wrap:before,
 .ts-icon-box-08 .icon-box-wrap:after,
@@ -44,7 +44,10 @@ Main Color
 .blog-detail .blog-card-time,
 .ts-team-card-03 .card-footer a.read-more,
 .border-select .dropdown-menu .dropdown-item.active,
-.product-item .product-detail .right:hover a {
+.product-item .product-detail .right:hover a,
+.ts-main-menu.style-01 > ul > li > ul ul li:hover,
+.ts-input--ghost:focus,
+.owl-carousel.arrows-themes .owl-nav [class*="owl-"] {
   background-color: #00accb; // Main Color
 }
 
@@ -64,7 +67,7 @@ Main Color
 .ts-testimonial-card-05 .card-body,
 .ts-testimonial-card-07 .ts-testimonial-content,
 .ts-testimonial-card-06,
-.consultant-select.line.bootstrap-select>.dropdown-toggle.btn-light:hover,
+.consultant-select.line.bootstrap-select > .dropdown-toggle.btn-light:hover,
 .ts-input-line:focus,
 .ts-input-line:hover,
 .widget-services ul li.active a,
@@ -109,7 +112,6 @@ a,
 .counter-up-03 .ts-icon,
 .ts-blog-card-07 .blog-card-readmore,
 .ts-blog-card-07 .blog-card-title a:hover,
-.ts-main-menu > ul > li:hover > a,
 .search-popup-btn:hover,
 .ts-icon-box-05-content .sub-title,
 .ts-icon-box-08 .icon-box-sub-title,
@@ -134,7 +136,11 @@ a,
 .comment-content cite a,
 .product-item .product-detail h3 a:hover,
 .table-cart td.product-name a,
-.page-coming-soon .countdown .item span {
+.page-coming-soon .countdown .item span,
+.ts-testimonial-card-05 .card-body .ts-icon,
+.ts-services-card-02 .services-card-readmore:hover .ts-icon,
+.ts-main-menu > ul > li:hover > a,
+.ts-blog-card-10 .blog-card-catalog a:hover {
   color: #00accb; // Main color
 }
 
@@ -166,7 +172,8 @@ Sub Color
 
 .ts-main-menu.style-01 > ul > li:hover,
 .ts-main-menu.style-01 > ul > li.active,
-.bg--color3 {
+.bg--color3,
+.ts-main-menu.style-01 > ul > li > ul ul {
   background-color: #005974; // Sub Color
 }
 
@@ -207,19 +214,7 @@ Dynamic Color
 ..............................................*/
 
 .btn-color1,
-.icon-box-02-icon,
-.ts-portfolio-01 .card-img-overlay .title,
-.ts-portfolio-01 .card-img-overlay .category,
-.consultant-select.bootstrap-select > .dropdown-toggle.btn-light:hover,
-.consultant-select.bootstrap-select > .dropdown-toggle.btn-light:focus,
-#to-the-top:hover,
-.ts-accordion--ghost .card-header .ts-btn[aria-expanded="true"],
-.ts-main-menu.in-light > ul > li > ul li a:hover,
-.search-popup__close-btn,
-.consultant-select.show.bootstrap-select > .dropdown-toggle,
-.ts-language.in-dark .bootstrap-select .dropdown-item.active,
-.ts-main-menu.in-transparent > ul > li ul li a:hover,
-.ts-accrodion--ghost .card-header .ts-btn[aria-expanded="true"] {
+.ts-header-07 .ts-main-menu > ul > li:hover > a {
   color: #ffffff; // Dynamic Color
 }
 
