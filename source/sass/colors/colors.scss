@@ -207,7 +207,8 @@ Dynamic Color
 ..............................................*/
 
 .btn-color1,
-.ts-header-07 .ts-main-menu > ul > li:hover > a {
+.ts-header-07 .ts-main-menu > ul > li:hover > a,
+.ts-main-menu.style-01 > ul > li > ul > li:hover > a {
   color: #ffffff; // Dynamic Color
 }
 

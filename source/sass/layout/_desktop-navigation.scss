@@ -136,11 +136,11 @@
         // li level 2,3... hover
         &:hover {
           background-color: color(color1, 1);
-          color: $white;
+          color: color(dynamicColor, 1);
 
           // active next a only
           & > a {
-            color: $white;
+            color: color(dynamicColor, 1);
           }
 
           // active next ul only
@@ -676,7 +676,7 @@
         transition: background-color 0.1s;
 
         & > a {
-          color: $white;
+          color: color(dynamicColor, 1);
           transition: color 0.35s;
           // font-weight: 300;
         }
@@ -698,7 +698,7 @@
               background-color: color(color1, 1);
 
               & > a {
-                color: $white;
+                color: color(dynamicColor, 1);
               }
             }
           }
@@ -708,14 +708,14 @@
 
             li {
               a {
-                color: $white;
+                color: color(dynamicColor, 1);
               }
 
               &:hover {
                 background-color: color(color1, 1);
 
                 & > a {
-                  color: $white;
+                  color: color(dynamicColor, 1);
                 }
               }
             }
@@ -728,7 +728,7 @@
       ul {
         li.has-sub:hover {
           & > a {
-            color: $white;
+            color: color(dynamicColor, 1);
           }
         }
       }

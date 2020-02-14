@@ -73,6 +73,18 @@
   }
 }
 
+.btn-dark {
+  background-color: $black1;
+  color: $white;
+
+  &:hover {
+    background-color: $white;
+    color: $black1;
+    border-color: $black1;
+    text-decoration: none;
+  }
+}
+
 .btn-outline {
   border-color: color(dynamicColor, 1);
   background-color: color(color3, 1);

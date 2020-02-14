@@ -55,7 +55,7 @@
 
   &.in-dark {
     a {
-      color: $white;
+      color: color(dynamicColor, 1);
     }
   }
 }
