@@ -6,6 +6,7 @@
   "scripts": {
     "start": "gulp dev",
     "build": "gulp build",
+    "unmin": "gulp unmin",
     "css-lint": "stylelint --syntax scss \"source/sass/**/*.scss\"",
     "css-lint-fix": "stylelint --syntax scss \"source/sass/**/*.scss\" --fix"
   },

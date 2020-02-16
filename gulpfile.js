@@ -71,7 +71,8 @@ var options = {
   },
   js: {
     in: [baseDirs.sourceJS + '*.js'],
-    out: baseDirs.dest + 'js/'
+    out: baseDirs.dest + 'js/',
+    unmin: baseDirs.dest + 'unminjs/'
   },
   fonts: {
     in: [baseDirs.source + 'fonts/**/*.*'],
@@ -95,7 +96,7 @@ var options = {
     errLogToConsole: true,
     includePaths: ['./node_modules'],
     in: [baseDirs.sourceSCSS + '*.scss'],
-    out: baseDirs.dest + 'cssunmin/'
+    out: baseDirs.dest + 'unmincss/'
   }
 };
 
@@ -269,15 +270,15 @@ gulp.task('build-css', function(cb) {
   return (
     gulp
       .src(options.scssunmin.in)
-      .pipe($.sourcemaps.init())
+      // .pipe($.sourcemaps.init())
       .pipe($.sass(options.scssunmin).on('error', $.sass.logError))
       .pipe($.autoprefixer())
-      .pipe(
-        $.sourcemaps.write('./', {
-          includeContent: false,
-          sourceRoot: baseDirs.sourceSCSS
-        })
-      )
+      // .pipe(
+      //   $.sourcemaps.write('./', {
+      //     includeContent: false,
+      //     sourceRoot: baseDirs.sourceSCSS
+      //   })
+      // )
       // .pipe(rename({
       //   suffix: '.min'
       // }))
@@ -328,6 +329,43 @@ gulp.task('compile-js', function() {
   );
 });
 
+gulp.task('compile-js-unmin', function() {
+  // pump([
+  //   gulp.src(['*.js', '!_*.js',], { cwd: baseDirs.sourceJS }),
+  //   babel({
+  //     presets: ['@babel/env'],
+  //     compact: false
+  //   }),
+  //   uglify(),
+  //   rename({ suffix: '.min' }),
+  //   gulp.dest(options.js.out)
+  // ]);
+  return (
+    gulp
+      .src(['*.js', '!_*.js'], { cwd: baseDirs.sourceJS })
+      // Stop the process if an error is thrown.
+      .pipe($.plumber())
+      // Transpile the JS code using Babel's preset-env.
+      .pipe(
+        babel({
+          presets: [
+            [
+              '@babel/env',
+              {
+                modules: false
+              }
+            ]
+          ],
+          compact: false
+        })
+      )
+      // .pipe(uglify())
+      // .pipe(rename({ suffix: '.min' }))
+      .pipe(gulp.dest(options.js.unmin))
+      .pipe(browserSync.stream())
+  );
+});
+
 // ======================================================
 // Development
 // ======================================================
@@ -345,8 +383,20 @@ gulp.task('build', function(cb) {
     'copy-public',
     'compile-css',
     'compile-js',
+    'compile-js-unmin',
     // 'scripts',
     'build-html',
+    cb
+  );
+});
+
+// ======================================================
+// Unmin
+// ======================================================
+gulp.task('unmin', function(cb) {
+  return runSequence(
+    'compile-js-unmin',
+    'build-css',
     cb
   );
 });
