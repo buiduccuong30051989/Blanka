@@ -321,6 +321,7 @@ gulp.task('compile-js', function() {
           compact: false
         })
       )
+      .pipe(uglify())
       .pipe(rename({ suffix: '.min' }))
       .pipe(gulp.dest(options.js.out))
       .pipe(browserSync.stream())
