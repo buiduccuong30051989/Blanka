@@ -383,7 +383,6 @@ gulp.task('build', function(cb) {
     'copy-public',
     'compile-css',
     'compile-js',
-    'compile-js-unmin',
     // 'scripts',
     'build-html',
     cb
