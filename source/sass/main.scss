@@ -1,3 +1,42 @@
+/*
+Theme Name: BiFirm
+Author: adam.forest@gmail.com
+Description: BiFirm is a finace, business, accounting site template
+Version: 1.0
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+/**
+ * Table of Contents
+ *
+ * 1.0 - Normalize
+ * 2.0 - Bootstrap
+ * 3.0 - Typography
+ * 4.0 - Component
+ *   4.1 - accordion
+ *   4.2 - blog
+ *   4.3 - buttons
+ *   4.4 - forms
+ *   4.5 - icons-boxes
+ *   4.6 - pagination
+ *   4.7 - portfolio
+ *   4.8 - team
+ * 5.0 - Navigation
+ *   5.1 - Links
+ *   5.2 - Menus
+ * 6.0 - Content
+ *    6.1 - Header
+ *    6.2 - Posts and pages
+ *    6.3 - Post Formats
+ *    6.4 - Comments
+ *    6.5 - Sidebar
+ *    6.6 - Footer
+ * 7.0 - Media Queries
+ *    7.1 - >= 576px
+ *    7.2 - >= 768px
+ *    7.3 - >= 992px
+ *    7.4 - >= 1200px
+ */
+
 @import "extention/bootstrap/bootstrap";
 @import "abstracts/variables";
 @import "abstracts/functions";
