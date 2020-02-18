@@ -21,6 +21,7 @@
 
     @include media-breakpoint-down(md) {
       position: fixed;
+      background-image: unset;
     }
   }
 

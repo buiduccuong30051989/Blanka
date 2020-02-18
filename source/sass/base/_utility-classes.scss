@@ -213,7 +213,7 @@ $class: fs--;
 // Images
 // --------------------------------------------------
 .dim-image {
-  filter:grayscale(100%);
+  filter:grayscale(100%) !important;
 }
 
 .free-size {

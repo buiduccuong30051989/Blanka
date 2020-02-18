@@ -108,6 +108,7 @@ $(document).ready(function() {
   $(".js-color-pattern").on("click", function() {
     let color = $(this).data("color");
     color = color.match(/[A-Za-z0-9]{2}/g);
+    $('meta[name=theme-color]').attr('content', $(this).data("color"));
 
     const rgbColorArray = color.map(function(v) {
       return parseInt(v, 16);
@@ -301,7 +302,7 @@ $(document).ready(function() {
       );
 
       $("#js-sub-color-rgb").text("Sub Color RGB: " + hex2rgb(hexSubColor));
-
+      $('meta[name=theme-color]').attr('content', `#${color.toHex()}`);
       // console.log(
       //   hslToRgb(
       //     (hslColorArray.h+5)/100,

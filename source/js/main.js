@@ -98,6 +98,7 @@ $(document).ready(function() {
         animateIn: elem.options.animateIn,
         animateOut: elem.options.animateOut,
         rtl: elem.options.rtl,
+        autoHeight: elem.options.autoHeight == 'true' ? true : false,
         onInitialize: function onInitialize(event) {
           elem.addClass('carousel-loaded owl-carousel');
         },

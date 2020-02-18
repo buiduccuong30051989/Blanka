@@ -51,6 +51,12 @@
     position: absolute;
     left: 100%;
     top: 200px;
+    border-radius: 0;
+
+    @include media-breakpoint-down(md) {
+      top: 75px;
+      padding: 10px 15px;
+    }
   }
 
   .button-toggle-wrap {
