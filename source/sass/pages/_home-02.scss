@@ -51,8 +51,9 @@
     .sub-title {
       font-family: $oswald;
       font-style: italic;
-      font-weight: 300;
       font-size: 16px;
+      color: color(color1, 1);
+      font-weight: 400;
     }
 
     .desc {

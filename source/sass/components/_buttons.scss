@@ -6,7 +6,7 @@
   border-radius: 2px;
   font-family: $oswald;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 1px;
   font-size: 13px;
   padding: 10px 20px;
@@ -74,13 +74,13 @@
 }
 
 .btn-dark {
-  background-color: $black1;
+  background-color: $black;
   color: $white;
 
   &:hover {
     background-color: $white;
-    color: $black1;
-    border-color: $black1;
+    color: $black;
+    border-color: $white;
     text-decoration: none;
   }
 }
@@ -141,6 +141,7 @@ $classTsBtnOutline: btn-outline-;
     border-width: 1px;
     border-color: color($name, 1);
     color: color($name, 1);
+    font-weight: 400;
 
     &:hover {
       background-color: color($name, 1);

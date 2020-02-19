@@ -61,7 +61,8 @@ mixin services13(icon, title, subTitle, desc)
       .icon-box-wrap
         i.ts-icon(class=icon)
       .icon-box-content
-        h3.icon-box-title=title
+        h3.icon-box-title
+          a(href="services_detail.html")=title
         h5.icon-box-sub-title=subTitle
         p.icon-box-desc=desc
     svg.icon-box-layer(viewbox="0 0 69 231" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")

@@ -343,12 +343,12 @@
       // left: 0;
       // right: 0;
       text-align: center;
-      padding: 10px 15px;
+      padding: 10px 15px 25px;
       position: relative;
 
       .testimonial-card-name {
         // color: $white;
-        font-weight: 200;
+        font-weight: 400;
         font-size: 18px;
         position: relative;
       }
@@ -412,7 +412,7 @@
     .testimonial-card-info {
       .testimonial-card-name {
         font-size: 18px;
-        font-weight: 200;
+        font-weight: 400;
         // color: color(dynamicColor, 1);
         margin-bottom: 5px;
       }

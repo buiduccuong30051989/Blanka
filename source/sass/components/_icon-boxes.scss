@@ -431,16 +431,16 @@
   &-content {
     .title {
       font-size: 18px;
-      font-weight: 300;
+      font-weight: 400;
       text-transform: uppercase;
     }
 
     .sub-title {
       font-size: 14px;
-      font-style: italic;
       font-weight: normal;
       margin-bottom: 18px;
-      color: color(color1, 1);
+      color: rgba($black, 0.7);
+      font-weight: 300;
     }
 
     .desc {
@@ -494,7 +494,6 @@
 
     .sub-title {
       font-size: 14px;
-      font-style: italic;
       font-weight: normal;
       margin-bottom: 15px;
     }
@@ -535,6 +534,7 @@
   &-icon-wrap {
     display: flex;
     align-items: center;
+    margin-bottom: 8px;
 
     .ts-icon {
       font-size: 42px;
@@ -555,15 +555,14 @@
 
     &-sub-title {
       font-size: 14px;
-      font-style: italic;
       font-weight: normal;
       margin-bottom: 15px;
-      color: color(color1, 1);
+      color: rgba($black, .5);
       font-weight: 300;
     }
 
     &-desc {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       @include truncate-multiline-new(2);
     }
   }
@@ -644,15 +643,23 @@
 
     &-title {
       font-size: 18px;
-      color: $white;
+
+      a {
+        color: $white;
+        transition: $transition-base;
+
+        &:hover {
+          color: color(color1, 1);
+        }
+      }
     }
 
     &-sub-title {
       font-size: 14px;
-      font-style: italic;
       font-weight: normal;
       margin-bottom: 15px;
-      color: color(color1, 1);
+      color: rgba($white, .7);
+      font-weight: 300;
     }
 
     &-desc {
@@ -761,14 +768,17 @@
       a {
         color: $gray20;
       }
+
+      &:hover a {
+        color: color(color1, 1);
+      }
     }
 
     &-sub-title {
       font-size: 14px;
-      font-style: italic;
       font-weight: normal;
       margin-bottom: 15px;
-      color: color(color1, 1);
+      color: rgba($black, .5);
     }
 
     &-desc {

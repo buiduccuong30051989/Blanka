@@ -593,6 +593,10 @@
 
 .tp-caption {
   font-family: $oswald;
+
+  .ts-btn {
+    font-weight: 400 !important;
+  }
 }
 
 .font-weight-semi-bold {

@@ -67,10 +67,19 @@
   margin-bottom: 38px;
 
   h2 {
-    font-weight: 300;
-    color: $color5;
-    font-size: 24px;
+    font-weight: 400;
+    color: $gray20;
+    font-size: 28px;
     margin-bottom: 0;
+  }
+
+  & + .heading-desc {
+    width: 75%;
+    margin: auto;
+
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+    }
   }
 
   &.has-controls {
