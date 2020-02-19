@@ -6,7 +6,7 @@
   border-radius: 2px;
   font-family: $oswald;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 1px;
   font-size: 13px;
   padding: 10px 20px;
@@ -88,6 +88,7 @@
 .btn-outline {
   border-color: color(dynamicColor, 1);
   background-color: color(color3, 1);
+  font-weight: 400;
 
   span {
     background-color: inherit;
