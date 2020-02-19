@@ -2,20 +2,30 @@
 // Abstracts :: Functions
 // --------------------------------------------------
 // generator color
-@function color($color-name, $alpha) {
-  @return hsla(var(--hue-#{$color-name}),var(--saturation-#{$color-name}),var(--lightness-#{$color-name}), $alpha);
-}
+// @function color($color-name, $alpha) {
+//   @return hsla(var(--hue-#{$color-name}),var(--saturation-#{$color-name}),var(--lightness-#{$color-name}), $alpha);
+// }
 
-@function darkerColor($color-name, $alpha) {
-  @return hsla(var(--hue-#{$color-name}),var(--saturation-#{$color-name}),var(--lightness-darker-#{$color-name}), $alpha);
-}
+// @function darkerColor($color-name, $alpha) {
+//   @return hsla(var(--hue-#{$color-name}),var(--saturation-#{$color-name}),var(--lightness-darker-#{$color-name}), $alpha);
+// }
 
-@function lightenColor($color-name, $alpha) {
-  @return hsla(var(--hue-#{$color-name}),var(--saturation-#{$color-name}),var(--lightness-lighten-#{$color-name}), $alpha);
-}
+// @function lightenColor($color-name, $alpha) {
+//   @return hsla(var(--hue-#{$color-name}),var(--saturation-#{$color-name}),var(--lightness-lighten-#{$color-name}), $alpha);
+// }
 
 @function pxtorem($px, $root: 16) {
   @return $px/$root + rem;
+}
+
+@function color($color-name, $alpha) {
+  $value: map-get($colors-theme, $color-name);
+  @return rgba($value, $alpha);
+}
+
+@function darkerColor($color-name, $alpha) {
+  $value: map-get($colors-theme, $color-name);
+  @return darken($value, 5%);
 }
 
 // @function legacy-direction($value) {
