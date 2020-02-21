@@ -4,7 +4,7 @@ $(document).ready(function () {
   var latitude = -37.817,
       longitude = 144.962,
       map_zoom = 14;
-  var locations = [['<div class="infobox"><span>WE ARE BIFIRM<span></br><span>Email: contact@bifirm.com</span></div>', latitude, longitude, 2]];
+  var locations = [['<div class="infobox"><span>WE ARE BLANKA<span></br><span>Email: contact@blanka.com</span></div>', latitude, longitude, 2]];
   var map = new google.maps.Map(document.getElementById('js-map-canvas'), {
     zoom: map_zoom,
     scrollwheel: false,
