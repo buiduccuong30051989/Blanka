@@ -348,7 +348,7 @@ mixin header01
       .container
         .d-flex.justify-content-between.align-items-center
           .ts-header-01-left.flex-grow-1
-            a.ts-header-logo-wrap(href="home_01.html")
+            a.ts-header-logo-wrap(href="index.html")
               img.header-logo(src="images/logo-dark.png" alt="logo")
           .ts-header-01-right.align-items-center.d-none.d-lg-flex
             nav.ts-main-menu.in-light
@@ -396,7 +396,7 @@ mixin headerHome01
       .container
         .header-info-inner
           .header-info-left
-            a.header-logo-wrap(href="home_01.html")
+            a.header-logo-wrap(href="index.html")
               img.header-logo(src="images/logo-dark.png", alt="logo")
           .header-info-right
             .item.ts-icon-box-info-03
@@ -449,12 +449,12 @@ mixin headerHome02
               span Mon - Sat 8.00 - 18.00. Sunday CLOSED
             .item.ts-icon-box-info-01.in-dark
               i.ts-icon.la.la-phone
-              a(href="tel:0944 76 4545") +84 944 76 4545
+              a(href="tel:0944764545") +84 944 76 4545
     .ts-header.ts-header-08.bg--white#js-header-home-02
       .container
         .ts-header-08-inner
           .ts-header-08-left
-            a.ts-header-logo-wrap(href="home_01.html")
+            a.ts-header-logo-wrap(href="index.html")
               img.header-logo(src="images/logo-dark.png", alt="logo")
           .ts-header-08-right.d-none.d-lg-flex
             nav.ts-main-menu.mr-5.style-02.divider.active-background-skewX
@@ -479,7 +479,7 @@ mixin headerHome03
     .ts-header.ts-header-09
       .ts-header-inner
         .ts-header-left.flex-grow-1
-          a.ts-header-logo-wrap.d-inline-flex(href="home_01.html")
+          a.ts-header-logo-wrap.d-inline-flex(href="index.html")
             img.header-logo(src="images/logo-light.png", alt="logo")
         nav.ts-main-menu.d-none.d-lg-inline-flex.sub-icon.style-03
           +navigation
@@ -506,7 +506,7 @@ mixin headerHome04
           .ts-topbar-01-left
             .item.ts-icon-box-info-01.in-dark
               i.ts-icon.la.la-phone
-              a(href="tel:0944 76 4545") 0944-76-4545
+              a(href="tel:0944764545") 0944-76-4545
             .item.ts-icon-box-info-01.in-dark
               i.ts-icon.la.la-envelope
               a(href="mailto:consultant@blanka.com") consultant@blanka.com
@@ -520,7 +520,7 @@ mixin headerHome04
       .container
         .ts-header-01-inner
           .ts-header-01-left
-            a.ts-header-logo-wrap(href="home_01.html")
+            a.ts-header-logo-wrap(href="index.html")
               img.header-logo(src="images/logo-dark.png" alt="logo")
           .ts-header-01-right.d-none.d-lg-flex
             nav.ts-main-menu
@@ -539,7 +539,7 @@ mixin headerHome05
       .container
         .ts-header-04-inner
           .item
-            a.ts-header-logo-wrap(href="home_01.html")
+            a.ts-header-logo-wrap(href="index.html")
               img.header-logo(src="images/logo-light.png", alt="logo")
           .item.flex-grow-1
             .ts-header-04-top
@@ -547,7 +547,7 @@ mixin headerHome05
                 .ts-box-square-01
                   i.ts-icon.la.la-phone
                 .content
-                  a.color--gray60(href="tel:0944 76 4545") 0944-76-4545
+                  a.color--gray60(href="tel:0944764545") 0944-76-4545
               .item.mr-4.ts-icon-box-info-02.in-dark
                 .ts-box-square-01
                   i.ts-icon.la.la-map-marker
@@ -622,7 +622,7 @@ mixin modalCallBack
 mixin sideBar
   .main-sidebar
     aside.widget.widget_search
-      form.form-inline(action="" method="get" role="search")
+      form.form-inline(action="POST" method="get" role="search")
         .input-group.w-100
           input.ts-input-grey.border-right-0(type="search" name="s" value="" placeholder="Search …")
           .input-group-append

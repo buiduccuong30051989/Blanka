@@ -21,14 +21,14 @@ append content
             nav(aria-label="breadcrumb")
               ol.ts-breadcrumb-01
                 li.breadcrumb-item
-                  a(href="home_01.html") Home
+                  a(href="index.html") Home
                 li.breadcrumb-item.active(aria-current="page") Shop Cart
 
   section.bg--white.py-7
     .container
       .row.vertical-divider-lg
         .col-lg-8.mb-5.mb-lg-0.pr-lg-30
-          table.shop-table.table-cart(cellspacing="0")
+          table.shop-table.table-cart
             thead
               tr
                 th.product-remove  
@@ -43,7 +43,7 @@ append content
                   a.remove(href="#") ×
                 td.product-thumbnail
                   a(href="#")
-                    img(src="https://picsum.photos/150/100?random=10")
+                    img(src="https://picsum.photos/150/100?random=10", alt='demo')
                 td.product-name(data-title="Product")
                   a(href="#") Bed Dream
                 td.product-price(data-title="Price")
@@ -58,7 +58,7 @@ append content
                   a.remove(href="#") ×
                 td.product-thumbnail
                   a(href="#")
-                    img(src="https://picsum.photos/150/100?random=12")
+                    img(src="https://picsum.photos/150/100?random=12", alt='demo')
                 td.product-name(data-title="Product")
                   a(href="#") Bed Gravida
                 td.product-price(data-title="Price")
@@ -73,7 +73,7 @@ append content
                   a.remove(href="#") ×
                 td.product-thumbnail
                   a(href="#")
-                    img(src="https://picsum.photos/150/100?random=14")
+                    img(src="https://picsum.photos/150/100?random=14", alt='demo')
                 td.product-name(data-title="Product")
                   a(href="#") Bed Wood
                 td.product-price(data-title="Price")
@@ -92,7 +92,7 @@ append content
         .col-lg-4.pl-lg-30
           .cart-collaterals
             h3 Cart Totals
-            table.shop-table.table-cart-collaterals(cellspacing="0")
+            table.shop-table.table-cart-collaterals
               tbody
                 tr.cart-subtotal
                   th Subtotal:
@@ -363,7 +363,7 @@ append content
                 tr.order-total
                   th Total:
                   td(data-title="Total")
-                    strongsss
+                    strong
                       span.amount £7,599
             .proceed-to-checkout
               a.ts-btn.btn-success.btn-lg.d-block(href="#")
